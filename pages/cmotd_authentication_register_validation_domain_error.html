@@ -1,0 +1,996 @@
+<!doctype html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      content="width=device-width, initial-scale=1.0"
+      name="viewport"
+    />
+    <title>CMOTD - Authentication (Register - Validation Errors &amp; Domain Conflict State)</title>
+    <link
+      href="../favicon.ico"
+      rel="icon"
+      type="image/x-icon"
+    />
+    <link
+      href="../assets/css/tailwind-build.css"
+      rel="stylesheet"
+    />
+    <link
+      href="../assets/css/cmotd-global.css"
+      rel="stylesheet"
+    />
+    <script
+      defer=""
+      src="../assets/js/site-config.js"
+    ></script>
+    <script
+      defer=""
+      src="../assets/js/cmotd-components.js"
+    ></script>
+  </head>
+  <body
+    class="flex min-h-screen flex-col bg-background font-body-md text-on-surface antialiased selection:bg-brand-cobalt selection:text-white"
+  >
+    <!-- ================= TOPNAVBAR (Shared Component Implementation) ================= -->
+    <cmotd-site-header></cmotd-site-header>
+    <!-- ================= MAIN REGISTRATION HERO CANVAS ================= -->
+    <main class="mx-auto w-full max-w-[1280px] flex-1 px-4 py-8 lg:px-8 lg:py-12">
+      <!-- Top Breadcrumb / State Micro-Bar -->
+      <div class="mb-6 flex items-center justify-between border-b border-brand-slate-200 pb-3">
+        <div class="flex items-center gap-2 font-label-sm text-label-sm text-brand-slate-500">
+          <a
+            class="flex items-center gap-1 hover:text-primary"
+            href="#"
+          >
+            <span
+              class="material-symbols-outlined text-[16px]"
+              data-icon="account_balance"
+              >account_balance</span
+            >
+            Rivers State University
+          </a>
+          <span>/</span>
+          <a
+            class="hover:text-primary"
+            href="#"
+            >Centres of Excellence</a
+          >
+          <span>/</span>
+          <span class="font-semibold text-brand-slate-800"
+            >Trainee &amp; Corporate Identity Enrollment</span
+          >
+        </div>
+        <div class="flex items-center gap-2">
+          <span class="h-2 w-2 animate-ping rounded-full bg-status-danger"></span>
+          <span
+            class="font-label-sm text-label-sm font-semibold uppercase tracking-wider text-status-danger"
+          >
+            Submission Blocked: Action Required
+          </span>
+        </div>
+      </div>
+      <!-- Split Two-Column Container -->
+      <div class="grid grid-cols-1 items-start gap-8 lg:grid-cols-12">
+        <!-- ================= LEFT COLUMN: INSTITUTIONAL BRANDING & SPECIFICATIONS ================= -->
+        <section
+          class="relative flex flex-col justify-between overflow-hidden rounded-xl border border-brand-slate-800 bg-brand-navy-950 p-8 text-white shadow-lg lg:col-span-5"
+        >
+          <!-- Architectural Backdrop Grid & Gradient -->
+          <div
+            class="pointer-events-none absolute inset-0 bg-[radial-gradient(#3769D6_1px,transparent_1px)] opacity-10 [background-size:16px_16px]"
+          ></div>
+          <div
+            class="pointer-events-none absolute right-0 top-0 -mr-20 -mt-20 h-80 w-80 rounded-full bg-brand-cobalt opacity-15 blur-3xl"
+          ></div>
+          <div class="relative z-10 space-y-8">
+            <!-- Institutional Header Badge -->
+            <div class="flex items-center justify-between border-b border-brand-slate-800 pb-5">
+              <div class="flex items-center gap-3">
+                <div
+                  class="flex h-10 w-10 items-center justify-center rounded-lg border border-brand-cobalt/40 bg-primary-container/20"
+                >
+                  <span
+                    class="material-symbols-outlined text-primary-fixed"
+                    data-icon="anchor"
+                    >anchor</span
+                  >
+                </div>
+                <div>
+                  <span
+                    class="block font-label-sm text-label-sm font-semibold uppercase tracking-wider text-primary-fixed"
+                    >Academic &amp; Industry Gateway</span
+                  >
+                  <span class="font-title-lg text-title-lg font-bold tracking-tight text-white"
+                    >CMOTD Secretariat</span
+                  >
+                </div>
+              </div>
+              <span
+                class="text-brand-slate-300 rounded border border-brand-slate-700 bg-brand-slate-800 px-2.5 py-1 font-label-sm text-label-sm"
+              >
+                NCDMB-CAT-A
+              </span>
+            </div>
+            <!-- Academic Affiliation & Senate Accreditation -->
+            <div class="space-y-2">
+              <div class="flex items-center gap-2 text-status-verified">
+                <span
+                  class="material-symbols-outlined text-[18px]"
+                  data-icon="verified_user"
+                  >verified_user</span
+                >
+                <span class="font-label-sm text-label-sm font-semibold uppercase tracking-wide"
+                  >Statutory Validation</span
+                >
+              </div>
+              <h1 class="font-headline-sm text-headline-sm font-bold text-white">
+                Engineering Certification &amp; Professional Training Register
+              </h1>
+              <p class="font-body-sm text-body-sm leading-relaxed text-brand-slate-400">
+                Approved by the Senate of Rivers State University (RSU) under Gazette Ref:
+                RSU/SEN/CMOTD/24. Program curricula benchmarked to COREN post-graduate continuous
+                development standards and the Nigerian Content Development and Monitoring Board
+                (NCDMB) human capital mandates.
+              </p>
+            </div>
+            <!-- Technical Spec Matrix Cards -->
+            <div class="grid grid-cols-2 gap-3 pt-2">
+              <div class="rounded-lg border border-brand-slate-800 bg-brand-navy-900/80 p-3.5">
+                <div class="mb-1.5 flex items-center gap-2 text-primary-fixed">
+                  <span
+                    class="material-symbols-outlined text-[18px]"
+                    data-icon="memory"
+                    >memory</span
+                  >
+                  <span class="font-label-sm text-label-sm font-semibold">Compute Cluster</span>
+                </div>
+                <p class="font-headline-sm text-headline-sm font-bold leading-tight text-white">
+                  64-Node HPC
+                </p>
+                <span class="font-label-sm text-label-sm text-brand-slate-400"
+                  >ANSYS Fluent &amp; OpenFOAM</span
+                >
+              </div>
+              <div class="rounded-lg border border-brand-slate-800 bg-brand-navy-900/80 p-3.5">
+                <div class="mb-1.5 flex items-center gap-2 text-primary-fixed">
+                  <span
+                    class="material-symbols-outlined text-[18px]"
+                    data-icon="tsunami"
+                    >tsunami</span
+                  >
+                  <span class="font-label-sm text-label-sm font-semibold">Towing Tank</span>
+                </div>
+                <p class="font-headline-sm text-headline-sm font-bold leading-tight text-white">
+                  120m Length
+                </p>
+                <span class="font-label-sm text-label-sm text-brand-slate-400"
+                  >Hydrodynamics &amp; Mooring</span
+                >
+              </div>
+              <div class="rounded-lg border border-brand-slate-800 bg-brand-navy-900/80 p-3.5">
+                <div class="mb-1.5 flex items-center gap-2 text-primary-fixed">
+                  <span
+                    class="material-symbols-outlined text-[18px]"
+                    data-icon="terminal"
+                    >terminal</span
+                  >
+                  <span class="font-label-sm text-label-sm font-semibold">Licensed CAE</span>
+                </div>
+                <p class="font-headline-sm text-headline-sm font-bold leading-tight text-white">
+                  AVEVA / Caesar
+                </p>
+                <span class="font-label-sm text-label-sm text-brand-slate-400"
+                  >HYSYS V14 &amp; PV Elite</span
+                >
+              </div>
+              <div class="rounded-lg border border-brand-slate-800 bg-brand-navy-900/80 p-3.5">
+                <div class="mb-1.5 flex items-center gap-2 text-primary-fixed">
+                  <span
+                    class="material-symbols-outlined text-[18px]"
+                    data-icon="token"
+                    >token</span
+                  >
+                  <span class="font-label-sm text-label-sm font-semibold">Blockchain Log</span>
+                </div>
+                <p class="font-headline-sm text-headline-sm font-bold leading-tight text-white">
+                  Zero-Tamper
+                </p>
+                <span class="font-label-sm text-label-sm text-brand-slate-400"
+                  >Cryptographic Credential Hash</span
+                >
+              </div>
+            </div>
+            <!-- Corporate & Industry Joint Partners -->
+            <div class="border-t border-brand-slate-800 pt-4">
+              <span
+                class="mb-3 block font-label-sm text-label-sm font-semibold uppercase tracking-wider text-brand-slate-400"
+              >
+                Direct Corporate Training Consortia &amp; Operators
+              </span>
+              <div class="grid grid-cols-5 items-center gap-2">
+                <div
+                  class="text-brand-slate-300 rounded border border-brand-slate-800 bg-brand-navy-900 p-2 text-center font-label-sm text-label-sm font-bold"
+                >
+                  Shell
+                </div>
+                <div
+                  class="text-brand-slate-300 rounded border border-brand-slate-800 bg-brand-navy-900 p-2 text-center font-label-sm text-label-sm font-bold"
+                >
+                  Saipem
+                </div>
+                <div
+                  class="text-brand-slate-300 rounded border border-brand-slate-800 bg-brand-navy-900 p-2 text-center font-label-sm text-label-sm font-bold"
+                >
+                  Chevron
+                </div>
+                <div
+                  class="text-brand-slate-300 rounded border border-brand-slate-800 bg-brand-navy-900 p-2 text-center font-label-sm text-label-sm font-bold"
+                >
+                  TotalEnergies
+                </div>
+                <div
+                  class="text-brand-slate-300 rounded border border-brand-slate-800 bg-brand-navy-900 p-2 text-center font-label-sm text-label-sm font-bold"
+                >
+                  NLNG
+                </div>
+              </div>
+            </div>
+            <!-- Academic Dean / Director Attestation Statement -->
+            <div
+              class="text-brand-slate-300 rounded-r border-l-2 border-primary-fixed bg-brand-navy-900/60 p-3.5 font-body-sm text-body-sm"
+            >
+              <p class="text-xs italic leading-relaxed">
+                "Candidates registering under corporate patronage receive enterprise sandbox access,
+                high-fidelity subsea simulators, and automated NCDMB training scorecards."
+              </p>
+              <div class="mt-2 font-label-sm text-label-sm font-semibold text-primary-fixed">
+                — Directorate of Research &amp; Marine Engineering Partnerships, RSU
+              </div>
+            </div>
+          </div>
+          <!-- Footnote Status -->
+          <div
+            class="mt-8 flex items-center justify-between border-t border-brand-slate-800/80 pt-4 font-label-sm text-label-sm text-brand-slate-500"
+          >
+            <span>Identity Gateway Build v4.9.1</span>
+            <span class="flex items-center gap-1 text-brand-slate-400">
+              <span
+                class="material-symbols-outlined text-[14px]"
+                data-icon="lock_clock"
+                >lock_clock</span
+              >
+              TLS 1.3 Strict Encrypted
+            </span>
+          </div>
+        </section>
+        <!-- ================= RIGHT COLUMN: REGISTRATION FORM WITH EXPLICIT ERRORS ================= -->
+        <section
+          class="rounded-xl border border-brand-slate-200 bg-surface-container-lowest p-6 shadow-sm lg:col-span-7 lg:p-8"
+        >
+          <!-- Registration Form Top Heading -->
+          <div class="mb-5 flex items-start justify-between">
+            <div>
+              <div class="flex items-center gap-2">
+                <span
+                  class="rounded border border-brand-slate-200 bg-brand-slate-100 px-2 py-0.5 font-label-sm text-label-sm font-semibold text-brand-slate-700"
+                >
+                  Form State: Validation Audit
+                </span>
+                <span class="font-label-sm text-label-sm text-brand-slate-400">Step 1 of 2</span>
+              </div>
+              <h2 class="mt-1 font-headline-md text-headline-md text-brand-navy-900">
+                Candidate Enrolment &amp; Identity Profile
+              </h2>
+              <p class="mt-0.5 font-body-sm text-body-sm text-brand-slate-500">
+                Enter your professional credentials to initiate your CMOTD certified engineering
+                portal profile.
+              </p>
+            </div>
+            <a
+              class="flex shrink-0 items-center gap-1 pt-1 font-label-md text-label-md font-semibold text-primary hover:text-brand-cobalt-deep"
+              href="#"
+            >
+              Already registered? Log in
+              <span
+                class="material-symbols-outlined text-[16px]"
+                data-icon="arrow_forward"
+                >arrow_forward</span
+              >
+            </a>
+          </div>
+          <!-- 1. HIGH-VISIBILITY FORM ALERT BANNER (CRITICAL ERROR BAR) -->
+          <div
+            class="mb-6 flex items-start gap-3.5 rounded-lg border-l-4 border-status-danger bg-status-danger-bg p-4 shadow-sm"
+          >
+            <div
+              class="mt-0.5 flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-red-100 text-status-danger"
+            >
+              <span
+                class="material-symbols-outlined text-[22px]"
+                data-icon="report"
+                >report</span
+              >
+            </div>
+            <div class="flex-1">
+              <h3 class="font-label-md text-label-md font-bold text-status-danger">
+                Registration Submission Blocked: 3 fields require your attention.
+              </h3>
+              <p class="mt-0.5 font-body-sm text-body-sm leading-snug text-red-800">
+                Please resolve the corporate email domain mismatch, upload a valid PDF nomination
+                document, and align your cryptographic passwords before proceeding to the NCDMB
+                clearance queue.
+              </p>
+            </div>
+            <button class="p-1 text-red-400 hover:text-status-danger">
+              <span
+                class="material-symbols-outlined text-[18px]"
+                data-icon="close"
+                >close</span
+              >
+            </button>
+          </div>
+          <!-- FORM BODY -->
+          <form
+            class="space-y-5"
+            onsubmit="event.preventDefault()"
+          >
+            <!-- 2A. Registration Category Selector (Pre-selected: Corporate Sponsored) -->
+            <div>
+              <label class="mb-1.5 block font-label-md text-label-md text-brand-slate-700">
+                Enrolment Category <span class="text-status-danger">*</span>
+              </label>
+              <div class="grid grid-cols-3 gap-3">
+                <label
+                  class="relative flex cursor-pointer flex-col rounded-lg border-2 border-primary bg-surface-container-low p-3 transition-all"
+                >
+                  <input
+                    checked=""
+                    class="sr-only"
+                    name="enrollment_type"
+                    type="radio"
+                    value="corporate"
+                  />
+                  <div class="flex items-center justify-between">
+                    <span
+                      class="material-symbols-outlined text-[20px] text-primary"
+                      data-icon="corporate_fare"
+                      >corporate_fare</span
+                    >
+                    <span
+                      class="material-symbols-outlined text-[18px] text-primary"
+                      data-icon="check_circle"
+                      style="font-variation-settings: &quot;FILL&quot; 1"
+                      >check_circle</span
+                    >
+                  </div>
+                  <span class="mt-2 font-label-md text-label-md font-bold text-brand-navy-900"
+                    >Corporate Sponsored</span
+                  >
+                  <span class="mt-0.5 font-label-sm text-label-sm text-brand-slate-500"
+                    >IOC / Service Firm Voucher</span
+                  >
+                </label>
+                <label
+                  class="relative flex cursor-pointer flex-col rounded-lg border border-brand-slate-200 bg-surface-container-lowest p-3 transition-all hover:bg-surface-container-low"
+                >
+                  <input
+                    class="sr-only"
+                    name="enrollment_type"
+                    type="radio"
+                    value="independent"
+                  />
+                  <div class="flex items-center justify-between">
+                    <span
+                      class="material-symbols-outlined text-[20px] text-brand-slate-500"
+                      data-icon="person"
+                      >person</span
+                    >
+                    <div class="border-brand-slate-300 h-4 w-4 rounded-full border"></div>
+                  </div>
+                  <span class="mt-2 font-label-md text-label-md font-bold text-brand-slate-700"
+                    >Independent / Trainee</span
+                  >
+                  <span class="mt-0.5 font-label-sm text-label-sm text-brand-slate-500"
+                    >Self-Funded CEU Scholar</span
+                  >
+                </label>
+                <label
+                  class="relative flex cursor-pointer flex-col rounded-lg border border-brand-slate-200 bg-surface-container-lowest p-3 transition-all hover:bg-surface-container-low"
+                >
+                  <input
+                    class="sr-only"
+                    name="enrollment_type"
+                    type="radio"
+                    value="faculty"
+                  />
+                  <div class="flex items-center justify-between">
+                    <span
+                      class="material-symbols-outlined text-[20px] text-brand-slate-500"
+                      data-icon="school"
+                      >school</span
+                    >
+                    <div class="border-brand-slate-300 h-4 w-4 rounded-full border"></div>
+                  </div>
+                  <span class="mt-2 font-label-md text-label-md font-bold text-brand-slate-700"
+                    >RSU Postgrad Fellow</span
+                  >
+                  <span class="mt-0.5 font-label-sm text-label-sm text-brand-slate-500"
+                    >Faculty / Ph.D Candidate</span
+                  >
+                </label>
+              </div>
+            </div>
+            <!-- 2B. Full Legal Name (VALID STATE - GREEN CHECK) -->
+            <div>
+              <div class="mb-1 flex items-center justify-between">
+                <label class="block font-label-md text-label-md text-brand-slate-700">
+                  Full Legal Name (as recognized on COREN / National ID)
+                  <span class="text-status-danger">*</span>
+                </label>
+                <span
+                  class="flex items-center gap-1 font-label-sm text-label-sm font-semibold text-status-verified"
+                >
+                  <span
+                    class="material-symbols-outlined text-[16px]"
+                    data-icon="check_circle"
+                    style="font-variation-settings: &quot;FILL&quot; 1"
+                    >check_circle</span
+                  >
+                  Identity Match Verified
+                </span>
+              </div>
+              <div class="relative rounded-lg shadow-sm">
+                <div
+                  class="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3.5 text-brand-slate-400"
+                >
+                  <span
+                    class="material-symbols-outlined text-[18px]"
+                    data-icon="badge"
+                    >badge</span
+                  >
+                </div>
+                <input
+                  class="block w-full rounded-lg border border-status-verified bg-surface-container-lowest py-2.5 pl-10 pr-10 font-body-md text-body-md text-brand-navy-900 focus:border-status-verified focus:ring-2 focus:ring-status-verified/20"
+                  placeholder="Title, First Name, Middle, Surname"
+                  type="text"
+                  value="Engr. Emmanuel T. Briggs"
+                />
+                <div
+                  class="pointer-events-none absolute inset-y-0 right-0 flex items-center pr-3.5 text-status-verified"
+                >
+                  <span
+                    class="material-symbols-outlined text-[20px]"
+                    data-icon="check"
+                    style="font-variation-settings: &quot;wght&quot; 700"
+                    >check</span
+                  >
+                </div>
+              </div>
+              <span class="mt-1 block font-label-sm text-label-sm text-brand-slate-500">
+                COREN Registration ID: R-49281-ENG mapped from Nigerian National Registry.
+              </span>
+            </div>
+            <!-- 2C. Corporate Email Field (CRITICAL ERROR STATE & DOMAIN CONFLICT) -->
+            <div class="rounded-lg border border-status-danger bg-red-50/60 p-3.5">
+              <div class="mb-1 flex items-center justify-between">
+                <label
+                  class="block flex items-center gap-1.5 font-label-md text-label-md font-bold text-status-danger"
+                >
+                  <span
+                    class="material-symbols-outlined text-[18px]"
+                    data-icon="error"
+                    >error</span
+                  >
+                  Institutional / Corporate Email Address
+                  <span class="text-status-danger">*</span>
+                </label>
+                <span
+                  class="rounded border border-red-200 bg-white px-2 py-0.5 font-label-sm text-label-sm font-bold text-status-danger"
+                >
+                  Domain Conflict
+                </span>
+              </div>
+              <div class="relative mt-1 rounded-lg shadow-sm">
+                <div
+                  class="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3.5 text-status-danger"
+                >
+                  <span
+                    class="material-symbols-outlined text-[18px]"
+                    data-icon="mail"
+                    >mail</span
+                  >
+                </div>
+                <input
+                  class="block w-full rounded-lg border-2 border-status-danger bg-white py-2.5 pl-10 pr-10 font-body-md text-body-md text-brand-navy-900 focus:outline-none focus:ring-2 focus:ring-status-danger/30"
+                  placeholder="official.name@operator-domain.com"
+                  type="email"
+                  value="e.briggs@gmail.com"
+                />
+                <div
+                  class="pointer-events-none absolute inset-y-0 right-0 flex items-center pr-3.5 text-status-danger"
+                >
+                  <span
+                    class="material-symbols-outlined text-[20px]"
+                    data-icon="priority_high"
+                    >priority_high</span
+                  >
+                </div>
+              </div>
+              <!-- Detailed Domain Conflict Explanation -->
+              <div class="mt-2.5 space-y-1 font-body-sm text-body-sm leading-relaxed text-red-900">
+                <p>
+                  <strong
+                    >Personal email domains (@gmail.com, @yahoo.com) are not permitted for Corporate
+                    Sponsored registration.</strong
+                  >
+                  Please enter your verified IOC corporate address (e.g.,
+                  <code class="rounded bg-red-100 px-1 py-0.5 font-mono text-xs text-red-900"
+                    >@shell.com</code
+                  >,
+                  <code class="rounded bg-red-100 px-1 py-0.5 font-mono text-xs text-red-900"
+                    >@saipem.com</code
+                  >,
+                  <code class="rounded bg-red-100 px-1 py-0.5 font-mono text-xs text-red-900"
+                    >@totalenergies.com</code
+                  >) or switch registration category to Independent / Trainee.
+                </p>
+                <!-- Interactive Helper Actions -->
+                <div class="flex flex-wrap items-center gap-4 pt-2 font-label-md text-label-md">
+                  <button
+                    class="inline-flex items-center gap-1 font-bold text-primary hover:underline"
+                    type="button"
+                  >
+                    <span
+                      class="material-symbols-outlined text-[16px]"
+                      data-icon="domain_add"
+                      >domain_add</span
+                    >
+                    Request corporate whitelist domain
+                  </button>
+                  <span class="text-brand-slate-300">|</span>
+                  <button
+                    class="inline-flex items-center gap-1 font-bold text-brand-slate-700 hover:text-brand-navy-900"
+                    type="button"
+                  >
+                    <span
+                      class="material-symbols-outlined text-[16px]"
+                      data-icon="swap_horiz"
+                      >swap_horiz</span
+                    >
+                    Switch to Trainee / Scholar category
+                  </button>
+                </div>
+              </div>
+            </div>
+            <!-- 3. Sponsoring Operator & Corporate Warning Banner -->
+            <div>
+              <label class="mb-1 block font-label-md text-label-md text-brand-slate-700">
+                Sponsoring Operator / Employer Consortium
+                <span class="text-status-danger">*</span>
+              </label>
+              <div class="relative">
+                <div
+                  class="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3.5 text-brand-slate-400"
+                >
+                  <span
+                    class="material-symbols-outlined text-[18px]"
+                    data-icon="apartment"
+                    >apartment</span
+                  >
+                </div>
+                <select
+                  class="border-brand-slate-300 block w-full rounded-lg border bg-surface-container-lowest py-2.5 pl-10 pr-10 font-body-md text-body-md text-brand-navy-900 focus:border-primary focus:ring-2 focus:ring-primary"
+                >
+                  <option selected="">
+                    Shell Nigeria Exploration and Production Company (SNEPCo)
+                  </option>
+                  <option>The Shell Petroleum Development Company of Nigeria (SPDC)</option>
+                  <option>Saipem Contracting Nigeria Limited</option>
+                  <option>Chevron Nigeria Limited (CNL)</option>
+                  <option>TotalEnergies EP Nigeria</option>
+                  <option>Nigeria LNG Limited (NLNG)</option>
+                </select>
+              </div>
+              <!-- Corporate SLA Clearance Notice Banner -->
+              <div
+                class="mt-2 flex items-start gap-2.5 rounded-lg border border-amber-300 bg-status-warning-bg p-3"
+              >
+                <span
+                  class="material-symbols-outlined mt-0.5 shrink-0 text-[20px] text-status-warning"
+                  data-icon="warning"
+                  >warning</span
+                >
+                <div class="font-body-sm text-body-sm leading-snug text-amber-900">
+                  <span class="font-bold">Corporate SLA clearance note:</span>
+                  SNEPCo employees must provide an official Staff / SAP ID or upload a supervisor
+                  nomination voucher to activate billing under Enterprise Master Service Agreement
+                  MSA-2024-RSU-09.
+                </div>
+              </div>
+            </div>
+            <!-- 4. Corporate LPO / Supervisor Endorsement Document Upload (FAILED UPLOAD STATE) -->
+            <div>
+              <div class="mb-1 flex items-center justify-between">
+                <label class="block font-label-md text-label-md font-semibold text-brand-slate-700">
+                  Corporate LPO / Supervisor Endorsement Document
+                  <span class="text-status-danger">*</span>
+                </label>
+                <span
+                  class="flex items-center gap-1 font-label-sm text-label-sm font-bold text-status-danger"
+                >
+                  <span
+                    class="material-symbols-outlined text-[16px]"
+                    data-icon="cancel"
+                    >cancel</span
+                  >
+                  Rejected File Format
+                </span>
+              </div>
+              <!-- Upload Dropzone - Error Appearance -->
+              <div
+                class="rounded-lg border-2 border-dashed border-status-danger bg-red-50/40 p-4 transition-all"
+              >
+                <div class="flex items-center justify-between">
+                  <!-- Rejected File Pill -->
+                  <div class="flex items-center gap-3">
+                    <div
+                      class="flex h-10 w-10 items-center justify-center rounded border border-red-200 bg-red-100 text-status-danger"
+                    >
+                      <span
+                        class="material-symbols-outlined text-2xl"
+                        data-icon="warning"
+                        >warning</span
+                      >
+                    </div>
+                    <div>
+                      <div class="flex items-center gap-2">
+                        <span class="font-label-md font-mono text-label-md font-bold text-red-900"
+                          >SNEPCO_Nomination_Letter.exe</span
+                        >
+                        <span
+                          class="py-0.2 rounded bg-status-danger px-2 font-label-sm text-label-sm font-bold uppercase text-white"
+                        >
+                          Executable Blocked
+                        </span>
+                      </div>
+                      <span class="font-label-sm text-label-sm text-brand-slate-500"
+                        >2.4 MB • Upload attempt failed</span
+                      >
+                    </div>
+                  </div>
+                  <!-- Action to Remove/Retry -->
+                  <button
+                    class="flex items-center gap-1 rounded border border-red-200 bg-white px-3 py-1.5 font-label-sm text-label-sm font-bold text-status-danger shadow-sm hover:bg-red-50"
+                    type="button"
+                  >
+                    <span
+                      class="material-symbols-outlined text-[16px]"
+                      data-icon="delete"
+                      >delete</span
+                    >
+                    Remove File
+                  </button>
+                </div>
+                <!-- Error Badge & Guidance -->
+                <div
+                  class="mt-3 flex items-center justify-between border-t border-red-200/80 pt-2.5"
+                >
+                  <div
+                    class="flex items-center gap-1.5 font-body-sm text-body-sm font-medium text-status-danger"
+                  >
+                    <span
+                      class="material-symbols-outlined text-[18px]"
+                      data-icon="block"
+                      >block</span
+                    >
+                    <span
+                      >Unsupported file format (.exe). Please upload an official PDF or scanned
+                      image (Max 15MB).</span
+                    >
+                  </div>
+                  <button
+                    class="flex items-center gap-1 font-label-sm text-label-sm font-bold text-primary hover:underline"
+                    type="button"
+                  >
+                    <span
+                      class="material-symbols-outlined text-[16px]"
+                      data-icon="upload_file"
+                      >upload_file</span
+                    >
+                    Browse New File
+                  </button>
+                </div>
+              </div>
+            </div>
+            <!-- 5. Password & Confirm Password (MISMATCH & WEAK AUDIT STATE) -->
+            <div class="grid grid-cols-1 gap-4 md:grid-cols-2">
+              <!-- Password Field -->
+              <div>
+                <label class="mb-1 block font-label-md text-label-md text-brand-slate-700">
+                  Portal Security Password
+                  <span class="text-status-danger">*</span>
+                </label>
+                <div class="relative">
+                  <div
+                    class="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3.5 text-brand-slate-400"
+                  >
+                    <span
+                      class="material-symbols-outlined text-[18px]"
+                      data-icon="key"
+                      >key</span
+                    >
+                  </div>
+                  <input
+                    class="border-brand-slate-300 block w-full rounded-lg border bg-surface-container-lowest py-2.5 pl-10 pr-10 font-body-md text-body-md text-brand-navy-900 focus:border-primary focus:ring-2 focus:ring-primary"
+                    type="password"
+                    value="Subsea2025"
+                  />
+                  <button
+                    class="hover:text-brand-slate-600 absolute inset-y-0 right-0 flex items-center pr-3.5 text-brand-slate-400"
+                    type="button"
+                  >
+                    <span
+                      class="material-symbols-outlined text-[18px]"
+                      data-icon="visibility"
+                      >visibility</span
+                    >
+                  </button>
+                </div>
+                <!-- Password Strength Bar (Level 1: Red / Weak) -->
+                <div class="mt-2 space-y-1">
+                  <div class="flex items-center justify-between font-label-sm text-label-sm">
+                    <span class="font-bold text-status-danger"
+                      >Password Strength: Level 1 (Weak)</span
+                    >
+                    <span class="text-brand-slate-400">Security Score: 25%</span>
+                  </div>
+                  <div class="flex h-1.5 w-full overflow-hidden rounded-full bg-brand-slate-200">
+                    <div class="h-full w-1/4 rounded-full bg-status-danger"></div>
+                  </div>
+                </div>
+              </div>
+              <!-- Confirm Password Field (MISMATCH ERROR) -->
+              <div>
+                <div class="mb-1 flex items-center justify-between">
+                  <label class="block font-label-md text-label-md font-bold text-status-danger">
+                    Confirm Password <span class="text-status-danger">*</span>
+                  </label>
+                  <span class="font-label-sm text-label-sm font-bold text-status-danger"
+                    >Mismatch Detected</span
+                  >
+                </div>
+                <div class="relative">
+                  <div
+                    class="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3.5 text-status-danger"
+                  >
+                    <span
+                      class="material-symbols-outlined text-[18px]"
+                      data-icon="lock_reset"
+                      >lock_reset</span
+                    >
+                  </div>
+                  <input
+                    class="block w-full rounded-lg border-2 border-status-danger bg-red-50/30 py-2.5 pl-10 pr-10 font-body-md text-body-md text-brand-navy-900 focus:outline-none focus:ring-2 focus:ring-status-danger/30"
+                    type="password"
+                    value="Subsea2025!"
+                  />
+                  <div
+                    class="pointer-events-none absolute inset-y-0 right-0 flex items-center pr-3.5 text-status-danger"
+                  >
+                    <span
+                      class="material-symbols-outlined text-[18px]"
+                      data-icon="close"
+                      >close</span
+                    >
+                  </div>
+                </div>
+                <span class="mt-1 block font-label-sm text-label-sm font-medium text-status-danger">
+                  Passwords do not match. Please re-enter the confirmation value.
+                </span>
+              </div>
+            </div>
+            <!-- Password Requirement Checklist -->
+            <div class="rounded-lg border border-brand-slate-200 bg-brand-slate-50 p-3">
+              <span
+                class="mb-2 block font-label-sm text-label-sm font-semibold uppercase tracking-wider text-brand-slate-500"
+              >
+                Institutional Cryptographic Requirements:
+              </span>
+              <div class="grid grid-cols-2 gap-2 font-label-sm text-label-sm">
+                <div class="flex items-center gap-1.5 font-medium text-status-danger">
+                  <span
+                    class="material-symbols-outlined text-[16px]"
+                    data-icon="cancel"
+                    >cancel</span
+                  >
+                  <span>At least 12 characters (Entered: 10)</span>
+                </div>
+                <div class="flex items-center gap-1.5 font-medium text-status-verified">
+                  <span
+                    class="material-symbols-outlined text-[16px]"
+                    data-icon="check_circle"
+                    style="font-variation-settings: &quot;FILL&quot; 1"
+                    >check_circle</span
+                  >
+                  <span>Includes upper and lowercase letters</span>
+                </div>
+                <div class="flex items-center gap-1.5 font-medium text-status-verified">
+                  <span
+                    class="material-symbols-outlined text-[16px]"
+                    data-icon="check_circle"
+                    style="font-variation-settings: &quot;FILL&quot; 1"
+                    >check_circle</span
+                  >
+                  <span>Contains numeric digits (0-9)</span>
+                </div>
+                <div class="flex items-center gap-1.5 font-medium text-status-danger">
+                  <span
+                    class="material-symbols-outlined text-[16px]"
+                    data-icon="cancel"
+                    >cancel</span
+                  >
+                  <span>Requires special symbol (#, $, %, !) in primary password</span>
+                </div>
+              </div>
+            </div>
+            <!-- 6. Terms & NCDMB Compliance Checkboxes (UNCHECKED WITH RED HIGHLIGHT) -->
+            <div class="space-y-3 rounded-lg border border-status-danger/70 bg-red-50/50 p-4">
+              <div class="flex items-start gap-3">
+                <input
+                  class="mt-1 h-4 w-4 rounded border-2 border-status-danger text-status-danger focus:ring-status-danger"
+                  id="terms_agree"
+                  type="checkbox"
+                />
+                <label
+                  class="font-body-sm text-body-sm leading-snug text-brand-navy-900"
+                  for="terms_agree"
+                >
+                  I hereby formally confirm my affiliation with the selected corporate operator,
+                  certify that the presented credentials conform to the Rivers State University
+                  Academic Integrity Charter, and consent to identity verification by the COREN
+                  registry.
+                </label>
+              </div>
+              <div class="flex items-start gap-3">
+                <input
+                  class="mt-1 h-4 w-4 rounded border-2 border-status-danger text-status-danger focus:ring-status-danger"
+                  id="ncdmb_compliance"
+                  type="checkbox"
+                />
+                <label
+                  class="font-body-sm text-body-sm leading-snug text-brand-navy-900"
+                  for="ncdmb_compliance"
+                >
+                  I accept mandatory data transmission to the Nigerian Content Development and
+                  Monitoring Board (NCDMB) National Joint Qualification System (NJQS) repository for
+                  statutory accreditation tracking.
+                </label>
+              </div>
+              <div
+                class="flex items-center gap-1.5 pt-1 font-label-sm text-label-sm font-bold text-status-danger"
+              >
+                <span
+                  class="material-symbols-outlined text-[18px]"
+                  data-icon="error_outline"
+                  >error_outline</span
+                >
+                <span
+                  >You must accept the CMOTD Terms of Technical Training and NCDMB Human Capital
+                  compliance to continue.</span
+                >
+              </div>
+            </div>
+            <!-- 7. Primary Action Buttons & Secondary Support Actions -->
+            <div class="space-y-4 border-t border-brand-slate-200 pt-3">
+              <div class="flex flex-col items-center gap-4 sm:flex-row">
+                <!-- Disabled / Error Styling Action Button -->
+                <button
+                  class="bg-brand-slate-300 border-brand-slate-300 flex w-full cursor-not-allowed items-center justify-center gap-2 rounded-lg border px-6 py-3 font-label-md text-label-md font-bold text-brand-slate-500 sm:flex-1"
+                  disabled=""
+                  type="button"
+                >
+                  <span
+                    class="material-symbols-outlined text-[18px]"
+                    data-icon="lock"
+                    >lock</span
+                  >
+                  Register Institutional Account
+                  <span
+                    class="rounded bg-red-100 px-2 py-0.5 font-mono text-xs font-bold text-status-danger"
+                  >
+                    3 Errors
+                  </span>
+                </button>
+                <!-- Secondary Retry / Reset Action -->
+                <button
+                  class="border-brand-slate-300 flex w-full items-center justify-center gap-1.5 rounded-lg border px-5 py-3 font-label-md text-label-md font-bold text-brand-slate-700 transition-colors hover:bg-brand-slate-50 sm:w-auto"
+                  type="button"
+                >
+                  <span
+                    class="material-symbols-outlined text-[18px]"
+                    data-icon="restart_alt"
+                    >restart_alt</span
+                  >
+                  Reset Form
+                </button>
+              </div>
+              <!-- Secondary Help & Navigation Links -->
+              <div
+                class="text-brand-slate-600 flex flex-col items-center justify-between gap-2 pt-1 font-body-sm text-body-sm sm:flex-row"
+              >
+                <div class="flex items-center gap-1 text-primary">
+                  <span
+                    class="material-symbols-outlined text-[18px]"
+                    data-icon="support_agent"
+                    >support_agent</span
+                  >
+                  <span>Contact Admissions Helpdesk:</span>
+                  <a
+                    class="font-bold hover:underline"
+                    href="tel:+23484992410"
+                    >+234 84 992 410</a
+                  >
+                </div>
+                <a
+                  class="flex items-center gap-1 font-bold text-brand-slate-800 hover:text-primary"
+                  href="#"
+                >
+                  <span
+                    class="material-symbols-outlined text-[16px]"
+                    data-icon="login"
+                    >login</span
+                  >
+                  Return to Login
+                </a>
+              </div>
+            </div>
+          </form>
+        </section>
+      </div>
+      <!-- ================= REGULATORY & AUDIT MARQUEE ================= -->
+      <div
+        class="text-brand-slate-600 mt-12 flex flex-col items-center justify-between gap-4 rounded-xl border border-brand-slate-200 bg-brand-slate-100 p-4 font-body-sm text-body-sm md:flex-row"
+      >
+        <div class="flex items-center gap-3">
+          <div
+            class="flex h-8 w-8 items-center justify-center rounded bg-brand-navy-900 text-xs font-bold text-white"
+          >
+            RSU
+          </div>
+          <div>
+            <span class="block font-bold text-brand-navy-900"
+              >Rivers State University Integrated Portal Network</span
+            >
+            <span class="text-xs text-brand-slate-500"
+              >Security Clearance Level: Restricted Enterprise Tier 3 (NCDMB / COREN Verified)</span
+            >
+          </div>
+        </div>
+        <div class="flex items-center gap-4 font-label-sm text-label-sm">
+          <span class="flex items-center gap-1 font-semibold text-status-verified">
+            <span
+              class="material-symbols-outlined text-[16px]"
+              data-icon="check_circle"
+              style="font-variation-settings: &quot;FILL&quot; 1"
+              >check_circle</span
+            >
+            Registry Active
+          </span>
+          <span class="flex items-center gap-1 text-brand-slate-500">
+            <span
+              class="material-symbols-outlined text-[16px]"
+              data-icon="history"
+              >history</span
+            >
+            Server Sync: 2025-05-18 11:24 WAT
+          </span>
+        </div>
+      </div>
+    </main>
+    <!-- ================= INSTITUTIONAL RICH FOOTER (Shared Component Implementation) ================= -->
+    <cmotd-institution-strip></cmotd-institution-strip>
+    <cmotd-site-footer></cmotd-site-footer>
+  </body>
+</html>

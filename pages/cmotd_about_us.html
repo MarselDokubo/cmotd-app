@@ -1,0 +1,923 @@
+<!doctype html>
+
+<html
+  class="cmotd-theme-academic scroll-smooth"
+  lang="en"
+>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      content="width=device-width, initial-scale=1.0"
+      name="viewport"
+    />
+    <title>
+      Centre for Marine and Offshore Technology Development (CMOTD) | Rivers State University
+    </title>
+    <link
+      href="../favicon.ico"
+      rel="icon"
+      type="image/x-icon"
+    />
+    <link
+      href="../assets/css/tailwind-build.css"
+      rel="stylesheet"
+    />
+    <link
+      href="../assets/css/cmotd-global.css"
+      rel="stylesheet"
+    />
+    <script
+      defer=""
+      src="../assets/js/site-config.js"
+    ></script>
+    <script
+      defer=""
+      src="../assets/js/cmotd-components.js"
+    ></script>
+  </head>
+  <body
+    class="flex min-h-screen flex-col bg-background text-on-surface antialiased selection:bg-primary selection:text-on-primary"
+  >
+    <!-- TopNavBar (Shared Component) -->
+    <cmotd-site-header active="about"></cmotd-site-header>
+    <!-- Main Content Canvas -->
+    <main class="flex-grow">
+      <!-- Breadcrumb & Hero Section -->
+      <section
+        class="relative overflow-hidden border-b border-brand-slate-200 bg-surface-container-lowest pb-16 pt-8"
+      >
+        <!-- Subtle Architectural Background Grid -->
+        <div
+          class="pointer-events-none absolute inset-0 bg-[linear-gradient(to_right,#eff4ff_1px,transparent_1px),linear-gradient(to_bottom,#eff4ff_1px,transparent_1px)] bg-[size:32px_32px] opacity-70"
+        ></div>
+        <div class="relative z-10 mx-auto max-w-[1280px] px-4 lg:px-8">
+          <!-- Breadcrumb Bar -->
+          <div
+            class="mb-8 flex items-center gap-2 font-label-sm text-label-sm text-brand-slate-500"
+          >
+            <a
+              class="flex items-center gap-1 transition-colors hover:text-primary"
+              href="#"
+            >
+              <span
+                class="material-symbols-outlined text-sm"
+                data-icon="home"
+                >home</span
+              >
+              Home
+            </a>
+            <span
+              class="material-symbols-outlined text-xs text-brand-slate-400"
+              data-icon="chevron_right"
+              >chevron_right</span
+            >
+            <span class="font-semibold text-brand-slate-800">About CMOTD</span>
+          </div>
+          <div class="grid grid-cols-1 items-center gap-8 lg:grid-cols-12 lg:gap-12">
+            <div class="flex flex-col items-start lg:col-span-7">
+              <div
+                class="mb-6 inline-flex items-center gap-2 rounded-lg border border-primary-fixed bg-surface-container-low px-3 py-1.5 font-label-sm text-label-sm text-primary"
+              >
+                <span class="h-2 w-2 rounded-full bg-status-verified"></span
+                ><span class=""
+                  >Rivers State University Official Engineering Institute • Est. 2021</span
+                >
+              </div>
+              <h1
+                class="mb-6 font-headline-lg text-headline-lg tracking-tight text-brand-navy-900 lg:font-display-lg lg:text-display-lg"
+              >
+                Pioneering Technical Rigor &amp; Computational Mastery in Maritime and Offshore
+                Engineering
+              </h1>
+              <p class="mb-8 font-body-lg text-body-lg leading-relaxed text-brand-slate-700">
+                Established at Rivers State University in Port Harcourt, Nigeria, the Centre for
+                Marine and Offshore Technology Development (CMOTD) bridges academic research and
+                high-stakes offshore and computing demands. We equip marine engineers and
+                computational scientists with internationally verified capability across deepwater
+                subsea systems, marine architecture, and digital engineering infrastructures.
+              </p>
+              <div class="mb-8 flex flex-wrap items-center gap-4">
+                <a
+                  class="flex items-center gap-2 rounded-lg bg-brand-cobalt-deep px-5 py-3 font-label-md text-label-md text-white shadow-sm transition-all hover:bg-primary"
+                  href="#leadership"
+                  ><span class="">Directorate Overview</span
+                  ><span
+                    class="material-symbols-outlined text-sm"
+                    data-icon="arrow_downward"
+                    >arrow_downward</span
+                  ></a
+                ><a
+                  class="flex items-center gap-2 rounded-lg border border-brand-slate-200 px-5 py-3 font-label-md text-label-md text-brand-navy-900 transition-all hover:bg-surface-container-low"
+                  href="#milestones"
+                  ><span class="">Institutional Milestones</span
+                  ><span
+                    class="material-symbols-outlined text-sm"
+                    data-icon="timeline"
+                    >timeline</span
+                  ></a
+                >
+              </div>
+              <div
+                class="flex w-full flex-wrap items-center gap-2 border-t border-brand-slate-200 pt-2"
+              >
+                <span
+                  class="mr-2 text-[11px] font-semibold uppercase tracking-wider text-brand-slate-500"
+                  >Accreditations:</span
+                ><span
+                  class="inline-flex items-center gap-1 rounded border border-status-verified-border bg-status-verified-bg px-2.5 py-1 text-[11px] font-semibold text-status-verified"
+                  ><span
+                    class="material-symbols-outlined text-xs"
+                    data-icon="verified_user"
+                    >verified_user</span
+                  >COREN &amp; NCDMB Certified</span
+                ><span
+                  class="inline-flex items-center gap-1 rounded border border-primary-fixed bg-surface-container-low px-2.5 py-1 text-[11px] font-semibold text-primary"
+                  ><span
+                    class="material-symbols-outlined text-xs"
+                    data-icon="verified"
+                    >verified</span
+                  >ISO 17025 Compliant Labs</span
+                ><span
+                  class="inline-flex items-center gap-1 rounded border border-brand-slate-200 bg-brand-slate-100 px-2.5 py-1 text-[11px] font-semibold text-brand-slate-700"
+                  ><span
+                    class="material-symbols-outlined text-xs"
+                    data-icon="anchor"
+                    >anchor</span
+                  >Faculty of Engineering, RSU</span
+                >
+              </div>
+            </div>
+            <div class="lg:col-span-5">
+              <div
+                class="group relative overflow-hidden rounded-xl border border-brand-slate-200 bg-surface-bright shadow-md"
+              >
+                <div class="relative h-80 w-full overflow-hidden lg:h-[430px]">
+                  <img
+                    alt="Rivers State University CMOTD Campus &amp; Maritime Hydrodynamics Research Complex"
+                    class="h-full w-full object-cover transition-all duration-700 group-hover:scale-105"
+                    decoding="async"
+                    fetchpriority="high"
+                    loading="eager"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuANHghe8HvQcwUmUsLH01LU08GIwb8NxI32GKjluiptcB_3HEIIAjjQ2thoXlKsx0wiVnHQ-c6tjUZgFOYQLYMvUm8bH9xe2SEDrOUHCh18yd3LlMRVx0bpwWUyZxCsWMNhjG0Rmf_EFTY4fvnphkvkkUh-jZjLSMMjZYBCHIYs4rhX3OSXQe9hS0r7ILHAFLoVsY0mDmhkwiM516ezUcyufo2wz7j_NTgQbHcOAKKlJNgvumb4qvSf"
+                  />
+                  <div
+                    class="absolute inset-0 bg-gradient-to-t from-brand-navy-950/80 via-brand-navy-950/20 to-transparent"
+                  ></div>
+                  <div
+                    class="absolute left-4 top-4 flex items-center gap-2 rounded-lg border border-white/10 bg-brand-navy-950/85 px-3 py-1.5 text-white shadow-sm backdrop-blur-md"
+                  >
+                    <span
+                      class="material-symbols-outlined text-sm text-status-verified"
+                      data-icon="domain"
+                      >domain</span
+                    ><span class="font-label-sm text-label-sm font-semibold tracking-wide"
+                      >Port Harcourt Marine Campus</span
+                    >
+                  </div>
+                  <div
+                    class="absolute bottom-4 left-4 right-4 rounded-lg border border-brand-slate-200 bg-surface-container-lowest/95 p-4 shadow-lg backdrop-blur-md"
+                  >
+                    <div
+                      class="mb-2 flex items-center justify-between border-b border-brand-slate-200 pb-2"
+                    >
+                      <div>
+                        <span
+                          class="font-label-sm text-label-sm font-bold uppercase tracking-wider text-primary"
+                          >RSU Faculty of Engineering</span
+                        >
+                        <div
+                          class="font-title-lg text-title-lg font-bold leading-tight text-brand-navy-900"
+                        >
+                          Applied Subsea &amp; Hydrodynamics Hub
+                        </div>
+                      </div>
+                      <div
+                        class="flex h-9 w-9 items-center justify-center rounded-lg bg-surface-container-low text-primary"
+                      >
+                        <span
+                          class="material-symbols-outlined text-lg"
+                          data-icon="waves"
+                          >waves</span
+                        >
+                      </div>
+                    </div>
+                    <div class="grid grid-cols-2 gap-2 text-xs text-brand-slate-700">
+                      <div class="flex items-center gap-1.5">
+                        <span
+                          class="material-symbols-outlined text-sm text-primary"
+                          data-icon="memory"
+                          >memory</span
+                        ><span class="">AVEVA E3D &amp; Caesar II</span>
+                      </div>
+                      <div class="flex items-center gap-1.5">
+                        <span
+                          class="material-symbols-outlined text-sm text-status-verified"
+                          data-icon="speed"
+                          >speed</span
+                        ><span class="">High-Performance Rig</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Quick Stats Strip -->
+          <div
+            class="mt-16 grid grid-cols-2 gap-6 border-t border-brand-slate-200 pt-8 md:grid-cols-4"
+          >
+            <div class="rounded-lg border border-brand-slate-200 bg-surface-container-lowest p-4">
+              <div class="font-headline-lg text-headline-lg font-bold text-primary">2021</div>
+              <div class="font-title-lg text-title-lg font-semibold text-brand-navy-900">
+                Established
+              </div>
+              <p class="font-body-sm text-body-sm text-brand-slate-500">
+                Chartered at Rivers State University
+              </p>
+            </div>
+            <div class="rounded-lg border border-brand-slate-200 bg-surface-container-lowest p-4">
+              <div class="font-headline-lg text-headline-lg font-bold text-brand-cobalt">
+                3,200+
+              </div>
+              <div class="font-title-lg text-title-lg font-semibold text-brand-navy-900">
+                Engineers &amp; Coders
+              </div>
+              <p class="font-body-sm text-body-sm text-brand-slate-500">
+                Certified for high-stakes operations
+              </p>
+            </div>
+            <div class="rounded-lg border border-brand-slate-200 bg-surface-container-lowest p-4">
+              <div class="font-headline-lg text-headline-lg font-bold text-brand-navy-900">15+</div>
+              <div class="font-title-lg text-title-lg font-semibold text-brand-navy-900">
+                Specializations
+              </div>
+              <p class="font-body-sm text-body-sm text-brand-slate-500">
+                Subsea, CAD, Process, Cloud &amp; AI
+              </p>
+            </div>
+            <div class="rounded-lg border border-brand-slate-200 bg-surface-container-lowest p-4">
+              <div class="font-headline-lg text-headline-lg font-bold text-primary">40+</div>
+              <div class="font-title-lg text-title-lg font-semibold text-brand-navy-900">
+                Industry Partners
+              </div>
+              <p class="font-body-sm text-body-sm text-brand-slate-500">
+                Offshore operators &amp; tech companies
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Centre Leadership & Directorate Address -->
+      <section
+        class="bg-surface-bright py-20"
+        id="leadership"
+      >
+        <div class="mx-auto max-w-[1280px] px-4 lg:px-8">
+          <div class="mx-auto mb-16 max-w-3xl text-center">
+            <span
+              class="font-label-sm text-label-sm font-bold uppercase tracking-wider text-primary"
+              >Executive Directorate</span
+            >
+            <h2 class="mt-2 font-headline-lg text-headline-lg tracking-tight text-brand-navy-900">
+              Directorate Address &amp; Academic Leadership
+            </h2>
+            <p class="mt-3 font-body-md text-body-md text-brand-slate-700">
+              Guiding the nexus of engineering science and computational implementation through
+              decades of offshore research and institutional administration.
+            </p>
+          </div>
+          <div
+            class="rounded-xl border border-brand-slate-200 bg-surface-container-lowest p-8 shadow-sm lg:p-12"
+          >
+            <div class="grid grid-cols-1 items-start gap-10 lg:grid-cols-12">
+              <!-- Director Portrait & Academic Badges -->
+              <div
+                class="flex flex-col items-center rounded-xl border border-brand-slate-200 bg-surface-container-low p-6 text-center lg:col-span-4"
+              >
+                <div
+                  class="relative mb-6 h-56 w-48 overflow-hidden rounded-lg border-2 border-primary/20 bg-brand-slate-200 shadow-md"
+                >
+                  <img
+                    class="h-full w-full object-cover"
+                    data-alt="An authoritative official academic portrait of a distinguished African male engineering professor wearing formal academic attire and corporate suit. He stands confidently inside a modern marine engineering computational laboratory with blurred technical simulation displays in the background. The lighting is pristine, corporate, and soft, highlighting dignified leadership with institutional blue accents."
+                    decoding="async"
+                    loading="lazy"
+                    src="/assets/img/staff/director.webp"
+                  />
+                  <div
+                    class="absolute bottom-2 right-2 rounded bg-primary px-2 py-0.5 text-[10px] font-bold text-white shadow"
+                  >
+                    DIRECTOR
+                  </div>
+                </div>
+                <h3 class="font-headline-sm text-headline-sm font-bold text-brand-navy-900">
+                  Engr. Dr. Eferebo I. Sylvanus,
+                </h3>
+                <p class="mt-1 font-label-md text-label-md font-semibold text-primary">
+                  PhD, MNSE, MINENA, FIMC
+                </p>
+                <p class="mt-2 font-body-sm text-body-sm text-brand-slate-500">
+                  Chairman, Management Board / Director — CMOTD; National Chairman, Nigerian
+                  Institution of Marine Engineers and Naval Architects(NIMENA)
+                </p>
+                <div
+                  class="mt-6 flex w-full flex-wrap justify-center gap-1.5 border-t border-brand-slate-200 pt-4"
+                >
+                  <span
+                    class="rounded bg-brand-slate-100 px-2 py-1 text-[11px] font-medium text-brand-slate-700"
+                    >Council for Regulation of Engineering (COREN)</span
+                  >
+                  <span
+                    class="rounded bg-brand-slate-100 px-2 py-1 text-[11px] font-medium text-brand-slate-700"
+                    >Fellow, Nigerian Society of Engineers</span
+                  >
+                </div>
+              </div>
+              <!-- Director Statement Content -->
+              <div class="flex h-full flex-col justify-between lg:col-span-8">
+                <div>
+                  <div
+                    class="mb-4 inline-flex items-center gap-2 font-label-md text-label-md text-primary"
+                  >
+                    <span
+                      class="material-symbols-outlined"
+                      data-icon="format_quote"
+                      >format_quote</span
+                    >
+                    <span class="">Director's Biannual Strategic Address</span>
+                  </div>
+                  <h4 class="mb-4 font-title-lg text-title-lg font-bold text-brand-navy-900">
+                    "Equipping African Engineers with Sovereign Computational Capability for the
+                    Global Energy Corridor"
+                  </h4>
+                  <div
+                    class="space-y-4 font-body-md text-body-md leading-relaxed text-brand-slate-700"
+                  >
+                    <p class="">
+                      For decades, the subsea engineering and deepwater offshore operations in the
+                      Gulf of Guinea relied heavily on external computational modeling, structural
+                      verification from distant engineering hubs, and expatriate technical
+                      sign-offs. At CMOTD, our mandate is uncompromising: to dismantle this
+                      technological dependency through uncompromising academic rigor and hands-on
+                      operational mastery.
+                    </p>
+                    <p class="">
+                      Working directly under the auspices of the Rivers State University Faculty of
+                      Engineering, we have united traditional marine hydrodynamics and pipeline
+                      integrity engineering with high-velocity computer science. Our cohorts do not
+                      just study theoretical stress equations—they validate them in Caesar II,
+                      construct digital twins using AVEVA E3D, develop automation scripts in Python,
+                      and simulate dynamic multi-phase flows with Aspen HYSYS.
+                    </p>
+                    <p class="">
+                      Whether you are an aspiring naval architect, an experienced offshore
+                      structural lead, or a software engineer building predictive maintenance
+                      algorithms for subsea manifolds, CMOTD provides the validated benchmark of
+                      excellence that multinational operators trust without reservation.
+                    </p>
+                  </div>
+                </div>
+                <!-- Signature & Institutional Seal Block -->
+                <div
+                  class="mt-8 flex items-center justify-between border-t border-brand-slate-200 pt-6"
+                >
+                  <div>
+                    <div class="mt-1 text-xs text-brand-slate-500">
+                      Office of the Director • Senate Building, RSU Campus
+                    </div>
+                  </div>
+                  <div class="flex items-center gap-3 text-right">
+                    <div class="hidden sm:block">
+                      <div class="text-xs font-semibold text-brand-navy-900">
+                        Rivers State University Charter
+                      </div>
+                      <div class="text-[11px] text-brand-slate-500">
+                        Official Directorate Seal (RSU/CMOTD/2021)
+                      </div>
+                    </div>
+                    <div
+                      class="flex h-12 w-12 items-center justify-center rounded-full border border-brand-cobalt bg-surface-container-low text-brand-cobalt"
+                    >
+                      <span
+                        class="material-symbols-outlined text-2xl"
+                        data-icon="verified"
+                        >verified</span
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Institutional Mission, Vision & Core Values -->
+      <section class="border-y border-brand-slate-200 bg-surface-container-lowest py-20">
+        <div class="mx-auto max-w-[1280px] px-4 lg:px-8">
+          <div class="mx-auto mb-16 max-w-3xl text-center">
+            <span
+              class="font-label-sm text-label-sm font-bold uppercase tracking-wider text-primary"
+              >Foundational Pillars</span
+            >
+            <h2 class="mt-2 font-headline-lg text-headline-lg tracking-tight text-brand-navy-900">
+              Institutional Mission, Vision &amp; Core Principles
+            </h2>
+            <p class="mt-3 font-body-md text-body-md text-brand-slate-700">
+              Anchoring marine technology education in industrial standards, code compliance, and
+              sovereign innovation.
+            </p>
+          </div>
+          <!-- Vision & Mission 2-Column Bento -->
+          <div class="mb-12 grid grid-cols-1 gap-8 md:grid-cols-2">
+            <!-- Vision Card -->
+            <div
+              class="relative overflow-hidden rounded-xl border border-brand-slate-200 bg-surface-container-low p-8"
+            >
+              <div
+                class="mb-6 flex h-12 w-12 items-center justify-center rounded-lg bg-primary text-white shadow-sm"
+              >
+                <span
+                  class="material-symbols-outlined text-2xl"
+                  data-icon="visibility"
+                  >visibility</span
+                >
+              </div>
+              <h3 class="mb-3 font-headline-md text-headline-md text-brand-navy-900">Our Vision</h3>
+              <p class="font-body-md text-body-md leading-relaxed text-brand-slate-700">
+                To be Africa's foremost technical incubator and research powerhouse, bridging
+                academic excellence and high-stakes offshore energy, maritime transport, and
+                sovereign digital infrastructure through world-class precision engineering.
+              </p>
+              <div
+                class="mt-6 flex items-center gap-2 border-t border-brand-slate-200 pt-4 font-label-md text-label-md text-primary"
+              >
+                <span
+                  class="material-symbols-outlined text-base"
+                  data-icon="check_circle"
+                  >check_circle</span
+                >
+                <span class="">Pan-African Technical Leadership Benchmark</span>
+              </div>
+            </div>
+            <!-- Mission Card -->
+            <div
+              class="relative overflow-hidden rounded-xl border border-brand-slate-200 bg-surface-container-low p-8"
+            >
+              <div
+                class="mb-6 flex h-12 w-12 items-center justify-center rounded-lg bg-brand-cobalt-deep text-white shadow-sm"
+              >
+                <span
+                  class="material-symbols-outlined text-2xl"
+                  data-icon="flag"
+                  >flag</span
+                >
+              </div>
+              <h3 class="mb-3 font-headline-md text-headline-md text-brand-navy-900">
+                Our Mission
+              </h3>
+              <p class="font-body-md text-body-md leading-relaxed text-brand-slate-700">
+                Equipping engineers, marine professionals, and computer scientists with verified
+                technical competence in ASME/API pipe stress, AVEVA 3D plant design, dynamic process
+                simulation, cloud infrastructure, and industrial AI to fuel national
+                self-sufficiency and global competitiveness.
+              </p>
+              <div
+                class="mt-6 flex items-center gap-2 border-t border-brand-slate-200 pt-4 font-label-md text-label-md text-brand-cobalt-deep"
+              >
+                <span
+                  class="material-symbols-outlined text-base"
+                  data-icon="check_circle"
+                  >check_circle</span
+                >
+                <span class="">Direct Industry-Standard Accreditation</span>
+              </div>
+            </div>
+          </div>
+          <!-- 4 Core Values Grid -->
+          <h3 class="mb-6 text-center font-title-lg text-title-lg font-bold text-brand-navy-900">
+            The Four Operational Values
+          </h3>
+          <div class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
+            <div
+              class="rounded-lg border border-brand-slate-200 bg-surface-bright p-6 transition-all hover:border-primary"
+            >
+              <div
+                class="mb-4 flex h-10 w-10 items-center justify-center rounded-md bg-surface-container-highest text-primary"
+              >
+                <span
+                  class="material-symbols-outlined text-xl"
+                  data-icon="rule"
+                  >rule</span
+                >
+              </div>
+              <h4 class="mb-2 font-title-lg text-title-lg font-semibold text-brand-navy-900">
+                Academic Rigor &amp; Code Compliance
+              </h4>
+              <p class="font-body-sm text-body-sm text-brand-slate-700">
+                Uncompromising adherence to international codes (ASME B31.3/B31.4/B31.8, API 579,
+                DNV-RP-F101) in all computational and physical evaluations.
+              </p>
+            </div>
+            <div
+              class="rounded-lg border border-brand-slate-200 bg-surface-bright p-6 transition-all hover:border-primary"
+            >
+              <div
+                class="mb-4 flex h-10 w-10 items-center justify-center rounded-md bg-surface-container-highest text-primary"
+              >
+                <span
+                  class="material-symbols-outlined text-xl"
+                  data-icon="memory"
+                  >memory</span
+                >
+              </div>
+              <h4 class="mb-2 font-title-lg text-title-lg font-semibold text-brand-navy-900">
+                Computational Innovation
+              </h4>
+              <p class="font-body-sm text-body-sm text-brand-slate-700">
+                Integrating numerical methods, finite element analysis (FEA), computational fluid
+                dynamics (CFD), and Python-driven machine learning models.
+              </p>
+            </div>
+            <div
+              class="rounded-lg border border-brand-slate-200 bg-surface-bright p-6 transition-all hover:border-primary"
+            >
+              <div
+                class="mb-4 flex h-10 w-10 items-center justify-center rounded-md bg-surface-container-highest text-primary"
+              >
+                <span
+                  class="material-symbols-outlined text-xl"
+                  data-icon="hub"
+                  >hub</span
+                >
+              </div>
+              <h4 class="mb-2 font-title-lg text-title-lg font-semibold text-brand-navy-900">
+                Local Content &amp; Capability
+              </h4>
+              <p class="font-body-sm text-body-sm text-brand-slate-700">
+                Fostering sovereign capability in marine fabrication, deepwater engineering, and
+                subsea digital twins in line with NOGICD Act mandates.
+              </p>
+            </div>
+            <div
+              class="rounded-lg border border-brand-slate-200 bg-surface-bright p-6 transition-all hover:border-primary"
+            >
+              <div
+                class="mb-4 flex h-10 w-10 items-center justify-center rounded-md bg-surface-container-highest text-primary"
+              >
+                <span
+                  class="material-symbols-outlined text-xl"
+                  data-icon="security"
+                  >security</span
+                >
+              </div>
+              <h4 class="mb-2 font-title-lg text-title-lg font-semibold text-brand-navy-900">
+                Safety &amp; Maritime Integrity
+              </h4>
+              <p class="font-body-sm text-body-sm text-brand-slate-700">
+                Zero-tolerance principles regarding environmental stewardship, vessel structural
+                resilience, and subsea process containment safeguards.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Strategic Objectives & Historical Milestones -->
+      <section
+        class="bg-surface-bright py-20"
+        id="milestones"
+      >
+        <div class="mx-auto max-w-[1280px] px-4 lg:px-8">
+          <div class="mx-auto mb-16 max-w-3xl text-center">
+            <span
+              class="font-label-sm text-label-sm font-bold uppercase tracking-wider text-primary"
+              >Evolutionary Roadmap</span
+            >
+            <h2 class="mt-2 font-headline-lg text-headline-lg tracking-tight text-brand-navy-900">
+              Strategic Objectives &amp; Institutional Milestones
+            </h2>
+            <p class="mt-3 font-body-md text-body-md text-brand-slate-700">
+              Since our chartering in 2021, CMOTD has systematically expanded laboratory capacity,
+              accredited curriculum, and enterprise-grade software certifications.
+            </p>
+          </div>
+          <div class="relative ml-4 space-y-12 border-l-2 border-brand-slate-200 md:ml-32">
+            <!-- Milestone 1: 2021 -->
+            <div class="group relative pl-8 md:pl-12">
+              <div
+                class="absolute -left-[9px] top-1.5 h-4 w-4 rounded-full border-2 border-primary bg-surface-bright transition-colors group-hover:bg-primary"
+              ></div>
+              <div class="top-0 w-24 md:absolute md:-left-32 md:text-right">
+                <span class="font-headline-sm text-headline-sm font-bold text-primary"
+                  >Q1 2021</span
+                >
+              </div>
+              <div
+                class="rounded-lg border border-brand-slate-200 bg-surface-container-lowest p-6 shadow-sm transition-all hover:border-brand-slate-400"
+              >
+                <span
+                  class="mb-2 inline-block rounded bg-surface-container-low px-2 py-0.5 text-[11px] font-semibold uppercase tracking-wider text-primary"
+                  >Charter Established</span
+                >
+                <h3 class="mb-2 font-title-lg text-title-lg font-bold text-brand-navy-900">
+                  Foundation at RSU Faculty of Engineering
+                </h3>
+                <p class="font-body-md text-body-md leading-relaxed text-brand-slate-700">
+                  Ratified by the Rivers State University Senate and Governing Council as an
+                  autonomous centre of excellence dedicated to subsea development, offshore
+                  engineering dynamics, and computational systems development in Port Harcourt.
+                </p>
+              </div>
+            </div>
+            <!-- Milestone 2: 2022 -->
+            <div class="group relative pl-8 md:pl-12">
+              <div
+                class="absolute -left-[9px] top-1.5 h-4 w-4 rounded-full border-2 border-primary bg-surface-bright transition-colors group-hover:bg-primary"
+              ></div>
+              <div class="top-0 w-24 md:absolute md:-left-32 md:text-right">
+                <span class="font-headline-sm text-headline-sm font-bold text-primary"
+                  >Q3 2022</span
+                >
+              </div>
+              <div
+                class="rounded-lg border border-brand-slate-200 bg-surface-container-lowest p-6 shadow-sm transition-all hover:border-brand-slate-400"
+              >
+                <span
+                  class="mb-2 inline-block rounded bg-surface-container-low px-2 py-0.5 text-[11px] font-semibold uppercase tracking-wider text-primary"
+                  >Infrastructure Expansion</span
+                >
+                <h3 class="mb-2 font-title-lg text-title-lg font-bold text-brand-navy-900">
+                  Commissioning of AVEVA E3D &amp; Caesar II CAD Suites
+                </h3>
+                <p class="font-body-md text-body-md leading-relaxed text-brand-slate-700">
+                  Inauguration of the 60-seat High-Performance Engineering Workstation Suite,
+                  powered by AVEVA PDMS/E3D, Hexagon Caesar II stress analysis, and Aspen HYSYS
+                  simulation environments for real-world offshore projects.
+                </p>
+              </div>
+            </div>
+            <!-- Milestone 3: 2023 -->
+            <div class="group relative pl-8 md:pl-12">
+              <div
+                class="absolute -left-[9px] top-1.5 h-4 w-4 rounded-full border-2 border-primary bg-surface-bright transition-colors group-hover:bg-primary"
+              ></div>
+              <div class="top-0 w-24 md:absolute md:-left-32 md:text-right">
+                <span class="font-headline-sm text-headline-sm font-bold text-primary"
+                  >Q2 2023</span
+                >
+              </div>
+              <div
+                class="rounded-lg border border-brand-slate-200 bg-surface-container-lowest p-6 shadow-sm transition-all hover:border-brand-slate-400"
+              >
+                <span
+                  class="mb-2 inline-block rounded bg-surface-container-low px-2 py-0.5 text-[11px] font-semibold uppercase tracking-wider text-primary"
+                  >Curriculum Diversification</span
+                >
+                <h3 class="mb-2 font-title-lg text-title-lg font-bold text-brand-navy-900">
+                  Rollout of Software Development &amp; Industrial Machine Learning Tracks
+                </h3>
+                <p class="font-body-md text-body-md leading-relaxed text-brand-slate-700">
+                  Formal integration of cloud engineering (AWS/Azure), Python numerical scientific
+                  stack, and predictive machine learning models for subsea asset integrity, vessel
+                  tracking, and SCADA IoT data aggregation.
+                </p>
+              </div>
+            </div>
+            <!-- Milestone 4: 2024 - 2025 -->
+            <div class="group relative pl-8 md:pl-12">
+              <div
+                class="absolute -left-[9px] top-1.5 h-4 w-4 rounded-full border-2 border-status-verified bg-surface-bright transition-colors group-hover:bg-status-verified"
+              ></div>
+              <div class="top-0 w-24 md:absolute md:-left-32 md:text-right">
+                <span class="font-headline-sm text-headline-sm font-bold text-status-verified"
+                  >2024-2025</span
+                >
+              </div>
+              <div
+                class="rounded-lg border border-brand-slate-200 bg-surface-container-lowest p-6 shadow-sm transition-all hover:border-brand-slate-400"
+              >
+                <span
+                  class="mb-2 inline-block rounded bg-status-verified-bg px-2 py-0.5 text-[11px] font-semibold uppercase tracking-wider text-status-verified"
+                  >National Standardization</span
+                >
+                <h3 class="mb-2 font-title-lg text-title-lg font-bold text-brand-navy-900">
+                  NCDMB Local Content Accreditation &amp; Cryptographic Verification Registry
+                </h3>
+                <p class="font-body-md text-body-md leading-relaxed text-brand-slate-700">
+                  Achieved category-A certification with the Nigerian Content Development and
+                  Monitoring Board (NCDMB), alongside deployment of the public Cryptographic
+                  Certificate Verification Registry for international employer verification.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Management & Governance Structure (Organogram overview) -->
+      <section class="border-t border-brand-slate-200 bg-surface-container-lowest py-20">
+        <div class="mx-auto max-w-[1280px] px-4 lg:px-8">
+          <div class="mx-auto mb-16 max-w-3xl text-center">
+            <span
+              class="font-label-sm text-label-sm font-bold uppercase tracking-wider text-primary"
+              >Institutional Architecture</span
+            >
+            <h2 class="mt-2 font-headline-lg text-headline-lg tracking-tight text-brand-navy-900">
+              Management &amp; Governance Organogram
+            </h2>
+            <p class="mt-3 font-body-md text-body-md text-brand-slate-700">
+              Structured administrative and academic oversight guaranteeing regulatory compliance,
+              curriculum rigor, and industry relevance.
+            </p>
+          </div>
+          <div
+            class="rounded-xl border border-brand-slate-200 bg-surface-bright p-8 shadow-sm lg:p-10"
+          >
+            <!-- Tier 1: Governing Council -->
+            <div class="mb-6 flex justify-center">
+              <div
+                class="w-full max-w-md rounded-lg border-2 border-primary bg-surface-container-lowest p-4 text-center shadow-sm"
+              >
+                <span
+                  class="rounded bg-surface-container-low px-2 py-0.5 text-[10px] font-bold uppercase tracking-wider text-primary"
+                  >Highest Regulatory Authority</span
+                >
+                <h4 class="mt-1 font-title-lg text-title-lg font-bold text-brand-navy-900">
+                  RSU Governing Council &amp; Vice Chancellor
+                </h4>
+                <p class="text-xs text-brand-slate-500">
+                  Statutory institutional mandate, university policy and ethical standards
+                </p>
+              </div>
+            </div>
+            <!-- Vertical Connector Line -->
+            <div class="bg-brand-slate-300 mx-auto mb-6 h-8 w-0.5"></div>
+            <!-- Tier 2: Directorate & Boards -->
+            <div class="mx-auto mb-6 grid max-w-4xl grid-cols-1 gap-4 md:grid-cols-3">
+              <div
+                class="rounded-lg border border-brand-slate-200 bg-surface-container-lowest p-4 text-center"
+              >
+                <span class="text-[10px] font-bold uppercase text-brand-slate-500"
+                  >Advisory Arm</span
+                >
+                <h5 class="mt-1 font-label-md text-label-md font-bold text-brand-navy-900">
+                  Industry Advisory Board
+                </h5>
+                <p class="mt-1 text-xs text-brand-slate-500">
+                  Offshore EPC operators, shipyard chiefs, and energy partners
+                </p>
+              </div>
+              <div class="rounded-lg bg-primary p-4 text-center text-white shadow-md">
+                <span
+                  class="rounded bg-white/10 px-2 py-0.5 text-[10px] font-bold uppercase tracking-wider text-primary-fixed"
+                  >Executive Arm</span
+                >
+                <h5 class="mt-1 font-title-lg text-title-lg font-bold">Office of the Director</h5>
+                <p class="mt-1 text-xs text-primary-fixed">
+                  Center leadership, strategic planning, university liaison
+                </p>
+              </div>
+              <div
+                class="rounded-lg border border-brand-slate-200 bg-surface-container-lowest p-4 text-center"
+              >
+                <span class="text-[10px] font-bold uppercase text-brand-slate-500"
+                  >Quality Arm</span
+                >
+                <h5 class="mt-1 font-label-md text-label-md font-bold text-brand-navy-900">
+                  Academic &amp; Research Board
+                </h5>
+                <p class="mt-1 text-xs text-brand-slate-500">
+                  Curriculum standards, examination committees, research publications
+                </p>
+              </div>
+            </div>
+            <!-- Vertical Connector Line -->
+            <div class="bg-brand-slate-300 mx-auto mb-6 h-8 w-0.5"></div>
+            <!-- Tier 3: Operational Departments (4-column) -->
+            <div class="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
+              <div class="rounded-lg border border-brand-slate-200 bg-surface-container-lowest p-4">
+                <div
+                  class="mb-2 flex h-8 w-8 items-center justify-center rounded bg-surface-container-low text-primary"
+                >
+                  <span
+                    class="material-symbols-outlined text-lg"
+                    data-icon="architecture"
+                    >architecture</span
+                  >
+                </div>
+                <h6 class="font-label-md text-label-md font-bold text-brand-navy-900">
+                  Subsea &amp; CAD Engineering
+                </h6>
+                <p class="mt-1 text-xs text-brand-slate-500">
+                  AVEVA E3D, Caesar II, FEA stress modeling, offshore piping integrity
+                </p>
+              </div>
+              <div class="rounded-lg border border-brand-slate-200 bg-surface-container-lowest p-4">
+                <div
+                  class="mb-2 flex h-8 w-8 items-center justify-center rounded bg-surface-container-low text-primary"
+                >
+                  <span
+                    class="material-symbols-outlined text-lg"
+                    data-icon="terminal"
+                    >terminal</span
+                  >
+                </div>
+                <h6 class="font-label-md text-label-md font-bold text-brand-navy-900">
+                  Software &amp; Data Systems
+                </h6>
+                <p class="mt-1 text-xs text-brand-slate-500">
+                  Full-stack web engineering, Python numerical analysis, industrial AI &amp; Cloud
+                </p>
+              </div>
+              <div class="rounded-lg border border-brand-slate-200 bg-surface-container-lowest p-4">
+                <div
+                  class="mb-2 flex h-8 w-8 items-center justify-center rounded bg-surface-container-low text-primary"
+                >
+                  <span
+                    class="material-symbols-outlined text-lg"
+                    data-icon="biotech"
+                    >biotech</span
+                  >
+                </div>
+                <h6 class="font-label-md text-label-md font-bold text-brand-navy-900">
+                  Research &amp; Publications
+                </h6>
+                <p class="mt-1 text-xs text-brand-slate-500">
+                  Hydrodynamic wave tank studies, hull optimization, scholarly journals
+                </p>
+              </div>
+              <div class="rounded-lg border border-brand-slate-200 bg-surface-container-lowest p-4">
+                <div
+                  class="mb-2 flex h-8 w-8 items-center justify-center rounded bg-surface-container-low text-primary"
+                >
+                  <span
+                    class="material-symbols-outlined text-lg"
+                    data-icon="fact_check"
+                    >fact_check</span
+                  >
+                </div>
+                <h6 class="font-label-md text-label-md font-bold text-brand-navy-900">
+                  Registry &amp; Certification
+                </h6>
+                <p class="mt-1 text-xs text-brand-slate-500">
+                  Trainee admission records, secure transcript registry, certificate verification
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ACCREDITATION ALLIANCES STRIP -->
+      <!-- Call to Action Banner -->
+      <section
+        class="relative overflow-hidden bg-primary py-16 text-white"
+        id="apply"
+      >
+        <div class="relative z-10 mx-auto max-w-[1280px] px-4 lg:px-8">
+          <div class="grid grid-cols-1 items-center gap-8 lg:grid-cols-12">
+            <div class="lg:col-span-8">
+              <span
+                class="rounded bg-white/10 px-3 py-1 text-[11px] font-bold uppercase tracking-wider text-primary-fixed"
+                >Next Cohort Admissions Open</span
+              >
+              <h2 class="mt-3 font-headline-lg text-headline-lg font-bold text-white">
+                Advance Your Technical Rigor in Offshore Engineering &amp; Computational Systems
+              </h2>
+              <p
+                class="mt-3 max-w-2xl font-body-md text-body-md leading-relaxed text-primary-fixed"
+              >
+                Explore our forthcoming academic schedules, download the 2025 Annual Prospectus, or
+                contact the Directorate for specialized corporate offshore cohort arrangements.
+              </p>
+            </div>
+            <div class="flex flex-col justify-end gap-3 sm:flex-row lg:col-span-4 lg:flex-col">
+              <a
+                class="flex items-center justify-center gap-2 rounded-lg bg-white px-6 py-3.5 text-center font-label-md text-label-md font-bold text-primary shadow-md transition-all hover:bg-surface-container-low"
+                href="#"
+              >
+                <span
+                  class="material-symbols-outlined text-lg"
+                  data-icon="download"
+                  >download</span
+                >
+                <span class="">Download Annual Prospectus</span>
+              </a>
+              <a
+                class="flex items-center justify-center gap-2 rounded-lg border border-primary-fixed px-6 py-3.5 text-center font-label-md text-label-md font-bold text-white transition-all hover:bg-white/10"
+                href="#"
+              >
+                <span
+                  class="material-symbols-outlined text-lg"
+                  data-icon="mail"
+                  >mail</span
+                >
+                <span class="">Contact Director's Office</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- Footer (Shared Institutional Rich Component) -->
+    <cmotd-institution-strip></cmotd-institution-strip>
+    <cmotd-site-footer></cmotd-site-footer>
+  </body>
+</html>

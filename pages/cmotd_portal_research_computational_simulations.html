@@ -1,0 +1,940 @@
+<!doctype html>
+
+<html
+  class="cmotd-theme-research"
+  lang="en"
+>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      content="width=device-width, initial-scale=1.0"
+      name="viewport"
+    />
+    <title>CMOTD E-PORTAL | Research &amp; Simulations Supercluster</title>
+    <link
+      href="../favicon.ico"
+      rel="icon"
+      type="image/x-icon"
+    />
+    <link
+      href="../assets/css/tailwind-build.css"
+      rel="stylesheet"
+    />
+    <link
+      href="../assets/css/cmotd-global.css"
+      rel="stylesheet"
+    />
+    <script
+      defer=""
+      src="../assets/js/site-config.js"
+    ></script>
+    <script
+      defer=""
+      src="../assets/js/cmotd-components.js"
+    ></script>
+  </head>
+  <body
+    class="flex min-h-screen overflow-x-hidden bg-background font-body-md text-body-md text-on-surface antialiased selection:bg-brand-cobalt selection:text-surface-container-lowest"
+  >
+    <!-- ================= PERSISTENT SIDEBAR (Shared Component: SideNavBar) ================= -->
+    <cmotd-portal-sidebar active="research"></cmotd-portal-sidebar>
+    <!-- ================= MAIN VIEWPORT CANVAS ================= -->
+    <div class="ml-[280px] flex min-w-0 flex-1 flex-col bg-background">
+      <!-- TOP HEADER (Shared Component: TopNavBar) -->
+      <cmotd-portal-topbar title="Research &amp; Simulations"></cmotd-portal-topbar>
+      <!-- IN-CONTENT SUB-NAVBAR (Secondary Tabs) -->
+      <div
+        class="flex items-center justify-between border-b border-brand-slate-200 bg-surface-container-lowest px-space-lg"
+      >
+        <div class="flex items-center gap-1 overflow-x-auto">
+          <button
+            class="flex items-center gap-2 whitespace-nowrap border-b-2 border-primary bg-surface-container-low/50 px-4 py-3 font-label-md text-label-md font-semibold text-primary"
+          >
+            <span
+              class="material-symbols-outlined text-base"
+              data-icon="lan"
+              >lan</span
+            >
+            <span>Supercluster Node Manager</span>
+            <span class="rounded bg-primary px-1.5 py-0.5 font-code-sm text-xs text-white"
+              >64 Nodes</span
+            >
+          </button>
+          <button
+            class="flex items-center gap-2 whitespace-nowrap border-b-2 border-transparent px-4 py-3 font-label-md text-label-md text-brand-slate-500 transition-colors hover:bg-brand-slate-50 hover:text-on-surface"
+          >
+            <span
+              class="material-symbols-outlined text-base"
+              data-icon="dynamic_feed"
+              >dynamic_feed</span
+            >
+            <span>OrcaFlex Dynamic Queue</span>
+          </button>
+          <button
+            class="flex items-center gap-2 whitespace-nowrap border-b-2 border-transparent px-4 py-3 font-label-md text-label-md text-brand-slate-500 transition-colors hover:bg-brand-slate-50 hover:text-on-surface"
+          >
+            <span
+              class="material-symbols-outlined text-base"
+              data-icon="air"
+              >air</span
+            >
+            <span>ANSYS CFD Jobs</span>
+          </button>
+          <button
+            class="flex items-center gap-2 whitespace-nowrap border-b-2 border-transparent px-4 py-3 font-label-md text-label-md text-brand-slate-500 transition-colors hover:bg-brand-slate-50 hover:text-on-surface"
+          >
+            <span
+              class="material-symbols-outlined text-base"
+              data-icon="tsunami"
+              >tsunami</span
+            >
+            <span>Physical Wave Tank Logging</span>
+          </button>
+          <button
+            class="flex items-center gap-2 whitespace-nowrap border-b-2 border-transparent px-4 py-3 font-label-md text-label-md text-brand-slate-500 transition-colors hover:bg-brand-slate-50 hover:text-on-surface"
+          >
+            <span
+              class="material-symbols-outlined text-base"
+              data-icon="sensors"
+              >sensors</span
+            >
+            <span>Metrology Data Streams</span>
+          </button>
+        </div>
+        <div class="hidden items-center gap-2 py-2 md:flex">
+          <button
+            class="flex items-center gap-1.5 rounded border border-brand-slate-200 bg-white px-2.5 py-1.5 font-code-sm text-code-sm text-brand-slate-700 shadow-sm hover:bg-brand-slate-50"
+          >
+            <span
+              class="material-symbols-outlined text-sm"
+              data-icon="sync"
+              >sync</span
+            >
+            <span>Auto-refresh: 5s</span>
+          </button>
+          <button
+            class="flex items-center gap-1.5 rounded bg-primary px-3 py-1.5 font-label-md text-label-md text-white shadow-sm hover:bg-brand-cobalt-deep"
+          >
+            <span
+              class="material-symbols-outlined text-sm"
+              data-icon="play_arrow"
+              >play_arrow</span
+            >
+            <span>Submit New Solver Task</span>
+          </button>
+        </div>
+      </div>
+      <!-- MAIN SCROLLABLE CONTENT CANVAS -->
+      <main class="mx-auto flex w-full max-w-[1600px] flex-1 flex-col gap-6 p-space-lg">
+        <!-- ENCLAVE STATUS BANNER -->
+        <div
+          class="flex flex-col justify-between gap-4 rounded-xl border border-brand-slate-800 bg-brand-navy-950 p-4 text-surface-container-lowest shadow-sm lg:flex-row lg:items-center"
+        >
+          <div class="flex items-center gap-3">
+            <div class="h-3 w-3 animate-ping rounded-full bg-status-verified"></div>
+            <div class="flex flex-col">
+              <div class="flex items-center gap-2">
+                <span
+                  class="font-headline-sm text-headline-sm font-semibold tracking-tight text-white"
+                  >HPC Cluster Enclave: Operational</span
+                >
+                <span
+                  class="rounded border border-status-verified/40 bg-emerald-950 px-2 py-0.5 font-code-sm text-xs font-semibold text-status-verified"
+                  >ONLINE 99.98%</span
+                >
+              </div>
+              <p class="mt-0.5 font-code-sm text-code-sm text-brand-slate-400">
+                64 Compute Nodes • 10Gbps Dedicated Dark Fiber • WireGuard Connected • Cluster Zone:
+                Niger Delta Offshore Computational Grid
+              </p>
+            </div>
+          </div>
+          <div class="flex items-center gap-3 self-end lg:self-center">
+            <div
+              class="bg-brand-slate-900 rounded border border-brand-slate-800 px-3 py-1.5 text-right"
+            >
+              <span class="block font-code-sm text-xs text-brand-slate-400">Total Memory Pool</span>
+              <span class="font-code-sm text-sm font-bold text-tertiary-fixed"
+                >4.096 TB ECC Registered</span
+              >
+            </div>
+            <button
+              class="flex items-center gap-1.5 rounded border border-brand-slate-700 bg-brand-slate-800 px-3 py-2 font-label-md text-label-md text-white transition-colors hover:bg-brand-slate-700"
+            >
+              <span
+                class="material-symbols-outlined text-base"
+                data-icon="terminal"
+                >terminal</span
+              >
+              <span>SSH Web Console</span>
+            </button>
+          </div>
+        </div>
+        <!-- METRIC CARDS ROW -->
+        <section class="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
+          <!-- Metric 1: Cluster CPU Load -->
+          <div
+            class="rounded-xl border border-brand-slate-200 bg-surface-container-lowest p-4 shadow-sm transition-all hover:border-brand-slate-400"
+          >
+            <div class="mb-2 flex items-center justify-between text-brand-slate-500">
+              <span class="font-label-md text-label-md font-medium">Cluster CPU Load</span>
+              <span
+                class="material-symbols-outlined text-xl text-primary"
+                data-icon="memory"
+                >memory</span
+              >
+            </div>
+            <div class="mb-2 flex items-baseline justify-between">
+              <span class="font-display-lg text-3xl font-bold tracking-tight text-on-surface"
+                >74.2%</span
+              >
+              <span
+                class="flex items-center gap-0.5 font-code-sm text-code-sm text-status-verified"
+              >
+                <span
+                  class="material-symbols-outlined text-sm"
+                  data-icon="trending_up"
+                  >trending_up</span
+                >
+                +3.8%
+              </span>
+            </div>
+            <div class="mb-2 h-1.5 w-full overflow-hidden rounded-full bg-brand-slate-100">
+              <div
+                class="h-1.5 rounded-full bg-primary"
+                style="width: 74.2%"
+              ></div>
+            </div>
+            <span class="font-body-sm text-body-sm text-brand-slate-500"
+              >Across 64 Xeon Scalable Platinum Nodes</span
+            >
+          </div>
+          <!-- Metric 2: Active GPU Solver Allocation -->
+          <div
+            class="rounded-xl border border-brand-slate-200 bg-surface-container-lowest p-4 shadow-sm transition-all hover:border-brand-slate-400"
+          >
+            <div class="mb-2 flex items-center justify-between text-brand-slate-500">
+              <span class="font-label-md text-label-md font-medium">GPU Solver Allocation</span>
+              <span
+                class="material-symbols-outlined text-xl text-brand-cobalt"
+                data-icon="developer_board"
+                >developer_board</span
+              >
+            </div>
+            <div class="mb-2 flex items-baseline justify-between">
+              <span class="font-display-lg text-3xl font-bold tracking-tight text-on-surface"
+                >14 / 16</span
+              >
+              <span
+                class="rounded bg-brand-slate-100 px-2 py-0.5 font-code-sm text-xs font-semibold text-brand-slate-700"
+                >87.5% Load</span
+              >
+            </div>
+            <div class="mb-2 h-1.5 w-full overflow-hidden rounded-full bg-brand-slate-100">
+              <div
+                class="h-1.5 rounded-full bg-brand-cobalt-deep"
+                style="width: 87.5%"
+              ></div>
+            </div>
+            <span class="font-body-sm text-body-sm text-brand-slate-500"
+              >RTX A4000 CUDA Rig (Vortex VIV Dedicated)</span
+            >
+          </div>
+          <!-- Metric 3: Job Queue Depth -->
+          <div
+            class="rounded-xl border border-brand-slate-200 bg-surface-container-lowest p-4 shadow-sm transition-all hover:border-brand-slate-400"
+          >
+            <div class="mb-2 flex items-center justify-between text-brand-slate-500">
+              <span class="font-label-md text-label-md font-medium">Job Queue Depth</span>
+              <span
+                class="material-symbols-outlined text-xl text-status-warning"
+                data-icon="hourglass_top"
+                >hourglass_top</span
+              >
+            </div>
+            <div class="mb-2 flex items-baseline justify-between">
+              <span class="font-display-lg text-3xl font-bold tracking-tight text-on-surface"
+                >6 Jobs</span
+              >
+              <span class="font-code-sm text-code-sm font-semibold text-status-warning"
+                >Est: ~18 mins</span
+              >
+            </div>
+            <div class="mb-2 h-1.5 w-full overflow-hidden rounded-full bg-brand-slate-100">
+              <div
+                class="h-1.5 rounded-full bg-status-warning"
+                style="width: 40%"
+              ></div>
+            </div>
+            <span class="font-body-sm text-body-sm text-brand-slate-500"
+              >3 ANSYS Fluent • 2 OrcaFlex • 1 OLGA</span
+            >
+          </div>
+          <!-- Metric 4: Physical Basin Metrology Stream -->
+          <div
+            class="rounded-xl border border-brand-slate-200 bg-surface-container-lowest p-4 shadow-sm transition-all hover:border-brand-slate-400"
+          >
+            <div class="mb-2 flex items-center justify-between text-brand-slate-500">
+              <span class="font-label-md text-label-md font-medium">Wave Basin Telemetry</span>
+              <span
+                class="material-symbols-outlined text-xl text-status-verified"
+                data-icon="waves"
+                >waves</span
+              >
+            </div>
+            <div class="mb-2 flex items-baseline justify-between">
+              <span class="font-display-lg text-3xl font-bold tracking-tight text-status-verified"
+                >1,000 Hz</span
+              >
+              <span
+                class="rounded bg-status-verified-bg px-2 py-0.5 font-code-sm text-xs font-semibold text-status-verified"
+                >Stream Synced</span
+              >
+            </div>
+            <div class="mb-2 h-1.5 w-full overflow-hidden rounded-full bg-brand-slate-100">
+              <div
+                class="h-1.5 rounded-full bg-status-verified"
+                style="width: 100%"
+              ></div>
+            </div>
+            <span class="font-body-sm text-body-sm text-brand-slate-500"
+              >RSU 50m Towing Basin PMM Active</span
+            >
+          </div>
+        </section>
+        <!-- MAIN BENTO/TWO-COLUMN WORKSPACE -->
+        <div class="grid grid-cols-1 items-start gap-6 lg:grid-cols-12">
+          <!-- LEFT 8 COLUMNS: HPC JOB MATRIX & TERMINAL CONSOLE -->
+          <div class="flex flex-col gap-6 lg:col-span-8">
+            <!-- TABLE CARD: ACTIVE SOLVER JOBS -->
+            <div
+              class="overflow-hidden rounded-xl border border-brand-slate-200 bg-surface-container-lowest shadow-sm"
+            >
+              <!-- Header bar of table -->
+              <div
+                class="flex flex-wrap items-center justify-between gap-3 border-b border-brand-slate-200 bg-brand-slate-50/50 px-5 py-4"
+              >
+                <div class="flex items-center gap-2.5">
+                  <span
+                    class="material-symbols-outlined text-xl text-primary"
+                    data-icon="table_chart"
+                    >table_chart</span
+                  >
+                  <h2 class="font-headline-sm text-headline-sm font-bold text-on-surface">
+                    Active Computational Batches &amp; Solver Threads
+                  </h2>
+                </div>
+                <div class="flex items-center gap-2">
+                  <button
+                    class="flex items-center gap-1 rounded border border-brand-slate-200 bg-white px-3 py-1.5 font-label-md text-label-md text-brand-slate-700 shadow-sm hover:bg-brand-slate-50"
+                  >
+                    <span
+                      class="material-symbols-outlined text-sm"
+                      data-icon="filter_list"
+                      >filter_list</span
+                    >
+                    <span>Filter Package</span>
+                  </button>
+                  <button
+                    class="flex items-center gap-1 rounded bg-brand-slate-100 px-3 py-1.5 font-label-md text-label-md text-on-surface hover:bg-brand-slate-200"
+                  >
+                    <span
+                      class="material-symbols-outlined text-sm"
+                      data-icon="download"
+                      >download</span
+                    >
+                    <span>Export Batch Logs</span>
+                  </button>
+                </div>
+              </div>
+              <!-- Table Matrix -->
+              <div class="overflow-x-auto">
+                <table class="w-full border-collapse text-left">
+                  <thead>
+                    <tr
+                      class="border-b border-brand-slate-200 bg-brand-slate-100/70 font-label-sm text-label-sm text-brand-slate-700"
+                    >
+                      <th class="px-4 py-3">JOB ID</th>
+                      <th class="px-4 py-3">SIMULATION MODEL &amp; SOLVER</th>
+                      <th class="px-4 py-3">CORE / NODE ALLOCATION</th>
+                      <th class="px-4 py-3">STATUS / PROGRESS</th>
+                      <th class="px-4 py-3">RUNTIME</th>
+                      <th class="px-4 py-3 text-right">ACTION CONTROLS</th>
+                    </tr>
+                  </thead>
+                  <tbody
+                    class="divide-y divide-brand-slate-200 font-body-sm text-body-sm text-on-surface"
+                  >
+                    <!-- Row 1: Running OrcaFlex Job -->
+                    <tr class="transition-colors hover:bg-brand-slate-50">
+                      <td class="px-4 py-3.5 font-code-sm text-code-sm font-semibold text-primary">
+                        #SIM-8841
+                      </td>
+                      <td class="px-4 py-3.5">
+                        <div class="font-semibold text-on-surface">
+                          16in Rigid Riser VIV Dynamic Analysis
+                        </div>
+                        <div class="mt-0.5 flex items-center gap-2">
+                          <span
+                            class="rounded bg-brand-slate-100 px-2 py-0.5 font-code-sm text-xs font-semibold text-brand-navy-950"
+                            >OrcaFlex 11.4</span
+                          >
+                          <span class="font-label-sm text-xs text-brand-slate-400"
+                            >NL Time-Domain • Random Sea</span
+                          >
+                        </div>
+                      </td>
+                      <td class="px-4 py-3.5 font-code-sm text-code-sm">
+                        <div class="font-medium text-brand-slate-800">16 Cores (AVX-512)</div>
+                        <div class="text-xs text-brand-slate-500">Node-PHC-07 (Cluster-A)</div>
+                      </td>
+                      <td class="px-4 py-3.5">
+                        <div class="mb-1 flex items-center gap-2">
+                          <span class="h-2 w-2 animate-ping rounded-full bg-primary"></span>
+                          <span class="font-code-sm text-xs font-semibold text-primary"
+                            >RUNNING 78%</span
+                          >
+                        </div>
+                        <div class="h-1.5 w-32 overflow-hidden rounded-full bg-brand-slate-200">
+                          <div
+                            class="h-1.5 rounded-full bg-primary"
+                            style="width: 78%"
+                          ></div>
+                        </div>
+                      </td>
+                      <td class="text-brand-slate-600 px-4 py-3.5 font-code-sm text-code-sm">
+                        02h 14m 19s
+                      </td>
+                      <td class="px-4 py-3.5 text-right">
+                        <div class="inline-flex items-center gap-1.5">
+                          <button
+                            class="rounded border border-primary/20 bg-surface-container-low px-2.5 py-1 font-label-sm text-label-sm text-primary transition-colors hover:bg-surface-container"
+                            title="Inspect Dynamic Plot"
+                          >
+                            Live Plot
+                          </button>
+                          <button
+                            class="rounded bg-brand-slate-100 px-2 py-1 font-label-sm text-label-sm text-brand-slate-700 hover:bg-brand-slate-200"
+                            title="Dump YAML Parameters"
+                          >
+                            .yml
+                          </button>
+                          <button
+                            class="rounded p-1 text-status-danger transition-colors hover:bg-status-danger-bg"
+                            title="Abort Solver Thread"
+                          >
+                            <span
+                              class="material-symbols-outlined text-base"
+                              data-icon="cancel"
+                              >cancel</span
+                            >
+                          </button>
+                        </div>
+                      </td>
+                    </tr>
+                    <!-- Row 2: Completed Subsea PLET Thermal Expansion Stress -->
+                    <tr class="transition-colors hover:bg-brand-slate-50">
+                      <td
+                        class="px-4 py-3.5 font-code-sm text-code-sm font-semibold text-status-verified"
+                      >
+                        #SIM-8839
+                      </td>
+                      <td class="px-4 py-3.5">
+                        <div class="font-semibold text-on-surface">
+                          Subsea PLET Thermal Expansion Stress
+                        </div>
+                        <div class="mt-0.5 flex items-center gap-2">
+                          <span
+                            class="rounded bg-brand-slate-100 px-2 py-0.5 font-code-sm text-xs font-semibold text-brand-navy-950"
+                            >CAESAR II 2024</span
+                          >
+                          <span class="font-label-sm text-xs text-brand-slate-400"
+                            >ASME B31.8 • HPHT Spec</span
+                          >
+                        </div>
+                      </td>
+                      <td class="px-4 py-3.5 font-code-sm text-code-sm">
+                        <div class="font-medium text-brand-slate-800">8 Cores</div>
+                        <div class="text-xs text-brand-slate-500">Node-PHC-02 (Cluster-B)</div>
+                      </td>
+                      <td class="px-4 py-3.5">
+                        <span
+                          class="inline-flex items-center gap-1 rounded border border-status-verified-border bg-status-verified-bg px-2 py-0.5 font-label-sm text-label-sm font-semibold text-status-verified"
+                        >
+                          <span
+                            class="material-symbols-outlined text-sm"
+                            data-icon="check_circle"
+                            >check_circle</span
+                          >
+                          <span>Completed (Passed)</span>
+                        </span>
+                      </td>
+                      <td class="text-brand-slate-600 px-4 py-3.5 font-code-sm text-code-sm">
+                        00h 42m 04s
+                      </td>
+                      <td class="px-4 py-3.5 text-right">
+                        <div class="inline-flex items-center gap-1.5">
+                          <button
+                            class="flex items-center gap-1 rounded border border-status-verified/30 bg-status-verified-bg px-2.5 py-1 font-label-sm text-label-sm font-semibold text-status-verified hover:bg-status-verified/10"
+                          >
+                            <span
+                              class="material-symbols-outlined text-sm"
+                              data-icon="verified"
+                              >verified</span
+                            >
+                            <span>Dossier</span>
+                          </button>
+                          <button
+                            class="text-brand-slate-600 rounded p-1 hover:bg-brand-slate-100"
+                            title="Archive"
+                          >
+                            <span
+                              class="material-symbols-outlined text-base"
+                              data-icon="inventory_2"
+                              >inventory_2</span
+                            >
+                          </button>
+                        </div>
+                      </td>
+                    </tr>
+                    <!-- Row 3: Queued Multiphase Slugging Transient -->
+                    <tr class="transition-colors hover:bg-brand-slate-50">
+                      <td
+                        class="px-4 py-3.5 font-code-sm text-code-sm font-semibold text-status-warning"
+                      >
+                        #SIM-8843
+                      </td>
+                      <td class="px-4 py-3.5">
+                        <div class="font-semibold text-on-surface">
+                          Multiphase Slugging Transient in Deepwater Jumper
+                        </div>
+                        <div class="mt-0.5 flex items-center gap-2">
+                          <span
+                            class="rounded bg-brand-slate-100 px-2 py-0.5 font-code-sm text-xs font-semibold text-brand-navy-950"
+                            >OLGA Multiphase</span
+                          >
+                          <span class="font-label-sm text-xs text-brand-slate-400"
+                            >Hydrodynamic Slug Modeling</span
+                          >
+                        </div>
+                      </td>
+                      <td class="px-4 py-3.5 font-code-sm text-code-sm">
+                        <div class="font-medium text-brand-slate-800">12 Cores (Pending Alloc)</div>
+                        <div class="text-xs text-brand-slate-500">Standby Pool</div>
+                      </td>
+                      <td class="px-4 py-3.5">
+                        <span
+                          class="inline-flex items-center gap-1 rounded border border-amber-200 bg-status-warning-bg px-2 py-0.5 font-label-sm text-label-sm font-semibold text-status-warning"
+                        >
+                          <span
+                            class="material-symbols-outlined text-sm"
+                            data-icon="schedule"
+                            >schedule</span
+                          >
+                          <span>Queued (Pos #1)</span>
+                        </span>
+                      </td>
+                      <td class="px-4 py-3.5 font-code-sm text-code-sm text-brand-slate-400">
+                        --:--:--
+                      </td>
+                      <td class="px-4 py-3.5 text-right">
+                        <div class="inline-flex items-center gap-1.5">
+                          <button
+                            class="rounded bg-brand-slate-100 px-2.5 py-1 font-label-sm text-label-sm text-brand-slate-700 hover:bg-brand-slate-200"
+                          >
+                            Prioritize
+                          </button>
+                          <button
+                            class="text-brand-slate-600 rounded p-1 hover:bg-brand-slate-100"
+                            title="Edit Parameters"
+                          >
+                            <span
+                              class="material-symbols-outlined text-base"
+                              data-icon="edit"
+                              >edit</span
+                            >
+                          </button>
+                        </div>
+                      </td>
+                    </tr>
+                    <!-- Row 4: ANSYS CFD Aerodynamic Lift on Offshore Derrick -->
+                    <tr class="transition-colors hover:bg-brand-slate-50">
+                      <td class="px-4 py-3.5 font-code-sm text-code-sm font-semibold text-primary">
+                        #SIM-8840
+                      </td>
+                      <td class="px-4 py-3.5">
+                        <div class="font-semibold text-on-surface">
+                          Jackup Rig Wind Tunnel CFD Flow Simulation
+                        </div>
+                        <div class="mt-0.5 flex items-center gap-2">
+                          <span
+                            class="rounded bg-brand-slate-100 px-2 py-0.5 font-code-sm text-xs font-semibold text-brand-navy-950"
+                            >ANSYS Fluent 2024</span
+                          >
+                          <span class="font-label-sm text-xs text-brand-slate-400"
+                            >k-omega SST Turbulence • 12M Cells</span
+                          >
+                        </div>
+                      </td>
+                      <td class="px-4 py-3.5 font-code-sm text-code-sm">
+                        <div class="font-medium text-brand-slate-800">32 Cores + 2 GPU</div>
+                        <div class="text-xs text-brand-slate-500">Node-PHC-11 (GPU Rig-1)</div>
+                      </td>
+                      <td class="px-4 py-3.5">
+                        <div class="mb-1 flex items-center gap-2">
+                          <span class="h-2 w-2 animate-pulse rounded-full bg-brand-cobalt"></span>
+                          <span class="font-code-sm text-xs font-semibold text-brand-cobalt"
+                            >CONVERGING 91%</span
+                          >
+                        </div>
+                        <div class="h-1.5 w-32 overflow-hidden rounded-full bg-brand-slate-200">
+                          <div
+                            class="h-1.5 rounded-full bg-brand-cobalt"
+                            style="width: 91%"
+                          ></div>
+                        </div>
+                      </td>
+                      <td class="text-brand-slate-600 px-4 py-3.5 font-code-sm text-code-sm">
+                        05h 11m 44s
+                      </td>
+                      <td class="px-4 py-3.5 text-right">
+                        <div class="inline-flex items-center gap-1.5">
+                          <button
+                            class="rounded border border-primary/20 bg-surface-container-low px-2.5 py-1 font-label-sm text-label-sm text-primary transition-colors hover:bg-surface-container"
+                          >
+                            Live Residuals
+                          </button>
+                          <button
+                            class="rounded p-1 text-status-danger hover:bg-status-danger-bg"
+                            title="Pause Run"
+                          >
+                            <span
+                              class="material-symbols-outlined text-base"
+                              data-icon="pause"
+                              >pause</span
+                            >
+                          </button>
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <!-- Footer Pagination / Node summary -->
+              <div
+                class="flex flex-wrap items-center justify-between border-t border-brand-slate-200 bg-brand-slate-50 p-3 font-code-sm text-code-sm text-brand-slate-500"
+              >
+                <div>
+                  Displaying 4 active runs of 24 allocated threads in partition
+                  [prod_slurm_nigerdelta]
+                </div>
+                <div class="flex items-center gap-2">
+                  <button
+                    class="rounded border border-brand-slate-200 bg-white px-2 py-1 hover:bg-brand-slate-100 disabled:opacity-50"
+                    disabled=""
+                  >
+                    Previous
+                  </button>
+                  <span class="px-2 font-bold text-on-surface">1</span>
+                  <button
+                    class="rounded border border-brand-slate-200 bg-white px-2 py-1 hover:bg-brand-slate-100"
+                  >
+                    Next
+                  </button>
+                </div>
+              </div>
+            </div>
+            <!-- DENSE MONOSPACE CONSOLE TELEMETRY TERMINAL -->
+            <div
+              class="overflow-hidden rounded-xl border border-brand-slate-800 bg-brand-navy-950 font-code-sm text-surface-container-lowest shadow-md"
+            >
+              <div
+                class="bg-brand-slate-900 flex items-center justify-between border-b border-brand-slate-800 px-4 py-2.5"
+              >
+                <div class="flex items-center gap-2">
+                  <span class="inline-block h-3 w-3 rounded-full bg-red-500/80"></span>
+                  <span class="inline-block h-3 w-3 rounded-full bg-yellow-500/80"></span>
+                  <span class="inline-block h-3 w-3 rounded-full bg-green-500/80"></span>
+                  <span class="text-brand-slate-300 ml-2 text-xs font-semibold"
+                    >live-solver-stream@node-phc-07.cmotd.rsu.edu.ng: tail -f
+                    /var/log/orcaflex/sim_8841.log</span
+                  >
+                </div>
+                <div class="flex items-center gap-3 text-xs text-brand-slate-400">
+                  <span>BUFFER: 64KB</span>
+                  <span class="font-bold text-status-verified">LIVE STDOUT</span>
+                </div>
+              </div>
+              <div
+                class="text-brand-slate-300 max-h-56 space-y-1.5 overflow-x-auto bg-brand-navy-950 p-4 font-code-sm text-xs"
+              >
+                <div class="text-brand-slate-500">
+                  [2025-05-14T11:42:01.002Z] [OrcaFlexCore v11.4d] Initializing static equilibrium
+                  solution for 16in OD Carbon Steel Riser...
+                </div>
+                <div class="text-brand-slate-400">
+                  [2025-05-14T11:42:04.118Z] Static convergence reached in 14 iterations. Target
+                  residual &lt; 1.000E-05. Actual: 4.821E-07.
+                </div>
+                <div class="text-brand-cobalt">
+                  [2025-05-14T11:42:15.520Z] [WaveTankBridge] Physical Towing Basin carriage
+                  telemetry hooked at /dev/shm/rsu_basin_sync.sock.
+                </div>
+                <div class="text-tertiary-fixed">
+                  [2025-05-14T12:05:00.329Z] Simulation Time: 1200.00s / 1800.00s (Time Step dt =
+                  0.0250s). Current Top Tension = 2,410.8 kN.
+                </div>
+                <div class="text-brand-slate-300">
+                  [2025-05-14T12:28:10.912Z] Vortex Induced Vibration Mode 3 identified. Lock-in
+                  frequency detected at 0.44 Hz. Hydrodynamic drag coefficient Cd = 1.34.
+                </div>
+                <div class="flex items-center gap-2 text-status-verified">
+                  <span
+                    >[2025-05-14T12:35:48.041Z] Memory allocation stable: 18.4 GB RSS. Checkpoint
+                    file written to /mnt/gluster_hpc/checkpoints/sim_8841_chk04.orc</span
+                  >
+                  <span class="inline-block h-4 w-2 animate-pulse bg-status-verified"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- RIGHT 4 COLUMNS: REMOTE WORKSTATION ACCESS, WAVE BASIN TELEMETRY, RESEARCH IP -->
+          <div class="flex flex-col gap-6 lg:col-span-4">
+            <!-- CARD 1: REMOTE WORKSTATION ACCESS LAUNCHER -->
+            <div
+              class="rounded-xl border border-brand-slate-200 bg-surface-container-lowest p-5 shadow-sm"
+            >
+              <div class="mb-4 flex items-center justify-between">
+                <div class="flex items-center gap-2">
+                  <span
+                    class="material-symbols-outlined text-primary"
+                    data-icon="desktop_windows"
+                    >desktop_windows</span
+                  >
+                  <h3 class="font-title-lg text-title-lg font-bold text-on-surface">
+                    Dedicated Workstation Terminal
+                  </h3>
+                </div>
+                <span
+                  class="rounded border border-status-verified-border bg-status-verified-bg px-2 py-0.5 font-code-sm text-xs font-bold text-status-verified"
+                  >READY</span
+                >
+              </div>
+              <!-- Workstation specs card -->
+              <div class="mb-4 rounded-lg border border-brand-slate-200 bg-brand-slate-50 p-3.5">
+                <div class="mb-2 flex items-center justify-between">
+                  <span class="font-code-sm text-xs text-brand-slate-500">INSTANCE ID</span>
+                  <span class="font-code-sm text-xs font-bold text-on-surface"
+                    >WS-PHC-88 (Subsea CAD Lab)</span
+                  >
+                </div>
+                <div class="mb-2 flex items-center justify-between">
+                  <span class="font-code-sm text-xs text-brand-slate-500">HARDWARE ACCEL</span>
+                  <span class="font-code-sm text-xs font-bold text-primary"
+                    >NVIDIA Quadro RTX 6000 Ada</span
+                  >
+                </div>
+                <div class="mb-2 flex items-center justify-between">
+                  <span class="font-code-sm text-xs text-brand-slate-500">TERMINAL LATENCY</span>
+                  <span class="font-code-sm text-xs font-bold text-status-verified"
+                    >12ms (Direct Port Harcourt Loop)</span
+                  >
+                </div>
+                <div class="flex items-center justify-between">
+                  <span class="font-code-sm text-xs text-brand-slate-500">PROTOCOL</span>
+                  <span class="font-code-sm text-xs text-brand-slate-700"
+                    >WebRTC / WireGuard Encrypted</span
+                  >
+                </div>
+              </div>
+              <!-- Toggles & Quick Actions -->
+              <div
+                class="mb-4 flex items-center justify-between border-t border-brand-slate-200 py-2"
+              >
+                <span class="font-body-sm text-body-sm text-brand-slate-700"
+                  >Bi-directional Clipboard Sync</span
+                >
+                <label class="relative inline-flex cursor-pointer items-center">
+                  <input
+                    checked=""
+                    class="peer sr-only"
+                    type="checkbox"
+                  />
+                  <div
+                    class="peer h-5 w-9 rounded-full bg-brand-slate-200 after:absolute after:left-[2px] after:top-[2px] after:h-4 after:w-4 after:rounded-full after:border after:border-gray-300 after:bg-white after:transition-all after:content-[''] peer-checked:bg-primary peer-checked:after:translate-x-full peer-checked:after:border-white peer-focus:outline-none"
+                  ></div>
+                </label>
+              </div>
+              <button
+                class="flex w-full items-center justify-center gap-2 rounded-lg bg-primary py-2.5 font-label-md text-label-md font-semibold text-white shadow-sm transition-colors hover:bg-brand-cobalt-deep"
+              >
+                <span
+                  class="material-symbols-outlined text-base"
+                  data-icon="open_in_new"
+                  >open_in_new</span
+                >
+                <span>Launch Cloud Desktop Stream</span>
+              </button>
+            </div>
+            <!-- CARD 2: RSU 50m TOWING BASIN TELEMETRY FEED (with Realistic Campus Context Reference) -->
+            <div
+              class="rounded-xl border border-brand-slate-200 bg-surface-container-lowest p-5 shadow-sm"
+            >
+              <div class="mb-3 flex items-center justify-between">
+                <div class="flex items-center gap-2">
+                  <span
+                    class="material-symbols-outlined text-brand-cobalt"
+                    data-icon="water"
+                    >water</span
+                  >
+                  <h3 class="font-title-lg text-title-lg font-bold text-on-surface">
+                    RSU Towing Basin Telemetry
+                  </h3>
+                </div>
+                <span
+                  class="rounded bg-brand-slate-100 px-2 py-0.5 font-code-sm text-xs font-semibold text-brand-slate-700"
+                  >50m BASIN</span
+                >
+              </div>
+              <!-- Towing Tank Graphic / Snapshot placeholder -->
+              <div
+                class="bg-brand-slate-900 group relative mb-3 h-36 w-full overflow-hidden rounded-lg border border-brand-slate-200"
+              >
+                <img
+                  class="h-full w-full object-cover opacity-85 transition-transform duration-300 group-hover:scale-105"
+                  data-alt="A sunlit, ultra-modern outdoor marine engineering test basin and towing tank at Rivers State University in Port Harcourt, Nigeria. In the foreground, students and engineering faculty in white laboratory coats observe a dynamic scale-model offshore vessel floating in the crystal clear turquoise water flume. In the background stands the contemporary multi-story glass-facade academic engineering building under a vibrant blue tropical sky with lush palm trees."
+                  decoding="async"
+                  fetchpriority="high"
+                  loading="eager"
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuDkwYCkR2e49eBlLbnZ-Ro59YrKolM8803a6LvyDNTcOb484OFTSdlWCEagJ0sRcHlxLava43mu0Yz0fzfKFhNeHKNVkvpRSMt1IHQ7fy-3gHM97wmXbwSZzxDHCGyOT2vjB2oSRlehj7XuDIk5ObuvztkLw5s7PzoQenEsujjgZObc7kjb6Gv8cyS4KzNwtO5n5HoI4HuKDIjTuFgZ2SiBm9xijN922-LCgz51Pj64IzS5WzLjQCT8"
+                />
+                <div
+                  class="absolute inset-0 bg-gradient-to-t from-brand-navy-950 via-transparent to-transparent"
+                ></div>
+                <div
+                  class="absolute bottom-2 left-2 right-2 flex items-center justify-between font-code-sm text-xs text-white"
+                >
+                  <span class="rounded bg-brand-navy-950/80 px-2 py-0.5 backdrop-blur-sm"
+                    >Carriage Rig: PMM Model-V</span
+                  >
+                  <span
+                    class="rounded border border-status-verified/30 bg-emerald-950/90 px-1.5 py-0.5 text-status-verified"
+                    >SAMPLING 1000 Hz</span
+                  >
+                </div>
+              </div>
+              <!-- Telemetry Metrics -->
+              <div class="mb-4 space-y-2 font-code-sm text-xs">
+                <div
+                  class="flex items-center justify-between rounded border border-brand-slate-200 bg-brand-slate-50 p-2"
+                >
+                  <span class="text-brand-slate-600">Carriage Speed (Vx)</span>
+                  <span class="font-bold text-on-surface">3.200 m/s (±0.002)</span>
+                </div>
+                <div
+                  class="flex items-center justify-between rounded border border-brand-slate-200 bg-brand-slate-50 p-2"
+                >
+                  <span class="text-brand-slate-600">Hydrodynamic Resistance (Rx)</span>
+                  <span class="font-bold text-primary">142.84 N</span>
+                </div>
+                <div
+                  class="flex items-center justify-between rounded border border-brand-slate-200 bg-brand-slate-50 p-2"
+                >
+                  <span class="text-brand-slate-600">Wavemaker Frequency (ω)</span>
+                  <span class="font-bold text-on-surface">0.85 Hz • H_s = 0.18m</span>
+                </div>
+              </div>
+              <div class="flex items-center gap-2">
+                <button
+                  class="flex flex-1 items-center justify-center gap-1.5 rounded border border-primary/20 bg-surface-container-low py-2 font-label-md text-label-md text-primary transition-colors hover:bg-surface-container"
+                >
+                  <span
+                    class="material-symbols-outlined text-sm"
+                    data-icon="query_stats"
+                    >query_stats</span
+                  >
+                  <span>Calibrate Metrology</span>
+                </button>
+                <button
+                  class="text-brand-slate-600 rounded border border-brand-slate-200 p-2 hover:bg-brand-slate-50"
+                  title="Full Screen Wave Tank Feed"
+                >
+                  <span
+                    class="material-symbols-outlined text-base"
+                    data-icon="fullscreen"
+                    >fullscreen</span
+                  >
+                </button>
+              </div>
+            </div>
+            <!-- CARD 3: RESEARCH PUBLICATION & SENATE IP REGISTRY -->
+            <div
+              class="rounded-xl border border-brand-slate-200 bg-surface-container-lowest p-5 shadow-sm"
+            >
+              <div class="mb-3 flex items-center justify-between">
+                <div class="flex items-center gap-2">
+                  <span
+                    class="material-symbols-outlined text-primary"
+                    data-icon="menu_book"
+                    >menu_book</span
+                  >
+                  <h3 class="font-title-lg text-title-lg font-bold text-on-surface">
+                    RSU Research &amp; IP Registry
+                  </h3>
+                </div>
+                <span
+                  class="material-symbols-outlined text-lg text-brand-slate-400"
+                  data-icon="lock"
+                  >lock</span
+                >
+              </div>
+              <p class="mb-3 font-body-sm text-body-sm text-brand-slate-500">
+                Direct linkage with Rivers State University Postgraduate School &amp; Centre for
+                Marine Research publications repository.
+              </p>
+              <div class="mb-3 rounded-lg border border-brand-slate-200 bg-brand-slate-50 p-3">
+                <div class="mb-1 flex items-center gap-1.5 text-xs font-semibold text-primary">
+                  <span
+                    class="material-symbols-outlined text-sm"
+                    data-icon="article"
+                    >article</span
+                  >
+                  <span>DRAFT MANUSCRIPT (RSU-PG-2025-MAR-09)</span>
+                </div>
+                <h4 class="font-label-md text-label-md font-bold leading-snug text-on-surface">
+                  Numerical &amp; Towing Tank Validation of Flow-Induced Vibrations on Catenary
+                  Risers in the Niger Delta Deepwater Regime
+                </h4>
+                <div
+                  class="mt-2 flex flex-wrap gap-x-3 gap-y-1 font-code-sm text-xs text-brand-slate-500"
+                >
+                  <span>Lead: Engr. Dr. T. Briggs</span>
+                  <span>Co-Auth: Postgrad Schol. D. Amadi</span>
+                  <span class="font-medium text-status-verified">Senate Clear: APPROVED</span>
+                </div>
+              </div>
+              <div class="flex items-center justify-between pt-1">
+                <a
+                  class="flex items-center gap-1 font-label-md text-label-md font-semibold text-primary hover:underline"
+                  href="#dossier"
+                >
+                  <span>View Full Computational Dossier</span>
+                  <span
+                    class="material-symbols-outlined text-sm"
+                    data-icon="arrow_forward"
+                    >arrow_forward</span
+                  >
+                </a>
+                <span class="font-code-sm text-xs text-brand-slate-400"
+                  >DOI: 10.1016/j.marstruc.2025</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- BOTTOM INSTITUTIONAL FOOTER -->
+        <cmotd-portal-footer></cmotd-portal-footer>
+      </main>
+    </div>
+  </body>
+</html>

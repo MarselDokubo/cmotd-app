@@ -1,0 +1,1298 @@
+<!doctype html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      content="width=device-width, initial-scale=1.0"
+      name="viewport"
+    />
+    <title>Events Archive &amp; Multimedia Gallery | CMOTD - Rivers State University</title>
+    <link
+      href="../favicon.ico"
+      rel="icon"
+      type="image/x-icon"
+    />
+
+    <!-- Tailwind CSS -->
+    <link
+      href="../assets/css/tailwind-build.css"
+      rel="stylesheet"
+    />
+    <link
+      href="../assets/css/cmotd-global.css"
+      rel="stylesheet"
+    />
+    <script
+      defer=""
+      src="../assets/js/site-config.js"
+    ></script>
+    <script
+      defer=""
+      src="../assets/js/cmotd-components.js"
+    ></script>
+  </head>
+  <body
+    class="flex min-h-screen flex-col bg-surface font-body-md text-on-surface antialiased selection:bg-brand-cobalt selection:text-white"
+  >
+    <!-- ==================== HEADER (TOPNAVBAR) ==================== -->
+    <cmotd-site-header active="events"></cmotd-site-header>
+    <!-- ==================== SUB-NAVIGATION / TAXONOMY FILTER BAR ==================== -->
+    <div class="sticky top-[76px] z-40 border-b border-brand-slate-200 bg-surface-container-lowest">
+      <div class="mx-auto max-w-[1280px] px-6 lg:px-8">
+        <div
+          class="scrollbar-none flex items-center gap-2 overflow-x-auto py-2.5 font-label-md text-label-md"
+        >
+          <button
+            class="flex items-center gap-1.5 whitespace-nowrap rounded-lg bg-brand-navy-900 px-3.5 py-1.5 font-medium text-white shadow-sm"
+          >
+            <span
+              class="material-symbols-outlined text-base"
+              data-icon="grid_view"
+              >grid_view</span
+            >
+            All Past Events &amp; Symposia
+          </button>
+          <button
+            class="flex items-center gap-1.5 whitespace-nowrap rounded-lg px-3.5 py-1.5 font-medium text-brand-slate-700 transition-colors hover:bg-brand-slate-100 hover:text-brand-navy-900"
+          >
+            <span
+              class="material-symbols-outlined text-base"
+              data-icon="play_circle"
+              >play_circle</span
+            >
+            Keynote Video Lectures
+          </button>
+          <button
+            class="flex items-center gap-1.5 whitespace-nowrap rounded-lg px-3.5 py-1.5 font-medium text-brand-slate-700 transition-colors hover:bg-brand-slate-100 hover:text-brand-navy-900"
+          >
+            <span
+              class="material-symbols-outlined text-base"
+              data-icon="description"
+              >description</span
+            >
+            Technical Paper Proceedings &amp; Slides
+          </button>
+          <button
+            class="flex items-center gap-1.5 whitespace-nowrap rounded-lg px-3.5 py-1.5 font-medium text-brand-slate-700 transition-colors hover:bg-brand-slate-100 hover:text-brand-navy-900"
+          >
+            <span
+              class="material-symbols-outlined text-base"
+              data-icon="photo_library"
+              >photo_library</span
+            >
+            Commencement &amp; Conferment Galleries
+          </button>
+          <button
+            class="flex items-center gap-1.5 whitespace-nowrap rounded-lg px-3.5 py-1.5 font-medium text-brand-slate-700 transition-colors hover:bg-brand-slate-100 hover:text-brand-navy-900"
+          >
+            <span
+              class="material-symbols-outlined text-base"
+              data-icon="campaign"
+              >campaign</span
+            >
+            Industrial MoUs &amp; Press
+          </button>
+        </div>
+      </div>
+    </div>
+    <main class="mx-auto w-full max-w-[1280px] flex-grow space-y-12 px-6 py-8 lg:px-8">
+      <!-- ==================== HERO INTRO & REPOSITORY METRICS ==================== -->
+      <section
+        class="relative overflow-hidden rounded-xl border border-brand-slate-200 bg-surface-container-lowest p-6 shadow-sm lg:p-10"
+      >
+        <!-- Subdued Watermark Graphic -->
+        <div class="pointer-events-none absolute -right-16 -top-16 opacity-5">
+          <span
+            class="material-symbols-outlined text-[260px] text-brand-navy-900"
+            data-icon="waves"
+            >waves</span
+          >
+        </div>
+        <div class="relative z-10 max-w-3xl space-y-4">
+          <div
+            class="inline-flex items-center gap-2 rounded-full border border-brand-slate-200 bg-surface-container px-2.5 py-1 font-label-sm text-label-sm uppercase tracking-wider text-brand-cobalt-deep"
+          >
+            <span class="h-2 w-2 rounded-full bg-brand-cobalt"></span>
+            Institutional Digital Archive • ISO 9001:2015 Compliant
+          </div>
+          <h1
+            class="font-headline-lg text-headline-lg font-bold tracking-tight text-brand-navy-950"
+          >
+            Events Archive &amp; Multimedia Repository
+          </h1>
+          <p class="font-body-lg text-body-lg leading-relaxed text-brand-slate-700">
+            Access documented proceedings, video recordings, high-resolution media galleries, and
+            technical keynote papers from past CMOTD conferences, masterclasses, and international
+            offshore symposia.
+          </p>
+        </div>
+        <!-- Search and Year Filter Bar -->
+        <div
+          class="mt-8 flex flex-col items-stretch justify-between gap-4 border-t border-brand-slate-200 pt-6 md:flex-row md:items-center"
+        >
+          <!-- Search Input -->
+          <div class="relative max-w-lg flex-grow">
+            <span
+              class="material-symbols-outlined absolute left-3.5 top-1/2 -translate-y-1/2 text-lg text-brand-slate-400"
+              data-icon="search"
+              >search</span
+            >
+            <input
+              class="h-11 w-full rounded-lg border border-brand-slate-200 bg-brand-slate-50 pl-10 pr-4 font-body-md text-body-md text-brand-navy-950 placeholder-brand-slate-400 transition-all focus:border-brand-cobalt focus:bg-white focus:outline-none focus:ring-2 focus:ring-brand-cobalt/20"
+              placeholder="Search by event title, speaker, vessel class, or topic..."
+              type="text"
+            />
+          </div>
+          <!-- Filter Controls -->
+          <div class="flex flex-wrap items-center gap-2">
+            <span
+              class="mr-1 font-label-sm text-label-sm font-semibold uppercase text-brand-slate-500"
+              >Symposium Year:</span
+            >
+            <button
+              class="shadow-xs rounded-lg border border-brand-cobalt bg-brand-cobalt px-3 py-1.5 font-label-sm text-label-sm font-semibold text-white"
+            >
+              2025
+            </button>
+            <button
+              class="rounded-lg border border-brand-slate-200 bg-white px-3 py-1.5 font-label-sm text-label-sm font-medium text-brand-slate-700 transition-colors hover:border-brand-slate-400"
+            >
+              2024
+            </button>
+            <button
+              class="rounded-lg border border-brand-slate-200 bg-white px-3 py-1.5 font-label-sm text-label-sm font-medium text-brand-slate-700 transition-colors hover:border-brand-slate-400"
+            >
+              2023
+            </button>
+            <button
+              class="rounded-lg border border-brand-slate-200 bg-white px-3 py-1.5 font-label-sm text-label-sm font-medium text-brand-slate-700 transition-colors hover:border-brand-slate-400"
+            >
+              2022
+            </button>
+            <button
+              class="flex items-center gap-1 rounded-lg border border-brand-slate-200 bg-brand-slate-100 px-3 py-1.5 font-label-sm text-label-sm font-medium text-brand-slate-700 transition-colors hover:bg-brand-slate-200"
+            >
+              <span
+                class="material-symbols-outlined text-xs"
+                data-icon="filter_alt"
+                >filter_alt</span
+              >
+              More Filters
+            </button>
+          </div>
+        </div>
+      </section>
+      <!-- ==================== FEATURED PAST EVENT SHOWCASE ==================== -->
+      <section class="space-y-4">
+        <div class="flex items-center justify-between">
+          <div class="flex items-center gap-2">
+            <span class="h-5 w-1.5 rounded-sm bg-brand-cobalt"></span>
+            <h2 class="font-headline-sm text-headline-sm font-bold text-brand-navy-950">
+              Featured Concluded Symposium
+            </h2>
+          </div>
+          <span
+            class="flex items-center gap-1 font-label-sm text-label-sm font-medium text-brand-slate-500"
+          >
+            <span
+              class="material-symbols-outlined text-sm text-status-verified"
+              data-icon="task_alt"
+              >task_alt</span
+            >
+            Official Registry Docket #2024-ISPS-08
+          </span>
+        </div>
+        <!-- Feature Card: Bento Hero -->
+        <div
+          class="hover:border-brand-slate-300 grid grid-cols-1 overflow-hidden rounded-xl border border-brand-slate-200 bg-surface-container-lowest shadow-sm transition-all lg:grid-cols-12"
+        >
+          <!-- Visual Column -->
+          <div
+            class="group relative h-72 min-h-[340px] overflow-hidden bg-brand-navy-950 lg:col-span-7 lg:h-auto"
+          >
+            <img
+              class="h-full w-full object-cover opacity-90 transition-transform duration-700 group-hover:scale-105"
+              data-alt="A wide cinematic photograph of a high-level offshore maritime safety symposium held inside a contemporary university auditorium in Port Harcourt. Keynote panelists in tailored suits and naval uniforms address an attentive delegation of international petroleum engineers and offshore safety inspectors. Crisp light streams from high-tech digital presentation displays projecting 3D ship hull schematics and offshore platform safety architecture. The color palette emphasizes corporate deep navy, crisp white spotlights, and subtle cobalt blue accents."
+              decoding="async"
+              fetchpriority="high"
+              loading="eager"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuAvXMMbvESduUKwbWw7zpuKn4RgLO8y750QQZtql3PkHE-i83L8Sq_UQORbrx_hh_oYlaKrofzhFNJbgv-qwXsF4CBGevkpK3fzLjI28pgg0iDAKYzscukMnvMMxAni21T4_JFiRqO2w-x4ahKiRTO43ATx_5RU6cK6to4sauIHWt60vbwmous9p8_yOeJmGW7EuKYvo7J5Imc36mS5uQxPw-O4TvQ5wm6xbQISyteYJzzvQ97hi3PS"
+            />
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-brand-navy-950 via-brand-navy-950/40 to-transparent"
+            ></div>
+            <!-- Floating Overlay Badges -->
+            <div class="absolute left-4 top-4 flex gap-2">
+              <span
+                class="flex items-center gap-1.5 rounded-md border border-brand-slate-700 bg-brand-navy-900/90 px-2.5 py-1 font-label-sm text-label-sm font-medium text-white backdrop-blur-sm"
+              >
+                <span class="h-2 w-2 rounded-full bg-status-verified"></span>
+                Concluded Dec 2024
+              </span>
+              <span
+                class="rounded-md bg-brand-cobalt-deep/90 px-2.5 py-1 font-label-sm text-label-sm font-medium text-white backdrop-blur-sm"
+              >
+                Offshore Rig &amp; Port Security
+              </span>
+            </div>
+            <div
+              class="absolute bottom-4 left-4 right-4 flex items-center justify-between text-white"
+            >
+              <div class="flex items-center gap-3">
+                <button
+                  class="flex h-10 w-10 items-center justify-center rounded-full bg-brand-cobalt text-white shadow-lg transition-colors hover:bg-white hover:text-brand-cobalt"
+                  title="Play Full Keynote Video"
+                >
+                  <span
+                    class="material-symbols-outlined ml-0.5"
+                    data-icon="play_arrow"
+                    >play_arrow</span
+                  >
+                </button>
+                <div class="text-xs">
+                  <p class="font-semibold text-white">Full Video Stream Available</p>
+                  <p class="text-brand-slate-400">Duration: 04h 12m 30s • 4K UHD</p>
+                </div>
+              </div>
+              <span class="font-label-sm font-mono text-label-sm text-brand-slate-400"
+                >RSU-SEN-CONF-24</span
+              >
+            </div>
+          </div>
+          <!-- Details Column -->
+          <div class="flex flex-col justify-between space-y-6 p-6 lg:col-span-5 lg:p-8">
+            <div class="space-y-4">
+              <div
+                class="flex items-center gap-3 font-label-sm text-label-sm font-medium text-brand-slate-500"
+              >
+                <span class="flex items-center gap-1">
+                  <span
+                    class="material-symbols-outlined text-base text-brand-cobalt"
+                    data-icon="calendar_month"
+                    >calendar_month</span
+                  >
+                  December 11–13, 2024
+                </span>
+                <span>•</span>
+                <span class="flex items-center gap-1">
+                  <span
+                    class="material-symbols-outlined text-base text-brand-cobalt"
+                    data-icon="location_on"
+                    >location_on</span
+                  >
+                  Amphitheatre A, RSU
+                </span>
+              </div>
+              <h3
+                class="font-headline-md text-headline-md font-bold leading-tight text-brand-navy-950"
+              >
+                2024 International Offshore Safety &amp; ISPS Lead Auditor Summit
+              </h3>
+              <p class="font-body-md text-body-md text-brand-slate-700">
+                Jointly convened with the International Maritime Organization (IMO) and Nigerian
+                Navy Safety Branch to establish harmonized risk auditing standards for Deepwater
+                FPSOs and dynamic positioning vessels in the Bight of Bonny.
+              </p>
+              <!-- Metrics Matrix -->
+              <div class="grid grid-cols-3 gap-3 pt-2">
+                <div
+                  class="rounded-lg border border-brand-slate-200 bg-brand-slate-50 p-3 text-center"
+                >
+                  <span class="block font-title-lg text-title-lg font-bold text-brand-navy-950"
+                    >380</span
+                  >
+                  <span class="font-label-sm text-label-sm font-medium text-brand-slate-500"
+                    >Global Attendees</span
+                  >
+                </div>
+                <div
+                  class="rounded-lg border border-brand-slate-200 bg-brand-slate-50 p-3 text-center"
+                >
+                  <span class="block font-title-lg text-title-lg font-bold text-brand-navy-950"
+                    >18</span
+                  >
+                  <span class="font-label-sm text-label-sm font-medium text-brand-slate-500"
+                    >Technical Papers</span
+                  >
+                </div>
+                <div
+                  class="rounded-lg border border-brand-slate-200 bg-brand-slate-50 p-3 text-center"
+                >
+                  <span class="block font-title-lg text-title-lg font-bold text-brand-navy-950"
+                    >42</span
+                  >
+                  <span class="font-label-sm text-label-sm font-medium text-brand-slate-500"
+                    >Lead Auditors</span
+                  >
+                </div>
+              </div>
+            </div>
+            <!-- Actions -->
+            <div class="flex flex-wrap items-center gap-3 border-t border-brand-slate-200 pt-4">
+              <a
+                class="shadow-xs inline-flex items-center gap-2 rounded-lg bg-brand-cobalt-deep px-4 py-2.5 font-label-md text-label-md font-semibold text-white transition-all hover:bg-primary"
+                href="#"
+              >
+                <span
+                  class="material-symbols-outlined text-sm"
+                  data-icon="download"
+                  >download</span
+                >
+                <span>Download Full Proceedings (PDF 48MB)</span>
+              </a>
+              <a
+                class="border-brand-slate-300 inline-flex items-center gap-2 rounded-lg border px-3.5 py-2.5 font-label-md text-label-md font-medium text-brand-navy-950 transition-colors hover:bg-brand-slate-50"
+                href="#"
+              >
+                <span
+                  class="material-symbols-outlined text-sm"
+                  data-icon="photo_camera"
+                  >photo_camera</span
+                >
+                <span>View Album (86 Photos)</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ==================== MULTIMEDIA GALLERY & PAST EVENTS GRID ==================== -->
+      <section class="space-y-6">
+        <div
+          class="flex flex-col justify-between gap-2 border-b border-brand-slate-200 pb-3 sm:flex-row sm:items-center"
+        >
+          <div>
+            <h2 class="font-headline-sm text-headline-sm font-bold text-brand-navy-950">
+              Curated Session Galleries &amp; Artifacts
+            </h2>
+            <p class="font-body-sm text-body-sm text-brand-slate-500">
+              Historical visual records, technical slide packages, and executive dossiers
+            </p>
+          </div>
+          <div class="flex items-center gap-2 font-label-sm text-label-sm">
+            <span class="text-brand-slate-500">Displaying:</span>
+            <span class="font-semibold text-brand-navy-950">6 Archival Entries</span>
+          </div>
+        </div>
+        <div class="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
+          <!-- Item 1: Subsea Umbilical Dynamic Riser CAD Workshop -->
+          <article
+            class="group flex flex-col justify-between overflow-hidden rounded-xl border border-brand-slate-200 bg-surface-container-lowest shadow-sm transition-all hover:border-brand-slate-400 hover:shadow-md"
+          >
+            <div>
+              <div class="relative h-48 overflow-hidden bg-brand-navy-900">
+                <img
+                  class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+                  data-alt="A state-of-the-art computer simulation laboratory at Rivers State University where graduate engineers inspect complex 3D finite element stress models of subsea umbilical cables and dynamic marine risers on dual high-resolution monitors. The workspace is lit by clean architectural LED tube lighting, reflecting pristine slate workstations, engineering reference manuals, and technical wireframe layouts in cobalt blue and steel grey tones."
+                  decoding="async"
+                  loading="lazy"
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuASxHSiaf9Twcs2g-uV1pFuQR6woijMpvwMgVYtQ5YGEFg64mTno9r9gSJKIxJddfEFVvQNLYjLFOtC4aHK6G_Zi9O4zXrcPVv1l__OrMWNIjbvnNPy-gH7KlqrByYW78GqakeOzsSTiO1vAOkMS_ZDPfKt67otFkr_WHO3l07yH69e886WxIPEoZRQI2fGdNCQYGoz3HVoMKYrWh-_EihRFAla5QQh6QwjlJm0dpRXvI4Nq1AlC-Xp"
+                />
+                <div class="absolute left-3 top-3 flex gap-1.5">
+                  <span
+                    class="rounded bg-brand-navy-900/90 px-2 py-0.5 font-label-sm text-label-sm font-medium text-white"
+                    >CAD / SIM</span
+                  >
+                  <span
+                    class="rounded bg-status-info px-2 py-0.5 font-label-sm text-label-sm font-medium text-white"
+                    >Cohort IV</span
+                  >
+                </div>
+                <div
+                  class="absolute bottom-3 right-3 flex items-center gap-1 rounded bg-brand-navy-950/80 px-2 py-1 font-label-sm font-mono text-label-sm text-white backdrop-blur-sm"
+                >
+                  <span
+                    class="material-symbols-outlined text-xs text-status-info"
+                    data-icon="videocam"
+                    >videocam</span
+                  >
+                  1h 45m
+                </div>
+              </div>
+              <div class="space-y-3 p-5">
+                <div
+                  class="flex items-center justify-between font-label-sm text-label-sm text-brand-slate-500"
+                >
+                  <span>Nov 18, 2024</span>
+                  <span class="font-mono text-brand-slate-700">DOC-2024-CAD-09</span>
+                </div>
+                <h3
+                  class="font-title-lg text-title-lg font-bold text-brand-navy-950 transition-colors group-hover:text-brand-cobalt-deep"
+                >
+                  Subsea Umbilical Dynamic Riser Hands-On CAD Workshop
+                </h3>
+                <p class="line-clamp-2 font-body-sm text-body-sm text-brand-slate-700">
+                  Intensive 5-day computational workshop covering vortex-induced vibration (VIV)
+                  calculations, OrcaFlex simulations, and extreme sea state dynamic responses.
+                </p>
+                <!-- Tags / Features -->
+                <div class="flex flex-wrap gap-1.5 pt-1">
+                  <span
+                    class="flex items-center gap-1 rounded bg-brand-slate-100 px-2 py-0.5 font-label-sm text-label-sm font-medium text-brand-slate-700"
+                  >
+                    <span
+                      class="material-symbols-outlined text-xs"
+                      data-icon="photo_camera"
+                      >photo_camera</span
+                    >
+                    24 photos
+                  </span>
+                  <span
+                    class="flex items-center gap-1 rounded bg-brand-slate-100 px-2 py-0.5 font-label-sm text-label-sm font-medium text-brand-slate-700"
+                  >
+                    <span
+                      class="material-symbols-outlined text-xs"
+                      data-icon="terminal"
+                      >terminal</span
+                    >
+                    OrcaFlex 11.2
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div
+              class="mt-4 flex items-center justify-between border-t border-brand-slate-100 p-5 pt-0"
+            >
+              <span class="font-label-sm text-label-sm font-medium text-brand-slate-500"
+                >Deck: 14.8 MB PDF</span
+              >
+              <button
+                class="inline-flex items-center gap-1 font-label-md text-label-md font-semibold text-brand-cobalt-deep hover:text-primary"
+              >
+                <span>View Session</span>
+                <span
+                  class="material-symbols-outlined text-sm"
+                  data-icon="arrow_forward"
+                  >arrow_forward</span
+                >
+              </button>
+            </div>
+          </article>
+          <!-- Item 2: Inaugural Commissioning of the 50m Wave & Towing Flume Tank -->
+          <article
+            class="group flex flex-col justify-between overflow-hidden rounded-xl border border-brand-slate-200 bg-surface-container-lowest shadow-sm transition-all hover:border-brand-slate-400 hover:shadow-md"
+          >
+            <div>
+              <div class="relative h-48 overflow-hidden bg-brand-navy-900">
+                <img
+                  class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+                  data-alt="A sprawling hydrodynamic marine testing laboratory showing an Olympic-proportioned 50-meter towing flume wave tank. A scaled model of a twin-hull offshore support vessel is secured to an automated overhead motorized carriage system. Academic dignitaries, naval architects, and university council executives look on in formal ceremonial attire. Crisp reflections on the clean blue water surface contrast with industrial steel structural columns and digital wave telemetry gauges."
+                  decoding="async"
+                  loading="lazy"
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuAeEQ1-ofoK4R8gw0Zi60G7AQlmwjM3XyOJz_F1OtLpPamex4R500Bdz4smp-pSXEBB364oWQ7BFk27mkt3PbxEJPZH9YIa5rhbWPUclgZFzEFK516aqA5rmiENexGv1T5QDNKQWi4k5Fh3UaNp94lO-gsB_z0RkZyRlveFNHsIothTQitv4hXF6xep6ozQq4nE4TfgD9pzxXVozKnqR_wivlmkcnjod0rWrSfQ6tMOwcGwjP-uGQmX"
+                />
+                <div class="absolute left-3 top-3 flex gap-1.5">
+                  <span
+                    class="rounded bg-brand-navy-900/90 px-2 py-0.5 font-label-sm text-label-sm font-medium text-white"
+                    >Infrastructure</span
+                  >
+                  <span
+                    class="rounded bg-status-verified px-2 py-0.5 font-label-sm text-label-sm font-medium text-white"
+                    >Senate Milestone</span
+                  >
+                </div>
+                <div
+                  class="absolute bottom-3 right-3 flex items-center gap-1 rounded bg-brand-navy-950/80 px-2 py-1 font-label-sm font-mono text-label-sm text-white backdrop-blur-sm"
+                >
+                  <span
+                    class="material-symbols-outlined text-xs text-status-verified"
+                    data-icon="collections_bookmark"
+                    >collections_bookmark</span
+                  >
+                  16 photos
+                </div>
+              </div>
+              <div class="space-y-3 p-5">
+                <div
+                  class="flex items-center justify-between font-label-sm text-label-sm text-brand-slate-500"
+                >
+                  <span>October 04, 2024</span>
+                  <span class="font-mono text-brand-slate-700">RSU-REG-2024-WTF</span>
+                </div>
+                <h3
+                  class="font-title-lg text-title-lg font-bold text-brand-navy-950 transition-colors group-hover:text-brand-cobalt-deep"
+                >
+                  Inaugural Commissioning of the 50m Wave &amp; Towing Flume Tank
+                </h3>
+                <p class="line-clamp-2 font-body-sm text-body-sm text-brand-slate-700">
+                  Official opening ceremony of West Africa's largest hydrodynamic testing flume,
+                  graced by the Executive Governor, RSU Senate, and international naval delegations.
+                </p>
+                <!-- Tags / Features -->
+                <div class="flex flex-wrap gap-1.5 pt-1">
+                  <span
+                    class="rounded border border-status-verified-border bg-status-verified-bg px-2 py-0.5 font-label-sm text-label-sm font-medium text-status-verified"
+                  >
+                    Senate Resolution Docket
+                  </span>
+                  <span
+                    class="rounded bg-brand-slate-100 px-2 py-0.5 font-label-sm text-label-sm font-medium text-brand-slate-700"
+                  >
+                    Press Release Archive
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div
+              class="mt-4 flex items-center justify-between border-t border-brand-slate-100 p-5 pt-0"
+            >
+              <span class="font-label-sm text-label-sm font-medium text-brand-slate-500"
+                >Official Gazette Release</span
+              >
+              <button
+                class="inline-flex items-center gap-1 font-label-md text-label-md font-semibold text-brand-cobalt-deep hover:text-primary"
+              >
+                <span>View Dossier</span>
+                <span
+                  class="material-symbols-outlined text-sm"
+                  data-icon="arrow_forward"
+                  >arrow_forward</span
+                >
+              </button>
+            </div>
+          </article>
+          <!-- Item 3: AVEVA Marine & Caesar II Cohort 2024 Capstone Defense Panel -->
+          <article
+            class="group flex flex-col justify-between overflow-hidden rounded-xl border border-brand-slate-200 bg-surface-container-lowest shadow-sm transition-all hover:border-brand-slate-400 hover:shadow-md"
+          >
+            <div>
+              <div class="relative h-48 overflow-hidden bg-brand-navy-900">
+                <img
+                  class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+                  data-alt="An academic defense hall at Rivers State University where postgraduate marine technology scholars present capstone engineering dossiers before an esteemed panel of external examiners and industry auditors. Large display screens exhibit detailed AVEVA 3D piping layouts, isometric stress envelopes, and structural bill-of-materials. The lighting is balanced and crisp, evoking an authoritative institutional atmosphere with navy-clad scholars and leather-bound project folios."
+                  decoding="async"
+                  loading="lazy"
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuCfWk2_qNY5h5061DnG6uC7axPCpOLvH-DmHNepU3pjJm8gW2q-5LnOgrQM-ikLxL8ZeyeRQB_A2sWR3wFtoGCYU5TjU3BZrXiVytO67H_30cgqtlW5sGXAQ5BgNSYSxMVURhvez2OO7Hh1Xove-blyzYyAiWsjv8qIt3x3bMOznfASj0dsjTAEg8e0zbbI1rXOKw8dqmVU1Sq-WBaezpbXCydwzxUCMgLmP6N0Kl-4s-1tzTN2ezjj"
+                />
+                <div class="absolute left-3 top-3 flex gap-1.5">
+                  <span
+                    class="rounded bg-brand-navy-900/90 px-2 py-0.5 font-label-sm text-label-sm font-medium text-white"
+                    >Accreditation</span
+                  >
+                  <span
+                    class="rounded bg-brand-cobalt px-2 py-0.5 font-label-sm text-label-sm font-medium text-white"
+                    >32 Trainees</span
+                  >
+                </div>
+                <div
+                  class="absolute bottom-3 right-3 flex items-center gap-1 rounded bg-brand-navy-950/80 px-2 py-1 font-label-sm font-mono text-label-sm text-white backdrop-blur-sm"
+                >
+                  <span
+                    class="material-symbols-outlined text-xs text-inverse-primary"
+                    data-icon="photo_library"
+                    >photo_library</span
+                  >
+                  32 photos
+                </div>
+              </div>
+              <div class="space-y-3 p-5">
+                <div
+                  class="flex items-center justify-between font-label-sm text-label-sm text-brand-slate-500"
+                >
+                  <span>September 22, 2024</span>
+                  <span class="font-mono text-brand-slate-700">CAP-AV24-DEF</span>
+                </div>
+                <h3
+                  class="font-title-lg text-title-lg font-bold text-brand-navy-950 transition-colors group-hover:text-brand-cobalt-deep"
+                >
+                  AVEVA Marine &amp; Caesar II Cohort 2024 Capstone Defense Panel
+                </h3>
+                <p class="line-clamp-2 font-body-sm text-body-sm text-brand-slate-700">
+                  Rigorous evaluation of modular topside piping stress analysis and production
+                  modeling portfolios defended before external auditors from TotalEnergies and
+                  Chevron.
+                </p>
+                <!-- Tags / Features -->
+                <div class="flex flex-wrap gap-1.5 pt-1">
+                  <span
+                    class="rounded bg-brand-slate-100 px-2 py-0.5 font-label-sm text-label-sm font-medium text-brand-slate-700"
+                  >
+                    Candidate Dossiers
+                  </span>
+                  <span
+                    class="rounded bg-brand-slate-100 px-2 py-0.5 font-label-sm text-label-sm font-medium text-brand-slate-700"
+                  >
+                    COREN Validation
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div
+              class="mt-4 flex items-center justify-between border-t border-brand-slate-100 p-5 pt-0"
+            >
+              <span class="font-label-sm text-label-sm font-medium text-brand-slate-500"
+                >32 Portfolios Archived</span
+              >
+              <button
+                class="inline-flex items-center gap-1 font-label-md text-label-md font-semibold text-brand-cobalt-deep hover:text-primary"
+              >
+                <span>Inspect Records</span>
+                <span
+                  class="material-symbols-outlined text-sm"
+                  data-icon="arrow_forward"
+                  >arrow_forward</span
+                >
+              </button>
+            </div>
+          </article>
+          <!-- Item 4: NCDMB & IOC Industry Advisory Council Bi-Annual Summit -->
+          <article
+            class="group flex flex-col justify-between overflow-hidden rounded-xl border border-brand-slate-200 bg-surface-container-lowest shadow-sm transition-all hover:border-brand-slate-400 hover:shadow-md"
+          >
+            <div>
+              <div class="relative h-48 overflow-hidden bg-brand-navy-900">
+                <img
+                  class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+                  data-alt="An executive boardroom meeting involving the Nigerian Content Development and Monitoring Board executive secretary, Rivers State University vice-chancellor, and managing directors of multinational energy operators. They are seated around a polished mahogany boardroom table adorned with institutional flags, microphone units, and leather folders during the formal signing ceremony of a bilateral research accord. Lighting is warm, distinguished, and dignified."
+                  decoding="async"
+                  loading="lazy"
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuAwnHiTcS8MFPx1W48o0gSpB8ilE8pKmYrMs0Il5Y1vxN_O1eu90MrL0V1IvTrlQucRZfvX3HzWi8-23UW-D0AYOgzbmZddhMYmf-BgOfbGVt9nFep1KU0c27OXZ6HYnpu7XjxxFqeJrCZSQbC-Liwi8zUrBjyJDoeB31rjKGsxnVCnxx4k6PUdBeaqTmOaDYCIDW4kviAu5Bn4JUa9BdEO24aCE7oyvedH1ufqyTrdeeU6LMZo0ayB"
+                />
+                <div class="absolute left-3 top-3 flex gap-1.5">
+                  <span
+                    class="rounded bg-brand-navy-900/90 px-2 py-0.5 font-label-sm text-label-sm font-medium text-white"
+                    >Strategic MoU</span
+                  >
+                  <span
+                    class="rounded bg-status-warning px-2 py-0.5 font-label-sm text-label-sm font-medium text-white"
+                    >Industry Accord</span
+                  >
+                </div>
+                <div
+                  class="absolute bottom-3 right-3 flex items-center gap-1 rounded bg-brand-navy-950/80 px-2 py-1 font-label-sm font-mono text-label-sm text-white backdrop-blur-sm"
+                >
+                  <span
+                    class="material-symbols-outlined text-xs text-status-warning"
+                    data-icon="apartment"
+                    >apartment</span
+                  >
+                  12 photos
+                </div>
+              </div>
+              <div class="space-y-3 p-5">
+                <div
+                  class="flex items-center justify-between font-label-sm text-label-sm text-brand-slate-500"
+                >
+                  <span>August 14, 2024</span>
+                  <span class="font-mono text-brand-slate-700">MOU-NCDMB-24-02</span>
+                </div>
+                <h3
+                  class="font-title-lg text-title-lg font-bold text-brand-navy-950 transition-colors group-hover:text-brand-cobalt-deep"
+                >
+                  NCDMB &amp; IOC Industry Advisory Council Bi-Annual Summit
+                </h3>
+                <p class="line-clamp-2 font-body-sm text-body-sm text-brand-slate-700">
+                  Signing of the $2.4M Local Content Human Capacity Development Framework for subsea
+                  umbilical technicians and deepwater welding certifications.
+                </p>
+                <!-- Tags / Features -->
+                <div class="flex flex-wrap gap-1.5 pt-1">
+                  <span
+                    class="rounded bg-brand-slate-100 px-2 py-0.5 font-label-sm text-label-sm font-medium text-brand-slate-700"
+                  >
+                    Signed Communique PDF
+                  </span>
+                  <span
+                    class="rounded bg-brand-slate-100 px-2 py-0.5 font-label-sm text-label-sm font-medium text-brand-slate-700"
+                  >
+                    Executive Gallery
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div
+              class="mt-4 flex items-center justify-between border-t border-brand-slate-100 p-5 pt-0"
+            >
+              <span class="font-label-sm text-label-sm font-medium text-brand-slate-500"
+                >Full Communique Available</span
+              >
+              <button
+                class="inline-flex items-center gap-1 font-label-md text-label-md font-semibold text-brand-cobalt-deep hover:text-primary"
+              >
+                <span>Download Accord</span>
+                <span
+                  class="material-symbols-outlined text-sm"
+                  data-icon="arrow_forward"
+                  >arrow_forward</span
+                >
+              </button>
+            </div>
+          </article>
+          <!-- Item 5: Offshore Renewable Energy & Floating Wind Turbines in Gulf of Guinea -->
+          <article
+            class="group flex flex-col justify-between overflow-hidden rounded-xl border border-brand-slate-200 bg-surface-container-lowest shadow-sm transition-all hover:border-brand-slate-400 hover:shadow-md"
+          >
+            <div>
+              <div class="relative h-48 overflow-hidden bg-brand-navy-900">
+                <img
+                  class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+                  data-alt="A specialist academic symposium stage featuring a keynote speech on offshore floating wind turbine substructures. Behind the speaker, a giant projection screen illustrates dynamic mooring catenary lines, spar-buoy stability envelopes, and Gulf of Guinea oceanic current data. Attendees include marine scientists, structural analysts, and offshore energy consultants in technical and business attire. Modern auditorium lighting with cyan and deep blue accents."
+                  decoding="async"
+                  loading="lazy"
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuBaOxAUVfTVRFjnqgYsdkBMRNfvKaTq3cCtcVFJ_vckZt2XMlcgoQwys2fWaJWQt3WjVknySi1CrpdLfkQburP6P6TO0w_JKhKC7rHBTr0Irug-vrMHGzUdG_-eI6jgz2X3pikOTvQknWjtaT5WsuoVej_WLx92PGKNuRHpfX5ZV8c1yHh68oxPWBnT-0jaQHKWb9aVPWFZ_SxZv2HMGDneJTjmjo_wYBY1JzKZm5R2GZdsgii9QgQV"
+                />
+                <div class="absolute left-3 top-3 flex gap-1.5">
+                  <span
+                    class="rounded bg-brand-navy-900/90 px-2 py-0.5 font-label-sm text-label-sm font-medium text-white"
+                    >Renewables</span
+                  >
+                  <span
+                    class="rounded bg-tertiary-container px-2 py-0.5 font-label-sm text-label-sm font-medium text-on-tertiary-container"
+                    >Keynote Stream</span
+                  >
+                </div>
+                <div
+                  class="absolute bottom-3 right-3 flex items-center gap-1 rounded bg-brand-navy-950/80 px-2 py-1 font-label-sm font-mono text-label-sm text-white backdrop-blur-sm"
+                >
+                  <span
+                    class="material-symbols-outlined text-xs text-tertiary-fixed"
+                    data-icon="slideshow"
+                    >slideshow</span
+                  >
+                  52 Slides
+                </div>
+              </div>
+              <div class="space-y-3 p-5">
+                <div
+                  class="flex items-center justify-between font-label-sm text-label-sm text-brand-slate-500"
+                >
+                  <span>July 05, 2024</span>
+                  <span class="font-mono text-brand-slate-700">SEM-ORE-24-GOG</span>
+                </div>
+                <h3
+                  class="font-title-lg text-title-lg font-bold text-brand-navy-950 transition-colors group-hover:text-brand-cobalt-deep"
+                >
+                  Offshore Renewable Energy &amp; Floating Wind Turbines in Gulf of Guinea Seminar
+                </h3>
+                <p class="line-clamp-2 font-body-sm text-body-sm text-brand-slate-700">
+                  Techno-economic feasibility lecture exploring tension leg platforms and tension
+                  tether anchors engineered specifically for equatorial tropical swell patterns.
+                </p>
+                <!-- Tags / Features -->
+                <div class="flex flex-wrap gap-1.5 pt-1">
+                  <span
+                    class="rounded bg-brand-slate-100 px-2 py-0.5 font-label-sm text-label-sm font-medium text-brand-slate-700"
+                  >
+                    Full Keynote Recording
+                  </span>
+                  <span
+                    class="rounded bg-brand-slate-100 px-2 py-0.5 font-label-sm text-label-sm font-medium text-brand-slate-700"
+                  >
+                    Technical Presentation Slides
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div
+              class="mt-4 flex items-center justify-between border-t border-brand-slate-100 p-5 pt-0"
+            >
+              <span class="font-label-sm text-label-sm font-medium text-brand-slate-500"
+                >Keynote Duration: 58m</span
+              >
+              <button
+                class="inline-flex items-center gap-1 font-label-md text-label-md font-semibold text-brand-cobalt-deep hover:text-primary"
+              >
+                <span>View Materials</span>
+                <span
+                  class="material-symbols-outlined text-sm"
+                  data-icon="arrow_forward"
+                  >arrow_forward</span
+                >
+              </button>
+            </div>
+          </article>
+          <!-- Item 6: Classroom & Computational Lab Modernization Tour -->
+          <article
+            class="group flex flex-col justify-between overflow-hidden rounded-xl border border-brand-slate-200 bg-surface-container-lowest shadow-sm transition-all hover:border-brand-slate-400 hover:shadow-md"
+          >
+            <div>
+              <div class="relative h-48 overflow-hidden bg-brand-navy-900">
+                <img
+                  class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+                  data-alt="An expansive panoramic view of the newly upgraded computational suites and virtual simulation suites at CMOTD Rivers State University campus. Clean architectural lines show rows of high-performance technical engineering workstations equipped with specialized navigation simulation consoles, VR marine safety training rigs, and overhead interactive smart-boards. Bright high-CRI clean room laboratory lighting highlights the navy, white, and brushed metal environment."
+                  decoding="async"
+                  loading="lazy"
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuDqLB_2igk4z_p-mMfLmvCUnd6orvp6PB2RnOSgit6bQpUs3stzFHsHdRNCcg7kiEJalW186q2hGo-AYpG-aAmHNP6Qx_ziYEW_f2CZNtbB5lSbJaISMJ5U9qhqVxplqnRqejRjbXRh2hLRILJr0qHY7SZeGATlkJZIdSJ6S7TMkoRJ4W-EF-_tr07hRu9t9L4-4fANrZ6zr_-ppCJvW0W2fLhcK6gODFTH7JW2jjDn30BYrJeUEAmQ"
+                />
+                <div class="absolute left-3 top-3 flex gap-1.5">
+                  <span
+                    class="rounded bg-brand-navy-900/90 px-2 py-0.5 font-label-sm text-label-sm font-medium text-white"
+                    >Campus Facilities</span
+                  >
+                  <span
+                    class="rounded bg-secondary px-2 py-0.5 font-label-sm text-label-sm font-medium text-white"
+                    >Virtual Tour</span
+                  >
+                </div>
+                <div
+                  class="absolute bottom-3 right-3 flex items-center gap-1 rounded bg-brand-navy-950/80 px-2 py-1 font-label-sm font-mono text-label-sm text-white backdrop-blur-sm"
+                >
+                  <span
+                    class="material-symbols-outlined text-xs text-white"
+                    data-icon="photo_album"
+                    >photo_album</span
+                  >
+                  48 Photos
+                </div>
+              </div>
+              <div class="space-y-3 p-5">
+                <div
+                  class="flex items-center justify-between font-label-sm text-label-sm text-brand-slate-500"
+                >
+                  <span>June 19, 2024</span>
+                  <span class="font-mono text-brand-slate-700">FAC-TOUR-2024</span>
+                </div>
+                <h3
+                  class="font-title-lg text-title-lg font-bold text-brand-navy-950 transition-colors group-hover:text-brand-cobalt-deep"
+                >
+                  Classroom &amp; Computational Lab Modernization Tour
+                </h3>
+                <p class="line-clamp-2 font-body-sm text-body-sm text-brand-slate-700">
+                  Visual archival showcase of Phase 2 laboratory expansion comprising 80 dual-screen
+                  simulation seats, Aspentech HYSYS cluster, and marine engine diagnostic bays.
+                </p>
+                <!-- Tags / Features -->
+                <div class="flex flex-wrap gap-1.5 pt-1">
+                  <span
+                    class="rounded bg-brand-slate-100 px-2 py-0.5 font-label-sm text-label-sm font-medium text-brand-slate-700"
+                  >
+                    360° Panorama
+                  </span>
+                  <span
+                    class="rounded bg-brand-slate-100 px-2 py-0.5 font-label-sm text-label-sm font-medium text-brand-slate-700"
+                  >
+                    Lab Equipment Specs
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div
+              class="mt-4 flex items-center justify-between border-t border-brand-slate-100 p-5 pt-0"
+            >
+              <span class="font-label-sm text-label-sm font-medium text-brand-slate-500"
+                >Interactive Floor Plan</span
+              >
+              <button
+                class="inline-flex items-center gap-1 font-label-md text-label-md font-semibold text-brand-cobalt-deep hover:text-primary"
+              >
+                <span>Open Tour</span>
+                <span
+                  class="material-symbols-outlined text-sm"
+                  data-icon="arrow_forward"
+                  >arrow_forward</span
+                >
+              </button>
+            </div>
+          </article>
+        </div>
+      </section>
+      <!-- ==================== DOWNLOADABLE TECHNICAL PAPERS INDEX TABLE ==================== -->
+      <section class="space-y-4">
+        <div class="flex flex-col justify-between gap-3 md:flex-row md:items-center">
+          <div>
+            <div class="flex items-center gap-2">
+              <span class="h-5 w-1.5 rounded-sm bg-brand-cobalt"></span>
+              <h2 class="font-headline-sm text-headline-sm font-bold text-brand-navy-950">
+                Conference Proceedings &amp; Technical Papers Index
+              </h2>
+            </div>
+            <p class="font-body-sm text-body-sm text-brand-slate-500">
+              Peer-reviewed symposium papers, engineering whitepapers, and conference pre-prints
+            </p>
+          </div>
+          <div class="flex items-center gap-2">
+            <div class="relative">
+              <input
+                class="h-9 rounded-lg border border-brand-slate-200 bg-surface-container-lowest pl-8 pr-3 font-label-sm text-label-sm focus:border-brand-cobalt focus:outline-none"
+                placeholder="Filter proceedings..."
+                type="text"
+              />
+              <span
+                class="material-symbols-outlined absolute left-2.5 top-1/2 -translate-y-1/2 text-sm text-brand-slate-400"
+                data-icon="search"
+                >search</span
+              >
+            </div>
+            <button
+              class="flex h-9 items-center gap-1 rounded-lg border border-brand-slate-200 bg-brand-slate-100 px-3 font-label-sm text-label-sm font-medium text-brand-navy-950 transition-colors hover:bg-brand-slate-200"
+            >
+              <span
+                class="material-symbols-outlined text-sm"
+                data-icon="file_download"
+                >file_download</span
+              >
+              <span>Batch Export (CSV)</span>
+            </button>
+          </div>
+        </div>
+        <!-- Data Table Card -->
+        <div
+          class="overflow-hidden rounded-xl border border-brand-slate-200 bg-surface-container-lowest shadow-sm"
+        >
+          <div class="overflow-x-auto">
+            <table class="w-full border-collapse text-left">
+              <thead>
+                <tr
+                  class="border-b border-brand-slate-200 bg-brand-slate-50 font-label-sm text-label-sm font-semibold uppercase tracking-wider text-brand-slate-700"
+                >
+                  <th class="px-4 py-3.5 lg:px-6">Paper Title</th>
+                  <th class="px-4 py-3.5">Authors &amp; Affiliation</th>
+                  <th class="px-4 py-3.5 text-center">Symposium Year</th>
+                  <th class="px-4 py-3.5">Category</th>
+                  <th class="px-4 py-3.5 text-center">Citations</th>
+                  <th class="px-4 py-3.5 text-right lg:px-6">Download</th>
+                </tr>
+              </thead>
+              <tbody class="divide-y divide-brand-slate-200 font-body-sm text-body-sm">
+                <!-- Row 1 -->
+                <tr class="transition-colors hover:bg-brand-slate-50/80">
+                  <td class="px-4 py-4 lg:px-6">
+                    <div
+                      class="cursor-pointer font-semibold text-brand-navy-950 hover:text-brand-cobalt"
+                    >
+                      Hydrodynamic Damping Characteristics of Heave Plates on Semi-Submersible
+                      Floating Offshore Wind Turbines
+                    </div>
+                    <div class="mt-0.5 font-mono text-xs text-brand-slate-400">
+                      DOI: 10.1016/j.cmotd.2024.11.004
+                    </div>
+                  </td>
+                  <td class="px-4 py-4">
+                    <div class="font-medium text-brand-navy-900">
+                      Prof. E. B. Briggs, Dr. I. K. Tamunomiebi
+                    </div>
+                    <div class="text-xs text-brand-slate-500">Dept. of Marine Engineering, RSU</div>
+                  </td>
+                  <td class="px-4 py-4 text-center font-mono font-medium text-brand-slate-700">
+                    2024
+                  </td>
+                  <td class="px-4 py-4">
+                    <span
+                      class="inline-block rounded bg-brand-slate-100 px-2.5 py-0.5 font-label-sm text-label-sm font-medium text-brand-navy-900"
+                    >
+                      Hydrodynamics
+                    </span>
+                  </td>
+                  <td class="px-4 py-4 text-center font-mono font-semibold text-brand-cobalt">
+                    14
+                  </td>
+                  <td class="px-4 py-4 text-right lg:px-6">
+                    <button
+                      class="inline-flex items-center gap-1.5 rounded-md bg-brand-cobalt/10 px-3 py-1.5 font-label-sm text-label-sm font-semibold text-brand-cobalt transition-all hover:bg-brand-cobalt hover:text-white"
+                    >
+                      <span
+                        class="material-symbols-outlined text-sm"
+                        data-icon="picture_as_pdf"
+                        >picture_as_pdf</span
+                      >
+                      <span>PDF (2.4 MB)</span>
+                    </button>
+                  </td>
+                </tr>
+                <!-- Row 2 -->
+                <tr class="transition-colors hover:bg-brand-slate-50/80">
+                  <td class="px-4 py-4 lg:px-6">
+                    <div
+                      class="cursor-pointer font-semibold text-brand-navy-950 hover:text-brand-cobalt"
+                    >
+                      Assessment of Cathodic Protection Shielding in Shallow Water Buried Pipeline
+                      Networks in the Niger Delta
+                    </div>
+                    <div class="mt-0.5 font-mono text-xs text-brand-slate-400">
+                      DOI: 10.1016/j.cmotd.2024.08.012
+                    </div>
+                  </td>
+                  <td class="px-4 py-4">
+                    <div class="font-medium text-brand-navy-900">
+                      Engr. T. W. Pepple, C. N. Okoro (PhD)
+                    </div>
+                    <div class="text-xs text-brand-slate-500">Subsea Asset Integrity Cluster</div>
+                  </td>
+                  <td class="px-4 py-4 text-center font-mono font-medium text-brand-slate-700">
+                    2024
+                  </td>
+                  <td class="px-4 py-4">
+                    <span
+                      class="inline-block rounded bg-brand-slate-100 px-2.5 py-0.5 font-label-sm text-label-sm font-medium text-brand-navy-900"
+                    >
+                      Subsea Pipeline
+                    </span>
+                  </td>
+                  <td class="px-4 py-4 text-center font-mono font-semibold text-brand-cobalt">
+                    22
+                  </td>
+                  <td class="px-4 py-4 text-right lg:px-6">
+                    <button
+                      class="inline-flex items-center gap-1.5 rounded-md bg-brand-cobalt/10 px-3 py-1.5 font-label-sm text-label-sm font-semibold text-brand-cobalt transition-all hover:bg-brand-cobalt hover:text-white"
+                    >
+                      <span
+                        class="material-symbols-outlined text-sm"
+                        data-icon="picture_as_pdf"
+                        >picture_as_pdf</span
+                      >
+                      <span>PDF (3.8 MB)</span>
+                    </button>
+                  </td>
+                </tr>
+                <!-- Row 3 -->
+                <tr class="transition-colors hover:bg-brand-slate-50/80">
+                  <td class="px-4 py-4 lg:px-6">
+                    <div
+                      class="cursor-pointer font-semibold text-brand-navy-950 hover:text-brand-cobalt"
+                    >
+                      Comparative Finite Element Stress Simulation of Topside Manifold Piping:
+                      Caesar II vs. ANSYS Mechanical
+                    </div>
+                    <div class="mt-0.5 font-mono text-xs text-brand-slate-400">
+                      DOI: 10.1016/j.cmotd.2023.12.001
+                    </div>
+                  </td>
+                  <td class="px-4 py-4">
+                    <div class="font-medium text-brand-navy-900">
+                      Engr. S. A. Fiberesima, R. G. Dappa
+                    </div>
+                    <div class="text-xs text-brand-slate-500">Process Simulation Lab</div>
+                  </td>
+                  <td class="px-4 py-4 text-center font-mono font-medium text-brand-slate-700">
+                    2023
+                  </td>
+                  <td class="px-4 py-4">
+                    <span
+                      class="inline-block rounded bg-brand-slate-100 px-2.5 py-0.5 font-label-sm text-label-sm font-medium text-brand-navy-900"
+                    >
+                      FEA / Piping
+                    </span>
+                  </td>
+                  <td class="px-4 py-4 text-center font-mono font-semibold text-brand-cobalt">
+                    31
+                  </td>
+                  <td class="px-4 py-4 text-right lg:px-6">
+                    <button
+                      class="inline-flex items-center gap-1.5 rounded-md bg-brand-cobalt/10 px-3 py-1.5 font-label-sm text-label-sm font-semibold text-brand-cobalt transition-all hover:bg-brand-cobalt hover:text-white"
+                    >
+                      <span
+                        class="material-symbols-outlined text-sm"
+                        data-icon="picture_as_pdf"
+                        >picture_as_pdf</span
+                      >
+                      <span>PDF (4.1 MB)</span>
+                    </button>
+                  </td>
+                </tr>
+                <!-- Row 4 -->
+                <tr class="transition-colors hover:bg-brand-slate-50/80">
+                  <td class="px-4 py-4 lg:px-6">
+                    <div
+                      class="cursor-pointer font-semibold text-brand-navy-950 hover:text-brand-cobalt"
+                    >
+                      Autonomous Underwater Vehicle (AUV) Waypoint Tracking via Extended Kalman
+                      Filter in Turbid Estuarine Channels
+                    </div>
+                    <div class="mt-0.5 font-mono text-xs text-brand-slate-400">
+                      DOI: 10.1016/j.cmotd.2023.06.015
+                    </div>
+                  </td>
+                  <td class="px-4 py-4">
+                    <div class="font-medium text-brand-navy-900">
+                      Dr. F. O. Hart, Engr. A. M. Georgewill
+                    </div>
+                    <div class="text-xs text-brand-slate-500">Autonomous Marine Robotics Group</div>
+                  </td>
+                  <td class="px-4 py-4 text-center font-mono font-medium text-brand-slate-700">
+                    2023
+                  </td>
+                  <td class="px-4 py-4">
+                    <span
+                      class="inline-block rounded bg-brand-slate-100 px-2.5 py-0.5 font-label-sm text-label-sm font-medium text-brand-navy-900"
+                    >
+                      Robotics / AI
+                    </span>
+                  </td>
+                  <td class="px-4 py-4 text-center font-mono font-semibold text-brand-cobalt">
+                    18
+                  </td>
+                  <td class="px-4 py-4 text-right lg:px-6">
+                    <button
+                      class="inline-flex items-center gap-1.5 rounded-md bg-brand-cobalt/10 px-3 py-1.5 font-label-sm text-label-sm font-semibold text-brand-cobalt transition-all hover:bg-brand-cobalt hover:text-white"
+                    >
+                      <span
+                        class="material-symbols-outlined text-sm"
+                        data-icon="picture_as_pdf"
+                        >picture_as_pdf</span
+                      >
+                      <span>PDF (1.9 MB)</span>
+                    </button>
+                  </td>
+                </tr>
+                <!-- Row 5 -->
+                <tr class="transition-colors hover:bg-brand-slate-50/80">
+                  <td class="px-4 py-4 lg:px-6">
+                    <div
+                      class="cursor-pointer font-semibold text-brand-navy-950 hover:text-brand-cobalt"
+                    >
+                      Decarbonization Pathways for Offshore Supply Vessels (OSVs) Operating in West
+                      African Deepwater Concessions
+                    </div>
+                    <div class="mt-0.5 font-mono text-xs text-brand-slate-400">
+                      DOI: 10.1016/j.cmotd.2022.11.009
+                    </div>
+                  </td>
+                  <td class="px-4 py-4">
+                    <div class="font-medium text-brand-navy-900">
+                      Prof. J. C. Allison, Engr. K. P. Lawson
+                    </div>
+                    <div class="text-xs text-brand-slate-500">Marine Energy Transition Unit</div>
+                  </td>
+                  <td class="px-4 py-4 text-center font-mono font-medium text-brand-slate-700">
+                    2022
+                  </td>
+                  <td class="px-4 py-4">
+                    <span
+                      class="inline-block rounded bg-brand-slate-100 px-2.5 py-0.5 font-label-sm text-label-sm font-medium text-brand-navy-900"
+                    >
+                      Green Shipping
+                    </span>
+                  </td>
+                  <td class="px-4 py-4 text-center font-mono font-semibold text-brand-cobalt">
+                    47
+                  </td>
+                  <td class="px-4 py-4 text-right lg:px-6">
+                    <button
+                      class="inline-flex items-center gap-1.5 rounded-md bg-brand-cobalt/10 px-3 py-1.5 font-label-sm text-label-sm font-semibold text-brand-cobalt transition-all hover:bg-brand-cobalt hover:text-white"
+                    >
+                      <span
+                        class="material-symbols-outlined text-sm"
+                        data-icon="picture_as_pdf"
+                        >picture_as_pdf</span
+                      >
+                      <span>PDF (5.2 MB)</span>
+                    </button>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <!-- Pagination Footer -->
+          <div
+            class="flex flex-col items-center justify-between gap-3 border-t border-brand-slate-200 bg-brand-slate-50 p-4 font-label-sm text-label-sm text-brand-slate-500 sm:flex-row"
+          >
+            <span>Showing 1 to 5 of 142 documented peer-reviewed papers</span>
+            <div class="flex items-center gap-1">
+              <button
+                class="rounded border border-brand-slate-200 bg-white px-2.5 py-1 hover:bg-brand-slate-100 disabled:opacity-50"
+                disabled=""
+              >
+                Previous
+              </button>
+              <button
+                class="rounded border border-brand-cobalt bg-brand-cobalt px-2.5 py-1 font-semibold text-white"
+              >
+                1
+              </button>
+              <button
+                class="rounded border border-brand-slate-200 bg-white px-2.5 py-1 hover:bg-brand-slate-100"
+              >
+                2
+              </button>
+              <button
+                class="rounded border border-brand-slate-200 bg-white px-2.5 py-1 hover:bg-brand-slate-100"
+              >
+                3
+              </button>
+              <span class="px-1">...</span>
+              <button
+                class="rounded border border-brand-slate-200 bg-white px-2.5 py-1 hover:bg-brand-slate-100"
+              >
+                29
+              </button>
+              <button
+                class="rounded border border-brand-slate-200 bg-white px-2.5 py-1 hover:bg-brand-slate-100"
+              >
+                Next
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ==================== MEDIA INQUIRIES & PRESS LICENSING BANNER ==================== -->
+      <section
+        class="relative overflow-hidden rounded-xl border border-brand-slate-700 bg-gradient-to-r from-brand-navy-950 via-brand-navy-900 to-brand-slate-800 p-8 text-white shadow-md lg:p-10"
+      >
+        <div
+          class="pointer-events-none absolute bottom-0 right-0 top-0 hidden w-1/3 opacity-10 md:block"
+        >
+          <span
+            class="material-symbols-outlined text-[200px]"
+            data-icon="camera"
+            >camera</span
+          >
+        </div>
+        <div class="relative z-10 grid grid-cols-1 items-center gap-8 lg:grid-cols-12">
+          <div class="space-y-3 lg:col-span-8">
+            <div
+              class="inline-flex items-center gap-2 rounded-full border border-brand-slate-700 bg-brand-slate-800/80 px-2.5 py-1 font-label-sm text-label-sm font-semibold text-inverse-primary"
+            >
+              <span
+                class="material-symbols-outlined text-sm"
+                data-icon="verified"
+                >verified</span
+              >
+              Institutional Press &amp; Intellectual Property Desk
+            </div>
+            <h3 class="font-headline-sm text-headline-sm font-bold tracking-tight text-white">
+              Media Press Inquiries &amp; High-Resolution Photograph Licensing
+            </h3>
+            <p class="text-brand-slate-300 max-w-2xl font-body-md text-body-md">
+              Accredited maritime journalists, corporate communications officers, and academic
+              research publishers may request uncompressed RAW photography, broadcast video B-roll,
+              and official symposium transcript clearance under CC BY-NC-ND 4.0.
+            </p>
+            <div class="text-brand-slate-300 flex flex-wrap gap-4 pt-2 font-body-sm text-body-sm">
+              <div class="flex items-center gap-1.5">
+                <span
+                  class="material-symbols-outlined text-base text-inverse-primary"
+                  data-icon="mail"
+                  >mail</span
+                >
+                <span>media.relations@cmotd.rsu.edu.ng</span>
+              </div>
+              <div class="flex items-center gap-1.5">
+                <span
+                  class="material-symbols-outlined text-base text-inverse-primary"
+                  data-icon="phone_in_talk"
+                  >phone_in_talk</span
+                >
+                <span>+234 (0) 84 992 411 / Ext. 204</span>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-col justify-end gap-3 sm:flex-row lg:col-span-4 lg:flex-col">
+            <button
+              class="flex items-center justify-center gap-2 rounded-lg bg-brand-cobalt px-5 py-3 font-label-md text-label-md font-semibold text-white shadow-sm transition-all hover:bg-brand-cobalt-deep"
+            >
+              <span
+                class="material-symbols-outlined text-base"
+                data-icon="fact_check"
+                >fact_check</span
+              >
+              <span>Request Media Press Kit</span>
+            </button>
+            <button
+              class="border-brand-slate-600 flex items-center justify-center gap-2 rounded-lg border px-5 py-3 font-label-md text-label-md font-medium text-white transition-all hover:bg-brand-slate-800"
+            >
+              <span
+                class="material-symbols-outlined text-base"
+                data-icon="attribution"
+                >attribution</span
+              >
+              <span>Licensing Terms &amp; Guidelines</span>
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- ==================== INSTITUTIONAL FOOTER ==================== -->
+    <cmotd-institution-strip></cmotd-institution-strip>
+    <cmotd-site-footer></cmotd-site-footer>
+  </body>
+</html>

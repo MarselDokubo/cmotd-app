@@ -1,0 +1,1027 @@
+<!doctype html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      content="width=device-width, initial-scale=1.0"
+      name="viewport"
+    />
+    <title>CMOTD Events &amp; Newsfeed | Rivers State University</title>
+    <link
+      href="../favicon.ico"
+      rel="icon"
+      type="image/x-icon"
+    />
+
+    <!-- Fonts -->
+    <!-- Tailwind CSS -->
+    <link
+      href="../assets/css/tailwind-build.css"
+      rel="stylesheet"
+    />
+    <link
+      href="../assets/css/cmotd-global.css"
+      rel="stylesheet"
+    />
+    <script
+      defer=""
+      src="../assets/js/site-config.js"
+    ></script>
+    <script
+      defer=""
+      src="../assets/js/cmotd-components.js"
+    ></script>
+  </head>
+  <body
+    class="bg-background font-body-md text-on-background antialiased selection:bg-brand-cobalt selection:text-surface"
+  >
+    <!-- TOP APP BAR -->
+    <cmotd-site-header active="events"></cmotd-site-header>
+    <!-- MAIN CANVAS -->
+    <main class="mx-auto max-w-[1280px] space-y-12 px-6 py-8 lg:px-8">
+      <!-- HERO SECTION & TICKER -->
+      <section class="border-b border-brand-slate-200 pb-10">
+        <div class="mb-3 flex items-center gap-2">
+          <span
+            class="inline-flex items-center gap-1.5 rounded-full border border-brand-slate-200 bg-brand-slate-100 px-2.5 py-0.5 font-label-sm text-label-sm font-semibold text-brand-navy-900"
+          >
+            <span class="h-2 w-2 animate-ping rounded-full bg-brand-cobalt"></span>
+            RSU SENATE ACCREDITED
+          </span>
+          <span class="text-brand-slate-400">•</span>
+          <span class="font-code-sm text-code-sm uppercase text-brand-slate-500"
+            >CMOTD Institutional Feed // OCT 2025</span
+          >
+        </div>
+        <div class="grid grid-cols-1 items-end gap-8 lg:grid-cols-12">
+          <div class="space-y-4 lg:col-span-8">
+            <h1
+              class="font-display-lg text-display-lg font-bold tracking-tight text-brand-navy-950"
+            >
+              CMOTD Events &amp; Institutional Newsfeed
+            </h1>
+            <p class="max-w-3xl font-body-lg text-body-lg leading-relaxed text-brand-slate-700">
+              Pioneering Maritime Insights, International Symposia &amp; Offshore Technology
+              Advances across West Africa and Global Energy Frontiers.
+            </p>
+          </div>
+          <!-- Direct Subscription Box -->
+          <div
+            class="rounded-xl border border-brand-slate-200 bg-surface-container-lowest p-5 shadow-sm lg:col-span-4"
+          >
+            <label
+              class="mb-2 block flex items-center gap-1.5 font-label-md text-label-md font-semibold text-brand-navy-900"
+            >
+              <span
+                class="material-symbols-outlined text-[18px] text-brand-cobalt"
+                data-icon="mark_email_read"
+                >mark_email_read</span
+              >
+              Subscribe to Maritime Bulletin
+            </label>
+            <div class="flex gap-2">
+              <input
+                class="h-[42px] w-full rounded-lg border border-brand-slate-200 bg-surface-bright px-3 font-body-sm text-body-sm focus:border-brand-cobalt focus:ring-1 focus:ring-brand-cobalt"
+                placeholder="official.work@firm.com"
+                type="email"
+              />
+              <button
+                class="h-[42px] shrink-0 rounded-lg bg-brand-navy-900 px-4 font-label-md text-label-md text-surface transition-colors hover:bg-brand-navy-950"
+              >
+                Join
+              </button>
+            </div>
+            <p class="mt-2 font-label-sm text-label-sm text-brand-slate-400">
+              Circulated weekly to 4,200+ Offshore and Marine Professionals.
+            </p>
+          </div>
+        </div>
+        <!-- Quick Filter Chips & Search Bar -->
+        <div
+          class="mt-8 flex flex-col justify-between gap-4 border-t border-brand-slate-200 pt-6 md:flex-row md:items-center"
+        >
+          <div class="scrollbar-none flex items-center gap-2 overflow-x-auto pb-2 md:pb-0">
+            <button
+              class="shrink-0 rounded-lg bg-brand-navy-900 px-3.5 py-1.5 font-label-md text-label-md text-surface"
+            >
+              All Dispatches
+            </button>
+            <button
+              class="shrink-0 rounded-lg border border-brand-slate-200 bg-surface-container-lowest px-3.5 py-1.5 font-label-md text-label-md text-brand-slate-700 hover:bg-brand-slate-100"
+            >
+              Offshore Conferences
+            </button>
+            <button
+              class="shrink-0 rounded-lg border border-brand-slate-200 bg-surface-container-lowest px-3.5 py-1.5 font-label-md text-label-md text-brand-slate-700 hover:bg-brand-slate-100"
+            >
+              Technical Workshops
+            </button>
+            <button
+              class="shrink-0 rounded-lg border border-brand-slate-200 bg-surface-container-lowest px-3.5 py-1.5 font-label-md text-label-md text-brand-slate-700 hover:bg-brand-slate-100"
+            >
+              Senate Announcements
+            </button>
+            <button
+              class="shrink-0 rounded-lg border border-brand-slate-200 bg-surface-container-lowest px-3.5 py-1.5 font-label-md text-label-md text-brand-slate-700 hover:bg-brand-slate-100"
+            >
+              Industry Symposia
+            </button>
+            <button
+              class="shrink-0 rounded-lg border border-brand-slate-200 bg-surface-container-lowest px-3.5 py-1.5 font-label-md text-label-md text-brand-slate-700 hover:bg-brand-slate-100"
+            >
+              Research Breakthroughs
+            </button>
+          </div>
+          <div class="relative w-full md:w-72">
+            <span
+              class="pointer-events-none absolute inset-y-0 left-3 flex items-center text-brand-slate-400"
+            >
+              <span
+                class="material-symbols-outlined text-[18px]"
+                data-icon="search"
+                >search</span
+              >
+            </span>
+            <input
+              class="h-[40px] w-full rounded-lg border border-brand-slate-200 bg-surface-container-lowest pl-9 pr-3 font-body-sm text-body-sm focus:border-brand-cobalt focus:ring-1 focus:ring-brand-cobalt"
+              placeholder="Search news, topics, dates..."
+              type="text"
+            />
+          </div>
+        </div>
+      </section>
+      <!-- FEATURED STORY SPLIT CARD (Bento Accent) -->
+      <section>
+        <div
+          class="relative overflow-hidden rounded-xl border border-brand-slate-200 bg-surface-container-lowest shadow-sm transition-shadow hover:shadow-md"
+        >
+          <div class="grid grid-cols-1 lg:grid-cols-12">
+            <!-- Image Canvas with Precision Visual Overlay -->
+            <div
+              class="relative h-72 min-h-[380px] overflow-hidden bg-brand-navy-950 lg:col-span-7 lg:h-auto"
+            >
+              <img
+                class="h-full w-full object-cover opacity-85"
+                data-alt="An ultra-modern high performance subsea engineering supercomputing cluster room at Rivers State University. Gleaming server racks with blue computational LED indicators stand in a pristine laboratory environment. Two marine engineers wearing protective lab gear review finite element riser hydrodynamic waveforms on digital displays. The lighting is crisp, professional, high-contrast, technical enterprise mood with deep cobalt and slate tones."
+                decoding="async"
+                fetchpriority="high"
+                loading="eager"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuCuDTRPccHhQQACKcSVJynTk-tS81xLaRlM-OGFCYM3W0egsuUeGqYy7G0KTSIkQJ942dYqoYs6qRjfuv2kUpvlfX5h8KQLpGhNgLRfU6c7LmhH8odzlI-7P6yl8EY1dexetcVVSaWDpEU7VsNWt8qRkf0iE1CUU3qjKE5wvCrU854BT7L0xql9knaP9xyowQzKKhEHJEAyotHlK2QQ2TdFMaS5iN3s80NtMGeWGGV_FDozuwne-0D5"
+              />
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-brand-navy-950 via-transparent to-transparent"
+              ></div>
+              <div
+                class="absolute bottom-4 left-6 right-6 flex items-center justify-between text-surface"
+              >
+                <span
+                  class="rounded border border-brand-slate-700 bg-brand-navy-900/80 px-2.5 py-1 font-code-sm text-code-sm text-primary-fixed backdrop-blur-sm"
+                >
+                  LAB ID: HPC-SUBSEA-NODE-64
+                </span>
+                <span class="font-label-sm text-label-sm text-brand-slate-400"
+                  >Port Harcourt Technology Hub</span
+                >
+              </div>
+            </div>
+            <!-- Featured Content Side -->
+            <div class="flex flex-col justify-between space-y-6 p-8 lg:col-span-5 lg:p-10">
+              <div class="space-y-4">
+                <div class="flex items-center gap-2">
+                  <span
+                    class="rounded bg-brand-cobalt px-2.5 py-1 font-label-sm text-label-sm font-semibold uppercase tracking-wider text-surface"
+                  >
+                    Featured Breakthrough
+                  </span>
+                  <span class="font-body-sm text-body-sm text-brand-slate-400">• 4 Min Read</span>
+                </div>
+                <h2
+                  class="font-headline-lg text-headline-lg font-bold leading-tight text-brand-navy-950"
+                >
+                  RSU &amp; NCDMB Commission 64-Node Subsea Supercomputing Cluster for Deepwater
+                  Riser Simulations in Port Harcourt
+                </h2>
+                <p class="font-body-md text-body-md leading-relaxed text-brand-slate-700">
+                  The flagship joint infrastructure drastically reduces complex vortex-induced
+                  vibration (VIV) numerical turnaround times from 72 hours to 94 minutes, empowering
+                  local computational capacity for Niger Delta deep-offshore concessions.
+                </p>
+              </div>
+              <div class="flex items-center justify-between border-t border-brand-slate-100 pt-4">
+                <div class="flex items-center gap-3">
+                  <div
+                    class="flex h-10 w-10 items-center justify-center rounded-full border border-brand-slate-200 bg-brand-slate-100 font-label-md text-label-md font-bold text-brand-navy-900"
+                  >
+                    PB
+                  </div>
+                  <div>
+                    <h4 class="font-label-md text-label-md font-semibold text-brand-navy-900">
+                      Prof. B. E. Briggs, FNSE
+                    </h4>
+                    <p class="font-label-sm text-label-sm text-brand-slate-500">
+                      Director of Marine Research, CMOTD
+                    </p>
+                  </div>
+                </div>
+                <a
+                  class="inline-flex items-center gap-1 font-label-md text-label-md font-semibold text-brand-cobalt transition-colors hover:text-brand-navy-900"
+                  href="#"
+                >
+                  Read Full Gazette
+                  <span
+                    class="material-symbols-outlined text-[18px]"
+                    data-icon="arrow_forward"
+                    >arrow_forward</span
+                  >
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- UPCOMING EVENTS SECTION -->
+      <section class="space-y-6">
+        <div class="flex flex-col justify-between gap-4 sm:flex-row sm:items-center">
+          <div>
+            <div class="flex items-center gap-2">
+              <span class="h-2.5 w-2.5 rounded-full bg-status-verified"></span>
+              <span
+                class="font-label-sm text-label-sm font-bold uppercase tracking-wider text-status-verified"
+                >Official Academic &amp; Industry Calendar</span
+              >
+            </div>
+            <h2
+              class="mt-1 font-headline-lg text-headline-lg font-bold tracking-tight text-brand-navy-950"
+            >
+              Upcoming Technical Symposia &amp; Masterclasses
+            </h2>
+          </div>
+          <div class="flex items-center gap-2">
+            <a
+              class="inline-flex items-center gap-1 font-label-md text-label-md font-semibold text-brand-cobalt hover:underline"
+              href="#"
+            >
+              Download 2025/2026 Academic Event Calendar (PDF)
+              <span
+                class="material-symbols-outlined text-[18px]"
+                data-icon="download"
+                >download</span
+              >
+            </a>
+          </div>
+        </div>
+        <!-- Events Card Grid -->
+        <div class="grid grid-cols-1 gap-6 lg:grid-cols-3">
+          <!-- Card 1 -->
+          <div
+            class="flex flex-col justify-between space-y-6 rounded-xl border border-brand-slate-200 bg-surface-container-lowest p-6 shadow-sm transition-all hover:border-brand-cobalt"
+          >
+            <div class="space-y-4">
+              <div class="flex items-start justify-between">
+                <div
+                  class="min-w-[64px] rounded-lg border border-brand-slate-200 bg-brand-slate-100 p-2.5 text-center"
+                >
+                  <span
+                    class="block font-label-sm text-label-sm font-semibold uppercase text-brand-slate-500"
+                    >OCT</span
+                  >
+                  <span
+                    class="block font-headline-md text-headline-md font-extrabold leading-none text-brand-navy-950"
+                    >14-16</span
+                  >
+                  <span class="block font-code-sm text-code-sm text-brand-slate-500">2025</span>
+                </div>
+                <span
+                  class="rounded-full border border-status-verified-border bg-status-verified-bg px-2.5 py-1 font-label-sm text-label-sm font-semibold text-status-verified"
+                >
+                  Registration Open
+                </span>
+              </div>
+              <div class="space-y-2">
+                <span
+                  class="font-label-sm text-label-sm font-bold uppercase tracking-wider text-brand-cobalt"
+                  >SYMPOSIUM // SUBSEA INTEGRITY</span
+                >
+                <h3 class="font-title-lg text-title-lg font-bold leading-snug text-brand-navy-950">
+                  Annual West African Offshore Hydrodynamics &amp; Subsea Integrity Symposium 2025
+                </h3>
+              </div>
+              <div
+                class="space-y-2 border-t border-brand-slate-100 pt-3 font-body-sm text-body-sm text-brand-slate-700"
+              >
+                <div class="flex items-center gap-2">
+                  <span
+                    class="material-symbols-outlined text-[18px] text-brand-slate-500"
+                    data-icon="location_on"
+                    >location_on</span
+                  >
+                  <span>RSU Postgraduate Auditorium &amp; Virtual Global Stream</span>
+                </div>
+                <div class="flex items-center gap-2">
+                  <span
+                    class="material-symbols-outlined text-[18px] text-brand-slate-500"
+                    data-icon="group"
+                    >group</span
+                  >
+                  <span>Keynotes: Shell Subsea Principal, TotalEnergies Marine Lead</span>
+                </div>
+              </div>
+              <!-- Spots Gauge -->
+              <div class="space-y-1.5 pt-2">
+                <div class="flex justify-between font-label-sm text-label-sm">
+                  <span class="text-brand-slate-500">Delegates Registered</span>
+                  <span class="font-semibold text-brand-navy-900">120 / 250 Spots Left</span>
+                </div>
+                <div class="h-2 w-full overflow-hidden rounded-full bg-brand-slate-100">
+                  <div
+                    class="h-full rounded-full bg-brand-cobalt"
+                    style="width: 52%"
+                  ></div>
+                </div>
+              </div>
+            </div>
+            <div class="flex items-center gap-2 border-t border-brand-slate-100 pt-4">
+              <button
+                class="flex-1 rounded-lg bg-brand-cobalt-deep py-2.5 font-label-md text-label-md font-semibold text-surface transition-colors hover:bg-primary"
+              >
+                Register for Event
+              </button>
+              <button
+                class="rounded-lg border border-brand-slate-200 p-2.5 text-brand-slate-700 transition-colors hover:bg-brand-slate-100"
+                title="Add to Calendar"
+              >
+                <span
+                  class="material-symbols-outlined text-[20px]"
+                  data-icon="calendar_add_on"
+                  >calendar_add_on</span
+                >
+              </button>
+            </div>
+          </div>
+          <!-- Card 2 -->
+          <div
+            class="flex flex-col justify-between space-y-6 rounded-xl border border-brand-slate-200 bg-surface-container-lowest p-6 shadow-sm transition-all hover:border-brand-cobalt"
+          >
+            <div class="space-y-4">
+              <div class="flex items-start justify-between">
+                <div
+                  class="min-w-[64px] rounded-lg border border-brand-slate-200 bg-brand-slate-100 p-2.5 text-center"
+                >
+                  <span
+                    class="block font-label-sm text-label-sm font-semibold uppercase text-brand-slate-500"
+                    >NOV</span
+                  >
+                  <span
+                    class="block font-headline-md text-headline-md font-extrabold leading-none text-brand-navy-950"
+                    >03-07</span
+                  >
+                  <span class="block font-code-sm text-code-sm text-brand-slate-500">2025</span>
+                </div>
+                <span
+                  class="rounded-full border border-amber-200 bg-status-warning-bg px-2.5 py-1 font-label-sm text-label-sm font-semibold text-status-warning"
+                >
+                  Few Seats Remaining
+                </span>
+              </div>
+              <div class="space-y-2">
+                <span
+                  class="font-label-sm text-label-sm font-bold uppercase tracking-wider text-brand-cobalt"
+                  >PROFESSIONAL ACCREDITATION // 15 CEU</span
+                >
+                <h3 class="font-title-lg text-title-lg font-bold leading-snug text-brand-navy-950">
+                  AVEVA E3D &amp; Caesar II Finite Element Pipeline Stress Masterclass
+                </h3>
+              </div>
+              <div
+                class="space-y-2 border-t border-brand-slate-100 pt-3 font-body-sm text-body-sm text-brand-slate-700"
+              >
+                <div class="flex items-center gap-2">
+                  <span
+                    class="material-symbols-outlined text-[18px] text-brand-slate-500"
+                    data-icon="computer"
+                    >computer</span
+                  >
+                  <span>CAD/CAE Subsea Center Lab 3, Rivers State University</span>
+                </div>
+                <div class="flex items-center gap-2">
+                  <span
+                    class="material-symbols-outlined text-[18px] text-brand-slate-500"
+                    data-icon="verified"
+                    >verified</span
+                  >
+                  <span>COREN Accredited Continuous Professional Development</span>
+                </div>
+              </div>
+              <!-- Spots Gauge -->
+              <div class="space-y-1.5 pt-2">
+                <div class="flex justify-between font-label-sm text-label-sm">
+                  <span class="text-brand-slate-500">Workstation Capacity</span>
+                  <span class="font-semibold text-status-warning">Only 4 Terminal Slots</span>
+                </div>
+                <div class="h-2 w-full overflow-hidden rounded-full bg-brand-slate-100">
+                  <div
+                    class="h-full rounded-full bg-status-warning"
+                    style="width: 84%"
+                  ></div>
+                </div>
+              </div>
+            </div>
+            <div class="flex items-center gap-2 border-t border-brand-slate-100 pt-4">
+              <button
+                class="flex-1 rounded-lg bg-brand-navy-900 py-2.5 font-label-md text-label-md font-semibold text-surface transition-colors hover:bg-brand-navy-950"
+              >
+                Reserve Terminal
+              </button>
+              <button
+                class="rounded-lg border border-brand-slate-200 p-2.5 text-brand-slate-700 transition-colors hover:bg-brand-slate-100"
+                title="Add to Calendar"
+              >
+                <span
+                  class="material-symbols-outlined text-[20px]"
+                  data-icon="calendar_add_on"
+                  >calendar_add_on</span
+                >
+              </button>
+            </div>
+          </div>
+          <!-- Card 3 -->
+          <div
+            class="flex flex-col justify-between space-y-6 rounded-xl border border-brand-slate-200 bg-surface-container-lowest p-6 shadow-sm transition-all hover:border-brand-cobalt"
+          >
+            <div class="space-y-4">
+              <div class="flex items-start justify-between">
+                <div
+                  class="min-w-[64px] rounded-lg border border-brand-slate-200 bg-brand-slate-100 p-2.5 text-center"
+                >
+                  <span
+                    class="block font-label-sm text-label-sm font-semibold uppercase text-brand-slate-500"
+                    >DEC</span
+                  >
+                  <span
+                    class="block font-headline-md text-headline-md font-extrabold leading-none text-brand-navy-950"
+                    >12</span
+                  >
+                  <span class="block font-code-sm text-code-sm text-brand-slate-500">2025</span>
+                </div>
+                <span
+                  class="rounded-full border border-sky-200 bg-status-info-bg px-2.5 py-1 font-label-sm text-label-sm font-semibold text-status-info"
+                >
+                  Hybrid Executive Call
+                </span>
+              </div>
+              <div class="space-y-2">
+                <span
+                  class="font-label-sm text-label-sm font-bold uppercase tracking-wider text-brand-cobalt"
+                  >ENERGY TRANSITION // ROUNDTABLE</span
+                >
+                <h3 class="font-title-lg text-title-lg font-bold leading-snug text-brand-navy-950">
+                  Maritime Decarbonization &amp; Green Hydrogen Offshore Bunkering Roundtable
+                </h3>
+              </div>
+              <div
+                class="space-y-2 border-t border-brand-slate-100 pt-3 font-body-sm text-body-sm text-brand-slate-700"
+              >
+                <div class="flex items-center gap-2">
+                  <span
+                    class="material-symbols-outlined text-[18px] text-brand-slate-500"
+                    data-icon="cast_for_education"
+                    >cast_for_education</span
+                  >
+                  <span>CMOTD Senate Boardroom &amp; MS Teams Enterprise Stream</span>
+                </div>
+                <div class="flex items-center gap-2">
+                  <span
+                    class="material-symbols-outlined text-[18px] text-brand-slate-500"
+                    data-icon="policy"
+                    >policy</span
+                  >
+                  <span>Co-hosted with Nigerian Maritime Administration (NIMASA)</span>
+                </div>
+              </div>
+              <!-- Spots Gauge -->
+              <div class="space-y-1.5 pt-2">
+                <div class="flex justify-between font-label-sm text-label-sm">
+                  <span class="text-brand-slate-500">Roundtable Quorum</span>
+                  <span class="font-semibold text-brand-navy-900">Open Virtual Access</span>
+                </div>
+                <div class="h-2 w-full overflow-hidden rounded-full bg-brand-slate-100">
+                  <div
+                    class="h-full rounded-full bg-status-info"
+                    style="width: 35%"
+                  ></div>
+                </div>
+              </div>
+            </div>
+            <div class="flex items-center gap-2 border-t border-brand-slate-100 pt-4">
+              <button
+                class="flex-1 rounded-lg bg-brand-cobalt-deep py-2.5 font-label-md text-label-md font-semibold text-surface transition-colors hover:bg-primary"
+              >
+                RSVP Stream Link
+              </button>
+              <button
+                class="rounded-lg border border-brand-slate-200 p-2.5 text-brand-slate-700 transition-colors hover:bg-brand-slate-100"
+                title="Add to Calendar"
+              >
+                <span
+                  class="material-symbols-outlined text-[20px]"
+                  data-icon="calendar_add_on"
+                  >calendar_add_on</span
+                >
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- INTERACTIVE CALENDAR PREVIEW & LATEST NEWSFEED SPLIT -->
+      <div class="grid grid-cols-1 items-start gap-8 lg:grid-cols-12">
+        <!-- Left / Center: Latest Published News & Technical Bulletins (8 cols) -->
+        <section class="space-y-6 lg:col-span-8">
+          <div class="flex items-center justify-between border-b border-brand-slate-200 pb-3">
+            <div>
+              <h2 class="font-headline-md text-headline-md font-bold text-brand-navy-950">
+                Latest Published News &amp; Technical Bulletins
+              </h2>
+              <p class="font-body-sm text-body-sm text-brand-slate-500">
+                Peer-reviewed updates, faculty ratifications, and field operations
+              </p>
+            </div>
+            <span
+              class="rounded bg-brand-slate-100 px-2.5 py-1 font-code-sm text-code-sm text-brand-slate-700"
+              >6 New Items</span
+            >
+          </div>
+          <!-- 2-col or 3-col modular cards within 8 cols -->
+          <div class="grid grid-cols-1 gap-6 md:grid-cols-2">
+            <!-- Article 1 -->
+            <article
+              class="flex flex-col justify-between space-y-3 rounded-xl border border-brand-slate-200 bg-surface-container-lowest p-5 transition-all hover:border-brand-slate-400"
+            >
+              <div class="space-y-2">
+                <div class="flex items-center justify-between font-label-sm text-label-sm">
+                  <span class="font-semibold text-brand-cobalt">SENATE RATIFICATION</span>
+                  <span class="text-brand-slate-400">Oct 02, 2025</span>
+                </div>
+                <h3 class="font-title-lg text-title-lg font-bold leading-snug text-brand-navy-950">
+                  Senate Gazette Ratifies Cohort 2025/2026 Admissions for Advanced PGD in Subsea
+                  Engineering
+                </h3>
+                <p class="line-clamp-3 font-body-sm text-body-sm text-brand-slate-700">
+                  The Academic Board of Rivers State University has authorized the matriculation
+                  intake ceiling for the specialized deepwater pipeline inspection stream following
+                  external moderation.
+                </p>
+              </div>
+              <div class="flex items-center justify-between border-t border-brand-slate-100 pt-3">
+                <span class="font-code-sm text-code-sm text-brand-slate-500"
+                  >REF: RSU/SEN/CMOTD-91</span
+                >
+                <a
+                  class="font-label-sm text-label-sm font-semibold text-brand-cobalt hover:underline"
+                  href="#"
+                  >Read Dispatch →</a
+                >
+              </div>
+            </article>
+            <!-- Article 2 -->
+            <article
+              class="flex flex-col justify-between space-y-3 rounded-xl border border-brand-slate-200 bg-surface-container-lowest p-5 transition-all hover:border-brand-slate-400"
+            >
+              <div class="space-y-2">
+                <div class="flex items-center justify-between font-label-sm text-label-sm">
+                  <span class="font-semibold text-status-verified">TOWING TANK LAB</span>
+                  <span class="text-brand-slate-400">Sep 28, 2025</span>
+                </div>
+                <h3 class="font-title-lg text-title-lg font-bold leading-snug text-brand-navy-950">
+                  CMOTD Towing Tank Validates Wave-Induced Sloshing Dynamics for Bonga FPSO
+                  Deepwater Ties
+                </h3>
+                <p class="line-clamp-3 font-body-sm text-body-sm text-brand-slate-700">
+                  1:50 scaled physical hydrodynamics testing successfully recorded 100-year Gulf of
+                  Guinea squall impact metrics using high-speed laser optical particle tracking.
+                </p>
+              </div>
+              <div class="flex items-center justify-between border-t border-brand-slate-100 pt-3">
+                <span class="font-code-sm text-code-sm text-brand-slate-500"
+                  >DATASET #TT-884-BONGA</span
+                >
+                <a
+                  class="font-label-sm text-label-sm font-semibold text-brand-cobalt hover:underline"
+                  href="#"
+                  >Read Dispatch →</a
+                >
+              </div>
+            </article>
+            <!-- Article 3 -->
+            <article
+              class="flex flex-col justify-between space-y-3 rounded-xl border border-brand-slate-200 bg-surface-container-lowest p-5 transition-all hover:border-brand-slate-400"
+            >
+              <div class="space-y-2">
+                <div class="flex items-center justify-between font-label-sm text-label-sm">
+                  <span class="font-semibold text-brand-cobalt">INDUSTRY ALLIANCE</span>
+                  <span class="text-brand-slate-400">Sep 21, 2025</span>
+                </div>
+                <h3 class="font-title-lg text-title-lg font-bold leading-snug text-brand-navy-950">
+                  Saipem Contracting Nigeria Extends Master Training Partnership for Offshore
+                  Structural Engineers
+                </h3>
+                <p class="line-clamp-3 font-body-sm text-body-sm text-brand-slate-700">
+                  Renewed 3-year bilateral agreement funds dedicated hardware licenses and direct
+                  apprentice placements within EPCI fabrication yards in Rumuolumeni, Rivers State.
+                </p>
+              </div>
+              <div class="flex items-center justify-between border-t border-brand-slate-100 pt-3">
+                <span class="font-code-sm text-code-sm text-brand-slate-500"
+                  >MOU: SPCI-RSU-2025</span
+                >
+                <a
+                  class="font-label-sm text-label-sm font-semibold text-brand-cobalt hover:underline"
+                  href="#"
+                  >Read Dispatch →</a
+                >
+              </div>
+            </article>
+            <!-- Article 4 -->
+            <article
+              class="flex flex-col justify-between space-y-3 rounded-xl border border-brand-slate-200 bg-surface-container-lowest p-5 transition-all hover:border-brand-slate-400"
+            >
+              <div class="space-y-2">
+                <div class="flex items-center justify-between font-label-sm text-label-sm">
+                  <span class="font-semibold text-brand-navy-900">FACULTY LAURELS</span>
+                  <span class="text-brand-slate-400">Sep 15, 2025</span>
+                </div>
+                <h3 class="font-title-lg text-title-lg font-bold leading-snug text-brand-navy-950">
+                  Dr. Tamuno Briggs Awarded Outstanding Computational Naval Architecture Research
+                  Fellowship
+                </h3>
+                <p class="line-clamp-3 font-body-sm text-body-sm text-brand-slate-700">
+                  Recognized by the Royal Institution of Naval Architects (RINA) for novel nonlinear
+                  boundary element algorithms addressing catenary riser seabed touchdown zones.
+                </p>
+              </div>
+              <div class="flex items-center justify-between border-t border-brand-slate-100 pt-3">
+                <span class="font-code-sm text-code-sm text-brand-slate-500"
+                  >HONOR CODE: RINA-FELL</span
+                >
+                <a
+                  class="font-label-sm text-label-sm font-semibold text-brand-cobalt hover:underline"
+                  href="#"
+                  >Read Dispatch →</a
+                >
+              </div>
+            </article>
+            <!-- Article 5 -->
+            <article
+              class="flex flex-col justify-between space-y-3 rounded-xl border border-brand-slate-200 bg-surface-container-lowest p-5 transition-all hover:border-brand-slate-400"
+            >
+              <div class="space-y-2">
+                <div class="flex items-center justify-between font-label-sm text-label-sm">
+                  <span class="font-semibold text-status-warning">STANDARDS UPDATE</span>
+                  <span class="text-brand-slate-400">Sep 10, 2025</span>
+                </div>
+                <h3 class="font-title-lg text-title-lg font-bold leading-snug text-brand-navy-950">
+                  ASME B31.8 Chapter VIII Piping Safety Standards Update Seminar Announced
+                </h3>
+                <p class="line-clamp-3 font-body-sm text-body-sm text-brand-slate-700">
+                  Mandatory orientation for certified gas pipeline inspection professionals
+                  regarding high-pressure sour gas transmission and hydrogen embrittlement criteria.
+                </p>
+              </div>
+              <div class="flex items-center justify-between border-t border-brand-slate-100 pt-3">
+                <span class="font-code-sm text-code-sm text-brand-slate-500"
+                  >STD: ASME-B31.8-REV</span
+                >
+                <a
+                  class="font-label-sm text-label-sm font-semibold text-brand-cobalt hover:underline"
+                  href="#"
+                  >Read Dispatch →</a
+                >
+              </div>
+            </article>
+            <!-- Article 6 -->
+            <article
+              class="flex flex-col justify-between space-y-3 rounded-xl border border-brand-slate-200 bg-surface-container-lowest p-5 transition-all hover:border-brand-slate-400"
+            >
+              <div class="space-y-2">
+                <div class="flex items-center justify-between font-label-sm text-label-sm">
+                  <span class="font-semibold text-brand-cobalt">RANKINGS &amp; IMPACT</span>
+                  <span class="text-brand-slate-400">Sep 04, 2025</span>
+                </div>
+                <h3 class="font-title-lg text-title-lg font-bold leading-snug text-brand-navy-950">
+                  Rivers State University Ranks Apex in Petroleum &amp; Marine Research Output for
+                  Q3 2025
+                </h3>
+                <p class="line-clamp-3 font-body-sm text-body-sm text-brand-slate-700">
+                  The National Universities Commission citation census confirmed CMOTD's indexed
+                  contributions accounted for 41% of sub-Saharan marine engineering peer papers.
+                </p>
+              </div>
+              <div class="flex items-center justify-between border-t border-brand-slate-100 pt-3">
+                <span class="font-code-sm text-code-sm text-brand-slate-500"
+                  >INDEX: NUC-CIT-Q3</span
+                >
+                <a
+                  class="font-label-sm text-label-sm font-semibold text-brand-cobalt hover:underline"
+                  href="#"
+                  >Read Dispatch →</a
+                >
+              </div>
+            </article>
+          </div>
+          <!-- Pagination Bar -->
+          <div class="flex items-center justify-between border-t border-brand-slate-200 pt-4">
+            <span class="font-body-sm text-body-sm text-brand-slate-500"
+              >Showing 1 to 6 of 84 bulletins</span
+            >
+            <div class="flex items-center gap-1">
+              <button
+                class="rounded border border-brand-slate-200 px-3 py-1.5 font-label-md text-label-md text-brand-slate-500 disabled:opacity-50"
+                disabled=""
+              >
+                Previous
+              </button>
+              <button
+                class="rounded bg-brand-navy-900 px-3 py-1.5 font-label-md text-label-md text-surface"
+              >
+                1
+              </button>
+              <button
+                class="rounded border border-brand-slate-200 px-3 py-1.5 font-label-md text-label-md text-brand-slate-700 hover:bg-brand-slate-100"
+              >
+                2
+              </button>
+              <button
+                class="rounded border border-brand-slate-200 px-3 py-1.5 font-label-md text-label-md text-brand-slate-700 hover:bg-brand-slate-100"
+              >
+                3
+              </button>
+              <span class="px-2 text-brand-slate-400">...</span>
+              <button
+                class="rounded border border-brand-slate-200 px-3 py-1.5 font-label-md text-label-md text-brand-slate-700 hover:bg-brand-slate-100"
+              >
+                14
+              </button>
+              <button
+                class="rounded border border-brand-slate-200 px-3 py-1.5 font-label-md text-label-md text-brand-slate-700 hover:bg-brand-slate-100"
+              >
+                Next
+              </button>
+            </div>
+          </div>
+        </section>
+        <!-- Right: Interactive Calendar Widget & Fast Date Filtering (4 cols) -->
+        <aside class="space-y-6 lg:col-span-4">
+          <!-- Calendar Widget Card -->
+          <div
+            class="space-y-5 rounded-xl border border-brand-slate-200 bg-surface-container-lowest p-6 shadow-sm"
+          >
+            <div class="flex items-center justify-between border-b border-brand-slate-100 pb-3">
+              <div class="flex items-center gap-2">
+                <span
+                  class="material-symbols-outlined text-brand-cobalt"
+                  data-icon="calendar_month"
+                  >calendar_month</span
+                >
+                <h3 class="font-title-lg text-title-lg font-bold text-brand-navy-950">
+                  October 2025
+                </h3>
+              </div>
+              <div class="flex items-center gap-1">
+                <button
+                  class="rounded p-1 text-brand-slate-700 hover:bg-brand-slate-100"
+                  title="Previous Month"
+                >
+                  <span
+                    class="material-symbols-outlined text-[18px]"
+                    data-icon="chevron_left"
+                    >chevron_left</span
+                  >
+                </button>
+                <button
+                  class="rounded p-1 text-brand-slate-700 hover:bg-brand-slate-100"
+                  title="Next Month"
+                >
+                  <span
+                    class="material-symbols-outlined text-[18px]"
+                    data-icon="chevron_right"
+                    >chevron_right</span
+                  >
+                </button>
+              </div>
+            </div>
+            <!-- Calendar Matrix -->
+            <div class="grid grid-cols-7 gap-1 text-center font-label-sm text-label-sm">
+              <span class="py-1 font-semibold text-brand-slate-400">Su</span>
+              <span class="py-1 font-semibold text-brand-slate-400">Mo</span>
+              <span class="py-1 font-semibold text-brand-slate-400">Tu</span>
+              <span class="py-1 font-semibold text-brand-slate-400">We</span>
+              <span class="py-1 font-semibold text-brand-slate-400">Th</span>
+              <span class="py-1 font-semibold text-brand-slate-400">Fr</span>
+              <span class="py-1 font-semibold text-brand-slate-400">Sa</span>
+              <!-- Days -->
+              <span class="text-brand-slate-300 py-2">28</span>
+              <span class="text-brand-slate-300 py-2">29</span>
+              <span class="text-brand-slate-300 py-2">30</span>
+              <span class="rounded py-2 text-brand-slate-700 hover:bg-brand-slate-100">1</span>
+              <span class="relative rounded py-2 text-brand-slate-700 hover:bg-brand-slate-100">
+                2
+                <span
+                  class="absolute bottom-1 left-1/2 h-1 w-1 -translate-x-1/2 rounded-full bg-brand-cobalt"
+                ></span>
+              </span>
+              <span class="rounded py-2 text-brand-slate-700 hover:bg-brand-slate-100">3</span>
+              <span class="rounded py-2 text-brand-slate-700 hover:bg-brand-slate-100">4</span>
+              <span class="rounded py-2 text-brand-slate-700 hover:bg-brand-slate-100">5</span>
+              <span class="rounded py-2 text-brand-slate-700 hover:bg-brand-slate-100">6</span>
+              <span class="rounded py-2 text-brand-slate-700 hover:bg-brand-slate-100">7</span>
+              <span class="rounded py-2 text-brand-slate-700 hover:bg-brand-slate-100">8</span>
+              <span class="rounded py-2 text-brand-slate-700 hover:bg-brand-slate-100">9</span>
+              <span class="rounded py-2 text-brand-slate-700 hover:bg-brand-slate-100">10</span>
+              <span class="rounded py-2 text-brand-slate-700 hover:bg-brand-slate-100">11</span>
+              <span class="rounded py-2 text-brand-slate-700 hover:bg-brand-slate-100">12</span>
+              <span class="rounded py-2 text-brand-slate-700 hover:bg-brand-slate-100">13</span>
+              <!-- Active Symposium Span 14-16 -->
+              <span class="rounded-l bg-brand-cobalt py-2 font-bold text-surface">14</span>
+              <span class="bg-brand-cobalt py-2 font-bold text-surface">15</span>
+              <span class="rounded-r bg-brand-cobalt py-2 font-bold text-surface">16</span>
+              <span class="rounded py-2 text-brand-slate-700 hover:bg-brand-slate-100">17</span>
+              <span class="rounded py-2 text-brand-slate-700 hover:bg-brand-slate-100">18</span>
+              <span class="rounded py-2 text-brand-slate-700 hover:bg-brand-slate-100">19</span>
+              <span class="rounded py-2 text-brand-slate-700 hover:bg-brand-slate-100">20</span>
+              <span class="rounded py-2 text-brand-slate-700 hover:bg-brand-slate-100">21</span>
+              <span class="rounded py-2 text-brand-slate-700 hover:bg-brand-slate-100">22</span>
+              <span class="rounded py-2 text-brand-slate-700 hover:bg-brand-slate-100">23</span>
+              <span class="rounded py-2 text-brand-slate-700 hover:bg-brand-slate-100">24</span>
+              <span class="rounded py-2 text-brand-slate-700 hover:bg-brand-slate-100">25</span>
+              <span class="rounded py-2 text-brand-slate-700 hover:bg-brand-slate-100">26</span>
+              <span class="rounded py-2 text-brand-slate-700 hover:bg-brand-slate-100">27</span>
+              <span class="rounded py-2 text-brand-slate-700 hover:bg-brand-slate-100">28</span>
+              <span class="rounded py-2 text-brand-slate-700 hover:bg-brand-slate-100">29</span>
+              <span class="rounded py-2 text-brand-slate-700 hover:bg-brand-slate-100">30</span>
+              <span class="rounded py-2 text-brand-slate-700 hover:bg-brand-slate-100">31</span>
+              <span class="text-brand-slate-300 py-2">1</span>
+            </div>
+            <!-- Highlight Legend -->
+            <div
+              class="space-y-2 rounded-lg border border-brand-slate-200 bg-surface-container-low p-3.5"
+            >
+              <span
+                class="block font-label-sm text-label-sm font-semibold uppercase tracking-wide text-brand-navy-950"
+                >Selected Highlights</span
+              >
+              <div class="flex items-start gap-2">
+                <span class="mt-1 h-2.5 w-2.5 shrink-0 rounded-full bg-brand-cobalt"></span>
+                <p class="font-body-sm text-body-sm text-brand-navy-900">
+                  <strong class="font-semibold">Oct 14-16:</strong> West African Offshore
+                  Hydrodynamics Symposium
+                </p>
+              </div>
+              <div class="flex items-start gap-2">
+                <span class="mt-1 h-2.5 w-2.5 shrink-0 rounded-full bg-status-verified"></span>
+                <p class="font-body-sm text-body-sm text-brand-navy-900">
+                  <strong class="font-semibold">Oct 29:</strong> Towing Tank Open Industrial
+                  Observation Day
+                </p>
+              </div>
+            </div>
+            <!-- iCal Export -->
+            <button
+              class="flex w-full items-center justify-center gap-2 rounded-lg border border-brand-slate-200 py-2 font-label-md text-label-md font-semibold text-brand-navy-900 transition-colors hover:bg-brand-slate-100"
+            >
+              <span
+                class="material-symbols-outlined text-[18px]"
+                data-icon="sync"
+                >sync</span
+              >
+              Sync Calendar (.ICS / Google Calendar)
+            </button>
+          </div>
+          <!-- Academic Deadlines Quick Reference -->
+          <div
+            class="space-y-4 rounded-xl border border-brand-slate-200 bg-surface-container-lowest p-6 shadow-sm"
+          >
+            <h4
+              class="flex items-center gap-2 font-title-lg text-title-lg font-bold text-brand-navy-950"
+            >
+              <span
+                class="material-symbols-outlined text-brand-slate-500"
+                data-icon="notification_important"
+                >notification_important</span
+              >
+              Immediate Deadlines
+            </h4>
+            <ul class="divide-y divide-brand-slate-100 font-body-sm text-body-sm">
+              <li class="flex items-center justify-between py-2.5">
+                <div>
+                  <span class="block font-semibold text-brand-navy-900"
+                    >PGD Subsea Admission Acceptance</span
+                  >
+                  <span class="text-label-sm text-brand-slate-500">Senate Registry Portal</span>
+                </div>
+                <span class="font-code-sm text-code-sm font-semibold text-status-danger"
+                  >Oct 20</span
+                >
+              </li>
+              <li class="flex items-center justify-between py-2.5">
+                <div>
+                  <span class="block font-semibold text-brand-navy-900"
+                    >Call for Papers: Deepwater FPSO</span
+                  >
+                  <span class="text-label-sm text-brand-slate-500"
+                    >CMOTD Peer Review Secretariat</span
+                  >
+                </div>
+                <span class="font-code-sm text-code-sm font-semibold text-brand-navy-900"
+                  >Nov 15</span
+                >
+              </li>
+              <li class="flex items-center justify-between py-2.5">
+                <div>
+                  <span class="block font-semibold text-brand-navy-900"
+                    >Bunkering Roundtable Registration</span
+                  >
+                  <span class="text-label-sm text-brand-slate-500">Online Delegate Registry</span>
+                </div>
+                <span class="font-code-sm text-code-sm font-semibold text-brand-navy-900"
+                  >Dec 01</span
+                >
+              </li>
+            </ul>
+          </div>
+        </aside>
+      </div>
+      <!-- INSTITUTIONAL PRESS & MEDIA KIT CTA BOX -->
+      <section
+        class="rounded-2xl border border-brand-slate-700 bg-brand-navy-900 p-8 text-surface shadow-lg lg:p-12"
+      >
+        <div class="grid grid-cols-1 items-center gap-8 lg:grid-cols-12">
+          <div class="space-y-4 lg:col-span-8">
+            <div class="flex items-center gap-2">
+              <span
+                class="rounded border border-brand-slate-700 bg-brand-slate-800 px-2.5 py-0.5 font-code-sm text-code-sm font-semibold text-primary-fixed"
+              >
+                PRESS SECRETARIAT
+              </span>
+              <span class="font-label-sm text-label-sm text-brand-slate-400"
+                >RSU Academic Liaison Desk</span
+              >
+            </div>
+            <h2 class="font-headline-lg text-headline-lg font-bold tracking-tight">
+              Institutional Press, Spokesperson Inquiries &amp; Media Kit
+            </h2>
+            <p class="max-w-2xl font-body-md text-body-md leading-relaxed text-brand-slate-400">
+              Accredited domestic and foreign energy correspondents may retrieve official Rivers
+              State University CMOTD vector logos, faculty portrait dossiers, laboratory photography
+              clearance forms, and verified citation summaries.
+            </p>
+            <div class="flex flex-wrap items-center gap-4 pt-2 font-label-md text-label-md">
+              <div class="text-brand-slate-300 flex items-center gap-2">
+                <span
+                  class="material-symbols-outlined text-[20px] text-primary-fixed"
+                  data-icon="call"
+                  >call</span
+                >
+                <span>Direct Press Desk: +234 (0) 84 992 411</span>
+              </div>
+              <div class="text-brand-slate-300 flex items-center gap-2">
+                <span
+                  class="material-symbols-outlined text-[20px] text-primary-fixed"
+                  data-icon="mail"
+                  >mail</span
+                >
+                <span>press.cmotd@rsu.edu.ng</span>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-col justify-center gap-3 sm:flex-row lg:col-span-4 lg:flex-col">
+            <a
+              class="inline-flex items-center justify-center gap-2 rounded-lg bg-brand-cobalt-deep px-6 py-3.5 text-center font-label-md text-label-md font-semibold text-surface shadow-sm transition-all hover:bg-brand-cobalt"
+              href="#"
+            >
+              <span
+                class="material-symbols-outlined text-[20px]"
+                data-icon="folder_zip"
+                >folder_zip</span
+              >
+              Download 2025 Media Assets Kit (.ZIP)
+            </a>
+            <a
+              class="inline-flex items-center justify-center gap-2 rounded-lg border border-brand-slate-700 bg-brand-slate-800 px-6 py-3.5 text-center font-label-md text-label-md font-semibold text-surface transition-colors hover:bg-brand-slate-700"
+              href="#"
+            >
+              <span
+                class="material-symbols-outlined text-[20px]"
+                data-icon="contact_support"
+                >contact_support</span
+              >
+              Book Spokesperson Interview
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- INSTITUTIONAL FOOTER -->
+    <cmotd-institution-strip></cmotd-institution-strip>
+    <cmotd-site-footer></cmotd-site-footer>
+  </body>
+</html>

@@ -1,0 +1,638 @@
+<!doctype html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      content="width=device-width, initial-scale=1.0"
+      name="viewport"
+    />
+    <title>CMOTD - Authentication (Register - Corporate Batch &amp; Group Onboarding Modal)</title>
+    <link
+      href="../favicon.ico"
+      rel="icon"
+      type="image/x-icon"
+    />
+    <link
+      href="../assets/css/tailwind-build.css"
+      rel="stylesheet"
+    />
+    <link
+      href="../assets/css/cmotd-global.css"
+      rel="stylesheet"
+    />
+    <script
+      defer=""
+      src="../assets/js/site-config.js"
+    ></script>
+    <script
+      defer=""
+      src="../assets/js/cmotd-components.js"
+    ></script>
+  </head>
+  <body class="flex min-h-screen flex-col bg-background font-body-md text-on-surface antialiased">
+    <!-- TopNavBar (Shared Component Anchor) -->
+    <cmotd-site-header></cmotd-site-header>
+    <!-- Background Base Registration Canvas (Dimmed / Underlying Architectural Frame) -->
+    <main class="relative flex flex-grow items-center justify-center px-4 py-10 sm:px-6 lg:px-8">
+      <!-- Decorative Underlay (Represents Screen 9 Registration Flow) -->
+      <div
+        class="bg-brand-slate-900/40 absolute inset-0 z-20 backdrop-blur-[5px] transition-opacity"
+      ></div>
+      <div
+        class="pointer-events-none mx-auto grid w-full max-w-[1280px] select-none grid-cols-12 gap-8 py-6 opacity-30 blur-[1px] filter"
+      >
+        <div class="col-span-12 space-y-6 lg:col-span-5">
+          <div class="bg-brand-slate-300 h-8 w-3/4 rounded"></div>
+          <div class="h-24 rounded bg-brand-slate-200"></div>
+          <div class="space-y-4">
+            <div class="h-12 rounded border border-brand-slate-200 bg-white"></div>
+            <div class="h-12 rounded border border-brand-slate-200 bg-white"></div>
+            <div class="h-12 rounded border border-brand-slate-200 bg-white"></div>
+          </div>
+        </div>
+        <div
+          class="col-span-12 space-y-6 rounded-xl border border-brand-slate-200 bg-white p-8 lg:col-span-7"
+        >
+          <div class="h-6 w-1/3 rounded bg-brand-slate-200"></div>
+          <div class="h-40 rounded bg-brand-slate-100"></div>
+        </div>
+      </div>
+      <!-- Active High-Density Modal: Corporate Batch & Group Onboarding (Level 4 Elevation) -->
+      <div
+        class="animate-in fade-in relative z-30 my-auto flex w-full max-w-6xl flex-col overflow-hidden rounded-xl border border-brand-slate-200 bg-surface-container-lowest shadow-2xl transition-all duration-200"
+      >
+        <!-- Top Utility / Security Sub-bar -->
+        <div
+          class="flex items-center justify-between border-b border-brand-slate-800 bg-brand-navy-950 px-6 py-2.5 font-mono text-code-sm text-brand-slate-400"
+        >
+          <div class="flex items-center space-x-3">
+            <span class="inline-flex items-center font-label-sm text-label-sm text-status-verified">
+              <span class="mr-2 h-2 w-2 animate-pulse rounded-full bg-status-verified"></span>
+              PORTAL GATEWAY: SECURE ENTERPRISE ENCLAVE
+            </span>
+            <span class="text-brand-slate-600">|</span>
+            <span class="text-brand-slate-300">NOGICD ACT COMPLIANT WORKFLOW</span>
+          </div>
+          <div class="flex items-center space-x-4">
+            <span class="text-brand-slate-400"
+              >SESSION TOKEN: <span class="text-primary-fixed">SCNJV-PORT-88192X</span></span
+            >
+            <button
+              class="text-brand-slate-400 transition-colors hover:text-white"
+              title="Close Panel"
+            >
+              <span class="material-symbols-outlined text-[18px]">close</span>
+            </button>
+          </div>
+        </div>
+        <!-- 1. Modal Header -->
+        <div class="border-b border-brand-slate-200 bg-surface-container-lowest px-8 pb-6 pt-7">
+          <div class="flex flex-col gap-4 md:flex-row md:items-start md:justify-between">
+            <div class="space-y-2">
+              <div
+                class="inline-flex items-center gap-2 rounded border border-brand-slate-200 bg-brand-slate-100 px-2.5 py-1"
+              >
+                <span class="material-symbols-outlined text-[15px] text-primary"
+                  >corporate_fare</span
+                >
+                <span class="font-label-sm text-label-sm font-bold tracking-wider text-primary"
+                  >ENTERPRISE BATCH REQUISITION • NCDMB 1% COMPLIANT</span
+                >
+              </div>
+              <h1 class="font-headline-lg text-headline-lg tracking-tight text-brand-navy-900">
+                IOC &amp; Corporate Engineering Cohort Onboarding
+              </h1>
+              <p class="max-w-3xl font-body-md text-body-md text-brand-slate-700">
+                Provision multiple engineering workstation terminals, schedule private CAD/CAE
+                compute cohorts, and upload institutional trainee manifests for automated
+                verification.
+              </p>
+            </div>
+            <div class="flex shrink-0 items-center gap-2">
+              <button
+                class="flex items-center space-x-1.5 rounded border border-brand-slate-200 bg-brand-slate-100 px-3.5 py-2 font-label-md text-label-md text-brand-slate-700 transition-colors hover:bg-brand-slate-200"
+              >
+                <span class="material-symbols-outlined text-[18px]">download</span>
+                <span>Download Template (.csv / .xlsx)</span>
+              </button>
+              <button
+                class="flex items-center space-x-1.5 rounded border border-brand-slate-200 px-3.5 py-2 font-label-md text-label-md text-brand-slate-700 transition-colors hover:text-brand-navy-900"
+              >
+                <span class="material-symbols-outlined text-[18px]">bookmark_border</span>
+                <span>Save as Draft Requisition</span>
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- Main Scrollable Section Content Frame -->
+        <div
+          class="max-h-[calc(88vh-220px)] space-y-6 overflow-y-auto bg-brand-slate-50/50 px-8 py-6"
+        >
+          <!-- 2. Sponsoring Organization Details (Top Card) -->
+          <div
+            class="rounded-xl border border-brand-slate-200 bg-surface-container-lowest p-6 shadow-sm"
+          >
+            <div
+              class="mb-5 flex items-center justify-between border-b border-brand-slate-200 pb-4"
+            >
+              <div class="flex items-center space-x-2">
+                <span class="material-symbols-outlined text-[22px] text-primary">domain</span>
+                <h2 class="font-title-lg text-title-lg text-brand-navy-900">
+                  Sponsoring Entity &amp; Accreditation Authority
+                </h2>
+              </div>
+              <span
+                class="flex items-center gap-1.5 rounded-full border border-status-verified-border bg-status-verified-bg px-2.5 py-0.5 font-label-sm text-label-sm text-status-verified"
+              >
+                <span class="material-symbols-outlined text-[14px]">verified</span>
+                Vetted Corporate Master Partner
+              </span>
+            </div>
+            <div class="grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-4">
+              <!-- Field 1 -->
+              <div>
+                <label class="mb-1.5 block font-label-sm text-label-sm text-brand-slate-700"
+                  >Sponsoring Organization</label
+                >
+                <div class="relative">
+                  <input
+                    class="w-full rounded border border-brand-slate-200 bg-brand-slate-50 px-3 py-2 pr-8 font-body-sm text-body-sm font-semibold text-brand-navy-900 focus:outline-none"
+                    readonly=""
+                    type="text"
+                    value="Saipem Contracting Nigeria JV (SCNJV)"
+                  />
+                  <span
+                    class="material-symbols-outlined absolute right-2.5 top-2.5 text-[18px] text-brand-slate-400"
+                    >business</span
+                  >
+                </div>
+                <span class="mt-1 block font-label-sm text-label-sm text-brand-slate-500"
+                  >RC: 349102 / NCDMB-REG-2018</span
+                >
+              </div>
+              <!-- Field 2 -->
+              <div>
+                <label class="mb-1.5 block font-label-sm text-label-sm text-brand-slate-700"
+                  >Authorized Training Liaison</label
+                >
+                <div class="relative">
+                  <input
+                    class="w-full rounded border border-brand-slate-200 bg-brand-slate-50 px-3 py-2 font-body-sm text-body-sm font-semibold text-brand-navy-900 focus:outline-none"
+                    readonly=""
+                    type="text"
+                    value="Engr. Gladys Dan-Jumbo"
+                  />
+                </div>
+                <span class="mt-1 block font-label-sm text-label-sm text-brand-slate-500"
+                  >Human Capital Development Lead</span
+                >
+              </div>
+              <!-- Field 3 -->
+              <div>
+                <label class="mb-1.5 block font-label-sm text-label-sm text-brand-slate-700"
+                  >Corporate Purchase Order / Remita RRR</label
+                >
+                <div class="relative">
+                  <input
+                    class="w-full rounded border border-brand-slate-200 bg-brand-slate-50 px-3 py-2 font-body-sm font-mono text-body-sm font-bold text-primary focus:outline-none"
+                    readonly=""
+                    type="text"
+                    value="LPO-SCNJV-2025-SURF-088"
+                  />
+                </div>
+                <span class="mt-1 block font-label-sm font-mono text-label-sm text-status-verified"
+                  >RRR: 2409-1102-8841 (Cleared)</span
+                >
+              </div>
+              <!-- Field 4 -->
+              <div>
+                <label class="mb-1.5 block font-label-sm text-label-sm text-brand-slate-700"
+                  >Dedicated Workstation Quota</label
+                >
+                <div class="relative">
+                  <input
+                    class="w-full rounded border border-brand-slate-200 bg-brand-slate-50 px-3 py-2 font-body-sm text-body-sm font-semibold text-brand-navy-900 focus:outline-none"
+                    readonly=""
+                    type="text"
+                    value="8 Engineers (Full SURF &amp; Pipestress)"
+                  />
+                </div>
+                <span class="mt-1 block font-label-sm text-label-sm text-brand-slate-500"
+                  >Workstations PHC-12 to PHC-19</span
+                >
+              </div>
+            </div>
+          </div>
+          <!-- 3. Trainee Manifest Bulk Upload & Active Parse Zone -->
+          <div
+            class="space-y-5 rounded-xl border border-brand-slate-200 bg-surface-container-lowest p-6 shadow-sm"
+          >
+            <!-- Manifest Drag & Drop / Current Active State Banner -->
+            <div class="flex items-center justify-between">
+              <div class="flex items-center space-x-2">
+                <span class="material-symbols-outlined text-[22px] text-primary">group_add</span>
+                <h2 class="font-title-lg text-title-lg text-brand-navy-900">
+                  Trainee Manifest Roster &amp; Provisioning Preview
+                </h2>
+              </div>
+              <span class="font-label-sm text-label-sm text-brand-slate-500"
+                >8 of 8 Engineering Candidates Parsed</span
+              >
+            </div>
+            <!-- Active Uploaded Spreadsheet Pill Strip -->
+            <div
+              class="flex items-center justify-between rounded-lg border border-status-info/20 bg-status-info-bg p-4"
+            >
+              <div class="flex items-center space-x-3.5">
+                <div
+                  class="flex h-10 w-10 items-center justify-center rounded bg-status-info/10 font-bold text-status-info"
+                >
+                  <span class="material-symbols-outlined text-[24px]">table_view</span>
+                </div>
+                <div>
+                  <div class="flex items-center space-x-2">
+                    <span class="font-headline-sm text-label-md font-bold text-brand-navy-900"
+                      >Saipem_Cohort_Batch_Q3_Trainees.xlsx</span
+                    >
+                    <span
+                      class="rounded border border-status-verified-border bg-status-verified-bg px-2 py-0.5 font-mono text-label-sm font-semibold text-status-verified"
+                      >420 KB • SHA-256 Checksum OK</span
+                    >
+                  </div>
+                  <p class="mt-0.5 font-body-sm text-body-sm text-brand-slate-700">
+                    Automated validation complete: All candidates matched against Saipem corporate
+                    domain and verified COREN/NSE accreditation directory.
+                  </p>
+                </div>
+              </div>
+              <div class="flex items-center space-x-2">
+                <button
+                  class="rounded border border-brand-slate-200 bg-white px-3 py-1.5 font-label-md text-label-md text-brand-slate-700 transition-colors hover:bg-brand-slate-50"
+                >
+                  Replace File
+                </button>
+              </div>
+            </div>
+            <!-- Interactive Trainee Data Table -->
+            <div
+              class="overflow-hidden rounded-lg border border-brand-slate-200 bg-surface-container-lowest"
+            >
+              <div class="overflow-x-auto">
+                <table class="w-full border-collapse text-left">
+                  <thead>
+                    <tr
+                      class="border-b border-brand-slate-200 bg-brand-slate-100 font-label-sm text-label-sm text-brand-slate-700"
+                    >
+                      <th class="px-4 py-3">Trainee Full Name</th>
+                      <th class="px-4 py-3">Institutional Email</th>
+                      <th class="px-4 py-3">Assigned Programme</th>
+                      <th class="px-4 py-3">COREN / NSE Reg</th>
+                      <th class="px-4 py-3">Workstation Allocation</th>
+                      <th class="px-4 py-3">Validation Status</th>
+                    </tr>
+                  </thead>
+                  <tbody class="divide-y divide-brand-slate-200 font-body-sm text-body-sm">
+                    <!-- Row 1 -->
+                    <tr class="transition-colors hover:bg-brand-slate-50/80">
+                      <td
+                        class="flex items-center space-x-2.5 px-4 py-3 font-semibold text-brand-navy-900"
+                      >
+                        <div
+                          class="flex h-7 w-7 items-center justify-center rounded-full bg-brand-slate-200 text-label-sm font-bold text-brand-slate-700"
+                        >
+                          BH
+                        </div>
+                        <span>Engr. Boma Harry</span>
+                      </td>
+                      <td class="px-4 py-3 font-mono text-code-sm text-brand-slate-700">
+                        b.harry@saipem.com
+                      </td>
+                      <td class="px-4 py-3 text-brand-slate-700">
+                        <span
+                          class="rounded bg-brand-slate-100 px-2 py-0.5 font-mono text-code-sm text-brand-navy-900"
+                          >PGD-SUB-801: Subsea Systems &amp; Deepwater Pipelines</span
+                        >
+                      </td>
+                      <td
+                        class="px-4 py-3 font-mono text-code-sm font-semibold text-brand-slate-800"
+                      >
+                        R.49201
+                      </td>
+                      <td class="px-4 py-3">
+                        <span
+                          class="inline-flex items-center rounded border border-brand-slate-200 bg-brand-slate-100 px-2 py-0.5 font-mono text-code-sm font-semibold text-brand-navy-900"
+                        >
+                          <span class="mr-1.5 h-1.5 w-1.5 rounded-full bg-status-verified"></span>
+                          WS-PHC-12
+                        </span>
+                      </td>
+                      <td class="px-4 py-3">
+                        <span
+                          class="inline-flex items-center rounded border border-status-verified-border bg-status-verified-bg px-2 py-0.5 font-label-sm text-label-sm text-status-verified"
+                        >
+                          <span class="material-symbols-outlined mr-1 text-[14px]"
+                            >check_circle</span
+                          >
+                          Domain Verified • Eligible for Direct Provisioning
+                        </span>
+                      </td>
+                    </tr>
+                    <!-- Row 2 -->
+                    <tr class="transition-colors hover:bg-brand-slate-50/80">
+                      <td
+                        class="flex items-center space-x-2.5 px-4 py-3 font-semibold text-brand-navy-900"
+                      >
+                        <div
+                          class="flex h-7 w-7 items-center justify-center rounded-full bg-brand-slate-200 text-label-sm font-bold text-brand-slate-700"
+                        >
+                          TB
+                        </div>
+                        <span>Dr. Tamuno Belema</span>
+                      </td>
+                      <td class="px-4 py-3 font-mono text-code-sm text-brand-slate-700">
+                        t.belema@saipem.com
+                      </td>
+                      <td class="px-4 py-3 text-brand-slate-700">
+                        <span
+                          class="rounded bg-brand-slate-100 px-2 py-0.5 font-mono text-code-sm text-brand-navy-900"
+                          >PGD-SUB-801: Subsea Systems &amp; Deepwater Pipelines</span
+                        >
+                      </td>
+                      <td
+                        class="px-4 py-3 font-mono text-code-sm font-semibold text-brand-slate-800"
+                      >
+                        R.38114
+                      </td>
+                      <td class="px-4 py-3">
+                        <span
+                          class="inline-flex items-center rounded border border-brand-slate-200 bg-brand-slate-100 px-2 py-0.5 font-mono text-code-sm font-semibold text-brand-navy-900"
+                        >
+                          <span class="mr-1.5 h-1.5 w-1.5 rounded-full bg-status-verified"></span>
+                          WS-PHC-13
+                        </span>
+                      </td>
+                      <td class="px-4 py-3">
+                        <span
+                          class="inline-flex items-center rounded border border-status-verified-border bg-status-verified-bg px-2 py-0.5 font-label-sm text-label-sm text-status-verified"
+                        >
+                          <span class="material-symbols-outlined mr-1 text-[14px]"
+                            >check_circle</span
+                          >
+                          Domain Verified • Eligible for Direct Provisioning
+                        </span>
+                      </td>
+                    </tr>
+                    <!-- Row 3 -->
+                    <tr class="transition-colors hover:bg-brand-slate-50/80">
+                      <td
+                        class="flex items-center space-x-2.5 px-4 py-3 font-semibold text-brand-navy-900"
+                      >
+                        <div
+                          class="flex h-7 w-7 items-center justify-center rounded-full bg-brand-slate-200 text-label-sm font-bold text-brand-slate-700"
+                        >
+                          VB
+                        </div>
+                        <span>Engr. Victor Briggs</span>
+                      </td>
+                      <td class="px-4 py-3 font-mono text-code-sm text-brand-slate-700">
+                        v.briggs@saipem.com
+                      </td>
+                      <td class="px-4 py-3 text-brand-slate-700">
+                        <span
+                          class="rounded bg-brand-slate-100 px-2 py-0.5 font-mono text-code-sm text-brand-navy-900"
+                          >PGD-SUB-801: Subsea Systems &amp; Deepwater Pipelines</span
+                        >
+                      </td>
+                      <td
+                        class="px-4 py-3 font-mono text-code-sm font-semibold text-brand-slate-800"
+                      >
+                        R.51098
+                      </td>
+                      <td class="px-4 py-3">
+                        <span
+                          class="inline-flex items-center rounded border border-brand-slate-200 bg-brand-slate-100 px-2 py-0.5 font-mono text-code-sm font-semibold text-brand-navy-900"
+                        >
+                          <span class="mr-1.5 h-1.5 w-1.5 rounded-full bg-status-verified"></span>
+                          WS-PHC-14
+                        </span>
+                      </td>
+                      <td class="px-4 py-3">
+                        <span
+                          class="inline-flex items-center rounded border border-status-verified-border bg-status-verified-bg px-2 py-0.5 font-label-sm text-label-sm text-status-verified"
+                        >
+                          <span class="material-symbols-outlined mr-1 text-[14px]"
+                            >check_circle</span
+                          >
+                          Domain Verified • Eligible for Direct Provisioning
+                        </span>
+                      </td>
+                    </tr>
+                    <!-- Row 4 -->
+                    <tr class="transition-colors hover:bg-brand-slate-50/80">
+                      <td
+                        class="flex items-center space-x-2.5 px-4 py-3 font-semibold text-brand-navy-900"
+                      >
+                        <div
+                          class="flex h-7 w-7 items-center justify-center rounded-full bg-brand-slate-200 text-label-sm font-bold text-brand-slate-700"
+                        >
+                          CA
+                        </div>
+                        <span>Engr. Chioma Adeleke</span>
+                      </td>
+                      <td class="px-4 py-3 font-mono text-code-sm text-brand-slate-700">
+                        c.adeleke@saipem.com
+                      </td>
+                      <td class="px-4 py-3 text-brand-slate-700">
+                        <span
+                          class="rounded bg-brand-slate-100 px-2 py-0.5 font-mono text-code-sm text-brand-navy-900"
+                          >PGD-SUB-801: Subsea Systems &amp; Deepwater Pipelines</span
+                        >
+                      </td>
+                      <td
+                        class="px-4 py-3 font-mono text-code-sm font-semibold text-brand-slate-800"
+                      >
+                        R.53229
+                      </td>
+                      <td class="px-4 py-3">
+                        <span
+                          class="inline-flex items-center rounded border border-brand-slate-200 bg-brand-slate-100 px-2 py-0.5 font-mono text-code-sm font-semibold text-brand-navy-900"
+                        >
+                          <span class="mr-1.5 h-1.5 w-1.5 rounded-full bg-status-verified"></span>
+                          WS-PHC-15
+                        </span>
+                      </td>
+                      <td class="px-4 py-3">
+                        <span
+                          class="inline-flex items-center rounded border border-status-verified-border bg-status-verified-bg px-2 py-0.5 font-label-sm text-label-sm text-status-verified"
+                        >
+                          <span class="material-symbols-outlined mr-1 text-[14px]"
+                            >check_circle</span
+                          >
+                          Domain Verified • Eligible for Direct Provisioning
+                        </span>
+                      </td>
+                    </tr>
+                    <!-- Row 5 (Summary View for candidates 5 to 8) -->
+                    <tr class="bg-brand-slate-50/50">
+                      <td
+                        class="px-4 py-2.5 text-center font-label-sm text-label-sm text-brand-slate-500"
+                        colspan="6"
+                      >
+                        + 4 Additional Trainees (WS-PHC-16 through WS-PHC-19) validated with active
+                        NCDMB verification hashes.
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+          <!-- 4. Compute & Lab Allocation Summary Card -->
+          <div class="grid grid-cols-1 gap-5 md:grid-cols-3">
+            <!-- Card A: Workstation Compute -->
+            <div
+              class="flex flex-col justify-between rounded-xl border border-brand-slate-200 bg-surface-container-lowest p-5 shadow-sm"
+            >
+              <div class="space-y-2">
+                <div class="flex items-center justify-between">
+                  <span
+                    class="font-label-sm text-label-sm uppercase tracking-wider text-brand-slate-500"
+                    >Compute Hardware Node</span
+                  >
+                  <span class="material-symbols-outlined text-[20px] text-primary"
+                    >desktop_windows</span
+                  >
+                </div>
+                <h3 class="font-title-lg text-title-lg text-brand-navy-900">
+                  HP Z4 G4 Workstations
+                </h3>
+                <p class="font-body-sm text-body-sm text-brand-slate-700">
+                  Intel Xeon W-2245 • 64GB DDR4 ECC • NVIDIA RTX A4000 16GB Dedicated Graphics.
+                </p>
+              </div>
+              <div
+                class="mt-3 flex items-center justify-between border-t border-brand-slate-100 pt-4"
+              >
+                <span class="text-brand-slate-600 font-label-sm text-label-sm">Reserved Ratio</span>
+                <span
+                  class="rounded bg-status-verified-bg px-2 py-0.5 font-label-sm text-label-sm font-bold text-status-verified"
+                  >8 Terminals (1:1 Dedicated)</span
+                >
+              </div>
+            </div>
+            <!-- Card B: Software Engineering Suites -->
+            <div
+              class="flex flex-col justify-between rounded-xl border border-brand-slate-200 bg-surface-container-lowest p-5 shadow-sm"
+            >
+              <div class="space-y-2">
+                <div class="flex items-center justify-between">
+                  <span
+                    class="font-label-sm text-label-sm uppercase tracking-wider text-brand-slate-500"
+                    >Enterprise CAD/CAE Stack</span
+                  >
+                  <span class="material-symbols-outlined text-[20px] text-primary">hub</span>
+                </div>
+                <h3 class="font-title-lg text-title-lg text-brand-navy-900">
+                  Engineering Licensing Pool
+                </h3>
+                <div class="flex flex-wrap gap-1.5 pt-1">
+                  <span
+                    class="rounded border border-brand-slate-200 bg-brand-slate-100 px-2 py-0.5 font-mono text-label-sm font-semibold text-brand-navy-900"
+                    >Caesar II v12</span
+                  >
+                  <span
+                    class="rounded border border-brand-slate-200 bg-brand-slate-100 px-2 py-0.5 font-mono text-label-sm font-semibold text-brand-navy-900"
+                    >AVEVA E3D Marine</span
+                  >
+                  <span
+                    class="rounded border border-brand-slate-200 bg-brand-slate-100 px-2 py-0.5 font-mono text-label-sm font-semibold text-brand-navy-900"
+                    >OrcaFlex SURF</span
+                  >
+                </div>
+              </div>
+              <div
+                class="mt-3 flex items-center justify-between border-t border-brand-slate-100 pt-4"
+              >
+                <span class="text-brand-slate-600 font-label-sm text-label-sm"
+                  >License Seat Tokens</span
+                >
+                <span class="font-label-sm text-label-sm font-bold text-primary"
+                  >8 Floating Network Seats</span
+                >
+              </div>
+            </div>
+            <!-- Card C: NCDMB Credit & Governance -->
+            <div
+              class="flex flex-col justify-between rounded-xl border border-brand-slate-200 bg-surface-container-lowest p-5 shadow-sm"
+            >
+              <div class="space-y-2">
+                <div class="flex items-center justify-between">
+                  <span
+                    class="font-label-sm text-label-sm uppercase tracking-wider text-brand-slate-500"
+                    >Fiscal &amp; Regulatory Compliance</span
+                  >
+                  <span class="material-symbols-outlined text-[20px] text-primary"
+                    >account_balance</span
+                  >
+                </div>
+                <h3 class="font-title-lg text-title-lg text-brand-navy-900">
+                  NOGICD Act 2010 Relief
+                </h3>
+                <p class="font-body-sm text-body-sm text-brand-slate-700">
+                  Qualifies for 100% human capital development tax deduction credit issued by NCDMB
+                  Secretariat.
+                </p>
+              </div>
+              <div
+                class="mt-3 flex items-center justify-between border-t border-brand-slate-100 pt-4"
+              >
+                <span class="text-brand-slate-600 font-label-sm text-label-sm"
+                  >NCDMB Verification Audit</span
+                >
+                <span
+                  class="flex items-center gap-1 font-label-sm text-label-sm font-bold text-status-verified"
+                >
+                  <span class="material-symbols-outlined text-[14px]">check</span>
+                  Certified Level 1
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- 5. Action Buttons & Security Protocols Footer Strip -->
+        <div
+          class="flex flex-col items-center justify-between gap-4 border-t border-brand-slate-200 bg-surface-container-lowest px-8 py-4 sm:flex-row"
+        >
+          <!-- Trust Protocol Info -->
+          <div class="flex items-center space-x-2 font-body-sm text-body-sm text-brand-slate-500">
+            <span class="material-symbols-outlined text-[18px] text-status-verified">lock</span>
+            <span
+              >Batch requests are authenticated against RSU Senate Enterprise LDAP directory within
+              15 minutes.</span
+            >
+          </div>
+          <!-- Call to Actions -->
+          <div class="flex w-full items-center space-x-3 sm:w-auto">
+            <button
+              class="w-full rounded border border-brand-slate-200 px-4 py-2.5 font-label-md text-label-md text-brand-slate-700 transition-colors hover:text-brand-navy-900 sm:w-auto"
+            >
+              Cancel
+            </button>
+            <button
+              class="flex w-full items-center justify-center space-x-2 rounded bg-primary px-5 py-2.5 font-label-md text-label-md font-semibold text-white shadow-md transition-all hover:bg-brand-cobalt-deep sm:w-auto"
+            >
+              <span class="material-symbols-outlined text-[18px]">verified_user</span>
+              <span
+                >Authorize Batch Provisioning &amp; Dispatch Access Invitations (8 Candidates)</span
+              >
+            </button>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- Institutional Footer (Shared Component Anchor) -->
+    <cmotd-institution-strip></cmotd-institution-strip>
+    <cmotd-site-footer></cmotd-site-footer>
+  </body>
+</html>

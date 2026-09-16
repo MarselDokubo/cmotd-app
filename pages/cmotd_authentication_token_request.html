@@ -1,0 +1,619 @@
+<!doctype html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      content="width=device-width, initial-scale=1.0"
+      name="viewport"
+    />
+    <title>Security Access Token Requisition | CMOTD Rivers State University</title>
+    <link
+      href="../favicon.ico"
+      rel="icon"
+      type="image/x-icon"
+    />
+    <link
+      href="../assets/css/tailwind-build.css"
+      rel="stylesheet"
+    />
+    <link
+      href="../assets/css/cmotd-global.css"
+      rel="stylesheet"
+    />
+    <script
+      defer=""
+      src="../assets/js/site-config.js"
+    ></script>
+    <script
+      defer=""
+      src="../assets/js/cmotd-components.js"
+    ></script>
+  </head>
+  <body
+    class="flex min-h-screen flex-col bg-background text-on-surface antialiased selection:bg-primary-container selection:text-surface-container-lowest"
+  >
+    <!-- TopNavBar (Shared Component JSON Blueprint) -->
+    <cmotd-site-header></cmotd-site-header>
+    <!-- Technical Utility Strip / Breadcrumb Gateway Tag -->
+    <section class="border-b border-brand-slate-200 bg-surface-container-low">
+      <div
+        class="mx-auto flex max-w-[1280px] flex-wrap items-center justify-between gap-4 px-6 py-2.5 lg:px-8"
+      >
+        <div class="flex items-center gap-2 font-code-sm text-code-sm text-brand-slate-500">
+          <span class="material-symbols-outlined text-[16px] text-primary">security</span>
+          <span class="font-semibold text-brand-navy-900"
+            >CMOTD Security &amp; Credential Management</span
+          >
+          <span class="text-brand-slate-400">•</span>
+          <span>Access Token Dispatch</span>
+          <span class="text-brand-slate-400">•</span>
+          <span class="font-semibold text-primary">FIPS 140-2 Layer 3</span>
+        </div>
+        <div class="flex items-center gap-4 font-code-sm text-code-sm text-brand-slate-500">
+          <div class="flex items-center gap-1.5">
+            <span class="h-2 w-2 rounded-full bg-status-verified"></span>
+            <span>HSM Node: Alpha-PHC (Operational)</span>
+          </div>
+          <div class="hidden items-center gap-1 sm:flex">
+            <span class="material-symbols-outlined text-[14px]">lock_clock</span>
+            <span>Auth TTL: 24h Rotation</span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Main Canvas: Desktop Executive Request Hub & Approvals Matrix -->
+    <main class="mx-auto w-full max-w-[1280px] flex-grow px-6 py-8 lg:px-8 lg:py-10">
+      <!-- Hero / Headline Area -->
+      <div class="mb-8">
+        <div
+          class="mb-3 inline-flex items-center gap-2 rounded bg-surface-container px-2.5 py-1 font-label-sm text-label-sm text-primary"
+        >
+          <span class="material-symbols-outlined text-[14px]">vpn_key</span>
+          <span>High-Assurance Infrastructure Requisition</span>
+        </div>
+        <h1 class="font-headline-lg text-headline-lg tracking-tight text-brand-navy-900">
+          Request Security Access Token
+        </h1>
+        <p class="mt-1 max-w-3xl font-body-md text-body-md text-brand-slate-500">
+          Requisition an emergency one-time access token, FIDO2 physical hardware key, or automated
+          API credential for CAD/CAE compute environments.
+        </p>
+      </div>
+      <!-- 12-Column Grid Layout -->
+      <div class="grid grid-cols-1 items-start gap-8 lg:grid-cols-12">
+        <!-- Primary Form Interface (8 Columns) -->
+        <div class="space-y-6 lg:col-span-8">
+          <form
+            class="space-y-8 rounded-xl border border-brand-slate-200 bg-surface-container-lowest p-6 shadow-sm sm:p-8"
+          >
+            <!-- Section 1: Token Category Selector (Interactive Cards) -->
+            <div>
+              <div class="mb-3 flex items-center justify-between">
+                <label class="font-title-lg text-title-lg text-brand-navy-900">
+                  1. Select Token Category &amp; Class
+                </label>
+                <span
+                  class="font-label-sm text-label-sm uppercase tracking-wider text-brand-slate-400"
+                  >Mandatory Requirement</span
+                >
+              </div>
+              <div class="grid grid-cols-1 gap-3 md:grid-cols-3">
+                <!-- Card 1: Emergency TOTP -->
+                <label
+                  class="relative flex cursor-pointer flex-col rounded-lg border-2 border-primary bg-surface-container-low p-4 transition-all duration-150"
+                >
+                  <input
+                    checked=""
+                    class="sr-only"
+                    name="token_category"
+                    type="radio"
+                    value="totp"
+                  />
+                  <div class="mb-2 flex items-center justify-between">
+                    <span
+                      class="flex h-8 w-8 items-center justify-center rounded-lg bg-primary-container text-on-primary"
+                    >
+                      <span class="material-symbols-outlined text-[18px]">lock_reset</span>
+                    </span>
+                    <span
+                      class="rounded border border-status-verified-border bg-status-verified-bg px-2 py-0.5 font-label-sm text-label-sm text-status-verified"
+                    >
+                      Automated
+                    </span>
+                  </div>
+                  <span
+                    class="font-label-md text-label-md font-semibold leading-tight text-brand-navy-900"
+                  >
+                    Emergency One-Time Access Token (TOTP)
+                  </span>
+                  <p class="mt-2 font-body-sm text-body-sm text-brand-slate-500">
+                    For locked-out users needing 24-hour temporary login bypass and compute
+                    dashboard reset.
+                  </p>
+                  <div
+                    class="mt-4 flex items-center border-t border-brand-slate-200 pt-2 font-label-sm text-label-sm text-primary"
+                  >
+                    <span class="material-symbols-outlined mr-1 text-[16px]">bolt</span>
+                    Instant Dispatch
+                  </div>
+                </label>
+                <!-- Card 2: Physical Hardware Key -->
+                <label
+                  class="relative flex cursor-pointer flex-col rounded-lg border border-brand-slate-200 bg-surface-container-lowest p-4 transition-all duration-150 hover:border-brand-slate-400"
+                >
+                  <input
+                    class="sr-only"
+                    name="token_category"
+                    type="radio"
+                    value="hardware"
+                  />
+                  <div class="mb-2 flex items-center justify-between">
+                    <span
+                      class="flex h-8 w-8 items-center justify-center rounded-lg bg-surface-container text-brand-navy-900"
+                    >
+                      <span class="material-symbols-outlined text-[18px]">usb</span>
+                    </span>
+                    <span
+                      class="rounded bg-brand-slate-100 px-2 py-0.5 font-label-sm text-label-sm text-brand-slate-700"
+                    >
+                      Physical Key
+                    </span>
+                  </div>
+                  <span
+                    class="font-label-md text-label-md font-semibold leading-tight text-brand-navy-900"
+                  >
+                    Physical Hardware Key / Dongle Requisition (YubiKey 5 FIPS)
+                  </span>
+                  <p class="mt-2 font-body-sm text-body-sm text-brand-slate-500">
+                    For on-campus physical laboratory &amp; flume tank workstation binding, AVEVA
+                    PDMS, Caesar II.
+                  </p>
+                  <div
+                    class="mt-4 flex items-center border-t border-brand-slate-200 pt-2 font-label-sm text-label-sm text-brand-slate-500"
+                  >
+                    <span class="material-symbols-outlined mr-1 text-[16px]">verified_user</span>
+                    Serial Tracked
+                  </div>
+                </label>
+                <!-- Card 3: Computational API -->
+                <label
+                  class="relative flex cursor-pointer flex-col rounded-lg border border-brand-slate-200 bg-surface-container-lowest p-4 transition-all duration-150 hover:border-brand-slate-400"
+                >
+                  <input
+                    class="sr-only"
+                    name="token_category"
+                    type="radio"
+                    value="api"
+                  />
+                  <div class="mb-2 flex items-center justify-between">
+                    <span
+                      class="flex h-8 w-8 items-center justify-center rounded-lg bg-surface-container text-brand-navy-900"
+                    >
+                      <span class="material-symbols-outlined text-[18px]">terminal</span>
+                    </span>
+                    <span
+                      class="rounded bg-status-info-bg px-2 py-0.5 font-label-sm text-label-sm text-status-info"
+                    >
+                      M2M API
+                    </span>
+                  </div>
+                  <span
+                    class="font-label-md text-label-md font-semibold leading-tight text-brand-navy-900"
+                  >
+                    Computational API &amp; Registry Verification Token
+                  </span>
+                  <p class="mt-2 font-body-sm text-body-sm text-brand-slate-500">
+                    For corporate IOC database integrations and Remita automated clearance
+                    pipelines.
+                  </p>
+                  <div
+                    class="mt-4 flex items-center border-t border-brand-slate-200 pt-2 font-label-sm text-label-sm text-brand-slate-500"
+                  >
+                    <span class="material-symbols-outlined mr-1 text-[16px]">api</span>
+                    Rate-Limited
+                  </div>
+                </label>
+              </div>
+            </div>
+            <!-- Section 2: Candidate / Researcher Identity -->
+            <div class="space-y-4 border-t border-brand-slate-200 pt-4">
+              <h2 class="font-title-lg text-title-lg text-brand-navy-900">
+                2. Candidate &amp; Institutional Credentials
+              </h2>
+              <div class="grid grid-cols-1 gap-4 md:grid-cols-2">
+                <!-- Matriculation / Trainee ID -->
+                <div>
+                  <label class="mb-1.5 block font-label-md text-label-md text-brand-navy-900">
+                    Matriculation / Trainee ID
+                    <span class="text-status-danger">*</span>
+                  </label>
+                  <div class="relative">
+                    <span
+                      class="material-symbols-outlined absolute left-3 top-2.5 text-[20px] text-brand-slate-400"
+                      >badge</span
+                    >
+                    <input
+                      class="h-[42px] w-full rounded-lg border border-brand-slate-200 bg-surface-container-lowest pl-10 pr-3 font-body-md text-body-md text-brand-navy-900 focus:border-primary focus:ring-2 focus:ring-primary/20"
+                      type="text"
+                      value="RSU/CMOTD/2025/0842"
+                    />
+                  </div>
+                  <p class="mt-1 font-label-sm text-label-sm text-brand-slate-400">
+                    Format: RSU/CMOTD/YYYY/XXXX or IOC Affiliate Code
+                  </p>
+                </div>
+                <!-- Institutional Email -->
+                <div>
+                  <label class="mb-1.5 block font-label-md text-label-md text-brand-navy-900">
+                    Institutional / Corporate Email
+                    <span class="text-status-danger">*</span>
+                  </label>
+                  <div class="relative">
+                    <span
+                      class="material-symbols-outlined absolute left-3 top-2.5 text-[20px] text-brand-slate-400"
+                      >alternate_email</span
+                    >
+                    <input
+                      class="h-[42px] w-full rounded-lg border border-brand-slate-200 bg-surface-container-lowest pl-10 pr-3 font-body-md text-body-md text-brand-navy-900 focus:border-primary focus:ring-2 focus:ring-primary/20"
+                      type="email"
+                      value="b.amadi@operator-energy.com"
+                    />
+                  </div>
+                  <p class="mt-1 font-label-sm text-label-sm text-brand-slate-400">
+                    Must match registered university or partner domain
+                  </p>
+                </div>
+                <!-- Department / Division (Full width on md) -->
+                <div class="md:col-span-2">
+                  <label class="mb-1.5 block font-label-md text-label-md text-brand-navy-900">
+                    Department / Technical Division
+                    <span class="text-status-danger">*</span>
+                  </label>
+                  <div class="relative">
+                    <span
+                      class="material-symbols-outlined absolute left-3 top-2.5 text-[20px] text-brand-slate-400"
+                      >corporate_fare</span
+                    >
+                    <input
+                      class="h-[42px] w-full rounded-lg border border-brand-slate-200 bg-surface-container-lowest pl-10 pr-3 font-body-md text-body-md text-brand-navy-900 focus:border-primary focus:ring-2 focus:ring-primary/20"
+                      type="text"
+                      value="Subsea Engineering &amp; Hydrodynamics Lab"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Section 3: Requisition Context & Justification -->
+            <div class="space-y-4 border-t border-brand-slate-200 pt-4">
+              <h2 class="font-title-lg text-title-lg text-brand-navy-900">
+                3. Requisition Specification &amp; Audit Details
+              </h2>
+              <!-- Reason Select -->
+              <div>
+                <label class="mb-1.5 block font-label-md text-label-md text-brand-navy-900">
+                  Reason for Token Requisition
+                  <span class="text-status-danger">*</span>
+                </label>
+                <div class="relative">
+                  <select
+                    class="h-[42px] w-full appearance-none rounded-lg border border-brand-slate-200 bg-surface-container-lowest pl-3 pr-10 font-body-md text-body-md text-brand-navy-900 focus:border-primary focus:ring-2 focus:ring-primary/20"
+                  >
+                    <option selected="">
+                      Traveling off-grid / remote offshore platform (Bonga FPSO field)
+                    </option>
+                    <option>Lost physical hardware key / Damaged FIDO2 dongle</option>
+                    <option>
+                      Academic API research integration (Hydrodynamic wave simulation)
+                    </option>
+                    <option>Expired temporary token requiring automated renewal</option>
+                    <option>Corporate Auditor verification clearance</option>
+                  </select>
+                  <span
+                    class="material-symbols-outlined pointer-events-none absolute right-3 top-2.5 text-[20px] text-brand-slate-400"
+                    >unfold_more</span
+                  >
+                </div>
+              </div>
+              <!-- Justification / Operational Notes -->
+              <div>
+                <label class="mb-1.5 block font-label-md text-label-md text-brand-navy-900">
+                  Justification / Operational Notes
+                  <span class="text-status-danger">*</span>
+                </label>
+                <textarea
+                  class="w-full rounded-lg border border-brand-slate-200 bg-surface-container-lowest p-3 font-body-md text-body-md text-brand-navy-900 focus:border-primary focus:ring-2 focus:ring-primary/20"
+                  placeholder="State computational project code, specific AVEVA/HYSYS license dongle requirement, or offline duration needed for offshore rotation..."
+                  rows="3"
+                >
+Required for high-pressure pipeline stress simulation on cluster node #4 during upcoming 14-day rotational mobilization to offshore OML 118 block. Offline license cache must persist without active satellite ping.</textarea>
+              </div>
+              <!-- Corporate Sponsor Endorsement (Upload) -->
+              <div>
+                <label class="mb-1.5 block font-label-md text-label-md text-brand-navy-900">
+                  Corporate Sponsor Endorsement / Supervisor Authorization (.PDF)
+                </label>
+                <div
+                  class="flex cursor-pointer flex-col items-center justify-center rounded-lg border-2 border-dashed border-brand-slate-200 bg-brand-slate-50 p-5 text-center transition-colors hover:border-primary/50"
+                >
+                  <div
+                    class="mb-2 flex h-10 w-10 items-center justify-center rounded-full bg-surface-container text-primary"
+                  >
+                    <span class="material-symbols-outlined text-[22px]">upload_file</span>
+                  </div>
+                  <p class="font-label-md text-label-md text-brand-navy-900">
+                    <span class="font-semibold text-primary">Click to upload</span>
+                    or drag and drop official LPO/Endorsement
+                  </p>
+                  <p class="mt-1 font-label-sm text-label-sm text-brand-slate-400">
+                    Signed supervisor memo, corporate purchase order, or official RSU departmental
+                    letterhead (Max 15MB)
+                  </p>
+                  <div
+                    class="mt-3 flex items-center gap-2 rounded border border-brand-slate-200 bg-surface-container-lowest px-3 py-1 font-code-sm text-code-sm text-brand-slate-700"
+                  >
+                    <span class="material-symbols-outlined text-[16px] text-status-verified"
+                      >description</span
+                    >
+                    <span>Supervisor_Endorsement_Chevron_Shell_JointVent.pdf (1.8 MB)</span>
+                    <button
+                      class="ml-2 text-brand-slate-400 hover:text-status-danger"
+                      type="button"
+                    >
+                      <span class="material-symbols-outlined text-[16px]">close</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <!-- Delivery Preference Selection -->
+              <div>
+                <label class="mb-2 block font-label-md text-label-md text-brand-navy-900">
+                  Fulfillment &amp; Delivery Preference
+                  <span class="text-status-danger">*</span>
+                </label>
+                <div class="grid grid-cols-1 gap-3 md:grid-cols-2">
+                  <label
+                    class="flex cursor-pointer items-start gap-3 rounded-lg border border-primary bg-surface-container-low p-3.5"
+                  >
+                    <input
+                      checked=""
+                      class="mt-1 text-primary focus:ring-primary"
+                      name="delivery_mode"
+                      type="radio"
+                      value="digital"
+                    />
+                    <div>
+                      <div
+                        class="flex items-center gap-1.5 font-label-md text-label-md font-semibold text-brand-navy-900"
+                      >
+                        <span class="material-symbols-outlined text-[16px] text-primary"
+                          >mark_email_read</span
+                        >
+                        Digital Instant Dispatch
+                      </div>
+                      <p class="mt-0.5 font-body-sm text-body-sm text-brand-slate-500">
+                        Encrypted PGP payload sent via institutional mail &amp; verified mobile OTP.
+                      </p>
+                    </div>
+                  </label>
+                  <label
+                    class="flex cursor-pointer items-start gap-3 rounded-lg border border-brand-slate-200 bg-surface-container-lowest p-3.5 hover:bg-brand-slate-50"
+                  >
+                    <input
+                      class="mt-1 text-primary focus:ring-primary"
+                      name="delivery_mode"
+                      type="radio"
+                      value="physical"
+                    />
+                    <div>
+                      <div
+                        class="flex items-center gap-1.5 font-label-md text-label-md font-semibold text-brand-navy-900"
+                      >
+                        <span class="material-symbols-outlined text-[16px] text-brand-slate-700"
+                          >room</span
+                        >
+                        Physical Collection
+                      </div>
+                      <p class="mt-0.5 font-body-sm text-body-sm text-brand-slate-500">
+                        RSU Faculty of Engineering, Block B, Room 204 (Hardware Desk).
+                      </p>
+                    </div>
+                  </label>
+                </div>
+              </div>
+            </div>
+            <!-- Actions Bar -->
+            <div
+              class="flex flex-col items-center justify-between gap-4 border-t border-brand-slate-200 pt-6 sm:flex-row"
+            >
+              <button
+                class="inline-flex w-full items-center justify-center gap-2 rounded-lg border border-brand-slate-200 px-4 py-2.5 font-label-md text-label-md text-brand-slate-700 transition-colors hover:bg-brand-slate-100 hover:text-brand-navy-900 sm:w-auto"
+                type="button"
+              >
+                <span class="material-symbols-outlined text-[18px]">manage_search</span>
+                <span>Track Existing Token Status</span>
+              </button>
+              <button
+                class="inline-flex w-full items-center justify-center gap-2 rounded-lg bg-primary px-6 py-2.5 font-label-md text-label-md text-on-primary shadow-sm transition-all duration-150 hover:bg-brand-cobalt-deep active:scale-95 sm:w-auto"
+                type="submit"
+              >
+                <span class="material-symbols-outlined text-[18px]">verified_user</span>
+                <span>Submit Security Token Requisition</span>
+              </button>
+            </div>
+          </form>
+        </div>
+        <!-- Live Sidebar / Compliance & Approval Status Queue (4 Columns) -->
+        <aside class="space-y-6 lg:col-span-4">
+          <!-- Live Approval Queue Widget -->
+          <div
+            class="rounded-xl border border-brand-slate-200 bg-surface-container-lowest p-5 shadow-sm"
+          >
+            <div
+              class="mb-4 flex items-center justify-between border-b border-brand-slate-200 pb-3"
+            >
+              <div class="flex items-center gap-2">
+                <span class="material-symbols-outlined text-[20px] text-primary">sync</span>
+                <span class="font-title-lg text-title-lg text-brand-navy-900"
+                  >Live Requisition Queue</span
+                >
+              </div>
+              <span class="relative flex h-2 w-2">
+                <span
+                  class="absolute inline-flex h-full w-full animate-ping rounded-full bg-status-verified opacity-75"
+                ></span>
+                <span class="relative inline-flex h-2 w-2 rounded-full bg-status-verified"></span>
+              </span>
+            </div>
+            <p class="mb-4 font-body-sm text-body-sm text-brand-slate-500">
+              Real-time status of university high-performance computing tokens issued in current
+              12-hour window.
+            </p>
+            <!-- Queue Items -->
+            <div class="space-y-3">
+              <!-- Queue Row 1 -->
+              <div
+                class="flex items-center justify-between rounded-lg border border-brand-slate-200 bg-surface-container-low p-3"
+              >
+                <div class="space-y-0.5">
+                  <div class="font-label-md text-label-md font-semibold text-brand-navy-900">
+                    REQ-2025-9921
+                  </div>
+                  <div class="font-code-sm text-code-sm text-brand-slate-500">
+                    TOTP • Marine Hydro Lab
+                  </div>
+                </div>
+                <span
+                  class="rounded border border-status-verified-border bg-status-verified-bg px-2 py-0.5 font-label-sm text-label-sm font-medium text-status-verified"
+                >
+                  DISPATCHED
+                </span>
+              </div>
+              <!-- Queue Row 2 -->
+              <div
+                class="flex items-center justify-between rounded-lg border border-brand-slate-200 bg-surface-container-low p-3"
+              >
+                <div class="space-y-0.5">
+                  <div class="font-label-md text-label-md font-semibold text-brand-navy-900">
+                    REQ-2025-9920
+                  </div>
+                  <div class="font-code-sm text-code-sm text-brand-slate-500">
+                    YubiKey 5 • Subsea R&amp;D
+                  </div>
+                </div>
+                <span
+                  class="rounded border border-status-warning/20 bg-status-warning-bg px-2 py-0.5 font-label-sm text-label-sm font-medium text-status-warning"
+                >
+                  SUPERVISOR QUEUE
+                </span>
+              </div>
+              <!-- Queue Row 3 -->
+              <div
+                class="flex items-center justify-between rounded-lg border border-brand-slate-200 bg-surface-container-low p-3"
+              >
+                <div class="space-y-0.5">
+                  <div class="font-label-md text-label-md font-semibold text-brand-navy-900">
+                    REQ-2025-9918
+                  </div>
+                  <div class="font-code-sm text-code-sm text-brand-slate-500">
+                    API Key • TotalEnergies Hub
+                  </div>
+                </div>
+                <span
+                  class="rounded border border-status-verified-border bg-status-verified-bg px-2 py-0.5 font-label-sm text-label-sm font-medium text-status-verified"
+                >
+                  ACTIVE
+                </span>
+              </div>
+            </div>
+            <div class="mt-4 border-t border-brand-slate-200 pt-3 text-center">
+              <span class="font-label-sm text-label-sm text-brand-slate-400"
+                >Average Turnaround: 8.4 Minutes (Digital)</span
+              >
+            </div>
+          </div>
+          <!-- SLA Clearance Matrix Card -->
+          <div
+            class="space-y-3 rounded-xl border border-brand-slate-200 bg-surface-container-lowest p-5 shadow-sm"
+          >
+            <div class="flex items-center gap-2 font-title-lg text-title-lg text-brand-navy-900">
+              <span class="material-symbols-outlined text-[20px] text-primary">timelapse</span>
+              <span>SLA Clearance Protocol</span>
+            </div>
+            <div
+              class="rounded-lg border border-status-info/20 bg-status-info-bg p-3 text-brand-navy-900"
+            >
+              <p class="font-body-sm text-body-sm">
+                <strong class="font-semibold text-status-info">Automated digital tokens</strong>
+                clear within <strong>5–15 minutes</strong> upon identity hash confirmation. Hardware
+                dongles require duty supervisor physical dispatch and biometric check-out.
+              </p>
+            </div>
+            <ul class="space-y-2 pt-2 font-body-sm text-body-sm text-brand-slate-700">
+              <li class="flex items-start gap-2">
+                <span
+                  class="material-symbols-outlined mt-0.5 shrink-0 text-[18px] text-status-verified"
+                  >check</span
+                >
+                <span>256-bit AES cryptographic token exchange</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span
+                  class="material-symbols-outlined mt-0.5 shrink-0 text-[18px] text-status-verified"
+                  >check</span
+                >
+                <span>Rivers State University Identity Federation binding</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span
+                  class="material-symbols-outlined mt-0.5 shrink-0 text-[18px] text-status-verified"
+                  >check</span
+                >
+                <span>Zero-Trust terminal session isolation for remote nodes</span>
+              </li>
+            </ul>
+          </div>
+          <!-- Security Compliance Card -->
+          <div class="space-y-4 rounded-xl bg-brand-navy-950 p-5 text-surface-bright shadow-sm">
+            <div class="flex items-center gap-2">
+              <span class="material-symbols-outlined text-[22px] text-primary-fixed">policy</span>
+              <span class="font-title-lg text-title-lg tracking-tight"
+                >Security &amp; Maritime Compliance</span
+              >
+            </div>
+            <p class="font-body-sm text-body-sm text-brand-slate-400">
+              Aligned with <strong>ISO/IEC 27001</strong> and the
+              <strong>IMO Maritime Cyber Risk Management Guidelines</strong>
+              (MSC-FAL.1/Circ.3). Unverified requests are reported to the RSU Security Directorate.
+            </p>
+            <div
+              class="flex items-center justify-between border-t border-brand-slate-800 pt-3 font-code-sm text-code-sm text-brand-slate-400"
+            >
+              <span>Audit Ref: MARITIME-CYBER-SEC-2025</span>
+              <span class="font-semibold text-primary-fixed">Tier 4</span>
+            </div>
+          </div>
+          <!-- Help Desk Quick Reference -->
+          <div
+            class="flex items-center gap-3 rounded-xl border border-brand-slate-200 bg-brand-slate-50 p-4"
+          >
+            <div
+              class="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-surface-container text-primary"
+            >
+              <span class="material-symbols-outlined text-[20px]">support_agent</span>
+            </div>
+            <div class="font-body-sm text-body-sm">
+              <span class="block font-semibold text-brand-navy-900"
+                >Emergency Dispatch Helpline</span
+              >
+              <span class="text-brand-slate-500">Ext 4402 • Room 204 Faculty Block</span>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </main>
+    <!-- Footer (Shared Component JSON Blueprint) -->
+    <cmotd-institution-strip></cmotd-institution-strip>
+    <cmotd-site-footer></cmotd-site-footer>
+  </body>
+</html>

@@ -1,0 +1,387 @@
+<!doctype html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      content="width=device-width, initial-scale=1.0"
+      name="viewport"
+    />
+    <title>Identity Verification | CMOTD - Rivers State University</title>
+    <link
+      href="../favicon.ico"
+      rel="icon"
+      type="image/x-icon"
+    />
+
+    <!-- Tailwind CSS -->
+    <link
+      href="../assets/css/tailwind-build.css"
+      rel="stylesheet"
+    />
+    <link
+      href="../assets/css/cmotd-global.css"
+      rel="stylesheet"
+    />
+    <script
+      defer=""
+      src="../assets/js/site-config.js"
+    ></script>
+    <script
+      defer=""
+      src="../assets/js/cmotd-components.js"
+    ></script>
+  </head>
+  <body
+    class="flex min-h-screen flex-col justify-between bg-background font-body-md text-on-surface antialiased selection:bg-primary-container selection:text-on-primary"
+  >
+    <!-- TOP APP BAR (Shared Component Execution) -->
+    <cmotd-site-header></cmotd-site-header>
+    <!-- MAIN CANVAS: FOCUSED 2FA AUTHENTICATION CARD -->
+    <main
+      class="relative flex flex-1 items-center justify-center overflow-hidden px-4 py-12 lg:py-16"
+    >
+      <!-- Precision Background Architectural Grid Pattern -->
+      <div
+        class="pointer-events-none absolute inset-0 bg-[size:4rem_4rem] opacity-40 [background-image:linear-gradient(to_right,#e2e8f0_1px,transparent_1px),linear-gradient(to_bottom,#e2e8f0_1px,transparent_1px)]"
+      ></div>
+      <div class="relative z-10 w-full max-w-[580px]">
+        <!-- CARD CONTAINER (Level 1 Elevation with Hairline Border) -->
+        <div
+          class="overflow-hidden rounded-xl border border-brand-slate-200 bg-surface-container-lowest shadow-sm transition-all duration-200"
+        >
+          <!-- Institutional Security Band -->
+          <div
+            class="flex items-center justify-between border-b border-brand-slate-800 bg-brand-navy-950 px-6 py-3.5"
+          >
+            <div class="flex items-center space-x-2">
+              <span
+                class="inline-block h-2 w-2 animate-pulse rounded-full bg-status-verified"
+              ></span>
+              <span
+                class="font-label-sm text-label-sm font-semibold uppercase tracking-wider text-surface-bright"
+              >
+                Two-Factor Verification Required • Tier-3 Academic Integrity Protocol
+              </span>
+            </div>
+            <span class="font-code-sm text-label-sm text-brand-slate-400">TLS 1.3 / ECC-384</span>
+          </div>
+          <div class="space-y-6 p-6 sm:p-8">
+            <!-- Header Area -->
+            <div class="space-y-2 text-center sm:text-left">
+              <div
+                class="mb-2 inline-flex items-center space-x-2 rounded-full border border-brand-slate-200 bg-brand-slate-100 px-2.5 py-1 text-brand-slate-800"
+              >
+                <span
+                  class="material-symbols-outlined text-[15px] text-primary"
+                  data-icon="shield_lock"
+                  style="font-variation-settings: &quot;FILL&quot; 1"
+                  >shield_lock</span
+                >
+                <span class="font-label-sm text-label-sm font-semibold"
+                  >Subsea Supercluster &amp; Registry Access</span
+                >
+              </div>
+              <h1 class="font-headline-md text-headline-md tracking-tight text-brand-navy-900">
+                Verify Your Identity
+              </h1>
+              <p class="font-body-sm text-body-sm leading-relaxed text-brand-slate-500">
+                A 6-digit cryptographic security code has been dispatched to your registered
+                institutional channel:
+                <strong class="font-semibold text-brand-slate-800"
+                  >b.amadi@operator-energy.com</strong
+                >
+              </p>
+            </div>
+            <!-- Interactive 6-Digit Slot Form -->
+            <form
+              class="space-y-6"
+              onsubmit="event.preventDefault()"
+            >
+              <div>
+                <label class="mb-3 block font-label-md text-label-md text-brand-slate-700">
+                  Enter 6-Digit Authenticator Code
+                </label>
+                <!-- 6 Digit Input Group with Active Glow State -->
+                <div
+                  class="grid grid-cols-6 gap-2 sm:gap-3"
+                  id="otp-container"
+                >
+                  <input
+                    autofocus=""
+                    class="h-14 w-full rounded-lg border border-brand-slate-200 bg-surface-container-lowest text-center font-headline-sm text-headline-sm font-bold text-brand-navy-900 shadow-sm transition-all focus:border-primary focus:outline-none focus:ring-4 focus:ring-primary/10"
+                    maxlength="1"
+                    type="text"
+                    value="7"
+                  />
+                  <input
+                    class="h-14 w-full rounded-lg border border-brand-slate-200 bg-surface-container-lowest text-center font-headline-sm text-headline-sm font-bold text-brand-navy-900 shadow-sm transition-all focus:border-primary focus:outline-none focus:ring-4 focus:ring-primary/10"
+                    maxlength="1"
+                    type="text"
+                    value="4"
+                  />
+                  <input
+                    class="h-14 w-full rounded-lg border border-brand-slate-200 bg-surface-container-lowest text-center font-headline-sm text-headline-sm font-bold text-brand-navy-900 shadow-sm transition-all focus:border-primary focus:outline-none focus:ring-4 focus:ring-primary/10"
+                    maxlength="1"
+                    type="text"
+                    value="0"
+                  />
+                  <!-- Focused active slot with designated glowing styling -->
+                  <input
+                    class="h-14 w-full rounded-lg border-2 border-primary bg-surface-container-lowest text-center font-headline-sm text-headline-sm font-bold text-brand-navy-900 shadow-sm ring-4 ring-primary/15 transition-all focus:outline-none"
+                    maxlength="1"
+                    placeholder="•"
+                    type="text"
+                    value=""
+                  />
+                  <input
+                    class="h-14 w-full rounded-lg border border-brand-slate-200 bg-surface-container-lowest text-center font-headline-sm text-headline-sm font-bold text-brand-navy-900 shadow-sm transition-all focus:border-primary focus:outline-none focus:ring-4 focus:ring-primary/10"
+                    maxlength="1"
+                    placeholder="•"
+                    type="text"
+                    value=""
+                  />
+                  <input
+                    class="h-14 w-full rounded-lg border border-brand-slate-200 bg-surface-container-lowest text-center font-headline-sm text-headline-sm font-bold text-brand-navy-900 shadow-sm transition-all focus:border-primary focus:outline-none focus:ring-4 focus:ring-primary/10"
+                    maxlength="1"
+                    placeholder="•"
+                    type="text"
+                    value=""
+                  />
+                </div>
+                <!-- Timer and Progress Tracker Bar -->
+                <div class="mt-4 space-y-2 pt-1">
+                  <div class="flex items-center justify-between font-body-sm text-body-sm">
+                    <div class="flex items-center space-x-1.5 text-brand-slate-500">
+                      <span
+                        class="material-symbols-outlined text-[16px]"
+                        data-icon="schedule"
+                        >schedule</span
+                      >
+                      <span
+                        >Code expires in
+                        <span class="font-code-sm font-semibold text-brand-slate-800"
+                          >04:42</span
+                        ></span
+                      >
+                    </div>
+                    <span class="font-label-sm text-label-sm font-medium text-status-verified"
+                      >Auto-refresh ready</span
+                    >
+                  </div>
+                  <!-- Animated Progress Track -->
+                  <div class="h-1.5 w-full overflow-hidden rounded-full bg-brand-slate-100">
+                    <div class="custom-progress-bar h-full w-[78%] rounded-full bg-primary"></div>
+                  </div>
+                </div>
+              </div>
+              <!-- Primary Call to Action -->
+              <button
+                class="flex h-11 w-full items-center justify-center space-x-2 rounded-lg bg-primary px-5 font-label-md text-label-md font-semibold tracking-wide text-on-primary shadow-sm transition-all duration-150 hover:bg-brand-cobalt-deep focus:outline-none focus:ring-4 focus:ring-primary/20 active:scale-95"
+                type="submit"
+              >
+                <span>Verify &amp; Enter Portal</span>
+                <span
+                  class="material-symbols-outlined text-[18px]"
+                  data-icon="arrow_forward"
+                  >arrow_forward</span
+                >
+              </button>
+              <!-- Auxiliary Actions & Resend Indicator -->
+              <div
+                class="flex flex-col items-center justify-between gap-3 border-t border-brand-slate-100 pt-4 font-body-sm text-body-sm sm:flex-row"
+              >
+                <span class="text-center text-brand-slate-500 sm:text-left">
+                  Didn't receive the code?
+                  <span class="font-medium text-brand-slate-400"
+                    >Resend Code (Available in 28s)</span
+                  >
+                </span>
+                <a
+                  class="inline-flex items-center space-x-1 font-semibold text-primary transition-colors hover:text-brand-cobalt-deep"
+                  href="#"
+                >
+                  <span
+                    class="material-symbols-outlined text-[16px]"
+                    data-icon="arrow_back"
+                    >arrow_back</span
+                  >
+                  <span>Back to Portal Login</span>
+                </a>
+              </div>
+            </form>
+            <!-- Alternative Verification Methods Accordion List -->
+            <div
+              class="divide-y divide-brand-slate-200 rounded-lg border border-brand-slate-200 bg-brand-slate-50/50"
+            >
+              <div class="bg-brand-slate-100/70 px-4 py-2.5">
+                <span
+                  class="font-label-sm text-label-sm font-semibold uppercase tracking-wider text-brand-slate-700"
+                >
+                  Alternative Verification Methods
+                </span>
+              </div>
+              <!-- Method 1 -->
+              <button
+                class="group flex w-full items-center justify-between px-4 py-3 text-left transition-colors hover:bg-surface-container-low"
+                type="button"
+              >
+                <div class="flex items-center space-x-3">
+                  <div
+                    class="flex h-8 w-8 items-center justify-center rounded border border-brand-slate-200 bg-surface-container-lowest text-primary transition-colors group-hover:border-primary"
+                  >
+                    <span
+                      class="material-symbols-outlined text-[18px]"
+                      data-icon="phonelink_ring"
+                      >phonelink_ring</span
+                    >
+                  </div>
+                  <div>
+                    <p
+                      class="font-label-md text-label-md text-brand-navy-900 transition-colors group-hover:text-primary"
+                    >
+                      Approve via Authenticator App
+                    </p>
+                    <p class="font-body-sm text-body-sm text-brand-slate-500">
+                      Google / Microsoft Authenticator / Duo push
+                    </p>
+                  </div>
+                </div>
+                <span
+                  class="material-symbols-outlined text-brand-slate-400 transition-colors group-hover:text-primary"
+                  data-icon="chevron_right"
+                  >chevron_right</span
+                >
+              </button>
+              <!-- Method 2 -->
+              <button
+                class="group flex w-full items-center justify-between px-4 py-3 text-left transition-colors hover:bg-surface-container-low"
+                type="button"
+              >
+                <div class="flex items-center space-x-3">
+                  <div
+                    class="flex h-8 w-8 items-center justify-center rounded border border-brand-slate-200 bg-surface-container-lowest text-primary transition-colors group-hover:border-primary"
+                  >
+                    <span
+                      class="material-symbols-outlined text-[18px]"
+                      data-icon="sms"
+                      >sms</span
+                    >
+                  </div>
+                  <div>
+                    <p
+                      class="font-label-md text-label-md text-brand-navy-900 transition-colors group-hover:text-primary"
+                    >
+                      Send SMS verification
+                    </p>
+                    <p class="font-body-sm font-code-sm text-body-sm text-brand-slate-500">
+                      +234 (0) 803 *** 4567
+                    </p>
+                  </div>
+                </div>
+                <span
+                  class="material-symbols-outlined text-brand-slate-400 transition-colors group-hover:text-primary"
+                  data-icon="chevron_right"
+                  >chevron_right</span
+                >
+              </button>
+              <!-- Method 3 -->
+              <button
+                class="group flex w-full items-center justify-between px-4 py-3 text-left transition-colors hover:bg-surface-container-low"
+                type="button"
+              >
+                <div class="flex items-center space-x-3">
+                  <div
+                    class="flex h-8 w-8 items-center justify-center rounded border border-brand-slate-200 bg-surface-container-lowest text-primary transition-colors group-hover:border-primary"
+                  >
+                    <span
+                      class="material-symbols-outlined text-[18px]"
+                      data-icon="key"
+                      >key</span
+                    >
+                  </div>
+                  <div>
+                    <p
+                      class="font-label-md text-label-md text-brand-navy-900 transition-colors group-hover:text-primary"
+                    >
+                      Use Hardware Security Token
+                    </p>
+                    <p class="font-body-sm text-body-sm text-brand-slate-500">
+                      YubiKey OTP / FIDO2 cryptographic token
+                    </p>
+                  </div>
+                </div>
+                <span
+                  class="material-symbols-outlined text-brand-slate-400 transition-colors group-hover:text-primary"
+                  data-icon="chevron_right"
+                  >chevron_right</span
+                >
+              </button>
+              <!-- Method 4 -->
+              <button
+                class="group flex w-full items-center justify-between px-4 py-3 text-left transition-colors hover:bg-surface-container-low"
+                type="button"
+              >
+                <div class="flex items-center space-x-3">
+                  <div
+                    class="flex h-8 w-8 items-center justify-center rounded border border-brand-slate-200 bg-surface-container-lowest text-brand-slate-500 transition-colors group-hover:text-primary"
+                  >
+                    <span
+                      class="material-symbols-outlined text-[18px]"
+                      data-icon="admin_panel_settings"
+                      >admin_panel_settings</span
+                    >
+                  </div>
+                  <div>
+                    <p
+                      class="font-label-md text-label-md text-brand-navy-900 transition-colors group-hover:text-primary"
+                    >
+                      Request One-Time Senate Bursary Liaison Bypass
+                    </p>
+                    <p class="font-body-sm text-body-sm text-brand-slate-500">
+                      Requires institutional supervisor confirmation
+                    </p>
+                  </div>
+                </div>
+                <span
+                  class="material-symbols-outlined text-brand-slate-400 transition-colors group-hover:text-primary"
+                  data-icon="chevron_right"
+                  >chevron_right</span
+                >
+              </button>
+            </div>
+            <!-- Audit Security Metadata Strip -->
+            <div
+              class="flex items-start space-x-2.5 rounded-lg border border-brand-slate-200/80 bg-surface-container-low p-3.5"
+            >
+              <span
+                class="material-symbols-outlined mt-0.5 text-[18px] text-brand-slate-500"
+                data-icon="info"
+                >info</span
+              >
+              <div class="font-code-sm text-[12px] leading-snug text-brand-slate-500">
+                <span class="font-semibold text-brand-slate-700">Security Note:</span>
+                IP: 102.89.41.201 (Port Harcourt, NG) • Device: MacOS Chrome / HPC Terminal 14
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Institutional Verification Guarantee Note -->
+        <div
+          class="mt-4 flex items-center justify-center space-x-2 font-body-sm text-body-sm text-brand-slate-500"
+        >
+          <span
+            class="material-symbols-outlined text-[16px] text-status-verified"
+            data-icon="verified_user"
+            style="font-variation-settings: &quot;FILL&quot; 1"
+            >verified_user</span
+          >
+          <span>End-to-End Cryptographically Secured Access Protocol</span>
+        </div>
+      </div>
+    </main>
+    <!-- FOOTER (Shared Component Execution) -->
+    <cmotd-institution-strip></cmotd-institution-strip>
+    <cmotd-site-footer></cmotd-site-footer>
+  </body>
+</html>

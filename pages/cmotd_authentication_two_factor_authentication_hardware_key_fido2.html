@@ -1,0 +1,443 @@
+<!doctype html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      content="width=device-width, initial-scale=1.0"
+      name="viewport"
+    />
+    <title>CMOTD - Authentication (Hardware Key &amp; FIDO2 Security Token)</title>
+    <link
+      href="../favicon.ico"
+      rel="icon"
+      type="image/x-icon"
+    />
+    <link
+      href="../assets/css/tailwind-build.css"
+      rel="stylesheet"
+    />
+    <link
+      href="../assets/css/cmotd-global.css"
+      rel="stylesheet"
+    />
+    <script
+      defer=""
+      src="../assets/js/site-config.js"
+    ></script>
+    <script
+      defer=""
+      src="../assets/js/cmotd-components.js"
+    ></script>
+  </head>
+  <body class="flex min-h-screen flex-col bg-background font-body-md text-on-surface antialiased">
+    <!-- Top Web Header (TopNavBar Component) -->
+    <cmotd-site-header></cmotd-site-header>
+    <!-- Technical Telemetry Banner Strip -->
+    <div class="border-b border-brand-slate-800 bg-brand-navy-950 px-6 py-2 text-surface-dim">
+      <div
+        class="mx-auto flex max-w-[1280px] flex-wrap items-center justify-between gap-3 font-code-sm text-code-sm tracking-wide"
+      >
+        <div class="flex items-center gap-2 text-brand-slate-400">
+          <span class="inline-block h-2 w-2 animate-ping rounded-full bg-status-verified"></span>
+          <span class="font-semibold uppercase text-brand-slate-200">Enclave Security Active</span>
+          <span class="text-brand-slate-600">|</span>
+          <span class="text-brand-slate-300">FIDO2 / WEBAUTHN HARDWARE HANDSHAKE</span>
+          <span class="text-brand-slate-600">|</span>
+          <span class="text-brand-slate-400">FIPS 140-2 LEVEL 3 CERTIFIED</span>
+        </div>
+        <div class="flex items-center gap-4 text-brand-slate-400">
+          <span class="text-brand-slate-300 font-mono"
+            >SECURE CAD/CAE SUPERCLUSTER RIG :: NODE-PHC-09</span
+          >
+          <span
+            class="rounded border border-brand-slate-700 bg-brand-slate-800 px-2 py-0.5 font-mono text-[11px] text-brand-cobalt"
+            >TLS 1.3 AES-256-GCM</span
+          >
+        </div>
+      </div>
+    </div>
+    <!-- Main Canvas -->
+    <main
+      class="technical-grid relative flex flex-1 items-center justify-center px-4 py-12 sm:px-6 lg:px-8"
+    >
+      <!-- Central Centered 2FA Card (Target Canvas) -->
+      <div
+        class="relative z-10 w-full max-w-[640px] overflow-hidden rounded-xl border border-brand-slate-200 bg-surface-container-lowest shadow-lg"
+      >
+        <!-- Top Card Header Band -->
+        <div
+          class="flex items-center justify-between border-b border-brand-slate-200 bg-brand-slate-50 px-6 py-4"
+        >
+          <div class="flex items-center gap-2.5">
+            <span class="relative flex h-2.5 w-2.5">
+              <span
+                class="absolute inline-flex h-full w-full animate-ping rounded-full bg-status-verified opacity-75"
+              ></span>
+              <span class="relative inline-flex h-2.5 w-2.5 rounded-full bg-status-verified"></span>
+            </span>
+            <span class="font-label-sm text-label-sm uppercase tracking-wider text-brand-slate-800"
+              >Hardware Security Enclave (FIDO2 / CTAP2 Standard)</span
+            >
+          </div>
+          <span
+            class="inline-flex items-center gap-1.5 rounded border border-brand-slate-200 bg-brand-slate-100 px-2.5 py-1 font-label-sm text-label-sm text-brand-slate-700"
+          >
+            <span
+              class="material-symbols-outlined text-[14px]"
+              data-icon="developer_board"
+              >developer_board</span
+            >
+            HPC Cluster Level 4
+          </span>
+        </div>
+        <!-- Card Body Content -->
+        <div class="p-6 sm:p-8">
+          <!-- Contextual Sub-badge -->
+          <div class="mb-3">
+            <span
+              class="inline-flex items-center gap-1.5 rounded border border-blue-200 bg-status-info-bg px-2.5 py-1 font-label-sm text-label-sm text-status-info"
+            >
+              <span
+                class="material-symbols-outlined text-[16px]"
+                data-icon="waves"
+                >waves</span
+              >
+              Subsea Supercluster &amp; Remote HPC Login
+            </span>
+          </div>
+          <!-- Heading & Mission Statement -->
+          <h1 class="mb-2 font-headline-lg text-headline-lg tracking-tight text-brand-navy-900">
+            Authenticate with Hardware Token
+          </h1>
+          <p class="mb-6 font-body-md text-body-md text-brand-slate-500">
+            Insert and touch your registered FIDO2 / YubiKey security key to authorize access to
+            high-performance computing terminals and confidential simulation repositories.
+          </p>
+          <!-- Interactive Hardware Prompt Graphic Box -->
+          <div
+            class="group relative mb-6 flex flex-col items-center justify-center overflow-hidden rounded-xl border-2 border-dashed border-brand-slate-200 bg-brand-slate-50 p-6 text-center transition-colors hover:border-brand-cobalt sm:p-8"
+          >
+            <!-- Pulsing Background Accent -->
+            <div
+              class="pointer-events-none absolute inset-0 bg-gradient-to-b from-blue-50/40 to-transparent"
+            ></div>
+            <!-- YubiKey / Hardware Token Device Representation -->
+            <div class="relative mb-5 flex h-24 w-24 items-center justify-center">
+              <!-- Pulsing Rings -->
+              <div class="pulse-ring absolute h-20 w-20 rounded-full bg-brand-cobalt/15"></div>
+              <div
+                class="pulse-ring absolute h-16 w-16 rounded-full bg-amber-400/20"
+                style="animation-delay: 0.6s"
+              ></div>
+              <!-- Graphic Dongle Base -->
+              <div
+                class="relative z-10 flex h-20 w-12 flex-col items-center justify-between rounded-lg border border-brand-slate-700 bg-brand-navy-900 p-2 shadow-md"
+              >
+                <!-- USB connector lip -->
+                <div
+                  class="bg-brand-slate-300 flex h-3 w-6 items-center justify-around rounded-t-sm border border-brand-slate-400 px-0.5"
+                >
+                  <div class="bg-brand-slate-600 rounded-xs h-1.5 w-1"></div>
+                  <div class="bg-brand-slate-600 rounded-xs h-1.5 w-1"></div>
+                </div>
+                <!-- Gold Touch Sensor Disc -->
+                <div
+                  class="flex h-6 w-6 transform cursor-pointer items-center justify-center rounded-full border-2 border-amber-600 bg-gradient-to-tr from-amber-500 via-yellow-300 to-amber-400 shadow transition-transform active:scale-95"
+                >
+                  <div class="h-2 w-2 rounded-full bg-amber-700/60"></div>
+                </div>
+                <!-- Activity LED -->
+                <div class="h-1.5 w-1.5 animate-ping rounded-full bg-status-verified"></div>
+              </div>
+            </div>
+            <!-- Animated Status Pill -->
+            <div
+              class="mb-4 inline-flex items-center gap-2 rounded-full border border-brand-slate-200 bg-surface-container-lowest px-3 py-1.5 shadow-sm"
+            >
+              <span class="h-2 w-2 animate-pulse rounded-full bg-brand-cobalt"></span>
+              <span class="font-label-md text-label-md text-brand-navy-900"
+                >Waiting for User Touch on Security Key...</span
+              >
+            </div>
+            <!-- Guidance Instructions -->
+            <div
+              class="mb-2 max-w-md space-y-2 rounded-lg border border-brand-slate-200 bg-surface-container-lowest p-4 text-left font-body-sm text-body-sm text-brand-slate-700 shadow-sm"
+            >
+              <div class="flex items-start gap-2.5">
+                <span
+                  class="mt-0.5 flex h-5 w-5 flex-shrink-0 items-center justify-center rounded-full bg-brand-slate-100 font-label-sm text-label-sm font-bold text-brand-slate-800"
+                  >1</span
+                >
+                <span
+                  >Ensure your <strong>YubiKey 5 FIPS</strong> or <strong>FIDO2</strong> hardware
+                  dongle is inserted into your USB port or held against the NFC reader.</span
+                >
+              </div>
+              <div class="flex items-start gap-2.5">
+                <span
+                  class="mt-0.5 flex h-5 w-5 flex-shrink-0 items-center justify-center rounded-full bg-brand-slate-100 font-label-sm text-label-sm font-bold text-brand-slate-800"
+                  >2</span
+                >
+                <span
+                  >Touch the golden sensor disc on the side of the hardware key when it blinks to
+                  sign the cryptographic challenge.</span
+                >
+              </div>
+            </div>
+            <!-- Micro-prompt for browser dialog support -->
+            <p class="mt-2 font-label-sm text-label-sm text-brand-slate-400">
+              If prompted by your browser, grant permission to interface with the external
+              credential token.
+            </p>
+          </div>
+          <!-- Active Token Roster Information Grid -->
+          <div class="mb-6 rounded-lg border border-brand-slate-200 bg-brand-slate-50 p-4">
+            <div
+              class="mb-3 flex items-center justify-between font-label-sm text-label-sm uppercase tracking-wider text-brand-slate-400"
+            >
+              <span>Enrolled Cryptographic Token Profile</span>
+              <span class="flex items-center gap-1 text-status-verified">
+                <span
+                  class="material-symbols-outlined text-[14px]"
+                  data-icon="check_circle"
+                  >check_circle</span
+                >
+                Bound &amp; Active
+              </span>
+            </div>
+            <div class="grid grid-cols-1 gap-3 font-body-sm text-body-sm sm:grid-cols-2">
+              <div class="flex flex-col">
+                <span class="font-label-sm text-label-sm text-brand-slate-500"
+                  >Bound Key Model</span
+                >
+                <span class="flex items-center gap-1.5 font-mono font-semibold text-brand-navy-900">
+                  <span
+                    class="material-symbols-outlined text-[16px] text-brand-slate-500"
+                    data-icon="usb"
+                    >usb</span
+                  >
+                  YubiKey 5C NFC FIPS
+                </span>
+              </div>
+              <div class="flex flex-col">
+                <span class="font-label-sm text-label-sm text-brand-slate-500"
+                  >Token Serial Number</span
+                >
+                <span
+                  class="w-fit rounded border border-brand-slate-200 bg-brand-slate-100 px-2 py-0.5 font-mono text-brand-slate-700"
+                  >YUBI-RSU-8849-012</span
+                >
+              </div>
+              <div class="flex flex-col border-t border-brand-slate-200/60 pt-2 sm:col-span-2">
+                <span class="font-label-sm text-label-sm text-brand-slate-500"
+                  >Registered Scholar / Engineer</span
+                >
+                <span class="font-semibold text-brand-navy-900"
+                  >Engr. Emmanuel T. Briggs
+                  <span class="font-normal text-brand-slate-500"
+                    >(COREN Reg: R-49281-ENG)</span
+                  ></span
+                >
+              </div>
+              <div class="flex flex-col sm:col-span-2">
+                <span class="font-label-sm text-label-sm text-brand-slate-500"
+                  >Last Validated Session</span
+                >
+                <span class="text-brand-slate-600"
+                  >Oct 18, 2025 • Marine Towing Basin Workstation PHC-14</span
+                >
+              </div>
+            </div>
+          </div>
+          <!-- Action Controls -->
+          <div class="mb-6 flex flex-col items-center gap-3 sm:flex-row">
+            <button
+              class="flex w-full items-center justify-center gap-2 rounded-lg bg-primary-container px-5 py-3 font-label-md text-label-md text-on-primary shadow-sm transition-all duration-150 hover:bg-brand-cobalt-deep active:scale-95 sm:flex-1"
+              type="button"
+            >
+              <span
+                class="material-symbols-outlined"
+                data-icon="refresh"
+                >refresh</span
+              >
+              <span>Retry Hardware Detection</span>
+            </button>
+            <a
+              class="flex w-full items-center justify-center gap-2 rounded-lg border border-brand-slate-200 px-5 py-3 font-label-md text-label-md text-brand-slate-700 transition-colors hover:bg-brand-slate-100 sm:w-auto"
+              href="#"
+            >
+              <span
+                class="material-symbols-outlined"
+                data-icon="arrow_back"
+                >arrow_back</span
+              >
+              <span>Cancel &amp; Return to Login</span>
+            </a>
+          </div>
+          <!-- Fallback / Alternative Verification Methods Accordion Panel -->
+          <div class="border-t border-brand-slate-200 pt-5">
+            <div
+              class="mb-3 font-label-sm text-label-sm uppercase tracking-wider text-brand-slate-400"
+            >
+              Alternative Verification Channels
+            </div>
+            <div class="space-y-2">
+              <!-- Option 1: TOTP Code -->
+              <a
+                class="group flex items-center justify-between rounded-lg border border-brand-slate-200 p-3 transition-all hover:border-brand-cobalt hover:bg-brand-slate-50"
+                href="#"
+              >
+                <div class="flex items-center gap-3">
+                  <div
+                    class="text-brand-slate-600 flex h-8 w-8 items-center justify-center rounded bg-brand-slate-100 transition-colors group-hover:text-primary"
+                  >
+                    <span
+                      class="material-symbols-outlined text-[18px]"
+                      data-icon="pin"
+                      >pin</span
+                    >
+                  </div>
+                  <div class="flex flex-col">
+                    <span
+                      class="font-label-md text-label-md text-brand-navy-900 transition-colors group-hover:text-primary"
+                      >Switch to 6-Digit Authenticator Code (TOTP)</span
+                    >
+                    <span class="font-body-sm text-body-sm text-brand-slate-500"
+                      >Google Authenticator / Microsoft Authenticator app</span
+                    >
+                  </div>
+                </div>
+                <span
+                  class="material-symbols-outlined text-brand-slate-400 transition-transform group-hover:translate-x-0.5"
+                  data-icon="chevron_right"
+                  >chevron_right</span
+                >
+              </a>
+              <!-- Option 2: Mobile Push -->
+              <a
+                class="group flex items-center justify-between rounded-lg border border-brand-slate-200 p-3 transition-all hover:border-brand-cobalt hover:bg-brand-slate-50"
+                href="#"
+              >
+                <div class="flex items-center gap-3">
+                  <div
+                    class="text-brand-slate-600 flex h-8 w-8 items-center justify-center rounded bg-brand-slate-100 transition-colors group-hover:text-primary"
+                  >
+                    <span
+                      class="material-symbols-outlined text-[18px]"
+                      data-icon="smartphone"
+                      >smartphone</span
+                    >
+                  </div>
+                  <div class="flex flex-col">
+                    <span
+                      class="font-label-md text-label-md text-brand-navy-900 transition-colors group-hover:text-primary"
+                      >Approve via Mobile Push Notification</span
+                    >
+                    <span class="font-body-sm text-body-sm text-brand-slate-500"
+                      >Dispatched to verified device (+234 •••• 9812)</span
+                    >
+                  </div>
+                </div>
+                <span
+                  class="material-symbols-outlined text-brand-slate-400 transition-transform group-hover:translate-x-0.5"
+                  data-icon="chevron_right"
+                  >chevron_right</span
+                >
+              </a>
+              <!-- Option 3: Rescue Code -->
+              <a
+                class="group flex items-center justify-between rounded-lg border border-brand-slate-200 p-3 transition-all hover:border-brand-cobalt hover:bg-brand-slate-50"
+                href="#"
+              >
+                <div class="flex items-center gap-3">
+                  <div
+                    class="text-brand-slate-600 flex h-8 w-8 items-center justify-center rounded bg-brand-slate-100 transition-colors group-hover:text-primary"
+                  >
+                    <span
+                      class="material-symbols-outlined text-[18px]"
+                      data-icon="emergency"
+                      >emergency</span
+                    >
+                  </div>
+                  <div class="flex flex-col">
+                    <span
+                      class="font-label-md text-label-md text-brand-navy-900 transition-colors group-hover:text-primary"
+                      >Enter Offline Emergency One-Time Rescue Code</span
+                    >
+                    <span class="font-body-sm text-body-sm text-brand-slate-500"
+                      >Alpha-numeric pre-printed emergency backup phrase</span
+                    >
+                  </div>
+                </div>
+                <span
+                  class="material-symbols-outlined text-brand-slate-400 transition-transform group-hover:translate-x-0.5"
+                  data-icon="chevron_right"
+                  >chevron_right</span
+                >
+              </a>
+            </div>
+            <!-- Lost Hardware Requisition Alert -->
+            <div
+              class="mt-4 flex items-center justify-between rounded border border-brand-slate-200 bg-brand-slate-100/70 p-3 font-body-sm text-body-sm"
+            >
+              <span class="text-brand-slate-600 flex items-center gap-2">
+                <span
+                  class="material-symbols-outlined text-[18px] text-status-warning"
+                  data-icon="warning"
+                  >warning</span
+                >
+                Lost or Damaged Hardware Token?
+              </span>
+              <a
+                class="font-label-md text-label-md text-primary hover:underline"
+                href="#"
+              >
+                Requisition Replacement
+              </a>
+            </div>
+          </div>
+          <!-- Security Diagnostic Telemetry Banner -->
+          <div
+            class="mt-6 space-y-1 border-t border-brand-slate-200/80 pt-4 font-mono text-[11px] leading-relaxed text-brand-slate-500"
+          >
+            <div class="flex flex-wrap items-center justify-between">
+              <span
+                >SHA-256 Digest:
+                <span class="text-brand-slate-700">d4e578c1b99a0f...89ac4182</span></span
+              >
+              <span>RP ID: <span class="text-brand-slate-700">auth.cmotd.rsu.edu.ng</span></span>
+            </div>
+            <div>
+              <span
+                >User Verification:
+                <span class="font-semibold text-status-verified"
+                  >Preferred (Biometric PIN / Fingerprint ready)</span
+                ></span
+              >
+            </div>
+          </div>
+        </div>
+        <!-- Card Footer Security Trust Seal -->
+        <div
+          class="flex items-center justify-between border-t border-brand-slate-200 bg-brand-slate-100 px-6 py-3"
+        >
+          <div class="text-brand-slate-600 flex items-center gap-2 font-label-sm text-label-sm">
+            <span
+              class="material-symbols-outlined text-[16px] text-brand-cobalt-deep"
+              data-icon="security"
+              >security</span
+            >
+            <span>End-to-End Cryptographically Secured Access Protocol</span>
+          </div>
+          <span class="font-mono text-[11px] uppercase text-brand-slate-500"
+            >FIPS 140-2 Validated Hardware</span
+          >
+        </div>
+      </div>
+    </main>
+    <!-- Institutional Rich Footer (Footer Component) -->
+    <cmotd-institution-strip></cmotd-institution-strip>
+    <cmotd-site-footer></cmotd-site-footer>
+  </body>
+</html>

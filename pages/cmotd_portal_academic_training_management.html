@@ -1,0 +1,975 @@
+<!doctype html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      content="width=device-width, initial-scale=1.0"
+      name="viewport"
+    />
+    <title>CMOTD E-PORTAL | Academic &amp; Training Dashboard</title>
+    <link
+      href="../favicon.ico"
+      rel="icon"
+      type="image/x-icon"
+    />
+
+    <!-- Tailwind CSS v3 with plugins -->
+    <link
+      href="../assets/css/tailwind-build.css"
+      rel="stylesheet"
+    />
+    <link
+      href="../assets/css/cmotd-global.css"
+      rel="stylesheet"
+    />
+    <script
+      defer=""
+      src="../assets/js/site-config.js"
+    ></script>
+    <script
+      defer=""
+      src="../assets/js/cmotd-components.js"
+    ></script>
+  </head>
+  <body
+    class="flex min-h-screen bg-background font-body-md text-body-md text-on-surface antialiased"
+  >
+    <!-- Persistent Dark Navy Left Sidebar (SideNavBar Component Execution) -->
+    <cmotd-portal-sidebar active="academic"></cmotd-portal-sidebar>
+    <!-- Main Administrative Content Wrapper -->
+    <div class="ml-portal-sidebar-width flex min-w-0 flex-1 flex-col">
+      <!-- TopNavBar Component Execution -->
+      <cmotd-portal-topbar title="Academic &amp; Training"></cmotd-portal-topbar>
+      <!-- Content Workspace -->
+      <main class="flex flex-1 flex-col gap-space-lg p-space-lg">
+        <!-- In-Content Sub-Navbar (Secondary Tabs) -->
+        <div
+          class="flex items-center justify-between rounded-xl border-b border-brand-slate-200 bg-surface-container-lowest px-space-lg shadow-sm"
+        >
+          <div class="flex items-center gap-8 overflow-x-auto py-1">
+            <button
+              class="flex items-center gap-2 border-b-2 border-primary px-1 py-3 font-label-md text-label-md font-semibold text-primary"
+            >
+              <span
+                class="material-symbols-outlined text-lg"
+                data-icon="view_kanban"
+                >view_kanban</span
+              >
+              Curriculum &amp; Modules
+            </button>
+            <button
+              class="flex items-center gap-2 px-1 py-3 font-label-md text-label-md text-on-surface-variant transition-colors hover:text-primary"
+            >
+              <span
+                class="material-symbols-outlined text-lg"
+                data-icon="computer"
+                >computer</span
+              >
+              Interactive Lab Syllabus
+            </button>
+            <button
+              class="flex items-center gap-2 px-1 py-3 font-label-md text-label-md text-on-surface-variant transition-colors hover:text-primary"
+            >
+              <span
+                class="material-symbols-outlined text-lg"
+                data-icon="lan"
+                >lan</span
+              >
+              CAD/CAE Solver Queue
+              <span
+                class="rounded-full bg-primary-fixed px-1.5 py-0.5 text-label-sm font-bold text-on-primary-fixed"
+                >3 Nodes</span
+              >
+            </button>
+            <button
+              class="flex items-center gap-2 px-1 py-3 font-label-md text-label-md text-on-surface-variant transition-colors hover:text-primary"
+            >
+              <span
+                class="material-symbols-outlined text-lg"
+                data-icon="assignment"
+                >assignment</span
+              >
+              Capstone Defense Dossier
+            </button>
+            <button
+              class="flex items-center gap-2 px-1 py-3 font-label-md text-label-md text-on-surface-variant transition-colors hover:text-primary"
+            >
+              <span
+                class="material-symbols-outlined text-lg"
+                data-icon="history_edu"
+                >history_edu</span
+              >
+              Attendance &amp; CEU Docket
+            </button>
+          </div>
+          <div class="hidden items-center gap-2 sm:flex">
+            <span class="font-code-sm text-code-sm text-brand-slate-500"
+              >Term II • Session 2025</span
+            >
+            <button class="p-1 text-on-surface-variant hover:text-primary">
+              <span
+                class="material-symbols-outlined text-lg"
+                data-icon="tune"
+                >tune</span
+              >
+            </button>
+          </div>
+        </div>
+        <!-- Training Program Overview Hero Card -->
+        <section
+          class="rounded-xl border border-brand-slate-200 bg-surface-container-lowest p-space-lg shadow-sm"
+        >
+          <div class="flex flex-col justify-between gap-4 lg:flex-row lg:items-center">
+            <div class="flex flex-col gap-2">
+              <div class="flex flex-wrap items-center gap-2">
+                <span
+                  class="rounded bg-primary px-2.5 py-0.5 text-label-sm font-semibold text-on-primary"
+                  >PGD-SUB-801</span
+                >
+                <span
+                  class="rounded border border-primary-fixed-dim bg-surface-container px-2.5 py-0.5 text-label-sm font-semibold text-primary"
+                  >Cohort 2025/2026</span
+                >
+                <span
+                  class="inline-flex items-center gap-1 rounded border border-status-verified-border bg-status-verified-bg px-2 py-0.5 text-label-sm font-medium text-status-verified"
+                >
+                  <span class="h-1.5 w-1.5 animate-pulse rounded-full bg-status-verified"></span>
+                  Accredited Syllabus
+                </span>
+              </div>
+              <h1
+                class="font-headline-md text-headline-md font-bold tracking-tight text-on-surface"
+              >
+                Advanced Postgraduate Diploma in Subsea Engineering &amp; Deepwater Pipeline Systems
+              </h1>
+              <p class="max-w-4xl font-body-sm text-body-sm text-on-surface-variant">
+                Specialized technical cohort training conducted at the CAD/CAE Computational Center
+                in Port Harcourt, integrating subsea umbilical risers, flow assurance simulations,
+                Seabed geotechnical finite-element analysis, and API/ASME safety specifications.
+              </p>
+            </div>
+            <!-- Quick Actions -->
+            <div class="flex shrink-0 items-center gap-2">
+              <button
+                class="flex items-center gap-1.5 rounded-lg border border-brand-slate-200 px-3.5 py-2 font-label-md text-label-md text-on-surface transition-colors hover:bg-brand-slate-100"
+              >
+                <span
+                  class="material-symbols-outlined text-base"
+                  data-icon="file_download"
+                  >file_download</span
+                >
+                <span>Export Dossier</span>
+              </button>
+              <button
+                class="flex items-center gap-1.5 rounded-lg bg-primary px-3.5 py-2 font-label-md text-label-md text-on-primary shadow-sm transition-colors hover:bg-brand-cobalt-deep"
+              >
+                <span
+                  class="material-symbols-outlined text-base"
+                  data-icon="play_circle"
+                  >play_circle</span
+                >
+                <span>Launch Cloud CAD Lab</span>
+              </button>
+            </div>
+          </div>
+          <!-- CEU & Cohort Metrics Bar -->
+          <div
+            class="mt-6 grid grid-cols-1 items-center gap-4 border-t border-brand-slate-100 pt-4 md:grid-cols-4"
+          >
+            <div class="col-span-1 md:col-span-2">
+              <div class="mb-1.5 flex items-center justify-between">
+                <span class="font-label-md text-label-md font-semibold text-on-surface"
+                  >Curriculum Progression Milestone</span
+                >
+                <span class="font-label-md text-label-md font-bold text-primary"
+                  >68% Concluded (42 / 60 CEU Units)</span
+                >
+              </div>
+              <div
+                class="h-2.5 w-full overflow-hidden rounded-full border border-brand-slate-200 bg-brand-slate-100"
+              >
+                <div
+                  class="h-full rounded-full bg-primary transition-all duration-500"
+                  style="width: 68%"
+                ></div>
+              </div>
+            </div>
+            <div
+              class="flex items-center gap-3 rounded-lg border border-brand-slate-200 bg-surface-bright px-3 py-1.5"
+            >
+              <div class="rounded bg-primary-fixed p-2 text-primary">
+                <span
+                  class="material-symbols-outlined text-lg"
+                  data-icon="groups"
+                  >groups</span
+                >
+              </div>
+              <div class="flex flex-col">
+                <span class="font-label-sm text-label-sm text-brand-slate-500"
+                  >Candidate Cohort</span
+                >
+                <span class="font-label-md text-label-md font-bold text-on-surface"
+                  >24 Offshore Trainees</span
+                >
+              </div>
+            </div>
+            <div
+              class="flex items-center gap-3 rounded-lg border border-brand-slate-200 bg-surface-bright px-3 py-1.5"
+            >
+              <div class="rounded bg-status-verified-bg p-2 text-status-verified">
+                <span
+                  class="material-symbols-outlined text-lg"
+                  data-icon="verified"
+                  >verified</span
+                >
+              </div>
+              <div class="flex flex-col">
+                <span class="font-label-sm text-label-sm text-brand-slate-500"
+                  >COREN Validated</span
+                >
+                <span class="font-label-md text-label-md font-bold text-status-verified"
+                  >45 Logged Units</span
+                >
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Main Asymmetric Bento Workspace Layout -->
+        <div class="grid grid-cols-1 gap-space-lg lg:grid-cols-12">
+          <!-- Left Column (8 of 12 columns): Modular Units & Interactive Lab Worksheets -->
+          <div class="flex flex-col gap-space-lg lg:col-span-8">
+            <!-- Section: Enrolled Modular Units -->
+            <div
+              class="rounded-xl border border-brand-slate-200 bg-surface-container-lowest p-space-lg shadow-sm"
+            >
+              <div class="mb-4 flex items-center justify-between">
+                <div class="flex items-center gap-2">
+                  <span
+                    class="material-symbols-outlined text-primary"
+                    data-icon="menu_book"
+                    >menu_book</span
+                  >
+                  <h2 class="font-title-lg text-title-lg font-bold text-on-surface">
+                    Enrolled Modular Units
+                  </h2>
+                </div>
+                <span class="font-label-sm text-label-sm text-brand-slate-500"
+                  >4 Specialization Modules</span
+                >
+              </div>
+              <!-- Card Accordion List -->
+              <div class="space-y-3">
+                <!-- Module 01: Completed -->
+                <div
+                  class="rounded-lg border border-brand-slate-200 bg-surface-bright p-4 transition-colors hover:border-brand-slate-400"
+                >
+                  <div class="flex items-start justify-between">
+                    <div class="flex items-start gap-3">
+                      <div
+                        class="flex h-8 w-8 shrink-0 items-center justify-center rounded border border-status-verified-border bg-status-verified-bg text-status-verified"
+                      >
+                        <span
+                          class="material-symbols-outlined text-lg"
+                          data-icon="check_circle"
+                          >check_circle</span
+                        >
+                      </div>
+                      <div>
+                        <div class="flex items-center gap-2">
+                          <span class="font-code-sm text-code-sm text-brand-slate-500"
+                            >MODULE 01 • 15 CEU</span
+                          >
+                          <span
+                            class="rounded border border-status-verified-border bg-status-verified-bg px-2 py-0.5 text-label-sm font-semibold text-status-verified"
+                            >Completed</span
+                          >
+                          <span
+                            class="rounded bg-brand-slate-100 px-2 py-0.5 text-label-sm font-semibold text-brand-slate-800"
+                            >Grade: A (92.4%)</span
+                          >
+                        </div>
+                        <h3
+                          class="mt-1 font-headline-sm text-headline-sm font-semibold text-on-surface"
+                        >
+                          Deepwater SURF Architecture &amp; Metocean Mechanics
+                        </h3>
+                        <p class="mt-1 font-body-sm text-body-sm text-on-surface-variant">
+                          Wave spectra kinematics, extreme load calculations, dynamic flexible riser
+                          configurations (Lazy-S, Steep Wave), and Gulf of Guinea environmental
+                          criteria.
+                        </p>
+                        <div
+                          class="mt-3 flex items-center gap-4 text-label-sm text-brand-slate-500"
+                        >
+                          <span class="flex items-center gap-1">
+                            <span
+                              class="material-symbols-outlined text-sm"
+                              data-icon="person"
+                              >person</span
+                            >
+                            Lead Instructor: Engr. Taribo Douglas
+                          </span>
+                          <span class="flex items-center gap-1">
+                            <span
+                              class="material-symbols-outlined text-sm"
+                              data-icon="verified"
+                              >verified</span
+                            >
+                            Audit Hash: #0x4F8A...29B
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                    <button class="p-1 text-brand-slate-400 hover:text-primary">
+                      <span
+                        class="material-symbols-outlined"
+                        data-icon="keyboard_arrow_down"
+                        >keyboard_arrow_down</span
+                      >
+                    </button>
+                  </div>
+                </div>
+                <!-- Module 02: Completed with CAE Dossier -->
+                <div
+                  class="rounded-lg border border-brand-slate-200 bg-surface-bright p-4 transition-colors hover:border-brand-slate-400"
+                >
+                  <div class="flex items-start justify-between">
+                    <div class="flex items-start gap-3">
+                      <div
+                        class="flex h-8 w-8 shrink-0 items-center justify-center rounded border border-status-verified-border bg-status-verified-bg text-status-verified"
+                      >
+                        <span
+                          class="material-symbols-outlined text-lg"
+                          data-icon="check_circle"
+                          >check_circle</span
+                        >
+                      </div>
+                      <div>
+                        <div class="flex items-center gap-2">
+                          <span class="font-code-sm text-code-sm text-brand-slate-500"
+                            >MODULE 02 • 15 CEU</span
+                          >
+                          <span
+                            class="rounded border border-status-verified-border bg-status-verified-bg px-2 py-0.5 text-label-sm font-semibold text-status-verified"
+                            >Completed</span
+                          >
+                          <span
+                            class="rounded bg-brand-slate-100 px-2 py-0.5 text-label-sm font-semibold text-brand-slate-800"
+                            >Grade: A- (88.0%)</span
+                          >
+                          <span
+                            class="rounded border border-primary-fixed-dim bg-primary-fixed px-2 py-0.5 text-label-sm font-semibold text-primary"
+                            >CAESAR II Dossier Approved</span
+                          >
+                        </div>
+                        <h3
+                          class="mt-1 font-headline-sm text-headline-sm font-semibold text-on-surface"
+                        >
+                          Structural FEA &amp; Seabed Pipeline Geotechnics
+                        </h3>
+                        <p class="mt-1 font-body-sm text-body-sm text-on-surface-variant">
+                          Seabed pipeline soil-structure interaction, lateral buckling mitigation,
+                          cyclic thermal expansion stress runs using CAESAR II and ABAQUS explicit
+                          models.
+                        </p>
+                        <div
+                          class="mt-3 flex items-center gap-4 text-label-sm text-brand-slate-500"
+                        >
+                          <span class="flex items-center gap-1">
+                            <span
+                              class="material-symbols-outlined text-sm"
+                              data-icon="person"
+                              >person</span
+                            >
+                            Lead Instructor: Dr. (Mrs) Nkechi Wosu
+                          </span>
+                          <span
+                            class="flex cursor-pointer items-center gap-1 text-primary hover:underline"
+                          >
+                            <span
+                              class="material-symbols-outlined text-sm"
+                              data-icon="download"
+                              >download</span
+                            >
+                            Download Structural Report (PDF 14.8MB)
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                    <button class="p-1 text-brand-slate-400 hover:text-primary">
+                      <span
+                        class="material-symbols-outlined"
+                        data-icon="keyboard_arrow_down"
+                        >keyboard_arrow_down</span
+                      >
+                    </button>
+                  </div>
+                </div>
+                <!-- Module 03: Active In Progress -->
+                <div
+                  class="rounded-lg border-2 border-primary bg-surface-container-lowest p-4 shadow-sm"
+                >
+                  <div class="flex items-start justify-between">
+                    <div class="flex items-start gap-3">
+                      <div
+                        class="flex h-8 w-8 shrink-0 items-center justify-center rounded bg-primary text-on-primary shadow-sm"
+                      >
+                        <span
+                          class="material-symbols-outlined text-lg"
+                          data-icon="pending"
+                          >pending</span
+                        >
+                      </div>
+                      <div>
+                        <div class="flex items-center gap-2">
+                          <span class="font-code-sm text-code-sm font-bold text-primary"
+                            >MODULE 03 • 15 CEU</span
+                          >
+                          <span
+                            class="rounded bg-primary px-2 py-0.5 text-label-sm font-semibold text-on-primary"
+                            >In Progress • Week 7 of 10</span
+                          >
+                          <span
+                            class="rounded bg-brand-slate-100 px-2 py-0.5 text-label-sm font-semibold text-brand-slate-700"
+                            >Lab Session Active</span
+                          >
+                        </div>
+                        <h3
+                          class="mt-1 font-headline-sm text-headline-sm font-semibold text-on-surface"
+                        >
+                          Multiphase Hydrodynamics &amp; Flow Assurance
+                        </h3>
+                        <p class="mt-1 font-body-sm text-body-sm text-on-surface-variant">
+                          Transient multiphase slug flow dynamics, gas hydrate dissociation regimes,
+                          wax deposition envelope modeling using OLGA Transient and Aspen HYSYS
+                          Subsea module.
+                        </p>
+                        <!-- Lab Session Progress Bar -->
+                        <div
+                          class="mt-3 rounded-lg border border-brand-slate-200 bg-surface-container-low p-3"
+                        >
+                          <div class="mb-1 flex items-center justify-between text-label-sm">
+                            <span class="flex items-center gap-1.5 font-semibold text-on-surface">
+                              <span
+                                class="h-2 w-2 animate-ping rounded-full bg-status-warning"
+                              ></span>
+                              Continuous Practical Lab: Slug Catching Design
+                            </span>
+                            <span class="font-bold text-primary">70% Session Progress</span>
+                          </div>
+                          <div class="h-1.5 w-full overflow-hidden rounded-full bg-brand-slate-200">
+                            <div
+                              class="h-full rounded-full bg-primary"
+                              style="width: 70%"
+                            ></div>
+                          </div>
+                        </div>
+                        <div
+                          class="mt-3 flex items-center gap-4 text-label-sm text-brand-slate-500"
+                        >
+                          <span class="flex items-center gap-1">
+                            <span
+                              class="material-symbols-outlined text-sm"
+                              data-icon="person"
+                              >person</span
+                            >
+                            Lead Instructor: Prof. Boma S. Hart
+                          </span>
+                          <span class="flex items-center gap-1 font-semibold text-status-warning">
+                            <span
+                              class="material-symbols-outlined text-sm"
+                              data-icon="schedule"
+                              >schedule</span
+                            >
+                            Project Submission Due in 4 Days
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                    <button class="p-1 text-primary">
+                      <span
+                        class="material-symbols-outlined"
+                        data-icon="keyboard_arrow_up"
+                        >keyboard_arrow_up</span
+                      >
+                    </button>
+                  </div>
+                </div>
+                <!-- Module 04: Upcoming -->
+                <div
+                  class="rounded-lg border border-brand-slate-200 bg-brand-slate-50 p-4 opacity-80"
+                >
+                  <div class="flex items-start justify-between">
+                    <div class="flex items-start gap-3">
+                      <div
+                        class="flex h-8 w-8 shrink-0 items-center justify-center rounded bg-brand-slate-200 text-brand-slate-500"
+                      >
+                        <span
+                          class="material-symbols-outlined text-lg"
+                          data-icon="lock_clock"
+                          >lock_clock</span
+                        >
+                      </div>
+                      <div>
+                        <div class="flex items-center gap-2">
+                          <span class="font-code-sm text-code-sm text-brand-slate-500"
+                            >MODULE 04 • 15 CEU</span
+                          >
+                          <span
+                            class="rounded bg-brand-slate-200 px-2 py-0.5 text-label-sm font-semibold text-brand-slate-700"
+                            >Upcoming • Starts Nov 2025</span
+                          >
+                        </div>
+                        <h3
+                          class="mt-1 font-headline-sm text-headline-sm font-semibold text-on-surface"
+                        >
+                          Asset Integrity, ROV Metrology &amp; Subsea Digital Twins
+                        </h3>
+                        <p class="mt-1 font-body-sm text-body-sm text-on-surface-variant">
+                          Subsea non-destructive acoustic evaluation, cathode protection
+                          calculations, IoT sensor telemetry integration, and AVEVA NET digital twin
+                          synchronizations.
+                        </p>
+                        <div
+                          class="mt-3 flex items-center gap-4 text-label-sm text-brand-slate-500"
+                        >
+                          <span class="flex items-center gap-1">
+                            <span
+                              class="material-symbols-outlined text-sm"
+                              data-icon="corporate_fare"
+                              >corporate_fare</span
+                            >
+                            Partner Co-Lead: Saipem Offshore Engineering Team
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                    <button class="p-1 text-brand-slate-400">
+                      <span
+                        class="material-symbols-outlined"
+                        data-icon="keyboard_arrow_down"
+                        >keyboard_arrow_down</span
+                      >
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Section: Interactive Simulation Lab Worksheets & Dossier Submission -->
+            <div
+              class="rounded-xl border border-brand-slate-200 bg-surface-container-lowest p-space-lg shadow-sm"
+            >
+              <div class="mb-4 flex items-center justify-between">
+                <div class="flex items-center gap-2">
+                  <span
+                    class="material-symbols-outlined text-primary"
+                    data-icon="terminal"
+                    >terminal</span
+                  >
+                  <h2 class="font-title-lg text-title-lg font-bold text-on-surface">
+                    Interactive Simulation Lab Worksheets
+                  </h2>
+                </div>
+                <span
+                  class="rounded border border-status-verified-border bg-status-verified-bg px-2.5 py-1 font-code-sm text-code-sm text-status-verified"
+                >
+                  HPC Cluster: Online (Node 01-16 Active)
+                </span>
+              </div>
+              <!-- Simulation Download Cards -->
+              <div class="mb-5 grid grid-cols-1 gap-4 md:grid-cols-2">
+                <!-- Script 1 -->
+                <div
+                  class="flex items-center justify-between rounded-lg border border-brand-slate-200 bg-surface-bright p-3"
+                >
+                  <div class="flex items-center gap-3">
+                    <div class="rounded bg-brand-slate-100 p-2.5 text-brand-slate-800">
+                      <span
+                        class="material-symbols-outlined"
+                        data-icon="code"
+                        >code</span
+                      >
+                    </div>
+                    <div>
+                      <h4 class="font-label-md text-label-md font-semibold text-on-surface">
+                        OrcaFlex Riser Dynamic Script
+                      </h4>
+                      <span class="font-code-sm text-code-sm text-brand-slate-500"
+                        >orcaflex_lazy_s_v11.py (34 KB)</span
+                      >
+                    </div>
+                  </div>
+                  <button
+                    class="flex items-center gap-1 rounded border border-brand-slate-200 px-3 py-1.5 font-label-sm text-label-sm font-semibold text-primary transition-colors hover:bg-surface-container"
+                  >
+                    <span
+                      class="material-symbols-outlined text-sm"
+                      data-icon="download"
+                      >download</span
+                    >
+                    Pull
+                  </button>
+                </div>
+                <!-- Script 2 -->
+                <div
+                  class="flex items-center justify-between rounded-lg border border-brand-slate-200 bg-surface-bright p-3"
+                >
+                  <div class="flex items-center gap-3">
+                    <div class="rounded bg-brand-slate-100 p-2.5 text-brand-slate-800">
+                      <span
+                        class="material-symbols-outlined"
+                        data-icon="view_in_ar"
+                        >view_in_ar</span
+                      >
+                    </div>
+                    <div>
+                      <h4 class="font-label-md text-label-md font-semibold text-on-surface">
+                        ANSYS Seabed Mesh Boundary
+                      </h4>
+                      <span class="font-code-sm text-code-sm text-brand-slate-500"
+                        >pipeline_seabed_mesh.cas.gz (184 MB)</span
+                      >
+                    </div>
+                  </div>
+                  <button
+                    class="flex items-center gap-1 rounded border border-brand-slate-200 px-3 py-1.5 font-label-sm text-label-sm font-semibold text-primary transition-colors hover:bg-surface-container"
+                  >
+                    <span
+                      class="material-symbols-outlined text-sm"
+                      data-icon="download"
+                      >download</span
+                    >
+                    Pull
+                  </button>
+                </div>
+              </div>
+              <!-- Submission Dropzone with SHA-256 Hash Stamp -->
+              <div
+                class="flex flex-col items-center justify-center rounded-xl border-2 border-dashed border-brand-slate-200 bg-brand-slate-50 p-6 text-center"
+              >
+                <div
+                  class="mb-3 flex h-12 w-12 items-center justify-center rounded-full bg-surface-container-lowest text-primary shadow-sm"
+                >
+                  <span
+                    class="material-symbols-outlined text-2xl"
+                    data-icon="upload_file"
+                    >upload_file</span
+                  >
+                </div>
+                <h4 class="font-headline-sm text-headline-sm font-semibold text-on-surface">
+                  Submit Continuous Assessment Lab Dossier
+                </h4>
+                <p class="mb-4 mt-1 max-w-md font-body-sm text-body-sm text-brand-slate-500">
+                  Attach compiled numerical outputs, Python batch scripts, or Aspen simulation data.
+                  Reports automatically receive a cryptographic timestamp.
+                </p>
+                <div class="flex flex-wrap items-center justify-center gap-3">
+                  <button
+                    class="flex items-center gap-2 rounded-lg bg-primary px-4 py-2 font-label-md text-label-md text-on-primary shadow-sm transition-colors hover:bg-brand-cobalt-deep"
+                  >
+                    <span
+                      class="material-symbols-outlined text-sm"
+                      data-icon="attach_file"
+                      >attach_file</span
+                    >
+                    Select Engineering Report File
+                  </button>
+                  <div
+                    class="flex items-center gap-2 rounded-lg border border-brand-slate-200 bg-surface-container-lowest px-3 py-1.5 font-code-sm text-code-sm text-brand-slate-700"
+                  >
+                    <span
+                      class="material-symbols-outlined text-sm text-status-verified"
+                      data-icon="fingerprint"
+                      >fingerprint</span
+                    >
+                    <span>SHA-256 Stamp Engine Enabled</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Right Column (4 of 12 columns): Faculty Roster, Licenses & Statutory Accreditations -->
+          <div class="flex flex-col gap-space-lg lg:col-span-4">
+            <!-- Card: Assigned Faculty & Mentorship Roster -->
+            <div
+              class="rounded-xl border border-brand-slate-200 bg-surface-container-lowest p-space-lg shadow-sm"
+            >
+              <div class="mb-4 flex items-center justify-between">
+                <h2 class="font-title-lg text-title-lg font-bold text-on-surface">
+                  Faculty &amp; Mentors
+                </h2>
+                <span
+                  class="material-symbols-outlined text-brand-slate-400"
+                  data-icon="supervisor_account"
+                  >supervisor_account</span
+                >
+              </div>
+              <div class="space-y-4">
+                <!-- Faculty 1 -->
+                <div
+                  class="flex items-start gap-3 rounded-lg border border-brand-slate-200 bg-surface-bright p-3"
+                >
+                  <img
+                    alt="Prof. Boma S. Hart Avatar"
+                    class="h-10 w-10 shrink-0 rounded-full border border-brand-slate-200 object-cover"
+                    data-alt="Distinguished Nigerian senior engineering professor Prof Boma S Hart in academic executive room at Rivers State University"
+                    decoding="async"
+                    fetchpriority="high"
+                    loading="eager"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuDlU6bZgcRI2IUG7i4i329I8iigBWzTalbqpXS3qZH_3AT_Z71AoyoUjrPApMULXuuKSapFa-OCcayQPbku6d_0eHRfPz2qruTHDLUT-yCZ8WgY8m35FIJiMUDvGsH3P66CV263dpuL2rV4X8-uIk2W1hhkGgKN1pQOJUe03xlbPd8tQPLw47rXreYjDHwEWpai-p2CZ00LfNdZ74Z9nKZYZ2Ac6KUZzi-jfNAHUlyKKkVcnr8d6zGc"
+                  />
+                  <div class="min-w-0 flex-1">
+                    <div class="flex items-center justify-between">
+                      <h4 class="truncate font-label-md text-label-md font-bold text-on-surface">
+                        Prof. Boma S. Hart
+                      </h4>
+                      <span
+                        class="rounded bg-primary-fixed px-1.5 py-0.5 text-label-sm font-semibold text-primary"
+                        >Chair</span
+                      >
+                    </div>
+                    <span class="block truncate font-label-sm text-label-sm text-brand-slate-500"
+                      >Chair of Marine &amp; Offshore Technology</span
+                    >
+                    <div class="mt-2 flex items-center gap-2">
+                      <button
+                        class="flex items-center gap-1 rounded border border-brand-slate-200 bg-surface-container-lowest px-2.5 py-1 text-label-sm font-semibold text-on-surface transition-colors hover:bg-brand-slate-100"
+                      >
+                        <span
+                          class="material-symbols-outlined text-xs"
+                          data-icon="calendar_month"
+                          >calendar_month</span
+                        >
+                        Book Clinic
+                      </button>
+                      <button class="p-1 text-on-surface-variant hover:text-primary">
+                        <span
+                          class="material-symbols-outlined text-sm"
+                          data-icon="mail"
+                          >mail</span
+                        >
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <!-- Faculty 2 -->
+                <div
+                  class="flex items-start gap-3 rounded-lg border border-brand-slate-200 bg-surface-bright p-3"
+                >
+                  <img
+                    alt="Engr. Belema Horsfall Avatar"
+                    class="h-10 w-10 shrink-0 rounded-full border border-brand-slate-200 object-cover"
+                    data-alt="Portrait of an experienced offshore pipeline lead Engr Belema Horsfall wearing offshore project safety vest in engineering management center"
+                    decoding="async"
+                    loading="lazy"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuC-pNIL8lETxMh1O5ZMR-umhdhV6Ze36NXRuWdV-v9NZRHHifgcTuBJ4Q8ah2DUip6WVl3RNRCDgZLd6fguWce4jgFrRRFMfzcgfDKIfwZPUFOfqfNQsAC3CfmqkUUfKNd5TfPaSKJIt1InxrPJ-ibop7Yh-M7r2MJ1dwP501gduF3hxE8GiaaNUj8rX7npUjV5BRKl1XDqWyvb3siO66f25FJQ5Yi6UleuDDxBU1_vB44Pu2Pa9dHu"
+                  />
+                  <div class="min-w-0 flex-1">
+                    <div class="flex items-center justify-between">
+                      <h4 class="truncate font-label-md text-label-md font-bold text-on-surface">
+                        Engr. Belema Horsfall
+                      </h4>
+                      <span
+                        class="rounded bg-brand-slate-100 px-1.5 py-0.5 text-label-sm font-semibold text-on-surface-variant"
+                        >Industry</span
+                      >
+                    </div>
+                    <span class="block truncate font-label-sm text-label-sm text-brand-slate-500"
+                      >Fellow • Lead Pipeline Integrity (Saipem)</span
+                    >
+                    <div class="mt-2 flex items-center gap-2">
+                      <button
+                        class="flex items-center gap-1 rounded border border-brand-slate-200 bg-surface-container-lowest px-2.5 py-1 text-label-sm font-semibold text-on-surface transition-colors hover:bg-brand-slate-100"
+                      >
+                        <span
+                          class="material-symbols-outlined text-xs"
+                          data-icon="calendar_month"
+                          >calendar_month</span
+                        >
+                        1-on-1 Office Hours
+                      </button>
+                      <button class="p-1 text-on-surface-variant hover:text-primary">
+                        <span
+                          class="material-symbols-outlined text-sm"
+                          data-icon="mail"
+                          >mail</span
+                        >
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Action: Schedule Cohort Session -->
+              <button
+                class="mt-4 flex w-full items-center justify-center gap-2 rounded-lg border border-brand-slate-200 py-2 font-label-md text-label-md font-semibold text-primary transition-colors hover:border-primary"
+              >
+                <span
+                  class="material-symbols-outlined text-sm"
+                  data-icon="schedule_send"
+                  >schedule_send</span
+                >
+                Request Cohort Advising Clinic
+              </button>
+            </div>
+            <!-- Card: Software License & Solver Batch Status -->
+            <div
+              class="rounded-xl border border-brand-slate-200 bg-surface-container-lowest p-space-lg shadow-sm"
+            >
+              <div class="mb-4 flex items-center justify-between">
+                <h2 class="font-title-lg text-title-lg font-bold text-on-surface">
+                  CAD/CAE Solver Status
+                </h2>
+                <span
+                  class="material-symbols-outlined text-primary"
+                  data-icon="memory"
+                  >memory</span
+                >
+              </div>
+              <div class="space-y-3">
+                <!-- License 1 -->
+                <div
+                  class="flex items-center justify-between rounded border border-brand-slate-200 bg-surface-bright p-2.5"
+                >
+                  <div class="flex items-center gap-2.5">
+                    <span class="h-2.5 w-2.5 rounded-full bg-status-verified"></span>
+                    <div>
+                      <span class="block font-label-md text-label-md font-semibold text-on-surface"
+                        >CAESAR II v13.0</span
+                      >
+                      <span class="font-code-sm text-code-sm text-brand-slate-500"
+                        >Floating Pool: 18/25 Active</span
+                      >
+                    </div>
+                  </div>
+                  <span
+                    class="rounded border border-status-verified-border bg-status-verified-bg px-2 py-0.5 font-code-sm text-code-sm font-bold text-status-verified"
+                    >ONLINE</span
+                  >
+                </div>
+                <!-- License 2 -->
+                <div
+                  class="flex items-center justify-between rounded border border-brand-slate-200 bg-surface-bright p-2.5"
+                >
+                  <div class="flex items-center gap-2.5">
+                    <span class="h-2.5 w-2.5 rounded-full bg-status-verified"></span>
+                    <div>
+                      <span class="block font-label-md text-label-md font-semibold text-on-surface"
+                        >OrcaFlex 11.4 Dynamic</span
+                      >
+                      <span class="font-code-sm text-code-sm text-brand-slate-500"
+                        >Dongle Token: RSU-SIM-09</span
+                      >
+                    </div>
+                  </div>
+                  <span
+                    class="rounded border border-status-verified-border bg-status-verified-bg px-2 py-0.5 font-code-sm text-code-sm font-bold text-status-verified"
+                    >ONLINE</span
+                  >
+                </div>
+                <!-- License 3 -->
+                <div
+                  class="flex items-center justify-between rounded border border-brand-slate-200 bg-surface-bright p-2.5"
+                >
+                  <div class="flex items-center gap-2.5">
+                    <span class="h-2.5 w-2.5 rounded-full bg-status-warning"></span>
+                    <div>
+                      <span class="block font-label-md text-label-md font-semibold text-on-surface"
+                        >AVEVA E3D Marine</span
+                      >
+                      <span class="font-code-sm text-code-sm text-brand-slate-500"
+                        >Job Batch Queue #2</span
+                      >
+                    </div>
+                  </div>
+                  <span
+                    class="rounded bg-status-warning-bg px-2 py-0.5 font-code-sm text-code-sm font-bold text-status-warning"
+                    >QUEUED</span
+                  >
+                </div>
+              </div>
+              <!-- Solver Health Mini Telemetry -->
+              <div
+                class="mt-4 flex items-center justify-between border-t border-brand-slate-100 pt-3 font-code-sm text-code-sm text-brand-slate-500"
+              >
+                <span>Cluster Load: 74%</span>
+                <span>Avg Latency: 12ms</span>
+              </div>
+            </div>
+            <!-- Card: Statutory Academic Accreditation & NCDMB Compliance -->
+            <div
+              class="rounded-xl border border-brand-slate-200 bg-surface-container-lowest p-space-lg shadow-sm"
+            >
+              <div class="mb-4 flex items-center justify-between">
+                <h2 class="font-title-lg text-title-lg font-bold text-on-surface">
+                  Statutory Accreditation
+                </h2>
+                <span
+                  class="material-symbols-outlined text-status-verified"
+                  data-icon="policy"
+                  >policy</span
+                >
+              </div>
+              <div class="space-y-3">
+                <!-- COREN Badge -->
+                <div
+                  class="flex items-start gap-3 rounded-lg border border-brand-slate-200 bg-brand-slate-50 p-3"
+                >
+                  <span
+                    class="material-symbols-outlined text-xl text-primary"
+                    data-icon="verified_user"
+                    >verified_user</span
+                  >
+                  <div>
+                    <h4 class="font-label-md text-label-md font-bold text-on-surface">
+                      COREN Continuous Professional CEU
+                    </h4>
+                    <p class="mt-0.5 font-body-sm text-body-sm text-brand-slate-500">
+                      Council for the Regulation of Engineering in Nigeria recognizes 60 credit
+                      units for professional licensing.
+                    </p>
+                    <span
+                      class="mt-2 inline-block font-code-sm text-code-sm font-semibold text-status-verified"
+                      >Registration #COREN/HCD/2025/R-904</span
+                    >
+                  </div>
+                </div>
+                <!-- NCDMB Scorecard -->
+                <div
+                  class="flex items-start gap-3 rounded-lg border border-brand-slate-200 bg-brand-slate-50 p-3"
+                >
+                  <span
+                    class="material-symbols-outlined text-xl text-tertiary"
+                    data-icon="workspace_premium"
+                    >workspace_premium</span
+                  >
+                  <div>
+                    <h4 class="font-label-md text-label-md font-bold text-on-surface">
+                      NCDMB Human Capital Development
+                    </h4>
+                    <p class="mt-0.5 font-body-sm text-body-sm text-brand-slate-500">
+                      Nigerian Content Development &amp; Monitoring Board certified specialized
+                      curriculum for deepwater capabilities.
+                    </p>
+                    <div class="mt-2 flex items-center gap-2">
+                      <span
+                        class="rounded bg-status-verified-bg px-2 py-0.5 text-label-sm font-bold text-status-verified"
+                        >Compliant Level 1</span
+                      >
+                      <span class="text-brand-slate-400">•</span>
+                      <span class="font-code-sm text-code-sm text-brand-slate-500"
+                        >Tier A Roster</span
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+      <!-- Institutional Technical Sub-Footer -->
+      <cmotd-portal-footer></cmotd-portal-footer>
+    </div>
+  </body>
+</html>

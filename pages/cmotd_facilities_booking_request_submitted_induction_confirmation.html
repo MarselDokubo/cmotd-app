@@ -1,0 +1,810 @@
+<!doctype html>
+
+<html
+  class="light"
+  lang="en"
+>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      content="width=device-width, initial-scale=1.0"
+      name="viewport"
+    />
+    <title>CMOTD - Facilities Booking Confirmation | Rivers State University</title>
+    <link
+      href="../favicon.ico"
+      rel="icon"
+      type="image/x-icon"
+    />
+
+    <!-- Tailwind CSS -->
+    <link
+      href="../assets/css/tailwind-build.css"
+      rel="stylesheet"
+    />
+    <link
+      href="../assets/css/cmotd-global.css"
+      rel="stylesheet"
+    />
+    <script
+      defer=""
+      src="../assets/js/site-config.js"
+    ></script>
+    <script
+      defer=""
+      src="../assets/js/cmotd-components.js"
+    ></script>
+  </head>
+  <body
+    class="flex min-h-screen flex-col bg-background font-body-md text-on-background antialiased"
+  >
+    <!-- Top Navigation Bar from Shared Components JSON -->
+    <cmotd-site-header active="services"></cmotd-site-header>
+    <!-- Notification Banner -->
+    <div class="border-b border-status-verified-border bg-status-verified-bg">
+      <div
+        class="mx-auto flex max-w-[1280px] items-center justify-between px-6 py-2.5 font-body-sm text-body-sm"
+      >
+        <div class="flex items-center gap-2.5 text-status-verified">
+          <span
+            class="material-symbols-outlined text-[18px]"
+            style="font-variation-settings: &quot;FILL&quot; 1"
+            >check_circle</span
+          >
+          <span class="font-medium text-brand-navy-900">
+            Facility Booking Reference
+            <span class="font-semibold text-primary">#FAC-2025-0842-RSU</span>
+            successfully recorded on RSU Central Engineering Gateway.
+          </span>
+        </div>
+        <div class="flex items-center gap-3 font-label-sm text-label-sm text-status-verified">
+          <span
+            class="inline-flex items-center gap-1 rounded border border-status-verified-border bg-white px-2 py-0.5"
+          >
+            <span class="h-1.5 w-1.5 animate-pulse rounded-full bg-status-verified"></span>
+            Gateway Synced: 10:41 WAT
+          </span>
+        </div>
+      </div>
+    </div>
+    <!-- Breadcrumbs Bar -->
+    <div class="border-b border-brand-slate-200 bg-surface-bright">
+      <div class="mx-auto max-w-[1280px] px-6 py-3">
+        <nav class="flex items-center gap-2 font-label-md text-label-md text-brand-slate-500">
+          <a
+            class="flex items-center gap-1 transition-colors hover:text-primary"
+            href="#"
+          >
+            <span class="material-symbols-outlined text-[16px]">home</span>
+            <span>Home</span>
+          </a>
+          <span class="material-symbols-outlined text-[14px] text-brand-slate-400"
+            >chevron_right</span
+          >
+          <a
+            class="transition-colors hover:text-primary"
+            href="#"
+            >Facilities &amp; Labs</a
+          >
+          <span class="material-symbols-outlined text-[14px] text-brand-slate-400"
+            >chevron_right</span
+          >
+          <span class="font-semibold text-brand-navy-900">Requisition Confirmation</span>
+        </nav>
+      </div>
+    </div>
+    <!-- Main Canvas Container -->
+    <main class="mx-auto w-full max-w-[1280px] flex-1 space-y-8 px-6 py-8">
+      <!-- Confirmation Hero & Success Dossier Block -->
+      <div
+        class="overflow-hidden rounded-xl border border-brand-slate-200 bg-surface-container-lowest shadow-sm"
+      >
+        <!-- Card Architectural Header -->
+        <div
+          class="flex flex-wrap items-center justify-between gap-4 border-b border-brand-slate-800 bg-brand-navy-950 px-6 py-5 text-surface-bright"
+        >
+          <div class="flex items-center gap-3">
+            <span
+              class="inline-flex items-center gap-1.5 rounded-full border border-status-verified/40 bg-status-verified/20 px-3 py-1 font-label-sm text-label-sm text-status-verified"
+            >
+              <span
+                class="material-symbols-outlined text-[14px]"
+                style="font-variation-settings: &quot;FILL&quot; 1"
+                >security</span
+              >
+              Cryptographically Verified Requisition • Status: Under Review by HSE Board
+            </span>
+          </div>
+          <div
+            class="flex items-center gap-2 font-label-sm font-mono text-label-sm text-brand-slate-400"
+          >
+            <span>SHA-256 HASH:</span>
+            <span
+              class="rounded border border-brand-slate-700 bg-brand-slate-800 px-2 py-0.5 text-surface-bright"
+              >0x9f4a...81bc7e2d9a</span
+            >
+          </div>
+        </div>
+        <!-- Main Confirmation Body -->
+        <div class="space-y-8 p-6 lg:p-8">
+          <!-- Hero Title Unit -->
+          <div
+            class="flex flex-col justify-between gap-6 border-b border-brand-slate-200 pb-6 md:flex-row md:items-center"
+          >
+            <div class="flex items-start gap-4">
+              <div
+                class="flex h-14 w-14 flex-shrink-0 items-center justify-center rounded-xl border border-status-verified-border bg-status-verified-bg text-status-verified shadow-sm"
+              >
+                <span
+                  class="material-symbols-outlined text-[36px]"
+                  style="font-variation-settings: &quot;FILL&quot; 1"
+                  >task_alt</span
+                >
+              </div>
+              <div>
+                <div class="flex items-center gap-2">
+                  <h1 class="font-headline-lg text-headline-lg tracking-tight text-brand-navy-900">
+                    Laboratory Access Requisition Logged
+                  </h1>
+                </div>
+                <p class="mt-1 font-body-md text-body-md text-brand-slate-500">
+                  Formal scheduling entry confirmed for the Marine Engineering Hydrodynamic Test
+                  Infrastructure.
+                </p>
+              </div>
+            </div>
+            <div class="flex flex-col md:items-end">
+              <span
+                class="font-label-sm text-label-sm uppercase tracking-wider text-brand-slate-400"
+                >Institutional Reference ID</span
+              >
+              <div
+                class="flex items-center gap-2 font-headline-md font-mono text-headline-md font-bold tracking-tight text-primary"
+              >
+                <span>REQ-FAC-2025-0842</span>
+                <button
+                  class="text-brand-slate-400 hover:text-primary"
+                  title="Copy Identifier"
+                >
+                  <span class="material-symbols-outlined text-[18px]">content_copy</span>
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- SLA Advisory Strip -->
+          <div
+            class="flex items-center gap-3 rounded-lg border border-status-info/20 bg-status-info-bg p-4"
+          >
+            <span class="material-symbols-outlined flex-shrink-0 text-[22px] text-status-info"
+              >info</span
+            >
+            <p class="font-body-sm text-body-sm text-brand-slate-700">
+              <strong class="font-semibold text-brand-navy-900">SLA Clearance Notice:</strong>
+              Preliminary technical review and HSE permit clearance takes 4–6 business hours.
+              Official gate clearance voucher and lab safety pass will be dispatched to the lead
+              investigator's registered email address.
+            </p>
+          </div>
+          <!-- Structured Requisition Summary Ledger (Data Density Grid) -->
+          <div>
+            <div class="mb-4 flex items-center justify-between">
+              <h2 class="flex items-center gap-2 font-title-lg text-title-lg text-brand-navy-900">
+                <span class="material-symbols-outlined text-[20px] text-primary">assignment</span>
+                Requisition Ledger &amp; Allocation Dossier
+              </h2>
+              <span
+                class="rounded bg-brand-slate-100 px-2.5 py-1 font-label-sm text-label-sm text-brand-slate-500"
+              >
+                ISO 9001:2015 Compliant Log
+              </span>
+            </div>
+            <div
+              class="grid grid-cols-1 divide-y divide-brand-slate-200 overflow-hidden rounded-lg border border-brand-slate-200 bg-surface-bright md:grid-cols-2 md:divide-x md:divide-y-0 lg:grid-cols-3"
+            >
+              <!-- Column 1: Test Facility Details -->
+              <div class="space-y-4 bg-surface-container-lowest p-5">
+                <div>
+                  <span
+                    class="block font-label-sm text-label-sm uppercase tracking-wider text-brand-slate-400"
+                    >Requested Facility</span
+                  >
+                  <span class="mt-1 block font-headline-sm text-headline-sm text-brand-navy-900"
+                    >50-Metre Hydrodynamic Towing Tank &amp; Flume Basin</span
+                  >
+                  <div class="mt-2 flex flex-wrap gap-1.5">
+                    <span
+                      class="inline-flex items-center gap-1 rounded border border-brand-slate-200 bg-brand-slate-100 px-2 py-0.5 text-[11px] font-semibold text-brand-navy-900"
+                    >
+                      <span class="material-symbols-outlined text-[12px]">waves</span>
+                      Wave Generator: JONSWAP
+                    </span>
+                    <span
+                      class="inline-flex items-center gap-1 rounded border border-brand-slate-200 bg-brand-slate-100 px-2 py-0.5 text-[11px] font-semibold text-brand-navy-900"
+                    >
+                      Max Depth: 3.5m
+                    </span>
+                  </div>
+                </div>
+                <div class="border-t border-brand-slate-100 pt-3">
+                  <span
+                    class="block font-label-sm text-label-sm uppercase tracking-wider text-brand-slate-400"
+                    >Allocated Timeframe</span
+                  >
+                  <div
+                    class="mt-1 flex items-center gap-2 text-body-md font-semibold text-brand-navy-900"
+                  >
+                    <span class="material-symbols-outlined text-[18px] text-primary"
+                      >calendar_today</span
+                    >
+                    <span>Wednesday, Oct 22, 2025</span>
+                  </div>
+                  <div class="mt-0.5 flex items-center gap-2 text-body-sm text-brand-slate-700">
+                    <span class="material-symbols-outlined text-[18px] text-brand-slate-400"
+                      >schedule</span
+                    >
+                    <span>09:00 – 13:00 WAT (4 Hours Half-Day)</span>
+                  </div>
+                </div>
+                <div class="border-t border-brand-slate-100 pt-3">
+                  <span
+                    class="block font-label-sm text-label-sm uppercase tracking-wider text-brand-slate-400"
+                    >Assigned Technical Liaison</span
+                  >
+                  <div class="mt-1.5 flex items-center gap-2.5">
+                    <div
+                      class="flex h-8 w-8 items-center justify-center rounded-full bg-secondary-container text-label-sm font-bold text-on-secondary-fixed"
+                    >
+                      KU
+                    </div>
+                    <div>
+                      <span
+                        class="block font-body-md text-body-md font-semibold text-brand-navy-900"
+                        >Kingsley D. Uranta</span
+                      >
+                      <span class="font-label-sm text-label-sm text-brand-slate-500"
+                        >Master Technologist, Marine Flume Basin</span
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Column 2: Investigator & Institutional Stakeholder -->
+              <div class="space-y-4 bg-surface-container-lowest p-5">
+                <div>
+                  <span
+                    class="block font-label-sm text-label-sm uppercase tracking-wider text-brand-slate-400"
+                    >Lead Requestor / Principal Investigator</span
+                  >
+                  <div class="mt-1 flex items-center gap-2">
+                    <span class="font-headline-sm text-headline-sm text-brand-navy-900"
+                      >Engr. Tari Tari-Briggs</span
+                    >
+                  </div>
+                  <span class="block font-body-sm text-body-sm text-brand-slate-500"
+                    >Senior Subsea Engineer (COREN Reg. #R-41092)</span
+                  >
+                </div>
+                <div class="border-t border-brand-slate-100 pt-3">
+                  <span
+                    class="block font-label-sm text-label-sm uppercase tracking-wider text-brand-slate-400"
+                    >Affiliated Organization &amp; Division</span
+                  >
+                  <div
+                    class="mt-1 flex items-center gap-2 text-body-md font-semibold text-brand-navy-900"
+                  >
+                    <span class="material-symbols-outlined text-[18px] text-primary"
+                      >corporate_fare</span
+                    >
+                    <span>Saipem Contracting Nigeria JV</span>
+                  </div>
+                  <span class="mt-0.5 block font-label-sm text-label-sm text-brand-slate-500"
+                    >Commercial Energy Operator / EPC Partner</span
+                  >
+                </div>
+                <div class="border-t border-brand-slate-100 pt-3">
+                  <span
+                    class="block font-label-sm text-label-sm uppercase tracking-wider text-brand-slate-400"
+                    >Commercial Billing &amp; Access Fee</span
+                  >
+                  <div class="mt-1 flex items-center justify-between">
+                    <span class="font-title-lg text-title-lg font-bold text-brand-navy-900"
+                      >Proforma Generated</span
+                    >
+                    <span
+                      class="inline-flex items-center rounded border border-status-info/30 bg-status-info-bg px-2 py-0.5 text-[11px] font-bold text-status-info"
+                    >
+                      Corporate LPO
+                    </span>
+                  </div>
+                  <span class="mt-0.5 block font-body-sm text-body-sm text-brand-slate-500"
+                    >TSA Remita Invoice Dispatch: #REM-8819-2025</span
+                  >
+                </div>
+              </div>
+              <!-- Column 3: Experimental Scope & Technical Objectives -->
+              <div class="space-y-4 bg-surface-container-lowest p-5">
+                <div>
+                  <span
+                    class="block font-label-sm text-label-sm uppercase tracking-wider text-brand-slate-400"
+                    >Scope of Investigation</span
+                  >
+                  <div class="mt-2 rounded border border-brand-slate-200 bg-brand-slate-50 p-3">
+                    <p
+                      class="font-body-sm text-body-sm italic leading-relaxed text-brand-slate-700"
+                    >
+                      "Physical wave flume drag resistance and vortex-induced vibration (VIV)
+                      verification on 1:50 scale deepwater flexible riser model under Gulf of Guinea
+                      sea states."
+                    </p>
+                  </div>
+                </div>
+                <div class="border-t border-brand-slate-100 pt-3">
+                  <span
+                    class="block font-label-sm text-label-sm uppercase tracking-wider text-brand-slate-400"
+                    >Test Environment Parameters</span
+                  >
+                  <ul class="mt-2 space-y-1.5 font-body-sm text-body-sm text-brand-slate-700">
+                    <li class="flex items-center gap-2">
+                      <span class="h-1.5 w-1.5 rounded-full bg-primary"></span>
+                      <span>Kinematic Viscosity Monitoring: Active</span>
+                    </li>
+                    <li class="flex items-center gap-2">
+                      <span class="h-1.5 w-1.5 rounded-full bg-primary"></span>
+                      <span>Optical High-Speed Particle PIV Tracking: Sensor Bay 4</span>
+                    </li>
+                    <li class="flex items-center gap-2">
+                      <span class="h-1.5 w-1.5 rounded-full bg-primary"></span>
+                      <span>Max Waterline Wave Period: 2.8s</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Mandatory HSE & Induction Access Protocol Checklist -->
+          <div class="rounded-lg border border-brand-slate-200 bg-surface-bright p-6">
+            <div class="mb-6 flex flex-col justify-between gap-2 sm:flex-row sm:items-center">
+              <div>
+                <h3
+                  class="flex items-center gap-2 font-headline-sm text-headline-sm text-brand-navy-900"
+                >
+                  <span class="material-symbols-outlined text-[22px] text-status-warning"
+                    >health_and_safety</span
+                  >
+                  Mandatory HSE Clearance &amp; Induction Protocol
+                </h3>
+                <p class="font-body-sm text-body-sm text-brand-slate-500">
+                  All external personnel must complete these mandatory protocols prior to entering
+                  the marine test bays.
+                </p>
+              </div>
+              <span
+                class="self-start rounded border border-status-warning/30 bg-status-warning-bg px-2.5 py-1 font-label-sm text-label-sm font-semibold text-status-warning"
+              >
+                3 Steps Required
+              </span>
+            </div>
+            <div class="grid grid-cols-1 gap-4 md:grid-cols-3">
+              <!-- Step 1 -->
+              <div
+                class="relative rounded-lg border border-brand-slate-200 bg-surface-container-lowest p-4 shadow-sm"
+              >
+                <div class="mb-2 flex items-center justify-between">
+                  <span
+                    class="flex h-6 w-6 items-center justify-center rounded-full bg-primary text-[12px] font-bold text-on-primary"
+                    >1</span
+                  >
+                  <span
+                    class="inline-flex items-center gap-1 rounded bg-status-warning-bg px-1.5 py-0.5 text-[11px] font-semibold text-status-warning"
+                    >Pending Action</span
+                  >
+                </div>
+                <h4 class="font-title-lg text-title-lg text-brand-navy-900">
+                  Class 1 Div 2 Safety Briefing
+                </h4>
+                <p class="mt-1 font-body-sm text-body-sm text-brand-slate-500">
+                  Online 12-minute digital induction module required for all 4 visiting delegates
+                  prior to campus entry.
+                </p>
+                <div class="mt-4 border-t border-brand-slate-100 pt-3">
+                  <a
+                    class="flex items-center gap-1 font-label-md text-label-md text-primary hover:underline"
+                    href="#"
+                  >
+                    <span>Launch Briefing Module</span>
+                    <span class="material-symbols-outlined text-[16px]">open_in_new</span>
+                  </a>
+                </div>
+              </div>
+              <!-- Step 2 -->
+              <div
+                class="relative rounded-lg border border-brand-slate-200 bg-surface-container-lowest p-4 shadow-sm"
+              >
+                <div class="mb-2 flex items-center justify-between">
+                  <span
+                    class="flex h-6 w-6 items-center justify-center rounded-full bg-primary text-[12px] font-bold text-on-primary"
+                    >2</span
+                  >
+                  <span
+                    class="inline-flex items-center gap-1 rounded bg-status-info-bg px-1.5 py-0.5 text-[11px] font-semibold text-status-info"
+                    >Roster Required</span
+                  >
+                </div>
+                <h4 class="font-title-lg text-title-lg text-brand-navy-900">
+                  Personnel &amp; PPE Verification
+                </h4>
+                <p class="mt-1 font-body-sm text-body-sm text-brand-slate-500">
+                  Steel-toe boots, eye protection, and anti-static lab overcoats mandatory in
+                  testing bays. Roster must be uploaded.
+                </p>
+                <div class="mt-4 border-t border-brand-slate-100 pt-3">
+                  <a
+                    class="flex items-center gap-1 font-label-md text-label-md text-primary hover:underline"
+                    href="#"
+                  >
+                    <span>Upload PPE Roster (.xlsx)</span>
+                    <span class="material-symbols-outlined text-[16px]">upload_file</span>
+                  </a>
+                </div>
+              </div>
+              <!-- Step 3 -->
+              <div
+                class="relative rounded-lg border border-brand-slate-200 bg-surface-container-lowest p-4 shadow-sm"
+              >
+                <div class="mb-2 flex items-center justify-between">
+                  <span
+                    class="flex h-6 w-6 items-center justify-center rounded-full bg-brand-slate-400 text-[12px] font-bold text-on-primary"
+                    >3</span
+                  >
+                  <span
+                    class="inline-flex items-center gap-1 rounded bg-brand-slate-100 px-1.5 py-0.5 text-[11px] font-semibold text-brand-slate-500"
+                    >Pre-Arrival</span
+                  >
+                </div>
+                <h4 class="font-title-lg text-title-lg text-brand-navy-900">
+                  Security Gate Clearance
+                </h4>
+                <p class="mt-1 font-body-sm text-body-sm text-brand-slate-500">
+                  Digital encrypted QR pass issued for RSU Nkpolu-Oroworukwo Campus Gate 3 vehicular
+                  and personnel check-in.
+                </p>
+                <div class="mt-4 border-t border-brand-slate-100 pt-3">
+                  <span
+                    class="flex items-center gap-1 font-label-sm text-label-sm text-brand-slate-400"
+                  >
+                    <span class="material-symbols-outlined text-[16px]">qr_code_2</span>
+                    <span>Unlocks post-HSE approval</span>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Action Button Matrix -->
+          <div
+            class="flex flex-wrap items-center justify-between gap-4 border-t border-brand-slate-200 pt-4"
+          >
+            <div class="flex flex-wrap items-center gap-3">
+              <button
+                class="inline-flex items-center gap-2 rounded-lg bg-brand-cobalt-deep px-5 py-2.5 font-label-md text-label-md text-on-primary shadow-sm transition-colors hover:bg-primary"
+              >
+                <span class="material-symbols-outlined text-[18px]">download</span>
+                <span>Download Official Requisition Slip &amp; Gate Pass (PDF)</span>
+              </button>
+              <button
+                class="inline-flex items-center gap-2 rounded-lg border border-brand-slate-200 bg-surface-container-lowest px-4 py-2.5 font-label-md text-label-md text-brand-slate-700 transition-colors hover:bg-brand-slate-100"
+              >
+                <span class="material-symbols-outlined text-[18px]">upload</span>
+                <span>Upload Visiting Personnel PPE Roster</span>
+              </button>
+              <button
+                class="inline-flex items-center gap-2 rounded-lg border border-brand-slate-200 bg-surface-container-lowest px-4 py-2.5 font-label-md text-label-md text-brand-slate-700 transition-colors hover:bg-brand-slate-100"
+              >
+                <span class="material-symbols-outlined text-[18px]">event</span>
+                <span>Add Booking to Calendar (.ics)</span>
+              </button>
+            </div>
+            <a
+              class="inline-flex items-center gap-1.5 font-label-md text-label-md text-primary transition-colors hover:text-brand-cobalt-deep"
+              href="#"
+            >
+              <span>Submit Another Facility Requisition</span>
+              <span class="material-symbols-outlined text-[18px]">add_circle</span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- Laboratory Secretariat & Expedited Assistance Callout -->
+      <div class="grid grid-cols-1 gap-6 lg:grid-cols-3">
+        <div
+          class="flex flex-col justify-between rounded-xl border border-brand-slate-200 bg-surface-container-lowest p-6 shadow-sm lg:col-span-2"
+        >
+          <div>
+            <div class="mb-2 flex items-center gap-2 text-primary">
+              <span class="material-symbols-outlined text-[20px]">support_agent</span>
+              <span class="font-label-sm text-label-sm font-semibold uppercase tracking-wider"
+                >Engineering Helpdesk &amp; Technical Support</span
+              >
+            </div>
+            <h3 class="font-headline-sm text-headline-sm text-brand-navy-900">
+              Laboratory Secretariat &amp; Expedited Assistance Callout
+            </h3>
+            <p class="mt-2 max-w-2xl font-body-sm text-body-sm text-brand-slate-500">
+              Need an immediate adjustment to the wave generator spectrum, higher-frequency
+              telemetry sensors, or urgent corporate vehicle campus clearance? The CMOTD Technical
+              Operations Directorate is standing by.
+            </p>
+          </div>
+          <div
+            class="mt-4 grid grid-cols-1 gap-4 border-t border-brand-slate-100 pt-6 sm:grid-cols-3"
+          >
+            <div class="flex items-start gap-3">
+              <div
+                class="flex h-8 w-8 flex-shrink-0 items-center justify-center rounded bg-surface-container text-primary"
+              >
+                <span class="material-symbols-outlined text-[18px]">mail</span>
+              </div>
+              <div>
+                <span class="block font-label-sm text-label-sm text-brand-slate-400"
+                  >Direct Inquiry Email</span
+                >
+                <span class="font-body-sm text-body-sm font-semibold text-brand-navy-900"
+                  >labs@cmotd-rsu.edu.ng</span
+                >
+              </div>
+            </div>
+            <div class="flex items-start gap-3">
+              <div
+                class="flex h-8 w-8 flex-shrink-0 items-center justify-center rounded bg-surface-container text-primary"
+              >
+                <span class="material-symbols-outlined text-[18px]">call</span>
+              </div>
+              <div>
+                <span class="block font-label-sm text-label-sm text-brand-slate-400"
+                  >Duty Superintendent</span
+                >
+                <span class="font-body-sm text-body-sm font-semibold text-brand-navy-900"
+                  >+234 (0) 84 551 290</span
+                >
+              </div>
+            </div>
+            <div class="flex items-start gap-3">
+              <div
+                class="flex h-8 w-8 flex-shrink-0 items-center justify-center rounded bg-surface-container text-primary"
+              >
+                <span class="material-symbols-outlined text-[18px]">location_on</span>
+              </div>
+              <div>
+                <span class="block font-label-sm text-label-sm text-brand-slate-400"
+                  >Physical Directorate</span
+                >
+                <span class="font-body-sm text-body-sm font-semibold text-brand-navy-900"
+                  >Room 104, Engineering Cmplx</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Quick Document Verification Box -->
+        <div
+          class="flex flex-col justify-between rounded-xl bg-brand-navy-950 p-6 text-surface-bright shadow-sm"
+        >
+          <div>
+            <div class="mb-2 flex items-center gap-2 text-status-verified">
+              <span
+                class="material-symbols-outlined text-[18px]"
+                style="font-variation-settings: &quot;FILL&quot; 1"
+                >lock</span
+              >
+              <span class="font-label-sm text-label-sm font-semibold uppercase tracking-wider"
+                >Integrity Protocol</span
+              >
+            </div>
+            <h4 class="font-headline-sm text-headline-sm text-surface-bright">
+              Tamper-Proof Audit Lock
+            </h4>
+            <p class="mt-2 font-body-sm text-body-sm text-brand-slate-400">
+              Every booking slip is registered on the Rivers State University Central Blockchain
+              Registry to prevent forged campus gate passes.
+            </p>
+          </div>
+          <div class="mt-6 border-t border-brand-slate-800 pt-4">
+            <div class="flex items-center justify-between font-body-sm text-body-sm">
+              <span class="text-brand-slate-400">Institutional Seal:</span>
+              <span class="font-mono text-label-sm text-status-verified"
+                >COREN / NCDMB / ISO-9001</span
+              >
+            </div>
+            <div class="mt-3 flex items-center gap-2">
+              <span class="material-symbols-outlined text-[20px] text-primary-fixed"
+                >verified_user</span
+              >
+              <span class="text-brand-slate-300 text-[11px]"
+                >Signed with CMOTD RSA 4096-bit Root Authority Key</span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Laboratorial Installations Overview (Reference summary of all 4 installations) -->
+      <div class="space-y-4">
+        <div class="flex items-center justify-between">
+          <div>
+            <h3 class="font-headline-sm text-headline-sm text-brand-navy-900">
+              Center Laboratorial Installations
+            </h3>
+            <p class="font-body-sm text-body-sm text-brand-slate-500">
+              CMOTD operates 4 cutting-edge experimental environments for marine and deepwater
+              qualification.
+            </p>
+          </div>
+          <a
+            class="flex items-center gap-1 font-label-md text-label-md text-primary hover:underline"
+            href="#"
+          >
+            <span>View All Facility Specs</span>
+            <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+          </a>
+        </div>
+        <div class="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-4">
+          <!-- Lab 1: Hydrodynamic Towing Tank (Current) -->
+          <div
+            class="relative rounded-lg border-2 border-primary bg-surface-container-lowest p-5 shadow-sm"
+          >
+            <span
+              class="absolute right-3 top-3 inline-flex items-center rounded bg-primary px-2 py-0.5 text-[10px] font-bold text-on-primary"
+            >
+              REQUISITIONED
+            </span>
+            <div
+              class="mb-3 flex h-10 w-10 items-center justify-center rounded bg-surface-container text-primary"
+            >
+              <span class="material-symbols-outlined text-[22px]">pool</span>
+            </div>
+            <h4 class="font-title-lg text-title-lg text-brand-navy-900">50m Hydrodynamic Tank</h4>
+            <p class="mt-1 font-body-sm text-body-sm text-brand-slate-500">
+              Wave flume, planar motion carriage, shallow-water bathymetry basin.
+            </p>
+            <div
+              class="mt-4 flex items-center justify-between border-t border-brand-slate-100 pt-3 font-label-sm text-label-sm"
+            >
+              <span class="flex items-center gap-1 text-status-verified">
+                <span class="h-2 w-2 rounded-full bg-status-verified"></span>
+                Active Calibration
+              </span>
+              <span class="text-brand-slate-500">Bay 1</span>
+            </div>
+          </div>
+          <!-- Lab 2: HPC Simulation Suite -->
+          <div
+            class="rounded-lg border border-brand-slate-200 bg-surface-container-lowest p-5 shadow-sm transition-colors hover:border-brand-slate-400"
+          >
+            <div
+              class="mb-3 flex h-10 w-10 items-center justify-center rounded bg-brand-slate-100 text-brand-navy-900"
+            >
+              <span class="material-symbols-outlined text-[22px]">memory</span>
+            </div>
+            <h4 class="font-title-lg text-title-lg text-brand-navy-900">HPC Simulation Suite</h4>
+            <p class="mt-1 font-body-sm text-body-sm text-brand-slate-500">
+              64-Node cluster for ANSYS Fluent, OpenFOAM CFD, &amp; OrcaFlex mooring lines.
+            </p>
+            <div
+              class="mt-4 flex items-center justify-between border-t border-brand-slate-100 pt-3 font-label-sm text-label-sm"
+            >
+              <span class="flex items-center gap-1 text-status-verified">
+                <span class="h-2 w-2 rounded-full bg-status-verified"></span>
+                82% Capacity Free
+              </span>
+              <span class="text-brand-slate-500">Bay 2</span>
+            </div>
+          </div>
+          <!-- Lab 3: SCADA Pipeline Flow Loop -->
+          <div
+            class="rounded-lg border border-brand-slate-200 bg-surface-container-lowest p-5 shadow-sm transition-colors hover:border-brand-slate-400"
+          >
+            <div
+              class="mb-3 flex h-10 w-10 items-center justify-center rounded bg-brand-slate-100 text-brand-navy-900"
+            >
+              <span class="material-symbols-outlined text-[22px]">qr_code_2</span>
+            </div>
+            <h4 class="font-title-lg text-title-lg text-brand-navy-900">SCADA Pipeline Testbed</h4>
+            <p class="mt-1 font-body-sm text-body-sm text-brand-slate-500">
+              Multiphase flow simulator, leak-detection loop, and cathodic protection rig.
+            </p>
+            <div
+              class="mt-4 flex items-center justify-between border-t border-brand-slate-100 pt-3 font-label-sm text-label-sm"
+            >
+              <span class="flex items-center gap-1 text-status-verified">
+                <span class="h-2 w-2 rounded-full bg-status-verified"></span>
+                Operational
+              </span>
+              <span class="text-brand-slate-500">Bay 3</span>
+            </div>
+          </div>
+          <!-- Lab 4: Smart Technical Amphitheatre -->
+          <div
+            class="rounded-lg border border-brand-slate-200 bg-surface-container-lowest p-5 shadow-sm transition-colors hover:border-brand-slate-400"
+          >
+            <div
+              class="mb-3 flex h-10 w-10 items-center justify-center rounded bg-brand-slate-100 text-brand-navy-900"
+            >
+              <span class="material-symbols-outlined text-[22px]">co_present</span>
+            </div>
+            <h4 class="font-title-lg text-title-lg text-brand-navy-900">Smart Amphitheatre</h4>
+            <p class="mt-1 font-body-sm text-body-sm text-brand-slate-500">
+              120-seat interactive hybrid auditorium with immersive twin telepresence.
+            </p>
+            <div
+              class="mt-4 flex items-center justify-between border-t border-brand-slate-100 pt-3 font-label-sm text-label-sm"
+            >
+              <span class="flex items-center gap-1 text-status-verified">
+                <span class="h-2 w-2 rounded-full bg-status-verified"></span>
+                Available for Booking
+              </span>
+              <span class="text-brand-slate-500">Floor 2</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Health, Safety & Engineering Standards Section -->
+      <div class="rounded-xl border border-brand-slate-200 bg-surface-bright p-6">
+        <div class="mb-4 flex items-center gap-2 text-brand-navy-900">
+          <span class="material-symbols-outlined text-[22px] text-primary">verified</span>
+          <h3 class="font-headline-sm text-headline-sm">
+            Health, Safety &amp; Engineering Standards
+          </h3>
+        </div>
+        <div
+          class="grid grid-cols-1 gap-6 font-body-sm text-body-sm text-brand-slate-700 sm:grid-cols-2 lg:grid-cols-4"
+        >
+          <div class="space-y-1">
+            <strong class="block flex items-center gap-1.5 font-semibold text-brand-navy-900">
+              <span class="material-symbols-outlined text-[16px] text-primary">gpp_good</span>
+              Class 1 Div 2 Rated
+            </strong>
+            <p class="text-[12px] text-brand-slate-500">
+              All experimental bays adhere to offshore explosive atmosphere safety and electrical
+              grounding protocols.
+            </p>
+          </div>
+          <div class="space-y-1">
+            <strong class="block flex items-center gap-1.5 font-semibold text-brand-navy-900">
+              <span class="material-symbols-outlined text-[16px] text-primary"
+                >personal_injury</span
+              >
+              Strict PPE Protocols
+            </strong>
+            <p class="text-[12px] text-brand-slate-500">
+              Mandatory minimum: BS EN ISO 20345 steel toe caps, eye protection, and anti-static lab
+              jackets.
+            </p>
+          </div>
+          <div class="space-y-1">
+            <strong class="block flex items-center gap-1.5 font-semibold text-brand-navy-900">
+              <span class="material-symbols-outlined text-[16px] text-primary">emergency</span>
+              Emergency Trip Loops
+            </strong>
+            <p class="text-[12px] text-brand-slate-500">
+              Flume water-dump interlocks and carriage emergency brakes rated for immediate
+              fail-safe lock.
+            </p>
+          </div>
+          <div class="space-y-1">
+            <strong class="block flex items-center gap-1.5 font-semibold text-brand-navy-900">
+              <span class="material-symbols-outlined text-[16px] text-primary"
+                >workspace_premium</span
+              >
+              NCDMB Facility Audit
+            </strong>
+            <p class="text-[12px] text-brand-slate-500">
+              Certified under Nigerian Content Development and Monitoring Board Marine Research
+              Category 'A'.
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- Institutional Rich Footer from Shared Components JSON -->
+    <cmotd-institution-strip></cmotd-institution-strip>
+    <cmotd-site-footer></cmotd-site-footer>
+  </body>
+</html>

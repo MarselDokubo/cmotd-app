@@ -1,0 +1,1424 @@
+<!doctype html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      content="width=device-width, initial-scale=1.0"
+      name="viewport"
+    />
+    <title>
+      AVEVA PDMS &amp; E3D Plant Design 3D Modeling (MOD-201) | CMOTD Rivers State University
+    </title>
+    <link
+      href="../favicon.ico"
+      rel="icon"
+      type="image/x-icon"
+    />
+
+    <!-- Tailwind CSS -->
+    <link
+      href="../assets/css/tailwind-build.css"
+      rel="stylesheet"
+    />
+    <link
+      href="../assets/css/cmotd-global.css"
+      rel="stylesheet"
+    />
+    <script
+      defer=""
+      src="../assets/js/site-config.js"
+    ></script>
+    <script
+      defer=""
+      src="../assets/js/cmotd-components.js"
+    ></script>
+  </head>
+  <body class="flex min-h-screen flex-col bg-background font-body-md text-on-surface antialiased">
+    <!-- TOP APP NOTIFICATION RIBBON -->
+    <aside
+      aria-label="Trial banner"
+      class="border-b border-brand-slate-800 bg-brand-navy-950 px-4 py-2 text-surface-bright"
+    >
+      <div
+        class="mx-auto flex max-w-[1280px] items-center justify-between font-body-sm text-body-sm"
+      >
+        <div class="flex items-center space-x-2">
+          <span
+            class="inline-flex items-center rounded bg-status-verified px-1.5 py-0.5 text-[10px] font-bold text-surface-container-lowest"
+            >FREEMIUM AUDIT</span
+          >
+          <span class="text-brand-slate-200"
+            >Test-drive Module 1 &amp; 2 at zero tuition commitment. 6 verified workstations
+            remaining for Cohort Q2.</span
+          >
+        </div>
+        <div class="hidden items-center space-x-4 md:flex">
+          <span class="font-code-sm text-code-sm text-brand-slate-400"
+            >Official CAD/CAE Secretariat • Rivers State University Campus</span
+          >
+          <a
+            class="font-label-sm text-label-sm text-primary-fixed underline hover:text-surface-bright"
+            href="#curriculum"
+            >Inspect Unlocked Modules</a
+          >
+        </div>
+      </div>
+    </aside>
+    <!-- SHARED COMPONENT: TopNavBar -->
+    <cmotd-site-header active="programmes"></cmotd-site-header>
+    <!-- BREADCRUMB SCAFFOLDING -->
+    <section class="border-b border-brand-slate-200 bg-surface py-3">
+      <div
+        class="mx-auto flex max-w-[1280px] items-center space-x-2 px-6 font-label-sm text-label-sm text-brand-slate-500"
+      >
+        <a
+          class="flex items-center transition-colors hover:text-primary"
+          href="#"
+        >
+          <span class="material-symbols-outlined mr-1 text-[16px]">home</span>
+          Home
+        </a>
+        <span class="text-brand-slate-400">/</span>
+        <a
+          class="transition-colors hover:text-primary"
+          href="#"
+          >Programmes &amp; Courses</a
+        >
+        <span class="text-brand-slate-400">/</span>
+        <a
+          class="transition-colors hover:text-primary"
+          href="#"
+          >CAD &amp; Plant Design Engineering</a
+        >
+        <span class="text-brand-slate-400">/</span>
+        <span class="truncate font-semibold text-brand-navy-900">MOD-201 (Freemium Preview)</span>
+      </div>
+    </section>
+    <!-- MAIN CANVAS -->
+    <main class="flex-grow">
+      <!-- HERO SECTION (High-Converting Freemium Architecture) -->
+      <section
+        class="relative overflow-hidden border-b border-brand-slate-200 bg-surface-container-lowest"
+      >
+        <!-- Subtle Technical Engineering Grid Backing -->
+        <div
+          class="pointer-events-none absolute inset-0 opacity-[0.03]"
+          style="
+            background-size: 24px 24px;
+            background-image:
+              linear-gradient(to right, #0f172a 1px, transparent 1px),
+              linear-gradient(to bottom, #0f172a 1px, transparent 1px);
+          "
+        ></div>
+        <div class="relative mx-auto max-w-[1280px] px-6 py-12 lg:py-16">
+          <div class="grid grid-cols-1 items-start gap-8 lg:grid-cols-12">
+            <!-- Hero Copy Column (7 Cols) -->
+            <div class="flex flex-col justify-center lg:col-span-7">
+              <!-- Badges Bar -->
+              <div class="mb-4 flex flex-wrap items-center gap-2">
+                <span
+                  class="inline-flex items-center rounded border border-status-verified-border bg-status-verified-bg px-2.5 py-1 font-label-sm text-label-sm font-bold text-status-verified"
+                >
+                  <span class="material-symbols-outlined fill-icon mr-1 text-[14px]"
+                    >lock_open_right</span
+                  >
+                  INSTANT FREE AUDIT (MODULE 1 &amp; 2)
+                </span>
+                <span
+                  class="inline-flex items-center rounded border border-brand-slate-200 bg-brand-slate-100 px-2.5 py-1 font-label-sm text-label-sm text-brand-slate-800"
+                >
+                  <span class="material-symbols-outlined mr-1 text-[14px]">hub</span>
+                  BLENDED APPLIED TRACK
+                </span>
+                <span
+                  class="inline-flex items-center rounded border border-surface-dim bg-surface-container-low px-2.5 py-1 font-label-sm text-label-sm text-primary"
+                >
+                  <span class="material-symbols-outlined mr-1 text-[14px]">verified</span>
+                  AVEVA AUTHORIZED CAD LAB
+                </span>
+                <span
+                  class="inline-flex items-center rounded bg-brand-navy-900 px-2.5 py-1 font-code-sm font-label-sm text-code-sm text-label-sm text-surface-bright"
+                >
+                  MOD-201
+                </span>
+              </div>
+              <!-- Headline -->
+              <h1 class="mb-4 font-display-lg text-display-lg tracking-tight text-brand-navy-900">
+                AVEVA PDMS &amp; E3D Plant Design 3D Modeling
+              </h1>
+              <p class="mb-6 font-body-lg text-body-lg leading-relaxed text-brand-slate-700">
+                Master industrial piping equipment layouts, topside structural steel routing, clash
+                detection, and ISOGEN production. Test-drive the first two comprehensive modules
+                completely free online before committing to the full accredited Rivers State
+                University physical workstation cohort.
+              </p>
+              <!-- Key Feature Indicators Bar -->
+              <div
+                class="mb-8 grid grid-cols-2 gap-3 border-y border-brand-slate-200 py-4 font-body-sm text-body-sm sm:grid-cols-3"
+              >
+                <div class="flex items-center space-x-2">
+                  <span class="material-symbols-outlined text-[22px] text-brand-cobalt-deep"
+                    >devices</span
+                  >
+                  <div>
+                    <div class="font-label-md text-label-md text-brand-navy-900">
+                      Delivery Format
+                    </div>
+                    <div class="font-body-sm text-body-sm text-brand-slate-500">
+                      Blended / Free Preview
+                    </div>
+                  </div>
+                </div>
+                <div class="flex items-center space-x-2">
+                  <span class="material-symbols-outlined text-[22px] text-brand-cobalt-deep"
+                    >schedule</span
+                  >
+                  <div>
+                    <div class="font-label-md text-label-md text-brand-navy-900">
+                      Total Duration
+                    </div>
+                    <div class="font-body-sm text-body-sm text-brand-slate-500">
+                      8 Weeks (60 Total CEU)
+                    </div>
+                  </div>
+                </div>
+                <div class="flex items-center space-x-2">
+                  <span class="material-symbols-outlined text-[22px] text-status-verified"
+                    >workspace_premium</span
+                  >
+                  <div>
+                    <div class="font-label-md text-label-md text-brand-navy-900">Credential</div>
+                    <div class="font-body-sm text-body-sm text-brand-slate-500">
+                      RSU Senate Certificate
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Dual CTA Buttons Container -->
+              <div class="flex flex-col items-stretch gap-4 sm:flex-row sm:items-center">
+                <a
+                  class="inline-flex items-center justify-center rounded bg-status-verified px-6 py-3.5 font-label-md text-label-md text-surface-container-lowest shadow-md transition-transform duration-150 hover:bg-tertiary active:scale-95"
+                  href="#free-preview-section"
+                >
+                  <span class="material-symbols-outlined mr-2 text-[20px]">play_circle</span>
+                  <span>Start Free Preview (Instant Access)</span>
+                </a>
+                <a
+                  class="inline-flex items-center justify-center rounded bg-brand-cobalt-deep px-6 py-3.5 font-label-md text-label-md text-surface-container-lowest shadow-md transition-transform duration-150 hover:bg-primary active:scale-95"
+                  href="#enrollment-modal"
+                >
+                  <span class="material-symbols-outlined mr-2 text-[20px]">lock_open</span>
+                  <span>Unlock Full Track (NGN 350,000)</span>
+                </a>
+                <button
+                  class="inline-flex items-center justify-center rounded border border-brand-slate-200 bg-surface-container-lowest px-4 py-3.5 font-label-md text-label-md text-brand-slate-800 transition-colors hover:border-brand-slate-400 hover:bg-brand-slate-50"
+                  type="button"
+                >
+                  <span class="material-symbols-outlined mr-1.5 text-[18px]">videocam</span>
+                  <span>Lab Tour</span>
+                </button>
+              </div>
+              <div
+                class="mt-4 flex items-center space-x-3 font-label-sm text-label-sm text-brand-slate-500"
+              >
+                <span class="flex items-center text-status-verified">
+                  <span class="material-symbols-outlined fill-icon mr-1 text-[16px]"
+                    >check_circle</span
+                  >
+                  No credit card required for free modules
+                </span>
+                <span>•</span>
+                <span class="flex items-center text-brand-slate-700">
+                  <span class="material-symbols-outlined mr-1 text-[16px]">security</span>
+                  Verified RSU CAD/CAE Facility
+                </span>
+              </div>
+            </div>
+            <!-- Hero Media / Real Lab Showcase (5 Cols) -->
+            <div class="lg:col-span-5">
+              <div
+                class="rounded-lg border border-brand-slate-200 bg-surface-container-lowest p-2 shadow-md"
+              >
+                <div class="relative overflow-hidden rounded">
+                  <img
+                    class="h-72 w-full object-cover object-center lg:h-80"
+                    data-alt="A brightly lit, modern institutional CAD and CAE computer lab at Rivers State University with rows of dual monitor workstations displaying 3D engineering models and piping isometric diagrams. Diverse African engineering trainees collaborate attentively under soft, clinical overhead daylight fluorescent fixtures, led by a professional female instructor wearing an engineering lanyard. High-tech corporate marine engineering education aesthetic, cobalt and slate tones."
+                    decoding="async"
+                    fetchpriority="high"
+                    loading="eager"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuDF2M4q4DCSOZgna8REWSkI9EXo-pVw1ickBubh6s0bpQ-psvpDJut0XIrQX1v0UODEvXUWyQZ8UwJB6yxKDOJ_q-oTNKJJwN8zk_Gcyzl3oDUQD4Bfp0AOr-Ny9Cf6h3IhJI89qFVT3UY_SklFZeXcfdSnqmWl4T83UjQ_JCGB0Qzy77r6CzhmYBFThmoTuXoltgfU19NqWJGPNQ6cHyvXwdLaXP8OlccTmwAc62fDR-i0Ck4ENzzf"
+                  />
+                  <div
+                    class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-brand-navy-950/90 to-transparent p-4 text-surface-bright"
+                  >
+                    <div class="flex items-center justify-between">
+                      <div>
+                        <div class="font-label-md text-label-md text-surface-bright">
+                          Rivers State University CAD/CAE Lab
+                        </div>
+                        <div class="font-body-sm text-body-sm text-brand-slate-400">
+                          Port Harcourt Main Technical Complex
+                        </div>
+                      </div>
+                      <span
+                        class="rounded bg-brand-cobalt-deep px-2 py-1 font-code-sm text-code-sm text-surface-bright"
+                        >48 Workstations</span
+                      >
+                    </div>
+                  </div>
+                </div>
+                <!-- Micro Lab Telemetry Block -->
+                <div
+                  class="mt-2 grid grid-cols-3 rounded border border-brand-slate-200 bg-brand-slate-50 p-3 text-center font-body-sm text-body-sm"
+                >
+                  <div>
+                    <span
+                      class="block font-headline-sm text-headline-sm font-bold text-brand-navy-900"
+                      >100%</span
+                    >
+                    <span class="font-label-sm text-label-sm text-brand-slate-500"
+                      >AVEVA E3D 3.1</span
+                    >
+                  </div>
+                  <div class="border-x border-brand-slate-200">
+                    <span
+                      class="block font-headline-sm text-headline-sm font-bold text-brand-cobalt-deep"
+                      >6</span
+                    >
+                    <span class="font-label-sm text-label-sm text-brand-slate-500"
+                      >Physical Seats Left</span
+                    >
+                  </div>
+                  <div>
+                    <span
+                      class="block font-headline-sm text-headline-sm font-bold text-status-verified"
+                      >4.9 / 5</span
+                    >
+                    <span class="font-label-sm text-label-sm text-brand-slate-500"
+                      >214 Reviews</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- FREEMIUM DUAL-CARD COMPARISON MATRIX (Floating Bento Style) -->
+      <section class="border-b border-brand-slate-200 bg-background py-12">
+        <div class="mx-auto max-w-[1280px] px-6">
+          <div class="mx-auto mb-10 max-w-3xl text-center">
+            <span
+              class="font-label-md text-label-md font-bold uppercase tracking-wider text-brand-cobalt-deep"
+              >Transparent Freemium Pathway</span
+            >
+            <h2 class="mb-3 mt-1 font-headline-lg text-headline-lg text-brand-navy-900">
+              Preview The Curriculum Risk-Free Before Full Cohort Registration
+            </h2>
+            <p class="font-body-md text-body-md text-brand-slate-700">
+              We believe in computational and physical engineering transparency. Verify our
+              high-precision pedagogical model through Modules 1 &amp; 2 at no charge, then
+              transition into physical laboratory immersion.
+            </p>
+          </div>
+          <div class="grid grid-cols-1 items-stretch gap-8 md:grid-cols-12">
+            <!-- Option A: Free Trial Audit (5 Cols) -->
+            <div
+              class="flex flex-col justify-between rounded-lg border border-brand-slate-200 bg-surface-container-lowest p-6 shadow-sm transition-all hover:border-brand-slate-400 md:col-span-5"
+            >
+              <div>
+                <div class="mb-4 flex items-center justify-between">
+                  <span
+                    class="rounded border border-status-verified-border bg-status-verified-bg px-2.5 py-1 font-label-sm text-label-sm font-bold uppercase text-status-verified"
+                  >
+                    Zero Cost Audit
+                  </span>
+                  <span class="font-code-sm text-code-sm text-brand-slate-500"
+                    >Self-Paced Online</span
+                  >
+                </div>
+                <h3 class="mb-1 font-headline-md text-headline-md text-brand-navy-900">
+                  Introductory Preview
+                </h3>
+                <p class="text-brand-slate-600 mb-4 font-body-sm text-body-sm">
+                  Full online access to Modules 1 and 2 to evaluate software interface mechanics and
+                  basic modeling.
+                </p>
+                <!-- Price -->
+                <div class="mb-6 border-b border-brand-slate-200 pb-6">
+                  <div class="flex items-baseline">
+                    <span class="font-display-lg text-display-lg font-bold text-brand-navy-900"
+                      >NGN 0</span
+                    >
+                    <span class="ml-2 font-body-sm text-body-sm text-brand-slate-500"
+                      >/ 14-day full preview</span
+                    >
+                  </div>
+                  <div class="mt-1 font-label-sm text-label-sm text-status-verified">
+                    Instant Activation • No payment method required
+                  </div>
+                </div>
+                <!-- Included Features -->
+                <ul class="mb-8 space-y-3 font-body-sm text-body-sm text-brand-slate-700">
+                  <li class="flex items-start">
+                    <span
+                      class="material-symbols-outlined mr-2.5 shrink-0 text-[20px] text-status-verified"
+                      >check</span
+                    >
+                    <span
+                      ><strong>Module 1:</strong> AVEVA E3D Architecture &amp; 3D UI Mechanics</span
+                    >
+                  </li>
+                  <li class="flex items-start">
+                    <span
+                      class="material-symbols-outlined mr-2.5 shrink-0 text-[20px] text-status-verified"
+                      >check</span
+                    >
+                    <span
+                      ><strong>Module 2:</strong> Basic Equipment Modeling &amp; Primitives
+                      Placement</span
+                    >
+                  </li>
+                  <li class="flex items-start">
+                    <span
+                      class="material-symbols-outlined mr-2.5 shrink-0 text-[20px] text-status-verified"
+                      >check</span
+                    >
+                    <span>4.5 hours of high-definition video walkthroughs</span>
+                  </li>
+                  <li class="flex items-start">
+                    <span
+                      class="material-symbols-outlined mr-2.5 shrink-0 text-[20px] text-status-verified"
+                      >check</span
+                    >
+                    <span>Downloadable standard piping catalog &amp; sample spec file</span>
+                  </li>
+                  <li class="flex items-start text-brand-slate-400">
+                    <span
+                      class="material-symbols-outlined mr-2.5 shrink-0 text-[20px] text-brand-slate-400"
+                      >lock</span
+                    >
+                    <span>Modules 3, 4, 5 (Complex Topside Piping, ISOGEN, Clash Detection)</span>
+                  </li>
+                  <li class="flex items-start text-brand-slate-400">
+                    <span
+                      class="material-symbols-outlined mr-2.5 shrink-0 text-[20px] text-brand-slate-400"
+                      >lock</span
+                    >
+                    <span>Physical Workstation terminal access at RSU CAD Lab</span>
+                  </li>
+                  <li class="flex items-start text-brand-slate-400">
+                    <span
+                      class="material-symbols-outlined mr-2.5 shrink-0 text-[20px] text-brand-slate-400"
+                      >lock</span
+                    >
+                    <span>Accredited University Senate Certificate &amp; Hash</span>
+                  </li>
+                </ul>
+              </div>
+              <div>
+                <a
+                  class="block w-full rounded border border-status-verified bg-status-verified-bg px-4 py-3 text-center font-label-md text-label-md text-status-verified transition-colors hover:bg-status-verified hover:text-surface-container-lowest"
+                  href="#curriculum"
+                >
+                  Start Free Preview Now
+                </a>
+                <p class="mt-2 text-center font-label-sm text-label-sm text-brand-slate-400">
+                  Instant login link sent via university SSO/email
+                </p>
+              </div>
+            </div>
+            <!-- Option B: Full Professional Trainee Track (7 Cols - Elevated) -->
+            <div
+              class="relative flex flex-col justify-between rounded-lg border-2 border-brand-cobalt-deep bg-surface-container-lowest p-8 shadow-lg md:col-span-7"
+            >
+              <!-- Floating Badge -->
+              <div
+                class="absolute -top-3.5 right-6 rounded bg-brand-cobalt-deep px-3 py-1 font-label-sm text-label-sm font-bold uppercase tracking-wider text-surface-container-lowest shadow-sm"
+              >
+                Complete Professional Cohort
+              </div>
+              <div>
+                <div class="mb-4 flex items-center justify-between">
+                  <span
+                    class="rounded border border-surface-dim bg-surface-container-low px-2.5 py-1 font-label-sm text-label-sm font-bold uppercase text-primary"
+                  >
+                    Accreditation &amp; Lab Access
+                  </span>
+                  <span class="font-code-sm text-code-sm font-semibold text-brand-cobalt-deep"
+                    >Strict 20-Seat Physical Cap</span
+                  >
+                </div>
+                <h3 class="mb-1 font-headline-md text-headline-md text-brand-navy-900">
+                  Full Certification Track (Physical CAD Lab)
+                </h3>
+                <p class="text-brand-slate-600 mb-6 font-body-sm text-body-sm">
+                  The comprehensive 8-week engineering apprenticeship combining all digital modules
+                  with hands-on physical workstation execution at Rivers State University CAD
+                  Center.
+                </p>
+                <!-- Price & Installment options -->
+                <div class="mb-6 border-b border-brand-slate-200 pb-6">
+                  <div class="flex items-baseline">
+                    <span class="font-display-lg text-display-lg font-bold text-brand-navy-900"
+                      >NGN 350,000</span
+                    >
+                    <span class="ml-2 font-body-sm text-body-sm text-brand-slate-500"
+                      >(approx. $250 USD)</span
+                    >
+                  </div>
+                  <div class="mt-1.5 flex items-center space-x-3 font-label-sm text-label-sm">
+                    <span class="rounded bg-brand-slate-100 px-2 py-0.5 text-brand-slate-700"
+                      >2 Installments available (60% / 40%)</span
+                    >
+                    <span class="font-semibold text-status-warning"
+                      >Only 6 physical workstations remaining</span
+                    >
+                  </div>
+                </div>
+                <!-- Included Features Grid -->
+                <div
+                  class="mb-8 grid grid-cols-1 gap-4 font-body-sm text-body-sm text-brand-slate-800 sm:grid-cols-2"
+                >
+                  <div class="flex items-start">
+                    <span
+                      class="material-symbols-outlined mr-2 shrink-0 text-[20px] text-brand-cobalt-deep"
+                      >check_circle</span
+                    >
+                    <span
+                      ><strong>All 5 Modules Unlocked:</strong> Equipment, Topside Routing,
+                      Structural, ISOGEN</span
+                    >
+                  </div>
+                  <div class="flex items-start">
+                    <span
+                      class="material-symbols-outlined mr-2 shrink-0 text-[20px] text-brand-cobalt-deep"
+                      >check_circle</span
+                    >
+                    <span
+                      ><strong>Guaranteed Physical Workstation:</strong> Dual 4K terminals at RSU
+                      Port Harcourt</span
+                    >
+                  </div>
+                  <div class="flex items-start">
+                    <span
+                      class="material-symbols-outlined mr-2 shrink-0 text-[20px] text-brand-cobalt-deep"
+                      >check_circle</span
+                    >
+                    <span
+                      ><strong>Real Offshore FPSO Layout:</strong> Capstone topside clash detection
+                      project</span
+                    >
+                  </div>
+                  <div class="flex items-start">
+                    <span
+                      class="material-symbols-outlined mr-2 shrink-0 text-[20px] text-brand-cobalt-deep"
+                      >check_circle</span
+                    >
+                    <span
+                      ><strong>1-on-1 AVEVA Certified Fellow:</strong> Direct critique on
+                      engineering runs</span
+                    >
+                  </div>
+                  <div class="flex items-start">
+                    <span
+                      class="material-symbols-outlined mr-2 shrink-0 text-[20px] text-brand-cobalt-deep"
+                      >check_circle</span
+                    >
+                    <span
+                      ><strong>University Senate Certificate:</strong> Tamper-evident cryptographic
+                      ledger record</span
+                    >
+                  </div>
+                  <div class="flex items-start">
+                    <span
+                      class="material-symbols-outlined mr-2 shrink-0 text-[20px] text-brand-cobalt-deep"
+                      >check_circle</span
+                    >
+                    <span
+                      ><strong>Energy Industry Showcase:</strong> CV pipeline directly to NLNG,
+                      Saipem, Daewoo</span
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="rounded border border-brand-slate-200 bg-brand-slate-50 p-4">
+                <div class="flex flex-col items-center justify-between gap-4 sm:flex-row">
+                  <div>
+                    <div class="font-label-md text-label-md text-brand-navy-900">
+                      Immediate Full Registration
+                    </div>
+                    <div class="font-body-sm text-body-sm text-brand-slate-500">
+                      Instant seat reservation with automated receipt &amp; ID card
+                    </div>
+                  </div>
+                  <a
+                    class="w-full rounded bg-brand-cobalt-deep px-6 py-3 text-center font-label-md text-label-md text-surface-container-lowest shadow-md transition-all duration-150 hover:bg-primary active:scale-95 sm:w-auto"
+                    href="#enrollment-modal"
+                  >
+                    Enroll in Full Certification Cohort
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- CURRICULUM ARCHITECTURE: UNLOCKED FREE VS PREMIUM LOCKED MODULES -->
+      <section
+        class="bg-surface-container-lowest py-16"
+        id="curriculum"
+      >
+        <div class="mx-auto max-w-[1280px] px-6">
+          <div
+            class="mb-10 flex flex-col justify-between border-b border-brand-slate-200 pb-4 md:flex-row md:items-end"
+          >
+            <div>
+              <div
+                class="mb-1 flex items-center space-x-2 font-label-md text-label-md font-bold text-primary"
+              >
+                <span class="material-symbols-outlined text-[18px]">menu_book</span>
+                <span>SYLLABUS &amp; MODULAR BLUEPRINT</span>
+              </div>
+              <h2 class="font-headline-lg text-headline-lg text-brand-navy-900">
+                Course Structure: Free Preview vs. Locked Advanced Modules
+              </h2>
+            </div>
+            <div class="text-brand-slate-600 mt-4 font-body-sm text-body-sm md:mt-0">
+              <span class="mr-4 inline-flex items-center font-medium text-status-verified">
+                <span class="mr-1.5 h-2.5 w-2.5 rounded-full bg-status-verified"></span>
+                2 Unlocked Modules (Free)
+              </span>
+              <span class="inline-flex items-center font-medium text-brand-slate-400">
+                <span class="mr-1.5 h-2.5 w-2.5 rounded-full bg-brand-slate-400"></span>
+                3 Advanced Modules (Tuition Locked)
+              </span>
+            </div>
+          </div>
+          <!-- Modules Accordion-style Stack -->
+          <div class="space-y-4">
+            <!-- MODULE 1: UNLOCKED FREE -->
+            <div
+              class="rounded-lg border-2 border-status-verified-border bg-status-verified-bg/30 p-6 transition-all hover:bg-status-verified-bg/50"
+            >
+              <div class="flex flex-col justify-between gap-4 md:flex-row md:items-center">
+                <div class="flex items-start space-x-4">
+                  <div
+                    class="flex h-10 w-10 shrink-0 items-center justify-center rounded bg-status-verified text-headline-sm font-bold text-surface-container-lowest"
+                  >
+                    01
+                  </div>
+                  <div>
+                    <div class="flex items-center space-x-2">
+                      <span
+                        class="rounded bg-status-verified px-2 py-0.5 text-[10px] font-bold uppercase tracking-wider text-surface-container-lowest"
+                        >UNLOCKED • FREE PREVIEW</span
+                      >
+                      <span class="font-code-sm text-code-sm text-brand-slate-500"
+                        >2.5 Contact Hours</span
+                      >
+                    </div>
+                    <h3 class="mt-1 font-headline-sm text-headline-sm text-brand-navy-900">
+                      Introduction to AVEVA E3D Architecture &amp; 3D Workspace Navigation
+                    </h3>
+                    <p class="text-brand-slate-600 mt-1 font-body-sm text-body-sm">
+                      Hierarchy paradigms (Site, Zone, Equipment, Pipe), coordinate system controls,
+                      customized viewpoints, clipping planes, and design explorer manipulations.
+                    </p>
+                  </div>
+                </div>
+                <!-- Action button for Free Preview -->
+                <div class="flex shrink-0 items-center space-x-3">
+                  <button
+                    class="inline-flex items-center rounded border border-brand-slate-200 bg-surface-container-lowest px-4 py-2 font-label-md text-label-md text-brand-slate-800 transition-colors hover:bg-brand-slate-100"
+                    type="button"
+                  >
+                    <span class="material-symbols-outlined mr-1 text-[18px] text-primary"
+                      >download</span
+                    >
+                    <span>Specs Sheet</span>
+                  </button>
+                  <button
+                    class="inline-flex items-center rounded bg-status-verified px-4 py-2 font-label-md text-label-md text-surface-container-lowest transition-colors hover:bg-tertiary"
+                    type="button"
+                  >
+                    <span class="material-symbols-outlined mr-1 text-[18px]">play_arrow</span>
+                    <span>Watch Module 1</span>
+                  </button>
+                </div>
+              </div>
+              <!-- Micro syllabus chips -->
+              <div
+                class="text-brand-slate-600 mt-4 flex flex-wrap gap-2 border-t border-brand-slate-200/60 pt-3 font-label-sm text-label-sm"
+              >
+                <span
+                  class="rounded border border-brand-slate-200 bg-surface-container-lowest px-2 py-1"
+                  >Session 1.1: Database Hierarchy</span
+                >
+                <span
+                  class="rounded border border-brand-slate-200 bg-surface-container-lowest px-2 py-1"
+                  >Session 1.2: World Positioning Tool</span
+                >
+                <span
+                  class="rounded border border-brand-slate-200 bg-surface-container-lowest px-2 py-1"
+                  >Session 1.3: Clash Tolerance Setup</span
+                >
+              </div>
+            </div>
+            <!-- MODULE 2: UNLOCKED FREE -->
+            <div
+              class="rounded-lg border-2 border-status-verified-border bg-status-verified-bg/30 p-6 transition-all hover:bg-status-verified-bg/50"
+            >
+              <div class="flex flex-col justify-between gap-4 md:flex-row md:items-center">
+                <div class="flex items-start space-x-4">
+                  <div
+                    class="flex h-10 w-10 shrink-0 items-center justify-center rounded bg-status-verified text-headline-sm font-bold text-surface-container-lowest"
+                  >
+                    02
+                  </div>
+                  <div>
+                    <div class="flex items-center space-x-2">
+                      <span
+                        class="rounded bg-status-verified px-2 py-0.5 text-[10px] font-bold uppercase tracking-wider text-surface-container-lowest"
+                        >UNLOCKED • FREE PREVIEW</span
+                      >
+                      <span class="font-code-sm text-code-sm text-brand-slate-500"
+                        >2.0 Contact Hours</span
+                      >
+                    </div>
+                    <h3 class="mt-1 font-headline-sm text-headline-sm text-brand-navy-900">
+                      Equipment Modeling &amp; Standard Primitive Component Placement
+                    </h3>
+                    <p class="text-brand-slate-600 mt-1 font-body-sm text-body-sm">
+                      Horizontal &amp; vertical pressure vessels, pumps, nozzle configuration
+                      (Piping Point, P1/P2 attributes), orientation coordinates, and negative
+                      primitives for foundations.
+                    </p>
+                  </div>
+                </div>
+                <!-- Action button for Free Preview -->
+                <div class="flex shrink-0 items-center space-x-3">
+                  <button
+                    class="inline-flex items-center rounded border border-brand-slate-200 bg-surface-container-lowest px-4 py-2 font-label-md text-label-md text-brand-slate-800 transition-colors hover:bg-brand-slate-100"
+                    type="button"
+                  >
+                    <span class="material-symbols-outlined mr-1 text-[18px] text-primary"
+                      >description</span
+                    >
+                    <span>P&amp;ID Sample</span>
+                  </button>
+                  <button
+                    class="inline-flex items-center rounded bg-status-verified px-4 py-2 font-label-md text-label-md text-surface-container-lowest transition-colors hover:bg-tertiary"
+                    type="button"
+                  >
+                    <span class="material-symbols-outlined mr-1 text-[18px]">play_arrow</span>
+                    <span>Watch Module 2</span>
+                  </button>
+                </div>
+              </div>
+              <!-- Micro syllabus chips -->
+              <div
+                class="text-brand-slate-600 mt-4 flex flex-wrap gap-2 border-t border-brand-slate-200/60 pt-3 font-label-sm text-label-sm"
+              >
+                <span
+                  class="rounded border border-brand-slate-200 bg-surface-container-lowest px-2 py-1"
+                  >Session 2.1: Centrifugal Pump Assemblies</span
+                >
+                <span
+                  class="rounded border border-brand-slate-200 bg-surface-container-lowest px-2 py-1"
+                  >Session 2.2: Column Scaffolding &amp; Skids</span
+                >
+                <span
+                  class="rounded border border-brand-slate-200 bg-surface-container-lowest px-2 py-1"
+                  >Interactive Quiz: Vessel Orientation</span
+                >
+              </div>
+            </div>
+            <!-- MODULE 3: LOCKED -->
+            <div
+              class="relative rounded-lg border border-brand-slate-200 bg-brand-slate-50/70 p-6 opacity-95"
+            >
+              <div class="flex flex-col justify-between gap-4 md:flex-row md:items-center">
+                <div class="flex items-start space-x-4">
+                  <div
+                    class="text-brand-slate-600 flex h-10 w-10 shrink-0 items-center justify-center rounded bg-brand-slate-200 text-headline-sm font-bold"
+                  >
+                    03
+                  </div>
+                  <div>
+                    <div class="flex items-center space-x-2">
+                      <span
+                        class="inline-flex items-center rounded bg-brand-slate-200 px-2 py-0.5 text-[10px] font-bold uppercase tracking-wider text-brand-slate-700"
+                      >
+                        <span class="material-symbols-outlined mr-1 text-[12px]">lock</span>
+                        FULL TRACK ONLY
+                      </span>
+                      <span class="font-code-sm text-code-sm text-brand-slate-400"
+                        >14 Contact Hours • Physical Lab</span
+                      >
+                    </div>
+                    <h3 class="mt-1 font-headline-sm text-headline-sm text-brand-slate-800">
+                      Complex Topside Pipe Routing, Slope Piping &amp; Valve Assemblies
+                    </h3>
+                    <p class="mt-1 font-body-sm text-body-sm text-brand-slate-500">
+                      Pipe branch specifications, flanged joints, inline instrumentation, slope
+                      drainage piping for offshore separators, relief valve header routing, and
+                      minimum spacing adherence.
+                    </p>
+                  </div>
+                </div>
+                <div class="shrink-0">
+                  <a
+                    class="border-brand-slate-300 inline-flex items-center rounded border bg-surface-container-lowest px-4 py-2 font-label-md text-label-md text-brand-slate-700 transition-colors hover:border-brand-cobalt-deep hover:text-brand-cobalt-deep"
+                    href="#enrollment-modal"
+                  >
+                    <span class="material-symbols-outlined mr-1.5 text-[16px]">lock_open</span>
+                    <span>Unlock in Full Cohort</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <!-- MODULE 4: LOCKED -->
+            <div
+              class="relative rounded-lg border border-brand-slate-200 bg-brand-slate-50/70 p-6 opacity-95"
+            >
+              <div class="flex flex-col justify-between gap-4 md:flex-row md:items-center">
+                <div class="flex items-start space-x-4">
+                  <div
+                    class="text-brand-slate-600 flex h-10 w-10 shrink-0 items-center justify-center rounded bg-brand-slate-200 text-headline-sm font-bold"
+                  >
+                    04
+                  </div>
+                  <div>
+                    <div class="flex items-center space-x-2">
+                      <span
+                        class="inline-flex items-center rounded bg-brand-slate-200 px-2 py-0.5 text-[10px] font-bold uppercase tracking-wider text-brand-slate-700"
+                      >
+                        <span class="material-symbols-outlined mr-1 text-[12px]">lock</span>
+                        FULL TRACK ONLY
+                      </span>
+                      <span class="font-code-sm text-code-sm text-brand-slate-400"
+                        >16 Contact Hours • Physical Lab</span
+                      >
+                    </div>
+                    <h3 class="mt-1 font-headline-sm text-headline-sm text-brand-slate-800">
+                      Structural Steel Profiles, Pipe Racks &amp; Automated Clash Detection
+                    </h3>
+                    <p class="mt-1 font-body-sm text-body-sm text-brand-slate-500">
+                      Primary/Secondary structural modeling, beam joints, bracings, grating decks,
+                      ladder and stair placement. Multi-discipline automated clash detection and
+                      resolution matrix.
+                    </p>
+                  </div>
+                </div>
+                <div class="shrink-0">
+                  <a
+                    class="border-brand-slate-300 inline-flex items-center rounded border bg-surface-container-lowest px-4 py-2 font-label-md text-label-md text-brand-slate-700 transition-colors hover:border-brand-cobalt-deep hover:text-brand-cobalt-deep"
+                    href="#enrollment-modal"
+                  >
+                    <span class="material-symbols-outlined mr-1.5 text-[16px]">lock_open</span>
+                    <span>Unlock in Full Cohort</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <!-- MODULE 5: LOCKED -->
+            <div
+              class="relative rounded-lg border border-brand-slate-200 bg-brand-slate-50/70 p-6 opacity-95"
+            >
+              <div class="flex flex-col justify-between gap-4 md:flex-row md:items-center">
+                <div class="flex items-start space-x-4">
+                  <div
+                    class="text-brand-slate-600 flex h-10 w-10 shrink-0 items-center justify-center rounded bg-brand-slate-200 text-headline-sm font-bold"
+                  >
+                    05
+                  </div>
+                  <div>
+                    <div class="flex items-center space-x-2">
+                      <span
+                        class="inline-flex items-center rounded bg-brand-slate-200 px-2 py-0.5 text-[10px] font-bold uppercase tracking-wider text-brand-slate-700"
+                      >
+                        <span class="material-symbols-outlined mr-1 text-[12px]">lock</span>
+                        FULL TRACK ONLY
+                      </span>
+                      <span class="font-code-sm text-code-sm text-brand-slate-400"
+                        >18 Contact Hours • Physical Lab</span
+                      >
+                    </div>
+                    <h3 class="mt-1 font-headline-sm text-headline-sm text-brand-slate-800">
+                      Draft Production, Isometric Extraction (ISOGEN) &amp; MTO Reporting
+                    </h3>
+                    <p class="mt-1 font-body-sm text-body-sm text-brand-slate-500">
+                      Automated isometric drawing generation via ISOGEN, Bill of Materials (BOM)
+                      compilation, material take-off (MTO) schedules, title block annotation, and
+                      engineering approval packs.
+                    </p>
+                  </div>
+                </div>
+                <div class="shrink-0">
+                  <a
+                    class="border-brand-slate-300 inline-flex items-center rounded border bg-surface-container-lowest px-4 py-2 font-label-md text-label-md text-brand-slate-700 transition-colors hover:border-brand-cobalt-deep hover:text-brand-cobalt-deep"
+                    href="#enrollment-modal"
+                  >
+                    <span class="material-symbols-outlined mr-1.5 text-[16px]">lock_open</span>
+                    <span>Unlock in Full Cohort</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- WHY AUDIT BEFORE ENROLLMENT (Bento Pedagogical Framework) -->
+      <section class="border-y border-brand-slate-200 bg-surface py-16">
+        <div class="mx-auto max-w-[1280px] px-6">
+          <div class="grid grid-cols-1 items-center gap-8 lg:grid-cols-12">
+            <div class="lg:col-span-4">
+              <span
+                class="font-label-md text-label-md font-bold uppercase tracking-wider text-brand-cobalt-deep"
+                >Institutional Assurance</span
+              >
+              <h2 class="mb-4 mt-1 font-headline-lg text-headline-lg text-brand-navy-900">
+                Why Rivers State University CMOTD Offers a Free Preview
+              </h2>
+              <p class="mb-6 font-body-md text-body-md text-brand-slate-700">
+                Plant design is an exacting technical trade. We eliminate training anxiety by
+                letting trainees verify workstation software fidelity and instructor depth prior to
+                financial disbursement.
+              </p>
+              <div class="rounded border border-status-info/20 bg-status-info-bg p-4">
+                <div class="mb-1 flex items-center font-label-md text-label-md text-status-info">
+                  <span class="material-symbols-outlined mr-1.5 text-[18px]">sync_alt</span>
+                  One-Click Seamless Upgrade
+                </div>
+                <p class="text-brand-slate-600 font-body-sm text-body-sm">
+                  All progress, files, and quizzes completed during your Free Preview instantly sync
+                  into your full student ledger when tuition is approved.
+                </p>
+              </div>
+            </div>
+            <div class="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:col-span-8">
+              <div class="rounded-lg border border-brand-slate-200 bg-surface-container-lowest p-6">
+                <div
+                  class="mb-4 flex h-10 w-10 items-center justify-center rounded bg-brand-slate-100 text-brand-cobalt-deep"
+                >
+                  <span class="material-symbols-outlined text-[24px]">troubleshoot</span>
+                </div>
+                <h3 class="mb-2 font-title-lg text-title-lg text-brand-navy-900">
+                  Evaluate Pedagogical Depth
+                </h3>
+                <p class="text-brand-slate-600 font-body-sm text-body-sm leading-relaxed">
+                  Ensure the teaching pace and deep technical jargon aligns with your engineering
+                  aspirations without gambling your personal or corporate training allowance.
+                </p>
+              </div>
+              <div class="rounded-lg border border-brand-slate-200 bg-surface-container-lowest p-6">
+                <div
+                  class="mb-4 flex h-10 w-10 items-center justify-center rounded bg-brand-slate-100 text-brand-cobalt-deep"
+                >
+                  <span class="material-symbols-outlined text-[24px]">terminal</span>
+                </div>
+                <h3 class="mb-2 font-title-lg text-title-lg text-brand-navy-900">
+                  Test Software Mechanics
+                </h3>
+                <p class="text-brand-slate-600 font-body-sm text-body-sm leading-relaxed">
+                  Review AVEVA E3D UI commands, 3D coordinate space manipulation, and database
+                  schemas directly through guided interactive screencasts.
+                </p>
+              </div>
+              <div class="rounded-lg border border-brand-slate-200 bg-surface-container-lowest p-6">
+                <div
+                  class="mb-4 flex h-10 w-10 items-center justify-center rounded bg-brand-slate-100 text-brand-cobalt-deep"
+                >
+                  <span class="material-symbols-outlined text-[24px]">corporate_fare</span>
+                </div>
+                <h3 class="mb-2 font-title-lg text-title-lg text-brand-navy-900">
+                  Corporate Sponsor Approval
+                </h3>
+                <p class="text-brand-slate-600 font-body-sm text-body-sm leading-relaxed">
+                  Present your free completed Module 1 &amp; 2 evaluation report to your employer or
+                  department manager to justify full company sponsorship.
+                </p>
+              </div>
+              <div class="rounded-lg border border-brand-slate-200 bg-surface-container-lowest p-6">
+                <div
+                  class="mb-4 flex h-10 w-10 items-center justify-center rounded bg-brand-slate-100 text-brand-cobalt-deep"
+                >
+                  <span class="material-symbols-outlined text-[24px]">verified_user</span>
+                </div>
+                <h3 class="mb-2 font-title-lg text-title-lg text-brand-navy-900">
+                  Zero Payment Trap
+                </h3>
+                <p class="text-brand-slate-600 font-body-sm text-body-sm leading-relaxed">
+                  No credit cards held hostage, no automatic renewals. The Free Preview remains open
+                  for 14 calendar days with complete independence.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- FACULTY & RESEARCH COMPLEX SHOWCASE -->
+      <section class="border-b border-brand-slate-200 bg-surface-container-lowest py-16">
+        <div class="mx-auto max-w-[1280px] px-6">
+          <div class="mx-auto mb-12 max-w-2xl text-center">
+            <span
+              class="font-label-md text-label-md font-bold uppercase tracking-wider text-primary"
+              >Faculty &amp; Facilities</span
+            >
+            <h2 class="mb-2 mt-1 font-headline-lg text-headline-lg text-brand-navy-900">
+              Engineered at Rivers State University Maritime Institute
+            </h2>
+            <p class="text-brand-slate-600 font-body-md text-body-md">
+              Learn under accredited AVEVA CAD Fellows and utilize the leading academic marine
+              engineering research facility in West Africa.
+            </p>
+          </div>
+          <div class="grid grid-cols-1 items-center gap-8 lg:grid-cols-12">
+            <!-- Instructor Profile (5 Cols) -->
+            <div
+              class="rounded-lg border border-brand-slate-200 bg-brand-slate-50 p-6 lg:col-span-5"
+            >
+              <div class="mb-6 flex items-center space-x-4">
+                <div
+                  class="h-20 w-20 shrink-0 overflow-hidden rounded-full border-2 border-brand-cobalt-deep"
+                >
+                  <img
+                    class="h-full w-full object-cover"
+                    data-alt="Close up professional portrait of Engr. Grace Briggs, a distinguished Nigerian female lead piping engineer with a warm, authoritative smile. She is wearing formal dark corporate engineering attire and a university faculty lanyard inside a high-tech CAE laboratory office setting with technical computer screens glowing faintly in the background. Natural soft institutional lighting, highly sharp detail."
+                    decoding="async"
+                    loading="lazy"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuCTQBHcXdWEmg6qwDw_cfXPb94lMsgkVC1xFE_tdiypUiGUa1bK2BNrRr6r_6mBs4Y_7T70H-caDf14T5fpLbKDSbyIoccGMnNI0CUBxoY5OtVBErzb-RdIXxs8E4OebWuwd_go58dDNEfooNI_nuhThZh13aK96KTQn9_9QetVq2xbtp75z7YX4VPvUo0rgNEf12YtrH8SbZEyZdaYCo1ONCXqz3xphED4obqjO9j86qrrD9_UkjL1"
+                  />
+                </div>
+                <div>
+                  <h3 class="font-headline-sm text-headline-sm text-brand-navy-900">
+                    Engr. Grace Briggs, FNSE
+                  </h3>
+                  <p class="font-label-md text-label-md font-semibold text-brand-cobalt-deep">
+                    Lead Instructor • AVEVA E3D Fellow
+                  </p>
+                  <p class="font-body-sm text-body-sm text-brand-slate-500">
+                    14+ Years Deep Offshore Topside Engineering
+                  </p>
+                </div>
+              </div>
+              <p class="mb-4 font-body-sm text-body-sm leading-relaxed text-brand-slate-700">
+                Engr. Briggs spearheaded 3D piping layout designs for landmark Gulf of Guinea FPSO
+                installations, managing piping stress and layout integrity across deepwater assets.
+                She personally supervises all workstation cohorts at RSU.
+              </p>
+              <div
+                class="text-brand-slate-600 space-y-2 border-t border-brand-slate-200 pt-4 font-label-sm text-label-sm"
+              >
+                <div class="flex items-center">
+                  <span class="material-symbols-outlined mr-2 text-[16px] text-status-verified"
+                    >verified</span
+                  >
+                  <span>Certified AVEVA E3D/PDMS Administrator</span>
+                </div>
+                <div class="flex items-center">
+                  <span class="material-symbols-outlined mr-2 text-[16px] text-status-verified"
+                    >verified</span
+                  >
+                  <span>Former Lead Piping Lead at Saipem Contracting</span>
+                </div>
+                <div class="flex items-center">
+                  <span class="material-symbols-outlined mr-2 text-[16px] text-status-verified"
+                    >verified</span
+                  >
+                  <span
+                    >Council for the Regulation of Engineering in Nigeria (COREN) Registered</span
+                  >
+                </div>
+              </div>
+            </div>
+            <!-- Academic & Simulation Facility Showcase (7 Cols) -->
+            <div class="lg:col-span-7">
+              <div
+                class="overflow-hidden rounded-lg border border-brand-slate-200 bg-surface-container-lowest shadow-sm"
+              >
+                <img
+                  class="h-64 w-full object-cover sm:h-72"
+                  data-alt="Wide panoramic exterior view of the modern glass-facade Rivers State University Centre for Marine and Offshore Technology Development building under clear blue skies. The architectural facility features outdoor hydrodynamic test basins, ship models, and a landscaped engineering promenade where academic researchers and engineering students walk in laboratory coats and hard hats. Clean, prestigious educational campus photography."
+                  decoding="async"
+                  loading="lazy"
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuB-CwvxaKKUAowyih7u0wlxpMeugkHBbXNpWw6KGvxLKyxwU5zTnDdNt9CcbHEjidrDrFPQSh8YMKdbDZVfnSLKrbKUNCbjcBKYTxBDsVcWWyUBAEP_U1kWqb2HuNFpO_hFk6bL4uPsqbzCabZ9Xf-QDLnZ1Bfn8UCqdjGiKNyH9pBm6cd_0McIY-iEpEPlYt93t0X7M1BmfAxbxTlq1xvkU7X-Hww3j6L0heqZEJY5fsQdo1z6XvDz"
+                />
+                <div class="p-6">
+                  <div class="mb-3 flex flex-col justify-between gap-2 sm:flex-row sm:items-center">
+                    <h4 class="font-title-lg text-title-lg text-brand-navy-900">
+                      RSU Marine &amp; Offshore Technology Supercluster
+                    </h4>
+                    <span
+                      class="rounded bg-brand-slate-100 px-2.5 py-1 font-code-sm text-code-sm text-brand-slate-500"
+                      >Nkpolu-Oroworukwo Campus, PH</span
+                    >
+                  </div>
+                  <p class="text-brand-slate-600 mb-4 font-body-sm text-body-sm">
+                    Home to the West African regional tow-tank testing basin, offshore flow loop
+                    simulation pipelines, and the 48-seat high-performance GPU CAD/CAE computing lab
+                    dedicated to 3D plant design and subsea modeling.
+                  </p>
+                  <div
+                    class="flex flex-wrap gap-4 font-label-sm text-label-sm text-brand-slate-700"
+                  >
+                    <span class="flex items-center"
+                      ><span class="material-symbols-outlined mr-1 text-[18px] text-primary"
+                        >speed</span
+                      >
+                      NVIDIA RTX Workstations</span
+                    >
+                    <span class="flex items-center"
+                      ><span class="material-symbols-outlined mr-1 text-[18px] text-primary"
+                        >bolt</span
+                      >
+                      Uninterrupted 24/7 Power Core</span
+                    >
+                    <span class="flex items-center"
+                      ><span class="material-symbols-outlined mr-1 text-[18px] text-primary"
+                        >wifi</span
+                      >
+                      Dual High-Speed Optical Fiber</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- INDUSTRY RECOGNITION & ALUMNI REVIEWS -->
+      <section class="border-b border-brand-slate-200 bg-background py-14">
+        <div class="mx-auto max-w-[1280px] px-6">
+          <div class="mb-8 text-center">
+            <span
+              class="font-label-sm text-label-sm font-semibold uppercase tracking-widest text-brand-slate-500"
+              >Trainees Placed With Premier Operators</span
+            >
+            <div class="mt-4 flex flex-wrap items-center justify-center gap-8 opacity-70 md:gap-16">
+              <span
+                class="font-headline-sm text-headline-sm font-bold tracking-tighter text-brand-slate-700"
+                >SHELL NIGERIA</span
+              >
+              <span
+                class="font-headline-sm text-headline-sm font-bold tracking-tighter text-brand-slate-700"
+                >SAIPEM CONTRACTING</span
+              >
+              <span
+                class="font-headline-sm text-headline-sm font-bold tracking-tighter text-brand-slate-700"
+                >DAEWOO E&amp;C</span
+              >
+              <span
+                class="font-headline-sm text-headline-sm font-bold tracking-tighter text-brand-slate-700"
+                >NLNG BONNY</span
+              >
+              <span
+                class="font-headline-sm text-headline-sm font-bold tracking-tighter text-brand-slate-700"
+                >TOTALENERGIES</span
+              >
+            </div>
+          </div>
+          <!-- Trainee Testimonials -->
+          <div class="mt-10 grid grid-cols-1 gap-6 md:grid-cols-3">
+            <div
+              class="rounded border border-brand-slate-200 bg-surface-container-lowest p-6 shadow-sm"
+            >
+              <div class="mb-3 flex items-center space-x-1 text-status-warning">
+                <span class="material-symbols-outlined fill-icon text-[18px]">star</span>
+                <span class="material-symbols-outlined fill-icon text-[18px]">star</span>
+                <span class="material-symbols-outlined fill-icon text-[18px]">star</span>
+                <span class="material-symbols-outlined fill-icon text-[18px]">star</span>
+                <span class="material-symbols-outlined fill-icon text-[18px]">star</span>
+              </div>
+              <p class="mb-4 font-body-sm text-body-sm leading-relaxed text-brand-slate-700">
+                "Starting with the free preview was what convinced my department head. I submitted
+                the Module 2 pump modeling dataset as proof of value, and Saipem sponsored my
+                complete NGN 350,000 tuition the following week."
+              </p>
+              <div class="border-t border-brand-slate-100 pt-3">
+                <div class="font-label-md text-label-md text-brand-navy-900">Emeka Nwosu</div>
+                <div class="font-body-sm text-body-sm text-brand-slate-500">
+                  Piping Design Engineer • Alumnus Cohort 18
+                </div>
+              </div>
+            </div>
+            <div
+              class="rounded border border-brand-slate-200 bg-surface-container-lowest p-6 shadow-sm"
+            >
+              <div class="mb-3 flex items-center space-x-1 text-status-warning">
+                <span class="material-symbols-outlined fill-icon text-[18px]">star</span>
+                <span class="material-symbols-outlined fill-icon text-[18px]">star</span>
+                <span class="material-symbols-outlined fill-icon text-[18px]">star</span>
+                <span class="material-symbols-outlined fill-icon text-[18px]">star</span>
+                <span class="material-symbols-outlined fill-icon text-[18px]">star</span>
+              </div>
+              <p class="mb-4 font-body-sm text-body-sm leading-relaxed text-brand-slate-700">
+                "The physical workstation experience at RSU is unmatched. Dual 4K screens running
+                AVEVA E3D without frame latency. The instructors are real oil &amp; gas topside
+                veterans who tear your clash matrices apart until they're pristine."
+              </p>
+              <div class="border-t border-brand-slate-100 pt-3">
+                <div class="font-label-md text-label-md text-brand-navy-900">Tariere Amadi</div>
+                <div class="font-body-sm text-body-sm text-brand-slate-500">
+                  Subsea Layout Trainee • Rivers State University
+                </div>
+              </div>
+            </div>
+            <div
+              class="rounded border border-brand-slate-200 bg-surface-container-lowest p-6 shadow-sm"
+            >
+              <div class="mb-3 flex items-center space-x-1 text-status-warning">
+                <span class="material-symbols-outlined fill-icon text-[18px]">star</span>
+                <span class="material-symbols-outlined fill-icon text-[18px]">star</span>
+                <span class="material-symbols-outlined fill-icon text-[18px]">star</span>
+                <span class="material-symbols-outlined fill-icon text-[18px]">star</span>
+                <span class="material-symbols-outlined fill-icon text-[18px]">star</span>
+              </div>
+              <p class="mb-4 font-body-sm text-body-sm leading-relaxed text-brand-slate-700">
+                "The verifiable digital certificate QR hash made my accreditation check with an
+                engineering contractor in Aberdeen instantaneous. Legitimate Rivers State University
+                Senate backing gives real weight to the qualification."
+              </p>
+              <div class="border-t border-brand-slate-100 pt-3">
+                <div class="font-label-md text-label-md text-brand-navy-900">Babajide Adeleke</div>
+                <div class="font-body-sm text-body-sm text-brand-slate-500">
+                  Lead CAD Technologist • Daewoo E&amp;C Joint Venture
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- FREQUENTLY ASKED QUESTIONS (Freemium & Cohort Operations) -->
+      <section class="border-b border-brand-slate-200 bg-surface-container-lowest py-16">
+        <div class="mx-auto max-w-[860px] px-6">
+          <div class="mb-10 text-center">
+            <span
+              class="font-label-md text-label-md font-bold uppercase tracking-wider text-primary"
+              >Clarifications</span
+            >
+            <h2 class="mb-2 mt-1 font-headline-lg text-headline-lg text-brand-navy-900">
+              Frequently Asked Questions: Free Preview vs. Full Track
+            </h2>
+            <p class="text-brand-slate-600 font-body-md text-body-md">
+              Answers regarding trial limitations, workstation reservations, and certificate
+              conferral.
+            </p>
+          </div>
+          <div class="space-y-4">
+            <details
+              class="group rounded-lg border border-brand-slate-200 bg-surface p-5 transition-colors open:bg-surface-container-low"
+            >
+              <summary
+                class="flex cursor-pointer list-none items-center justify-between font-title-lg text-title-lg text-brand-navy-900"
+              >
+                <span>How long does my Free Preview access remain active?</span>
+                <span class="material-symbols-outlined transition-transform group-open:rotate-180"
+                  >expand_more</span
+                >
+              </summary>
+              <p class="mt-3 font-body-md text-body-md leading-relaxed text-brand-slate-700">
+                The introductory preview provides 14 calendar days of uninterrupted access to
+                Modules 1 and 2, along with downloadable pipe specifications and self-evaluation
+                exercises. You can upgrade to the paid full track at any point during or after this
+                window without forfeiting completed modules.
+              </p>
+            </details>
+            <details
+              class="group rounded-lg border border-brand-slate-200 bg-surface p-5 transition-colors open:bg-surface-container-low"
+            >
+              <summary
+                class="flex cursor-pointer list-none items-center justify-between font-title-lg text-title-lg text-brand-navy-900"
+              >
+                <span>Do I receive a certificate for the Free Preview?</span>
+                <span class="material-symbols-outlined transition-transform group-open:rotate-180"
+                  >expand_more</span
+                >
+              </summary>
+              <p class="mt-3 font-body-md text-body-md leading-relaxed text-brand-slate-700">
+                No. The Free Preview issues an informal "Audit Completion Transcript" summarizing
+                your quiz score and hours logged. The official, Senate-approved Rivers State
+                University Certificate of Competence with tamper-evident cryptographic verification
+                ledger is conferred exclusively upon defense of the full Capstone offshore topside
+                project in the paid track.
+              </p>
+            </details>
+            <details
+              class="group rounded-lg border border-brand-slate-200 bg-surface p-5 transition-colors open:bg-surface-container-low"
+            >
+              <summary
+                class="flex cursor-pointer list-none items-center justify-between font-title-lg text-title-lg text-brand-navy-900"
+              >
+                <span
+                  >Can I complete the entire course remotely without coming to Port Harcourt?</span
+                >
+                <span class="material-symbols-outlined transition-transform group-open:rotate-180"
+                  >expand_more</span
+                >
+              </summary>
+              <p class="mt-3 font-body-md text-body-md leading-relaxed text-brand-slate-700">
+                The introductory Modules 1 &amp; 2 are 100% online on-demand. However, Modules 3
+                through 5 are conducted on high-performance physical CAD workstations at the RSU
+                campus to comply with AVEVA software institutional enterprise licensing terms. For
+                corporate groups residing outside Rivers State, an intensive 2-week residential
+                executive residency option is available upon request.
+              </p>
+            </details>
+            <details
+              class="group rounded-lg border border-brand-slate-200 bg-surface p-5 transition-colors open:bg-surface-container-low"
+            >
+              <summary
+                class="flex cursor-pointer list-none items-center justify-between font-title-lg text-title-lg text-brand-navy-900"
+              >
+                <span>What are the installment terms for the full NGN 350,000 tuition?</span>
+                <span class="material-symbols-outlined transition-transform group-open:rotate-180"
+                  >expand_more</span
+                >
+              </summary>
+              <p class="mt-3 font-body-md text-body-md leading-relaxed text-brand-slate-700">
+                Trainees may choose either a single full payment (which guarantees workstation
+                hardware assignment immediately) or a 2-part installment plan (60% / NGN 210,000 at
+                enrollment to unlock Module 3, and the final 40% / NGN 140,000 prior to Module 5
+                Isometric extraction and capstone defense).
+              </p>
+            </details>
+          </div>
+        </div>
+      </section>
+      <!-- REGISTRATION MODAL / BOTTOM CONVERSION ANCHOR -->
+      <section
+        class="relative bg-brand-navy-950 py-16 text-surface-bright"
+        id="enrollment-modal"
+      >
+        <div class="mx-auto max-w-[1000px] px-6 text-center">
+          <span
+            class="mb-4 inline-block rounded bg-status-verified px-3 py-1 font-label-sm text-label-sm font-bold uppercase tracking-wider text-surface-container-lowest"
+          >
+            Cohorts Begin Monthly
+          </span>
+          <h2 class="mb-4 font-display-lg text-display-lg tracking-tight text-surface-bright">
+            Reserve Your CAD Terminal or Start Your Free Preview
+          </h2>
+          <p class="mx-auto mb-8 max-w-2xl font-body-lg text-body-lg text-brand-slate-400">
+            Join Nigeria's foremost industrial pipeline and topside 3D modeling engineers at Rivers
+            State University.
+          </p>
+          <!-- Dynamic Action Form -->
+          <div
+            class="mx-auto max-w-xl rounded-lg border border-brand-slate-200 bg-surface-container-lowest p-6 text-left text-on-surface shadow-2xl sm:p-8"
+          >
+            <h3 class="mb-1 font-headline-sm text-headline-sm text-brand-navy-900">
+              Direct Registration Form
+            </h3>
+            <p class="mb-6 font-body-sm text-body-sm text-brand-slate-500">
+              Select your initial entry pathway. Upgrades can be triggered seamlessly anytime.
+            </p>
+            <form
+              class="space-y-4"
+              onsubmit="
+                event.preventDefault();
+                alert(
+                  'Registration submitted for processing. Check your email for instant LMS credentials.',
+                );
+              "
+            >
+              <div>
+                <label class="mb-1 block font-label-md text-label-md text-brand-slate-700"
+                  >Full Legal Name (For Registry Records)</label
+                >
+                <input
+                  class="border-brand-slate-300 h-[42px] w-full rounded border px-3.5 font-body-md text-body-md outline-none focus:border-brand-cobalt-deep focus:ring-2 focus:ring-brand-cobalt-deep/20"
+                  placeholder="e.g., Engr. Chukwuma Bala"
+                  required=""
+                  type="text"
+                />
+              </div>
+              <div class="grid grid-cols-1 gap-4 sm:grid-cols-2">
+                <div>
+                  <label class="mb-1 block font-label-md text-label-md text-brand-slate-700"
+                    >Official Email Address</label
+                  >
+                  <input
+                    class="border-brand-slate-300 h-[42px] w-full rounded border px-3.5 font-body-md text-body-md outline-none focus:border-brand-cobalt-deep focus:ring-2 focus:ring-brand-cobalt-deep/20"
+                    placeholder="name@company.com"
+                    required=""
+                    type="email"
+                  />
+                </div>
+                <div>
+                  <label class="mb-1 block font-label-md text-label-md text-brand-slate-700"
+                    >Phone / WhatsApp</label
+                  >
+                  <input
+                    class="border-brand-slate-300 h-[42px] w-full rounded border px-3.5 font-body-md text-body-md outline-none focus:border-brand-cobalt-deep focus:ring-2 focus:ring-brand-cobalt-deep/20"
+                    placeholder="+234 800 000 0000"
+                    required=""
+                    type="tel"
+                  />
+                </div>
+              </div>
+              <div>
+                <label class="mb-1 block font-label-md text-label-md text-brand-slate-700"
+                  >Select Chosen Pathway</label
+                >
+                <div class="mt-1.5 grid grid-cols-1 gap-3 sm:grid-cols-2">
+                  <label
+                    class="flex cursor-pointer items-start space-x-2.5 rounded border border-brand-slate-200 p-3 hover:border-status-verified has-[:checked]:border-status-verified has-[:checked]:bg-status-verified-bg/20"
+                  >
+                    <input
+                      checked=""
+                      class="mt-1 text-status-verified focus:ring-status-verified"
+                      name="pathway"
+                      type="radio"
+                    />
+                    <div>
+                      <span class="block font-label-md text-label-md text-brand-navy-900"
+                        >Free Preview (NGN 0)</span
+                      >
+                      <span class="block font-body-sm text-body-sm text-brand-slate-500"
+                        >Modules 1 &amp; 2 Online</span
+                      >
+                    </div>
+                  </label>
+                  <label
+                    class="flex cursor-pointer items-start space-x-2.5 rounded border border-brand-slate-200 p-3 hover:border-brand-cobalt-deep has-[:checked]:border-brand-cobalt-deep has-[:checked]:bg-surface-container-low"
+                  >
+                    <input
+                      class="mt-1 text-brand-cobalt-deep focus:ring-brand-cobalt-deep"
+                      name="pathway"
+                      type="radio"
+                    />
+                    <div>
+                      <span class="block font-label-md text-label-md text-brand-navy-900"
+                        >Full Cohort (NGN 350K)</span
+                      >
+                      <span class="block font-body-sm text-body-sm text-brand-slate-500"
+                        >Terminal + Senate Cert</span
+                      >
+                    </div>
+                  </label>
+                </div>
+              </div>
+              <button
+                class="mt-4 flex w-full items-center justify-center space-x-2 rounded bg-brand-cobalt-deep py-3.5 font-label-md text-label-md text-surface-container-lowest shadow-md transition-all duration-150 hover:bg-primary active:scale-95"
+                type="submit"
+              >
+                <span class="material-symbols-outlined text-[18px]">verified</span>
+                <span>Confirm Selection &amp; Issue Access</span>
+              </button>
+              <p class="text-center font-label-sm text-label-sm text-brand-slate-400">
+                Affiliated with Rivers State University • Center for Marine &amp; Offshore
+                Technology
+              </p>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- SHARED COMPONENT: Footer -->
+    <cmotd-institution-strip></cmotd-institution-strip>
+    <cmotd-site-footer></cmotd-site-footer>
+  </body>
+</html>

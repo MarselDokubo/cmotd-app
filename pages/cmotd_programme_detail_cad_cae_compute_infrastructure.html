@@ -1,0 +1,852 @@
+<!doctype html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      content="width=device-width, initial-scale=1.0"
+      name="viewport"
+    />
+    <title>
+      CAD/CAE Compute Infrastructure | PGD Subsea Engineering | CMOTD Rivers State University
+    </title>
+    <link
+      href="../favicon.ico"
+      rel="icon"
+      type="image/x-icon"
+    />
+
+    <!-- Tailwind CSS CDN with plugins -->
+    <link
+      href="../assets/css/tailwind-build.css"
+      rel="stylesheet"
+    />
+    <link
+      href="../assets/css/cmotd-global.css"
+      rel="stylesheet"
+    />
+    <script
+      defer=""
+      src="../assets/js/site-config.js"
+    ></script>
+    <script
+      defer=""
+      src="../assets/js/cmotd-components.js"
+    ></script>
+  </head>
+  <body
+    class="bg-surface font-body-md text-on-surface antialiased selection:bg-primary-container selection:text-on-primary"
+  >
+    <!-- TopNavBar (Shared Component JSON anchor) -->
+    <cmotd-site-header active="programmes"></cmotd-site-header>
+    <!-- Programme Breadcrumb & Architectural Header -->
+    <section class="border-b border-brand-slate-200 bg-surface-container-lowest py-6">
+      <div class="mx-auto max-w-[1280px] px-6">
+        <!-- Breadcrumb Bar -->
+        <div class="mb-4 flex items-center gap-2 font-label-sm text-label-sm text-brand-slate-500">
+          <a
+            class="hover:text-primary"
+            href="#"
+            >Programmes &amp; Courses</a
+          >
+          <span class="material-symbols-outlined text-[14px]">chevron_right</span>
+          <a
+            class="hover:text-primary"
+            href="#"
+            >Subsea Engineering &amp; Marine Operations</a
+          >
+          <span class="material-symbols-outlined text-[14px]">chevron_right</span>
+          <span class="font-semibold text-brand-slate-800">PGD-SUB-801</span>
+        </div>
+        <!-- Main Programme Lockup Banner -->
+        <div class="flex flex-col gap-6 lg:flex-row lg:items-center lg:justify-between">
+          <div>
+            <div class="mb-2 flex flex-wrap items-center gap-2">
+              <span
+                class="rounded-lg bg-brand-navy-900 px-2.5 py-1 font-label-sm text-label-sm text-white"
+                >POSTGRADUATE DIPLOMA</span
+              >
+              <span
+                class="flex items-center gap-1 rounded-lg border border-status-verified-border bg-status-verified-bg px-2.5 py-1 font-label-sm text-label-sm font-semibold text-status-verified"
+              >
+                <span class="h-1.5 w-1.5 rounded-full bg-status-verified"></span>
+                9-MONTH PROFESSIONAL INTENSIVE
+              </span>
+              <span
+                class="rounded-lg bg-brand-slate-100 px-2.5 py-1 font-label-sm text-label-sm text-brand-slate-700"
+                >COUNCIL OF REGISTERED ENGINEERS (COREN) ACCREDITED</span
+              >
+            </div>
+            <h1 class="font-headline-lg text-headline-lg tracking-tight text-brand-navy-900">
+              Advanced Postgraduate Diploma in Subsea Engineering &amp; Deepwater Pipeline Systems
+            </h1>
+            <p class="mt-1 max-w-4xl font-body-md text-body-md text-brand-slate-700">
+              Technical specialization bridging high-strain deepwater hydrodynamics, structural
+              subsea architecture, flow assurance, and finite element numerical computation for
+              offshore West African deep reservoirs.
+            </p>
+          </div>
+          <!-- Academic Accreditation Badges & Seat Stat -->
+          <div
+            class="flex flex-shrink-0 items-center gap-4 rounded-xl border border-brand-slate-200 bg-brand-slate-50 p-3.5"
+          >
+            <div class="text-right">
+              <div
+                class="font-label-sm text-label-sm uppercase tracking-wider text-brand-slate-500"
+              >
+                Cohort Capacity
+              </div>
+              <div class="font-title-lg text-title-lg font-bold text-brand-navy-900">
+                18 Dedicated Terminals
+              </div>
+              <div
+                class="flex items-center justify-end gap-1 font-label-sm text-label-sm font-medium text-status-verified"
+              >
+                <span class="h-1.5 w-1.5 animate-pulse rounded-full bg-status-verified"></span>
+                4 Workstations Remaining
+              </div>
+            </div>
+            <div
+              class="flex h-12 w-12 items-center justify-center rounded-lg border border-brand-slate-200 bg-surface-container-lowest text-primary shadow-sm"
+            >
+              <span class="material-symbols-outlined text-[28px]">laptop_chromebook</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Programme Tabbed Sub-Navigation Bar -->
+    <nav class="sticky top-[76px] z-40 border-b border-brand-slate-200 bg-surface-container-lowest">
+      <div class="no-scrollbar mx-auto max-w-[1280px] overflow-x-auto px-6">
+        <div class="flex min-w-max items-center space-x-8">
+          <!-- Tab 1 -->
+          <a
+            class="flex items-center gap-2 py-4 font-label-md text-label-md text-brand-slate-500 transition-colors hover:text-primary"
+            href="#"
+          >
+            <span>Programme Overview</span>
+          </a>
+          <!-- Tab 2 -->
+          <a
+            class="flex items-center gap-2 py-4 font-label-md text-label-md text-brand-slate-500 transition-colors hover:text-primary"
+            href="#"
+          >
+            <span>Curriculum &amp; Modular Syllabus</span>
+          </a>
+          <!-- Tab 3: ACTIVE Sub-navigation tab -->
+          <a
+            aria-current="page"
+            class="flex items-center gap-2 border-b-2 border-primary py-4 font-label-md text-label-md font-semibold text-primary"
+            href="#"
+          >
+            <span class="material-symbols-outlined text-[18px]">memory</span>
+            <span>CAD/CAE Compute Infrastructure</span>
+            <span
+              class="rounded-full bg-status-verified-bg px-2 py-0.5 font-label-sm text-label-sm font-bold text-status-verified"
+              >1:1 DEDICATED</span
+            >
+          </a>
+          <!-- Tab 4 -->
+          <a
+            class="flex items-center gap-2 py-4 font-label-md text-label-md text-brand-slate-500 transition-colors hover:text-primary"
+            href="#"
+          >
+            <span>Academic Faculty &amp; Industry Fellows</span>
+          </a>
+          <!-- Tab 5 -->
+          <a
+            class="flex items-center gap-2 py-4 font-label-md text-label-md text-brand-slate-500 transition-colors hover:text-primary"
+            href="#"
+          >
+            <span>Industry Governance &amp; Defense</span>
+          </a>
+          <!-- Tab 6 -->
+          <a
+            class="flex items-center gap-2 py-4 font-label-md text-label-md text-brand-slate-500 transition-colors hover:text-primary"
+            href="#"
+          >
+            <span>Tuitions and Fees</span>
+          </a>
+        </div>
+      </div>
+    </nav>
+    <!-- Main Technical Canvas -->
+    <main class="mx-auto max-w-[1280px] px-6 py-10">
+      <div class="grid grid-cols-1 items-start gap-8 lg:grid-cols-12">
+        <!-- Primary Column: Technical Infrastructure Content (8 cols) -->
+        <div class="space-y-10 lg:col-span-8">
+          <!-- Banner Card: CAD/CAE Real Training Facility Snapshot -->
+          <div
+            class="relative overflow-hidden rounded-xl border border-brand-slate-200 bg-brand-navy-950 shadow-sm"
+          >
+            <div class="relative h-80 w-full overflow-hidden">
+              <img
+                class="h-full w-full object-cover object-center brightness-90"
+                data-alt="A brightly lit, modern institutional CAD CAE computer engineering lab at Rivers State University in Port Harcourt. Nigerian engineering students and scholars are seated at structured rows of dual-monitor workstations modeling complex offshore piping and subsea riser CAD schematics. Instructors in corporate engineering attire provide hands-on technical guidance. The room features professional lighting, technical charts on walls, and advanced computational hardware."
+                decoding="async"
+                fetchpriority="high"
+                loading="eager"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuD8IAKLEh_wyaBURHFy01FY3T1-c7Q7Y1A5-zD0apWsNBXcN2vZDYdW4RTOcl-Yc1QuZyFy2ZxTcBO0J4RMG49mxCa37JY3ALB3SyCAp6ARMVmgIpFMhYfp7mOtKgqs6MF1_Fl51WdD4Hq8bnuC42CTxyI-7pevqBESwT4rE8Q1lXH2ew9a1IzOVAh0WtxD9O78JandOn5xxtPqEAlfyNtkvSxehjPJFRbKft9KHOloux-immD7qpdN"
+              />
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-brand-navy-950 via-brand-navy-950/40 to-transparent"
+              ></div>
+              <div
+                class="absolute bottom-6 left-6 right-6 flex flex-col gap-4 md:flex-row md:items-end md:justify-between"
+              >
+                <div>
+                  <div
+                    class="mb-2 inline-flex items-center gap-2 rounded bg-primary px-2.5 py-1 font-label-sm text-label-sm text-white"
+                  >
+                    <span class="material-symbols-outlined text-[14px]">domain</span>
+                    <span>CAD/CAE TRAINING CENTER | FACULTY OF ENGINEERING</span>
+                  </div>
+                  <h2 class="font-headline-md text-headline-md text-white">
+                    RSU High-Performance Marine Simulation Facility
+                  </h2>
+                  <p class="mt-0.5 font-body-sm text-body-sm text-brand-slate-400">
+                    Direct physical training center situated at the Department of Marine Engineering
+                    Complex, Port Harcourt, Rivers State.
+                  </p>
+                </div>
+                <div
+                  class="flex items-center gap-2 self-start rounded-lg border border-white/20 bg-surface-container-lowest/90 px-3 py-1.5 backdrop-blur md:self-auto"
+                >
+                  <span class="material-symbols-outlined text-[18px] text-status-verified"
+                    >verified_user</span
+                  >
+                  <span class="font-label-sm text-label-sm font-semibold text-brand-slate-800"
+                    >Tier-3 Lab Certification</span
+                  >
+                </div>
+              </div>
+            </div>
+            <!-- Zero Seat-Sharing Guarantee Banner -->
+            <div
+              class="flex flex-col items-start justify-between gap-3 border-t border-status-verified-border bg-status-verified-bg px-6 py-4 sm:flex-row sm:items-center"
+            >
+              <div class="flex items-center gap-3">
+                <div
+                  class="flex h-9 w-9 flex-shrink-0 items-center justify-center rounded-lg bg-status-verified text-white"
+                >
+                  <span class="material-symbols-outlined text-[20px]">group_off</span>
+                </div>
+                <div>
+                  <div class="font-title-lg text-title-lg font-bold text-brand-navy-900">
+                    Zero Seat-Sharing Guarantee (Strict 1:1 Hardware Ratio)
+                  </div>
+                  <p class="font-body-sm text-body-sm text-brand-slate-700">
+                    Every admitted candidate is contractually assigned an independent workstation
+                    terminal with exclusive local NVMe storage and dedicated GPU compute quotas for
+                    the entire 9-month program tenure.
+                  </p>
+                </div>
+              </div>
+              <div
+                class="whitespace-nowrap rounded border border-status-verified-border bg-white px-3 py-1 font-label-sm text-label-sm font-bold text-status-verified"
+              >
+                STRICT CAP: 18 SEATS
+              </div>
+            </div>
+          </div>
+          <!-- Section: Technical Workstation Specification Breakdown -->
+          <section
+            class="rounded-xl border border-brand-slate-200 bg-surface-container-lowest p-6 shadow-sm"
+          >
+            <div
+              class="mb-6 flex items-center justify-between border-b border-brand-slate-200 pb-4"
+            >
+              <div class="flex items-center gap-3">
+                <div
+                  class="flex h-8 w-8 items-center justify-center rounded-lg bg-primary-container text-white"
+                >
+                  <span class="material-symbols-outlined text-[18px]">developer_board</span>
+                </div>
+                <div>
+                  <h3 class="font-title-lg text-title-lg font-bold text-brand-navy-900">
+                    Dedicated Workstation Architecture &amp; Compute Node Specs
+                  </h3>
+                  <p class="font-body-sm text-body-sm text-brand-slate-500">
+                    Engineered to sustain continuous non-linear FEA, high-cycle fatigue solver
+                    matrices, and dynamic wave-structure collision analysis.
+                  </p>
+                </div>
+              </div>
+              <span
+                class="rounded bg-brand-slate-100 px-2.5 py-1 font-code-sm font-label-sm text-label-sm text-brand-slate-500"
+              >
+                NODE TYPE: HP-Z4-G4-IND
+              </span>
+            </div>
+            <div class="grid grid-cols-1 gap-4 md:grid-cols-2">
+              <!-- Spec Card 1: Processor -->
+              <div
+                class="rounded-lg border border-brand-slate-200 bg-brand-slate-50 p-4 transition-colors hover:border-brand-slate-400"
+              >
+                <div class="flex items-start justify-between">
+                  <span
+                    class="font-label-sm text-label-sm uppercase tracking-wider text-brand-slate-500"
+                    >Processing Core</span
+                  >
+                  <span class="material-symbols-outlined text-[18px] text-primary">format_h4</span>
+                </div>
+                <div class="mt-2 font-headline-sm text-headline-sm text-brand-navy-900">
+                  Intel® Xeon® W-2245
+                </div>
+                <div class="mt-1 font-body-sm text-body-sm text-brand-slate-700">
+                  8 Cores / 16 Threads, 3.90 GHz Base, up to 4.70 GHz Turbo, 16.5 MB Cache. Scaled
+                  for single-threaded CAD geometry engines and parallel solver runs.
+                </div>
+              </div>
+              <!-- Spec Card 2: Memory -->
+              <div
+                class="rounded-lg border border-brand-slate-200 bg-brand-slate-50 p-4 transition-colors hover:border-brand-slate-400"
+              >
+                <div class="flex items-start justify-between">
+                  <span
+                    class="font-label-sm text-label-sm uppercase tracking-wider text-brand-slate-500"
+                    >System Memory</span
+                  >
+                  <span class="material-symbols-outlined text-[18px] text-primary">memory</span>
+                </div>
+                <div class="mt-2 font-headline-sm text-headline-sm text-brand-navy-900">
+                  64 GB DDR4-2933 ECC
+                </div>
+                <div class="mt-1 font-body-sm text-body-sm text-brand-slate-700">
+                  Quad-Channel Registered Error-Correcting Code RAM preventing numerical truncation
+                  errors during 72-hour transient dynamic marine riser simulations.
+                </div>
+              </div>
+              <!-- Spec Card 3: GPU -->
+              <div
+                class="rounded-lg border border-brand-slate-200 bg-brand-slate-50 p-4 transition-colors hover:border-brand-slate-400"
+              >
+                <div class="flex items-start justify-between">
+                  <span
+                    class="font-label-sm text-label-sm uppercase tracking-wider text-brand-slate-500"
+                    >GPU / Tensor Acceleration</span
+                  >
+                  <span class="material-symbols-outlined text-[18px] text-primary">view_in_ar</span>
+                </div>
+                <div class="mt-2 font-headline-sm text-headline-sm text-brand-navy-900">
+                  NVIDIA® RTX™ A4000
+                </div>
+                <div class="mt-1 font-body-sm text-body-sm text-brand-slate-700">
+                  16 GB GDDR6 with ECC, 6,144 Ampere CUDA cores, 192 Tensor cores. Certified ISV
+                  driver stack for AVEVA E3D, Caesar II, and ANSYS Workbench viewport shading.
+                </div>
+              </div>
+              <!-- Spec Card 4: Displays & I/O -->
+              <div
+                class="rounded-lg border border-brand-slate-200 bg-brand-slate-50 p-4 transition-colors hover:border-brand-slate-400"
+              >
+                <div class="flex items-start justify-between">
+                  <span
+                    class="font-label-sm text-label-sm uppercase tracking-wider text-brand-slate-500"
+                    >Display &amp; Storage Array</span
+                  >
+                  <span class="material-symbols-outlined text-[18px] text-primary"
+                    >desktop_windows</span
+                  >
+                </div>
+                <div class="mt-2 font-headline-sm text-headline-sm text-brand-navy-900">
+                  Dual 27" 4K Calibrated IPS
+                </div>
+                <div class="mt-1 font-body-sm text-body-sm text-brand-slate-700">
+                  Dual 3840×2160 UHD panels at 100% sRGB color gamut + 1TB Samsung 980 Pro PCIe 4.0
+                  NVMe M.2 SSD for zero-latency project batch file transfers.
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- Section: Licensed Enterprise Software Suites -->
+          <section
+            class="rounded-xl border border-brand-slate-200 bg-surface-container-lowest p-6 shadow-sm"
+          >
+            <div
+              class="mb-6 flex items-center justify-between border-b border-brand-slate-200 pb-4"
+            >
+              <div class="flex items-center gap-3">
+                <div
+                  class="flex h-8 w-8 items-center justify-center rounded-lg bg-primary-container text-white"
+                >
+                  <span class="material-symbols-outlined text-[18px]">verified</span>
+                </div>
+                <div>
+                  <h3 class="font-title-lg text-title-lg font-bold text-brand-navy-900">
+                    Enterprise Software Stacks &amp; Official Licensing
+                  </h3>
+                  <p class="font-body-sm text-body-sm text-brand-slate-500">
+                    Full industrial licenses deployed on dedicated workstations. No watermarked
+                    student editions or curtailed functionality.
+                  </p>
+                </div>
+              </div>
+              <span
+                class="rounded border border-status-verified-border bg-status-verified-bg px-2.5 py-1 font-label-sm text-label-sm font-bold text-status-verified"
+              >
+                100% COMMERCIAL LICENSES
+              </span>
+            </div>
+            <div class="space-y-4">
+              <!-- Software Item 1: Caesar II -->
+              <div
+                class="flex flex-col justify-between gap-4 rounded-lg border border-brand-slate-200 bg-white p-4 transition-all hover:shadow-sm md:flex-row md:items-center"
+              >
+                <div class="flex items-start gap-3">
+                  <div
+                    class="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded bg-brand-navy-900 text-label-md font-bold text-white"
+                  >
+                    C II
+                  </div>
+                  <div>
+                    <div class="flex items-center gap-2">
+                      <h4 class="font-headline-sm text-headline-sm text-brand-navy-900">
+                        Hexagon CAESAR II® v13.0
+                      </h4>
+                      <span
+                        class="rounded bg-brand-slate-100 px-2 py-0.5 font-code-sm font-label-sm text-label-sm text-brand-slate-700"
+                        >Pipe Stress Engineering</span
+                      >
+                    </div>
+                    <p class="text-brand-slate-600 mt-1 font-body-sm text-body-sm">
+                      Static and dynamic pipe stress compliance conforming to ASME B31.3, B31.4,
+                      B31.8, and DNV-ST-F101 submarine pipeline criteria. Includes wave, current,
+                      and soil-pipe interaction modules.
+                    </p>
+                  </div>
+                </div>
+                <div class="flex flex-shrink-0 items-center gap-2 md:flex-col md:items-end">
+                  <span
+                    class="flex items-center gap-1 font-label-sm text-label-sm font-semibold text-status-verified"
+                  >
+                    <span class="material-symbols-outlined text-[16px]">check_circle</span>
+                    Node-Locked License
+                  </span>
+                  <span class="font-label-sm text-label-sm text-brand-slate-500"
+                    >Module: Dynamic Modal / Seismic</span
+                  >
+                </div>
+              </div>
+              <!-- Software Item 2: Orcina OrcaFlex -->
+              <div
+                class="flex flex-col justify-between gap-4 rounded-lg border border-brand-slate-200 bg-white p-4 transition-all hover:shadow-sm md:flex-row md:items-center"
+              >
+                <div class="flex items-start gap-3">
+                  <div
+                    class="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded bg-brand-cobalt-deep text-label-md font-bold text-white"
+                  >
+                    OFX
+                  </div>
+                  <div>
+                    <div class="flex items-center gap-2">
+                      <h4 class="font-headline-sm text-headline-sm text-brand-navy-900">
+                        Orcina OrcaFlex™ 11.4
+                      </h4>
+                      <span
+                        class="rounded bg-brand-slate-100 px-2 py-0.5 font-code-sm font-label-sm text-label-sm text-brand-slate-700"
+                        >SURF Hydrodynamic Modeling</span
+                      >
+                    </div>
+                    <p class="text-brand-slate-600 mt-1 font-body-sm text-body-sm">
+                      Industry standard for dynamic analysis of offshore marine systems: Steel
+                      Catenary Risers (SCR), flexible flowlines, subsea umbilical moorings, pipelay
+                      S-lay/J-lay stinger dynamics, and VIV fatigue.
+                    </p>
+                  </div>
+                </div>
+                <div class="flex flex-shrink-0 items-center gap-2 md:flex-col md:items-end">
+                  <span
+                    class="flex items-center gap-1 font-label-sm text-label-sm font-semibold text-status-verified"
+                  >
+                    <span class="material-symbols-outlined text-[16px]">check_circle</span>
+                    Enterprise Dongle Protected
+                  </span>
+                  <span class="font-label-sm text-label-sm text-brand-slate-500"
+                    >Includes OrcFxAPI (Python)</span
+                  >
+                </div>
+              </div>
+              <!-- Software Item 3: AVEVA E3D & PDMS -->
+              <div
+                class="flex flex-col justify-between gap-4 rounded-lg border border-brand-slate-200 bg-white p-4 transition-all hover:shadow-sm md:flex-row md:items-center"
+              >
+                <div class="flex items-start gap-3">
+                  <div
+                    class="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded bg-brand-navy-900 text-label-md font-bold text-white"
+                  >
+                    AVV
+                  </div>
+                  <div>
+                    <div class="flex items-center gap-2">
+                      <h4 class="font-headline-sm text-headline-sm text-brand-navy-900">
+                        AVEVA™ E3D Marine &amp; PDMS 12.1
+                      </h4>
+                      <span
+                        class="rounded bg-brand-slate-100 px-2 py-0.5 font-code-sm font-label-sm text-label-sm text-brand-slate-700"
+                        >Detailed 3D Plant &amp; Hull Piping</span
+                      >
+                    </div>
+                    <p class="text-brand-slate-600 mt-1 font-body-sm text-body-sm">
+                      Multi-discipline 3D design software for offshore FPSO topsides, subsea
+                      manifold skids, subsea Christmas trees (XTs), spool tie-in metrology, and
+                      clash-detection routing.
+                    </p>
+                  </div>
+                </div>
+                <div class="flex flex-shrink-0 items-center gap-2 md:flex-col md:items-end">
+                  <span
+                    class="flex items-center gap-1 font-label-sm text-label-sm font-semibold text-status-verified"
+                  >
+                    <span class="material-symbols-outlined text-[16px]">check_circle</span>
+                    Network License Server
+                  </span>
+                  <span class="font-label-sm text-label-sm text-brand-slate-500"
+                    >Includes Marine Hull Catalogs</span
+                  >
+                </div>
+              </div>
+              <!-- Software Item 4: ANSYS & OLGA & Python -->
+              <div
+                class="flex flex-col justify-between gap-4 rounded-lg border border-brand-slate-200 bg-white p-4 transition-all hover:shadow-sm md:flex-row md:items-center"
+              >
+                <div class="flex items-start gap-3">
+                  <div
+                    class="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded bg-brand-slate-700 text-label-md font-bold text-white"
+                  >
+                    CFD
+                  </div>
+                  <div>
+                    <div class="flex items-center gap-2">
+                      <h4 class="font-headline-sm text-headline-sm text-brand-navy-900">
+                        ANSYS Workbench &amp; OLGA Multiphase
+                      </h4>
+                      <span
+                        class="rounded bg-brand-slate-100 px-2 py-0.5 font-code-sm font-label-sm text-label-sm text-brand-slate-700"
+                        >FEA / Flow Assurance</span
+                      >
+                    </div>
+                    <p class="text-brand-slate-600 mt-1 font-body-sm text-body-sm">
+                      Schlumberger OLGA transient multiphase thermal-hydraulic flow simulation
+                      coupled with ANSYS Mechanical for subsea pipeline lateral buckling and thermal
+                      expansion analysis.
+                    </p>
+                  </div>
+                </div>
+                <div class="flex flex-shrink-0 items-center gap-2 md:flex-col md:items-end">
+                  <span
+                    class="flex items-center gap-1 font-label-sm text-label-sm font-semibold text-status-verified"
+                  >
+                    <span class="material-symbols-outlined text-[16px]">check_circle</span>
+                    Multiphase Academic Consortium
+                  </span>
+                  <span class="font-label-sm text-label-sm text-brand-slate-500"
+                    >Python 3.11 SciPy/NumPy Stack</span
+                  >
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- Section: Network & Remote Virtualization Cluster -->
+          <section
+            class="rounded-xl border border-brand-slate-200 bg-surface-container-lowest p-6 shadow-sm"
+          >
+            <div class="mb-6 flex items-center gap-3 border-b border-brand-slate-200 pb-4">
+              <div
+                class="flex h-8 w-8 items-center justify-center rounded-lg bg-primary-container text-white"
+              >
+                <span class="material-symbols-outlined text-[18px]">hub</span>
+              </div>
+              <div>
+                <h3 class="font-title-lg text-title-lg font-bold text-brand-navy-900">
+                  Optical Network Infrastructure &amp; Remote Solver Access
+                </h3>
+                <p class="font-body-sm text-body-sm text-brand-slate-500">
+                  Seamless hybrid compute model allowing seamless off-hours queue submission from
+                  anywhere in Port Harcourt or offshore operator bases.
+                </p>
+              </div>
+            </div>
+            <div class="grid grid-cols-1 gap-4 md:grid-cols-3">
+              <div class="rounded-lg border border-brand-slate-200 bg-brand-slate-50 p-4">
+                <div class="mb-2 flex items-center gap-2 font-bold text-primary">
+                  <span class="material-symbols-outlined text-[20px]">settings_ethernet</span>
+                  <span class="font-label-md text-label-md">10 Gbps Fiber Backbone</span>
+                </div>
+                <p class="font-body-sm text-body-sm text-brand-slate-700">
+                  Dual redundant optical pipeline terminating directly at Rivers State University
+                  ICT Datacenter with dedicated low-latency gateway to local campus clusters.
+                </p>
+              </div>
+              <div class="rounded-lg border border-brand-slate-200 bg-brand-slate-50 p-4">
+                <div class="mb-2 flex items-center gap-2 font-bold text-primary">
+                  <span class="material-symbols-outlined text-[20px]">vpn_lock</span>
+                  <span class="font-label-md text-label-md">Encrypted WireGuard VPN</span>
+                </div>
+                <p class="font-body-sm text-body-sm text-brand-slate-700">
+                  Secure dual-factor authentication portal enabling remote terminal access to your
+                  assigned lab desktop after 17:00 WAT without leaving your laptop.
+                </p>
+              </div>
+              <div class="rounded-lg border border-brand-slate-200 bg-brand-slate-50 p-4">
+                <div class="mb-2 flex items-center gap-2 font-bold text-primary">
+                  <span class="material-symbols-outlined text-[20px]">electric_bolt</span>
+                  <span class="font-label-md text-label-md">Continuous Lab Power</span>
+                </div>
+                <p class="font-body-sm text-body-sm text-brand-slate-700">
+                  Dual 60kVA online industrial UPS arrays coupled with automatic transfer to
+                  dedicated diesel backup microgrid guaranteeing uninterrupted 168-hr simulations.
+                </p>
+              </div>
+            </div>
+          </section>
+          <!-- Section: 50-Metre Hydrodynamic Towing Tank & Wave Basin Integration -->
+          <section
+            class="rounded-xl border border-brand-slate-200 bg-surface-container-lowest p-6 shadow-sm"
+          >
+            <div
+              class="mb-6 flex items-center justify-between border-b border-brand-slate-200 pb-4"
+            >
+              <div class="flex items-center gap-3">
+                <div
+                  class="flex h-8 w-8 items-center justify-center rounded-lg bg-primary-container text-white"
+                >
+                  <span class="material-symbols-outlined text-[18px]">waves</span>
+                </div>
+                <div>
+                  <h3 class="font-title-lg text-title-lg font-bold text-brand-navy-900">
+                    Physical Wave Basin &amp; Towing Tank Hydrodynamic Integration
+                  </h3>
+                  <p class="font-body-sm text-body-sm text-brand-slate-500">
+                    Where numerical simulation converges with physical hydrodynamic validation at
+                    the RSU Marine Complex.
+                  </p>
+                </div>
+              </div>
+              <span
+                class="rounded bg-brand-slate-100 px-2.5 py-1 font-code-sm font-label-sm text-label-sm text-brand-slate-700"
+              >
+                PHYSICAL LAB #02
+              </span>
+            </div>
+            <div class="grid grid-cols-1 items-center gap-6 md:grid-cols-2">
+              <div class="space-y-3 font-body-sm text-body-sm text-brand-slate-700">
+                <p>
+                  Candidates do not just model pipeline spans in OrcaFlex—they validate their exact
+                  numerical boundary conditions inside our
+                  <strong>50-Metre Hydrodynamic Towing Tank</strong>.
+                </p>
+                <ul class="space-y-2">
+                  <li class="flex items-start gap-2">
+                    <span class="material-symbols-outlined mt-0.5 text-[18px] text-primary"
+                      >check</span
+                    >
+                    <span
+                      ><strong>Planar Motion Mechanism (PMM):</strong> Dynamic hydrodynamic drag
+                      coefficient calibration for scaled subsea ROVs and pipeline templates.</span
+                    >
+                  </li>
+                  <li class="flex items-start gap-2">
+                    <span class="material-symbols-outlined mt-0.5 text-[18px] text-primary"
+                      >check</span
+                    >
+                    <span
+                      ><strong>JONSWAP / Regular Wavemaker:</strong> Multi-paddle wave generator
+                      capable of generating regular, irregular, and extreme West Africa
+                      sea-states.</span
+                    >
+                  </li>
+                  <li class="flex items-start gap-2">
+                    <span class="material-symbols-outlined mt-0.5 text-[18px] text-primary"
+                      >check</span
+                    >
+                    <span
+                      ><strong>Qualisys Underwater Optical Tracking:</strong> 6-DOF high-speed
+                      infrared motion capture cameras for verifying vortex-induced vibration (VIV)
+                      suppression strakes.</span
+                    >
+                  </li>
+                </ul>
+              </div>
+              <!-- Metric Specification Callout -->
+              <div class="rounded-xl border border-brand-slate-200 bg-brand-slate-50 p-5">
+                <div
+                  class="mb-2 font-label-sm text-label-sm uppercase tracking-wider text-brand-slate-500"
+                >
+                  Basin Dimensions &amp; Capacity
+                </div>
+                <div
+                  class="mb-3 grid grid-cols-3 gap-2 border-b border-brand-slate-200 pb-3 text-center"
+                >
+                  <div>
+                    <div class="font-headline-sm text-headline-sm text-brand-navy-900">50.0m</div>
+                    <div class="font-label-sm text-label-sm text-brand-slate-500">Tank Length</div>
+                  </div>
+                  <div>
+                    <div class="font-headline-sm text-headline-sm text-brand-navy-900">4.5m</div>
+                    <div class="font-label-sm text-label-sm text-brand-slate-500">Beam Width</div>
+                  </div>
+                  <div>
+                    <div class="font-headline-sm text-headline-sm text-brand-navy-900">2.8m</div>
+                    <div class="font-label-sm text-label-sm text-brand-slate-500">Water Depth</div>
+                  </div>
+                </div>
+                <div
+                  class="text-brand-slate-600 flex items-center justify-between font-label-sm text-label-sm"
+                >
+                  <span>Maximum Carriage Speed:</span>
+                  <span class="font-bold text-brand-navy-900">4.2 m/s continuous</span>
+                </div>
+                <div
+                  class="text-brand-slate-600 mt-1 flex items-center justify-between font-label-sm text-label-sm"
+                >
+                  <span>Data Acquisition Sampling:</span>
+                  <span class="font-bold text-brand-navy-900">1000 Hz National Instruments</span>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+        <!-- Secondary Column: Sticky Action & Specifications Sidebar (4 cols) -->
+        <aside class="space-y-6 lg:sticky lg:top-28 lg:col-span-4">
+          <!-- Enrolment CTA & Workstation Reservation Card -->
+          <div
+            class="rounded-xl border-2 border-primary/20 bg-surface-container-lowest p-6 shadow-sm"
+            id="enroll"
+          >
+            <div class="flex items-center justify-between border-b border-brand-slate-200 pb-3">
+              <span
+                class="font-label-sm text-label-sm uppercase tracking-wider text-brand-slate-500"
+                >Next Cohort Session</span
+              >
+              <span
+                class="rounded bg-status-verified-bg px-2 py-0.5 font-label-sm text-label-sm font-bold text-status-verified"
+              >
+                ADMISSIONS ACTIVE
+              </span>
+            </div>
+            <div class="my-4">
+              <div class="font-label-sm text-label-sm text-brand-slate-500">
+                Full Professional Tuition (Inclusive of Software Licenses &amp; Lab Access)
+              </div>
+              <div class="mt-1 font-headline-lg text-headline-lg font-bold text-brand-navy-900">
+                ₦1,450,000
+              </div>
+              <div class="font-label-sm text-label-sm text-brand-slate-500">
+                or USD $1,650 (For International / Corporate Sponsored Delegates)
+              </div>
+            </div>
+            <!-- Terminal Reservation Status Card -->
+            <div class="mb-5 rounded-lg border border-brand-slate-200 bg-brand-slate-50 p-3">
+              <div class="flex items-center justify-between font-body-sm text-body-sm">
+                <span class="text-brand-slate-700">Assigned CAD Workstation:</span>
+                <span class="font-bold text-brand-navy-900">Included (1:1)</span>
+              </div>
+              <div class="mt-1 flex items-center justify-between font-body-sm text-body-sm">
+                <span class="text-brand-slate-700">Remote HPC VPN Access:</span>
+                <span class="font-bold text-status-verified">Active 24/7</span>
+              </div>
+              <div class="mt-1 flex items-center justify-between font-body-sm text-body-sm">
+                <span class="text-brand-slate-700">Commercial ISV Licenses:</span>
+                <span class="font-bold text-brand-navy-900">Hexagon, Orcina, AVEVA</span>
+              </div>
+            </div>
+            <!-- Primary Apply Button -->
+            <button
+              class="flex w-full items-center justify-center gap-2 rounded-lg bg-primary px-4 py-3 font-label-md text-label-md text-white shadow transition-all duration-150 hover:bg-brand-cobalt-deep active:scale-95"
+              type="button"
+            >
+              <span class="material-symbols-outlined text-[20px]">how_to_reg</span>
+              <span>Enroll &amp; Secure Workstation</span>
+            </button>
+            <!-- Secondary Action: Download Infrastructure Spec Sheet -->
+            <button
+              class="mt-2.5 flex w-full items-center justify-center gap-2 rounded-lg border border-brand-slate-200 bg-surface-container-low px-4 py-2.5 font-label-md text-label-md text-brand-slate-800 transition-colors hover:bg-brand-slate-200"
+              type="button"
+            >
+              <span class="material-symbols-outlined text-[18px]">download_for_offline</span>
+              <span>Download Infrastructure Spec Sheet (PDF)</span>
+            </button>
+            <p class="mt-3 text-center font-label-sm text-label-sm text-brand-slate-500">
+              Seats allocated strictly on verified entrance assessment merit and timely fee
+              regularization.
+            </p>
+          </div>
+          <!-- Technical Specification Quick-Fact Matrix -->
+          <div
+            class="rounded-xl border border-brand-slate-200 bg-surface-container-lowest p-6 shadow-sm"
+          >
+            <h4
+              class="mb-4 flex items-center gap-2 font-title-lg text-title-lg font-bold text-brand-navy-900"
+            >
+              <span class="material-symbols-outlined text-[20px] text-primary">speed</span>
+              <span>Lab Specifications Summary</span>
+            </h4>
+            <dl class="space-y-3 divide-y divide-brand-slate-100 font-body-sm text-body-sm">
+              <div class="flex justify-between pt-2">
+                <dt class="text-brand-slate-500">Physical Workstations</dt>
+                <dd class="font-semibold text-brand-navy-900">18 HP Z4 G4 Units</dd>
+              </div>
+              <div class="flex justify-between pt-2">
+                <dt class="text-brand-slate-500">Student-to-PC Ratio</dt>
+                <dd class="font-semibold text-status-verified">1 : 1 (Exclusive)</dd>
+              </div>
+              <div class="flex justify-between pt-2">
+                <dt class="text-brand-slate-500">Dedicated GPU VRAM</dt>
+                <dd class="font-semibold text-brand-navy-900">16 GB GDDR6 ECC</dd>
+              </div>
+              <div class="flex justify-between pt-2">
+                <dt class="text-brand-slate-500">Primary Display Setup</dt>
+                <dd class="font-semibold text-brand-navy-900">Dual 27" 4K UHD Panels</dd>
+              </div>
+              <div class="flex justify-between pt-2">
+                <dt class="text-brand-slate-500">Off-Hours Remote VPN</dt>
+                <dd class="font-semibold text-brand-navy-900">WireGuard (Included)</dd>
+              </div>
+              <div class="flex justify-between pt-2">
+                <dt class="text-brand-slate-500">Towing Tank Length</dt>
+                <dd class="font-semibold text-brand-navy-900">50.0 Metres (2.8m Depth)</dd>
+              </div>
+              <div class="flex justify-between pt-2">
+                <dt class="text-brand-slate-500">Campus Location</dt>
+                <dd class="font-semibold text-brand-navy-900">RSU Marine Engr Complex</dd>
+              </div>
+            </dl>
+          </div>
+          <!-- Technical Technologist Support Card -->
+          <div class="rounded-xl border border-brand-slate-200 bg-brand-slate-50 p-5">
+            <div class="flex items-center gap-3">
+              <div
+                class="flex h-11 w-11 flex-shrink-0 items-center justify-center rounded-full bg-brand-navy-900 text-label-md font-bold text-white"
+              >
+                <span class="material-symbols-outlined text-[20px]">engineering</span>
+              </div>
+              <div>
+                <div class="font-title-lg text-title-lg font-bold text-brand-navy-900">
+                  Engr. T. Braide, MNSE
+                </div>
+                <div class="font-label-sm text-label-sm text-brand-slate-500">
+                  Lead CAD/CAE Systems Architect
+                </div>
+              </div>
+            </div>
+            <p class="text-brand-slate-600 mt-3 font-body-sm text-body-sm">
+              Need custom solver environments or have questions regarding Linux-based Python script
+              APIs for OrcaFlex batch runs?
+            </p>
+            <a
+              class="mt-2 inline-flex items-center gap-1.5 font-label-md text-label-md font-semibold text-primary hover:underline"
+              href="mailto:cadcae.support@cmotd-rsu.edu.ng"
+            >
+              <span class="material-symbols-outlined text-[16px]">mail</span>
+              <span>cadcae.support@cmotd-rsu.edu.ng</span>
+            </a>
+          </div>
+        </aside>
+      </div>
+    </main>
+    <!-- Institutional Footer (Shared Component JSON anchor) -->
+    <cmotd-institution-strip></cmotd-institution-strip>
+    <cmotd-site-footer></cmotd-site-footer>
+  </body>
+</html>

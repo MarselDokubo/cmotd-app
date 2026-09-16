@@ -1,0 +1,824 @@
+<!doctype html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      content="width=device-width, initial-scale=1.0"
+      name="viewport"
+    />
+    <title>CMOTD - Programme Cart Detail Page | Rivers State University</title>
+    <link
+      href="../favicon.ico"
+      rel="icon"
+      type="image/x-icon"
+    />
+
+    <link
+      href="../assets/css/tailwind-build.css"
+      rel="stylesheet"
+    />
+    <link
+      href="../assets/css/cmotd-global.css"
+      rel="stylesheet"
+    />
+    <!-- Exact Tailwind Configuration Provided -->
+    <script
+      defer=""
+      src="../assets/js/site-config.js"
+    ></script>
+    <script
+      defer=""
+      src="../assets/js/cmotd-components.js"
+    ></script>
+  </head>
+  <body
+    class="flex min-h-screen flex-col bg-background font-body-md text-on-surface antialiased selection:bg-primary-fixed selection:text-on-primary-fixed"
+  >
+    <!-- TopNavBar (Shared Component JSON Blueprint) -->
+    <cmotd-site-header active="programmes"></cmotd-site-header>
+    <!-- Sub-Header Status & Breadcrumbs Bar -->
+    <section class="border-b border-brand-slate-200 bg-surface-container-lowest">
+      <div
+        class="mx-auto flex max-w-[1280px] flex-wrap items-center justify-between gap-4 px-4 py-3.5 sm:px-6 lg:px-8"
+      >
+        <nav
+          aria-label="Breadcrumb"
+          class="flex items-center space-x-2 font-body-sm text-body-sm text-brand-slate-500"
+        >
+          <a
+            class="transition-colors hover:text-primary"
+            href="#"
+            >Home</a
+          >
+          <span class="material-symbols-outlined text-[16px] text-brand-slate-400"
+            >chevron_right</span
+          >
+          <a
+            class="transition-colors hover:text-primary"
+            href="#"
+            >Registry &amp; Portal</a
+          >
+          <span class="material-symbols-outlined text-[16px] text-brand-slate-400"
+            >chevron_right</span
+          >
+          <span
+            aria-current="page"
+            class="font-semibold text-brand-navy-900"
+            >Programme Cart &amp; Enrollment</span
+          >
+        </nav>
+        <!-- Session Security Status -->
+        <div
+          class="flex items-center gap-2 rounded border border-brand-slate-200 bg-brand-slate-50 px-3 py-1 font-code-sm text-code-sm text-brand-slate-700"
+        >
+          <span class="inline-block h-2 w-2 animate-pulse rounded-full bg-status-verified"></span>
+          <span
+            >REGISTRY SESSION ACTIVE:
+            <strong class="text-brand-navy-900">SEC-8834-RSU</strong></span
+          >
+          <span class="text-brand-slate-400">|</span>
+          <span class="material-symbols-outlined text-[14px] text-status-verified">lock</span>
+          <span>SSL 256-Bit</span>
+        </div>
+      </div>
+    </section>
+    <!-- Multi-Step Progress Stepper Ribbon -->
+    <section class="border-b border-brand-slate-200 bg-surface-container-low">
+      <div class="mx-auto max-w-[1280px] px-4 py-5 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
+          <!-- Step 1: Active -->
+          <div
+            class="flex items-center gap-3 rounded border-l-4 border-primary bg-surface-container-lowest p-3 shadow-sm"
+          >
+            <div
+              class="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-primary text-label-md font-bold text-on-primary"
+            >
+              1
+            </div>
+            <div>
+              <div class="font-label-sm text-label-sm uppercase tracking-wider text-primary">
+                Step 1 (Current)
+              </div>
+              <div class="font-body-sm text-body-sm font-semibold text-brand-navy-900">
+                Cart &amp; Candidate Review
+              </div>
+            </div>
+          </div>
+          <!-- Step 2 -->
+          <div class="flex items-center gap-3 rounded p-3 opacity-75">
+            <div
+              class="flex h-8 w-8 shrink-0 items-center justify-center rounded-full border border-brand-slate-200 bg-surface-container text-label-md font-bold text-secondary"
+            >
+              2
+            </div>
+            <div>
+              <div
+                class="font-label-sm text-label-sm uppercase tracking-wider text-brand-slate-500"
+              >
+                Step 2
+              </div>
+              <div class="font-body-sm text-body-sm font-medium text-brand-slate-700">
+                Sponsor &amp; Billing Info
+              </div>
+            </div>
+          </div>
+          <!-- Step 3 -->
+          <div class="flex items-center gap-3 rounded p-3 opacity-75">
+            <div
+              class="flex h-8 w-8 shrink-0 items-center justify-center rounded-full border border-brand-slate-200 bg-surface-container text-label-md font-bold text-secondary"
+            >
+              3
+            </div>
+            <div>
+              <div
+                class="font-label-sm text-label-sm uppercase tracking-wider text-brand-slate-500"
+              >
+                Step 3
+              </div>
+              <div class="font-body-sm text-body-sm font-medium text-brand-slate-700">
+                Verification &amp; Payment
+              </div>
+            </div>
+          </div>
+          <!-- Step 4 -->
+          <div class="flex items-center gap-3 rounded p-3 opacity-75">
+            <div
+              class="flex h-8 w-8 shrink-0 items-center justify-center rounded-full border border-brand-slate-200 bg-surface-container text-label-md font-bold text-secondary"
+            >
+              4
+            </div>
+            <div>
+              <div
+                class="font-label-sm text-label-sm uppercase tracking-wider text-brand-slate-500"
+              >
+                Step 4
+              </div>
+              <div class="font-body-sm text-body-sm font-medium text-brand-slate-700">
+                Provisioning &amp; Portal Access
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Main Canvas: Two-Column Checkout Layout -->
+    <main class="mx-auto w-full max-w-[1280px] flex-1 px-4 py-8 sm:px-6 lg:px-8">
+      <!-- Hero / Headline context -->
+      <div
+        class="mb-8 flex flex-col justify-between gap-4 border-b border-brand-slate-200 pb-5 md:flex-row md:items-end"
+      >
+        <div>
+          <div
+            class="mb-2 inline-flex items-center gap-2 rounded bg-surface-container-high px-2.5 py-1 font-label-sm text-label-sm text-brand-cobalt-deep"
+          >
+            <span class="material-symbols-outlined text-[14px]">school</span>
+            <span>RSU Senate Technical Council Accredited Batch</span>
+          </div>
+          <h1 class="font-headline-lg text-headline-lg tracking-tight text-brand-navy-900">
+            Programme Cart &amp; Enrollment Review
+          </h1>
+          <p class="mt-1 font-body-md text-body-md text-brand-slate-700">
+            Confirm your postgraduate specialization credentials, candidate slot allocations, and
+            institutional grant authorizations.
+          </p>
+        </div>
+        <div class="flex items-center gap-2 font-label-sm text-label-sm text-brand-slate-500">
+          <span class="material-symbols-outlined text-[18px] text-status-verified">lock</span>
+          <span>RSU Financial Gateway Token: <strong>#PGD-2025-0819-SUB</strong></span>
+        </div>
+      </div>
+      <!-- Layout Grid: 12 Columns -->
+      <div class="grid grid-cols-1 items-start gap-8 lg:grid-cols-12">
+        <!-- Left Column: Cart Items, Trainee Roster & Add-ons (7 Cols) -->
+        <section class="space-y-6 lg:col-span-7">
+          <!-- Primary Cart Item: Programme Card -->
+          <article
+            class="rounded-xl border border-brand-slate-200 bg-surface-container-lowest p-6 shadow-sm"
+          >
+            <!-- Card Header Badges -->
+            <div class="mb-3 flex flex-wrap items-center justify-between gap-2">
+              <div class="flex flex-wrap items-center gap-1.5">
+                <span
+                  class="rounded bg-brand-navy-900 px-2.5 py-0.5 font-label-sm text-label-sm font-semibold text-surface-bright"
+                >
+                  OFFSHORE PIPELINE
+                </span>
+                <span
+                  class="rounded border border-brand-slate-200 bg-brand-slate-100 px-2.5 py-0.5 font-label-sm text-label-sm font-medium text-brand-slate-800"
+                >
+                  40 CEU CREDITS
+                </span>
+                <span
+                  class="rounded bg-surface-container px-2.5 py-0.5 font-label-sm text-label-sm font-medium text-brand-cobalt-deep"
+                >
+                  HYBRID &amp; LAB BASIN
+                </span>
+              </div>
+              <span
+                class="rounded border border-brand-slate-200 bg-brand-slate-50 px-2 py-0.5 font-code-sm text-code-sm text-brand-slate-500"
+              >
+                CODE: PGD-SUB-801
+              </span>
+            </div>
+            <!-- Programme Title -->
+            <h2 class="font-title-lg text-title-lg font-bold leading-snug text-brand-navy-900">
+              Advanced Postgraduate Diploma in Subsea Engineering &amp; Deepwater Pipeline Systems
+            </h2>
+            <!-- Faculty & Affiliation Anchor Note -->
+            <p class="mt-1 font-body-sm text-body-sm text-brand-slate-500">
+              Faculty of Engineering &amp; CADICAE Supercomputing Center, Rivers State University
+              (RSU Port Harcourt).
+            </p>
+            <!-- Delivery & Cohort Specifications -->
+            <div
+              class="mt-4 grid grid-cols-1 gap-3 rounded-lg border border-brand-slate-200 bg-brand-slate-50 p-3 text-body-sm sm:grid-cols-3"
+            >
+              <div class="flex items-start gap-2">
+                <span
+                  class="material-symbols-outlined mt-0.5 shrink-0 text-[18px] text-brand-cobalt-deep"
+                  >calendar_month</span
+                >
+                <div>
+                  <div class="font-label-sm text-label-sm text-brand-slate-500">
+                    Cohort Duration
+                  </div>
+                  <div class="font-semibold text-brand-navy-900">Oct 15, 2025 – Oct 2026</div>
+                </div>
+              </div>
+              <div class="flex items-start gap-2">
+                <span
+                  class="material-symbols-outlined mt-0.5 shrink-0 text-[18px] text-brand-cobalt-deep"
+                  >location_on</span
+                >
+                <div>
+                  <div class="font-label-sm text-label-sm text-brand-slate-500">
+                    Location / Facility
+                  </div>
+                  <div class="font-semibold text-brand-navy-900">RSU Port Harcourt</div>
+                </div>
+              </div>
+              <div class="flex items-start gap-2">
+                <span
+                  class="material-symbols-outlined mt-0.5 shrink-0 text-[18px] text-brand-cobalt-deep"
+                  >hub</span
+                >
+                <div>
+                  <div class="font-label-sm text-label-sm text-brand-slate-500">
+                    Supercluster Access
+                  </div>
+                  <div class="font-semibold text-brand-navy-900">HYSYS &amp; PDMS Labs</div>
+                </div>
+              </div>
+            </div>
+            <!-- Integrated Software Stacks -->
+            <div class="mt-4 flex flex-wrap items-center gap-2">
+              <span class="font-label-sm text-label-sm text-brand-slate-500"
+                >Dedicated Software Workstations:</span
+              >
+              <span
+                class="rounded bg-brand-slate-100 px-2 py-0.5 font-label-sm text-label-sm text-brand-slate-700"
+                >AVEVA PDMS 12.1</span
+              >
+              <span
+                class="rounded bg-brand-slate-100 px-2 py-0.5 font-label-sm text-label-sm text-brand-slate-700"
+                >Caesar II Subsea</span
+              >
+              <span
+                class="rounded bg-brand-slate-100 px-2 py-0.5 font-label-sm text-label-sm text-brand-slate-700"
+                >Aspen HYSYS Offshore</span
+              >
+              <span
+                class="rounded bg-brand-slate-100 px-2 py-0.5 font-label-sm text-label-sm text-brand-slate-700"
+                >Python Hydrodynamics</span
+              >
+            </div>
+            <!-- Candidate Seat Selector & Corporate Delegation -->
+            <div
+              class="mt-6 flex flex-wrap items-center justify-between gap-4 border-t border-brand-slate-200 pt-5"
+            >
+              <div>
+                <label
+                  class="block font-label-md text-label-md text-brand-navy-900"
+                  for="seat-quantity"
+                  >Candidate Seat Count</label
+                >
+                <p class="font-body-sm text-body-sm text-brand-slate-500">
+                  Corporate sponsor group discount applied at 3+ seats
+                </p>
+              </div>
+              <div class="flex items-center gap-3">
+                <div
+                  class="inline-flex items-center rounded-lg border border-brand-slate-200 bg-surface-container-lowest"
+                >
+                  <button
+                    aria-label="Decrease candidate seats"
+                    class="flex h-9 w-9 items-center justify-center rounded-l-lg text-brand-slate-700 transition-colors hover:bg-brand-slate-100"
+                    type="button"
+                  >
+                    <span class="material-symbols-outlined text-[18px]">remove</span>
+                  </button>
+                  <input
+                    class="w-12 border-0 bg-transparent py-1 text-center text-body-md font-semibold text-brand-navy-900 focus:ring-0"
+                    id="seat-quantity"
+                    readonly=""
+                    type="text"
+                    value="1"
+                  />
+                  <button
+                    aria-label="Increase candidate seats"
+                    class="flex h-9 w-9 items-center justify-center rounded-r-lg text-brand-slate-700 transition-colors hover:bg-brand-slate-100"
+                    type="button"
+                  >
+                    <span class="material-symbols-outlined text-[18px]">add</span>
+                  </button>
+                </div>
+                <div class="text-right">
+                  <div class="font-title-lg text-title-lg font-bold text-brand-navy-900">
+                    NGN 1,450,000
+                  </div>
+                  <div class="font-code-sm text-code-sm text-brand-slate-400">
+                    ≈ $1,800.00 USD / candidate
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+          <!-- Trainee Allocation Details Form Module -->
+          <article
+            class="rounded-xl border border-brand-slate-200 bg-surface-container-lowest p-6 shadow-sm"
+          >
+            <div
+              class="mb-5 flex items-center justify-between border-b border-brand-slate-200 pb-3"
+            >
+              <div class="flex items-center gap-2">
+                <span class="material-symbols-outlined text-[20px] text-primary">person_check</span>
+                <h3 class="font-title-lg text-title-lg font-bold text-brand-navy-900">
+                  Primary Candidate Roster Allocation
+                </h3>
+              </div>
+              <span
+                class="rounded border border-blue-100 bg-status-info-bg px-2.5 py-0.5 font-label-sm text-label-sm font-semibold text-status-info"
+              >
+                Seat 1 of 1 Assigned
+              </span>
+            </div>
+            <div class="space-y-4">
+              <div class="grid grid-cols-1 gap-4 md:grid-cols-2">
+                <div>
+                  <label
+                    class="mb-1.5 block font-label-md text-label-md text-brand-slate-700"
+                    for="candidate-full-name"
+                  >
+                    Full Legal Name (as issued on Degree Certificate)
+                    <span class="text-error">*</span>
+                  </label>
+                  <input
+                    class="h-[42px] w-full rounded border border-brand-slate-200 px-3.5 font-body-md text-body-md text-brand-navy-900 focus:border-brand-cobalt-deep focus:ring-2 focus:ring-primary/20"
+                    id="candidate-full-name"
+                    type="text"
+                    value="Engr. Tariere Emmanuel Briggs"
+                  />
+                </div>
+                <div>
+                  <label
+                    class="mb-1.5 block font-label-md text-label-md text-brand-slate-700"
+                    for="candidate-portal-email"
+                  >
+                    RSU E-Portal SSO Email <span class="text-error">*</span>
+                  </label>
+                  <input
+                    class="h-[42px] w-full rounded border border-brand-slate-200 px-3.5 font-body-md text-body-md text-brand-navy-900 focus:border-brand-cobalt-deep focus:ring-2 focus:ring-primary/20"
+                    id="candidate-portal-email"
+                    type="email"
+                    value="t.briggs@alumni.rsu.edu.ng"
+                  />
+                </div>
+              </div>
+              <div class="grid grid-cols-1 gap-4 pt-1 md:grid-cols-2">
+                <div>
+                  <label
+                    class="mb-1.5 block font-label-md text-label-md text-brand-slate-700"
+                    for="candidate-phone"
+                  >
+                    Direct WhatsApp / Mobile Helpline
+                    <span class="text-error">*</span>
+                  </label>
+                  <input
+                    class="h-[42px] w-full rounded border border-brand-slate-200 px-3.5 font-body-md text-body-md text-brand-navy-900 focus:border-brand-cobalt-deep focus:ring-2 focus:ring-primary/20"
+                    id="candidate-phone"
+                    type="tel"
+                    value="+234 (0) 803 554 9012"
+                  />
+                </div>
+                <div>
+                  <label
+                    class="mb-1.5 block font-label-md text-label-md text-brand-slate-700"
+                    for="cad-id"
+                  >
+                    COREN / NSE Membership ID (Optional)
+                  </label>
+                  <input
+                    class="h-[42px] w-full rounded border border-brand-slate-200 px-3.5 font-body-md text-body-md text-brand-navy-900 focus:border-brand-cobalt-deep focus:ring-2 focus:ring-primary/20"
+                    id="cad-id"
+                    placeholder="e.g., R.29410 / COREN"
+                    type="text"
+                  />
+                </div>
+              </div>
+              <!-- Degree Verification & Academic Upload Block -->
+              <div class="rounded-lg border border-brand-slate-200 bg-brand-slate-50 p-4">
+                <div class="flex items-start justify-between gap-4">
+                  <div class="flex items-start gap-3">
+                    <div
+                      class="flex h-10 w-10 shrink-0 items-center justify-center rounded border border-status-verified-border bg-status-verified-bg text-status-verified"
+                    >
+                      <span class="material-symbols-outlined text-[22px]">verified_user</span>
+                    </div>
+                    <div>
+                      <div class="font-body-sm text-body-sm font-semibold text-brand-navy-900">
+                        B.Eng / B.Sc Mechanical &amp; Marine Transcripts
+                      </div>
+                      <div class="font-code-sm text-code-sm text-brand-slate-500">
+                        File: Briggs_Tariere_BEng_Degree_RSU_Transcript.pdf (3.8 MB)
+                      </div>
+                      <div
+                        class="mt-1 flex items-center gap-2 font-label-sm text-label-sm text-status-verified"
+                      >
+                        <span class="material-symbols-outlined text-[14px]">check_circle</span>
+                        <span>Cryptographic Hash Confirmed: #SHA-9942a-RSU</span>
+                      </div>
+                    </div>
+                  </div>
+                  <button
+                    class="font-label-sm text-label-sm text-brand-cobalt-deep hover:underline"
+                    type="button"
+                  >
+                    Replace File
+                  </button>
+                </div>
+              </div>
+            </div>
+          </article>
+          <!-- Recommended Specialized Engineering Add-On Modules -->
+          <article
+            class="rounded-xl border border-brand-slate-200 bg-surface-container-lowest p-6 shadow-sm"
+          >
+            <div class="mb-4 flex items-center justify-between">
+              <div>
+                <h3 class="font-title-lg text-title-lg font-bold text-brand-navy-900">
+                  Recommended Co-Requisite Add-On Modules
+                </h3>
+                <p class="font-body-sm text-body-sm text-brand-slate-500">
+                  Elevate qualification standard with accredited software lab masterclasses
+                </p>
+              </div>
+              <span class="material-symbols-outlined text-brand-slate-400">extension</span>
+            </div>
+            <div class="space-y-3">
+              <!-- Add-on 1 -->
+              <label
+                class="group flex cursor-pointer items-start gap-3.5 rounded-lg border border-brand-slate-200 bg-surface-bright p-3.5 transition-colors hover:border-brand-cobalt"
+              >
+                <input
+                  class="mt-1 h-4 w-4 rounded border-brand-slate-400 text-primary focus:ring-primary"
+                  type="checkbox"
+                />
+                <div class="flex-1">
+                  <div class="flex items-center justify-between gap-2">
+                    <span
+                      class="font-body-sm text-body-sm font-semibold text-brand-navy-900 transition-colors group-hover:text-primary"
+                      >Caesar II Deepwater Tieback &amp; Riser Stress Refresher</span
+                    >
+                    <span class="shrink-0 font-label-md text-label-md font-bold text-brand-navy-900"
+                      >+ NGN 95,000</span
+                    >
+                  </div>
+                  <p class="mt-0.5 font-body-sm text-body-sm text-brand-slate-500">
+                    3-week accelerated weekend micro-credential. Includes dynamic offshore
+                    vortex-induced vibration simulation credits.
+                  </p>
+                  <div
+                    class="mt-1.5 flex items-center gap-3 font-label-sm text-label-sm text-brand-slate-700"
+                  >
+                    <span class="flex items-center gap-1"
+                      ><span class="material-symbols-outlined text-[14px] text-status-verified"
+                        >check</span
+                      >
+                      In-Person RSU Basin Access</span
+                    >
+                    <span class="flex items-center gap-1"
+                      ><span class="material-symbols-outlined text-[14px] text-status-verified"
+                        >check</span
+                      >
+                      5 CEUs</span
+                    >
+                  </div>
+                </div>
+              </label>
+              <!-- Add-on 2 -->
+              <label
+                class="group flex cursor-pointer items-start gap-3.5 rounded-lg border border-brand-slate-200 bg-surface-bright p-3.5 transition-colors hover:border-brand-cobalt"
+              >
+                <input
+                  class="mt-1 h-4 w-4 rounded border-brand-slate-400 text-primary focus:ring-primary"
+                  type="checkbox"
+                />
+                <div class="flex-1">
+                  <div class="flex items-center justify-between gap-2">
+                    <span
+                      class="font-body-sm text-body-sm font-semibold text-brand-navy-900 transition-colors group-hover:text-primary"
+                      >Subsea Asset Integrity Management &amp; ROV Telemetry Lab</span
+                    >
+                    <span class="shrink-0 font-label-md text-label-md font-bold text-brand-navy-900"
+                      >+ NGN 140,000</span
+                    >
+                  </div>
+                  <p class="mt-0.5 font-body-sm text-body-sm text-brand-slate-500">
+                    Hands-on autonomous submersibles flight log calibration &amp; ultrasonic
+                    pipeline corrosion testing suite.
+                  </p>
+                  <div
+                    class="mt-1.5 flex items-center gap-3 font-label-sm text-label-sm text-brand-slate-700"
+                  >
+                    <span class="flex items-center gap-1"
+                      ><span class="material-symbols-outlined text-[14px] text-status-verified"
+                        >check</span
+                      >
+                      Industry Mentor Match</span
+                    >
+                    <span class="flex items-center gap-1"
+                      ><span class="material-symbols-outlined text-[14px] text-status-verified"
+                        >check</span
+                      >
+                      8 CEUs</span
+                    >
+                  </div>
+                </div>
+              </label>
+            </div>
+          </article>
+          <!-- Institutional Covenants & NCDMB Compliance Notice -->
+          <article class="rounded-xl border border-brand-slate-200 bg-surface-container-low p-5">
+            <div class="flex items-start gap-3">
+              <span class="material-symbols-outlined mt-0.5 shrink-0 text-[24px] text-brand-cobalt"
+                >policy</span
+              >
+              <div class="space-y-1.5 font-body-sm text-body-sm text-brand-slate-700">
+                <div class="font-bold text-brand-navy-900">
+                  Nigerian Content Development &amp; Monitoring Board (NCDMB) Human Capital Credit
+                </div>
+                <p>
+                  Tuition paid for CMOTD technical postgraduate courses qualifies for mandatory
+                  NOGICD Human Capital Development reporting covenants. Official NCDMB institutional
+                  certificates will be deposited into your operating entity ledger upon 75% cohort
+                  attendance.
+                </p>
+                <p class="pt-1 font-label-sm text-label-sm text-brand-slate-500">
+                  Enrolled candidate covenants are governed by the Rivers State University Senate
+                  Disciplinary Charter and the Faculty of Engineering Manual of Regulations.
+                </p>
+              </div>
+            </div>
+          </article>
+        </section>
+        <!-- Right Column: Order Summary & Institutional Payment Gateway (5 Cols) -->
+        <aside class="space-y-6 lg:col-span-5">
+          <!-- Order Summary Card -->
+          <div
+            class="sticky top-[92px] rounded-xl border border-brand-slate-200 bg-surface-container-lowest p-6 shadow-sm"
+          >
+            <div
+              class="mb-5 flex items-center justify-between border-b border-brand-slate-200 pb-3"
+            >
+              <h3 class="font-title-lg text-title-lg font-bold text-brand-navy-900">
+                Enrollment Ledger Summary
+              </h3>
+              <span class="font-label-sm text-label-sm font-medium text-brand-slate-500"
+                >Currency: NGN (₦)</span
+              >
+            </div>
+            <!-- Cost Breakdown List -->
+            <div class="space-y-3 border-b border-brand-slate-200 pb-5 text-body-sm">
+              <div class="flex items-center justify-between">
+                <span class="text-brand-slate-700"
+                  >PGD Subsea Engineering Tuition (1 Candidate)</span
+                >
+                <span class="font-semibold text-brand-navy-900">NGN 1,450,000.00</span>
+              </div>
+              <div class="flex items-center justify-between">
+                <div class="flex items-center gap-1.5">
+                  <span class="text-brand-slate-700"
+                    >RSU Senate Matriculation &amp; Registry Fee</span
+                  >
+                  <span
+                    class="material-symbols-outlined text-[14px] text-brand-slate-400"
+                    title="Mandatory Senate Administrative Fee"
+                    >info</span
+                  >
+                </div>
+                <span class="font-semibold text-brand-navy-900">NGN 35,000.00</span>
+              </div>
+              <div class="flex items-center justify-between">
+                <span class="text-brand-slate-700">CADICAE Supercluster License Access</span>
+                <span class="font-medium text-status-verified">Included (NGN 0.00)</span>
+              </div>
+              <div class="flex items-center justify-between">
+                <span class="text-brand-slate-700">Cryptographic Verifiable Certificate Fee</span>
+                <span class="font-medium text-status-verified">Included (NGN 0.00)</span>
+              </div>
+              <div class="flex items-center justify-between pt-1">
+                <span class="text-code-sm text-brand-slate-500"
+                  >Academic VAT &amp; Educational Duty Exemption</span
+                >
+                <span class="text-code-sm text-brand-slate-500">0.00% (Sec. 14 ACT)</span>
+              </div>
+            </div>
+            <!-- Total Calculation -->
+            <div class="border-b border-brand-slate-200 py-4">
+              <div class="flex items-baseline justify-between">
+                <div>
+                  <span class="block font-title-lg text-title-lg font-bold text-brand-navy-900"
+                    >Total Amount Payable</span
+                  >
+                  <span class="font-label-sm text-label-sm text-brand-slate-500"
+                    >Includes all lab, matriculation &amp; software tokens</span
+                  >
+                </div>
+                <div class="text-right">
+                  <span
+                    class="font-headline-md text-headline-md font-extrabold tracking-tight text-brand-cobalt-deep"
+                    >NGN 1,485,000</span
+                  >
+                  <span class="block font-code-sm text-code-sm text-brand-slate-400"
+                    >≈ $1,845.00 USD</span
+                  >
+                </div>
+              </div>
+            </div>
+            <!-- Payment Structure Plan Selector -->
+            <div class="border-b border-brand-slate-200 py-5">
+              <label class="mb-2.5 block font-label-md text-label-md text-brand-navy-900"
+                >Institutional Payment Plan</label
+              >
+              <div class="mb-3 grid grid-cols-2 gap-2">
+                <label
+                  class="flex cursor-pointer flex-col rounded-lg border-2 border-primary bg-surface-container-low p-3"
+                >
+                  <div class="flex items-center justify-between">
+                    <span class="font-label-sm text-label-sm font-bold uppercase text-primary"
+                      >Full Settlement</span
+                    >
+                    <input
+                      checked=""
+                      class="text-primary focus:ring-primary"
+                      name="payment_plan"
+                      type="radio"
+                    />
+                  </div>
+                  <span class="mt-1 font-body-sm text-body-sm font-bold text-brand-navy-900"
+                    >100% Upfront</span
+                  >
+                  <span class="font-code-sm text-code-sm text-brand-slate-500"
+                    >Immediate Access</span
+                  >
+                </label>
+                <label
+                  class="flex cursor-pointer flex-col rounded-lg border border-brand-slate-200 bg-surface-bright p-3 hover:border-brand-slate-400"
+                >
+                  <div class="flex items-center justify-between">
+                    <span
+                      class="font-label-sm text-label-sm font-bold uppercase text-brand-slate-700"
+                      >Installment 60/40</span
+                    >
+                    <input
+                      class="text-primary focus:ring-primary"
+                      name="payment_plan"
+                      type="radio"
+                    />
+                  </div>
+                  <span class="mt-1 font-body-sm text-body-sm font-bold text-brand-navy-900"
+                    >NGN 891,000</span
+                  >
+                  <span class="font-code-sm text-code-sm text-brand-slate-500"
+                    >Balance at Month 6</span
+                  >
+                </label>
+              </div>
+              <!-- Corporate Sponsor / PO Switcher -->
+              <div class="mt-4 border-t border-brand-slate-100 pt-3">
+                <div class="mb-1.5 flex items-center justify-between">
+                  <label
+                    class="font-label-sm text-label-sm text-brand-slate-700"
+                    for="corporate-tin"
+                    >Corporate LPO / FIRS Tax ID (TIN)</label
+                  >
+                  <span
+                    class="cursor-pointer font-label-sm text-label-sm text-primary hover:underline"
+                    >Apply Tax Exemption</span
+                  >
+                </div>
+                <div class="flex gap-2">
+                  <input
+                    class="h-9 w-full rounded border border-brand-slate-200 px-3 font-code-sm text-code-sm text-brand-navy-900 focus:ring-1 focus:ring-primary"
+                    id="corporate-tin"
+                    placeholder="e.g. 21980041-0001 (FIRS TIN)"
+                    type="text"
+                  />
+                  <button
+                    class="rounded border border-brand-slate-200 bg-brand-slate-100 px-3 font-label-sm text-label-sm font-medium text-brand-slate-800 hover:bg-brand-slate-200"
+                    type="button"
+                  >
+                    Verify
+                  </button>
+                </div>
+              </div>
+            </div>
+            <!-- Payment Method Gateway Channels -->
+            <div class="space-y-3 py-4">
+              <span
+                class="block font-label-sm text-label-sm uppercase tracking-wider text-brand-slate-500"
+                >Accepted Clearance Rails</span
+              >
+              <div class="flex flex-wrap items-center gap-2">
+                <span
+                  class="flex items-center gap-1 rounded border border-brand-slate-200 bg-brand-slate-50 px-2.5 py-1 font-label-sm text-label-sm font-semibold text-brand-slate-800"
+                >
+                  <span class="material-symbols-outlined text-[14px] text-brand-cobalt-deep"
+                    >credit_card</span
+                  >
+                  Paystack
+                </span>
+                <span
+                  class="flex items-center gap-1 rounded border border-brand-slate-200 bg-brand-slate-50 px-2.5 py-1 font-label-sm text-label-sm font-semibold text-brand-slate-800"
+                >
+                  <span class="material-symbols-outlined text-[14px] text-brand-cobalt-deep"
+                    >account_balance</span
+                  >
+                  Interswitch WebPAY
+                </span>
+                <span
+                  class="flex items-center gap-1 rounded border border-brand-slate-200 bg-brand-slate-50 px-2.5 py-1 font-label-sm text-label-sm font-semibold text-brand-slate-800"
+                >
+                  <span class="material-symbols-outlined text-[14px] text-brand-cobalt-deep"
+                    >receipt_long</span
+                  >
+                  Direct CBN Remita LPO
+                </span>
+              </div>
+            </div>
+            <!-- Primary Checkout Action -->
+            <div class="mt-4 space-y-3">
+              <button
+                class="flex w-full items-center justify-center gap-2 rounded bg-primary px-5 py-3.5 font-label-md text-label-md text-on-primary shadow-md transition-transform hover:bg-brand-cobalt-deep active:scale-[0.98]"
+                type="button"
+              >
+                <span class="material-symbols-outlined text-[20px]">how_to_reg</span>
+                <span>Proceed to Trainee Registration &amp; Checkout</span>
+              </button>
+              <div
+                class="flex items-center justify-center gap-2 text-center font-label-sm text-label-sm text-brand-slate-500"
+              >
+                <span class="material-symbols-outlined text-[16px] text-status-verified"
+                  >verified_user</span
+                >
+                <span>Protected by Rivers State University Central Bursary Registry</span>
+              </div>
+            </div>
+            <!-- Institutional Registrar Helpline Contact Box -->
+            <div
+              class="mt-6 rounded-lg border border-t border-brand-slate-200 bg-brand-slate-50 p-3.5 pt-5"
+            >
+              <div
+                class="mb-1 flex items-center gap-2 text-body-sm font-semibold text-brand-navy-900"
+              >
+                <span class="material-symbols-outlined text-[18px] text-brand-cobalt"
+                  >support_agent</span
+                >
+                <span>Corporate Bursary Assistance</span>
+              </div>
+              <p class="text-brand-slate-600 font-code-sm text-code-sm">
+                For corporate bank draft instructions or Treasury Single Account (TSA) billing
+                details:
+              </p>
+              <div class="mt-2 font-body-sm text-body-sm font-medium text-brand-navy-900">
+                <div>
+                  Tel:
+                  <strong class="text-primary">+234 (0) 84 992 018</strong>
+                  (Registrar Desk)
+                </div>
+                <div>
+                  Email:
+                  <strong class="text-primary">bursary.cmotd@rsu.edu.ng</strong>
+                </div>
+              </div>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </main>
+    <!-- Institutional Rich Footer (Shared Component JSON Blueprint) -->
+    <cmotd-institution-strip></cmotd-institution-strip>
+    <cmotd-site-footer></cmotd-site-footer>
+  </body>
+</html>

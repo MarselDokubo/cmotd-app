@@ -1,0 +1,874 @@
+<!doctype html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      content="width=device-width, initial-scale=1.0"
+      name="viewport"
+    />
+    <title>CMOTD E-PORTAL | Overview &amp; Operations</title>
+    <link
+      href="../favicon.ico"
+      rel="icon"
+      type="image/x-icon"
+    />
+
+    <!-- Tailwind CSS -->
+    <link
+      href="../assets/css/tailwind-build.css"
+      rel="stylesheet"
+    />
+    <link
+      href="../assets/css/cmotd-global.css"
+      rel="stylesheet"
+    />
+    <script
+      defer=""
+      src="../assets/js/site-config.js"
+    ></script>
+    <script
+      defer=""
+      src="../assets/js/cmotd-components.js"
+    ></script>
+  </head>
+  <body
+    class="flex min-h-screen flex-col bg-surface font-body-md text-body-md text-on-surface antialiased selection:bg-primary selection:text-on-primary"
+  >
+    <!-- ========================================================================= -->
+    <!-- SHARED COMPONENT 1: SideNavBar (Fixed Left, 280px)                         -->
+    <!-- ========================================================================= -->
+    <cmotd-portal-sidebar active="overview"></cmotd-portal-sidebar>
+    <!-- ========================================================================= -->
+    <!-- MAIN SHELL: Padded Left to accommodate fixed 280px sidebar                -->
+    <!-- ========================================================================= -->
+    <div class="flex min-h-screen flex-1 flex-col pl-portal-sidebar-width">
+      <!-- ======================================================================= -->
+      <!-- SHARED COMPONENT 2: TopNavBar                                           -->
+      <!-- ======================================================================= -->
+      <cmotd-portal-topbar title="Overview &amp; Operations"></cmotd-portal-topbar>
+      <!-- ======================================================================= -->
+      <!-- SECONDARY SUB-NAVBAR TABS                                               -->
+      <!-- ======================================================================= -->
+      <div
+        class="flex items-center justify-between border-b border-brand-slate-200 bg-surface-container-lowest px-space-lg"
+      >
+        <div class="flex space-x-8 overflow-x-auto py-3">
+          <button
+            class="flex items-center gap-2 whitespace-nowrap border-b-2 border-primary pb-2 font-label-md text-label-md font-semibold text-primary"
+          >
+            <span
+              class="material-symbols-outlined"
+              data-icon="analytics"
+              style="font-size: 18px"
+              >analytics</span
+            >
+            Executive Overview
+          </button>
+          <button
+            class="flex items-center gap-2 whitespace-nowrap pb-2 font-label-md text-label-md text-on-surface-variant transition-colors hover:text-primary"
+          >
+            <span
+              class="material-symbols-outlined"
+              data-icon="computer"
+              style="font-size: 18px"
+              >computer</span
+            >
+            Active Computing Terminals
+          </button>
+          <button
+            class="flex items-center gap-2 whitespace-nowrap pb-2 font-label-md text-label-md text-on-surface-variant transition-colors hover:text-primary"
+          >
+            <span
+              class="material-symbols-outlined"
+              data-icon="show_chart"
+              style="font-size: 18px"
+              >show_chart</span
+            >
+            Operational Telemetry
+          </button>
+          <button
+            class="flex items-center gap-2 whitespace-nowrap pb-2 font-label-md text-label-md text-on-surface-variant transition-colors hover:text-primary"
+          >
+            <span
+              class="material-symbols-outlined"
+              data-icon="vpn_key"
+              style="font-size: 18px"
+              >vpn_key</span
+            >
+            Security &amp; Key Management
+          </button>
+          <button
+            class="flex items-center gap-2 whitespace-nowrap pb-2 font-label-md text-label-md text-on-surface-variant transition-colors hover:text-primary"
+          >
+            <span
+              class="material-symbols-outlined"
+              data-icon="campaign"
+              style="font-size: 18px"
+              >campaign</span
+            >
+            System Announcements
+          </button>
+        </div>
+        <!-- Matriculation & Hardware Token Info -->
+        <div class="hidden items-center gap-3 md:flex">
+          <span
+            class="inline-flex items-center gap-1.5 rounded border border-brand-slate-200 bg-brand-slate-100 px-2.5 py-1 font-code-sm text-code-sm text-brand-slate-700"
+          >
+            <span
+              class="material-symbols-outlined text-status-verified"
+              data-icon="token"
+              style="font-size: 14px"
+              >token</span
+            >
+            FIDO2 Enclave Bound
+          </span>
+          <span class="font-code-sm text-code-sm font-semibold text-primary">
+            RSU/CMOTD/2025/0842
+          </span>
+        </div>
+      </div>
+      <!-- ======================================================================= -->
+      <!-- CONTENT CANVAS                                                          -->
+      <!-- ======================================================================= -->
+      <main class="mx-auto w-full max-w-7xl flex-1 space-y-6 p-space-lg">
+        <!-- Trainee/Engineer Welcome Banner -->
+        <section
+          class="flex flex-col justify-between gap-4 rounded-xl border border-brand-slate-200 bg-surface-container-lowest p-6 shadow-sm md:flex-row md:items-center"
+        >
+          <div class="space-y-1">
+            <div class="flex flex-wrap items-center gap-2">
+              <span class="font-headline-md text-headline-md font-bold text-on-surface">
+                Operational Command: Marine Engineering Center
+              </span>
+              <span
+                class="inline-flex items-center gap-1 rounded-full border border-status-verified-border bg-status-verified-bg px-2.5 py-0.5 font-label-sm text-label-sm text-status-verified"
+              >
+                <span class="h-1.5 w-1.5 rounded-full bg-status-verified"></span>
+                Enclave Clearance Tier 3 • Subsea Supercluster Online
+              </span>
+            </div>
+            <p class="font-body-md text-body-md text-on-surface-variant">
+              Technical session authenticated via Rivers State University CAD/CAE High Performance
+              Terminal. All pipeline hydrodynamics models synchronized.
+            </p>
+          </div>
+          <div class="flex flex-shrink-0 items-center gap-3">
+            <button
+              class="flex items-center gap-1.5 rounded-lg border border-brand-slate-200 bg-brand-slate-50 px-3.5 py-2 font-label-md text-label-md text-on-surface transition-colors hover:bg-brand-slate-100"
+            >
+              <span
+                class="material-symbols-outlined"
+                data-icon="sync"
+                style="font-size: 16px"
+                >sync</span
+              >
+              Telemetry Refresh
+            </button>
+            <button
+              class="flex items-center gap-1.5 rounded-lg bg-primary px-4 py-2 font-label-md text-label-md text-on-primary shadow-sm transition-colors hover:bg-brand-cobalt-deep"
+            >
+              <span
+                class="material-symbols-outlined"
+                data-icon="terminal"
+                style="font-size: 16px"
+                >terminal</span
+              >
+              Launch CAE Session
+            </button>
+          </div>
+        </section>
+        <!-- 4 Metric Summary KPI Cards -->
+        <section class="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
+          <!-- Metric a: Active Compute Allocation -->
+          <div
+            class="space-y-2 rounded-xl border border-brand-slate-200 bg-surface-container-lowest p-5 shadow-sm transition-colors hover:border-brand-slate-400"
+          >
+            <div class="flex items-center justify-between text-on-surface-variant">
+              <span class="font-label-md text-label-md">Compute Allocation</span>
+              <span
+                class="material-symbols-outlined text-primary"
+                data-icon="memory"
+                >memory</span
+              >
+            </div>
+            <div class="flex items-baseline gap-2">
+              <span class="font-headline-lg text-headline-lg font-bold text-on-surface"
+                >18 / 18</span
+              >
+              <span class="font-label-sm text-label-sm text-status-verified">Nodes Reserved</span>
+            </div>
+            <div
+              class="flex items-center justify-between border-t border-brand-slate-100 pt-1 text-xs text-brand-slate-500"
+            >
+              <span>1:1 Dedicated WireGuard</span>
+              <span class="font-code-sm text-code-sm font-semibold text-brand-slate-700"
+                >WS-PHC-88</span
+              >
+            </div>
+          </div>
+          <!-- Metric b: Academic Progression -->
+          <div
+            class="space-y-2 rounded-xl border border-brand-slate-200 bg-surface-container-lowest p-5 shadow-sm transition-colors hover:border-brand-slate-400"
+          >
+            <div class="flex items-center justify-between text-on-surface-variant">
+              <span class="font-label-md text-label-md">Academic Progression</span>
+              <span
+                class="material-symbols-outlined text-brand-cobalt"
+                data-icon="auto_stories"
+                >auto_stories</span
+              >
+            </div>
+            <div class="flex items-baseline gap-2">
+              <span class="font-headline-lg text-headline-lg font-bold text-on-surface">68%</span>
+              <span class="font-label-sm text-label-sm text-brand-slate-500">Mod 4 of 6</span>
+            </div>
+            <div class="h-1.5 w-full overflow-hidden rounded-full bg-brand-slate-100">
+              <div
+                class="h-full rounded-full bg-primary"
+                style="width: 68%"
+              ></div>
+            </div>
+            <div class="truncate pt-1 text-xs text-brand-slate-500">
+              Multiphase Flow Assurance • Milestone in 4d
+            </div>
+          </div>
+          <!-- Metric c: Physical Facilities Slot -->
+          <div
+            class="space-y-2 rounded-xl border border-brand-slate-200 bg-surface-container-lowest p-5 shadow-sm transition-colors hover:border-brand-slate-400"
+          >
+            <div class="flex items-center justify-between text-on-surface-variant">
+              <span class="font-label-md text-label-md">RSU 50m Towing Basin</span>
+              <span
+                class="material-symbols-outlined text-status-info"
+                data-icon="water"
+                >water</span
+              >
+            </div>
+            <div class="space-y-0.5">
+              <span class="font-headline-sm text-headline-sm font-bold text-on-surface"
+                >Reserved</span
+              >
+              <div class="text-xs font-semibold text-status-info">Thursday 14:00 WAT</div>
+            </div>
+            <div
+              class="flex items-center justify-between border-t border-brand-slate-100 pt-1 text-xs text-brand-slate-500"
+            >
+              <span>Hydrodynamics Lab</span>
+              <span class="inline-flex items-center font-medium text-status-verified"
+                >Slot Confirmed</span
+              >
+            </div>
+          </div>
+          <!-- Metric d: Senate & Bursary Ledger Status -->
+          <div
+            class="space-y-2 rounded-xl border border-brand-slate-200 bg-surface-container-lowest p-5 shadow-sm transition-colors hover:border-brand-slate-400"
+          >
+            <div class="flex items-center justify-between text-on-surface-variant">
+              <span class="font-label-md text-label-md">Senate &amp; Bursary Ledger</span>
+              <span
+                class="material-symbols-outlined text-status-verified"
+                data-icon="receipt_long"
+                >receipt_long</span
+              >
+            </div>
+            <div class="flex items-baseline gap-2">
+              <span class="font-headline-lg text-headline-lg font-bold text-status-verified"
+                >100%</span
+              >
+              <span class="font-label-sm text-label-sm text-status-verified">Cleared</span>
+            </div>
+            <div
+              class="flex items-center justify-between border-t border-brand-slate-100 pt-1 text-[11px] text-brand-slate-500"
+            >
+              <span class="truncate">RRR: 2409-1102-8841</span>
+              <span class="font-medium text-brand-slate-700">NCDMB 1% Compliant</span>
+            </div>
+          </div>
+        </section>
+        <!-- Main Asymmetric Dashboard Grid: Left 2/3 and Right 1/3 -->
+        <div class="grid grid-cols-1 items-start gap-6 lg:grid-cols-12">
+          <!-- =================================================================== -->
+          <!-- LEFT COLUMN (8 / 12)                                               -->
+          <!-- =================================================================== -->
+          <div class="space-y-6 lg:col-span-8">
+            <!-- Card 1: Active CAD/CAE Computational Workstation -->
+            <div
+              class="overflow-hidden rounded-xl border border-brand-slate-200 bg-surface-container-lowest shadow-sm"
+            >
+              <div
+                class="flex items-center justify-between border-b border-brand-slate-200 bg-brand-slate-50 p-5"
+              >
+                <div class="flex items-center gap-3">
+                  <div class="rounded-lg bg-primary-container p-2 text-on-primary">
+                    <span
+                      class="material-symbols-outlined"
+                      data-icon="developer_board"
+                      >developer_board</span
+                    >
+                  </div>
+                  <div>
+                    <h2 class="font-title-lg text-title-lg font-bold text-on-surface">
+                      Active CAD/CAE Computational Workstation
+                    </h2>
+                    <p class="font-body-sm text-body-sm text-on-surface-variant">
+                      Node: WS-PHC-88 • CADICAE Center Training Lab
+                    </p>
+                  </div>
+                </div>
+                <span
+                  class="inline-flex items-center gap-1.5 rounded border border-status-verified-border bg-status-verified-bg px-2.5 py-1 font-label-sm text-label-sm font-medium text-status-verified"
+                >
+                  <span class="h-2 w-2 animate-ping rounded-full bg-status-verified"></span>
+                  Online &amp; Synced
+                </span>
+              </div>
+              <div class="space-y-6 p-6">
+                <!-- Lab Photo & Live Terminal Context -->
+                <div class="grid grid-cols-1 items-center gap-4 md:grid-cols-3">
+                  <div
+                    class="group relative h-36 overflow-hidden rounded-lg border border-brand-slate-200 md:col-span-1"
+                  >
+                    <img
+                      class="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
+                      data-alt="A modern engineering computer training laboratory at Rivers State University with rows of dual monitor workstations displaying 3D subsea pipeline CAD and CAE models. African engineering students and instructors collaborate in a bright, clean professional setting with overhead fluorescent lighting, soft daylight streaming through large windows, and technical engineering charts visible on the wall."
+                      decoding="async"
+                      fetchpriority="high"
+                      loading="eager"
+                      src="https://lh3.googleusercontent.com/aida-public/AB6AXuAzFmGClBuQqVvLkwSuotlYBnGL9AuUtFTYXAGqY_A8qt9gByEv4C7nnQqzVOs_on0WXHc0jb7qTmXLy-CBOi8sfxcq_LvfA_99WRsD7SMJTvu9kY4lrT-S6mt80nJZJULxC11O5gOuWkRjBg2FLADExtq5nB-L4eE-2d_p1RaPVIdDam9Md95BYTiHXV_aeASObpLoYgOpBUzBSXTekNRiW_mjMFio-nFBDQETuth9UOguW6puCBsr"
+                    />
+                    <div
+                      class="absolute inset-0 flex items-end bg-gradient-to-t from-brand-navy-950/80 via-transparent to-transparent p-2.5"
+                    >
+                      <span
+                        class="font-label-sm text-[10px] font-medium text-surface-container-lowest"
+                        >CADICAE Center Port Harcourt</span
+                      >
+                    </div>
+                  </div>
+                  <!-- Hardware Specifications Bento -->
+                  <div
+                    class="grid grid-cols-2 gap-3 rounded-lg border border-brand-slate-200 bg-brand-slate-50 p-4 md:col-span-2"
+                  >
+                    <div>
+                      <div class="font-label-sm text-label-sm text-brand-slate-400">
+                        Processor Unit
+                      </div>
+                      <div class="font-label-md text-label-md font-semibold text-on-surface">
+                        Intel Xeon W-2245 (8C / 16T)
+                      </div>
+                    </div>
+                    <div>
+                      <div class="font-label-sm text-label-sm text-brand-slate-400">
+                        Memory Allocation
+                      </div>
+                      <div class="font-label-md text-label-md font-semibold text-on-surface">
+                        64GB ECC DDR4 2933MHz
+                      </div>
+                    </div>
+                    <div>
+                      <div class="font-label-sm text-label-sm text-brand-slate-400">
+                        Dedicated Acceleration
+                      </div>
+                      <div class="font-label-md text-label-md font-semibold text-on-surface">
+                        NVIDIA RTX A4000 (16GB GDDR6)
+                      </div>
+                    </div>
+                    <div>
+                      <div class="font-label-sm text-label-sm text-brand-slate-400">
+                        Storage Enclave
+                      </div>
+                      <div class="font-label-md text-label-md font-semibold text-on-surface">
+                        2TB NVMe PCIe 4.0 (RAID 1)
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Software Licences & Token Status -->
+                <div class="space-y-3">
+                  <div
+                    class="flex items-center justify-between text-xs font-semibold uppercase tracking-wider text-brand-slate-500"
+                  >
+                    <span>Authorized CAD/CAE Software Tokens</span>
+                    <span>FLEXlm License Pool RSU-LIC-04</span>
+                  </div>
+                  <div class="grid grid-cols-1 gap-3 sm:grid-cols-3">
+                    <div
+                      class="flex items-center justify-between rounded-lg border border-brand-slate-200 bg-surface-container-lowest p-3"
+                    >
+                      <div>
+                        <div class="font-label-md text-label-md font-bold text-on-surface">
+                          CAESAR II 2024
+                        </div>
+                        <div class="font-code-sm text-code-sm text-brand-slate-500">
+                          Pipe Stress Solver
+                        </div>
+                      </div>
+                      <span
+                        class="rounded bg-status-verified-bg px-2 py-0.5 font-label-sm text-label-sm font-semibold text-status-verified"
+                        >Active</span
+                      >
+                    </div>
+                    <div
+                      class="flex items-center justify-between rounded-lg border border-brand-slate-200 bg-surface-container-lowest p-3"
+                    >
+                      <div>
+                        <div class="font-label-md text-label-md font-bold text-on-surface">
+                          OrcaFlex 11.3b
+                        </div>
+                        <div class="font-code-sm text-code-sm text-brand-slate-500">
+                          Subsea Riser Dyn
+                        </div>
+                      </div>
+                      <span
+                        class="rounded bg-status-verified-bg px-2 py-0.5 font-label-sm text-label-sm font-semibold text-status-verified"
+                        >Active</span
+                      >
+                    </div>
+                    <div
+                      class="flex items-center justify-between rounded-lg border border-brand-slate-200 bg-surface-container-lowest p-3"
+                    >
+                      <div>
+                        <div class="font-label-md text-label-md font-bold text-on-surface">
+                          AVEVA Marine / PDMS
+                        </div>
+                        <div class="font-code-sm text-code-sm text-brand-slate-500">
+                          Subsea Hull Integration
+                        </div>
+                      </div>
+                      <span
+                        class="rounded bg-status-verified-bg px-2 py-0.5 font-label-sm text-label-sm font-semibold text-status-verified"
+                        >Active</span
+                      >
+                    </div>
+                  </div>
+                </div>
+                <!-- Terminal Launch Action Bar -->
+                <div class="flex items-center justify-between border-t border-brand-slate-200 pt-2">
+                  <div class="flex items-center gap-2 text-xs text-brand-slate-500">
+                    <span
+                      class="material-symbols-outlined text-brand-cobalt"
+                      data-icon="vpn_lock"
+                      style="font-size: 16px"
+                      >vpn_lock</span
+                    >
+                    <span>Direct Encrypted Gateway: 10.204.88.14:51820 via WireGuard Protocol</span>
+                  </div>
+                  <button
+                    class="inline-flex items-center gap-2 rounded-lg bg-primary px-4 py-2 font-label-md text-label-md text-on-primary shadow-sm transition-colors hover:bg-brand-cobalt-deep"
+                  >
+                    <span
+                      class="material-symbols-outlined"
+                      data-icon="open_in_new"
+                      style="font-size: 16px"
+                      >open_in_new</span
+                    >
+                    <span>Connect Remote Desktop (RDP)</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <!-- Card 2: Curriculum Milestones & Subsea Pipeline Syndicate -->
+            <div
+              class="overflow-hidden rounded-xl border border-brand-slate-200 bg-surface-container-lowest shadow-sm"
+            >
+              <div
+                class="flex items-center justify-between border-b border-brand-slate-200 bg-brand-slate-50 p-5"
+              >
+                <div class="flex items-center gap-3">
+                  <div class="rounded-lg bg-surface-container-high p-2 text-primary">
+                    <span
+                      class="material-symbols-outlined"
+                      data-icon="assignment"
+                      >assignment</span
+                    >
+                  </div>
+                  <div>
+                    <h2 class="font-title-lg text-title-lg font-bold text-on-surface">
+                      Curriculum Milestones &amp; Subsea Pipeline Syndicate
+                    </h2>
+                    <p class="font-body-sm text-body-sm text-on-surface-variant">
+                      Capstone Project: 16-inch Bonga Deepwater Tieback Stress &amp; Hydrodynamic
+                      Dossier
+                    </p>
+                  </div>
+                </div>
+                <button
+                  class="flex items-center gap-1 font-label-md text-label-md text-primary hover:text-brand-cobalt-deep"
+                >
+                  <span>View Full Syllabus</span>
+                  <span
+                    class="material-symbols-outlined"
+                    data-icon="chevron_right"
+                    style="font-size: 18px"
+                    >chevron_right</span
+                  >
+                </button>
+              </div>
+              <!-- Deliverables Table -->
+              <div class="overflow-x-auto">
+                <table class="w-full text-left text-sm">
+                  <thead
+                    class="border-b border-brand-slate-200 bg-brand-slate-100 font-label-md text-label-md text-brand-slate-700"
+                  >
+                    <tr>
+                      <th class="px-5 py-3">Task / Deliverable</th>
+                      <th class="px-4 py-3">Module Code</th>
+                      <th class="px-4 py-3">Industry Reviewer</th>
+                      <th class="px-4 py-3">Due Date</th>
+                      <th class="px-4 py-3">Status</th>
+                      <th class="px-5 py-3 text-right">Action</th>
+                    </tr>
+                  </thead>
+                  <tbody
+                    class="divide-y divide-brand-slate-200 font-body-sm text-body-sm text-on-surface"
+                  >
+                    <tr class="transition-colors hover:bg-brand-slate-50">
+                      <td class="px-5 py-3.5">
+                        <div class="font-semibold text-on-surface">
+                          Hydrodynamic Drag &amp; Wave Load Matrix
+                        </div>
+                        <div class="text-xs text-brand-slate-400">
+                          OrcaFlex irregular sea simulation export
+                        </div>
+                      </td>
+                      <td class="text-brand-slate-600 px-4 py-3.5 font-code-sm text-code-sm">
+                        SUB-HYD-502
+                      </td>
+                      <td class="px-4 py-3.5">Engr. D. Okon (Shell Fellow)</td>
+                      <td class="text-brand-slate-600 px-4 py-3.5">Nov 12, 2025</td>
+                      <td class="px-4 py-3.5">
+                        <span
+                          class="inline-flex items-center gap-1 rounded-full bg-status-verified-bg px-2 py-0.5 text-xs font-semibold text-status-verified"
+                        >
+                          <span class="h-1.5 w-1.5 rounded-full bg-status-verified"></span>
+                          Approved (Grade: A)
+                        </span>
+                      </td>
+                      <td class="px-5 py-3.5 text-right">
+                        <button class="font-label-sm text-label-sm text-primary hover:underline">
+                          Download
+                        </button>
+                      </td>
+                    </tr>
+                    <tr class="transition-colors hover:bg-brand-slate-50">
+                      <td class="px-5 py-3.5">
+                        <div class="font-semibold text-on-surface">
+                          CAESAR II Slug Load Thermal Expansion
+                        </div>
+                        <div class="text-xs text-brand-slate-400">
+                          Riser base spool flexibility evaluation
+                        </div>
+                      </td>
+                      <td class="text-brand-slate-600 px-4 py-3.5 font-code-sm text-code-sm">
+                        SUB-STR-504
+                      </td>
+                      <td class="px-4 py-3.5">Dr. Tamuno George (RSU Faculty)</td>
+                      <td class="px-4 py-3.5 font-semibold text-status-danger">Nov 20, 2025</td>
+                      <td class="px-4 py-3.5">
+                        <span
+                          class="inline-flex items-center gap-1 rounded-full bg-status-warning-bg px-2 py-0.5 text-xs font-semibold text-status-warning"
+                        >
+                          <span class="h-1.5 w-1.5 rounded-full bg-status-warning"></span>
+                          Revisions Requested
+                        </span>
+                      </td>
+                      <td class="px-5 py-3.5 text-right">
+                        <button
+                          class="inline-flex items-center gap-1 rounded bg-brand-cobalt px-2.5 py-1 font-label-sm text-label-sm text-surface-container-lowest hover:bg-brand-cobalt-deep"
+                        >
+                          <span
+                            class="material-symbols-outlined"
+                            data-icon="upload"
+                            style="font-size: 14px"
+                            >upload</span
+                          >
+                          Upload Dossier
+                        </button>
+                      </td>
+                    </tr>
+                    <tr class="transition-colors hover:bg-brand-slate-50">
+                      <td class="px-5 py-3.5">
+                        <div class="font-semibold text-on-surface">
+                          50m Basin Towing Tank Scaled Resistance Run
+                        </div>
+                        <div class="text-xs text-brand-slate-400">
+                          RSU Hydrodynamics Basin Towing Experiment
+                        </div>
+                      </td>
+                      <td class="text-brand-slate-600 px-4 py-3.5 font-code-sm text-code-sm">
+                        SUB-EXP-509
+                      </td>
+                      <td class="px-4 py-3.5">Prof. I. Jumbo (HOD Marine)</td>
+                      <td class="text-brand-slate-600 px-4 py-3.5">Nov 28, 2025</td>
+                      <td class="px-4 py-3.5">
+                        <span
+                          class="inline-flex items-center gap-1 rounded-full bg-surface-container px-2 py-0.5 text-xs font-semibold text-primary"
+                        >
+                          <span class="h-1.5 w-1.5 rounded-full bg-primary"></span>
+                          Scheduled Slot
+                        </span>
+                      </td>
+                      <td class="px-5 py-3.5 text-right">
+                        <button class="font-label-sm text-label-sm text-primary hover:underline">
+                          View Protocol
+                        </button>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <!-- Reviewer Feedback Notice -->
+              <div
+                class="flex items-start gap-3 border-t border-brand-slate-200 bg-status-warning-bg/40 p-4"
+              >
+                <span
+                  class="material-symbols-outlined flex-shrink-0 text-status-warning"
+                  data-icon="info"
+                  >info</span
+                >
+                <div class="space-y-1 text-xs text-on-surface">
+                  <span class="font-semibold text-brand-slate-800"
+                    >Shell Industry Fellow Feedback (SUB-STR-504):</span
+                  >
+                  <p class="text-brand-slate-600">
+                    "Please verify the allowable stress intensity ratio under ASME B31.8 Chapter
+                    VIII requirements for deepwater thermal surging. Re-submit with appendix B
+                    updated by Friday."
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- =================================================================== -->
+          <!-- RIGHT COLUMN (4 / 12)                                              -->
+          <!-- =================================================================== -->
+          <div class="space-y-6 lg:col-span-4">
+            <!-- Card 3: Physical Wave Basin & Flume Status -->
+            <div
+              class="overflow-hidden rounded-xl border border-brand-slate-200 bg-surface-container-lowest shadow-sm"
+            >
+              <!-- Facility Image Banner -->
+              <div class="relative h-32 w-full">
+                <img
+                  class="h-full w-full object-cover"
+                  data-alt="An expansive architectural view of the Rivers State University marine engineering campus featuring a large outdoor hydrodynamic towing basin flume with scale model offshore drilling platforms and support vessels floating in clear water. Marine engineers in lab coats inspect technical equipment on the surrounding concrete pier under a sunny sky with modern multi-story glass university buildings in the background."
+                  decoding="async"
+                  loading="lazy"
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuDdcDws01ZWTPKhJ2DMauV3l-fkFFRDgMz_9xOaGraYhvtG-50BpmbeauF4T-RGBx2Df8c_IFbxolK5fUrJO4InR7BkJClBUEaTDOdPxojIsVY8v4W3gUpewK-6m0x2ZhxmabxhbP9LPtYz5dxqc2NXPp1FYD2xYvL2fwgdn9qFEMmqqM6mtwtyTmcCoVRpTg3fLfAKSxhqqFgKzTKO6j2MY8wO2GlxyDAfk3uOZqKDQvJoDBpOMsBl"
+                />
+                <div
+                  class="absolute inset-0 flex items-end bg-gradient-to-t from-brand-navy-950/80 via-brand-navy-950/20 to-transparent p-4"
+                >
+                  <div>
+                    <span
+                      class="font-label-sm text-[10px] font-semibold uppercase tracking-wider text-primary-fixed"
+                      >Physical Facility Metrology</span
+                    >
+                    <h3 class="font-title-lg text-title-lg font-bold text-surface-container-lowest">
+                      50m Hydrodynamic Basin
+                    </h3>
+                  </div>
+                </div>
+              </div>
+              <div class="space-y-4 p-5">
+                <!-- Live Telemetry Rows -->
+                <div class="space-y-2.5 font-body-sm text-body-sm">
+                  <div
+                    class="flex items-center justify-between border-b border-brand-slate-100 py-1"
+                  >
+                    <span class="text-brand-slate-500">Current Sea State Mode</span>
+                    <span class="font-code-sm text-code-sm font-bold text-primary"
+                      >JONSWAP Spectrum (Hs=1.8m eq.)</span
+                    >
+                  </div>
+                  <div
+                    class="flex items-center justify-between border-b border-brand-slate-100 py-1"
+                  >
+                    <span class="text-brand-slate-500">Towing Carriage Speed</span>
+                    <span class="font-code-sm text-code-sm font-bold text-on-surface"
+                      >4.2 m/s Calibrated</span
+                    >
+                  </div>
+                  <div
+                    class="flex items-center justify-between border-b border-brand-slate-100 py-1"
+                  >
+                    <span class="text-brand-slate-500">Basin Water Density</span>
+                    <span class="font-code-sm text-code-sm font-semibold text-on-surface"
+                      >1,025 kg/m³ (Saline Treated)</span
+                    >
+                  </div>
+                  <div class="flex items-center justify-between py-1">
+                    <span class="text-brand-slate-500">Wavemaker Wedge</span>
+                    <span class="inline-flex items-center gap-1 font-medium text-status-verified">
+                      <span class="h-2 w-2 rounded-full bg-status-verified"></span>
+                      Operational (Zero Error)
+                    </span>
+                  </div>
+                </div>
+                <!-- Quick Action inside facility card -->
+                <div class="pt-2">
+                  <button
+                    class="flex w-full items-center justify-center gap-2 rounded-lg border border-brand-slate-200 bg-brand-slate-50 px-3 py-2 font-label-md text-label-md text-primary transition-colors hover:bg-brand-slate-100"
+                  >
+                    <span
+                      class="material-symbols-outlined"
+                      data-icon="event_available"
+                      style="font-size: 16px"
+                      >event_available</span
+                    >
+                    <span>Reserve Towing Tank Session</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <!-- Card 4: Upcoming Faculty Reviews & Defense Schedule -->
+            <div
+              class="space-y-4 rounded-xl border border-brand-slate-200 bg-surface-container-lowest p-5 shadow-sm"
+            >
+              <div class="flex items-center justify-between">
+                <h3 class="font-title-lg text-title-lg font-bold text-on-surface">
+                  Academic &amp; Defense Schedule
+                </h3>
+                <span
+                  class="material-symbols-outlined text-brand-slate-400"
+                  data-icon="calendar_month"
+                  >calendar_month</span
+                >
+              </div>
+              <!-- Timeline Items -->
+              <div
+                class="relative space-y-4 before:absolute before:inset-0 before:left-3.5 before:w-0.5 before:bg-brand-slate-200"
+              >
+                <!-- Item 1 -->
+                <div class="relative flex items-start gap-4">
+                  <div
+                    class="z-10 flex h-7 w-7 flex-shrink-0 items-center justify-center rounded-full bg-primary text-xs font-bold text-on-primary ring-4 ring-surface-container-lowest"
+                  >
+                    1
+                  </div>
+                  <div class="space-y-1">
+                    <div class="font-label-md text-label-md font-bold text-on-surface">
+                      Capstone Pre-Defense Board
+                    </div>
+                    <div class="font-body-sm text-body-sm text-brand-slate-500">
+                      External NCDMB / Shell Advisory Panel
+                    </div>
+                    <div class="inline-flex items-center gap-1.5 text-xs font-medium text-primary">
+                      <span
+                        class="material-symbols-outlined"
+                        data-icon="schedule"
+                        style="font-size: 14px"
+                        >schedule</span
+                      >
+                      Friday, Dec 05 • 10:00 WAT • Senate Chamber
+                    </div>
+                  </div>
+                </div>
+                <!-- Item 2 -->
+                <div class="relative flex items-start gap-4">
+                  <div
+                    class="border-brand-slate-300 z-10 flex h-7 w-7 flex-shrink-0 items-center justify-center rounded-full border bg-brand-slate-100 text-xs font-bold text-brand-slate-700 ring-4 ring-surface-container-lowest"
+                  >
+                    2
+                  </div>
+                  <div class="space-y-1">
+                    <div class="font-label-md text-label-md font-bold text-on-surface">
+                      CAE Spool Review Session
+                    </div>
+                    <div class="font-body-sm text-body-sm text-brand-slate-500">
+                      Dr. Tamuno George 1-on-1 Inspection
+                    </div>
+                    <div class="inline-flex items-center gap-1.5 text-xs text-brand-slate-500">
+                      <span
+                        class="material-symbols-outlined"
+                        data-icon="schedule"
+                        style="font-size: 14px"
+                        >schedule</span
+                      >
+                      Monday, Dec 08 • 14:30 WAT • CADICAE Room 3
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Card 5: Quick Terminal Actions -->
+            <div
+              class="space-y-3 rounded-xl border border-brand-slate-200 bg-surface-container-lowest p-5 shadow-sm"
+            >
+              <h3 class="font-title-lg text-title-lg font-bold text-on-surface">
+                Quick Operations
+              </h3>
+              <div class="space-y-2">
+                <button
+                  class="flex w-full items-center justify-between rounded-lg border border-brand-slate-200 p-2.5 text-left transition-colors hover:bg-brand-slate-50"
+                >
+                  <div class="flex items-center gap-2.5">
+                    <span
+                      class="material-symbols-outlined text-primary"
+                      data-icon="key"
+                      >key</span
+                    >
+                    <span class="font-label-md text-label-md text-on-surface"
+                      >Requisition Hardware Token</span
+                    >
+                  </div>
+                  <span
+                    class="material-symbols-outlined text-brand-slate-400"
+                    data-icon="chevron_right"
+                    style="font-size: 16px"
+                    >chevron_right</span
+                  >
+                </button>
+                <button
+                  class="flex w-full items-center justify-between rounded-lg border border-brand-slate-200 p-2.5 text-left transition-colors hover:bg-brand-slate-50"
+                >
+                  <div class="flex items-center gap-2.5">
+                    <span
+                      class="material-symbols-outlined text-status-info"
+                      data-icon="receipt"
+                      >receipt</span
+                    >
+                    <span class="font-label-md text-label-md text-on-surface"
+                      >Download Attendance Docket</span
+                    >
+                  </div>
+                  <span
+                    class="material-symbols-outlined text-brand-slate-400"
+                    data-icon="chevron_right"
+                    style="font-size: 16px"
+                    >chevron_right</span
+                  >
+                </button>
+                <button
+                  class="flex w-full items-center justify-between rounded-lg border border-brand-slate-200 p-2.5 text-left transition-colors hover:bg-brand-slate-50"
+                >
+                  <div class="flex items-center gap-2.5">
+                    <span
+                      class="material-symbols-outlined text-status-verified"
+                      data-icon="verified_user"
+                      >verified_user</span
+                    >
+                    <span class="font-label-md text-label-md text-on-surface"
+                      >Validate Peer Certificate</span
+                    >
+                  </div>
+                  <span
+                    class="material-symbols-outlined text-brand-slate-400"
+                    data-icon="chevron_right"
+                    style="font-size: 16px"
+                    >chevron_right</span
+                  >
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+      <!-- ======================================================================= -->
+      <!-- INSTITUTIONAL FOOTER                                                    -->
+      <!-- ======================================================================= -->
+      <cmotd-portal-footer></cmotd-portal-footer>
+    </div>
+  </body>
+</html>

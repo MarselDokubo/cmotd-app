@@ -1,0 +1,3 @@
+node_modules/
+assets/css/tailwind-build.css
+.DS_Store

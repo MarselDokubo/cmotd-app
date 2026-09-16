@@ -1,0 +1,413 @@
+<!doctype html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      content="width=device-width, initial-scale=1.0"
+      name="viewport"
+    />
+    <title>CMOTD | Rivers State University - Two-Factor Authentication</title>
+    <link
+      href="../favicon.ico"
+      rel="icon"
+      type="image/x-icon"
+    />
+    <!-- Fonts -->
+    <!-- Tailwind CSS -->
+    <link
+      href="../assets/css/tailwind-build.css"
+      rel="stylesheet"
+    />
+    <link
+      href="../assets/css/cmotd-global.css"
+      rel="stylesheet"
+    />
+    <script
+      defer=""
+      src="../assets/js/site-config.js"
+    ></script>
+    <script
+      defer=""
+      src="../assets/js/cmotd-components.js"
+    ></script>
+  </head>
+  <body
+    class="flex min-h-screen flex-col bg-background font-body-md text-on-background antialiased"
+  >
+    <!-- Top System Telemetry Strip -->
+    <div
+      class="z-50 flex w-full items-center justify-between border-b border-brand-slate-800 bg-brand-navy-950 px-4 py-1.5 font-mono text-[11px] tracking-wider text-slate-300 sm:px-8"
+    >
+      <div class="flex items-center space-x-2">
+        <span class="inline-block h-2 w-2 animate-pulse rounded-full bg-status-danger"></span>
+        <span class="font-bold text-red-400">SECURITY EXCEPTION: PROTOCOL AUTH-TIMEOUT-429</span>
+        <span class="hidden text-brand-slate-500 md:inline">•</span>
+        <span class="hidden text-brand-slate-400 md:inline">RSU-IAM LOCKOUT TIER 2</span>
+        <span class="hidden text-brand-slate-500 lg:inline">•</span>
+        <span class="hidden text-brand-slate-400 lg:inline">ACTIVE ENCLAVE: PHC-CORE-01</span>
+      </div>
+      <div class="flex items-center space-x-3 text-brand-slate-400">
+        <span class="hidden sm:inline">COOLDOWN ENFORCED:</span>
+        <span
+          class="bg-brand-slate-900 rounded border border-brand-slate-800 px-2 py-0.5 font-bold tracking-widest text-amber-400"
+          >02:45 SEC</span
+        >
+      </div>
+    </div>
+    <!-- Shared Component: TopNavBar (Web Header) -->
+    <cmotd-site-header></cmotd-site-header>
+    <!-- Main Canvas -->
+    <main
+      class="bg-grid-pattern relative flex flex-grow items-center justify-center px-4 py-10 sm:px-6 lg:px-8"
+    >
+      <!-- Background Gradient Ambience Overlay -->
+      <div
+        class="pointer-events-none absolute inset-0 bg-gradient-to-b from-white/70 via-transparent to-white/90"
+      ></div>
+      <!-- Centered 2FA Card Matrix -->
+      <div
+        class="relative z-10 w-full max-w-[620px] overflow-hidden rounded border border-brand-slate-200 bg-surface-container-lowest shadow-xl"
+      >
+        <!-- Card Security Banner Top Header -->
+        <div
+          class="flex items-center justify-between border-b border-brand-slate-800 bg-brand-navy-900 px-6 py-3 text-white"
+        >
+          <div class="flex items-center space-x-2">
+            <span class="material-symbols-outlined text-[18px] text-amber-400">lock</span>
+            <span class="font-mono text-[12px] font-medium tracking-tight text-slate-200">
+              Two-Factor Authentication Required • Tier-3 Academic Integrity Protocol (TLS 1.3 /
+              ECC-384)
+            </span>
+          </div>
+          <div class="flex items-center space-x-1.5">
+            <span class="inline-block h-2 w-2 rounded-full bg-status-danger"></span>
+            <span class="font-mono text-[11px] font-semibold uppercase tracking-wider text-red-300"
+              >Locked</span
+            >
+          </div>
+        </div>
+        <!-- Card Sub-Banner Status Indicator -->
+        <div
+          class="flex items-center justify-between border-b border-amber-200 bg-status-warning-bg px-6 py-2.5"
+        >
+          <div class="flex items-center space-x-2">
+            <span class="material-symbols-outlined text-[18px] text-status-warning">warning</span>
+            <span class="font-label-sm text-label-sm uppercase text-amber-900"
+              >Subsea Supercluster &amp; Registry Access</span
+            >
+          </div>
+          <span
+            class="rounded border border-amber-300 bg-amber-100 px-2 py-0.5 font-mono text-[11px] font-bold text-status-warning"
+          >
+            RATE LIMIT THRESHOLD MET
+          </span>
+        </div>
+        <!-- Card Core Body -->
+        <div class="space-y-6 p-6 sm:p-8">
+          <!-- Header Section -->
+          <div class="space-y-2 text-center">
+            <h1 class="font-headline-md text-headline-md text-brand-navy-900">
+              Verify Your Identity
+            </h1>
+            <p class="font-body-sm text-body-sm text-brand-slate-700">
+              A 6-digit cryptographic security code was dispatched to:
+            </p>
+            <div
+              class="inline-flex items-center space-x-2 rounded border border-brand-slate-200 bg-brand-slate-100 px-3 py-1 font-mono text-body-sm text-brand-navy-900"
+            >
+              <span class="material-symbols-outlined text-[16px] text-brand-slate-500">mail</span>
+              <span class="font-semibold">b.amadi@operator-energy.com</span>
+              <span class="ml-1 flex items-center text-xs font-medium text-status-verified">
+                <span class="material-symbols-outlined text-[14px]">check_circle</span>
+              </span>
+            </div>
+          </div>
+          <!-- Primary Alert Box: Security Token Expired & Cooldown Active -->
+          <div
+            class="flex items-start space-x-3 rounded border border-red-200 bg-status-danger-bg p-4 text-left"
+          >
+            <div class="mt-0.5 shrink-0 rounded bg-red-100 p-1 text-status-danger">
+              <span class="material-symbols-outlined text-[20px]">timer_off</span>
+            </div>
+            <div class="space-y-1.5">
+              <div class="flex items-center justify-between">
+                <h2 class="font-label-md text-label-md font-bold text-red-950">
+                  Security Token Expired &amp; Cooldown Active
+                </h2>
+                <span
+                  class="rounded border border-red-300 bg-red-100 px-1.5 py-0.5 font-mono text-[11px] font-bold text-status-danger"
+                >
+                  HTTP 429
+                </span>
+              </div>
+              <p class="font-body-sm text-body-sm leading-relaxed text-red-900">
+                Code
+                <span class="font-mono font-semibold">#SEC-9921</span> expired after 5 minutes.
+                Excessive dispatch requests detected from your subnet. Automated SMS/Email code
+                dispatch is throttled for <span class="font-bold underline">02:45</span> to prevent
+                brute-force token enumeration per ISO/IEC 27001 standard.
+              </p>
+            </div>
+          </div>
+          <!-- 6-Digit Expired Code Input Matrix -->
+          <div class="space-y-3">
+            <label
+              class="block text-center font-label-sm text-label-sm uppercase tracking-wider text-brand-slate-500"
+            >
+              Expired Authentication Token (Locked)
+            </label>
+            <div class="mx-auto grid max-w-[360px] grid-cols-6 gap-2 sm:gap-3">
+              <!-- Box 1 -->
+              <div
+                class="h-13 flex cursor-not-allowed select-none flex-col items-center justify-center rounded border-2 border-red-300 bg-red-50/50 py-3 font-mono text-xl font-bold text-status-danger"
+              >
+                <span class="text-sm opacity-40">--</span>
+              </div>
+              <!-- Box 2 -->
+              <div
+                class="h-13 flex cursor-not-allowed select-none flex-col items-center justify-center rounded border-2 border-red-300 bg-red-50/50 py-3 font-mono text-xl font-bold text-status-danger"
+              >
+                <span class="text-sm opacity-40">--</span>
+              </div>
+              <!-- Box 3 -->
+              <div
+                class="h-13 flex cursor-not-allowed select-none flex-col items-center justify-center rounded border-2 border-red-300 bg-red-50/50 py-3 font-mono text-xl font-bold text-status-danger"
+              >
+                <span class="text-sm opacity-40">--</span>
+              </div>
+              <!-- Box 4 -->
+              <div
+                class="h-13 flex cursor-not-allowed select-none flex-col items-center justify-center rounded border-2 border-red-300 bg-red-50/50 py-3 font-mono text-xl font-bold text-status-danger"
+              >
+                <span class="text-sm opacity-40">--</span>
+              </div>
+              <!-- Box 5 -->
+              <div
+                class="h-13 flex cursor-not-allowed select-none flex-col items-center justify-center rounded border-2 border-red-300 bg-red-50/50 py-3 font-mono text-xl font-bold text-status-danger"
+              >
+                <span class="text-sm opacity-40">--</span>
+              </div>
+              <!-- Box 6 -->
+              <div
+                class="h-13 flex cursor-not-allowed select-none flex-col items-center justify-center rounded border-2 border-red-300 bg-red-50/50 py-3 font-mono text-xl font-bold text-status-danger"
+              >
+                <span class="text-sm opacity-40">--</span>
+              </div>
+            </div>
+            <!-- Countdown / Status Under Slots -->
+            <div
+              class="flex flex-col items-center justify-between border-t border-brand-slate-100 px-2 pt-1 text-body-sm sm:flex-row"
+            >
+              <div class="flex items-center space-x-1.5 font-semibold text-status-danger">
+                <span class="material-symbols-outlined text-[16px]">alarm_off</span>
+                <span>Code Expired: 00:00 (EXPIRED)</span>
+              </div>
+              <div
+                class="mt-1 flex items-center space-x-1.5 font-mono text-xs text-brand-slate-500 sm:mt-0"
+              >
+                <span class="material-symbols-outlined text-[15px] text-amber-600"
+                  >hourglass_top</span
+                >
+                <span
+                  >Resend Code cooldown active:
+                  <span class="font-bold text-amber-700">02:45 remaining</span></span
+                >
+              </div>
+            </div>
+          </div>
+          <!-- Primary Action Trigger (Disabled State) -->
+          <div class="space-y-3">
+            <button
+              class="border-brand-slate-300 flex w-full cursor-not-allowed items-center justify-center space-x-2 rounded border bg-brand-slate-200 px-4 py-3 font-label-md text-label-md text-brand-slate-400"
+              disabled=""
+            >
+              <span class="material-symbols-outlined text-[18px]">lock</span>
+              <span>Verify &amp; Enter Portal (Token Invalid / Expired)</span>
+            </button>
+            <!-- Resend Action (Disabled & Locked State) -->
+            <div class="flex items-center justify-between pt-1 text-body-sm">
+              <div class="flex cursor-not-allowed items-center space-x-1 text-brand-slate-400">
+                <span class="material-symbols-outlined text-[16px]">refresh</span>
+                <span>Didn't receive the code?</span>
+                <span class="font-semibold italic text-brand-slate-400"
+                  >Resend Code (Locked for 2m 45s)</span
+                >
+              </div>
+              <a
+                class="flex items-center space-x-1 font-label-md text-label-md text-primary hover:underline"
+                href="#"
+              >
+                <span>Back to Portal Login</span>
+                <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+              </a>
+            </div>
+          </div>
+          <!-- Alternative Verification Methods Accordion / Fallback List -->
+          <div class="space-y-3 border-t border-brand-slate-200 pt-4">
+            <div class="flex items-center justify-between">
+              <h3 class="font-label-md text-label-md uppercase tracking-wide text-brand-navy-900">
+                Alternative Institutional Verification Methods
+              </h3>
+              <span
+                class="rounded bg-brand-slate-100 px-2 py-0.5 font-mono text-[11px] text-brand-slate-700"
+                >Bypass Ready</span
+              >
+            </div>
+            <div class="space-y-2.5">
+              <!-- Fallback 1: Mobile Push Notification (Recommended) -->
+              <div
+                class="flex items-center justify-between rounded border border-brand-cobalt/30 bg-status-info-bg/50 p-3 transition-colors hover:border-brand-cobalt"
+              >
+                <div class="flex items-start space-x-3">
+                  <div
+                    class="mt-0.5 flex h-8 w-8 shrink-0 items-center justify-center rounded bg-primary text-white"
+                  >
+                    <span class="material-symbols-outlined text-[18px]">send_to_mobile</span>
+                  </div>
+                  <div>
+                    <div class="flex items-center space-x-2">
+                      <span
+                        class="font-headline-sm text-sm text-title-lg font-bold text-brand-navy-900"
+                        >Approve via Mobile Push Notification</span
+                      >
+                      <span
+                        class="py-0.2 rounded bg-blue-100 px-1.5 text-[10px] font-bold uppercase text-primary"
+                        >Recommended</span
+                      >
+                    </div>
+                    <p class="text-brand-slate-600 mt-0.5 text-body-sm text-xs">
+                      Instant push sent to registered device (iPhone 15 Pro • Port Harcourt)
+                    </p>
+                  </div>
+                </div>
+                <button
+                  class="ml-2 shrink-0 rounded bg-primary px-3 py-1.5 text-xs font-semibold text-white transition-all hover:bg-brand-cobalt-deep"
+                >
+                  Open App
+                </button>
+              </div>
+              <!-- Fallback 2: FIDO2 / YubiKey -->
+              <div
+                class="hover:border-brand-slate-300 flex items-center justify-between rounded border border-brand-slate-200 bg-white p-3 transition-colors"
+              >
+                <div class="flex items-start space-x-3">
+                  <div
+                    class="mt-0.5 flex h-8 w-8 shrink-0 items-center justify-center rounded border border-brand-slate-200 bg-brand-slate-100 text-brand-navy-900"
+                  >
+                    <span class="material-symbols-outlined text-[18px]">key</span>
+                  </div>
+                  <div>
+                    <span
+                      class="font-headline-sm text-sm text-title-lg font-bold text-brand-navy-900"
+                      >Use FIDO2 / YubiKey Hardware Token</span
+                    >
+                    <p class="text-brand-slate-600 mt-0.5 text-body-sm text-xs">
+                      Touch your physical YubiKey 5 FIPS security key plugged into USB port
+                    </p>
+                  </div>
+                </div>
+                <button
+                  class="border-brand-slate-300 ml-2 shrink-0 rounded border px-3 py-1.5 text-xs font-semibold text-brand-navy-900 transition-all hover:bg-brand-slate-50"
+                >
+                  Authenticate
+                </button>
+              </div>
+              <!-- Fallback 3: Emergency Backup Key -->
+              <div
+                class="hover:border-brand-slate-300 flex items-center justify-between rounded border border-brand-slate-200 bg-white p-3 transition-colors"
+              >
+                <div class="flex items-start space-x-3">
+                  <div
+                    class="mt-0.5 flex h-8 w-8 shrink-0 items-center justify-center rounded border border-brand-slate-200 bg-brand-slate-100 text-brand-navy-900"
+                  >
+                    <span class="material-symbols-outlined text-[18px]">password</span>
+                  </div>
+                  <div>
+                    <span
+                      class="font-headline-sm text-sm text-title-lg font-bold text-brand-navy-900"
+                      >Enter Emergency 16-Digit Backup Rescue Key</span
+                    >
+                    <p class="text-brand-slate-600 mt-0.5 text-body-sm text-xs">
+                      One-time recovery code generated during initial cohort onboarding
+                    </p>
+                  </div>
+                </div>
+                <button
+                  class="border-brand-slate-300 ml-2 shrink-0 rounded border px-3 py-1.5 text-xs font-semibold text-brand-navy-900 transition-all hover:bg-brand-slate-50"
+                >
+                  Enter Code
+                </button>
+              </div>
+              <!-- Fallback 4: Senate Bursary / IT Supervisor Emergency Bypass -->
+              <div
+                class="hover:border-brand-slate-300 flex items-center justify-between rounded border border-brand-slate-200 bg-white p-3 transition-colors"
+              >
+                <div class="flex items-start space-x-3">
+                  <div
+                    class="mt-0.5 flex h-8 w-8 shrink-0 items-center justify-center rounded border border-brand-slate-200 bg-brand-slate-100 text-brand-navy-900"
+                  >
+                    <span class="material-symbols-outlined text-[18px]">contact_support</span>
+                  </div>
+                  <div>
+                    <span
+                      class="font-headline-sm text-sm text-title-lg font-bold text-brand-navy-900"
+                      >Request Senate Bursary / IT Supervisor Bypass</span
+                    >
+                    <p class="text-brand-slate-600 mt-0.5 text-body-sm text-xs">
+                      Contact Duty Liaison (Engr. Kingsley D. Uranta • Ext 4402) for LDAP clearance
+                    </p>
+                  </div>
+                </div>
+                <button
+                  class="ml-2 shrink-0 rounded border border-red-200 px-3 py-1.5 text-xs font-semibold text-status-danger transition-all hover:bg-red-50"
+                >
+                  Call Liaison
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- Diagnostic Security Telemetry Strip Footer -->
+          <div
+            class="text-brand-slate-600 space-y-1 rounded border border-brand-slate-200 bg-brand-slate-50 p-2.5 font-mono text-[11px]"
+          >
+            <div class="flex items-center justify-between border-b border-brand-slate-200 pb-1">
+              <span class="font-bold text-brand-slate-700">AUDIT TELEMETRY:</span>
+              <span class="font-semibold text-status-danger">ATTEMPTS EXHAUSTED (3/5)</span>
+            </div>
+            <div class="flex flex-wrap gap-x-3 gap-y-0.5 pt-0.5">
+              <span
+                >Client IP:
+                <strong class="text-brand-slate-900"
+                  >102.89.41.201 (Port Harcourt, NG)</strong
+                ></span
+              >
+              <span
+                >• Device:
+                <strong class="text-brand-slate-900">MacOS Chrome / HPC Terminal 14</strong></span
+              >
+              <span>• Node: <strong class="text-brand-slate-900">PHC-SIM-04</strong></span>
+            </div>
+          </div>
+        </div>
+        <!-- Card Trust Seal Footer -->
+        <div
+          class="flex items-center justify-between border-t border-brand-slate-200 bg-brand-slate-100 px-6 py-3 text-xs text-brand-slate-500"
+        >
+          <div class="flex items-center space-x-2">
+            <span class="material-symbols-outlined text-[16px] text-status-verified"
+              >verified_user</span
+            >
+            <span>End-to-End Cryptographically Secured Access Protocol</span>
+          </div>
+          <span class="hidden font-medium text-brand-slate-700 sm:inline"
+            >Verified by Rivers State University Senate</span
+          >
+        </div>
+      </div>
+    </main>
+    <!-- Shared Component: Institutional Rich Footer -->
+    <cmotd-institution-strip></cmotd-institution-strip>
+    <cmotd-site-footer></cmotd-site-footer>
+  </body>
+</html>

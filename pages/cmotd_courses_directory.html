@@ -1,0 +1,1190 @@
+<!doctype html>
+
+<html
+  class="h-full"
+  lang="en"
+>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      content="width=device-width, initial-scale=1.0"
+      name="viewport"
+    />
+    <title>Courses Directory | CMOTD - Rivers State University</title>
+    <link
+      href="../favicon.ico"
+      rel="icon"
+      type="image/x-icon"
+    />
+    <link
+      href="../assets/css/tailwind-build.css"
+      rel="stylesheet"
+    />
+    <link
+      href="../assets/css/cmotd-global.css"
+      rel="stylesheet"
+    />
+    <script
+      defer=""
+      src="../assets/js/site-config.js"
+    ></script>
+    <script
+      defer=""
+      src="../assets/js/cmotd-components.js"
+    ></script>
+  </head>
+  <body
+    class="flex min-h-screen flex-col bg-background font-body-md text-on-surface antialiased selection:bg-primary selection:text-on-primary"
+  >
+    <!-- TopNavBar (Shared Component JSON Blueprint) -->
+    <cmotd-site-header active="programmes"></cmotd-site-header>
+    <!-- Main Canvas -->
+    <main class="mx-auto w-full max-w-[1280px] flex-grow px-4 py-6 sm:px-6 md:py-8 lg:px-8">
+      <!-- Breadcrumbs -->
+      <nav
+        aria-label="Breadcrumb"
+        class="mb-6 flex items-center gap-2 font-label-md text-label-md text-brand-slate-500"
+      >
+        <a
+          class="flex items-center gap-1 transition-colors hover:text-primary"
+          href="#"
+        >
+          <span class="material-symbols-outlined text-[16px]">home</span>
+          <span>Home</span>
+        </a>
+        <span class="text-brand-slate-400">/</span>
+        <a
+          class="transition-colors hover:text-primary"
+          href="#"
+          >Academic Directory</a
+        >
+        <span class="text-brand-slate-400">/</span>
+        <span
+          aria-current="page"
+          class="font-semibold text-brand-slate-800"
+          >Courses</span
+        >
+      </nav>
+      <!-- Header Section -->
+      <section class="mb-8 border-b border-brand-slate-200 pb-8">
+        <div class="max-w-4xl">
+          <div
+            class="mb-3 inline-flex items-center gap-2 rounded border border-secondary-container bg-surface-container px-2.5 py-1 font-code-sm text-code-sm font-semibold text-primary"
+          >
+            <span class="material-symbols-outlined text-[14px]">school</span>
+            <span>RIVERS STATE UNIVERSITY CAD/CAE ACCREDITED FACILITY</span>
+          </div>
+          <h1
+            class="mb-4 font-display-lg text-display-lg-mobile tracking-tight text-brand-navy-900 md:text-display-lg"
+          >
+            Accredited Engineering &amp; Computational Modules
+          </h1>
+          <p class="font-body-lg text-body-md leading-relaxed text-brand-slate-700 md:text-body-lg">
+            Explore modular specialized certifications across subsea engineering, plant CAD, process
+            modeling, industrial software, and yard compliance. Each course is administered by
+            senior industry fellows on dedicated high-performance workstation clusters.
+          </p>
+        </div>
+        <!-- Facility Metric Indicators -->
+        <div
+          class="mt-6 grid grid-cols-2 gap-4 border-t border-brand-slate-200 pt-6 sm:grid-cols-4"
+        >
+          <div class="flex items-center gap-3">
+            <div
+              class="flex h-9 w-9 items-center justify-center rounded border border-brand-slate-200 bg-brand-slate-100 text-primary"
+            >
+              <span class="material-symbols-outlined text-[20px]">terminal</span>
+            </div>
+            <div>
+              <div class="font-headline-sm text-headline-sm text-brand-navy-900">45+ Seats</div>
+              <div class="font-label-sm text-label-sm uppercase text-brand-slate-500">
+                Dual-Screen Workstations
+              </div>
+            </div>
+          </div>
+          <div class="flex items-center gap-3">
+            <div
+              class="flex h-9 w-9 items-center justify-center rounded border border-brand-slate-200 bg-brand-slate-100 text-primary"
+            >
+              <span class="material-symbols-outlined text-[20px]">verified</span>
+            </div>
+            <div>
+              <div class="font-headline-sm text-headline-sm text-brand-navy-900">
+                COREN &amp; NUPRC
+              </div>
+              <div class="font-label-sm text-label-sm uppercase text-brand-slate-500">
+                Industry Accredited
+              </div>
+            </div>
+          </div>
+          <div class="flex items-center gap-3">
+            <div
+              class="flex h-9 w-9 items-center justify-center rounded border border-brand-slate-200 bg-brand-slate-100 text-primary"
+            >
+              <span class="material-symbols-outlined text-[20px]">badge</span>
+            </div>
+            <div>
+              <div class="font-headline-sm text-headline-sm text-brand-navy-900">
+                100% Verifiable
+              </div>
+              <div class="font-label-sm text-label-sm uppercase text-brand-slate-500">
+                Cryptographic Hashes
+              </div>
+            </div>
+          </div>
+          <div class="flex items-center gap-3">
+            <div
+              class="flex h-9 w-9 items-center justify-center rounded border border-brand-slate-200 bg-brand-slate-100 text-primary"
+            >
+              <span class="material-symbols-outlined text-[20px]">schedule</span>
+            </div>
+            <div>
+              <div class="font-headline-sm text-headline-sm text-brand-navy-900">
+                Q2 &amp; Q3 2025
+              </div>
+              <div class="font-label-sm text-label-sm uppercase text-brand-slate-500">
+                Cohorts Now Enrolling
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Dynamic Control Toolbar -->
+      <section
+        class="mb-8 rounded-lg border border-brand-slate-200 bg-surface-container-lowest p-4 shadow-sm sm:p-5"
+      >
+        <!-- Primary Search & View Row -->
+        <div
+          class="flex flex-col items-stretch justify-between gap-4 border-b border-brand-slate-200 pb-4 lg:flex-row lg:items-center"
+        >
+          <!-- Search Input -->
+          <div class="relative flex-1">
+            <span
+              class="material-symbols-outlined absolute left-3.5 top-1/2 -translate-y-1/2 text-[20px] text-brand-slate-400"
+              >search</span
+            >
+            <input
+              class="h-[42px] w-full rounded border border-brand-slate-200 pl-10 pr-4 font-body-md text-body-md text-brand-slate-800 placeholder-brand-slate-400 transition-all focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary/20"
+              placeholder="Search courses by code (e.g. MOD-201), software (AVEVA, Caesar II), or discipline..."
+              type="text"
+              value="AVEVA"
+            />
+            <button
+              class="absolute right-3 top-1/2 -translate-y-1/2 text-brand-slate-400 hover:text-brand-slate-700"
+              type="button"
+            >
+              <span class="material-symbols-outlined text-[16px]">close</span>
+            </button>
+          </div>
+          <!-- Sort and Layout Toggle Group -->
+          <div class="flex shrink-0 items-center gap-3">
+            <div class="flex items-center gap-2">
+              <label
+                class="whitespace-nowrap font-label-md text-label-md text-brand-slate-500"
+                for="sortBy"
+                >Sort by:</label
+              >
+              <select
+                class="h-[42px] cursor-pointer rounded border border-brand-slate-200 bg-surface-container-lowest px-3 font-label-md text-label-md text-brand-slate-800 focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary/20"
+                id="sortBy"
+              >
+                <option selected="">Upcoming Cohort Date</option>
+                <option>Most Popular</option>
+                <option>Course Code</option>
+                <option>Duration (Short to Long)</option>
+                <option>Course Fee (Low - High)</option>
+                <option>Course Fee (High - Low)</option>
+              </select>
+            </div>
+            <!-- View Mode Toggle -->
+            <div
+              aria-label="View toggle"
+              class="flex items-center rounded border border-brand-slate-200 bg-brand-slate-100 p-0.5"
+              role="radiogroup"
+            >
+              <button
+                aria-label="Grid View"
+                class="shadow-xs rounded bg-surface-container-lowest p-2 text-primary"
+                title="Grid View"
+                type="button"
+              >
+                <span class="material-symbols-outlined text-[18px]">grid_view</span>
+              </button>
+              <button
+                aria-label="List View"
+                class="rounded p-2 text-brand-slate-500 transition-colors hover:text-brand-slate-800"
+                title="List View"
+                type="button"
+              >
+                <span class="material-symbols-outlined text-[18px]">view_list</span>
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- Filters Multi-Dropdown Row -->
+        <div class="grid grid-cols-1 gap-3 pt-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5">
+          <!-- Discipline Filter -->
+          <div>
+            <label
+              class="mb-1 block font-label-sm text-label-sm uppercase tracking-wider text-brand-slate-500"
+              >Discipline</label
+            >
+            <select
+              class="h-[38px] w-full rounded border border-brand-slate-200 bg-surface-container-lowest px-2.5 font-label-md text-label-md text-brand-slate-800 focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary/20"
+            >
+              <option>All Disciplines</option>
+              <option>Subsea &amp; Piping Engineering</option>
+              <option>Process &amp; Thermal Simulation</option>
+              <option>CAD &amp; Plant 3D Design</option>
+              <option>Software &amp; Cloud Architecture</option>
+              <option>Industrial AI &amp; Telemetry</option>
+              <option>Maritime Safety &amp; Auditing</option>
+            </select>
+          </div>
+          <!-- Tool/Software Filter -->
+          <div>
+            <label
+              class="mb-1 block font-label-sm text-label-sm uppercase tracking-wider text-brand-slate-500"
+              >Tool / Software</label
+            >
+            <select
+              class="h-[38px] w-full rounded border border-brand-slate-200 bg-surface-container-lowest px-2.5 font-label-md text-label-md text-brand-slate-800 focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary/20"
+            >
+              <option>All Tools</option>
+              <option selected="">AVEVA E3D / PDMS</option>
+              <option>Hexagon Caesar II</option>
+              <option>Aspen HYSYS</option>
+              <option>ANSYS Fluent</option>
+              <option>PV Elite</option>
+              <option>Python / FastAPI</option>
+              <option>Docker</option>
+              <option>PyTorch</option>
+            </select>
+          </div>
+          <!-- Delivery Mode Filter -->
+          <div>
+            <label
+              class="mb-1 block font-label-sm text-label-sm uppercase tracking-wider text-brand-slate-500"
+              >Delivery Mode</label
+            >
+            <select
+              class="h-[38px] w-full rounded border border-brand-slate-200 bg-surface-container-lowest px-2.5 font-label-md text-label-md text-brand-slate-800 focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary/20"
+            >
+              <option>All Formats</option>
+              <option>Physical Lab Workstation</option>
+              <option>Blended Hybrid</option>
+              <option>Weekend Masterclass</option>
+            </select>
+          </div>
+          <!-- Duration Filter -->
+          <div>
+            <label
+              class="mb-1 block font-label-sm text-label-sm uppercase tracking-wider text-brand-slate-500"
+              >Duration</label
+            >
+            <select
+              class="h-[38px] w-full rounded border border-brand-slate-200 bg-surface-container-lowest px-2.5 font-label-md text-label-md text-brand-slate-800 focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary/20"
+            >
+              <option>All Durations</option>
+              <option>Short (2-4 Weeks)</option>
+              <option>Medium (6-10 Weeks)</option>
+              <option>Extended (12+ Weeks)</option>
+            </select>
+          </div>
+          <!-- Fee Range / Availability -->
+          <div>
+            <label
+              class="mb-1 block font-label-sm text-label-sm uppercase tracking-wider text-brand-slate-500"
+              >Availability</label
+            >
+            <select
+              class="h-[38px] w-full rounded border border-brand-slate-200 bg-surface-container-lowest px-2.5 font-label-md text-label-md text-brand-slate-800 focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary/20"
+            >
+              <option>All Courses</option>
+              <option selected="">Immediate Enrolling</option>
+              <option>Waitlist Open</option>
+            </select>
+          </div>
+        </div>
+        <!-- Active Filters Row & Results Counter -->
+        <div
+          class="mt-4 flex flex-wrap items-center justify-between gap-3 border-t border-brand-slate-200 pt-3"
+        >
+          <div class="flex flex-wrap items-center gap-2">
+            <span class="font-label-sm text-label-sm font-semibold uppercase text-brand-slate-500"
+              >Active Filters:</span
+            >
+            <span
+              class="inline-flex items-center gap-1 rounded border border-brand-slate-200 bg-brand-slate-100 px-2.5 py-1 font-code-sm text-code-sm text-brand-slate-800"
+            >
+              <span>Tool: AVEVA E3D</span>
+              <button
+                class="hover:text-status-danger"
+                type="button"
+              >
+                <span class="material-symbols-outlined text-[14px]">close</span>
+              </button>
+            </span>
+            <span
+              class="inline-flex items-center gap-1 rounded border border-brand-slate-200 bg-brand-slate-100 px-2.5 py-1 font-code-sm text-code-sm text-brand-slate-800"
+            >
+              <span>Status: Enrolling</span>
+              <button
+                class="hover:text-status-danger"
+                type="button"
+              >
+                <span class="material-symbols-outlined text-[14px]">close</span>
+              </button>
+            </span>
+            <button
+              class="ml-1 font-label-sm text-label-sm font-semibold text-primary hover:underline"
+              type="button"
+            >
+              Clear All Filters
+            </button>
+          </div>
+          <div class="font-label-md text-label-md text-brand-slate-700">
+            Showing
+            <span class="font-bold text-brand-navy-900">9 Courses</span>
+            matching current criteria
+            <span class="text-brand-slate-500">(from 24 total modules)</span>
+          </div>
+        </div>
+      </section>
+      <!-- Detailed Courses Grid (3x3 Layout) -->
+      <section class="mb-12 grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
+        <!-- Course 1 -->
+        <cmotd-card variant="course">
+          <div class="p-5">
+            <!-- Top Meta Row -->
+            <div class="mb-3 flex items-center justify-between gap-2">
+              <div class="flex items-center gap-2">
+                <span
+                  class="rounded bg-brand-navy-900 px-2 py-0.5 font-code-sm text-code-sm font-semibold tracking-wider text-surface-bright"
+                  >CMOTD-TRN-01</span
+                >
+                <span class="font-code-sm text-code-sm font-medium text-brand-slate-500"
+                  >8 WEEKS</span
+                >
+              </div>
+              <span
+                class="inline-flex items-center gap-1 rounded-full border border-status-verified-border bg-status-verified-bg px-2 py-0.5 font-label-sm text-label-sm font-semibold text-status-verified"
+              >
+                <span class="h-1.5 w-1.5 animate-pulse rounded-full bg-status-verified"></span>
+                Enrolling
+              </span>
+            </div>
+            <!-- Course Title -->
+            <h2
+              class="mb-2 font-title-lg text-title-lg leading-snug text-brand-navy-900 transition-colors group-hover:text-primary"
+            >
+              Industrial/Practical Ship Design &amp; Construction, AVEVA Marine.
+            </h2>
+            <p class="mb-4 line-clamp-2 font-body-sm text-body-sm text-brand-slate-700">
+              Practical training in ship design and construction using AVEVA Marine.
+            </p>
+            <!-- Software Tags -->
+            <div class="mb-4 flex flex-wrap gap-1.5">
+              <span
+                class="rounded border border-brand-slate-200 bg-brand-slate-100 px-2 py-0.5 font-label-sm text-label-sm text-brand-slate-700"
+                >AVEVA Marine</span
+              >
+              <span
+                class="rounded border border-brand-slate-200 bg-brand-slate-100 px-2 py-0.5 font-label-sm text-label-sm text-brand-slate-700"
+                >Ship Design</span
+              >
+              <span
+                class="rounded border border-brand-slate-200 bg-brand-slate-100 px-2 py-0.5 font-label-sm text-label-sm text-brand-slate-700"
+                >Construction</span
+              >
+            </div>
+            <!-- Cohort Schedule and Format Info -->
+            <div
+              class="space-y-1.5 border-t border-brand-slate-100 pt-3 font-body-sm text-body-sm text-brand-slate-700"
+            >
+              <div class="flex items-center gap-2">
+                <span class="material-symbols-outlined text-[16px] text-brand-slate-400"
+                  >calendar_month</span
+                >
+                <span>Next Cohort: <strong class="text-brand-slate-800">June 2, 2025</strong></span>
+              </div>
+              <div class="flex items-center gap-2">
+                <span class="material-symbols-outlined text-[16px] text-brand-slate-400"
+                  >desktop_windows</span
+                >
+                <span>Format: Blended Lab (Port Harcourt)</span>
+              </div>
+            </div>
+          </div>
+          <!-- Card Action Footer -->
+          <div
+            class="flex items-center justify-between border-t border-brand-slate-200 bg-brand-slate-50 px-5 py-3.5"
+          >
+            <div>
+              <div class="font-title-lg text-title-lg font-bold text-brand-navy-900">
+                NGN 350,000
+              </div>
+              <div class="font-label-sm text-label-sm font-semibold text-status-danger">
+                6 seats remaining
+              </div>
+            </div>
+            <div class="flex items-center gap-2">
+              <a
+                class="px-2 font-label-md text-label-md text-primary hover:underline"
+                href="#details-mod201"
+                >Details</a
+              >
+              <cmotd-button
+                href="#register"
+                size="sm"
+                >Register</cmotd-button
+              >
+            </div>
+          </div>
+        </cmotd-card>
+        <!-- Course 2 -->
+        <cmotd-card variant="course">
+          <div class="p-5">
+            <div class="mb-3 flex items-center justify-between gap-2">
+              <div class="flex items-center gap-2">
+                <span
+                  class="rounded bg-brand-navy-900 px-2 py-0.5 font-code-sm text-code-sm font-semibold tracking-wider text-surface-bright"
+                  >CMOTD-TRN-02</span
+                >
+                <span class="font-code-sm text-code-sm font-medium text-brand-slate-500"
+                  >10 WEEKS</span
+                >
+              </div>
+              <span
+                class="inline-flex items-center gap-1 rounded-full border border-status-verified-border bg-status-verified-bg px-2 py-0.5 font-label-sm text-label-sm font-semibold text-status-verified"
+              >
+                <span class="h-1.5 w-1.5 animate-pulse rounded-full bg-status-verified"></span>
+                Enrolling
+              </span>
+            </div>
+            <h2
+              class="mb-2 font-title-lg text-title-lg leading-snug text-brand-navy-900 transition-colors group-hover:text-primary"
+            >
+              Mechanical/Process Piping &amp; Systems Design/Pressure Vessel &amp; Heat Exchanges
+              Design (PV-Elite)
+            </h2>
+            <p class="mb-4 line-clamp-2 font-body-sm text-body-sm text-brand-slate-700">
+              Training in mechanical and process piping systems, pressure vessel design, and heat
+              exchanger design using PV-Elite.
+            </p>
+            <div class="mb-4 flex flex-wrap gap-1.5">
+              <span
+                class="rounded border border-brand-slate-200 bg-brand-slate-100 px-2 py-0.5 font-label-sm text-label-sm text-brand-slate-700"
+                >Process Piping</span
+              >
+              <span
+                class="rounded border border-brand-slate-200 bg-brand-slate-100 px-2 py-0.5 font-label-sm text-label-sm text-brand-slate-700"
+                >PV-Elite</span
+              >
+              <span
+                class="rounded border border-brand-slate-200 bg-brand-slate-100 px-2 py-0.5 font-label-sm text-label-sm text-brand-slate-700"
+                >Heat Exchangers</span
+              >
+            </div>
+            <div
+              class="space-y-1.5 border-t border-brand-slate-100 pt-3 font-body-sm text-body-sm text-brand-slate-700"
+            >
+              <div class="flex items-center gap-2">
+                <span class="material-symbols-outlined text-[16px] text-brand-slate-400"
+                  >calendar_month</span
+                >
+                <span
+                  >Next Cohort: <strong class="text-brand-slate-800">June 16, 2025</strong></span
+                >
+              </div>
+              <div class="flex items-center gap-2">
+                <span class="material-symbols-outlined text-[16px] text-brand-slate-400"
+                  >computer</span
+                >
+                <span>Format: Physical Lab Workstation</span>
+              </div>
+            </div>
+          </div>
+          <div
+            class="flex items-center justify-between border-t border-brand-slate-200 bg-brand-slate-50 px-5 py-3.5"
+          >
+            <div>
+              <div class="font-title-lg text-title-lg font-bold text-brand-navy-900">
+                NGN 420,000
+              </div>
+              <div class="font-label-sm text-label-sm font-semibold text-status-danger">
+                4 seats remaining
+              </div>
+            </div>
+            <div class="flex items-center gap-2">
+              <a
+                class="px-2 font-label-md text-label-md text-primary hover:underline"
+                href="#details-mod305"
+                >Details</a
+              >
+              <cmotd-button
+                href="#register"
+                size="sm"
+                >Register</cmotd-button
+              >
+            </div>
+          </div>
+        </cmotd-card>
+        <!-- Course 3 -->
+        <cmotd-card variant="course">
+          <div class="p-5">
+            <div class="mb-3 flex items-center justify-between gap-2">
+              <div class="flex items-center gap-2">
+                <span
+                  class="rounded bg-brand-navy-900 px-2 py-0.5 font-code-sm text-code-sm font-semibold tracking-wider text-surface-bright"
+                  >CMOTD-TRN-03</span
+                >
+                <span class="font-code-sm text-code-sm font-medium text-brand-slate-500"
+                  >6 WEEKS</span
+                >
+              </div>
+              <span
+                class="inline-flex items-center gap-1 rounded-full border border-status-verified-border bg-status-verified-bg px-2 py-0.5 font-label-sm text-label-sm font-semibold text-status-verified"
+              >
+                <span class="h-1.5 w-1.5 animate-pulse rounded-full bg-status-verified"></span>
+                Enrolling
+              </span>
+            </div>
+            <h2
+              class="mb-2 font-title-lg text-title-lg leading-snug text-brand-navy-900 transition-colors group-hover:text-primary"
+            >
+              Pipe Stress Analysis (Caesar II)
+            </h2>
+            <p class="mb-4 line-clamp-2 font-body-sm text-body-sm text-brand-slate-700">
+              Practical pipe stress analysis training using Caesar II.
+            </p>
+            <div class="mb-4 flex flex-wrap gap-1.5">
+              <span
+                class="rounded border border-brand-slate-200 bg-brand-slate-100 px-2 py-0.5 font-label-sm text-label-sm text-brand-slate-700"
+                >Caesar II</span
+              >
+              <span
+                class="rounded border border-brand-slate-200 bg-brand-slate-100 px-2 py-0.5 font-label-sm text-label-sm text-brand-slate-700"
+                >Pipe Stress</span
+              >
+              <span
+                class="rounded border border-brand-slate-200 bg-brand-slate-100 px-2 py-0.5 font-label-sm text-label-sm text-brand-slate-700"
+                >Piping</span
+              >
+            </div>
+            <div
+              class="space-y-1.5 border-t border-brand-slate-100 pt-3 font-body-sm text-body-sm text-brand-slate-700"
+            >
+              <div class="flex items-center gap-2">
+                <span class="material-symbols-outlined text-[16px] text-brand-slate-400"
+                  >calendar_month</span
+                >
+                <span>Next Cohort: <strong class="text-brand-slate-800">July 7, 2025</strong></span>
+              </div>
+              <div class="flex items-center gap-2">
+                <span class="material-symbols-outlined text-[16px] text-brand-slate-400"
+                  >science</span
+                >
+                <span>Format: Lab Practical</span>
+              </div>
+            </div>
+          </div>
+          <div
+            class="flex items-center justify-between border-t border-brand-slate-200 bg-brand-slate-50 px-5 py-3.5"
+          >
+            <div>
+              <div class="font-title-lg text-title-lg font-bold text-brand-navy-900">
+                NGN 320,000
+              </div>
+              <div class="font-label-sm text-label-sm font-semibold text-brand-slate-500">
+                11 seats open
+              </div>
+            </div>
+            <div class="flex items-center gap-2">
+              <a
+                class="px-2 font-label-md text-label-md text-primary hover:underline"
+                href="#details-mod204"
+                >Details</a
+              >
+              <cmotd-button
+                href="#register"
+                size="sm"
+                >Register</cmotd-button
+              >
+            </div>
+          </div>
+        </cmotd-card>
+        <!-- Course 4 -->
+        <cmotd-card variant="course">
+          <div class="p-5">
+            <div class="mb-3 flex items-center justify-between gap-2">
+              <div class="flex items-center gap-2">
+                <span
+                  class="rounded bg-brand-navy-900 px-2 py-0.5 font-code-sm text-code-sm font-semibold tracking-wider text-surface-bright"
+                  >CMOTD-TRN-04</span
+                >
+                <span class="font-code-sm text-code-sm font-medium text-brand-slate-500"
+                  >16 WEEKS</span
+                >
+              </div>
+              <span
+                class="inline-flex items-center gap-1 rounded-full border border-status-verified-border bg-status-verified-bg px-2 py-0.5 font-label-sm text-label-sm font-semibold text-status-verified"
+              >
+                <span class="h-1.5 w-1.5 animate-pulse rounded-full bg-status-verified"></span>
+                Enrolling
+              </span>
+            </div>
+            <h2
+              class="mb-2 font-title-lg text-title-lg leading-snug text-brand-navy-900 transition-colors group-hover:text-primary"
+            >
+              Optimization of Oil Well
+            </h2>
+            <p class="mb-4 line-clamp-2 font-body-sm text-body-sm text-brand-slate-700">
+              Professional training focused on oil well optimization and production performance.
+            </p>
+            <div class="mb-4 flex flex-wrap gap-1.5">
+              <span
+                class="rounded border border-brand-slate-200 bg-brand-slate-100 px-2 py-0.5 font-label-sm text-label-sm text-brand-slate-700"
+                >Oil Well</span
+              >
+              <span
+                class="rounded border border-brand-slate-200 bg-brand-slate-100 px-2 py-0.5 font-label-sm text-label-sm text-brand-slate-700"
+                >Optimization</span
+              >
+              <span
+                class="rounded border border-brand-slate-200 bg-brand-slate-100 px-2 py-0.5 font-label-sm text-label-sm text-brand-slate-700"
+                >Production</span
+              >
+            </div>
+            <div
+              class="space-y-1.5 border-t border-brand-slate-100 pt-3 font-body-sm text-body-sm text-brand-slate-700"
+            >
+              <div class="flex items-center gap-2">
+                <span class="material-symbols-outlined text-[16px] text-brand-slate-400"
+                  >calendar_month</span
+                >
+                <span
+                  >Next Cohort: <strong class="text-brand-slate-800">July 14, 2025</strong></span
+                >
+              </div>
+              <div class="flex items-center gap-2">
+                <span class="material-symbols-outlined text-[16px] text-brand-slate-400"
+                  >devices</span
+                >
+                <span>Format: Hybrid Immersion</span>
+              </div>
+            </div>
+          </div>
+          <div
+            class="flex items-center justify-between border-t border-brand-slate-200 bg-brand-slate-50 px-5 py-3.5"
+          >
+            <div>
+              <div class="font-title-lg text-title-lg font-bold text-brand-navy-900">
+                NGN 480,000
+              </div>
+              <div class="font-label-sm text-label-sm font-semibold text-brand-slate-500">
+                15 seats open
+              </div>
+            </div>
+            <div class="flex items-center gap-2">
+              <a
+                class="px-2 font-label-md text-label-md text-primary hover:underline"
+                href="#details-soft101"
+                >Details</a
+              >
+              <cmotd-button
+                href="#register"
+                size="sm"
+                >Register</cmotd-button
+              >
+            </div>
+          </div>
+        </cmotd-card>
+        <!-- Course 5 -->
+        <cmotd-card variant="course">
+          <div class="p-5">
+            <div class="mb-3 flex items-center justify-between gap-2">
+              <div class="flex items-center gap-2">
+                <span
+                  class="rounded bg-brand-navy-900 px-2 py-0.5 font-code-sm text-code-sm font-semibold tracking-wider text-surface-bright"
+                  >CMOTD-AIC</span
+                >
+                <span class="font-code-sm text-code-sm font-medium text-brand-slate-500"
+                  >24 WEEKS</span
+                >
+              </div>
+              <span
+                class="inline-flex items-center gap-1 rounded-full border border-status-verified-border bg-status-verified-bg px-2 py-0.5 font-label-sm text-label-sm font-semibold text-status-verified"
+                ><span class="h-1.5 w-1.5 animate-pulse rounded-full bg-status-verified"></span>
+                Professional Training</span
+              >
+            </div>
+            <h2
+              class="mb-2 font-title-lg text-title-lg leading-snug text-brand-navy-900 transition-colors group-hover:text-primary"
+            >
+              Automation, Instrumentation &amp; Control
+            </h2>
+            <p class="mb-4 line-clamp-2 font-body-sm text-body-sm text-brand-slate-700">
+              Practical training in industrial automation, measurement and control systems covering
+              PLCs, DCS, HMI/SCADA, industrial networks, safety and cybersecurity.
+            </p>
+            <div class="mb-4 flex flex-wrap gap-1.5">
+              <span
+                class="rounded border border-brand-slate-200 bg-brand-slate-100 px-2 py-0.5 font-label-sm text-label-sm text-brand-slate-700"
+                >PLC &amp; DCS</span
+              >
+              <span
+                class="rounded border border-brand-slate-200 bg-brand-slate-100 px-2 py-0.5 font-label-sm text-label-sm text-brand-slate-700"
+                >HMI / SCADA</span
+              >
+              <span
+                class="rounded border border-brand-slate-200 bg-brand-slate-100 px-2 py-0.5 font-label-sm text-label-sm text-brand-slate-700"
+                >Industrial Networks</span
+              >
+            </div>
+            <div
+              class="space-y-1.5 border-t border-brand-slate-100 pt-3 font-body-sm text-body-sm text-brand-slate-700"
+            >
+              <div class="flex items-center gap-2">
+                <span class="material-symbols-outlined text-[16px] text-brand-slate-400"
+                  >calendar_month</span
+                >
+                <span>Location: Port Harcourt, Nigeria</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <span class="material-symbols-outlined text-[16px] text-brand-slate-400"
+                  >analytics</span
+                >
+                <span>Format: Physical Training</span>
+              </div>
+            </div>
+          </div>
+          <div
+            class="flex items-center justify-between border-t border-brand-slate-200 bg-brand-slate-50 px-5 py-3.5"
+          >
+            <div>
+              <div class="font-title-lg text-title-lg font-bold text-brand-navy-900">
+                Contact CMOTD
+              </div>
+              <div class="font-label-sm text-label-sm font-semibold text-status-danger">
+                Enrollment details on request
+              </div>
+            </div>
+            <div class="flex items-center gap-2">
+              <a
+                class="px-2 font-label-md text-label-md text-primary hover:underline"
+                href="cmotd_course_automation_instrumentation_control.html"
+                >Details</a
+              >
+              <cmotd-button
+                href="cmotd_contact_us.html"
+                size="sm"
+                >Contact</cmotd-button
+              >
+            </div>
+          </div>
+        </cmotd-card>
+        <!-- Course 6 -->
+        <cmotd-card variant="course">
+          <div class="p-5">
+            <div class="mb-3 flex items-center justify-between gap-2">
+              <div class="flex items-center gap-2">
+                <span
+                  class="rounded bg-brand-navy-900 px-2 py-0.5 font-code-sm text-code-sm font-semibold tracking-wider text-surface-bright"
+                  >CMOTD-TRN-06</span
+                >
+                <span class="font-code-sm text-code-sm font-medium text-brand-slate-500"
+                  >4 WEEKS</span
+                >
+              </div>
+              <span
+                class="inline-flex items-center gap-1 rounded-full border border-status-verified-border bg-status-verified-bg px-2 py-0.5 font-label-sm text-label-sm font-semibold text-status-verified"
+              >
+                <span class="h-1.5 w-1.5 animate-pulse rounded-full bg-status-verified"></span>
+                Enrolling
+              </span>
+            </div>
+            <h2
+              class="mb-2 font-title-lg text-title-lg leading-snug text-brand-navy-900 transition-colors group-hover:text-primary"
+            >
+              International Class Welding &amp; Fabrication
+            </h2>
+            <p class="mb-4 line-clamp-2 font-body-sm text-body-sm text-brand-slate-700">
+              Practical welding and fabrication training aligned with international industry
+              practice.
+            </p>
+            <div class="mb-4 flex flex-wrap gap-1.5">
+              <span
+                class="rounded border border-brand-slate-200 bg-brand-slate-100 px-2 py-0.5 font-label-sm text-label-sm text-brand-slate-700"
+                >Welding</span
+              >
+              <span
+                class="rounded border border-brand-slate-200 bg-brand-slate-100 px-2 py-0.5 font-label-sm text-label-sm text-brand-slate-700"
+                >Fabrication</span
+              >
+              <span
+                class="rounded border border-brand-slate-200 bg-brand-slate-100 px-2 py-0.5 font-label-sm text-label-sm text-brand-slate-700"
+                >Practical</span
+              >
+            </div>
+            <div
+              class="space-y-1.5 border-t border-brand-slate-100 pt-3 font-body-sm text-body-sm text-brand-slate-700"
+            >
+              <div class="flex items-center gap-2">
+                <span class="material-symbols-outlined text-[16px] text-brand-slate-400"
+                  >calendar_month</span
+                >
+                <span>Next Cohort: <strong class="text-brand-slate-800">May 19, 2025</strong></span>
+              </div>
+              <div class="flex items-center gap-2">
+                <span class="material-symbols-outlined text-[16px] text-brand-slate-400"
+                  >engineering</span
+                >
+                <span>Format: Onshore Yard &amp; Field</span>
+              </div>
+            </div>
+          </div>
+          <div
+            class="flex items-center justify-between border-t border-brand-slate-200 bg-brand-slate-50 px-5 py-3.5"
+          >
+            <div>
+              <div class="font-title-lg text-title-lg font-bold text-brand-navy-900">
+                NGN 280,000
+              </div>
+              <div class="font-label-sm text-label-sm font-semibold text-status-danger">
+                2 seats remaining
+              </div>
+            </div>
+            <div class="flex items-center gap-2">
+              <a
+                class="px-2 font-label-md text-label-md text-primary hover:underline"
+                href="#details-saf108"
+                >Details</a
+              >
+              <cmotd-button
+                href="#register"
+                size="sm"
+                >Register</cmotd-button
+              >
+            </div>
+          </div>
+        </cmotd-card>
+        <!-- Course 7 -->
+        <cmotd-card variant="course">
+          <div class="p-5">
+            <div class="mb-3 flex items-center justify-between gap-2">
+              <div class="flex items-center gap-2">
+                <span
+                  class="rounded bg-brand-navy-900 px-2 py-0.5 font-code-sm text-code-sm font-semibold tracking-wider text-surface-bright"
+                  >CMOTD-BDA</span
+                >
+                <span class="font-code-sm text-code-sm font-medium text-brand-slate-500"
+                  >24 WEEKS</span
+                >
+              </div>
+              <span
+                class="inline-flex items-center gap-1 rounded-full border border-status-verified-border bg-status-verified-bg px-2 py-0.5 font-label-sm text-label-sm font-semibold text-status-verified"
+                ><span class="h-1.5 w-1.5 animate-pulse rounded-full bg-status-verified"></span>
+                Professional Training</span
+              >
+            </div>
+            <h2
+              class="mb-2 font-title-lg text-title-lg leading-snug text-brand-navy-900 transition-colors group-hover:text-primary"
+            >
+              Big Data Analytics
+            </h2>
+            <p class="mb-4 line-clamp-2 font-body-sm text-body-sm text-brand-slate-700">
+              Practical data analytics training covering data preparation, business intelligence,
+              SQL, Python, machine learning, cloud/ETL, Hadoop, Spark and large-scale data
+              processing.
+            </p>
+            <div class="mb-4 flex flex-wrap gap-1.5">
+              <span
+                class="rounded border border-brand-slate-200 bg-brand-slate-100 px-2 py-0.5 font-label-sm text-label-sm text-brand-slate-700"
+                >Python &amp; SQL</span
+              >
+              <span
+                class="rounded border border-brand-slate-200 bg-brand-slate-100 px-2 py-0.5 font-label-sm text-label-sm text-brand-slate-700"
+                >Power BI</span
+              >
+              <span
+                class="rounded border border-brand-slate-200 bg-brand-slate-100 px-2 py-0.5 font-label-sm text-label-sm text-brand-slate-700"
+                >Hadoop &amp; Spark</span
+              >
+            </div>
+            <div
+              class="space-y-1.5 border-t border-brand-slate-100 pt-3 font-body-sm text-body-sm text-brand-slate-700"
+            >
+              <div class="flex items-center gap-2">
+                <span class="material-symbols-outlined text-[16px] text-brand-slate-400"
+                  >calendar_month</span
+                >
+                <span>Location: Port Harcourt, Nigeria</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <span class="material-symbols-outlined text-[16px] text-brand-slate-400"
+                  >waves</span
+                >
+                <span>Format: Physical Training</span>
+              </div>
+            </div>
+          </div>
+          <div
+            class="flex items-center justify-between border-t border-brand-slate-200 bg-brand-slate-50 px-5 py-3.5"
+          >
+            <div>
+              <div class="font-title-lg text-title-lg font-bold text-brand-navy-900">
+                Contact CMOTD
+              </div>
+              <div class="font-label-sm text-label-sm font-semibold text-status-danger">
+                Enrollment details on request
+              </div>
+            </div>
+            <div class="flex items-center gap-2">
+              <a
+                class="px-2 font-label-md text-label-md text-primary hover:underline"
+                href="cmotd_course_big_data_analytics.html"
+                >Details</a
+              >
+              <cmotd-button
+                href="cmotd_contact_us.html"
+                size="sm"
+                >Contact</cmotd-button
+              >
+            </div>
+          </div>
+        </cmotd-card>
+        <!-- Course 8 -->
+        <cmotd-card variant="course">
+          <div class="p-5">
+            <div class="mb-3 flex items-center justify-between gap-2">
+              <div class="flex items-center gap-2">
+                <span
+                  class="rounded bg-brand-navy-900 px-2 py-0.5 font-code-sm text-code-sm font-semibold tracking-wider text-surface-bright"
+                >
+                  PIP-302
+                </span>
+                <span class="font-code-sm text-code-sm font-medium text-brand-slate-500"
+                  >8 WEEKS</span
+                >
+              </div>
+              <span
+                class="inline-flex items-center gap-1 rounded-full border border-status-verified-border bg-status-verified-bg px-2 py-0.5 font-label-sm text-label-sm font-semibold text-status-verified"
+              >
+                <span class="h-1.5 w-1.5 animate-pulse rounded-full bg-status-verified"></span>
+                Enrolling
+              </span>
+            </div>
+            <h2
+              class="mb-2 font-title-lg text-title-lg leading-snug text-brand-navy-900 transition-colors group-hover:text-primary"
+            >
+              Electrical Power Transformer Repair &amp; Maintenance.
+            </h2>
+            <p class="mb-4 line-clamp-2 font-body-sm text-body-sm text-brand-slate-700">
+              Practical training in electrical power transformer repair and maintenance.
+            </p>
+            <div class="mb-4 flex flex-wrap gap-1.5">
+              <span
+                class="rounded border border-brand-slate-200 bg-brand-slate-100 px-2 py-0.5 font-label-sm text-label-sm text-brand-slate-700"
+                >Transformer</span
+              >
+              <span
+                class="rounded border border-brand-slate-200 bg-brand-slate-100 px-2 py-0.5 font-label-sm text-label-sm text-brand-slate-700"
+                >Repair</span
+              >
+              <span
+                class="rounded border border-brand-slate-200 bg-brand-slate-100 px-2 py-0.5 font-label-sm text-label-sm text-brand-slate-700"
+                >Maintenance</span
+              >
+            </div>
+            <div
+              class="space-y-1.5 border-t border-brand-slate-100 pt-3 font-body-sm text-body-sm text-brand-slate-700"
+            >
+              <div class="flex items-center gap-2">
+                <span class="material-symbols-outlined text-[16px] text-brand-slate-400"
+                  >calendar_month</span
+                >
+                <span
+                  >Next Cohort: <strong class="text-brand-slate-800">July 21, 2025</strong></span
+                >
+              </div>
+              <div class="flex items-center gap-2">
+                <span class="material-symbols-outlined text-[16px] text-brand-slate-400"
+                  >memory</span
+                >
+                <span>Format: Computational Lab</span>
+              </div>
+            </div>
+          </div>
+          <div
+            class="flex items-center justify-between border-t border-brand-slate-200 bg-brand-slate-50 px-5 py-3.5"
+          >
+            <div>
+              <div class="font-title-lg text-title-lg font-bold text-brand-navy-900">
+                NGN 450,000
+              </div>
+              <div class="font-label-sm text-label-sm font-semibold text-brand-slate-500">
+                7 seats open
+              </div>
+            </div>
+            <div class="flex items-center gap-2">
+              <a
+                class="px-2 font-label-md text-label-md text-primary hover:underline"
+                href="#details-pip302"
+                >Details</a
+              >
+              <cmotd-button
+                href="#register"
+                size="sm"
+                >Register</cmotd-button
+              >
+            </div>
+          </div>
+        </cmotd-card>
+        <!-- Course 9 -->
+      </section>
+      <!-- Pagination & Catalog Control Footbar -->
+      <section
+        class="mb-12 flex flex-col items-center justify-between gap-4 rounded-lg border border-brand-slate-200 bg-surface-container-lowest p-4 shadow-sm md:flex-row"
+      >
+        <!-- Items Per Page Selector -->
+        <div class="flex items-center gap-2 font-label-md text-label-md text-brand-slate-700">
+          <span>Items per page:</span>
+          <div class="flex items-center gap-1">
+            <button
+              class="h-8 w-8 rounded bg-primary font-bold text-on-primary"
+              type="button"
+            >
+              9
+            </button>
+            <button
+              class="h-8 w-8 rounded border border-brand-slate-200 bg-surface-container-lowest text-brand-slate-700 hover:bg-brand-slate-100"
+              type="button"
+            >
+              18
+            </button>
+            <button
+              class="h-8 w-8 rounded border border-brand-slate-200 bg-surface-container-lowest text-brand-slate-700 hover:bg-brand-slate-100"
+              type="button"
+            >
+              27
+            </button>
+          </div>
+        </div>
+        <!-- Pagination Numbers -->
+        <nav
+          aria-label="Course directory pagination"
+          class="flex items-center gap-1"
+        >
+          <button
+            class="flex h-8 cursor-not-allowed items-center gap-1 rounded border border-brand-slate-200 px-3 font-label-md text-label-md text-brand-slate-400 opacity-60"
+            disabled=""
+            type="button"
+          >
+            <span class="material-symbols-outlined text-[16px]">chevron_left</span>
+            <span>Previous</span>
+          </button>
+          <button
+            aria-current="page"
+            class="h-8 w-8 rounded bg-primary font-label-md text-label-md font-bold text-on-primary"
+            type="button"
+          >
+            1
+          </button>
+          <button
+            class="h-8 w-8 rounded border border-brand-slate-200 font-label-md text-label-md text-brand-slate-700 transition-colors hover:bg-brand-slate-100"
+            type="button"
+          >
+            2
+          </button>
+          <button
+            class="h-8 w-8 rounded border border-brand-slate-200 font-label-md text-label-md text-brand-slate-700 transition-colors hover:bg-brand-slate-100"
+            type="button"
+          >
+            3
+          </button>
+          <button
+            class="flex h-8 items-center gap-1 rounded border border-brand-slate-200 px-3 font-label-md text-label-md text-brand-slate-700 transition-colors hover:bg-brand-slate-100"
+            type="button"
+          >
+            <span>Next</span>
+            <span class="material-symbols-outlined text-[16px]">chevron_right</span>
+          </button>
+        </nav>
+        <!-- Jump to Page Selector -->
+        <div class="flex items-center gap-2 font-label-md text-label-md text-brand-slate-700">
+          <label for="jumpPage">Jump to page:</label>
+          <select
+            class="h-8 rounded border border-brand-slate-200 bg-surface-container-lowest px-2 font-label-md text-label-md focus:border-primary focus:outline-none"
+            id="jumpPage"
+          >
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+          </select>
+        </div>
+      </section>
+      <!-- Corporate & Institutional Training Assistance Callout -->
+      <section
+        class="bg-brand-slate-900 relative mb-12 overflow-hidden rounded-lg border border-brand-slate-800 p-6 text-surface-bright shadow-lg sm:p-8 lg:p-10"
+      >
+        <!-- Subtle architectural backdrop accents -->
+        <div
+          class="pointer-events-none absolute bottom-0 right-0 top-0 w-1/3 bg-gradient-to-l from-primary/10 to-transparent"
+        ></div>
+        <div
+          class="relative z-10 flex flex-col items-start justify-between gap-6 lg:flex-row lg:items-center"
+        >
+          <div class="max-w-2xl">
+            <div
+              class="mb-3 inline-flex items-center gap-2 rounded border border-brand-slate-700 bg-brand-slate-800 px-2 py-0.5 font-code-sm text-code-sm font-semibold text-primary-fixed"
+            >
+              <span class="material-symbols-outlined text-[14px]">corporate_fare</span>
+              <span>ENTERPRISE COHORT &amp; WORKSTATION RESERVATION</span>
+            </div>
+            <h2 class="mb-2 font-headline-lg text-headline-lg tracking-tight text-surface-bright">
+              Training a corporate engineering cohort or yard team?
+            </h2>
+            <p class="font-body-md text-body-md text-brand-slate-400">
+              Request customized syllabus delivery, flexible weekend pacing, and dedicated physical
+              CAD workstation cluster allocations at the Rivers State University Engineering
+              Complex.
+            </p>
+          </div>
+          <div class="flex shrink-0 flex-wrap gap-3 sm:flex-nowrap">
+            <a
+              class="rounded bg-surface-container-lowest px-5 py-2.5 font-label-md text-label-md font-semibold text-brand-navy-900 shadow-sm transition-all hover:bg-brand-slate-100"
+              href="#custom-quote"
+            >
+              Contact Corporate Desk
+            </a>
+            <a
+              class="rounded border border-brand-slate-700 px-5 py-2.5 font-label-md text-label-md font-semibold text-surface-bright transition-all hover:bg-brand-slate-800"
+              href="#cluster-spec"
+            >
+              Download Lab Workstation Specs
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- Institutional Footer (Shared Component JSON Blueprint) -->
+    <cmotd-institution-strip></cmotd-institution-strip>
+    <cmotd-site-footer></cmotd-site-footer>
+    <!-- Micro-Interactions Script -->
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        // Simple toggle interaction for portal menu button
+        const portalBtn = document.getElementById("portalMenuBtn");
+        if (portalBtn) {
+          portalBtn.addEventListener("click", (e) => {
+            e.stopPropagation();
+            alert(
+              "Navigating to Rivers State University CMOTD Authentication Hub:\n\n1. Trainee & Student Portal\n2. Faculty & Instructor Gradebook\n3. Staff & Admin Console\n4. Industry Partner Hub",
+            );
+          });
+        }
+      });
+    </script>
+  </body>
+</html>

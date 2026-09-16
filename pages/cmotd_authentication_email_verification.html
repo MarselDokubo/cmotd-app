@@ -1,0 +1,477 @@
+<!doctype html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      content="width=device-width, initial-scale=1.0"
+      name="viewport"
+    />
+    <title>Verify Your Email Address | CMOTD - Rivers State University</title>
+    <link
+      href="../favicon.ico"
+      rel="icon"
+      type="image/x-icon"
+    />
+    <link
+      href="../assets/css/tailwind-build.css"
+      rel="stylesheet"
+    />
+    <link
+      href="../assets/css/cmotd-global.css"
+      rel="stylesheet"
+    />
+    <script
+      defer=""
+      src="../assets/js/site-config.js"
+    ></script>
+    <script
+      defer=""
+      src="../assets/js/cmotd-components.js"
+    ></script>
+  </head>
+  <body
+    class="flex min-h-screen flex-col bg-background font-body-md text-body-md text-on-surface antialiased"
+  >
+    <!-- ================= TOP NAV BAR (Shared Component) ================= -->
+    <cmotd-site-header></cmotd-site-header>
+    <!-- ================= SUB-HEADER BREADCRUMB & CONTEXT ================= -->
+    <div class="border-b border-brand-slate-200 bg-surface-container-lowest py-3">
+      <div class="mx-auto flex max-w-[1280px] items-center justify-between px-6">
+        <div class="flex items-center gap-2 font-body-sm text-body-sm text-brand-slate-500">
+          <a
+            class="transition-colors hover:text-primary"
+            href="#"
+            >Candidate Onboarding</a
+          >
+          <span
+            class="material-symbols-outlined text-[16px]"
+            data-icon="chevron_right"
+            >chevron_right</span
+          >
+          <span class="font-semibold text-brand-navy-900">Credential Security Verification</span>
+        </div>
+        <div class="hidden items-center gap-2 sm:flex">
+          <span class="inline-block h-2 w-2 animate-ping rounded-full bg-status-warning"></span>
+          <span class="font-label-sm text-label-sm text-brand-slate-700"
+            >Compute Security Stage: 2 of 3</span
+          >
+        </div>
+      </div>
+    </div>
+    <!-- ================= MAIN CONTENT CANVAS ================= -->
+    <main class="flex-grow px-4 py-12 sm:px-6 lg:px-8">
+      <div class="mx-auto max-w-3xl space-y-6">
+        <!-- MAIN VERIFICATION CARD (Elevation Level 1) -->
+        <section
+          class="overflow-hidden rounded-xl border border-brand-slate-200 bg-surface-container-lowest shadow-sm"
+        >
+          <!-- Card Header Banner Accent -->
+          <div class="h-1.5 w-full bg-primary-container"></div>
+          <div class="space-y-8 p-8 sm:p-10">
+            <!-- Top Icon & Security Pulse Indicator -->
+            <div class="flex flex-col items-center space-y-4 text-center">
+              <div class="relative flex items-center justify-center">
+                <!-- Security Pulse Background Glow -->
+                <div
+                  class="animate-pulse-ring absolute h-20 w-20 rounded-full bg-surface-variant"
+                ></div>
+                <!-- Illustrated Email Envelope Badge -->
+                <div
+                  class="relative flex h-16 w-16 items-center justify-center rounded-2xl border border-surface-variant bg-surface-container-low shadow-sm"
+                >
+                  <span
+                    class="material-symbols-outlined text-[34px] text-primary"
+                    data-icon="mail"
+                    >mail</span
+                  >
+                  <!-- Glowing verification check badge -->
+                  <div
+                    class="absolute -bottom-1 -right-1 flex h-6 w-6 items-center justify-center rounded-full bg-status-verified text-surface-container-lowest shadow-md ring-2 ring-surface-container-lowest"
+                  >
+                    <span
+                      class="material-symbols-outlined text-[16px]"
+                      data-icon="check"
+                      data-weight="fill"
+                      style="font-variation-settings: &quot;FILL&quot; 1"
+                      >check</span
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="max-w-xl space-y-2">
+                <h1 class="font-headline-lg text-headline-lg tracking-tight text-brand-navy-900">
+                  Verify Your Email Address
+                </h1>
+                <p class="font-body-md text-body-md leading-relaxed text-brand-slate-700">
+                  We have dispatched an activation link and 6-digit confirmation code to:
+                  <br class="hidden sm:inline" />
+                  <span
+                    class="mt-1 inline-block rounded border border-brand-slate-200 bg-surface-container-low px-2.5 py-0.5 font-code-sm text-code-sm font-semibold text-brand-navy-900"
+                    >b.amadi@operator-energy.com</span
+                  >
+                </p>
+              </div>
+            </div>
+            <!-- CANDIDATE ROSTER INFO (Bento Metadata Strip) -->
+            <div class="rounded-lg border border-brand-slate-200 bg-brand-slate-50 p-5">
+              <div
+                class="mb-3 flex items-center justify-between border-b border-brand-slate-200 pb-3"
+              >
+                <div class="flex items-center gap-2">
+                  <span
+                    class="material-symbols-outlined text-[18px] text-primary"
+                    data-icon="badge"
+                    >badge</span
+                  >
+                  <span class="font-label-sm text-label-sm uppercase text-brand-slate-500"
+                    >Institutional Roster Record</span
+                  >
+                </div>
+                <span
+                  class="inline-flex items-center gap-1.5 rounded border border-brand-slate-200 bg-status-warning-bg px-2 py-0.5 font-label-sm text-label-sm text-status-warning"
+                >
+                  <span class="h-1.5 w-1.5 rounded-full bg-status-warning"></span>
+                  Authorization Pending
+                </span>
+              </div>
+              <div class="grid grid-cols-1 gap-4 md:grid-cols-3">
+                <!-- Metadata 1 -->
+                <div>
+                  <span class="block font-label-sm text-label-sm text-brand-slate-500"
+                    >Candidate Name</span
+                  >
+                  <span
+                    class="mt-0.5 block font-body-sm text-body-sm font-semibold text-brand-navy-900"
+                    >Dr. Emmanuel Tari Briggs</span
+                  >
+                </div>
+                <!-- Metadata 2 -->
+                <div>
+                  <span class="block font-label-sm text-label-sm text-brand-slate-500"
+                    >Enrolled Program</span
+                  >
+                  <span
+                    class="mt-0.5 block font-body-sm text-body-sm font-semibold text-brand-navy-900"
+                    >Advanced PGD in Subsea Engineering</span
+                  >
+                  <span class="font-label-sm font-mono text-label-sm text-primary"
+                    >PGD-SUB-801</span
+                  >
+                </div>
+                <!-- Metadata 3 -->
+                <div>
+                  <span class="block font-label-sm text-label-sm text-brand-slate-500"
+                    >Assigned Workstation ID</span
+                  >
+                  <div class="mt-0.5 flex items-center gap-1.5">
+                    <span
+                      class="rounded border border-brand-slate-200 bg-surface-container-lowest px-2 py-0.5 font-code-sm text-code-sm font-semibold text-brand-navy-900"
+                      >WS-PHC-88</span
+                    >
+                    <span class="font-label-sm text-label-sm font-medium text-status-warning"
+                      >(Pending Activation)</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- VERIFICATION ACTIONS SECTION -->
+            <div class="space-y-6">
+              <!-- Action 1: Quick 6-Digit Code Entry -->
+              <div class="space-y-3">
+                <label class="block text-center font-label-md text-label-md text-brand-navy-900">
+                  Enter 6-Digit Verification Code
+                </label>
+                <!-- 6 Individual Numeric Boxes -->
+                <div
+                  class="flex items-center justify-center gap-2 sm:gap-3"
+                  id="otp-container"
+                >
+                  <input
+                    class="h-13 w-11 rounded-lg border border-brand-slate-400 bg-surface-container-lowest text-center font-headline-md text-headline-md font-bold text-brand-navy-900 shadow-sm outline-none transition-all focus:border-primary focus:ring-4 focus:ring-primary/20 sm:h-14 sm:w-12"
+                    inputmode="numeric"
+                    maxlength="1"
+                    pattern="[0-9]*"
+                    placeholder="•"
+                    type="text"
+                    value="8"
+                  />
+                  <input
+                    class="h-13 w-11 rounded-lg border border-brand-slate-400 bg-surface-container-lowest text-center font-headline-md text-headline-md font-bold text-brand-navy-900 shadow-sm outline-none transition-all focus:border-primary focus:ring-4 focus:ring-primary/20 sm:h-14 sm:w-12"
+                    inputmode="numeric"
+                    maxlength="1"
+                    pattern="[0-9]*"
+                    placeholder="•"
+                    type="text"
+                    value="4"
+                  />
+                  <input
+                    class="h-13 w-11 rounded-lg border border-brand-slate-400 bg-surface-container-lowest text-center font-headline-md text-headline-md font-bold text-brand-navy-900 shadow-sm outline-none transition-all focus:border-primary focus:ring-4 focus:ring-primary/20 sm:h-14 sm:w-12"
+                    inputmode="numeric"
+                    maxlength="1"
+                    pattern="[0-9]*"
+                    placeholder="•"
+                    type="text"
+                    value="0"
+                  />
+                  <input
+                    class="h-13 w-11 rounded-lg border border-brand-slate-400 bg-surface-container-lowest text-center font-headline-md text-headline-md font-bold text-brand-navy-900 shadow-sm outline-none transition-all focus:border-primary focus:ring-4 focus:ring-primary/20 sm:h-14 sm:w-12"
+                    inputmode="numeric"
+                    maxlength="1"
+                    pattern="[0-9]*"
+                    placeholder="•"
+                    type="text"
+                    value="1"
+                  />
+                  <input
+                    autofocus=""
+                    class="h-13 w-11 rounded-lg border border-primary bg-surface-container-lowest text-center font-headline-md text-headline-md font-bold text-brand-navy-900 shadow-sm outline-none ring-2 ring-primary/20 transition-all focus:border-primary focus:ring-4 focus:ring-primary/20 sm:h-14 sm:w-12"
+                    inputmode="numeric"
+                    maxlength="1"
+                    pattern="[0-9]*"
+                    placeholder="•"
+                    type="text"
+                  />
+                  <input
+                    class="h-13 w-11 rounded-lg border border-brand-slate-400 bg-surface-container-lowest text-center font-headline-md text-headline-md font-bold text-brand-navy-900 shadow-sm outline-none transition-all focus:border-primary focus:ring-4 focus:ring-primary/20 sm:h-14 sm:w-12"
+                    inputmode="numeric"
+                    maxlength="1"
+                    pattern="[0-9]*"
+                    placeholder="•"
+                    type="text"
+                  />
+                </div>
+                <!-- Primary Submit Button -->
+                <div class="pt-2">
+                  <button
+                    class="flex w-full items-center justify-center gap-2 rounded-lg bg-primary-container px-6 py-3 font-label-md text-label-md text-on-primary shadow-sm transition-all duration-150 hover:bg-brand-cobalt-deep active:scale-95"
+                    type="button"
+                  >
+                    <span
+                      class="material-symbols-outlined text-[18px]"
+                      data-icon="lock_open"
+                      >lock_open</span
+                    >
+                    Confirm Verification Code
+                  </button>
+                </div>
+              </div>
+              <!-- Divider with Or -->
+              <div class="relative flex items-center justify-center">
+                <div class="w-full border-t border-brand-slate-200"></div>
+                <span
+                  class="absolute bg-surface-container-lowest px-4 font-label-sm text-label-sm uppercase tracking-widest text-brand-slate-500"
+                >
+                  Alternative Flow
+                </span>
+              </div>
+              <!-- Action 2: Direct Email Link Action -->
+              <div
+                class="flex flex-col items-center justify-between gap-3 rounded-lg border border-surface-variant bg-surface-container-low p-4 text-center sm:flex-row"
+              >
+                <div class="flex items-center gap-3 text-left">
+                  <div
+                    class="flex h-8 w-8 shrink-0 items-center justify-center rounded bg-surface-container-highest text-primary"
+                  >
+                    <span
+                      class="material-symbols-outlined text-[20px]"
+                      data-icon="outgoing_mail"
+                      >outgoing_mail</span
+                    >
+                  </div>
+                  <div>
+                    <p class="font-body-sm text-body-sm font-medium text-brand-navy-900">
+                      Or click the secure activation button in the email we sent you.
+                    </p>
+                    <p class="font-label-sm text-label-sm text-brand-slate-500">
+                      Links remain active for 24 hours from dispatch time.
+                    </p>
+                  </div>
+                </div>
+                <button
+                  class="flex shrink-0 items-center gap-1 rounded px-3 py-1.5 font-label-sm text-label-sm font-semibold text-primary transition-colors hover:bg-surface-container-highest"
+                  type="button"
+                >
+                  <span>Check Inbox Guide</span>
+                  <span
+                    class="material-symbols-outlined text-[14px]"
+                    data-icon="arrow_forward"
+                    >arrow_forward</span
+                  >
+                </button>
+              </div>
+            </div>
+            <!-- HELP & RESEND MODULE -->
+            <div
+              class="flex flex-col items-center justify-between gap-4 border-t border-brand-slate-200 pt-4 sm:flex-row"
+            >
+              <div class="flex items-center gap-2 font-body-sm text-body-sm text-brand-slate-700">
+                <span
+                  class="material-symbols-outlined text-[18px] text-brand-slate-500"
+                  data-icon="hourglass_top"
+                  >hourglass_top</span
+                >
+                <span
+                  >Resend activation email available in
+                  <strong
+                    class="font-semibold text-brand-navy-900"
+                    id="countdown"
+                    >45s</strong
+                  ></span
+                >
+              </div>
+              <div class="flex items-center gap-4">
+                <!-- Resend Button -->
+                <button
+                  class="group inline-flex items-center gap-1.5 font-body-sm text-body-sm font-semibold text-primary transition-colors hover:text-brand-cobalt"
+                  type="button"
+                >
+                  <span
+                    class="material-symbols-outlined text-[18px] transition-transform duration-300 group-hover:rotate-180"
+                    data-icon="refresh"
+                    >refresh</span
+                  >
+                  <span>Resend Verification Email</span>
+                </button>
+                <span class="text-brand-slate-300">•</span>
+                <!-- Wrong Email Link -->
+                <a
+                  class="decoration-brand-slate-300 font-body-sm text-body-sm text-brand-slate-700 underline underline-offset-4 transition-colors hover:text-brand-navy-900 hover:decoration-brand-navy-900"
+                  href="#"
+                >
+                  Wrong email address? Change registered email
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- System Diagnostic Strip -->
+          <div
+            class="flex items-center justify-between border-t border-brand-slate-200 bg-brand-slate-100 px-6 py-2.5 font-label-sm text-label-sm text-brand-slate-500"
+          >
+            <span class="flex items-center gap-1.5">
+              <span class="h-1.5 w-1.5 rounded-full bg-status-verified"></span>
+              SMTP Transmission:
+              <code class="font-code-sm text-code-sm text-brand-navy-900"
+                >node-gateway-phc.rsu.edu.ng (TLS 1.3)</code
+              >
+            </span>
+            <span
+              >Security Token Hash:
+              <code class="font-code-sm text-code-sm text-brand-slate-700"
+                >SHA-256:7f4a9b...c82</code
+              ></span
+            >
+          </div>
+        </section>
+        <!-- CORPORATE EMAIL WHITELIST NOTICE (Information Alert Box) -->
+        <section
+          class="flex items-start gap-4 rounded-xl border border-surface-variant bg-status-info-bg p-5"
+        >
+          <div
+            class="mt-0.5 flex h-9 w-9 shrink-0 items-center justify-center rounded bg-surface-container-highest text-primary"
+          >
+            <span
+              class="material-symbols-outlined text-[22px]"
+              data-icon="security"
+              >security</span
+            >
+          </div>
+          <div class="space-y-1">
+            <h2 class="flex items-center gap-2 font-title-lg text-title-lg text-brand-navy-900">
+              Corporate IOC Firewall Notice
+              <span
+                class="rounded bg-surface-container-high px-2 py-0.5 font-label-sm text-label-sm font-normal text-primary"
+                >High Security Domain</span
+              >
+            </h2>
+            <p class="font-body-sm text-body-sm leading-relaxed text-brand-slate-700">
+              If you are using Shell, Saipem, Chevron, or TotalEnergies corporate networks, check
+              your quarantine folder or contact your IT liaison for institutional domain
+              whitelisting (<span class="font-code-sm text-code-sm font-semibold text-primary"
+                >@cmotd.rsu.edu.ng</span
+              >). Enterprise firewalls may delay automated dispatch by 2-5 minutes.
+            </p>
+          </div>
+        </section>
+        <!-- SUPPORT LIAISON CONSOLE -->
+        <section
+          class="flex flex-col items-center justify-between gap-4 rounded-xl border border-brand-slate-200 bg-surface-container-lowest p-4 font-body-sm text-body-sm sm:flex-row"
+        >
+          <div class="flex items-center gap-3">
+            <div
+              class="flex h-8 w-8 items-center justify-center rounded-full border border-brand-slate-200 bg-surface-container-low text-brand-slate-700"
+            >
+              <span
+                class="material-symbols-outlined text-[18px]"
+                data-icon="support_agent"
+                >support_agent</span
+              >
+            </div>
+            <div>
+              <span class="font-semibold text-brand-navy-900">Registry Desk Liaison:</span>
+              <span class="ml-1 text-brand-slate-700">admissions@cmotd-rsu.edu.ng</span>
+            </div>
+          </div>
+          <div class="flex items-center gap-4 text-brand-slate-700">
+            <span class="flex items-center gap-1.5">
+              <span
+                class="material-symbols-outlined text-[16px] text-brand-slate-500"
+                data-icon="call"
+                >call</span
+              >
+              <span class="font-code-sm text-code-sm font-medium">Tel: +234 (0) 84 992 411</span>
+            </span>
+            <span class="text-brand-slate-300 hidden sm:inline">•</span>
+            <span
+              class="flex items-center gap-1 font-label-sm text-label-sm font-medium text-status-verified"
+            >
+              <span class="h-1.5 w-1.5 rounded-full bg-status-verified"></span>
+              Lines Active (WAT)
+            </span>
+          </div>
+        </section>
+      </div>
+    </main>
+    <!-- ================= INSTITUTIONAL FOOTER (Shared Component) ================= -->
+    <cmotd-institution-strip></cmotd-institution-strip>
+    <cmotd-site-footer></cmotd-site-footer>
+    <!-- Light interactive script for OTP navigation and countdown -->
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        // Automatic OTP tab focus
+        const container = document.getElementById("otp-container");
+        if (container) {
+          const inputs = container.querySelectorAll("input");
+          inputs.forEach((input, index) => {
+            input.addEventListener("input", (e) => {
+              if (input.value.length === 1 && index < inputs.length - 1) {
+                inputs[index + 1].focus();
+              }
+            });
+            input.addEventListener("keydown", (e) => {
+              if (e.key === "Backspace" && input.value === "" && index > 0) {
+                inputs[index - 1].focus();
+              }
+            });
+          });
+        }
+
+        // Simple 45-second countdown timer simulation
+        const countdownEl = document.getElementById("countdown");
+        if (countdownEl) {
+          let seconds = 45;
+          const interval = setInterval(() => {
+            seconds--;
+            if (seconds <= 0) {
+              countdownEl.textContent = "Ready";
+              clearInterval(interval);
+            } else {
+              countdownEl.textContent = `${seconds}s`;
+            }
+          }, 1000);
+        }
+      });
+    </script>
+  </body>
+</html>

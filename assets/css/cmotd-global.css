@@ -1,0 +1,409 @@
+/* ============================================================
+   CMOTD SELF-HOSTED FONTS
+   One editorial heading family (Newsreader) + one UI/body family (Inter).
+   ============================================================ */
+@font-face {
+  font-family: "Inter";
+  src: url("../font/Inter/Inter-VariableFont_opsz,wght.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("../font/Inter/Inter-Italic-VariableFont_opsz,wght.ttf") format("truetype");
+  font-style: italic;
+  font-weight: 100 900;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Newsreader";
+  src: url("../font/Newsreader/Newsreader-VariableFont_opsz,wght.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 200 800;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Newsreader";
+  src: url("../font/Newsreader/Newsreader-Italic-VariableFont_opsz,wght.ttf") format("truetype");
+  font-style: italic;
+  font-weight: 200 800;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Material Symbols Outlined";
+  src: url("../font/MaterialSymbols/MaterialSymbolsOutlined.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 100 700;
+  font-display: block;
+}
+
+html {
+  font-family: "Inter", Arial, sans-serif;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body,
+button,
+input,
+select,
+textarea {
+  font-family: "Inter", Arial, sans-serif;
+}
+
+/* All semantic headings use the same editorial family site-wide. */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Newsreader", Georgia, serif !important;
+  text-wrap: balance;
+}
+
+.font-serif-editorial,
+.font-serif-display {
+  font-family: "Newsreader", Georgia, serif !important;
+  font-feature-settings:
+    "liga" 1,
+    "kern" 1;
+}
+
+.material-symbols-outlined {
+  font-family: "Material Symbols Outlined" !important;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  font-feature-settings: "liga";
+  -webkit-font-feature-settings: "liga";
+  -webkit-font-smoothing: antialiased;
+  font-variation-settings:
+    "FILL" 0,
+    "wght" 400,
+    "GRAD" 0,
+    "opsz" 24;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
+/* END CMOTD SELF-HOSTED FONTS */
+
+/* CMOTD global design-system variables.
+   Edit this file + tailwind.config.js at the project root; individual pages do not contain Tailwind configs. */
+:root {
+  --cmotd-color-secondary: 86 94 116; /* #565e74 */
+  --cmotd-color-brand-slate-700: 51 65 85; /* #334155 */
+  --cmotd-color-inverse-on-surface: 234 241 255; /* #eaf1ff */
+  --cmotd-color-status-verified-bg: 236 253 245; /* #ECFDF5 */
+  --cmotd-color-on-primary-fixed: 0 23 74; /* #00174a */
+  --cmotd-color-surface-container-low: 239 244 255; /* #eff4ff */
+  --cmotd-color-surface-container: 229 238 255; /* #e5eeff */
+  --cmotd-color-secondary-fixed-dim: 190 198 224; /* #bec6e0 */
+  --cmotd-color-status-warning-bg: 255 251 235; /* #FFFBEB */
+  --cmotd-color-inverse-primary: 179 197 255; /* #b3c5ff */
+  --cmotd-color-brand-navy-950: 10 15 29; /* #0A0F1D */
+  --cmotd-color-surface-container-highest: 211 228 254; /* #d3e4fe */
+  --cmotd-color-error-container: 255 218 214; /* #ffdad6 */
+  --cmotd-color-primary-fixed: 219 225 255; /* #dbe1ff */
+  --cmotd-color-surface-dim: 203 219 245; /* #cbdbf5 */
+  --cmotd-color-tertiary-fixed-dim: 107 216 203; /* #6bd8cb */
+  --cmotd-color-on-secondary-container: 92 100 122; /* #5c647a */
+  --cmotd-color-brand-cobalt-deep: 37 87 199; /* #2557C7 */
+  --cmotd-color-status-info-bg: 240 249 255; /* #F0F9FF */
+  --cmotd-color-on-surface: 11 28 48; /* #0b1c30 */
+  --cmotd-color-on-secondary-fixed: 19 27 46; /* #131b2e */
+  --cmotd-color-outline: 115 118 133; /* #737685 */
+  --cmotd-color-brand-slate-50: 248 250 252; /* #F8FAFC */
+  --cmotd-color-tertiary-fixed: 137 245 231; /* #89f5e7 */
+  --cmotd-color-background: 248 249 255; /* #f8f9ff */
+  --cmotd-color-on-error: 255 255 255; /* #ffffff */
+  --cmotd-color-tertiary-container: 0 107 98; /* #006b62 */
+  --cmotd-color-surface-bright: 248 249 255; /* #f8f9ff */
+  --cmotd-color-surface-tint: 37 87 199; /* #2557c7 */
+  --cmotd-color-status-warning: 217 119 6; /* #D97706 */
+  --cmotd-color-brand-slate-400: 148 163 184; /* #94A3B8 */
+  --cmotd-color-brand-slate-500: 100 116 139; /* #64748B */
+  --cmotd-color-primary: 0 63 167; /* #003fa7 */
+  --cmotd-color-on-primary: 255 255 255; /* #ffffff */
+  --cmotd-color-brand-navy-900: 15 23 42; /* #0F172A */
+  --cmotd-color-on-surface-variant: 67 70 83; /* #434653 */
+  --cmotd-color-inverse-surface: 33 49 69; /* #213145 */
+  --cmotd-color-on-secondary-fixed-variant: 63 70 92; /* #3f465c */
+  --cmotd-color-brand-slate-800: 30 41 59; /* #1E293B */
+  --cmotd-color-on-tertiary-container: 127 236 222; /* #7fecde */
+  --cmotd-color-tertiary: 0 81 74; /* #00514a */
+  --cmotd-color-primary-fixed-dim: 179 197 255; /* #b3c5ff */
+  --cmotd-color-brand-slate-100: 241 245 249; /* #F1F5F9 */
+  --cmotd-color-on-primary-container: 206 216 255; /* #ced8ff */
+  --cmotd-color-on-background: 11 28 48; /* #0b1c30 */
+  --cmotd-color-secondary-fixed: 218 226 253; /* #dae2fd */
+  --cmotd-color-brand-cobalt: 55 105 214; /* #3769D6 */
+  --cmotd-color-error: 186 26 26; /* #ba1a1a */
+  --cmotd-color-status-verified-border: 167 243 208; /* #A7F3D0 */
+  --cmotd-color-status-info: 2 132 199; /* #0284C7 */
+  --cmotd-color-on-tertiary-fixed: 0 32 29; /* #00201d */
+  --cmotd-color-on-tertiary: 255 255 255; /* #ffffff */
+  --cmotd-color-surface-container-high: 220 233 255; /* #dce9ff */
+  --cmotd-color-status-verified: 5 150 105; /* #059669 */
+  --cmotd-color-brand-slate-200: 226 232 240; /* #E2E8F0 */
+  --cmotd-color-primary-container: 37 87 199; /* #2557c7 */
+  --cmotd-color-status-danger-bg: 254 242 242; /* #FEF2F2 */
+  --cmotd-color-surface: 248 249 255; /* #f8f9ff */
+  --cmotd-color-outline-variant: 195 198 214; /* #c3c6d6 */
+  --cmotd-color-secondary-container: 218 226 253; /* #dae2fd */
+  --cmotd-color-on-error-container: 147 0 10; /* #93000a */
+  --cmotd-color-surface-variant: 211 228 254; /* #d3e4fe */
+  --cmotd-color-on-tertiary-fixed-variant: 0 80 73; /* #005049 */
+  --cmotd-color-on-secondary: 255 255 255; /* #ffffff */
+  --cmotd-color-surface-container-lowest: 255 255 255; /* #ffffff */
+  --cmotd-color-on-primary-fixed-variant: 0 62 166; /* #003ea6 */
+  --cmotd-color-status-danger: 220 38 38; /* #DC2626 */
+  --cmotd-radius-default: 0.125rem;
+  --cmotd-radius-lg: 0.25rem;
+  --cmotd-radius-xl: 0.5rem;
+  --cmotd-radius-full: 0.75rem;
+  --cmotd-radius-2xl: 1rem;
+  --cmotd-font-headline-md: "Newsreader", Georgia, serif;
+  --cmotd-font-label-sm: "Inter", Arial, sans-serif;
+  --cmotd-font-headline-sm: "Newsreader", Georgia, serif;
+  --cmotd-font-headline-lg: "Newsreader", Georgia, serif;
+  --cmotd-font-body-md: "Inter", Arial, sans-serif;
+  --cmotd-font-label-md: "Inter", Arial, sans-serif;
+  --cmotd-font-display-xl: "Newsreader", Georgia, serif;
+  --cmotd-font-body-sm: "Inter", Arial, sans-serif;
+  --cmotd-font-display-lg: "Newsreader", Georgia, serif;
+  --cmotd-font-display-xl-mobile: "Newsreader", Georgia, serif;
+  --cmotd-font-code-sm: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  --cmotd-font-display-lg-mobile: "Newsreader", Georgia, serif;
+  --cmotd-font-body-lg: "Inter", Arial, sans-serif;
+  --cmotd-font-title-lg: "Newsreader", Georgia, serif;
+  --cmotd-font-headline-lg-mobile: "Newsreader", Georgia, serif;
+  --cmotd-font-serif-editorial: "Newsreader", Georgia, serif;
+  --cmotd-font-serif-display: "Newsreader", Georgia, serif;
+  --cmotd-font-sans-editorial: "Inter", Arial, sans-serif;
+  --cmotd-font-sans: "Inter", Arial, sans-serif;
+  --cmotd-fs-headline-md: 24px;
+  --cmotd-lh-headline-md: 32px;
+  --cmotd-ls-headline-md: -0.015em;
+  --cmotd-fw-headline-md: 600;
+  --cmotd-fs-label-sm: 11px;
+  --cmotd-lh-label-sm: 16px;
+  --cmotd-ls-label-sm: 0.04em;
+  --cmotd-fw-label-sm: 600;
+  --cmotd-fs-headline-sm: 20px;
+  --cmotd-lh-headline-sm: 28px;
+  --cmotd-ls-headline-sm: -0.01em;
+  --cmotd-fw-headline-sm: 600;
+  --cmotd-fs-headline-lg: 32px;
+  --cmotd-lh-headline-lg: 40px;
+  --cmotd-ls-headline-lg: -0.02em;
+  --cmotd-fw-headline-lg: 700;
+  --cmotd-fs-body-md: 15px;
+  --cmotd-lh-body-md: 24px;
+  --cmotd-ls-body-md: 0em;
+  --cmotd-fw-body-md: 400;
+  --cmotd-fs-label-md: 13px;
+  --cmotd-lh-label-md: 18px;
+  --cmotd-ls-label-md: 0.01em;
+  --cmotd-fw-label-md: 600;
+  --cmotd-fs-display-xl: 56px;
+  --cmotd-lh-display-xl: 64px;
+  --cmotd-ls-display-xl: -0.03em;
+  --cmotd-fw-display-xl: 800;
+  --cmotd-fs-body-sm: 13px;
+  --cmotd-lh-body-sm: 20px;
+  --cmotd-ls-body-sm: 0.005em;
+  --cmotd-fw-body-sm: 400;
+  --cmotd-fs-display-lg: 44px;
+  --cmotd-lh-display-lg: 52px;
+  --cmotd-ls-display-lg: -0.025em;
+  --cmotd-fw-display-lg: 700;
+  --cmotd-fs-display-xl-mobile: 36px;
+  --cmotd-lh-display-xl-mobile: 44px;
+  --cmotd-ls-display-xl-mobile: -0.025em;
+  --cmotd-fw-display-xl-mobile: 800;
+  --cmotd-fs-code-sm: 12px;
+  --cmotd-lh-code-sm: 18px;
+  --cmotd-ls-code-sm: 0.02em;
+  --cmotd-fw-code-sm: 500;
+  --cmotd-fs-display-lg-mobile: 30px;
+  --cmotd-lh-display-lg-mobile: 38px;
+  --cmotd-ls-display-lg-mobile: -0.02em;
+  --cmotd-fw-display-lg-mobile: 700;
+  --cmotd-fs-body-lg: 18px;
+  --cmotd-lh-body-lg: 28px;
+  --cmotd-ls-body-lg: 0em;
+  --cmotd-fw-body-lg: 400;
+  --cmotd-fs-title-lg: 18px;
+  --cmotd-lh-title-lg: 26px;
+  --cmotd-ls-title-lg: -0.005em;
+  --cmotd-fw-title-lg: 600;
+  --cmotd-fs-headline-lg-mobile: 24px;
+  --cmotd-lh-headline-lg-mobile: 32px;
+  --cmotd-ls-headline-lg-mobile: -0.015em;
+  --cmotd-fw-headline-lg-mobile: 700;
+}
+
+.cmotd-theme-academic {
+  --cmotd-color-surface-bright: 255 255 255; /* #ffffff */
+  --cmotd-color-background: 255 255 255; /* #ffffff */
+  --cmotd-color-brand-cobalt-deep: 29 78 216; /* #1d4ed8 */
+  --cmotd-color-surface-container-low: 248 250 252; /* #f8fafc */
+  --cmotd-color-brand-cobalt: 37 99 235; /* #2563eb */
+  --cmotd-color-surface: 255 255 255; /* #ffffff */
+  --cmotd-color-surface-container: 241 245 249; /* #f1f5f9 */
+  --cmotd-font-label-md: "Inter", Arial, sans-serif;
+  --cmotd-font-headline-lg-mobile: "Newsreader", Georgia, serif;
+  --cmotd-font-display-lg: "Newsreader", Georgia, serif;
+  --cmotd-font-label-sm: "Inter", Arial, sans-serif;
+  --cmotd-font-code-sm: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  --cmotd-font-headline-lg: "Newsreader", Georgia, serif;
+  --cmotd-font-display-xl: "Newsreader", Georgia, serif;
+  --cmotd-font-display-lg-mobile: "Newsreader", Georgia, serif;
+  --cmotd-font-body-lg: "Inter", Arial, sans-serif;
+  --cmotd-font-title-lg: "Newsreader", Georgia, serif;
+  --cmotd-font-display-xl-mobile: "Newsreader", Georgia, serif;
+  --cmotd-font-headline-sm: "Newsreader", Georgia, serif;
+  --cmotd-font-body-md: "Inter", Arial, sans-serif;
+  --cmotd-font-body-sm: "Inter", Arial, sans-serif;
+  --cmotd-font-headline-md: "Newsreader", Georgia, serif;
+  --cmotd-fs-display-lg: 46px;
+  --cmotd-lh-display-lg: 54px;
+  --cmotd-ls-display-lg: -0.025em;
+  --cmotd-fw-display-lg: 600;
+  --cmotd-fs-headline-lg: 34px;
+  --cmotd-lh-headline-lg: 42px;
+  --cmotd-ls-headline-lg: -0.02em;
+  --cmotd-fw-headline-lg: 600;
+  --cmotd-fs-headline-md: 26px;
+  --cmotd-lh-headline-md: 34px;
+  --cmotd-ls-headline-md: -0.015em;
+  --cmotd-fw-headline-md: 600;
+  --cmotd-fs-headline-sm: 22px;
+  --cmotd-lh-headline-sm: 30px;
+  --cmotd-ls-headline-sm: -0.01em;
+  --cmotd-fw-headline-sm: 600;
+}
+
+.cmotd-theme-high-tech {
+  --cmotd-color-surface-bright: 255 255 255; /* #ffffff */
+  --cmotd-color-background: 255 255 255; /* #ffffff */
+  --cmotd-color-brand-cobalt-deep: 29 78 216; /* #1d4ed8 */
+  --cmotd-color-surface-container-low: 248 250 252; /* #f8fafc */
+  --cmotd-color-brand-cobalt: 37 99 235; /* #2563eb */
+  --cmotd-color-surface: 255 255 255; /* #ffffff */
+  --cmotd-color-surface-container: 241 245 249; /* #f1f5f9 */
+  --cmotd-font-serif-editorial: "Newsreader", Georgia, serif;
+  --cmotd-font-label-md: "Inter", Arial, sans-serif;
+  --cmotd-font-headline-lg-mobile: "Newsreader", Georgia, serif;
+  --cmotd-font-display-lg: "Newsreader", Georgia, serif;
+  --cmotd-font-label-sm: "Inter", Arial, sans-serif;
+  --cmotd-font-code-sm: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  --cmotd-font-headline-lg: "Newsreader", Georgia, serif;
+  --cmotd-font-display-xl: "Newsreader", Georgia, serif;
+  --cmotd-font-display-lg-mobile: "Newsreader", Georgia, serif;
+  --cmotd-font-body-lg: "Inter", Arial, sans-serif;
+  --cmotd-font-title-lg: "Newsreader", Georgia, serif;
+  --cmotd-font-display-xl-mobile: "Newsreader", Georgia, serif;
+  --cmotd-font-headline-sm: "Newsreader", Georgia, serif;
+  --cmotd-font-body-md: "Inter", Arial, sans-serif;
+  --cmotd-font-body-sm: "Inter", Arial, sans-serif;
+  --cmotd-font-headline-md: "Newsreader", Georgia, serif;
+}
+
+.cmotd-theme-executive {
+  --cmotd-color-surface-bright: 255 255 255; /* #ffffff */
+  --cmotd-color-background: 255 255 255; /* #ffffff */
+  --cmotd-color-brand-cobalt-deep: 29 78 216; /* #1d4ed8 */
+  --cmotd-color-surface-container-low: 248 250 252; /* #f8fafc */
+  --cmotd-color-brand-cobalt: 37 99 235; /* #2563eb */
+  --cmotd-color-surface: 255 255 255; /* #ffffff */
+  --cmotd-color-surface-container: 241 245 249; /* #f1f5f9 */
+  --cmotd-font-serif-editorial: "Newsreader", Georgia, serif;
+  --cmotd-font-label-md: "Inter", Arial, sans-serif;
+  --cmotd-font-headline-lg-mobile: "Newsreader", Georgia, serif;
+  --cmotd-font-display-lg: "Newsreader", Georgia, serif;
+  --cmotd-font-label-sm: "Inter", Arial, sans-serif;
+  --cmotd-font-code-sm: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  --cmotd-font-headline-lg: "Newsreader", Georgia, serif;
+  --cmotd-font-display-xl: "Newsreader", Georgia, serif;
+  --cmotd-font-display-lg-mobile: "Newsreader", Georgia, serif;
+  --cmotd-font-body-lg: "Inter", Arial, sans-serif;
+  --cmotd-font-title-lg: "Newsreader", Georgia, serif;
+  --cmotd-font-display-xl-mobile: "Newsreader", Georgia, serif;
+  --cmotd-font-headline-sm: "Newsreader", Georgia, serif;
+  --cmotd-font-body-md: "Inter", Arial, sans-serif;
+  --cmotd-font-body-sm: "Inter", Arial, sans-serif;
+  --cmotd-font-headline-md: "Newsreader", Georgia, serif;
+}
+
+.cmotd-theme-tech-academy {
+  --cmotd-color-surface-bright: 255 255 255; /* #ffffff */
+  --cmotd-color-background: 248 250 255; /* #f8faff */
+  --cmotd-color-surface-container-low: 241 245 253; /* #f1f5fd */
+  --cmotd-color-surface: 248 250 255; /* #f8faff */
+  --cmotd-radius-lg: 0.375rem;
+  --cmotd-radius-xl: 0.75rem;
+  --cmotd-radius-full: 9999px;
+  --cmotd-font-label-md: "Inter", Arial, sans-serif;
+  --cmotd-font-headline-lg-mobile: "Newsreader", Georgia, serif;
+  --cmotd-font-display-lg: "Newsreader", Georgia, serif;
+  --cmotd-font-label-sm: "Inter", Arial, sans-serif;
+  --cmotd-font-code-sm: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  --cmotd-font-headline-lg: "Newsreader", Georgia, serif;
+  --cmotd-font-display-xl: "Newsreader", Georgia, serif;
+  --cmotd-font-body-lg: "Inter", Arial, sans-serif;
+  --cmotd-font-title-lg: "Newsreader", Georgia, serif;
+  --cmotd-font-headline-sm: "Newsreader", Georgia, serif;
+  --cmotd-font-body-md: "Inter", Arial, sans-serif;
+  --cmotd-font-body-sm: "Inter", Arial, sans-serif;
+  --cmotd-font-headline-md: "Newsreader", Georgia, serif;
+}
+
+.cmotd-theme-research {
+  --cmotd-font-code-sm: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+}
+
+.cmotd-theme-syllabus-modal {
+  --cmotd-fs-title-lg: 18px;
+  --cmotd-lh-title-lg: 26px;
+  --cmotd-ls-title-lg: -0.05em;
+  --cmotd-fw-title-lg: 600;
+}
+
+/* Shared project helpers */
+html {
+  scroll-behavior: smooth;
+}
+img,
+svg {
+  max-width: 100%;
+}

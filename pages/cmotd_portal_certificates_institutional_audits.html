@@ -1,0 +1,968 @@
+<!doctype html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      content="width=device-width, initial-scale=1.0"
+      name="viewport"
+    />
+    <title>
+      CMOTD e-Portal | Certificates, Audits &amp; Verification Hub - Rivers State University
+    </title>
+    <link
+      href="../favicon.ico"
+      rel="icon"
+      type="image/x-icon"
+    />
+
+    <!-- Tailwind CSS CDN -->
+    <link
+      href="../assets/css/tailwind-build.css"
+      rel="stylesheet"
+    />
+    <link
+      href="../assets/css/cmotd-global.css"
+      rel="stylesheet"
+    />
+    <script
+      defer=""
+      src="../assets/js/site-config.js"
+    ></script>
+    <script
+      defer=""
+      src="../assets/js/cmotd-components.js"
+    ></script>
+  </head>
+  <body
+    class="flex min-h-screen flex-col bg-background font-body-md text-body-md text-on-surface antialiased selection:bg-primary selection:text-on-primary"
+  >
+    <!-- ==================== SIDE NAVIGATION BAR (SHARED COMPONENT) ==================== -->
+    <cmotd-portal-sidebar active="certificates"></cmotd-portal-sidebar>
+    <!-- ==================== MAIN PORTAL CONTAINER ==================== -->
+    <div class="ml-portal-sidebar-width flex min-h-screen flex-col">
+      <!-- ==================== TOP NAVIGATION BAR (SHARED COMPONENT) ==================== -->
+      <cmotd-portal-topbar title="Certificates &amp; Audits"></cmotd-portal-topbar>
+      <!-- ==================== SUB-NAVBAR & BREADCRUMB LEVEL ==================== -->
+      <div
+        class="flex flex-wrap items-center justify-between gap-4 border-b border-brand-slate-200 bg-surface-container-lowest px-space-lg py-2"
+      >
+        <div class="flex items-center gap-2 font-label-sm text-label-sm text-brand-slate-500">
+          <span class="font-medium text-brand-slate-700">CMOTD e-Portal</span>
+          <span
+            class="material-symbols-outlined text-xs"
+            data-icon="chevron_right"
+            >chevron_right</span
+          >
+          <span class="font-medium text-brand-slate-700">Certificates &amp; Audits</span>
+          <span
+            class="material-symbols-outlined text-xs"
+            data-icon="chevron_right"
+            >chevron_right</span
+          >
+          <span class="font-semibold text-primary">Institutional Registry &amp; Dossier</span>
+        </div>
+        <!-- Trust Ribbon Micro-Badge -->
+        <div
+          class="flex items-center gap-3 rounded-lg border border-status-verified-border bg-status-verified-bg px-3 py-1"
+        >
+          <span
+            class="material-symbols-outlined text-sm text-status-verified"
+            data-icon="lock"
+            >lock</span
+          >
+          <span class="font-label-sm text-label-sm font-medium text-status-verified">
+            RSU Senate Gazette Ratified • SHA-256 Ledger:
+            <span class="font-mono text-xs">d4e578c1b99a...</span> • COREN Regulated
+          </span>
+        </div>
+      </div>
+      <!-- Secondary In-Content Tabs -->
+      <div class="border-b border-brand-slate-200 bg-surface-container-lowest px-space-lg">
+        <div class="flex space-x-6 overflow-x-auto">
+          <button
+            class="flex items-center gap-2 whitespace-nowrap border-b-2 border-primary px-1 py-3 font-label-md text-label-md text-primary"
+          >
+            <span
+              class="material-symbols-outlined text-base"
+              data-icon="badge"
+              >badge</span
+            >
+            <span>My Credentials &amp; Certificates</span>
+          </button>
+          <button
+            class="flex items-center gap-2 whitespace-nowrap border-b-2 border-transparent px-1 py-3 font-label-md text-label-md text-on-surface-variant transition-colors hover:text-primary"
+          >
+            <span
+              class="material-symbols-outlined text-base"
+              data-icon="fact_check"
+              >fact_check</span
+            >
+            <span>Public Verification Registry</span>
+          </button>
+          <button
+            class="flex items-center gap-2 whitespace-nowrap border-b-2 border-transparent px-1 py-3 font-label-md text-label-md text-on-surface-variant transition-colors hover:text-primary"
+          >
+            <span
+              class="material-symbols-outlined text-base"
+              data-icon="history_edu"
+              >history_edu</span
+            >
+            <span>Audit Trail &amp; Security Logs</span>
+          </button>
+          <button
+            class="flex items-center gap-2 whitespace-nowrap border-b-2 border-transparent px-1 py-3 font-label-md text-label-md text-on-surface-variant transition-colors hover:text-primary"
+          >
+            <span
+              class="material-symbols-outlined text-base"
+              data-icon="receipt_long"
+              >receipt_long</span
+            >
+            <span>Transcript Requests</span>
+          </button>
+          <button
+            class="flex items-center gap-2 whitespace-nowrap border-b-2 border-transparent px-1 py-3 font-label-md text-label-md text-on-surface-variant transition-colors hover:text-primary"
+          >
+            <span
+              class="material-symbols-outlined text-base"
+              data-icon="how_to_reg"
+              >how_to_reg</span
+            >
+            <span>Senate Clearance Docket</span>
+          </button>
+        </div>
+      </div>
+      <!-- ==================== MAIN WORKFLOW CANVAS ==================== -->
+      <main class="mx-auto w-full max-w-[1440px] flex-1 space-y-6 p-space-lg">
+        <!-- TOP CANDIDATE SUMMARY BANNER (BENTO PROFILE HEADER) -->
+        <div
+          class="rounded-lg border border-brand-slate-200 bg-surface-container-lowest p-space-lg shadow-sm"
+        >
+          <div class="flex flex-col justify-between gap-6 lg:flex-row lg:items-center">
+            <div class="flex items-start gap-5 sm:items-center">
+              <div class="relative">
+                <img
+                  alt="Engr. Dr. Tamuno Briggs Profile Portrait"
+                  class="h-16 w-16 rounded-lg border-2 border-primary object-cover shadow-sm sm:h-20 sm:w-20"
+                  data-alt="Editorial close-up portrait of a Nigerian senior marine engineer and university fellow smiling confidently in a modern Rivers State University faculty lounge with maritime computational monitors in the background."
+                  decoding="async"
+                  fetchpriority="high"
+                  loading="eager"
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuBe1GeYonlps-Q_zkpNMDKb2v5zw5uyJdmdorAPBcXzKnP605NNacx8d36Z1vriKZ-GxdTCR_xvtTzjwFJy8kExulPgL5Oox-naDHJUfMtCezI0tXWmqfaI5hfeoplwngcCdujiQ63mxBzBWRPrm3ZnPxBcAxPbf-GjFvc08OQWaBB0kjKe9VI47ZbQ8b7Pb__yaOFqlRD6_xkf96J3D9t5nbT7YqCODaQ3TGGXCQdPPBqj3hyKeiy6"
+                />
+                <span
+                  class="absolute -bottom-1 -right-1 rounded-full bg-status-verified p-0.5 text-white"
+                  title="Identity Cryptographically Verified"
+                >
+                  <span
+                    class="material-symbols-outlined block text-xs"
+                    data-icon="check_circle"
+                    >check_circle</span
+                  >
+                </span>
+              </div>
+              <div class="space-y-1">
+                <div class="flex flex-wrap items-center gap-2">
+                  <h1 class="font-headline-md text-headline-md font-bold text-on-surface">
+                    Engr. Dr. Tamuno Briggs
+                  </h1>
+                  <span
+                    class="flex items-center gap-1 rounded border border-status-verified-border bg-status-verified-bg px-2.5 py-0.5 text-label-sm font-semibold text-status-verified"
+                  >
+                    <span class="h-1.5 w-1.5 rounded-full bg-status-verified"></span>
+                    Good Standing &amp; Senate Ratified
+                  </span>
+                  <span
+                    class="rounded bg-brand-slate-100 px-2 py-0.5 font-mono text-label-sm font-medium text-brand-slate-700"
+                  >
+                    Matric: RSU/CMOTD/2025/0842
+                  </span>
+                </div>
+                <p
+                  class="flex flex-wrap items-center gap-x-4 gap-y-1 font-body-sm text-body-sm text-on-surface-variant"
+                >
+                  <span class="flex items-center gap-1">
+                    <span
+                      class="material-symbols-outlined text-sm text-brand-slate-400"
+                      data-icon="school"
+                      >school</span
+                    >
+                    Advanced PGD Subsea Engineering &amp; Deepwater Pipeline Systems
+                  </span>
+                  <span class="flex items-center gap-1">
+                    <span
+                      class="material-symbols-outlined text-sm text-brand-slate-400"
+                      data-icon="location_on"
+                      >location_on</span
+                    >
+                    RSU Nkpolu-Oroworukwo Campus, Port Harcourt
+                  </span>
+                  <span class="flex items-center gap-1">
+                    <span
+                      class="material-symbols-outlined text-sm text-brand-slate-400"
+                      data-icon="account_balance"
+                      >account_balance</span
+                    >
+                    Senate Approved Candidate
+                  </span>
+                </p>
+              </div>
+            </div>
+            <!-- Quick Metrics in Summary Banner -->
+            <div
+              class="flex items-center gap-3 border-t border-brand-slate-200 pt-4 sm:gap-6 lg:border-l lg:border-t-0 lg:pl-6 lg:pt-0"
+            >
+              <div class="px-2 text-center">
+                <span class="block font-headline-sm text-headline-sm font-bold text-primary"
+                  >02</span
+                >
+                <span
+                  class="font-label-sm text-label-sm uppercase tracking-wider text-brand-slate-500"
+                  >Conferred</span
+                >
+              </div>
+              <div class="h-8 w-px bg-brand-slate-200"></div>
+              <div class="px-2 text-center">
+                <span class="block font-headline-sm text-headline-sm font-bold text-status-warning"
+                  >01</span
+                >
+                <span
+                  class="font-label-sm text-label-sm uppercase tracking-wider text-brand-slate-500"
+                  >In Progress</span
+                >
+              </div>
+              <div class="h-8 w-px bg-brand-slate-200"></div>
+              <div class="px-2 text-center">
+                <span class="block font-headline-sm text-headline-sm font-bold text-brand-slate-800"
+                  >42/60</span
+                >
+                <span
+                  class="font-label-sm text-label-sm uppercase tracking-wider text-brand-slate-500"
+                  >CEU Credits</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- MAIN 2-COLUMN GRID (2/3 LEFT, 1/3 RIGHT) -->
+        <div class="grid grid-cols-1 gap-6 lg:grid-cols-3">
+          <!-- ==================== LEFT COLUMN (2/3 WIDTH) ==================== -->
+          <div class="space-y-6 lg:col-span-2">
+            <!-- 1. ISSUED & IN-PROGRESS CREDENTIALS CARD -->
+            <section
+              class="rounded-lg border border-brand-slate-200 bg-surface-container-lowest p-space-lg shadow-sm"
+            >
+              <div
+                class="mb-6 flex items-center justify-between border-b border-brand-slate-200 pb-4"
+              >
+                <div class="flex items-center gap-2">
+                  <span
+                    class="material-symbols-outlined text-2xl text-primary"
+                    data-icon="workspace_premium"
+                    >workspace_premium</span
+                  >
+                  <h2 class="font-headline-sm text-headline-sm font-bold text-on-surface">
+                    Issued &amp; In-Progress Credentials
+                  </h2>
+                </div>
+                <span class="font-label-sm text-label-sm text-brand-slate-500"
+                  >Live Cryptographic Audit Enabled</span
+                >
+              </div>
+              <div class="space-y-4">
+                <!-- Item 1: CAESAR II Certificate (Issued & Verified) -->
+                <div
+                  class="rounded-lg border border-status-verified-border bg-status-verified-bg/20 p-4 transition-all hover:shadow-md"
+                >
+                  <div
+                    class="flex flex-col items-start justify-between gap-4 sm:flex-row sm:items-center"
+                  >
+                    <div class="space-y-1">
+                      <div class="flex flex-wrap items-center gap-2">
+                        <span
+                          class="flex items-center gap-1 rounded border border-status-verified-border bg-status-verified-bg px-2 py-0.5 font-label-sm text-label-sm font-semibold text-status-verified"
+                        >
+                          <span
+                            class="material-symbols-outlined text-xs"
+                            data-icon="verified"
+                            >verified</span
+                          >
+                          Issued &amp; Verified
+                        </span>
+                        <span
+                          class="rounded bg-brand-navy-900 px-2 py-0.5 font-mono text-label-sm text-white"
+                        >
+                          CAESAR II • FEM 40 CEU
+                        </span>
+                        <span class="font-mono text-xs text-brand-slate-400"
+                          >Serial: CMOTD-CERT-2024-8842</span
+                        >
+                      </div>
+                      <h3 class="pt-1 font-title-lg text-title-lg font-bold text-on-surface">
+                        Certificate of Competence: Pipe Stress Analysis &amp; Finite Element
+                        Modeling
+                      </h3>
+                      <p class="font-body-sm text-body-sm text-brand-slate-500">
+                        Conferred: 14 November 2024 • Issued by RSU Centre for Marine &amp; Offshore
+                        Technology • Senate Ratified
+                      </p>
+                    </div>
+                    <!-- QR Stamp & Fast Download -->
+                    <div class="flex shrink-0 items-center gap-2 sm:flex-col">
+                      <div
+                        class="shadow-xs flex h-14 w-14 items-center justify-center rounded border border-brand-slate-200 bg-white p-1"
+                        title="Cryptographic QR Audit"
+                      >
+                        <span
+                          class="material-symbols-outlined text-3xl text-brand-navy-950"
+                          data-icon="qr_code_2"
+                          >qr_code_2</span
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Footer Action Buttons -->
+                  <div
+                    class="mt-4 flex flex-wrap items-center justify-between gap-3 border-t border-brand-slate-200 pt-3"
+                  >
+                    <div class="flex items-center gap-2 font-mono text-xs text-brand-slate-500">
+                      <span
+                        class="material-symbols-outlined text-xs text-status-verified"
+                        data-icon="fingerprint"
+                        >fingerprint</span
+                      >
+                      <span>RSU Security Hash: SHA256:88a7c29e00b...</span>
+                    </div>
+                    <div class="flex items-center gap-2">
+                      <button
+                        class="shadow-xs flex items-center gap-1.5 rounded bg-primary px-3 py-1.5 font-label-md text-label-md text-on-primary transition-colors hover:bg-brand-cobalt-deep"
+                      >
+                        <span
+                          class="material-symbols-outlined text-sm"
+                          data-icon="download"
+                          >download</span
+                        >
+                        <span>Download Stamped PDF</span>
+                      </button>
+                      <button
+                        class="flex items-center gap-1.5 rounded border border-brand-slate-200 px-3 py-1.5 font-label-md text-label-md text-brand-slate-700 transition-colors hover:bg-surface-container-low"
+                      >
+                        <span
+                          class="material-symbols-outlined text-sm"
+                          data-icon="visibility"
+                          >visibility</span
+                        >
+                        <span>View Public Ledger</span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <!-- Item 2: Postgraduate Diploma (In Progress) -->
+                <div
+                  class="rounded-lg border border-brand-slate-200 bg-surface-container-lowest p-4 transition-all hover:shadow-md"
+                >
+                  <div
+                    class="flex flex-col items-start justify-between gap-4 sm:flex-row sm:items-center"
+                  >
+                    <div class="flex-1 space-y-1">
+                      <div class="flex flex-wrap items-center gap-2">
+                        <span
+                          class="flex items-center gap-1 rounded border border-status-warning/30 bg-status-warning-bg px-2 py-0.5 font-label-sm text-label-sm font-semibold text-status-warning"
+                        >
+                          <span
+                            class="h-1.5 w-1.5 animate-pulse rounded-full bg-status-warning"
+                          ></span>
+                          In Progress (42/60 Credits)
+                        </span>
+                        <span
+                          class="rounded bg-brand-slate-100 px-2 py-0.5 font-label-sm text-label-sm text-brand-slate-800"
+                        >
+                          Full-Time Modular
+                        </span>
+                        <span class="font-mono text-xs text-brand-slate-400"
+                          >Dossier: RSU/PGD/SUBSEA/2025</span
+                        >
+                      </div>
+                      <h3 class="pt-1 font-title-lg text-title-lg font-bold text-on-surface">
+                        Postgraduate Diploma in Subsea Engineering &amp; Deepwater Pipeline Systems
+                      </h3>
+                      <p class="font-body-sm text-body-sm text-brand-slate-500">
+                        Academic Mentor: Prof. Gabriel Idoniboye (COREN Reg.) • Expected Conferral:
+                        July 2026
+                      </p>
+                      <!-- Verification Progress Track -->
+                      <div class="w-full max-w-md pt-2">
+                        <div
+                          class="mb-1 flex justify-between font-label-sm text-label-sm text-brand-slate-500"
+                        >
+                          <span>Coursework Modules Audited</span>
+                          <span class="font-bold text-primary">70% Completed</span>
+                        </div>
+                        <div class="h-2 w-full rounded-full bg-brand-slate-100">
+                          <div
+                            class="h-2 rounded-full bg-primary"
+                            style="width: 70%"
+                          ></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="flex shrink-0 flex-col items-end gap-2">
+                      <span class="text-xs font-semibold uppercase text-brand-slate-500"
+                        >Defense Milestone</span
+                      >
+                      <span
+                        class="rounded border border-brand-slate-200 bg-brand-slate-50 px-2.5 py-1 text-xs font-bold text-brand-slate-800"
+                      >
+                        Phase 2: Riser Hydrodynamics
+                      </span>
+                    </div>
+                  </div>
+                  <div
+                    class="mt-4 flex flex-wrap items-center justify-between gap-2 border-t border-brand-slate-200 pt-3"
+                  >
+                    <span class="text-xs text-brand-slate-500"
+                      >Senate Interim Statement of Result ready for dispatch</span
+                    >
+                    <button
+                      class="flex items-center gap-1.5 rounded border border-brand-slate-200 px-3 py-1 font-label-md text-label-md text-primary hover:border-primary"
+                    >
+                      <span
+                        class="material-symbols-outlined text-sm"
+                        data-icon="description"
+                        >description</span
+                      >
+                      <span>View Module Transcripts</span>
+                    </button>
+                  </div>
+                </div>
+                <!-- Item 3: Offshore Safety & ISPS Code Lead Auditor (Issued) -->
+                <div
+                  class="rounded-lg border border-brand-slate-200 bg-surface-container-lowest p-4 transition-all hover:shadow-md"
+                >
+                  <div
+                    class="flex flex-col items-start justify-between gap-4 sm:flex-row sm:items-center"
+                  >
+                    <div class="space-y-1">
+                      <div class="flex flex-wrap items-center gap-2">
+                        <span
+                          class="flex items-center gap-1 rounded border border-status-verified-border bg-status-verified-bg px-2 py-0.5 font-label-sm text-label-sm font-semibold text-status-verified"
+                        >
+                          <span
+                            class="material-symbols-outlined text-xs"
+                            data-icon="check_circle"
+                            >check_circle</span
+                          >
+                          Issued &amp; Valid
+                        </span>
+                        <span
+                          class="rounded bg-brand-slate-100 px-2 py-0.5 font-label-sm text-label-sm text-brand-slate-800"
+                        >
+                          IMO / ISPS Standard
+                        </span>
+                        <span class="font-mono text-xs text-brand-slate-400"
+                          >Serial: CMOTD-AUD-2023-1102</span
+                        >
+                      </div>
+                      <h3 class="pt-1 font-title-lg text-title-lg font-bold text-on-surface">
+                        Offshore Safety &amp; ISPS Code Lead Auditor Certification
+                      </h3>
+                      <p class="font-body-sm text-body-sm text-brand-slate-500">
+                        Conferred: 08 December 2023 • Accredited by Nigerian Maritime Administration
+                        &amp; Safety Agency (NIMASA)
+                      </p>
+                    </div>
+                    <div class="flex items-center gap-2">
+                      <button
+                        class="flex items-center gap-1 rounded bg-brand-slate-100 px-3 py-1.5 font-label-md text-label-md text-brand-slate-800 transition-colors hover:bg-brand-slate-200"
+                      >
+                        <span
+                          class="material-symbols-outlined text-sm"
+                          data-icon="file_download"
+                          >file_download</span
+                        >
+                        <span>Archive PDF</span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <!-- 2. PUBLIC REGISTRY VERIFICATION SANDBOX (EMPLOYER IOC PORTAL) -->
+            <section
+              class="rounded-lg border border-brand-slate-200 bg-surface-container-lowest p-space-lg shadow-sm"
+            >
+              <div
+                class="mb-4 flex items-center justify-between border-b border-brand-slate-200 pb-4"
+              >
+                <div class="flex items-center gap-2">
+                  <span
+                    class="material-symbols-outlined text-2xl text-status-verified"
+                    data-icon="policy"
+                    >policy</span
+                  >
+                  <div>
+                    <h2 class="font-headline-sm text-headline-sm font-bold text-on-surface">
+                      Public Registry Verification Sandbox
+                    </h2>
+                    <p class="font-body-sm text-body-sm text-brand-slate-500">
+                      Simulate immediate credential validation by corporate operators (Shell,
+                      Chevron, Saipem, TotalEnergies)
+                    </p>
+                  </div>
+                </div>
+                <span
+                  class="hidden rounded bg-brand-slate-100 px-2 py-1 font-mono text-xs text-brand-slate-700 sm:inline-block"
+                  >API v2.4 Active</span
+                >
+              </div>
+              <!-- Verification Search Bar -->
+              <div class="flex flex-col gap-3 sm:flex-row">
+                <div class="relative flex-1">
+                  <span
+                    class="material-symbols-outlined absolute left-3 top-2.5 text-brand-slate-400"
+                    data-icon="qr_code_scanner"
+                    >qr_code_scanner</span
+                  >
+                  <input
+                    class="h-[42px] w-full rounded border border-brand-slate-200 pl-10 pr-4 font-mono text-sm text-on-surface focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary"
+                    placeholder="Enter Certificate Serial or SHA256 Hash..."
+                    type="text"
+                    value="CMOTD-CERT-2024-8842"
+                  />
+                </div>
+                <button
+                  class="shadow-xs flex h-[42px] items-center justify-center gap-2 rounded bg-primary px-5 font-label-md text-label-md text-on-primary transition-colors hover:bg-brand-cobalt-deep"
+                >
+                  <span
+                    class="material-symbols-outlined text-sm"
+                    data-icon="search_check"
+                    >search_check</span
+                  >
+                  <span>Query Ledger Registry</span>
+                </button>
+              </div>
+              <!-- Instant Verification Result Card -->
+              <div
+                class="mt-4 rounded-lg border border-status-verified-border bg-status-verified-bg/30 p-4"
+              >
+                <div class="flex items-start justify-between">
+                  <div class="flex items-center gap-3">
+                    <div
+                      class="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-status-verified text-white"
+                    >
+                      <span
+                        class="material-symbols-outlined text-xl"
+                        data-icon="verified_user"
+                        >verified_user</span
+                      >
+                    </div>
+                    <div>
+                      <div class="flex items-center gap-2">
+                        <span class="font-label-md text-label-md font-bold text-status-verified"
+                          >AUTHENTIC &amp; ACTIVE CREDENTIAL</span
+                        >
+                        <span class="text-xs text-brand-slate-400">• Checked 2 minutes ago</span>
+                      </div>
+                      <p class="font-body-sm text-body-sm text-brand-slate-700">
+                        Conferred to:
+                        <strong class="text-on-surface">Engr. Dr. Tamuno Briggs</strong>
+                        • Program:
+                        <strong class="text-on-surface"
+                          >Pipe Stress Analysis &amp; Finite Element Modeling (CAESAR II)</strong
+                        >
+                      </p>
+                    </div>
+                  </div>
+                  <button
+                    class="flex items-center gap-1 font-label-sm text-label-sm font-semibold text-primary hover:underline"
+                  >
+                    <span
+                      class="material-symbols-outlined text-sm"
+                      data-icon="print"
+                      >print</span
+                    >
+                    <span>Print Dossier</span>
+                  </button>
+                </div>
+                <!-- Detailed Security Ledger Metadata Grid -->
+                <div
+                  class="mt-4 grid grid-cols-2 gap-3 border-t border-status-verified-border/60 pt-3 font-mono text-xs sm:grid-cols-4"
+                >
+                  <div>
+                    <span class="block text-[10px] uppercase text-brand-slate-500"
+                      >Senate Gazette No.</span
+                    >
+                    <span class="font-semibold text-brand-slate-800">RSU/SG/2024/Vol.18</span>
+                  </div>
+                  <div>
+                    <span class="block text-[10px] uppercase text-brand-slate-500"
+                      >Conferral Status</span
+                    >
+                    <span class="font-semibold text-status-verified">Clearance Concluded</span>
+                  </div>
+                  <div>
+                    <span class="block text-[10px] uppercase text-brand-slate-500"
+                      >Academic Dean</span
+                    >
+                    <span class="font-semibold text-brand-slate-800">Prof. Ngozi Okoronkwo</span>
+                  </div>
+                  <div>
+                    <span class="block text-[10px] uppercase text-brand-slate-500"
+                      >Cryptographic Block</span
+                    >
+                    <span class="font-semibold text-brand-slate-800">#904,218 (Polygon L2)</span>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <!-- 3. SENATE BURSARY & FINANCIAL CLEARANCE DOCKET -->
+            <section
+              class="rounded-lg border border-brand-slate-200 bg-surface-container-lowest p-space-lg shadow-sm"
+            >
+              <div
+                class="mb-4 flex items-center justify-between border-b border-brand-slate-200 pb-4"
+              >
+                <div class="flex items-center gap-2">
+                  <span
+                    class="material-symbols-outlined text-2xl text-primary"
+                    data-icon="payments"
+                    >payments</span
+                  >
+                  <div>
+                    <h2 class="font-headline-sm text-headline-sm font-bold text-on-surface">
+                      Senate Bursary &amp; Financial Clearance Docket
+                    </h2>
+                    <p class="font-body-sm text-body-sm text-brand-slate-500">
+                      Remita RRR settlement receipts and corporate sponsor validation
+                    </p>
+                  </div>
+                </div>
+                <span
+                  class="rounded border border-status-verified-border bg-status-verified-bg px-2.5 py-1 text-label-sm font-bold text-status-verified"
+                >
+                  Zero Balance Account
+                </span>
+              </div>
+              <div class="grid grid-cols-1 gap-4 md:grid-cols-2">
+                <!-- Docket 1: Remita RRR Receipt -->
+                <div
+                  class="flex flex-col justify-between rounded border border-brand-slate-200 bg-brand-slate-50 p-3.5"
+                >
+                  <div>
+                    <div class="mb-2 flex items-center justify-between">
+                      <span class="font-mono text-xs font-bold text-brand-slate-700"
+                        >RRR: 2801-4491-9923</span
+                      >
+                      <span
+                        class="rounded bg-status-verified-bg px-2 py-0.5 text-[11px] font-semibold text-status-verified"
+                        >Settled / Paid</span
+                      >
+                    </div>
+                    <h4 class="font-label-md text-label-md font-bold text-on-surface">
+                      PGD Subsea Engineering Session Fee
+                    </h4>
+                    <p class="mt-1 text-xs text-brand-slate-500">
+                      Beneficiary: Rivers State University Bursary Account • First Bank of Nigeria
+                      Plc
+                    </p>
+                  </div>
+                  <div
+                    class="mt-4 flex items-center justify-between border-t border-brand-slate-200 pt-3"
+                  >
+                    <span class="font-headline-sm text-headline-sm font-bold text-brand-navy-900"
+                      >₦1,250,000.00</span
+                    >
+                    <button
+                      class="flex items-center gap-1 font-label-sm text-label-sm font-medium text-primary hover:text-brand-cobalt-deep"
+                    >
+                      <span
+                        class="material-symbols-outlined text-sm"
+                        data-icon="receipt"
+                        >receipt</span
+                      >
+                      <span>Download e-Receipt</span>
+                    </button>
+                  </div>
+                </div>
+                <!-- Docket 2: NCDMB Sponsorship Voucher -->
+                <div
+                  class="flex flex-col justify-between rounded border border-brand-slate-200 bg-brand-slate-50 p-3.5"
+                >
+                  <div>
+                    <div class="mb-2 flex items-center justify-between">
+                      <span class="font-mono text-xs font-bold text-brand-slate-700"
+                        >Voucher: NCDMB-HCD-2024</span
+                      >
+                      <span
+                        class="rounded bg-status-info-bg px-2 py-0.5 text-[11px] font-semibold text-status-info"
+                        >Institutional Grant</span
+                      >
+                    </div>
+                    <h4 class="font-label-md text-label-md font-bold text-on-surface">
+                      NCDMB Human Capacity Development Fund
+                    </h4>
+                    <p class="mt-1 text-xs text-brand-slate-500">
+                      Subsea Computational Modeling Lab Support Grant covering CAESAR II &amp; AVEVA
+                      licenses
+                    </p>
+                  </div>
+                  <div
+                    class="mt-4 flex items-center justify-between border-t border-brand-slate-200 pt-3"
+                  >
+                    <span class="font-headline-sm text-headline-sm font-bold text-brand-navy-900"
+                      >Sponsored (100%)</span
+                    >
+                    <button
+                      class="flex items-center gap-1 font-label-sm text-label-sm font-medium text-primary hover:text-brand-cobalt-deep"
+                    >
+                      <span
+                        class="material-symbols-outlined text-sm"
+                        data-icon="attachment"
+                        >attachment</span
+                      >
+                      <span>View Grant Letter</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+          <!-- ==================== RIGHT COLUMN (1/3 WIDTH) ==================== -->
+          <div class="space-y-6">
+            <!-- 1. TRANSCRIPT & ACADEMIC DOSSIER REQUISITION (PRIMARY ACTION CARD) -->
+            <div
+              class="rounded-lg border border-brand-slate-800 bg-brand-navy-950 p-space-lg text-white shadow-md"
+            >
+              <div class="mb-4 flex items-center gap-3">
+                <div
+                  class="flex h-10 w-10 items-center justify-center rounded-lg bg-primary text-white"
+                >
+                  <span
+                    class="material-symbols-outlined text-xl"
+                    data-icon="mark_email_read"
+                    >mark_email_read</span
+                  >
+                </div>
+                <div>
+                  <h3 class="font-title-lg text-title-lg font-bold">
+                    Official Transcript Dispatch
+                  </h3>
+                  <p class="text-xs text-brand-slate-400">
+                    Electronic &amp; Embossed Courier Delivery
+                  </p>
+                </div>
+              </div>
+              <p class="text-brand-slate-300 mb-4 font-body-sm text-body-sm leading-relaxed">
+                Request sealed academic dossiers directly routed to corporate EPC partners,
+                international credential evaluation agencies (WES, ECCTIS), or international
+                universities.
+              </p>
+              <div class="mb-4 space-y-3">
+                <label class="block">
+                  <span class="text-brand-slate-300 mb-1 block text-xs font-medium"
+                    >Recipient Organization / Enterprise</span
+                  >
+                  <input
+                    class="bg-brand-slate-900 h-9 w-full rounded border border-brand-slate-700 px-3 font-body-sm text-body-sm text-white focus:border-primary focus:outline-none"
+                    type="text"
+                    value="Shell Petroleum Development Company (SPDC) HR"
+                  />
+                </label>
+                <label class="block">
+                  <span class="text-brand-slate-300 mb-1 block text-xs font-medium"
+                    >Dispatch Speed &amp; Protocol</span
+                  >
+                  <select
+                    class="bg-brand-slate-900 h-9 w-full rounded border border-brand-slate-700 px-3 font-body-sm text-body-sm text-white focus:border-primary focus:outline-none"
+                  >
+                    <option>Electronic Secure PDF (Same-Day Express)</option>
+                    <option>DHL International Diplomatic Pouch</option>
+                    <option>NUC Registry Direct Courier</option>
+                  </select>
+                </label>
+              </div>
+              <button
+                class="flex w-full items-center justify-center gap-2 rounded bg-brand-cobalt py-2.5 font-label-md text-label-md font-semibold text-white shadow-sm transition-colors hover:bg-brand-cobalt-deep"
+              >
+                <span
+                  class="material-symbols-outlined text-base"
+                  data-icon="send"
+                  >send</span
+                >
+                <span>1-Click Dispatch Requisition</span>
+              </button>
+              <p class="mt-2 text-center text-[11px] text-brand-slate-400">
+                Authenticated via RSU Senate Electronic Clearance
+              </p>
+            </div>
+            <!-- 2. CRYPTOGRAPHIC SECURITY & AUDIT TRAIL -->
+            <div
+              class="rounded-lg border border-brand-slate-200 bg-surface-container-lowest p-space-lg shadow-sm"
+            >
+              <div
+                class="mb-4 flex items-center justify-between border-b border-brand-slate-200 pb-3"
+              >
+                <div class="flex items-center gap-2">
+                  <span
+                    class="material-symbols-outlined text-primary"
+                    data-icon="history"
+                    >history</span
+                  >
+                  <h3 class="font-title-lg text-title-lg font-bold text-on-surface">
+                    Verification Audit Log
+                  </h3>
+                </div>
+                <span class="h-2 w-2 animate-ping rounded-full bg-status-verified"></span>
+              </div>
+              <p class="mb-3 font-body-sm text-body-sm text-brand-slate-500">
+                Live record of third-party institutional and employer lookups against candidate
+                identity.
+              </p>
+              <div class="space-y-3 font-body-sm text-body-sm">
+                <!-- Log Item 1 -->
+                <div
+                  class="flex items-start gap-3 rounded border border-brand-slate-200/80 bg-brand-slate-50 p-2.5"
+                >
+                  <div class="mt-0.5">
+                    <span
+                      class="material-symbols-outlined text-base text-status-verified"
+                      data-icon="check_circle"
+                      >check_circle</span
+                    >
+                  </div>
+                  <div class="flex-1">
+                    <p class="text-xs font-semibold text-on-surface">
+                      Shell Nigeria Exploration (SNEPCo)
+                    </p>
+                    <p class="text-[11px] text-brand-slate-500">
+                      Queried CAESAR II Cert #8842 via Employer API
+                    </p>
+                    <span class="font-mono text-[10px] text-brand-slate-400"
+                      >Today at 10:14 AM • IP: 105.112.41.9</span
+                    >
+                  </div>
+                </div>
+                <!-- Log Item 2 -->
+                <div
+                  class="flex items-start gap-3 rounded border border-brand-slate-200/80 bg-brand-slate-50 p-2.5"
+                >
+                  <div class="mt-0.5">
+                    <span
+                      class="material-symbols-outlined text-base text-status-verified"
+                      data-icon="check_circle"
+                      >check_circle</span
+                    >
+                  </div>
+                  <div class="flex-1">
+                    <p class="text-xs font-semibold text-on-surface">TotalEnergies EP Nigeria</p>
+                    <p class="text-[11px] text-brand-slate-500">
+                      Concluded Subsea PGD Matriculation Clearance
+                    </p>
+                    <span class="font-mono text-[10px] text-brand-slate-400"
+                      >Yesterday at 16:32 PM • IP: 197.210.65.12</span
+                    >
+                  </div>
+                </div>
+                <!-- Log Item 3 -->
+                <div
+                  class="flex items-start gap-3 rounded border border-brand-slate-200/80 bg-brand-slate-50 p-2.5"
+                >
+                  <div class="mt-0.5">
+                    <span
+                      class="material-symbols-outlined text-base text-primary"
+                      data-icon="vpn_key"
+                      >vpn_key</span
+                    >
+                  </div>
+                  <div class="flex-1">
+                    <p class="text-xs font-semibold text-on-surface">
+                      RSU Senate Exams &amp; Records
+                    </p>
+                    <p class="text-[11px] text-brand-slate-500">
+                      Interim Grade Ledger Token Hash Refreshed
+                    </p>
+                    <span class="font-mono text-[10px] text-brand-slate-400"
+                      >2 days ago • Senate Terminal 02</span
+                    >
+                  </div>
+                </div>
+              </div>
+              <button
+                class="mt-4 w-full rounded border border-brand-slate-200 py-1.5 font-label-sm text-label-sm font-medium text-brand-slate-700 transition-colors hover:bg-brand-slate-50"
+              >
+                Export Full Cryptographic Audit Sheet
+              </button>
+            </div>
+            <!-- 3. REGULATORY AUTHORITIES COMPLIANCE BADGES -->
+            <div
+              class="rounded-lg border border-brand-slate-200 bg-surface-container-lowest p-space-lg shadow-sm"
+            >
+              <h3
+                class="mb-3 flex items-center gap-2 font-title-lg text-title-lg font-bold text-on-surface"
+              >
+                <span
+                  class="material-symbols-outlined text-brand-cobalt"
+                  data-icon="assured_workload"
+                  >assured_workload</span
+                >
+                <span>Statutory Accreditations</span>
+              </h3>
+              <div class="space-y-3">
+                <!-- COREN Badge -->
+                <div class="flex items-center gap-3 rounded border border-brand-slate-200 p-2">
+                  <div
+                    class="flex h-9 w-9 items-center justify-center rounded border border-brand-slate-200 bg-brand-slate-100 text-xs font-bold text-brand-navy-900"
+                  >
+                    COREN
+                  </div>
+                  <div>
+                    <h4 class="font-label-md text-label-md font-bold leading-snug text-on-surface">
+                      Council for the Regulation of Engineering in Nigeria
+                    </h4>
+                    <p class="text-xs text-brand-slate-500">
+                      Accredited Engineering Training Faculty
+                    </p>
+                  </div>
+                </div>
+                <!-- NCDMB NJQS Badge -->
+                <div class="flex items-center gap-3 rounded border border-brand-slate-200 p-2">
+                  <div
+                    class="flex h-9 w-9 items-center justify-center rounded border border-brand-slate-200 bg-brand-slate-100 text-xs font-bold text-status-verified"
+                  >
+                    NCDMB
+                  </div>
+                  <div>
+                    <h4 class="font-label-md text-label-md font-bold leading-snug text-on-surface">
+                      NOGIC JQS Certified Center
+                    </h4>
+                    <p class="text-xs text-brand-slate-500">
+                      Direct upload to Nigerian Content Joint Qualification
+                    </p>
+                  </div>
+                </div>
+                <!-- RSU Senate Ratification Badge -->
+                <div class="flex items-center gap-3 rounded border border-brand-slate-200 p-2">
+                  <div
+                    class="flex h-9 w-9 items-center justify-center rounded border border-brand-slate-200 bg-brand-slate-100 text-xs font-bold text-primary"
+                  >
+                    RSU
+                  </div>
+                  <div>
+                    <h4 class="font-label-md text-label-md font-bold leading-snug text-on-surface">
+                      RSU Senate Committee on Approvals
+                    </h4>
+                    <p class="text-xs text-brand-slate-500">
+                      Statutory Degree &amp; Diploma Conferment Body
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+      <!-- ==================== INSTITUTIONAL FOOTER ==================== -->
+      <cmotd-portal-footer></cmotd-portal-footer>
+    </div>
+  </body>
+</html>

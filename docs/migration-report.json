@@ -1,0 +1,15 @@
+{
+  "screens_migrated": 57,
+  "root_home": "cmotd_landing_page_home",
+  "pages_directory_count": 56,
+  "global_config": "tailwind.config.js",
+  "global_css": "assets/css/cmotd-global.css",
+  "central_theme_variants": {
+    "cmotd_landing_page_typographic_variant_a_academic_serif_clean_sans": "academic",
+    "cmotd_landing_page_typographic_variant_b_high_tech_grotesk_modern_geometric": "high-tech",
+    "cmotd_landing_page_variant_1_executive_visual_focus": "executive",
+    "cmotd_landing_page_variant_2_tech_academy_rich_cards": "tech-academy",
+    "cmotd_portal_research_computational_simulations": "research",
+    "cmotd_programme_detail_expanded_module_interactive_lab_syllabus_modal": "syllabus-modal"
+  }
+}

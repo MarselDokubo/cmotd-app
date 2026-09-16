@@ -1,0 +1,1216 @@
+<!doctype html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      content="width=device-width, initial-scale=1.0"
+      name="viewport"
+    />
+    <title>
+      CMOTD - Facilities Maintenance &amp; Metrology Recalibration Downtime Advisory | Rivers State
+      University
+    </title>
+    <link
+      href="../favicon.ico"
+      rel="icon"
+      type="image/x-icon"
+    />
+
+    <!-- Tailwind CSS -->
+    <link
+      href="../assets/css/tailwind-build.css"
+      rel="stylesheet"
+    />
+    <link
+      href="../assets/css/cmotd-global.css"
+      rel="stylesheet"
+    />
+    <script
+      defer=""
+      src="../assets/js/site-config.js"
+    ></script>
+    <script
+      defer=""
+      src="../assets/js/cmotd-components.js"
+    ></script>
+  </head>
+  <body
+    class="flex min-h-screen flex-col bg-background text-on-surface antialiased selection:bg-primary selection:text-on-primary"
+  >
+    <!-- ========================================================================= -->
+    <!-- TOP INSTITUTIONAL HEADER (Derived from TopNavBar Shared Component)        -->
+    <!-- ========================================================================= -->
+    <cmotd-site-header active="services"></cmotd-site-header>
+    <!-- ========================================================================= -->
+    <!-- TELEMETRY ADVISORY STRIP & SYSTEM STATE                                   -->
+    <!-- ========================================================================= -->
+    <div class="border-b border-status-warning/30 bg-status-warning-bg px-4 py-2.5 sm:px-6 lg:px-8">
+      <div
+        class="mx-auto flex max-w-[1280px] flex-col items-start justify-between gap-2 md:flex-row md:items-center"
+      >
+        <div class="flex items-center gap-2.5">
+          <span class="relative flex h-2.5 w-2.5 flex-shrink-0">
+            <span
+              class="absolute inline-flex h-full w-full animate-ping rounded-full bg-status-warning opacity-75"
+            ></span>
+            <span class="relative inline-flex h-2.5 w-2.5 rounded-full bg-status-warning"></span>
+          </span>
+          <span
+            class="rounded bg-status-warning px-2 py-0.5 font-label-sm text-label-sm font-semibold uppercase tracking-wider text-surface-container-lowest"
+          >
+            Schedule Advisory
+          </span>
+          <p class="font-body-sm text-body-sm font-medium leading-tight text-brand-slate-800">
+            Hydrodynamic Flume Sensor Recalibration &amp; Tank Metrology in Progress
+            <span class="hidden text-brand-slate-500 sm:inline"
+              >(ISO/IEC 17025 Compliant Calibration Window: Oct 21 – Oct 23, 2025)</span
+            >
+          </p>
+        </div>
+        <div
+          class="flex items-center gap-2 font-label-sm text-label-sm font-semibold text-status-warning"
+        >
+          <span
+            class="material-symbols-outlined text-[16px]"
+            data-icon="gavel"
+            >gavel</span
+          >
+          <span>RSU Technical Directive #MET-2025-44B</span>
+        </div>
+      </div>
+    </div>
+    <!-- Telemetry Barometer Matrix -->
+    <section
+      class="border-b border-brand-slate-200 bg-surface-container-lowest px-4 py-3.5 sm:px-6 lg:px-8"
+    >
+      <div class="mx-auto grid max-w-[1280px] grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-4">
+        <!-- Metric 1: Wave Flume Status -->
+        <div
+          class="flex items-center gap-3 rounded-lg border border-status-warning/40 bg-status-warning-bg/40 p-2.5"
+        >
+          <div
+            class="flex h-9 w-9 flex-shrink-0 items-center justify-center rounded bg-status-warning/10 text-status-warning"
+          >
+            <span
+              class="material-symbols-outlined text-[20px]"
+              data-icon="precision_manufacturing"
+              >precision_manufacturing</span
+            >
+          </div>
+          <div class="min-w-0">
+            <div class="font-label-sm text-label-sm uppercase tracking-wider text-brand-slate-500">
+              Flume Transducer Array
+            </div>
+            <div
+              class="flex items-center gap-1.5 truncate font-label-md text-label-md font-bold text-status-warning"
+            >
+              <span>OFFLINE • Metrology Cycle</span>
+            </div>
+          </div>
+        </div>
+        <!-- Metric 2: Carriage Interlocks -->
+        <div
+          class="flex items-center gap-3 rounded-lg border border-brand-slate-200 bg-brand-slate-50 p-2.5"
+        >
+          <div
+            class="flex h-9 w-9 flex-shrink-0 items-center justify-center rounded bg-brand-slate-200/70 text-brand-slate-700"
+          >
+            <span
+              class="material-symbols-outlined text-[20px]"
+              data-icon="lock"
+              >lock</span
+            >
+          </div>
+          <div class="min-w-0">
+            <div class="font-label-sm text-label-sm uppercase tracking-wider text-brand-slate-500">
+              Carriage Interlocks
+            </div>
+            <div class="truncate font-label-md text-label-md font-semibold text-brand-slate-800">
+              Mechanical Safety Lock Active
+            </div>
+          </div>
+        </div>
+        <!-- Metric 3: HPC Compute Cluster -->
+        <div
+          class="flex items-center gap-3 rounded-lg border border-status-verified-border bg-status-verified-bg/40 p-2.5"
+        >
+          <div
+            class="flex h-9 w-9 flex-shrink-0 items-center justify-center rounded bg-status-verified/10 text-status-verified"
+          >
+            <span
+              class="material-symbols-outlined text-[20px]"
+              data-icon="memory"
+              >memory</span
+            >
+          </div>
+          <div class="min-w-0">
+            <div class="font-label-sm text-label-sm uppercase tracking-wider text-brand-slate-500">
+              HPC Compute Cluster
+            </div>
+            <div class="truncate font-label-md text-label-md font-semibold text-status-verified">
+              ONLINE • 48/60 Workstations Active
+            </div>
+          </div>
+        </div>
+        <!-- Metric 4: RSU Grid Network -->
+        <div
+          class="flex items-center gap-3 rounded-lg border border-brand-slate-200 bg-brand-slate-50 p-2.5"
+        >
+          <div
+            class="flex h-9 w-9 flex-shrink-0 items-center justify-center rounded bg-primary/10 text-primary"
+          >
+            <span
+              class="material-symbols-outlined text-[20px]"
+              data-icon="lan"
+              >lan</span
+            >
+          </div>
+          <div class="min-w-0">
+            <div class="font-label-sm text-label-sm uppercase tracking-wider text-brand-slate-500">
+              Telemetry Network
+            </div>
+            <div class="truncate font-label-md text-label-md font-semibold text-brand-slate-800">
+              RSU Core 10Gbps Grid Active
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ========================================================================= -->
+    <!-- MAIN WORKSPACE CANVAS                                                     -->
+    <!-- ========================================================================= -->
+    <main class="mx-auto w-full max-w-[1280px] flex-1 space-y-8 px-4 py-8 sm:px-6 lg:px-8">
+      <!-- Title Section & Breadcrumbs -->
+      <div
+        class="flex flex-col justify-between gap-4 border-b border-brand-slate-200 pb-6 lg:flex-row lg:items-end"
+      >
+        <div>
+          <nav
+            class="mb-2 flex items-center space-x-2 font-label-sm text-label-sm text-brand-slate-500"
+          >
+            <a
+              class="transition-colors hover:text-primary"
+              href="#"
+              >Physical Facilities</a
+            >
+            <span
+              class="material-symbols-outlined text-[14px]"
+              data-icon="chevron_right"
+              >chevron_right</span
+            >
+            <a
+              class="transition-colors hover:text-primary"
+              href="#"
+              >Hydrodynamics Laboratory</a
+            >
+            <span
+              class="material-symbols-outlined text-[14px]"
+              data-icon="chevron_right"
+              >chevron_right</span
+            >
+            <span class="font-medium text-brand-slate-800"
+              >Availability &amp; Maintenance Schedule</span
+            >
+          </nav>
+          <h1
+            class="flex items-center gap-3 font-headline-lg text-headline-lg tracking-tight text-brand-navy-900"
+          >
+            <span>Facility Downtime &amp; Metrology Notice</span>
+            <span
+              class="inline-flex items-center rounded border border-status-warning/40 bg-status-warning-bg px-2.5 py-1 font-label-sm text-label-sm font-bold uppercase tracking-wider text-status-warning"
+            >
+              Calibration In Progress
+            </span>
+          </h1>
+          <p class="mt-1 max-w-3xl font-body-md text-body-md text-brand-slate-500">
+            Physical basin sensor alignment, multi-axis dynamometer zero-drift baseline
+            verification, and towing rail planar survey are underway under ISO/IEC 17025 procedures.
+          </p>
+        </div>
+        <!-- Quick Export & Calibration Dossier Reference -->
+        <div class="flex flex-wrap items-center gap-3 self-start lg:self-auto">
+          <a
+            class="inline-flex items-center gap-2 rounded-lg border border-brand-slate-200 bg-surface-container-lowest px-3 py-2 font-label-md text-label-md text-brand-slate-700 transition-colors hover:bg-surface-container-low"
+            href="#dossier"
+          >
+            <span
+              class="material-symbols-outlined text-[18px] text-brand-slate-500"
+              data-icon="description"
+              >description</span
+            >
+            <span>View Calibration Order</span>
+          </a>
+          <button
+            class="inline-flex items-center gap-2 rounded-lg bg-brand-slate-800 px-3 py-2 font-label-md text-label-md text-surface-container-lowest shadow-sm transition-colors hover:bg-brand-navy-900"
+            type="button"
+          >
+            <span
+              class="material-symbols-outlined text-[18px]"
+              data-icon="calendar_month"
+              >calendar_month</span
+            >
+            <span>Request Post-Maintenance Slot</span>
+          </button>
+        </div>
+      </div>
+      <!-- Matrix Filter Toolbar & Mode Selector -->
+      <div
+        class="flex flex-col justify-between gap-4 rounded-xl border border-brand-slate-200 bg-surface-container-lowest p-4 shadow-sm xl:flex-row xl:items-center"
+      >
+        <!-- Facility Selector Tabs -->
+        <div class="flex items-center gap-1.5 overflow-x-auto pb-2 xl:pb-0">
+          <button
+            class="inline-flex items-center gap-2 whitespace-nowrap rounded-lg border border-status-warning/60 bg-status-warning-bg px-3.5 py-2 font-label-md text-label-md font-semibold text-status-warning shadow-sm"
+            type="button"
+          >
+            <span
+              class="material-symbols-outlined text-[18px]"
+              data-icon="warning"
+              >warning</span
+            >
+            <span>50m Towing &amp; Wave Tank</span>
+            <span
+              class="ml-1 rounded bg-status-warning px-1.5 py-0.5 text-[10px] font-bold text-surface-container-lowest"
+              >RECAL</span
+            >
+          </button>
+          <button
+            class="inline-flex items-center gap-2 whitespace-nowrap rounded-lg border border-brand-slate-200 bg-surface-container-lowest px-3.5 py-2 font-label-md text-label-md text-brand-slate-700 transition-colors hover:bg-surface-container-low"
+            type="button"
+          >
+            <span
+              class="material-symbols-outlined text-[18px] text-brand-slate-400"
+              data-icon="memory"
+              >memory</span
+            >
+            <span>HPC CFD Cluster (ANSYS/OrcaFlex)</span>
+          </button>
+          <button
+            class="inline-flex items-center gap-2 whitespace-nowrap rounded-lg border border-brand-slate-200 bg-surface-container-lowest px-3.5 py-2 font-label-md text-label-md text-brand-slate-700 transition-colors hover:bg-surface-container-low"
+            type="button"
+          >
+            <span
+              class="material-symbols-outlined text-[18px] text-brand-slate-400"
+              data-icon="swap_calls"
+              >swap_calls</span
+            >
+            <span>Multiphase SCADA Flowloop</span>
+          </button>
+          <button
+            class="inline-flex items-center gap-2 whitespace-nowrap rounded-lg border border-brand-slate-200 bg-surface-container-lowest px-3.5 py-2 font-label-md text-label-md text-brand-slate-700 transition-colors hover:bg-surface-container-low"
+            type="button"
+          >
+            <span
+              class="material-symbols-outlined text-[18px] text-brand-slate-400"
+              data-icon="sensors"
+              >sensors</span
+            >
+            <span>Subsea Hyperbaric Chamber</span>
+          </button>
+        </div>
+        <!-- Date Window Selector & Status Legend -->
+        <div
+          class="flex flex-wrap items-center gap-4 border-t border-brand-slate-200 pt-3 font-label-sm text-label-sm xl:border-t-0 xl:pt-0"
+        >
+          <!-- Range Navigator -->
+          <div
+            class="inline-flex items-center rounded-lg border border-brand-slate-200 bg-brand-slate-50 p-0.5"
+          >
+            <button
+              class="text-brand-slate-600 rounded p-1.5 hover:bg-surface-container-lowest"
+              type="button"
+            >
+              <span
+                class="material-symbols-outlined text-[18px]"
+                data-icon="chevron_left"
+                >chevron_left</span
+              >
+            </button>
+            <span class="px-3 py-1 font-body-sm text-body-sm font-semibold text-brand-slate-800">
+              Oct 20 – Oct 26, 2025 (Week 43)
+            </span>
+            <button
+              class="text-brand-slate-600 rounded p-1.5 hover:bg-surface-container-lowest"
+              type="button"
+            >
+              <span
+                class="material-symbols-outlined text-[18px]"
+                data-icon="chevron_right"
+                >chevron_right</span
+              >
+            </button>
+          </div>
+          <!-- Legend Pills -->
+          <div class="text-brand-slate-600 flex items-center gap-3">
+            <div class="flex items-center gap-1.5">
+              <span
+                class="h-3 w-3 rounded-sm border border-status-warning/80 bg-status-warning/20"
+              ></span>
+              <span>Maintenance/Hatched</span>
+            </div>
+            <div class="flex items-center gap-1.5">
+              <span class="h-3 w-3 rounded-sm bg-status-verified"></span>
+              <span>Operational</span>
+            </div>
+            <div class="flex items-center gap-1.5">
+              <span class="h-3 w-3 rounded-sm bg-brand-cobalt"></span>
+              <span>Open Slot</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- ========================================================================= -->
+      <!-- MATRIX SCHEDULE GRID (VISUAL AVAILABILITY TABLE)                          -->
+      <!-- ========================================================================= -->
+      <div
+        class="overflow-hidden rounded-xl border border-brand-slate-200 bg-surface-container-lowest shadow-sm"
+      >
+        <div
+          class="flex items-center justify-between border-b border-brand-slate-200 bg-brand-slate-50 p-4"
+        >
+          <div class="flex items-center gap-2">
+            <span
+              class="material-symbols-outlined text-brand-slate-700"
+              data-icon="table_chart"
+              >table_chart</span
+            >
+            <span class="font-headline-sm text-headline-sm text-brand-navy-900"
+              >Hydrodynamic &amp; Computational Facility Availability Matrix</span
+            >
+          </div>
+          <span class="font-code-sm text-code-sm text-brand-slate-500"
+            >Timezone: WAT (West Africa Time / UTC+1)</span
+          >
+        </div>
+        <div class="overflow-x-auto">
+          <table class="w-full min-w-[900px] border-collapse text-left">
+            <thead>
+              <tr
+                class="text-brand-slate-600 border-b border-brand-slate-200 bg-surface-container-low/50 font-label-md text-label-md"
+              >
+                <th class="w-[240px] px-4 py-3">Facility / Bay</th>
+                <th class="border-l border-brand-slate-200 px-3 py-3 text-center">Mon Oct 20</th>
+                <th
+                  class="border-l border-brand-slate-200 bg-status-warning-bg/50 px-3 py-3 text-center font-bold text-status-warning"
+                >
+                  Tue Oct 21
+                </th>
+                <th
+                  class="border-l border-brand-slate-200 bg-status-warning-bg/50 px-3 py-3 text-center font-bold text-status-warning"
+                >
+                  Wed Oct 22
+                </th>
+                <th
+                  class="border-l border-brand-slate-200 bg-status-warning-bg/50 px-3 py-3 text-center font-bold text-status-warning"
+                >
+                  Thu Oct 23
+                </th>
+                <th class="border-l border-brand-slate-200 px-3 py-3 text-center">Fri Oct 24</th>
+                <th class="border-l border-brand-slate-200 px-3 py-3 text-center">Sat Oct 25</th>
+              </tr>
+            </thead>
+            <tbody class="divide-y divide-brand-slate-200 font-body-sm text-body-sm">
+              <!-- Row 1: Active Inactive Facility (50m Towing Tank) -->
+              <tr class="bg-amber-50/30">
+                <td class="bg-surface-container-lowest px-4 py-4 font-semibold text-brand-navy-900">
+                  <div class="flex items-center gap-2">
+                    <div class="h-2.5 w-2.5 rounded-full bg-status-warning"></div>
+                    <div>
+                      <div class="font-headline-sm text-[15px] text-headline-sm leading-tight">
+                        50m Towing &amp; Wave Flume
+                      </div>
+                      <div class="font-label-sm text-label-sm font-semibold text-status-warning">
+                        Sensor Alignment Block
+                      </div>
+                    </div>
+                  </div>
+                </td>
+                <!-- Monday: Normal Prep -->
+                <td class="border-l border-brand-slate-200 p-2 text-center align-top">
+                  <div
+                    class="rounded border border-brand-slate-200 bg-brand-slate-100 p-2 text-left"
+                  >
+                    <div class="font-label-sm text-label-sm font-semibold text-brand-slate-800">
+                      Completed
+                    </div>
+                    <div class="text-[11px] text-brand-slate-500">Hull Resistance Baseline Run</div>
+                  </div>
+                </td>
+                <!-- TUESDAY - RECALIBRATION DAY 1 -->
+                <td
+                  class="border-l border-brand-slate-200 bg-status-warning-bg/30 p-2 text-center align-top"
+                >
+                  <div
+                    class="hatch-pattern-amber rounded border border-status-warning/50 p-2.5 text-left shadow-sm"
+                  >
+                    <div class="mb-1 flex items-center justify-between text-status-warning">
+                      <span class="font-label-sm text-label-sm font-bold uppercase tracking-wider"
+                        >Maintenance</span
+                      >
+                      <span
+                        class="material-symbols-outlined text-[16px]"
+                        data-icon="build_circle"
+                        >build_circle</span
+                      >
+                    </div>
+                    <div class="text-[12px] font-semibold leading-snug text-brand-navy-900">
+                      Wave Sensor Matrix &amp; Dynamometer Recalibration
+                    </div>
+                    <div class="text-brand-slate-600 mt-1 flex items-center gap-1 text-[11px]">
+                      <span
+                        class="material-symbols-outlined text-[13px] text-status-warning"
+                        data-icon="badge"
+                        >badge</span
+                      >
+                      <span>RSU Metrology Group</span>
+                    </div>
+                  </div>
+                </td>
+                <!-- WEDNESDAY - RECALIBRATION DAY 2 -->
+                <td
+                  class="border-l border-brand-slate-200 bg-status-warning-bg/30 p-2 text-center align-top"
+                >
+                  <div
+                    class="hatch-pattern-amber rounded border border-status-warning/50 p-2.5 text-left shadow-sm"
+                  >
+                    <div class="mb-1 flex items-center justify-between text-status-warning">
+                      <span class="font-label-sm text-label-sm font-bold uppercase tracking-wider"
+                        >Maintenance</span
+                      >
+                      <span
+                        class="material-symbols-outlined text-[16px]"
+                        data-icon="tune"
+                        >tune</span
+                      >
+                    </div>
+                    <div class="text-[12px] font-semibold leading-snug text-brand-navy-900">
+                      Carriage Rail Laser Alignment &amp; PMM Survey
+                    </div>
+                    <div class="text-brand-slate-600 mt-1 flex items-center gap-1 text-[11px]">
+                      <span
+                        class="material-symbols-outlined text-[13px] text-status-warning"
+                        data-icon="engineering"
+                        >engineering</span
+                      >
+                      <span>ITTC Verification Officer</span>
+                    </div>
+                  </div>
+                </td>
+                <!-- THURSDAY - RECALIBRATION DAY 3 -->
+                <td
+                  class="border-l border-brand-slate-200 bg-status-warning-bg/30 p-2 text-center align-top"
+                >
+                  <div
+                    class="hatch-pattern-amber rounded border border-status-warning/50 p-2.5 text-left shadow-sm"
+                  >
+                    <div class="mb-1 flex items-center justify-between text-status-warning">
+                      <span class="font-label-sm text-label-sm font-bold uppercase tracking-wider"
+                        >Downtime</span
+                      >
+                      <span
+                        class="material-symbols-outlined text-[16px]"
+                        data-icon="water"
+                        >water</span
+                      >
+                    </div>
+                    <div class="text-[12px] font-semibold leading-snug text-brand-navy-900">
+                      Basin Refill &amp; JONSWAP Wave Spectrum Audit
+                    </div>
+                    <div class="text-brand-slate-600 mt-1 flex items-center gap-1 text-[11px]">
+                      <span
+                        class="material-symbols-outlined text-[13px] text-status-warning"
+                        data-icon="verified"
+                        >verified</span
+                      >
+                      <span>Self-Check Verification</span>
+                    </div>
+                  </div>
+                </td>
+                <!-- FRIDAY - NEXT AVAILABLE -->
+                <td
+                  class="border-l border-brand-slate-200 bg-status-verified-bg/20 p-2 text-center align-top"
+                >
+                  <div
+                    class="group cursor-pointer rounded border border-status-verified/40 bg-status-verified-bg p-2.5 text-left transition-colors hover:border-status-verified"
+                  >
+                    <div class="mb-1 flex items-center justify-between text-status-verified">
+                      <span class="font-label-sm text-label-sm font-bold uppercase tracking-wider"
+                        >Operational</span
+                      >
+                      <span
+                        class="material-symbols-outlined text-[16px] transition-transform group-hover:translate-x-0.5"
+                        data-icon="arrow_forward"
+                        >arrow_forward</span
+                      >
+                    </div>
+                    <div class="text-[12px] font-semibold text-brand-navy-900">
+                      Open for Reservation
+                    </div>
+                    <div class="text-brand-slate-600 mt-1 text-[11px] font-medium">
+                      Shift A: 09:00 - 13:00 WAT
+                    </div>
+                    <div class="mt-1 text-[10px] font-bold text-status-verified">
+                      Available to Book
+                    </div>
+                  </div>
+                </td>
+                <!-- SATURDAY -->
+                <td class="border-l border-brand-slate-200 p-2 text-center align-top">
+                  <div
+                    class="rounded border border-brand-slate-200 bg-surface-container-low p-2 text-left"
+                  >
+                    <div class="font-label-sm text-label-sm font-medium text-brand-slate-700">
+                      Open Slot
+                    </div>
+                    <div class="text-[11px] text-brand-slate-500">Full Day Available</div>
+                  </div>
+                </td>
+              </tr>
+              <!-- Row 2: Alternative Facility (HPC CFD Cluster) -->
+              <tr>
+                <td class="bg-surface-container-lowest px-4 py-4 font-semibold text-brand-navy-900">
+                  <div class="flex items-center gap-2">
+                    <div class="h-2.5 w-2.5 rounded-full bg-status-verified"></div>
+                    <div>
+                      <div class="font-headline-sm text-[15px] text-headline-sm leading-tight">
+                        HPC Simulation Cluster
+                      </div>
+                      <div class="font-label-sm text-label-sm font-medium text-status-verified">
+                        Ready for Numerical Testing
+                      </div>
+                    </div>
+                  </div>
+                </td>
+                <!-- Mon - Sat Available for HPC -->
+                <td class="border-l border-brand-slate-200 p-2 text-center align-top">
+                  <div
+                    class="rounded border border-brand-slate-200 bg-brand-slate-50 p-2 text-left"
+                  >
+                    <div class="font-label-sm text-label-sm font-semibold text-status-verified">
+                      Running
+                    </div>
+                    <div class="text-[11px] text-brand-slate-500">Pipeline Vortex Job</div>
+                  </div>
+                </td>
+                <td class="border-l border-brand-slate-200 p-2 text-center align-top">
+                  <div class="rounded border border-status-info/30 bg-status-info-bg p-2 text-left">
+                    <div class="font-label-sm text-label-sm font-semibold text-status-info">
+                      Alternative Routing
+                    </div>
+                    <div class="text-brand-slate-600 text-[11px]">ANSYS Fluent Queue Open</div>
+                  </div>
+                </td>
+                <td class="border-l border-brand-slate-200 p-2 text-center align-top">
+                  <div class="rounded border border-status-info/30 bg-status-info-bg p-2 text-left">
+                    <div class="font-label-sm text-label-sm font-semibold text-status-info">
+                      Alternative Routing
+                    </div>
+                    <div class="text-brand-slate-600 text-[11px]">OrcaFlex Mooring Sim Open</div>
+                  </div>
+                </td>
+                <td class="border-l border-brand-slate-200 p-2 text-center align-top">
+                  <div class="rounded border border-status-info/30 bg-status-info-bg p-2 text-left">
+                    <div class="font-label-sm text-label-sm font-semibold text-status-info">
+                      Alternative Routing
+                    </div>
+                    <div class="text-brand-slate-600 text-[11px]">OpenFOAM 128 Core Node</div>
+                  </div>
+                </td>
+                <td class="border-l border-brand-slate-200 p-2 text-center align-top">
+                  <div
+                    class="rounded border border-brand-slate-200 bg-surface-container-low p-2 text-left"
+                  >
+                    <div class="font-label-sm text-label-sm font-semibold text-brand-slate-700">
+                      Scheduled
+                    </div>
+                    <div class="text-[11px] text-brand-slate-500">RSU Postgraduate Batch</div>
+                  </div>
+                </td>
+                <td class="border-l border-brand-slate-200 p-2 text-center align-top">
+                  <div
+                    class="rounded border border-brand-slate-200 bg-surface-container-low p-2 text-left"
+                  >
+                    <div class="font-label-sm text-label-sm font-semibold text-brand-slate-700">
+                      Open Slot
+                    </div>
+                    <div class="text-[11px] text-brand-slate-500">Unrestricted Access</div>
+                  </div>
+                </td>
+              </tr>
+              <!-- Row 3: Multiphase SCADA Flowloop -->
+              <tr>
+                <td class="bg-surface-container-lowest px-4 py-4 font-semibold text-brand-navy-900">
+                  <div class="flex items-center gap-2">
+                    <div class="h-2.5 w-2.5 rounded-full bg-status-verified"></div>
+                    <div>
+                      <div class="font-headline-sm text-[15px] text-headline-sm leading-tight">
+                        Multiphase Flowloop
+                      </div>
+                      <div class="font-label-sm text-label-sm text-brand-slate-500">
+                        Operational Rig
+                      </div>
+                    </div>
+                  </div>
+                </td>
+                <td
+                  class="border-l border-brand-slate-200 bg-surface-container-low/30 p-3"
+                  colspan="6"
+                >
+                  <div
+                    class="flex items-center justify-between rounded border border-brand-slate-200 bg-surface-container-lowest px-3 py-1.5"
+                  >
+                    <span class="font-body-sm text-body-sm text-brand-slate-700"
+                      >Standard operational schedule active across all shifts. No calibration
+                      conflicts reported for this cycle.</span
+                    >
+                    <button
+                      class="font-label-sm text-label-sm font-semibold text-primary hover:underline"
+                      type="button"
+                    >
+                      View Flowloop Timeline →
+                    </button>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <!-- ========================================================================= -->
+      <!-- MAINTENANCE & DOWNTIME ADVISORY DOSSIER PANEL                             -->
+      <!-- ========================================================================= -->
+      <div
+        class="grid grid-cols-1 gap-6 lg:grid-cols-3"
+        id="dossier"
+      >
+        <!-- Primary Incident Dossier Card (2 Columns) -->
+        <div
+          class="overflow-hidden rounded-xl border-2 border-status-warning/60 bg-surface-container-lowest shadow-md lg:col-span-2"
+        >
+          <!-- Header Banner with Warning Indicator -->
+          <div
+            class="flex items-start gap-4 border-b border-status-warning/40 bg-status-warning-bg p-5"
+          >
+            <div
+              class="flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-lg bg-status-warning text-surface-container-lowest shadow-sm"
+            >
+              <span
+                class="material-symbols-outlined text-[28px]"
+                data-icon="build"
+                >build</span
+              >
+            </div>
+            <div class="flex-1">
+              <div class="mb-1 flex flex-wrap items-center gap-2">
+                <span
+                  class="rounded bg-status-warning px-2 py-0.5 text-[11px] font-bold uppercase tracking-wider text-surface-container-lowest"
+                >
+                  Active Maintenance Protocol
+                </span>
+                <span class="text-brand-slate-600 font-code-sm text-code-sm font-semibold">
+                  Ref: #MNT-FLU-2025-044
+                </span>
+                <span class="font-code-sm text-code-sm text-brand-slate-400">|</span>
+                <span class="text-brand-slate-600 font-code-sm text-code-sm">
+                  ISO/IEC 17025 Cal-Standard
+                </span>
+              </div>
+              <h2 class="font-headline-md text-headline-md font-bold text-brand-navy-900">
+                Selected Window Unavailable for Commercial or Academic Testing
+              </h2>
+              <p class="text-brand-slate-600 mt-1 font-body-sm text-body-sm">
+                The 50-meter Towing Tank &amp; Wave Basin carriage drive has been electrically
+                decoupled for recalibration of the multi-axis load cells and optical PIV field
+                arrays.
+              </p>
+            </div>
+          </div>
+          <!-- Dossier Body Specifications -->
+          <div class="space-y-6 p-6">
+            <!-- Metrology Details Grid -->
+            <div
+              class="grid grid-cols-1 gap-4 border-b border-brand-slate-200 pb-6 font-body-sm text-body-sm sm:grid-cols-2"
+            >
+              <div class="space-y-1">
+                <div
+                  class="font-label-sm text-label-sm font-semibold uppercase tracking-wider text-brand-slate-500"
+                >
+                  Responsible Technical Lead
+                </div>
+                <div
+                  class="flex items-center gap-2 font-title-lg text-title-lg font-bold text-brand-navy-900"
+                >
+                  <span>Engr. Taribo Uranta</span>
+                  <span
+                    class="material-symbols-outlined text-[18px] text-status-verified"
+                    data-icon="verified"
+                    title="Certified Metrologist"
+                    >verified</span
+                  >
+                </div>
+                <p class="text-[12px] text-brand-slate-500">
+                  Lead Metrology Specialist &amp; ITTC Physical Model Auditor
+                </p>
+              </div>
+              <div class="space-y-1">
+                <div
+                  class="font-label-sm text-label-sm font-semibold uppercase tracking-wider text-brand-slate-500"
+                >
+                  Scheduled Downtime Span
+                </div>
+                <div class="font-title-lg text-title-lg font-bold text-brand-navy-900">
+                  Oct 21, 08:00 WAT – Oct 23, 18:00 WAT
+                </div>
+                <p class="text-[12px] font-medium text-status-warning">
+                  Estimated completion: 36 Hours remaining
+                </p>
+              </div>
+            </div>
+            <!-- Scope of Technical Work Checklist -->
+            <div>
+              <h3
+                class="mb-3 font-label-md text-label-md font-bold uppercase tracking-wider text-brand-navy-900"
+              >
+                Scope of Authorized Metrology Operations
+              </h3>
+              <ul class="space-y-2.5">
+                <li class="flex items-start gap-3 font-body-sm text-body-sm text-brand-slate-700">
+                  <span
+                    class="material-symbols-outlined flex-shrink-0 text-[20px] text-status-verified"
+                    data-icon="check_circle"
+                    >check_circle</span
+                  >
+                  <span
+                    ><strong>6-DOF Force Dynamometer Zero-Drift Benchmarking:</strong> Mechanical
+                    weight dead-load verification per ITTC standard 7.5-02-02-01.</span
+                  >
+                </li>
+                <li class="flex items-start gap-3 font-body-sm text-body-sm text-brand-slate-700">
+                  <span
+                    class="material-symbols-outlined flex-shrink-0 text-[20px] text-status-warning"
+                    data-icon="pending"
+                    >pending</span
+                  >
+                  <span
+                    ><strong>Planar Carriage Rail Laser Survey:</strong> Orthogonal tolerance
+                    inspection across the 50m runway to ensure carriage drift &lt; 0.08mm.</span
+                  >
+                </li>
+                <li class="flex items-start gap-3 font-body-sm text-body-sm text-brand-slate-700">
+                  <span
+                    class="material-symbols-outlined flex-shrink-0 text-[20px] text-brand-slate-400"
+                    data-icon="radio_button_unchecked"
+                    >radio_button_unchecked</span
+                  >
+                  <span
+                    ><strong>Acoustic Wave Gauge Synchronisation:</strong> Array of 16 wave
+                    elevation probes recalibrated against standard sinusoidal reference
+                    pulses.</span
+                  >
+                </li>
+              </ul>
+            </div>
+            <!-- Next Available Alternative Slots Box -->
+            <div
+              class="space-y-3 rounded-lg border border-brand-slate-200 bg-surface-container-low p-4"
+            >
+              <div class="flex items-center justify-between">
+                <div
+                  class="flex items-center gap-1.5 font-label-md text-label-md font-bold uppercase tracking-wider text-brand-navy-900"
+                >
+                  <span
+                    class="material-symbols-outlined text-[18px] text-primary"
+                    data-icon="event_available"
+                    >event_available</span
+                  >
+                  <span>Earliest Confirmed Testing Slots Post-Calibration</span>
+                </div>
+                <span class="font-label-sm text-label-sm font-semibold text-status-verified"
+                  >Priority Booking Open</span
+                >
+              </div>
+              <div class="grid grid-cols-1 gap-3 sm:grid-cols-2">
+                <div
+                  class="flex flex-col justify-between rounded border border-brand-slate-200 bg-surface-container-lowest p-3"
+                >
+                  <div>
+                    <span class="text-[11px] font-bold uppercase text-primary">Slot Option A</span>
+                    <div class="text-[14px] font-semibold text-brand-navy-900">
+                      Friday, Oct 24, 2025
+                    </div>
+                    <div class="text-[12px] text-brand-slate-500">
+                      Morning Shift: 09:00 – 13:00 WAT
+                    </div>
+                  </div>
+                  <div class="mt-3">
+                    <span
+                      class="inline-block rounded bg-status-verified-bg px-2 py-0.5 text-[11px] font-bold text-status-verified"
+                      >Hydrodynamic Baseline Verified</span
+                    >
+                  </div>
+                </div>
+                <div
+                  class="flex flex-col justify-between rounded border border-brand-slate-200 bg-surface-container-lowest p-3"
+                >
+                  <div>
+                    <span class="text-[11px] font-bold uppercase text-primary">Slot Option B</span>
+                    <div class="text-[14px] font-semibold text-brand-navy-900">
+                      Monday, Oct 27, 2025
+                    </div>
+                    <div class="text-[12px] text-brand-slate-500">
+                      Full Day Block: 08:00 – 17:00 WAT
+                    </div>
+                  </div>
+                  <div class="mt-3">
+                    <span
+                      class="inline-block rounded bg-status-verified-bg px-2 py-0.5 text-[11px] font-bold text-status-verified"
+                      >Unrestricted Model Towing</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Action Buttons Bar -->
+            <div class="flex flex-wrap items-center gap-3 pt-2">
+              <button
+                class="inline-flex items-center gap-2 rounded-lg bg-brand-cobalt-deep px-5 py-2.5 font-label-md text-label-md text-on-primary shadow-sm transition-all duration-150 hover:bg-primary active:scale-95"
+                type="button"
+              >
+                <span
+                  class="material-symbols-outlined text-[18px]"
+                  data-icon="event_seat"
+                  >event_seat</span
+                >
+                <span>Reserve Earliest Available Slot (Oct 24)</span>
+              </button>
+              <button
+                class="inline-flex items-center gap-2 rounded-lg border border-brand-slate-200 bg-surface-container-lowest px-4 py-2.5 font-label-md text-label-md text-brand-slate-700 transition-colors hover:bg-surface-container-low"
+                type="button"
+              >
+                <span
+                  class="material-symbols-outlined text-[18px] text-brand-slate-500"
+                  data-icon="notification_add"
+                  >notification_add</span
+                >
+                <span>Join Downtime Standby / Priority Waitlist</span>
+              </button>
+              <button
+                class="text-brand-slate-600 ml-auto inline-flex items-center gap-2 rounded-lg px-3 py-2.5 font-label-md text-label-md transition-colors hover:text-primary"
+                type="button"
+              >
+                <span
+                  class="material-symbols-outlined text-[18px]"
+                  data-icon="file_download"
+                  >file_download</span
+                >
+                <span>Download ISO 17025 Calibration Protocol (PDF)</span>
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- Right Utility Card: Requisition Redirect & Metrology Log -->
+        <div class="space-y-6">
+          <!-- Bypass Card to Simulation Cluster -->
+          <div
+            class="flex flex-col justify-between rounded-xl bg-gradient-to-br from-brand-navy-950 to-brand-navy-900 p-6 text-surface-container-lowest shadow-md"
+          >
+            <div>
+              <div class="mb-2 flex items-center gap-2 text-primary-fixed">
+                <span
+                  class="material-symbols-outlined text-[20px]"
+                  data-icon="speed"
+                  >speed</span
+                >
+                <span class="font-label-sm text-label-sm font-semibold uppercase tracking-wider"
+                  >Computational Bypass</span
+                >
+              </div>
+              <h3 class="font-headline-sm text-headline-sm font-bold leading-tight">
+                Bypass Physical Towing Tank Delay with High-Fidelity HPC CFD
+              </h3>
+              <p class="mt-2 font-body-sm text-body-sm text-brand-slate-400">
+                Run hydrodynamic resistance curves and seakeeping numerical simulations on the
+                64-Node CMOTD supercomputing cluster without waiting for flume sensor realignment.
+              </p>
+              <div class="mt-4 space-y-2 font-body-sm text-body-sm">
+                <div
+                  class="flex items-center justify-between rounded bg-surface-container-lowest/10 p-2"
+                >
+                  <span class="text-brand-slate-300">ANSYS Fluent Licences:</span>
+                  <span class="font-bold text-status-verified">14 Available</span>
+                </div>
+                <div
+                  class="flex items-center justify-between rounded bg-surface-container-lowest/10 p-2"
+                >
+                  <span class="text-brand-slate-300">OrcaFlex Dynamic Lines:</span>
+                  <span class="font-bold text-status-verified">8 Nodes Idle</span>
+                </div>
+                <div
+                  class="flex items-center justify-between rounded bg-surface-container-lowest/10 p-2"
+                >
+                  <span class="text-brand-slate-300">Convergence Turnaround:</span>
+                  <span class="font-semibold text-primary-fixed">~4.5 Hours</span>
+                </div>
+              </div>
+            </div>
+            <div class="mt-6 border-t border-brand-slate-800 pt-4">
+              <button
+                class="flex w-full items-center justify-center gap-2 rounded-lg bg-primary-container px-4 py-2.5 font-label-md text-label-md text-on-primary shadow-sm transition-colors hover:bg-brand-cobalt"
+                type="button"
+              >
+                <span>Redirect Requisition to HPC Simulation Suite</span>
+                <span
+                  class="material-symbols-outlined text-[16px]"
+                  data-icon="arrow_outward"
+                  >arrow_outward</span
+                >
+              </button>
+            </div>
+          </div>
+          <!-- Calibration Log & Authority Certification Box -->
+          <div
+            class="space-y-4 rounded-xl border border-brand-slate-200 bg-surface-container-lowest p-5 shadow-sm"
+          >
+            <div class="flex items-center justify-between border-b border-brand-slate-200 pb-3">
+              <span class="font-title-lg text-title-lg text-brand-navy-900"
+                >Calibration Authority</span
+              >
+              <span
+                class="rounded border border-status-verified-border bg-status-verified-bg px-2 py-0.5 text-[11px] font-bold uppercase text-status-verified"
+              >
+                Accredited
+              </span>
+            </div>
+            <div class="space-y-3 font-body-sm text-body-sm">
+              <div class="flex items-start gap-3">
+                <span
+                  class="material-symbols-outlined text-[20px] text-primary"
+                  data-icon="verified_user"
+                  >verified_user</span
+                >
+                <div>
+                  <div class="text-[13px] font-semibold text-brand-navy-900">
+                    RSU Quality Assurance Board
+                  </div>
+                  <p class="text-[12px] text-brand-slate-500">
+                    Supervised in accordance with Nigerian National Quality Policy (NNQP).
+                  </p>
+                </div>
+              </div>
+              <div class="flex items-start gap-3">
+                <span
+                  class="material-symbols-outlined text-[20px] text-primary"
+                  data-icon="domain"
+                  >domain</span
+                >
+                <div>
+                  <div class="text-[13px] font-semibold text-brand-navy-900">
+                    ITTC Member Organization
+                  </div>
+                  <p class="text-[12px] text-brand-slate-500">
+                    Adhering to International Towing Tank Conference 2024 specifications.
+                  </p>
+                </div>
+              </div>
+              <div class="flex items-start gap-3">
+                <span
+                  class="material-symbols-outlined text-[20px] text-primary"
+                  data-icon="contact_support"
+                  >contact_support</span
+                >
+                <div>
+                  <div class="text-[13px] font-semibold text-brand-navy-900">
+                    Facilities Operations Desk
+                  </div>
+                  <p class="text-[12px] text-brand-slate-500">
+                    Direct query:
+                    <a
+                      class="text-primary hover:underline"
+                      href="mailto:facilities@cmotd.rsu.edu.ng"
+                      >facilities@cmotd.rsu.edu.ng</a
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="pt-2">
+              <button
+                class="flex w-full items-center justify-center gap-1.5 rounded border border-brand-slate-200 px-3 py-2 font-label-md text-label-md text-brand-slate-700 transition-colors hover:bg-surface-container-low"
+                type="button"
+              >
+                <span
+                  class="material-symbols-outlined text-[16px] text-brand-slate-500"
+                  data-icon="contact_emergency"
+                  >contact_emergency</span
+                >
+                <span>Contact Metrology Duty Officer</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- ========================================================================= -->
+      <!-- ALTERNATIVE TESTING ROUTING BENTO MODULE                                  -->
+      <!-- ========================================================================= -->
+      <div
+        class="rounded-xl border border-brand-slate-200 bg-surface-container-lowest p-6 shadow-sm"
+      >
+        <div
+          class="mb-6 flex flex-col justify-between gap-4 border-b border-brand-slate-200 pb-4 sm:flex-row sm:items-center"
+        >
+          <div>
+            <span
+              class="font-label-sm text-label-sm font-bold uppercase tracking-wider text-primary"
+              >Alternative Routing &amp; Active Laboratories</span
+            >
+            <h2 class="font-headline-md text-headline-md font-bold text-brand-navy-900">
+              Available CMOTD Physical &amp; Digital Engineering Assets
+            </h2>
+          </div>
+          <a
+            class="inline-flex items-center gap-1 font-label-md text-label-md font-semibold text-primary hover:underline"
+            href="#"
+          >
+            <span>Explore All 12 Specialized Facilities</span>
+            <span
+              class="material-symbols-outlined text-[16px]"
+              data-icon="arrow_forward"
+              >arrow_forward</span
+            >
+          </a>
+        </div>
+        <div class="grid grid-cols-1 gap-5 md:grid-cols-3">
+          <!-- Alternative 1: SCADA Flowloop -->
+          <div
+            class="flex flex-col justify-between rounded-lg border border-brand-slate-200 bg-brand-slate-50/50 p-4 transition-all hover:border-brand-slate-400"
+          >
+            <div>
+              <div class="mb-3 flex items-center justify-between">
+                <span
+                  class="rounded bg-status-verified-bg px-2 py-0.5 text-[11px] font-bold uppercase tracking-wider text-status-verified"
+                  >Fully Operational</span
+                >
+                <span class="font-code-sm text-code-sm text-brand-slate-400">BAY-B02</span>
+              </div>
+              <h4 class="mb-1 font-title-lg text-title-lg font-bold text-brand-navy-900">
+                Multiphase Flow &amp; Hydrate Loop
+              </h4>
+              <p class="text-brand-slate-600 mb-4 font-body-sm text-body-sm">
+                Real-time pipeline slugging dynamics, multiphase flow assurance testing, and
+                Coriolis mass metering.
+              </p>
+              <div
+                class="text-brand-slate-600 space-y-1.5 border-t border-brand-slate-200 pt-3 text-[12px]"
+              >
+                <div class="flex justify-between">
+                  <span>Active Pressure:</span>
+                  <span class="font-semibold text-brand-navy-900">Up to 150 bar</span>
+                </div>
+                <div class="flex justify-between">
+                  <span>Current Availability:</span>
+                  <span class="font-semibold text-status-verified">Immediate Booking</span>
+                </div>
+              </div>
+            </div>
+            <div class="mt-4 border-t border-brand-slate-200 pt-3">
+              <button
+                class="w-full rounded border border-brand-slate-200 bg-surface-container-lowest py-2 font-label-md text-label-md text-brand-slate-800 transition-colors hover:bg-brand-slate-100"
+                type="button"
+              >
+                Book Flowloop Session
+              </button>
+            </div>
+          </div>
+          <!-- Alternative 2: Subsea Hyperbaric Chamber -->
+          <div
+            class="flex flex-col justify-between rounded-lg border border-brand-slate-200 bg-brand-slate-50/50 p-4 transition-all hover:border-brand-slate-400"
+          >
+            <div>
+              <div class="mb-3 flex items-center justify-between">
+                <span
+                  class="rounded bg-status-verified-bg px-2 py-0.5 text-[11px] font-bold uppercase tracking-wider text-status-verified"
+                  >Fully Operational</span
+                >
+                <span class="font-code-sm text-code-sm text-brand-slate-400">BAY-C01</span>
+              </div>
+              <h4 class="mb-1 font-title-lg text-title-lg font-bold text-brand-navy-900">
+                Deepwater Hyperbaric Pressure Bay
+              </h4>
+              <p class="text-brand-slate-600 mb-4 font-body-sm text-body-sm">
+                Subsea component hydrostatic integrity testing up to 3,000m simulated seawater depth
+                (30 MPa).
+              </p>
+              <div
+                class="text-brand-slate-600 space-y-1.5 border-t border-brand-slate-200 pt-3 text-[12px]"
+              >
+                <div class="flex justify-between">
+                  <span>Chamber Diameter:</span>
+                  <span class="font-semibold text-brand-navy-900">1.2m ID x 3.5m Length</span>
+                </div>
+                <div class="flex justify-between">
+                  <span>Next Schedule Window:</span>
+                  <span class="font-semibold text-brand-navy-900">Today, 14:00 WAT</span>
+                </div>
+              </div>
+            </div>
+            <div class="mt-4 border-t border-brand-slate-200 pt-3">
+              <button
+                class="w-full rounded border border-brand-slate-200 bg-surface-container-lowest py-2 font-label-md text-label-md text-brand-slate-800 transition-colors hover:bg-brand-slate-100"
+                type="button"
+              >
+                Request Hyperbaric Test
+              </button>
+            </div>
+          </div>
+          <!-- Alternative 3: Virtual Bridge Simulator -->
+          <div
+            class="flex flex-col justify-between rounded-lg border border-brand-slate-200 bg-brand-slate-50/50 p-4 transition-all hover:border-brand-slate-400"
+          >
+            <div>
+              <div class="mb-3 flex items-center justify-between">
+                <span
+                  class="rounded bg-status-verified-bg px-2 py-0.5 text-[11px] font-bold uppercase tracking-wider text-status-verified"
+                  >Operational (Kongsberg)</span
+                >
+                <span class="font-code-sm text-code-sm text-brand-slate-400">BAY-SIM4</span>
+              </div>
+              <h4 class="mb-1 font-title-lg text-title-lg font-bold text-brand-navy-900">
+                Full-Mission Bridge Simulator
+              </h4>
+              <p class="text-brand-slate-600 mb-4 font-body-sm text-body-sm">
+                Navigational harbor maneuvering, DP-2 dynamic positioning simulation, and extreme
+                metocean conditions.
+              </p>
+              <div
+                class="text-brand-slate-600 space-y-1.5 border-t border-brand-slate-200 pt-3 text-[12px]"
+              >
+                <div class="flex justify-between">
+                  <span>Visual Field:</span>
+                  <span class="font-semibold text-brand-navy-900">270° Cylindrical Projection</span>
+                </div>
+                <div class="flex justify-between">
+                  <span>Student Roster:</span>
+                  <span class="font-semibold text-brand-slate-700">6 Trainee Consoles Open</span>
+                </div>
+              </div>
+            </div>
+            <div class="mt-4 border-t border-brand-slate-200 pt-3">
+              <button
+                class="w-full rounded border border-brand-slate-200 bg-surface-container-lowest py-2 font-label-md text-label-md text-brand-slate-800 transition-colors hover:bg-brand-slate-100"
+                type="button"
+              >
+                Access Simulator Bay
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- ========================================================================= -->
+    <!-- INSTITUTIONAL FOOTER (Derived from Footer Shared Component)               -->
+    <!-- ========================================================================= -->
+    <cmotd-institution-strip></cmotd-institution-strip>
+    <cmotd-site-footer></cmotd-site-footer>
+  </body>
+</html>

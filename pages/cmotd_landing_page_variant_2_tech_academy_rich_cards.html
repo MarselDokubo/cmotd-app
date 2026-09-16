@@ -1,0 +1,1407 @@
+<!doctype html>
+
+<html
+  class="cmotd-theme-tech-academy scroll-smooth"
+  lang="en"
+>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      content="width=device-width, initial-scale=1.0"
+      name="viewport"
+    />
+    <title>
+      Centre for Marine and Offshore Technology Development (CMOTD) | Rivers State University
+    </title>
+    <link
+      href="../favicon.ico"
+      rel="icon"
+      type="image/x-icon"
+    />
+    <link
+      href="../assets/css/tailwind-build.css"
+      rel="stylesheet"
+    />
+    <link
+      href="../assets/css/cmotd-global.css"
+      rel="stylesheet"
+    />
+    <script
+      defer=""
+      src="../assets/js/site-config.js"
+    ></script>
+    <script
+      defer=""
+      src="../assets/js/cmotd-components.js"
+    ></script>
+  </head>
+  <body
+    class="bg-[#ffffff] text-on-surface antialiased selection:bg-brand-cobalt-deep selection:text-white"
+  >
+    <!-- TOP UTILITY INSTITUTIONAL HEADER BAR -->
+    <!-- MODERN SIMPLIFIED NAVBAR (Variant 2 Docked Pill Navigation) -->
+    <cmotd-site-header active="home"></cmotd-site-header>
+    <!-- HERO SECTION: Modern Tech-Academy & Immersive Dual-Pillar Stage -->
+    <section
+      class="relative overflow-hidden border-b border-brand-slate-200 bg-[#fafcff] pb-16 pt-12 lg:py-20"
+    >
+      <!-- Subtle Engineering Grid Background -->
+      <div
+        class="pointer-events-none absolute inset-0 bg-[linear-gradient(to_right,#E2E8F0_1px,transparent_1px),linear-gradient(to_bottom,#E2E8F0_1px,transparent_1px)] bg-[size:3.5rem_3.5rem] opacity-50 [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)]"
+      ></div>
+      <div class="relative z-10 mx-auto max-w-[1280px] px-4 lg:px-8">
+        <div class="grid grid-cols-1 items-center gap-12 lg:grid-cols-12">
+          <!-- Left Hero Info -->
+          <div class="space-y-6 lg:col-span-7">
+            <div
+              class="inline-flex items-center gap-2 rounded-full border border-blue-200 bg-blue-50 px-3 py-1.5 text-brand-cobalt-deep"
+            >
+              <span class="material-symbols-outlined text-[16px]">verified</span>
+              <span class="text-xs font-semibold uppercase tracking-wide"
+                >RIVERS STATE UNIVERSITY TECHNICAL FLAGSHIP · EST. 2021</span
+              >
+            </div>
+            <h1
+              class="font-display-lg text-display-lg font-extrabold leading-[1.12] tracking-tight text-brand-navy-900"
+            >
+              Pioneering Technical Excellence in
+              <span class="text-brand-cobalt-deep underline decoration-blue-200 underline-offset-8"
+                >Marine, Offshore</span
+              >
+              &amp; Advanced Digital Technologies
+            </h1>
+            <p class="text-brand-slate-600 max-w-2xl text-body-lg leading-relaxed">
+              Established in 2021 within Rivers State University, Port Harcourt, CMOTD bridges
+              high-stakes maritime simulation, subsea hydrodynamics, and process engineering with
+              modern full-stack software development, machine learning, and cloud infrastructure.
+            </p>
+            <!-- CTAs -->
+            <div class="flex flex-wrap items-center gap-4 pt-2">
+              <a
+                class="flex h-12 items-center justify-center gap-2 rounded-xl bg-brand-cobalt-deep px-6 text-sm font-semibold text-white shadow-md transition-all hover:bg-primary active:scale-95"
+                href="#programmes"
+              >
+                <span>Explore Programmes &amp; Batches</span>
+                <span class="material-symbols-outlined text-[18px]">chevron_right</span>
+              </a>
+              <a
+                class="border-brand-slate-300 flex h-12 items-center justify-center gap-2 rounded-xl border bg-white px-5 text-sm font-semibold text-brand-slate-800 transition-all hover:border-brand-cobalt-deep hover:bg-brand-slate-50"
+                href="#verification-hub"
+              >
+                <span class="material-symbols-outlined text-[18px] text-status-verified"
+                  >verified</span
+                >
+                <span>Verify Institutional Certificate</span>
+              </a>
+            </div>
+            <!-- Metrics Bar -->
+            <div class="grid grid-cols-2 gap-6 border-t border-brand-slate-200 pt-8 sm:grid-cols-4">
+              <div>
+                <div class="text-2xl font-bold text-brand-navy-900 lg:text-3xl">15+</div>
+                <div class="mt-0.5 text-xs text-brand-slate-500">Accredited Specializations</div>
+              </div>
+              <div>
+                <div class="text-2xl font-bold text-brand-navy-900 lg:text-3xl">3,200+</div>
+                <div class="mt-0.5 text-xs text-brand-slate-500">
+                  Engineers &amp; Coders Trained
+                </div>
+              </div>
+              <div>
+                <div class="text-2xl font-bold text-brand-cobalt-deep lg:text-3xl">98%</div>
+                <div class="mt-0.5 text-xs text-brand-slate-500">Industry Verification Rate</div>
+              </div>
+              <div>
+                <div class="text-2xl font-bold text-brand-navy-900 lg:text-3xl">40+</div>
+                <div class="mt-0.5 text-xs text-brand-slate-500">Offshore &amp; Tech Partners</div>
+              </div>
+            </div>
+          </div>
+          <!-- Right Column: Interactive Hybrid Console + Visual Preview -->
+          <div class="relative lg:col-span-5">
+            <div
+              class="overflow-hidden rounded-2xl border border-brand-slate-200 bg-white shadow-xl"
+            >
+              <!-- Console Bar -->
+              <div
+                class="text-brand-slate-300 flex items-center justify-between border-b border-brand-slate-800 bg-brand-navy-950 px-4 py-3"
+              >
+                <div class="flex items-center gap-2">
+                  <span class="h-2.5 w-2.5 rounded-full bg-status-danger"></span>
+                  <span class="h-2.5 w-2.5 rounded-full bg-status-warning"></span>
+                  <span class="h-2.5 w-2.5 rounded-full bg-status-verified"></span>
+                  <span class="ml-2 font-mono text-xs text-brand-slate-400"
+                    >CMOTD-SYS-LAB-01 // TELEMETRY</span
+                  >
+                </div>
+                <span
+                  class="rounded bg-brand-slate-800 px-2 py-0.5 font-mono text-[10px] font-medium text-status-verified"
+                  >LIVE SYNC</span
+                >
+              </div>
+              <div class="space-y-4 bg-brand-slate-50/60 p-5">
+                <!-- Subsea / Hydrodynamics Module -->
+                <div class="rounded-xl border border-brand-slate-200 bg-white p-4 shadow-sm">
+                  <div class="mb-2 flex items-center justify-between">
+                    <span class="text-xs font-bold uppercase tracking-wide text-brand-cobalt-deep"
+                      >OFFSHORE SIMULATION SUITE</span
+                    >
+                    <span class="font-mono text-xs text-brand-slate-500"
+                      >AVEVA PDMS · HYSYS v14</span
+                    >
+                  </div>
+                  <div class="grid grid-cols-3 gap-2 text-center">
+                    <div class="rounded-lg border border-brand-slate-100 bg-slate-50 p-2">
+                      <span class="block text-[10px] text-brand-slate-500">Hydrostatic Pr.</span>
+                      <span class="text-xs font-bold text-brand-navy-900">41.2 Bar</span>
+                    </div>
+                    <div class="rounded-lg border border-brand-slate-100 bg-slate-50 p-2">
+                      <span class="block text-[10px] text-brand-slate-500">Stress Ratio</span>
+                      <span class="text-xs font-bold text-status-verified">0.68 OK</span>
+                    </div>
+                    <div class="rounded-lg border border-brand-slate-100 bg-slate-50 p-2">
+                      <span class="block text-[10px] text-brand-slate-500">Flow Stream</span>
+                      <span class="text-xs font-bold text-brand-navy-900">14.8 m³/s</span>
+                    </div>
+                  </div>
+                </div>
+                <!-- Computational Code Block -->
+                <div
+                  class="rounded-xl border border-brand-slate-800 bg-brand-navy-950 p-4 font-mono text-xs text-white"
+                >
+                  <div
+                    class="mb-2 flex items-center justify-between border-b border-brand-slate-800 pb-1.5 text-brand-slate-400"
+                  >
+                    <span class="flex items-center gap-1.5 text-[11px]">
+                      <span class="material-symbols-outlined text-[13px] text-brand-cobalt"
+                        >terminal</span
+                      >
+                      pipeline_finite_element.py
+                    </span>
+                    <span class="text-[10px] text-status-verified">PYTORCH 2.3 · CUDA</span>
+                  </div>
+                  <pre
+                    class="text-brand-slate-300 custom-scrollbar overflow-x-auto text-[11px] leading-relaxed"
+                  ><code><span class="text-primary-fixed">import</span> hydro_sim <span class="text-primary-fixed">as</span> hs
+model = hs.PipelineMesh(coords=<span class="text-tertiary-fixed">"BONNY_OFFSHORE_04"</span>)
+strain_tensor = model.solve_non_linear_stress(seabed_depth_m=<span class="text-status-warning">142.5</span>)
+<span class="text-brand-slate-500"># Model converged with 0.001 tolerance across 14,000 cells</span>
+print(<span class="text-status-verified">f"Subsea Structural Safety Factor: {strain_tensor.safety_index}"</span>)</code></pre>
+                </div>
+                <!-- Admission Status Banner -->
+                <div
+                  class="flex items-center justify-between rounded-xl border border-status-verified-border bg-status-verified-bg p-3"
+                >
+                  <div class="flex items-center gap-2.5">
+                    <span class="material-symbols-outlined text-status-verified"
+                      >verified_user</span
+                    >
+                    <div>
+                      <span class="block text-xs font-bold leading-tight text-brand-navy-900"
+                        >Q2 2025 Cohort Admitting</span
+                      >
+                      <span class="text-brand-slate-600 text-[11px]"
+                        >Port Harcourt Lab &amp; Hybrid Virtual</span
+                      >
+                    </div>
+                  </div>
+                  <span
+                    class="rounded-full bg-status-verified px-2.5 py-1 text-xs font-semibold text-white"
+                    >8 Seats Left</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- DIRECTOR'S WELCOME ADDRESS (Dynamic Two-Column Feature) -->
+    <section
+      class="border-b border-brand-slate-200 bg-white py-16 lg:py-20"
+      id="director"
+    >
+      <div class="mx-auto max-w-[1280px] px-4 lg:px-8">
+        <div class="grid grid-cols-1 items-center gap-10 lg:grid-cols-12 lg:gap-12">
+          <!-- Left: Framed Professional Portrait & Badges -->
+          <div class="relative lg:col-span-5">
+            <div class="relative mx-auto max-w-md">
+              <!-- Decorative tech backdrop accent -->
+              <div
+                class="absolute -left-4 -top-4 -z-10 h-72 w-72 rounded-3xl bg-blue-100 opacity-70 blur-xl filter"
+              ></div>
+              <div
+                class="absolute -bottom-4 -right-4 -z-10 h-60 w-60 rounded-3xl bg-emerald-100 opacity-60 blur-xl filter"
+              ></div>
+              <!-- Image Frame -->
+              <div
+                class="relative overflow-hidden rounded-2xl border-2 border-brand-slate-200 bg-slate-900 shadow-xl"
+              >
+                <img
+                  alt="Centre Director delivering an address"
+                  class="h-[460px] w-full object-cover object-top transition-transform duration-500 hover:scale-105"
+                  decoding="async"
+                  fetchpriority="high"
+                  loading="eager"
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuBTgXLSoij8NwTKf9uC3QOSTfYMZrXH0gc75cL_03P_JE6XhGAWgf_sUYb9PrIsfrCbp2JiVPyMUxk0nDzVaFCQm7A-xGTRgwQMARnJ_uXbodRUoPZBMOVJZ2BYwZAwlaX7lx6Rb_c5P6Js2nZVjRMcX1IMoEDsCR5iWrmaFPx1JHcsBGLak1zkYn8jZ8pla3HmW4KTtIGa3pkp6cG93g5vEQEHuTNki-4IoOsbHsixzv38zLHbyza2"
+                />
+                <div
+                  class="absolute inset-0 bg-gradient-to-t from-brand-navy-950 via-transparent to-transparent"
+                ></div>
+                <!-- Overlay Tag -->
+                <div
+                  class="absolute bottom-4 left-4 right-4 rounded-xl border border-brand-slate-200 bg-white/95 p-4 text-brand-navy-900 shadow-md backdrop-blur-md"
+                >
+                  <div class="flex items-center justify-between">
+                    <div>
+                      <h4 class="text-sm font-bold text-brand-navy-900">
+                        Engr. Prof. B. T. Leilei, PhD, FNSE
+                      </h4>
+                      <p class="text-xs font-semibold text-brand-cobalt-deep">
+                        Director, CMOTD · Rivers State University
+                      </p>
+                    </div>
+                    <span
+                      class="flex h-8 w-8 items-center justify-center rounded-full border border-blue-200 bg-blue-50 text-brand-cobalt-deep"
+                    >
+                      <span class="material-symbols-outlined text-[18px]">verified</span>
+                    </span>
+                  </div>
+                  <p class="mt-1 text-[11px] text-brand-slate-500">
+                    Fellow, Nigerian Society of Engineers · Marine &amp; Pipeline Systems Chair
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Right: Director's Welcome Statement -->
+          <div class="space-y-5 lg:col-span-7">
+            <div
+              class="inline-flex items-center gap-2 rounded-full bg-slate-100 px-3 py-1 text-xs font-semibold text-brand-slate-700"
+            >
+              <span class="material-symbols-outlined text-[15px] text-brand-cobalt-deep"
+                >waving_hand</span
+              >
+              <span>DIRECTOR'S WELCOME ADDRESS</span>
+            </div>
+            <h2
+              class="text-headline-md font-bold tracking-tight text-brand-navy-900 lg:text-headline-lg"
+            >
+              "Bridging Heavy Maritime Engineering with Future-Ready Computational Intelligence"
+            </h2>
+            <div class="space-y-4 text-sm leading-relaxed text-brand-slate-700 sm:text-base">
+              <p>
+                Welcome to the
+                <strong>Centre for Marine and Offshore Technology Development (CMOTD)</strong>
+                at Rivers State University. When we established this Centre in 2021, our mandate was
+                unequivocal: to eliminate the critical talent deficit in the Gulf of Guinea’s
+                offshore energy corridor by equipping African engineers with world-class,
+                computationally rigorous technical capabilities.
+              </p>
+              <p>
+                Today, the maritime industry has converged irreversibly with software architecture,
+                finite element modeling, and real-time sensor analytics. Whether you are mastering
+                3D piping flexibility in Caesar II, modeling multi-phase thermodynamics in Aspen
+                HYSYS, or developing distributed predictive maintenance applications, CMOTD offers
+                the exact laboratory conditions and mentorship required to thrive globally.
+              </p>
+            </div>
+            <!-- Key Pillars Bento Row -->
+            <div class="grid grid-cols-1 gap-4 pt-3 sm:grid-cols-3">
+              <div class="rounded-xl border border-brand-slate-200 bg-slate-50/70 p-3.5">
+                <div
+                  class="mb-1 flex items-center gap-2 text-xs font-semibold uppercase tracking-wider text-brand-cobalt-deep"
+                >
+                  <span class="material-symbols-outlined text-[17px]">precision_manufacturing</span>
+                  <span>Rigor &amp; Codes</span>
+                </div>
+                <p class="text-brand-slate-600 text-xs">
+                  Strict alignment with ASME B31.3, API 520, and DNV international safety codes.
+                </p>
+              </div>
+              <div class="rounded-xl border border-brand-slate-200 bg-slate-50/70 p-3.5">
+                <div
+                  class="mb-1 flex items-center gap-2 text-xs font-semibold uppercase tracking-wider text-brand-cobalt-deep"
+                >
+                  <span class="material-symbols-outlined text-[17px]">terminal</span>
+                  <span>Digital Muscle</span>
+                </div>
+                <p class="text-brand-slate-600 text-xs">
+                  Enterprise full-stack pipelines, containerization, and sensor telemetry modeling.
+                </p>
+              </div>
+              <div class="rounded-xl border border-brand-slate-200 bg-slate-50/70 p-3.5">
+                <div
+                  class="mb-1 flex items-center gap-2 text-xs font-semibold uppercase tracking-wider text-status-verified"
+                >
+                  <span class="material-symbols-outlined text-[17px]">verified</span>
+                  <span>Global Mobility</span>
+                </div>
+                <p class="text-brand-slate-600 text-xs">
+                  Cryptographically verifiable certification recognized across energy conglomerates.
+                </p>
+              </div>
+            </div>
+            <!-- Signature block -->
+            <div class="flex items-center justify-between border-t border-brand-slate-100 pt-4">
+              <div class="flex items-center gap-3">
+                <div
+                  class="flex h-10 w-10 items-center justify-center rounded-full border border-brand-slate-200 bg-brand-slate-100 text-xs font-bold text-brand-slate-700"
+                >
+                  RSU
+                </div>
+                <div>
+                  <div class="text-xs font-bold text-brand-navy-900">
+                    Office of the Centre Director
+                  </div>
+                  <div class="text-[11px] text-brand-slate-500">
+                    Rivers State University, Nkpolu-Oroworukwo, Port Harcourt
+                  </div>
+                </div>
+              </div>
+              <a
+                class="inline-flex items-center gap-1 text-xs font-semibold text-brand-cobalt-deep hover:text-primary"
+                href="#programmes"
+              >
+                Join Upcoming Cohort
+                <span class="material-symbols-outlined text-[15px]">arrow_forward</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- DUAL-PILLAR TRAINING & CERTIFICATION CATALOG (With Rich Photographic Media Cards) -->
+    <section
+      class="bg-brand-slate-50/70 py-16 lg:py-24"
+      id="programmes"
+    >
+      <div class="mx-auto max-w-[1280px] px-4 lg:px-8">
+        <!-- Section Header -->
+        <div class="mb-12 flex flex-col justify-between gap-6 md:flex-row md:items-end">
+          <div>
+            <div
+              class="mb-2 inline-flex items-center gap-1.5 text-xs font-semibold uppercase tracking-wider text-brand-cobalt-deep"
+            >
+              <span class="material-symbols-outlined text-[16px]">school</span>
+              <span>Professional Accreditation Catalog</span>
+            </div>
+            <h2 class="text-headline-lg font-bold tracking-tight text-brand-navy-900">
+              Dual-Pillar Specialized Engineering &amp; Computing Tracks
+            </h2>
+            <p class="text-brand-slate-600 mt-2 max-w-2xl text-sm sm:text-base">
+              Engineered in direct alignment with international offshore standards (API, ASME, DNV)
+              and modern Silicon Valley computational frameworks.
+            </p>
+          </div>
+          <!-- Tabs -->
+          <div
+            class="border-brand-slate-300/60 inline-flex rounded-xl border bg-brand-slate-200/80 p-1"
+          >
+            <button
+              class="rounded-lg bg-white px-4 py-2 text-xs font-semibold text-brand-navy-900 shadow-sm"
+              type="button"
+            >
+              All Programs (6)
+            </button>
+            <button
+              class="rounded-lg px-4 py-2 text-xs font-medium text-brand-slate-700 hover:text-brand-navy-900"
+              type="button"
+            >
+              Marine &amp; Offshore
+            </button>
+            <button
+              class="rounded-lg px-4 py-2 text-xs font-medium text-brand-slate-700 hover:text-brand-navy-900"
+              type="button"
+            >
+              Software &amp; Data
+            </button>
+          </div>
+        </div>
+        <!-- Media Rich Course Cards Grid -->
+        <div class="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
+          <!-- CARD 1: AVEVA PDMS 3D Modeling -->
+          <div
+            class="group flex flex-col overflow-hidden rounded-2xl border border-brand-slate-200 bg-white shadow-sm transition-all hover:border-brand-cobalt hover:shadow-xl"
+          >
+            <div class="relative h-48 overflow-hidden bg-brand-navy-950">
+              <img
+                alt="AVEVA PDMS Plant Design 3D Modeling"
+                class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+                decoding="async"
+                loading="lazy"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuDrPwBw-woT63KvspGu7KvyKufIlAzvisajjPFpCDQblzQN_BforUhc1iB2FUiEc_LrCA2GpIHx7967HkqyIpMa1NsBUpCkTaZKmpniicFSNC2-zCvkvP1FqJxwJhyc2egm9H1drQwIcueDHZ7aFcEkhE_nuwu16qz7PWOkbsKKZhqGGpiZa_2sdDP6lxTALJzF5P7_zPFFLewEgu6aVNrNcJ36iYw7SutTWGtIhgAQQSsJzHGj11XI"
+              />
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"
+              ></div>
+              <div class="absolute left-3 top-3">
+                <span
+                  class="rounded-md bg-blue-600/90 px-2.5 py-1 text-[11px] font-semibold text-white backdrop-blur-sm"
+                >
+                  OFFSHORE CAD
+                </span>
+              </div>
+              <div class="absolute right-3 top-3">
+                <span
+                  class="rounded bg-black/60 px-2 py-0.5 font-mono text-[11px] text-white backdrop-blur-sm"
+                  >MOD-201</span
+                >
+              </div>
+              <div class="absolute bottom-3 left-3 text-white">
+                <div class="flex items-center gap-1.5 text-xs text-blue-200">
+                  <span class="material-symbols-outlined text-[15px]">schedule</span>
+                  8 Weeks · Blended
+                </div>
+              </div>
+            </div>
+            <div class="flex flex-1 flex-col justify-between p-6">
+              <div>
+                <h3
+                  class="text-title-lg font-bold text-brand-navy-900 transition-colors group-hover:text-brand-cobalt-deep"
+                >
+                  AVEVA PDMS &amp; E3D Plant Design 3D Modeling
+                </h3>
+                <p class="text-brand-slate-600 mt-2 line-clamp-2 text-xs sm:text-sm">
+                  Comprehensive pipework routing, structural offshore modeling, equipment drafting,
+                  and clash detection for FPSOs and platforms.
+                </p>
+                <div class="mt-4 flex flex-wrap gap-1.5">
+                  <span
+                    class="rounded bg-brand-slate-100 px-2 py-0.5 text-[11px] font-medium text-brand-slate-700"
+                    >AVEVA E3D</span
+                  >
+                  <span
+                    class="rounded bg-brand-slate-100 px-2 py-0.5 text-[11px] font-medium text-brand-slate-700"
+                    >Isometrics</span
+                  >
+                  <span
+                    class="rounded bg-brand-slate-100 px-2 py-0.5 text-[11px] font-medium text-brand-slate-700"
+                    >ASME B31.3</span
+                  >
+                </div>
+              </div>
+              <div
+                class="mt-6 flex items-center justify-between border-t border-brand-slate-100 pt-4"
+              >
+                <span class="text-xs font-medium text-brand-slate-500"
+                  >CAD Lab 2 · In-person &amp; Hybrid</span
+                >
+                <a
+                  class="inline-flex h-8 items-center gap-1 rounded-lg bg-blue-50 px-3 text-xs font-semibold text-brand-cobalt-deep transition-all group-hover:bg-brand-cobalt-deep group-hover:text-white"
+                  href="#"
+                >
+                  <span>View Syllabus</span>
+                  <span class="material-symbols-outlined text-[15px]">arrow_forward</span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- CARD 2: Process Simulation (Aspen HYSYS & PV Elite) -->
+          <div
+            class="group flex flex-col overflow-hidden rounded-2xl border border-brand-slate-200 bg-white shadow-sm transition-all hover:border-brand-cobalt hover:shadow-xl"
+          >
+            <div class="relative h-48 overflow-hidden bg-brand-navy-950">
+              <img
+                alt="Offshore refinery process piping and towers"
+                class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+                decoding="async"
+                loading="lazy"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuDH4Sab-jnwVYqq8eKx1uUlKrNOuhTXbd1OrvcWwPxZuJs3bTfQsbp-WhmE4lkhvaZyRMwXpb3dBVgmL45sH1E_reyyjRmJMx4bblVsnUnFDLpo2vAMLUwM0B91GoOjTcTUjGuuhz-UokEwZnKuHTwd8M6TZcb4gZnDL6-BDhA9Hkc5qdrGvj44U1G7dyFEYlabsNa_y8e6XbHECHyJvZUpefU8JvhPSy4bTqZW2uInC7TIRMoQdfvz"
+              />
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"
+              ></div>
+              <div class="absolute left-3 top-3">
+                <span
+                  class="rounded-md bg-teal-600/90 px-2.5 py-1 text-[11px] font-semibold text-white backdrop-blur-sm"
+                >
+                  PROCESS &amp; FLOW
+                </span>
+              </div>
+              <div class="absolute right-3 top-3">
+                <span
+                  class="rounded bg-black/60 px-2 py-0.5 font-mono text-[11px] text-white backdrop-blur-sm"
+                  >MOD-204</span
+                >
+              </div>
+              <div class="absolute bottom-3 left-3 text-white">
+                <div class="flex items-center gap-1.5 text-xs text-teal-200">
+                  <span class="material-symbols-outlined text-[15px]">schedule</span>
+                  6 Weeks · Lab Practical
+                </div>
+              </div>
+            </div>
+            <div class="flex flex-1 flex-col justify-between p-6">
+              <div>
+                <h3
+                  class="text-title-lg font-bold text-brand-navy-900 transition-colors group-hover:text-brand-cobalt-deep"
+                >
+                  Process Simulation: Aspen HYSYS &amp; PV Elite
+                </h3>
+                <p class="text-brand-slate-600 mt-2 line-clamp-2 text-xs sm:text-sm">
+                  Steady-state and dynamic hydrocarbon process design, separator sizing, heat
+                  exchanger optimization, and pressure vessel calculation.
+                </p>
+                <div class="mt-4 flex flex-wrap gap-1.5">
+                  <span
+                    class="rounded bg-brand-slate-100 px-2 py-0.5 text-[11px] font-medium text-brand-slate-700"
+                    >Aspen HYSYS</span
+                  >
+                  <span
+                    class="rounded bg-brand-slate-100 px-2 py-0.5 text-[11px] font-medium text-brand-slate-700"
+                    >PV Elite</span
+                  >
+                  <span
+                    class="rounded bg-brand-slate-100 px-2 py-0.5 text-[11px] font-medium text-brand-slate-700"
+                    >API 520</span
+                  >
+                </div>
+              </div>
+              <div
+                class="mt-6 flex items-center justify-between border-t border-brand-slate-100 pt-4"
+              >
+                <span class="text-xs font-medium text-brand-slate-500"
+                  >Process Hall A · Rigorous Labs</span
+                >
+                <a
+                  class="inline-flex h-8 items-center gap-1 rounded-lg bg-blue-50 px-3 text-xs font-semibold text-brand-cobalt-deep transition-all group-hover:bg-brand-cobalt-deep group-hover:text-white"
+                  href="#"
+                >
+                  <span>View Syllabus</span>
+                  <span class="material-symbols-outlined text-[15px]">arrow_forward</span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- CARD 3: Pipe Stress Analysis (Caesar II) -->
+          <div
+            class="group flex flex-col overflow-hidden rounded-2xl border border-brand-slate-200 bg-white shadow-sm transition-all hover:border-brand-cobalt hover:shadow-xl"
+          >
+            <div class="relative h-48 overflow-hidden bg-brand-navy-950">
+              <img
+                alt="Subsea pipeline assembly and riser structures"
+                class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+                decoding="async"
+                loading="lazy"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuDj15Kkf2Vj7rSZepy0qBH1bui7PA-9Kr-yTEfjdhBakKeEBt-M4QY4eeH-MnOB2tV1euIODj9gyBjd_P8FUclAISO4mg8lPg8U-mvbcEr3Gu1Bbwyw1t6T9ufhupe-PcZJEp2o-cw7QhP1lR1CjVdLmBciTvc51if5qOPoJF0qKvhg_kiR7hCabNPjCkFcs5Dca4dHXsngbuCDu1LUiMmY3BRJFISzlA4hKz3nhrlX-seYHQicyKBV"
+              />
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"
+              ></div>
+              <div class="absolute left-3 top-3">
+                <span
+                  class="rounded-md bg-amber-600/90 px-2.5 py-1 text-[11px] font-semibold text-white backdrop-blur-sm"
+                >
+                  SUBSEA RIGOR
+                </span>
+              </div>
+              <div class="absolute right-3 top-3">
+                <span
+                  class="rounded bg-black/60 px-2 py-0.5 font-mono text-[11px] text-white backdrop-blur-sm"
+                  >MOD-305</span
+                >
+              </div>
+              <div class="absolute bottom-3 left-3 text-white">
+                <div class="flex items-center gap-1.5 text-xs text-amber-200">
+                  <span class="material-symbols-outlined text-[15px]">schedule</span>
+                  10 Weeks · Physical Lab
+                </div>
+              </div>
+            </div>
+            <div class="flex flex-1 flex-col justify-between p-6">
+              <div>
+                <h3
+                  class="text-title-lg font-bold text-brand-navy-900 transition-colors group-hover:text-brand-cobalt-deep"
+                >
+                  Pipe Stress Analysis &amp; Flexibility via Caesar II
+                </h3>
+                <p class="text-brand-slate-600 mt-2 line-clamp-2 text-xs sm:text-sm">
+                  Static and dynamic stress calculations for subsea risers, offshore manifolds,
+                  thermal expansion loops, and seismic loads.
+                </p>
+                <div class="mt-4 flex flex-wrap gap-1.5">
+                  <span
+                    class="rounded bg-brand-slate-100 px-2 py-0.5 text-[11px] font-medium text-brand-slate-700"
+                    >Caesar II v12</span
+                  >
+                  <span
+                    class="rounded bg-brand-slate-100 px-2 py-0.5 text-[11px] font-medium text-brand-slate-700"
+                    >ASME B31.8</span
+                  >
+                  <span
+                    class="rounded bg-brand-slate-100 px-2 py-0.5 text-[11px] font-medium text-brand-slate-700"
+                    >Fatigue Calc</span
+                  >
+                </div>
+              </div>
+              <div
+                class="mt-6 flex items-center justify-between border-t border-brand-slate-100 pt-4"
+              >
+                <span class="text-xs font-medium text-brand-slate-500"
+                  >Stress &amp; Finite Element Wing</span
+                >
+                <a
+                  class="inline-flex h-8 items-center gap-1 rounded-lg bg-blue-50 px-3 text-xs font-semibold text-brand-cobalt-deep transition-all group-hover:bg-brand-cobalt-deep group-hover:text-white"
+                  href="#"
+                >
+                  <span>View Syllabus</span>
+                  <span class="material-symbols-outlined text-[15px]">arrow_forward</span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- CARD 4: Full-Stack Software Engineering -->
+          <div
+            class="group flex flex-col overflow-hidden rounded-2xl border border-brand-slate-200 bg-white shadow-sm transition-all hover:border-brand-cobalt hover:shadow-xl"
+          >
+            <div class="relative h-48 overflow-hidden bg-brand-navy-950">
+              <img
+                alt="Modern software development and server screens"
+                class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+                decoding="async"
+                loading="lazy"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBndx2_jD8HfpCXoMNsWY-wEm5bjFMI7vo-3VHH7qk21Xep9n4Jp8_w6gjDPW86gAGoRGYXYG-Bb4UkLJzM_oq959dDoU4PmjaVBxrp5GcnUyOn9uzjFE2E48i5GXApv4bm5gntm_SykeIKNzNJE6gZu6JGC1gJCM5xtDj9ANl8esBhjGixVQkihr-iJj03l3FmCTT7gzP_3wV0SAGu5kpPZcLwOujpsPeAtWrwuRFcunQ51ZRW1IXE"
+              />
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"
+              ></div>
+              <div class="absolute left-3 top-3">
+                <span
+                  class="rounded-md bg-indigo-600/90 px-2.5 py-1 text-[11px] font-semibold text-white backdrop-blur-sm"
+                >
+                  COMPUTING &amp; DEV
+                </span>
+              </div>
+              <div class="absolute right-3 top-3">
+                <span
+                  class="rounded bg-black/60 px-2 py-0.5 font-mono text-[11px] text-white backdrop-blur-sm"
+                  >SOFT-101</span
+                >
+              </div>
+              <div class="absolute bottom-3 left-3 text-white">
+                <div class="flex items-center gap-1.5 text-xs text-indigo-200">
+                  <span class="material-symbols-outlined text-[15px]">schedule</span>
+                  16 Weeks · Hybrid
+                </div>
+              </div>
+            </div>
+            <div class="flex flex-1 flex-col justify-between p-6">
+              <div>
+                <h3
+                  class="text-title-lg font-bold text-brand-navy-900 transition-colors group-hover:text-brand-cobalt-deep"
+                >
+                  Full-Stack Software Architecture &amp; Cloud Systems
+                </h3>
+                <p class="text-brand-slate-600 mt-2 line-clamp-2 text-xs sm:text-sm">
+                  Modern enterprise software engineering: TypeScript, Python (FastAPI), React,
+                  Postgres, Docker containers, and CI/CD pipelines.
+                </p>
+                <div class="mt-4 flex flex-wrap gap-1.5">
+                  <span
+                    class="rounded bg-brand-slate-100 px-2 py-0.5 text-[11px] font-medium text-brand-slate-700"
+                    >TypeScript</span
+                  >
+                  <span
+                    class="rounded bg-brand-slate-100 px-2 py-0.5 text-[11px] font-medium text-brand-slate-700"
+                    >FastAPI</span
+                  >
+                  <span
+                    class="rounded bg-brand-slate-100 px-2 py-0.5 text-[11px] font-medium text-brand-slate-700"
+                    >Docker</span
+                  >
+                </div>
+              </div>
+              <div
+                class="mt-6 flex items-center justify-between border-t border-brand-slate-100 pt-4"
+              >
+                <span class="text-xs font-medium text-brand-slate-500"
+                  >Virtual Class &amp; HPC Labs</span
+                >
+                <a
+                  class="inline-flex h-8 items-center gap-1 rounded-lg bg-blue-50 px-3 text-xs font-semibold text-brand-cobalt-deep transition-all group-hover:bg-brand-cobalt-deep group-hover:text-white"
+                  href="#"
+                >
+                  <span>View Syllabus</span>
+                  <span class="material-symbols-outlined text-[15px]">arrow_forward</span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- CARD 5: Machine Learning & Industrial AI -->
+          <div
+            class="group flex flex-col overflow-hidden rounded-2xl border border-brand-slate-200 bg-white shadow-sm transition-all hover:border-brand-cobalt hover:shadow-xl"
+          >
+            <div class="relative h-48 overflow-hidden bg-brand-navy-950">
+              <img
+                alt="Machine learning algorithms and data visual"
+                class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+                decoding="async"
+                loading="lazy"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuAuKyYdV67-XWcK27O4Cd_8QhHx6wD0oTdYuC9RdxEYfIHzfLNbV457kKQfnX2FYeD7JOalwizPjJIK5E1YSMrC_nsZreCfz8Aamqt9hasSkTJvL9QN5R27Ysxi2-R7Arq_6a23nERiL1xO5eUFnJO5Bgq6Y4NC96aQsy_qYdiOarGAeHYAJnZSxRpGQLP2xQe9hGu83OECNTOCD4829PY81NYsMAbrDXwEZwhi0MNfq--QqUPgz1h9"
+              />
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"
+              ></div>
+              <div class="absolute left-3 top-3">
+                <span
+                  class="rounded-md bg-cyan-600/90 px-2.5 py-1 text-[11px] font-semibold text-white backdrop-blur-sm"
+                >
+                  DATA &amp; AI
+                </span>
+              </div>
+              <div class="absolute right-3 top-3">
+                <span
+                  class="rounded bg-black/60 px-2 py-0.5 font-mono text-[11px] text-white backdrop-blur-sm"
+                  >DATA-402</span
+                >
+              </div>
+              <div class="absolute bottom-3 left-3 text-white">
+                <div class="flex items-center gap-1.5 text-xs text-cyan-200">
+                  <span class="material-symbols-outlined text-[15px]">schedule</span>
+                  12 Weeks · Hybrid
+                </div>
+              </div>
+            </div>
+            <div class="flex flex-1 flex-col justify-between p-6">
+              <div>
+                <h3
+                  class="text-title-lg font-bold text-brand-navy-900 transition-colors group-hover:text-brand-cobalt-deep"
+                >
+                  Machine Learning &amp; Predictive Maintenance Analytics
+                </h3>
+                <p class="text-brand-slate-600 mt-2 line-clamp-2 text-xs sm:text-sm">
+                  Applying deep neural nets and time-series telemetry forecasting for industrial
+                  asset integrity, vibration diagnostics, and offshore logistics.
+                </p>
+                <div class="mt-4 flex flex-wrap gap-1.5">
+                  <span
+                    class="rounded bg-brand-slate-100 px-2 py-0.5 text-[11px] font-medium text-brand-slate-700"
+                    >PyTorch</span
+                  >
+                  <span
+                    class="rounded bg-brand-slate-100 px-2 py-0.5 text-[11px] font-medium text-brand-slate-700"
+                    >Telemetry</span
+                  >
+                  <span
+                    class="rounded bg-brand-slate-100 px-2 py-0.5 text-[11px] font-medium text-brand-slate-700"
+                    >Time-Series</span
+                  >
+                </div>
+              </div>
+              <div
+                class="mt-6 flex items-center justify-between border-t border-brand-slate-100 pt-4"
+              >
+                <span class="text-xs font-medium text-brand-slate-500"
+                  >HPC Cluster Terminal Access</span
+                >
+                <a
+                  class="inline-flex h-8 items-center gap-1 rounded-lg bg-blue-50 px-3 text-xs font-semibold text-brand-cobalt-deep transition-all group-hover:bg-brand-cobalt-deep group-hover:text-white"
+                  href="#"
+                >
+                  <span>View Syllabus</span>
+                  <span class="material-symbols-outlined text-[15px]">arrow_forward</span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- CARD 6: ISPS Maritime Security & Safety -->
+          <div
+            class="group flex flex-col overflow-hidden rounded-2xl border border-brand-slate-200 bg-white shadow-sm transition-all hover:border-brand-cobalt hover:shadow-xl"
+          >
+            <div class="relative h-48 overflow-hidden bg-brand-navy-950">
+              <img
+                alt="Shipyard rigging and industrial offshore operations"
+                class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+                decoding="async"
+                loading="lazy"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuDcv9TlvIRpkNYrw0E__v4_S3kkuX4fT8LPSSeNLsXu3oNvyeAZ9qPr_Yh2UaR6bQtag0awVTmi2Dz4M__L9YUDmG0WgYGmsensUfekve1XbMYgmf85nFQSa4LlNBs8zVRSXDli5Uuk6d0WPTncpYs3tgVUChV9KanEpiJhqEtYbbdTEEdYgq2gdkqELl850iCCmPmS0o0_3Vodr_1WPzQCAYBeC6LCHjy3gM5kv-VsU_zUKcSlsDKJ"
+              />
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"
+              ></div>
+              <div class="absolute left-3 top-3">
+                <span
+                  class="rounded-md bg-emerald-600/90 px-2.5 py-1 text-[11px] font-semibold text-white backdrop-blur-sm"
+                >
+                  COMPLIANCE &amp; SAFETY
+                </span>
+              </div>
+              <div class="absolute right-3 top-3">
+                <span
+                  class="rounded bg-black/60 px-2 py-0.5 font-mono text-[11px] text-white backdrop-blur-sm"
+                  >SAF-108</span
+                >
+              </div>
+              <div class="absolute bottom-3 left-3 text-white">
+                <div class="flex items-center gap-1.5 text-xs text-emerald-200">
+                  <span class="material-symbols-outlined text-[15px]">schedule</span>
+                  4 Weeks · Onshore Yard
+                </div>
+              </div>
+            </div>
+            <div class="flex flex-1 flex-col justify-between p-6">
+              <div>
+                <h3
+                  class="text-title-lg font-bold text-brand-navy-900 transition-colors group-hover:text-brand-cobalt-deep"
+                >
+                  ISPS Code Maritime Security, Rigging &amp; Yard Welding
+                </h3>
+                <p class="text-brand-slate-600 mt-2 line-clamp-2 text-xs sm:text-sm">
+                  International Ship and Port Facility Security certifications, certified
+                  rigging/scaffolding inspections, and standard 6G welding qualification.
+                </p>
+                <div class="mt-4 flex flex-wrap gap-1.5">
+                  <span
+                    class="rounded bg-brand-slate-100 px-2 py-0.5 text-[11px] font-medium text-brand-slate-700"
+                    >IMO ISPS</span
+                  >
+                  <span
+                    class="rounded bg-brand-slate-100 px-2 py-0.5 text-[11px] font-medium text-brand-slate-700"
+                    >LEEA Rigging</span
+                  >
+                  <span
+                    class="rounded bg-brand-slate-100 px-2 py-0.5 text-[11px] font-medium text-brand-slate-700"
+                    >AWS D1.1</span
+                  >
+                </div>
+              </div>
+              <div
+                class="mt-6 flex items-center justify-between border-t border-brand-slate-100 pt-4"
+              >
+                <span class="text-xs font-medium text-brand-slate-500"
+                  >RSU Onshore Practical Yard</span
+                >
+                <a
+                  class="inline-flex h-8 items-center gap-1 rounded-lg bg-blue-50 px-3 text-xs font-semibold text-brand-cobalt-deep transition-all group-hover:bg-brand-cobalt-deep group-hover:text-white"
+                  href="#"
+                >
+                  <span>View Syllabus</span>
+                  <span class="material-symbols-outlined text-[15px]">arrow_forward</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Bottom Syllabus Download Callout Banner -->
+        <div
+          class="mt-12 flex flex-col items-center justify-between gap-6 rounded-2xl bg-brand-navy-950 p-6 text-white shadow-xl md:flex-row lg:p-8"
+        >
+          <div class="flex items-center gap-4">
+            <div
+              class="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-brand-cobalt-deep text-white"
+            >
+              <span class="material-symbols-outlined text-[28px]">download_for_offline</span>
+            </div>
+            <div>
+              <h4 class="text-lg font-bold">
+                Download Full 2025 Training Syllabus &amp; Fee Schedule
+              </h4>
+              <p class="mt-0.5 text-xs text-brand-slate-400 sm:text-sm">
+                Contains CEU credits, software licensing details, and corporate group rates.
+              </p>
+            </div>
+          </div>
+          <a
+            class="inline-flex h-11 shrink-0 items-center gap-2 rounded-xl bg-white px-6 text-xs font-semibold text-brand-navy-900 transition-all hover:bg-slate-100 sm:text-sm"
+            href="#"
+          >
+            <span>Download PDF (4.2 MB)</span>
+            <span class="material-symbols-outlined text-[18px]">file_download</span>
+          </a>
+        </div>
+      </div>
+    </section>
+    <!-- STATE-OF-THE-ART FACILITIES SPOTLIGHT -->
+    <section
+      class="border-b border-brand-slate-200 bg-white py-16 lg:py-20"
+      id="facilities"
+    >
+      <div class="mx-auto max-w-[1280px] px-4 lg:px-8">
+        <div class="mx-auto mb-14 max-w-2xl text-center">
+          <span class="text-xs font-semibold uppercase tracking-wider text-brand-cobalt-deep"
+            >Infrastructure &amp; Technology Assets</span
+          >
+          <h2 class="mt-2 text-headline-lg font-bold text-brand-navy-900">
+            Specialized Labs &amp; Computing Facilities
+          </h2>
+          <p class="text-brand-slate-600 mt-2 text-sm sm:text-base">
+            Housed within the Rivers State University Engineering Complex, our physical spaces
+            simulate true offshore operations and enterprise high-performance computing.
+          </p>
+        </div>
+        <div class="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-4">
+          <div
+            class="rounded-2xl border border-brand-slate-200 bg-slate-50 p-6 transition-all hover:border-brand-cobalt"
+          >
+            <div
+              class="mb-4 flex h-12 w-12 items-center justify-center rounded-xl bg-blue-50 text-brand-cobalt-deep"
+            >
+              <span class="material-symbols-outlined text-[26px]">tsunami</span>
+            </div>
+            <h3 class="text-base font-bold text-brand-navy-900">Hydrodynamics &amp; Towing Tank</h3>
+            <p class="text-brand-slate-600 mt-2 text-xs sm:text-sm">
+              Flume test channel for miniature hull design, current force analysis, and
+              vortex-induced vibration (VIV) testing.
+            </p>
+            <span class="mt-4 block text-xs font-semibold text-brand-cobalt-deep"
+              >RSU Phase 2 Lab Wing</span
+            >
+          </div>
+          <div
+            class="rounded-2xl border border-brand-slate-200 bg-slate-50 p-6 transition-all hover:border-brand-cobalt"
+          >
+            <div
+              class="mb-4 flex h-12 w-12 items-center justify-center rounded-xl bg-blue-50 text-brand-cobalt-deep"
+            >
+              <span class="material-symbols-outlined text-[26px]">memory</span>
+            </div>
+            <h3 class="text-base font-bold text-brand-navy-900">HPC Simulation Terminal</h3>
+            <p class="text-brand-slate-600 mt-2 text-xs sm:text-sm">
+              60 dual-Xeon work terminals with dedicated GPUs for intensive AVEVA, ANSYS CFD, and
+              machine learning model training.
+            </p>
+            <span class="mt-4 block text-xs font-semibold text-brand-cobalt-deep"
+              >Dedicated 10Gbps LAN</span
+            >
+          </div>
+          <div
+            class="rounded-2xl border border-brand-slate-200 bg-slate-50 p-6 transition-all hover:border-brand-cobalt"
+          >
+            <div
+              class="mb-4 flex h-12 w-12 items-center justify-center rounded-xl bg-blue-50 text-brand-cobalt-deep"
+            >
+              <span class="material-symbols-outlined text-[26px]">settings_input_component</span>
+            </div>
+            <h3 class="text-base font-bold text-brand-navy-900">SCADA &amp; Subsea Testbed</h3>
+            <p class="text-brand-slate-600 mt-2 text-xs sm:text-sm">
+              Physical instrumentation racks, PLC controllers, and pressure loops for offshore
+              pipeline monitoring simulations.
+            </p>
+            <span class="mt-4 block text-xs font-semibold text-brand-cobalt-deep"
+              >Industrial Automation Hall</span
+            >
+          </div>
+          <div
+            class="rounded-2xl border border-brand-slate-200 bg-slate-50 p-6 transition-all hover:border-brand-cobalt"
+          >
+            <div
+              class="mb-4 flex h-12 w-12 items-center justify-center rounded-xl bg-blue-50 text-brand-cobalt-deep"
+            >
+              <span class="material-symbols-outlined text-[26px]">cast_for_education</span>
+            </div>
+            <h3 class="text-base font-bold text-brand-navy-900">Collaborative e-Classrooms</h3>
+            <p class="text-brand-slate-600 mt-2 text-xs sm:text-sm">
+              Synchronous lecture recording suites enabling global industry experts to co-deliver
+              hybrid curricula to remote learners.
+            </p>
+            <span class="mt-4 block text-xs font-semibold text-brand-cobalt-deep"
+              >Smart Lecture Hall A &amp; B</span
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- QUICK CERTIFICATE VERIFICATION BANNER WIDGET -->
+    <section
+      class="border-b border-brand-slate-200 bg-slate-50/70 py-12"
+      id="verification-hub"
+    >
+      <div class="mx-auto max-w-[1280px] px-4 lg:px-8">
+        <div
+          class="flex flex-col items-center justify-between gap-6 rounded-2xl border border-brand-slate-200 bg-white p-6 shadow-sm lg:flex-row lg:p-8"
+        >
+          <div class="max-w-md">
+            <div class="mb-1 flex items-center gap-2 text-xs font-semibold text-status-verified">
+              <span class="material-symbols-outlined text-[18px]">verified</span>
+              <span>OFFICIAL TRANSCRIPT &amp; CREDENTIAL REPOSITORY</span>
+            </div>
+            <h2 class="text-xl font-bold text-brand-navy-900">Instant Certificate Verification</h2>
+            <p class="mt-1 text-xs text-brand-slate-500 sm:text-sm">
+              Validate CMOTD certificates issued to engineers and technologists. Enter the unique
+              10-digit serial ID or upload QR code.
+            </p>
+          </div>
+          <!-- Form -->
+          <div class="w-full max-w-xl flex-1 lg:w-auto">
+            <form class="flex flex-col gap-3 sm:flex-row">
+              <div class="relative flex-1">
+                <span
+                  class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-brand-slate-400"
+                  >badge</span
+                >
+                <input
+                  class="border-brand-slate-300 h-[46px] w-full rounded-xl border pl-10 pr-4 font-mono text-xs text-brand-navy-900 focus:border-brand-cobalt-deep focus:outline-none focus:ring-1 focus:ring-brand-cobalt-deep"
+                  placeholder="e.g. CMOTD-2024-OFF-8849"
+                  type="text"
+                  value="CMOTD-2024-OFF-8849"
+                />
+              </div>
+              <button
+                class="inline-flex h-[46px] items-center justify-center gap-2 rounded-xl bg-brand-navy-900 px-6 text-xs font-semibold text-white shadow-sm transition-all hover:bg-brand-navy-950"
+                onclick="
+                  document.getElementById('verification-result-panel').classList.remove('hidden')
+                "
+                type="button"
+              >
+                <span class="material-symbols-outlined text-[18px]">search</span>
+                <span>Verify Record</span>
+              </button>
+            </form>
+          </div>
+        </div>
+        <!-- Real-time Validation Preview Panel -->
+        <div
+          class="mt-4 rounded-xl border border-status-verified-border bg-status-verified-bg p-5 transition-all"
+          id="verification-result-panel"
+        >
+          <div class="flex flex-col items-start justify-between gap-4 md:flex-row md:items-center">
+            <div class="flex items-center gap-4">
+              <div
+                class="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-status-verified text-white"
+              >
+                <span class="material-symbols-outlined text-[26px]">check_circle</span>
+              </div>
+              <div>
+                <div class="flex items-center gap-2">
+                  <span class="text-xs font-bold text-brand-navy-900 sm:text-sm"
+                    >Certificate Status: VALID &amp; AUTHENTIC</span
+                  >
+                  <span
+                    class="rounded-full bg-status-verified px-2 py-0.5 text-[10px] font-bold text-white"
+                    >RSU CONFERRED</span
+                  >
+                </div>
+                <p class="mt-0.5 text-xs text-brand-slate-700 sm:text-sm">
+                  Holder: <strong>Ezekiel Tariro Briggs</strong> · Program:
+                  <strong
+                    >Advanced Subsea Pipeline Engineering &amp; Caesar II Stress Modeling</strong
+                  >
+                  · Conferred: <strong>Nov 18, 2024</strong>
+                </p>
+              </div>
+            </div>
+            <button
+              class="inline-flex shrink-0 items-center gap-1.5 rounded-xl border border-status-verified px-4 py-2 text-xs font-semibold text-status-verified transition-colors hover:bg-white"
+              type="button"
+            >
+              <span class="material-symbols-outlined text-[16px]">file_download</span>
+              <span>Download Cryptographic PDF</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- RESEARCH PUBLICATIONS + UPCOMING INDUSTRY EVENTS -->
+    <section
+      class="border-b border-brand-slate-200 bg-white py-16 lg:py-24"
+      id="research"
+    >
+      <div class="mx-auto max-w-[1280px] px-4 lg:px-8">
+        <div class="grid grid-cols-1 gap-12 lg:grid-cols-12">
+          <!-- Left: Research Whitepapers -->
+          <div class="lg:col-span-7">
+            <div class="mb-8 flex items-center justify-between">
+              <div>
+                <span class="text-xs font-semibold uppercase tracking-wider text-brand-cobalt-deep"
+                  >CMOTD Scholarly Output</span
+                >
+                <h2 class="mt-1 text-xl font-bold text-brand-navy-900 sm:text-2xl">
+                  Research &amp; Technical Publications
+                </h2>
+              </div>
+              <a
+                class="flex items-center gap-1 text-xs font-semibold text-brand-cobalt-deep hover:text-primary"
+                href="#"
+              >
+                <span>View Repository</span>
+                <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+              </a>
+            </div>
+            <div class="space-y-4">
+              <article
+                class="rounded-2xl border border-brand-slate-200 bg-white p-5 shadow-sm transition-all hover:border-brand-cobalt"
+              >
+                <div class="mb-2 flex items-center gap-2 font-mono text-xs text-brand-slate-400">
+                  <span>DOI: 10.1016/CMOTD.2024.108</span>
+                  <span>·</span>
+                  <span class="font-semibold text-brand-cobalt-deep">Subsea Geotechnics</span>
+                </div>
+                <h3
+                  class="cursor-pointer text-base font-bold text-brand-navy-900 hover:text-brand-cobalt-deep"
+                >
+                  Numerical Simulation of Dynamic Buckling in Deepwater Niger Delta Pipelines Under
+                  High Pressure Thermal Transients
+                </h3>
+                <p class="text-brand-slate-600 mt-2 text-xs sm:text-sm">
+                  Published by Dr. A. I. Fiberesima &amp; Engr. T. Amadi. Utilizing finite element
+                  analysis in Caesar II and custom Python solvers to prevent seabed scouring
+                  failures.
+                </p>
+                <div class="mt-3 flex items-center gap-4 text-xs text-brand-slate-500">
+                  <span class="flex items-center gap-1"
+                    ><span class="material-symbols-outlined text-[15px]">calendar_today</span> Oct
+                    2024</span
+                  >
+                  <span class="flex items-center gap-1"
+                    ><span class="material-symbols-outlined text-[15px]">download</span> 840
+                    Downloads</span
+                  >
+                  <a
+                    class="ml-auto font-semibold text-brand-cobalt-deep hover:underline"
+                    href="#"
+                    >Read Whitepaper PDF</a
+                  >
+                </div>
+              </article>
+              <article
+                class="rounded-2xl border border-brand-slate-200 bg-white p-5 shadow-sm transition-all hover:border-brand-cobalt"
+              >
+                <div class="mb-2 flex items-center gap-2 font-mono text-xs text-brand-slate-400">
+                  <span>DOI: 10.1016/CMOTD.2024.092</span>
+                  <span>·</span>
+                  <span class="font-semibold text-brand-cobalt-deep"
+                    >Machine Learning &amp; Automation</span
+                  >
+                </div>
+                <h3
+                  class="cursor-pointer text-base font-bold text-brand-navy-900 hover:text-brand-cobalt-deep"
+                >
+                  Edge AI Implementation for Real-Time Cavitation Detection on Offshore Centrifugal
+                  Pumps
+                </h3>
+                <p class="text-brand-slate-600 mt-2 text-xs sm:text-sm">
+                  Exploring lightweight convolutional architectures deployed onto low-power
+                  industrial microcontrollers for automated acoustic fault detection.
+                </p>
+                <div class="mt-3 flex items-center gap-4 text-xs text-brand-slate-500">
+                  <span class="flex items-center gap-1"
+                    ><span class="material-symbols-outlined text-[15px]">calendar_today</span>
+                    August 2024</span
+                  >
+                  <span class="flex items-center gap-1"
+                    ><span class="material-symbols-outlined text-[15px]">download</span> 1,120
+                    Downloads</span
+                  >
+                  <a
+                    class="ml-auto font-semibold text-brand-cobalt-deep hover:underline"
+                    href="#"
+                    >Read Whitepaper PDF</a
+                  >
+                </div>
+              </article>
+            </div>
+          </div>
+          <!-- Right: Upcoming Events -->
+          <div
+            class="lg:col-span-5"
+            id="events"
+          >
+            <div class="mb-8">
+              <span class="text-xs font-semibold uppercase tracking-wider text-brand-cobalt-deep"
+                >Industry Engagements</span
+              >
+              <h2 class="mt-1 text-xl font-bold text-brand-navy-900 sm:text-2xl">
+                Upcoming Events &amp; Seminars
+              </h2>
+            </div>
+            <div class="space-y-4">
+              <div
+                class="flex gap-4 rounded-2xl border border-brand-slate-200 bg-white p-5 shadow-sm transition-all hover:border-brand-cobalt"
+              >
+                <div
+                  class="flex h-14 w-14 shrink-0 flex-col items-center justify-center rounded-xl border border-blue-200 bg-blue-50 text-center"
+                >
+                  <span class="text-[10px] font-bold uppercase text-brand-cobalt-deep">MAY</span>
+                  <span class="text-lg font-bold leading-none text-brand-navy-900">14</span>
+                </div>
+                <div>
+                  <span
+                    class="rounded bg-status-verified-bg px-2 py-0.5 text-[10px] font-bold text-status-verified"
+                    >HYBRID SYMPOSIUM</span
+                  >
+                  <h4 class="mt-1 text-sm font-bold text-brand-navy-900">
+                    Gulf of Guinea Offshore Technology &amp; Energy Transition Forum
+                  </h4>
+                  <p class="mt-1 text-xs text-brand-slate-500">
+                    RSU Senate Amphitheatre &amp; Live Stream
+                  </p>
+                  <a
+                    class="mt-2 inline-block text-xs font-semibold text-brand-cobalt-deep hover:underline"
+                    href="#"
+                    >Register Free Seat →</a
+                  >
+                </div>
+              </div>
+              <div
+                class="flex gap-4 rounded-2xl border border-brand-slate-200 bg-white p-5 shadow-sm transition-all hover:border-brand-cobalt"
+              >
+                <div
+                  class="flex h-14 w-14 shrink-0 flex-col items-center justify-center rounded-xl border border-blue-200 bg-blue-50 text-center"
+                >
+                  <span class="text-[10px] font-bold uppercase text-brand-cobalt-deep">JUN</span>
+                  <span class="text-lg font-bold leading-none text-brand-navy-900">02</span>
+                </div>
+                <div>
+                  <span
+                    class="rounded bg-slate-100 px-2 py-0.5 text-[10px] font-bold text-brand-navy-900"
+                    >TECHNICAL WORKSHOP</span
+                  >
+                  <h4 class="mt-1 text-sm font-bold text-brand-navy-900">
+                    Masterclass: Advanced Subsea Pipeline Layout in AVEVA E3D
+                  </h4>
+                  <p class="mt-1 text-xs text-brand-slate-500">
+                    Limited to 25 practicing engineers · CAD Lab 2
+                  </p>
+                  <a
+                    class="mt-2 inline-block text-xs font-semibold text-brand-cobalt-deep hover:underline"
+                    href="#"
+                    >Enroll in Workshop →</a
+                  >
+                </div>
+              </div>
+              <div class="rounded-2xl border border-brand-slate-200 bg-slate-50 p-5">
+                <div class="flex items-center gap-3">
+                  <div
+                    class="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-white text-brand-cobalt-deep shadow-sm"
+                  >
+                    <span class="material-symbols-outlined text-[22px]">contact_support</span>
+                  </div>
+                  <div>
+                    <h5 class="text-xs font-bold text-brand-navy-900 sm:text-sm">
+                      Need Custom Corporate Training?
+                    </h5>
+                    <p class="text-brand-slate-600 text-xs">
+                      We train entire engineering squads on your proprietary stack.
+                    </p>
+                  </div>
+                </div>
+                <a
+                  class="border-brand-slate-300 mt-3 block w-full rounded-xl border bg-white py-2.5 text-center text-xs font-semibold text-brand-navy-900 shadow-sm transition-colors hover:bg-brand-slate-50"
+                  href="#support"
+                >
+                  Contact Enterprise Training Liaison
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- TESTIMONIALS & ALUMNI IMPACT -->
+    <section class="border-b border-brand-slate-200 bg-slate-50/70 py-16 lg:py-20">
+      <div class="mx-auto max-w-[1280px] px-4 lg:px-8">
+        <div class="mb-12 max-w-2xl">
+          <span class="text-xs font-semibold uppercase tracking-wider text-brand-cobalt-deep"
+            >Alumni Proven Impact</span
+          >
+          <h2 class="mt-1 text-headline-lg font-bold text-brand-navy-900">
+            From Rivers State University to Global Platforms
+          </h2>
+          <p class="text-brand-slate-600 mt-2 text-sm sm:text-base">
+            Hear from graduates deploying simulation models and writing high-uptime software in
+            energy corridors across Nigeria and abroad.
+          </p>
+        </div>
+        <div class="grid grid-cols-1 gap-6 md:grid-cols-3">
+          <div
+            class="flex flex-col justify-between rounded-2xl border border-brand-slate-200 bg-white p-6 shadow-sm"
+          >
+            <div>
+              <div class="mb-3 flex items-center gap-1 text-amber-500">
+                <span class="material-symbols-outlined text-[18px]">star</span>
+                <span class="material-symbols-outlined text-[18px]">star</span>
+                <span class="material-symbols-outlined text-[18px]">star</span>
+                <span class="material-symbols-outlined text-[18px]">star</span>
+                <span class="material-symbols-outlined text-[18px]">star</span>
+              </div>
+              <p class="text-xs italic leading-relaxed text-brand-slate-700 sm:text-sm">
+                "The practical immersion in Caesar II and AVEVA PDMS was night and day compared to
+                generic engineering modules. Within 4 weeks of graduating, I verified my certificate
+                and secured an offshore piping role in Port Harcourt."
+              </p>
+            </div>
+            <div class="mt-6 flex items-center gap-3 border-t border-brand-slate-100 pt-4">
+              <div
+                class="flex h-10 w-10 items-center justify-center rounded-full bg-blue-50 text-xs font-bold text-brand-cobalt-deep"
+              >
+                OB
+              </div>
+              <div>
+                <span class="block text-xs font-bold text-brand-navy-900 sm:text-sm">Osaro B.</span>
+                <span class="text-xs text-brand-slate-500">Subsea Piping Engineer · Saipem</span>
+              </div>
+            </div>
+          </div>
+          <div
+            class="flex flex-col justify-between rounded-2xl border border-brand-slate-200 bg-white p-6 shadow-sm"
+          >
+            <div>
+              <div class="mb-3 flex items-center gap-1 text-amber-500">
+                <span class="material-symbols-outlined text-[18px]">star</span>
+                <span class="material-symbols-outlined text-[18px]">star</span>
+                <span class="material-symbols-outlined text-[18px]">star</span>
+                <span class="material-symbols-outlined text-[18px]">star</span>
+                <span class="material-symbols-outlined text-[18px]">star</span>
+              </div>
+              <p class="text-xs italic leading-relaxed text-brand-slate-700 sm:text-sm">
+                "CMOTD's hybrid software engineering track delivered real enterprise Docker and
+                backend architecture. It gave me the computational chops to build marine asset
+                logistics tools for tier-1 operators."
+              </p>
+            </div>
+            <div class="mt-6 flex items-center gap-3 border-t border-brand-slate-100 pt-4">
+              <div
+                class="flex h-10 w-10 items-center justify-center rounded-full bg-blue-50 text-xs font-bold text-brand-cobalt-deep"
+              >
+                CN
+              </div>
+              <div>
+                <span class="block text-xs font-bold text-brand-navy-900 sm:text-sm"
+                  >Chisom Nkem</span
+                >
+                <span class="text-xs text-brand-slate-500"
+                  >Cloud Systems Developer · TechnipFMC</span
+                >
+              </div>
+            </div>
+          </div>
+          <div
+            class="flex flex-col justify-between rounded-2xl border border-brand-slate-200 bg-white p-6 shadow-sm"
+          >
+            <div>
+              <div class="mb-3 flex items-center gap-1 text-amber-500">
+                <span class="material-symbols-outlined text-[18px]">star</span>
+                <span class="material-symbols-outlined text-[18px]">star</span>
+                <span class="material-symbols-outlined text-[18px]">star</span>
+                <span class="material-symbols-outlined text-[18px]">star</span>
+                <span class="material-symbols-outlined text-[18px]">star</span>
+              </div>
+              <p class="text-xs italic leading-relaxed text-brand-slate-700 sm:text-sm">
+                "The Aspen HYSYS simulation lab allowed us to run realistic multi-phase hydrocarbon
+                flow routines. The instructors are active offshore practitioners, which makes every
+                session hyper-relevant."
+              </p>
+            </div>
+            <div class="mt-6 flex items-center gap-3 border-t border-brand-slate-100 pt-4">
+              <div
+                class="flex h-10 w-10 items-center justify-center rounded-full bg-blue-50 text-xs font-bold text-brand-cobalt-deep"
+              >
+                DW
+              </div>
+              <div>
+                <span class="block text-xs font-bold text-brand-navy-900 sm:text-sm"
+                  >Daba West</span
+                >
+                <span class="text-xs text-brand-slate-500">Process Engineer · NLNG Train 7</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- INDUSTRY PARTNERSHIPS & INSTITUTIONAL ACCREDITATIONS -->
+    <!-- INSTITUTIONAL RICH FOOTER -->
+    <cmotd-institution-strip></cmotd-institution-strip>
+    <cmotd-site-footer></cmotd-site-footer>
+  </body>
+</html>

@@ -1,0 +1,944 @@
+<!doctype html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      content="width=device-width, initial-scale=1.0"
+      name="viewport"
+    />
+    <title>
+      CMOTD | Rivers State University - PGD in Subsea Engineering &amp; Deepwater Pipeline Systems
+    </title>
+    <link
+      href="../favicon.ico"
+      rel="icon"
+      type="image/x-icon"
+    />
+
+    <link
+      href="../assets/css/tailwind-build.css"
+      rel="stylesheet"
+    />
+    <link
+      href="../assets/css/cmotd-global.css"
+      rel="stylesheet"
+    />
+    <script
+      defer=""
+      src="../assets/js/site-config.js"
+    ></script>
+    <script
+      defer=""
+      src="../assets/js/cmotd-components.js"
+    ></script>
+  </head>
+  <body
+    class="flex min-h-screen flex-col bg-background font-body-md text-on-surface antialiased selection:bg-primary selection:text-on-primary"
+  >
+    <!-- TOP APP BAR / HEADER (Matches Shared Component JSON: TopNavBar) -->
+    <cmotd-site-header active="programmes"></cmotd-site-header>
+    <!-- BREADCRUMB & ACCREDITATION STRIP -->
+    <div class="border-b border-brand-slate-200 bg-surface-container-low">
+      <div
+        class="mx-auto flex max-w-[1280px] flex-wrap items-center justify-between gap-4 px-6 py-2.5 text-body-sm text-brand-slate-700"
+      >
+        <div class="flex items-center space-x-2 font-label-sm text-label-sm">
+          <a
+            class="transition-colors hover:text-primary"
+            href="#"
+            >Academic Portals</a
+          >
+          <span class="text-brand-slate-400">/</span>
+          <a
+            class="transition-colors hover:text-primary"
+            href="#"
+            >Faculty of Marine &amp; Offshore Technology</a
+          >
+          <span class="text-brand-slate-400">/</span>
+          <span class="font-semibold text-primary">PGD-SUB-801</span>
+        </div>
+        <div class="flex items-center gap-4 font-label-sm text-label-sm">
+          <span
+            class="inline-flex items-center gap-1 rounded-lg border border-status-verified-border bg-status-verified-bg px-2 py-0.5 text-status-verified"
+          >
+            <span
+              class="material-symbols-outlined text-[14px]"
+              data-icon="check_circle"
+              data-weight="fill"
+              style="font-variation-settings: &quot;FILL&quot; 1"
+              >check_circle</span
+            >
+            COREN Accredited &amp; Regulated
+          </span>
+          <span
+            class="inline-flex items-center gap-1 rounded-lg border border-brand-slate-200 bg-surface-container-lowest px-2 py-0.5 text-brand-slate-700"
+          >
+            <span
+              class="material-symbols-outlined text-[14px] text-primary"
+              data-icon="verified_user"
+              >verified_user</span
+            >
+            NCDMB Tier-1 Capacity Benchmark
+          </span>
+        </div>
+      </div>
+    </div>
+    <!-- PROGRAMME HERO BANNER WITH ARCHITECTURAL FACILITY VIEW -->
+    <section
+      class="relative overflow-hidden border-b border-brand-slate-200 bg-surface-container-lowest"
+    >
+      <div class="mx-auto max-w-[1280px] px-6 py-10 lg:py-14">
+        <div class="grid grid-cols-1 items-center gap-8 lg:grid-cols-12">
+          <div class="space-y-4 lg:col-span-8">
+            <div class="flex flex-wrap items-center gap-2">
+              <span
+                class="rounded-lg bg-brand-navy-900 px-2.5 py-1 font-label-sm text-label-sm font-semibold tracking-wider text-surface-bright"
+                >CODE: PGD-SUB-801</span
+              >
+              <span
+                class="rounded-lg bg-primary-fixed px-2.5 py-1 font-label-sm text-label-sm font-medium text-on-primary-fixed"
+                >12 MONTHS FULL IMMERSION</span
+              >
+              <span
+                class="rounded-lg bg-surface-container-high px-2.5 py-1 font-label-sm text-label-sm font-medium text-brand-slate-800"
+                >60 CEU CREDIT UNITS</span
+              >
+              <span
+                class="rounded-lg border border-status-verified-border bg-status-verified-bg px-2.5 py-1 font-label-sm text-label-sm font-medium text-status-verified"
+                >SENATE RATIFIED DIPLOMA</span
+              >
+            </div>
+            <h1
+              class="font-display-lg text-display-lg leading-tight tracking-tight text-brand-navy-950"
+            >
+              Advanced Postgraduate Diploma in Subsea Engineering &amp; Deepwater Pipeline Systems
+            </h1>
+            <p class="max-w-3xl font-body-lg text-body-lg leading-relaxed text-brand-slate-700">
+              A premier postgraduate specialization ratified by the Rivers State University Senate
+              in strategic alliance with deepwater operators across the Gulf of Guinea. Engineered
+              to forge high-echelon technical competence in SURF systems, multiphase flow
+              simulation, and seabed pipeline integrity.
+            </p>
+            <!-- Metric Highlights Bar -->
+            <div class="grid grid-cols-2 gap-4 border-t border-brand-slate-100 pt-4 sm:grid-cols-4">
+              <div>
+                <div
+                  class="font-label-sm text-label-sm uppercase tracking-wide text-brand-slate-500"
+                >
+                  Employment Rate
+                </div>
+                <div class="font-headline-sm text-headline-sm font-bold text-brand-navy-950">
+                  96.4%
+                </div>
+                <div class="font-label-sm text-label-sm text-status-verified">
+                  Top-Tier EPC Operators
+                </div>
+              </div>
+              <div>
+                <div
+                  class="font-label-sm text-label-sm uppercase tracking-wide text-brand-slate-500"
+                >
+                  Trimesters
+                </div>
+                <div class="font-headline-sm text-headline-sm font-bold text-brand-navy-950">
+                  3 Modular
+                </div>
+                <div class="font-label-sm text-label-sm text-brand-slate-500">
+                  Hybrid / HPC Remote
+                </div>
+              </div>
+              <div>
+                <div
+                  class="font-label-sm text-label-sm uppercase tracking-wide text-brand-slate-500"
+                >
+                  Workstation Cohort
+                </div>
+                <div class="font-headline-sm text-headline-sm font-bold text-brand-navy-950">
+                  24 Seats
+                </div>
+                <div class="font-label-sm text-label-sm font-semibold text-status-warning">
+                  5 Seats Remaining
+                </div>
+              </div>
+              <div>
+                <div
+                  class="font-label-sm text-label-sm uppercase tracking-wide text-brand-slate-500"
+                >
+                  Accreditation
+                </div>
+                <div class="font-headline-sm text-headline-sm font-bold text-brand-navy-950">
+                  COREN / NCDMB
+                </div>
+                <div class="font-label-sm text-label-sm text-brand-slate-500">
+                  Dual Ratification
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Hero Media Module: High-Density CAD Lab at RSU -->
+          <div class="lg:col-span-4">
+            <div
+              class="overflow-hidden rounded-xl border border-brand-slate-200 bg-surface-container-low p-3 shadow-sm"
+            >
+              <div class="relative h-56 overflow-hidden rounded-lg border border-brand-slate-200">
+                <img
+                  class="h-full w-full object-cover"
+                  data-alt="A modern engineering CAD training computer laboratory at Rivers State University CADICAE Training Center Port Harcourt with graduate students and a female instructor collaborating on multi-monitor piping stress analysis software. Crisp cool fluorescent lighting, high-end technical enterprise classroom, precision instrumentation, deep cobalt blue and slate architectural elements."
+                  decoding="async"
+                  fetchpriority="high"
+                  loading="eager"
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuDmgdDCj3Sb7yEFAaiUOw89ViZbAg1IoZnThb0ixyMnUFX55IZBdXIpEVRiy80lXFWr5UGsxLZFTo75Be3x5hd8IjVaEghQ7Tgmtsq13KrAw3YrLA41E50L2-w8-PTCpEkhgMqqyomXclbUkCPSOzJYdNZcEhQkfWfa2n3ylXXMIW5Onb3d-AXvMSeq4LFar-g0ZeZD5gjWfYGmxac2i9Pf6QamIsWYfTjU_eo6ht8ac6qPag3CSg_t"
+                />
+                <div
+                  class="absolute inset-0 flex items-end bg-gradient-to-t from-brand-navy-950/80 via-transparent to-transparent p-4"
+                >
+                  <div class="text-surface-bright">
+                    <div
+                      class="font-label-sm text-label-sm uppercase tracking-wider text-primary-fixed"
+                    >
+                      Rivers State University Campus
+                    </div>
+                    <div class="font-title-lg text-title-lg font-semibold">
+                      CADICAE Advanced Simulation Lab
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="mt-3 flex items-center justify-between rounded-lg border border-brand-slate-100 bg-surface-container-lowest p-3 text-body-sm text-brand-slate-700"
+              >
+                <span class="flex items-center gap-1.5 font-label-md text-label-md">
+                  <span
+                    class="material-symbols-outlined text-[18px] text-primary"
+                    data-icon="location_on"
+                    >location_on</span
+                  >
+                  Port Harcourt, Rivers State
+                </span>
+                <a
+                  class="flex items-center font-label-md text-label-md text-primary hover:underline"
+                  href="#"
+                >
+                  Explore Facility
+                  <span
+                    class="material-symbols-outlined text-[16px]"
+                    data-icon="chevron_right"
+                    >chevron_right</span
+                  >
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- PROGRAMME SUB-NAVIGATION TABS (STICKY) -->
+    <nav
+      aria-label="Programme Navigation"
+      class="sticky top-[76px] z-40 border-b border-brand-slate-200 bg-surface-container-lowest shadow-sm"
+    >
+      <div class="mx-auto max-w-[1280px] px-6">
+        <div class="no-scrollbar flex items-center space-x-1 overflow-x-auto sm:space-x-8">
+          <!-- Tab 1: Programme Overview (ACTIVE) -->
+          <a
+            aria-current="page"
+            class="flex items-center gap-2 whitespace-nowrap border-b-2 border-primary py-4 font-title-lg text-title-lg font-semibold text-primary"
+            href="#"
+          >
+            <span
+              class="material-symbols-outlined text-[20px]"
+              data-icon="dashboard"
+              >dashboard</span
+            >
+            Programme Overview
+          </a>
+          <!-- Tab 2 -->
+          <a
+            class="flex items-center gap-2 whitespace-nowrap border-b-2 border-transparent py-4 font-label-md text-label-md text-brand-slate-700 transition-colors hover:text-primary"
+            href="#"
+          >
+            <span
+              class="material-symbols-outlined text-[18px]"
+              data-icon="menu_book"
+              >menu_book</span
+            >
+            Curriculum &amp; Modular Syllabus
+          </a>
+          <!-- Tab 3 -->
+          <a
+            class="flex items-center gap-2 whitespace-nowrap border-b-2 border-transparent py-4 font-label-md text-label-md text-brand-slate-700 transition-colors hover:text-primary"
+            href="#"
+          >
+            <span
+              class="material-symbols-outlined text-[18px]"
+              data-icon="memory"
+              >memory</span
+            >
+            CAD/CAE Compute Infrastructure
+          </a>
+          <!-- Tab 4 -->
+          <a
+            class="flex items-center gap-2 whitespace-nowrap border-b-2 border-transparent py-4 font-label-md text-label-md text-brand-slate-700 transition-colors hover:text-primary"
+            href="#"
+          >
+            <span
+              class="material-symbols-outlined text-[18px]"
+              data-icon="badge"
+              >badge</span
+            >
+            Academic Faculty &amp; Industry Fellows
+          </a>
+          <!-- Tab 5 -->
+          <a
+            class="flex items-center gap-2 whitespace-nowrap border-b-2 border-transparent py-4 font-label-md text-label-md text-brand-slate-700 transition-colors hover:text-primary"
+            href="#"
+          >
+            <span
+              class="material-symbols-outlined text-[18px]"
+              data-icon="corporate_fare"
+              >corporate_fare</span
+            >
+            Industry Governance &amp; Defense
+          </a>
+          <!-- Tab 6 -->
+          <a
+            class="flex items-center gap-2 whitespace-nowrap border-b-2 border-transparent py-4 font-label-md text-label-md text-brand-slate-700 transition-colors hover:text-primary"
+            href="#"
+          >
+            <span
+              class="material-symbols-outlined text-[18px]"
+              data-icon="payments"
+              >payments</span
+            >
+            Tuitions and Fees
+          </a>
+        </div>
+      </div>
+    </nav>
+    <!-- MAIN CANVAS / PROGRAMME OVERVIEW ACTIVE TAB CONTENT -->
+    <main class="mx-auto w-full max-w-[1280px] flex-1 px-6 py-10">
+      <div class="grid grid-cols-1 items-start gap-8 lg:grid-cols-12">
+        <!-- LEFT CONTENT COLUMN (8 COLUMNS) -->
+        <div class="space-y-12 lg:col-span-8">
+          <!-- SECTION 1: STRATEGIC MANDATE & EXECUTIVE SUMMARY -->
+          <section class="space-y-4">
+            <div class="flex items-center gap-2">
+              <span class="h-2.5 w-2.5 rounded-full bg-primary"></span>
+              <h2
+                class="font-label-sm text-label-sm font-bold uppercase tracking-widest text-primary"
+              >
+                Strategic Institutional Mandate
+              </h2>
+            </div>
+            <h3 class="font-headline-lg text-headline-lg tracking-tight text-brand-navy-950">
+              Bridging High-Fidelity Computation with Offshore Geotechnical Reality
+            </h3>
+            <p class="font-body-md text-body-md leading-relaxed text-brand-slate-700">
+              The Centre for Marine and Offshore Technology Development (CMOTD) established the
+              PGD-SUB-801 program to resolve an acute human capacity bottleneck within West African
+              offshore operations. As offshore concessions transition from shallow continental
+              shelves into deepwater frontiers (depths exceeding 2,000 meters), conventional
+              pipeline mechanics yield to nonlinear multiphase slugging, extreme hydrostatic
+              buckling, and dynamic riser fatigue.
+            </p>
+            <p class="font-body-md text-body-md leading-relaxed text-brand-slate-700">
+              This rigorous 12-month program blends formal academic governance from Rivers State
+              University with proprietary enterprise engineering toolchains. Trainees transition
+              from fundamental Navier-Stokes numerical formulations to production-grade stress
+              analyses in AVEVA Marine, Caesar II, and ANSYS Fluent—culminating in a supervised
+              field defense assessed by certified deepwater engineering fellows.
+            </p>
+            <!-- Facility & Towing Tank Inset Card -->
+            <div
+              class="mt-6 flex flex-col items-center gap-5 rounded-xl border border-brand-slate-200 bg-surface-container-low p-4 sm:flex-row"
+            >
+              <div
+                class="h-32 w-full shrink-0 overflow-hidden rounded-lg border border-brand-slate-200 sm:w-48"
+              >
+                <img
+                  class="h-full w-full object-cover"
+                  data-alt="A sprawling modern marine engineering technical university campus in Port Harcourt Nigeria with glass facade research buildings, an outdoor open-air hydrodynamics wave testing towing basin with scale miniature offshore oil platform rig and survey support vessels, students in white lab coats and navy uniforms walking along the water promenade under a clear sunny sky."
+                  decoding="async"
+                  loading="lazy"
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuBIcjLD6nyWQqor_EmgzmSqgdrueZZ5rS-WU3RuH2ahpiqWLRoFSZ-io7x9x0tJtTzFoLUT1ZWZWHRd6QUki_ZpXPewWzzfgcg2iJS2Peg9mdbRY67Rb8-caeLqIQ1E5Nffz6JqUw6JfTTNWz4bAN38vjOLDzkZ39147U_tB5EXMWXwUEYeJvYTCuFw31qJvMGBhlDYRdZCFEUv7EmvFP453tLabyeWsiRH1z3xobhivNuPqvHHtLn_"
+                />
+              </div>
+              <div class="space-y-1 text-left">
+                <span class="font-label-sm text-label-sm font-semibold uppercase text-primary"
+                  >Real-World Hydrodynamic Basin</span
+                >
+                <h4 class="font-title-lg text-title-lg font-bold text-brand-navy-950">
+                  Direct Access to RSU Marine Testing Tank
+                </h4>
+                <p class="font-body-sm text-body-sm text-brand-slate-700">
+                  Cohorts execute physical scale wave-current validation runs at the university’s
+                  dedicated marine hydrodynamics testing pool alongside numerical CFD models.
+                </p>
+              </div>
+            </div>
+          </section>
+          <!-- SECTION 2: 4 CORE PILLARS OF COMPETENCY (BENTO GRID PATTERN) -->
+          <section class="space-y-6">
+            <div class="border-t border-brand-slate-200 pt-8">
+              <div class="mb-4 flex items-center justify-between">
+                <div>
+                  <span
+                    class="font-label-sm text-label-sm font-bold uppercase tracking-widest text-primary"
+                    >Curricular Architecture</span
+                  >
+                  <h3 class="font-headline-lg text-headline-lg tracking-tight text-brand-navy-950">
+                    Four Thematic Pillars of Deepwater Engineering
+                  </h3>
+                </div>
+                <span
+                  class="hidden rounded-lg bg-surface-container px-3 py-1 font-label-sm text-label-sm text-brand-slate-500 md:inline-flex"
+                  >Level 800 Postgraduate Rigor</span
+                >
+              </div>
+              <p class="font-body-md text-body-md text-brand-slate-700">
+                Curated under strict alignment with DNV, API, and ISO marine engineering standards
+                to ensure immediate industrial deployment upon Senate conferral.
+              </p>
+            </div>
+            <div class="grid grid-cols-1 gap-4 md:grid-cols-2">
+              <!-- Pillar 1 -->
+              <div
+                class="group rounded-xl border border-brand-slate-200 bg-surface-container-lowest p-6 transition-all hover:border-brand-slate-400 hover:shadow-sm"
+              >
+                <div
+                  class="mb-4 flex h-10 w-10 items-center justify-center rounded-lg bg-surface-container-low text-primary transition-colors group-hover:bg-primary group-hover:text-on-primary"
+                >
+                  <span
+                    class="material-symbols-outlined text-[24px]"
+                    data-icon="tsunami"
+                    >tsunami</span
+                  >
+                </div>
+                <span
+                  class="font-label-sm text-label-sm font-semibold uppercase text-brand-slate-500"
+                  >Pillar 01</span
+                >
+                <h4 class="mb-2 mt-1 font-title-lg text-title-lg font-bold text-brand-navy-950">
+                  Deepwater SURF Architecture &amp; Metocean Mechanics
+                </h4>
+                <p class="mb-4 font-body-sm text-body-sm leading-relaxed text-brand-slate-700">
+                  System topology for Subsea Umbilicals, Risers, and Flowlines (SURF). Design of
+                  steel catenary risers (SCR), hybrid flexible jumpers, subsea trees, manifolds, and
+                  metocean 100-year return storm survival criteria.
+                </p>
+                <div class="flex flex-wrap gap-1.5 border-t border-brand-slate-100 pt-2">
+                  <span
+                    class="rounded bg-brand-slate-100 px-2 py-0.5 font-code-sm text-code-sm text-brand-slate-800"
+                    >OrcaFlex</span
+                  >
+                  <span
+                    class="rounded bg-brand-slate-100 px-2 py-0.5 font-code-sm text-code-sm text-brand-slate-800"
+                    >DNV-ST-F101</span
+                  >
+                  <span
+                    class="rounded bg-brand-slate-100 px-2 py-0.5 font-code-sm text-code-sm text-brand-slate-800"
+                    >API RP 17A</span
+                  >
+                </div>
+              </div>
+              <!-- Pillar 2 -->
+              <div
+                class="group rounded-xl border border-brand-slate-200 bg-surface-container-lowest p-6 transition-all hover:border-brand-slate-400 hover:shadow-sm"
+              >
+                <div
+                  class="mb-4 flex h-10 w-10 items-center justify-center rounded-lg bg-surface-container-low text-primary transition-colors group-hover:bg-primary group-hover:text-on-primary"
+                >
+                  <span
+                    class="material-symbols-outlined text-[24px]"
+                    data-icon="foundation"
+                    >foundation</span
+                  >
+                </div>
+                <span
+                  class="font-label-sm text-label-sm font-semibold uppercase text-brand-slate-500"
+                  >Pillar 02</span
+                >
+                <h4 class="mb-2 mt-1 font-title-lg text-title-lg font-bold text-brand-navy-950">
+                  Structural FEA &amp; Seabed Pipeline Geotechnics
+                </h4>
+                <p class="mb-4 font-body-sm text-body-sm leading-relaxed text-brand-slate-700">
+                  Lateral soil-pipe interaction, lateral buckling and walking mitigation, free-span
+                  fatigue assessment, on-bottom stability in soft Gulf of Guinea clays, and
+                  high-pressure high-temperature (HPHT) pipe stress modeling.
+                </p>
+                <div class="flex flex-wrap gap-1.5 border-t border-brand-slate-100 pt-2">
+                  <span
+                    class="rounded bg-brand-slate-100 px-2 py-0.5 font-code-sm text-code-sm text-brand-slate-800"
+                    >Caesar II</span
+                  >
+                  <span
+                    class="rounded bg-brand-slate-100 px-2 py-0.5 font-code-sm text-code-sm text-brand-slate-800"
+                    >Abaqus FEA</span
+                  >
+                  <span
+                    class="rounded bg-brand-slate-100 px-2 py-0.5 font-code-sm text-code-sm text-brand-slate-800"
+                    >AutoPIPE</span
+                  >
+                </div>
+              </div>
+              <!-- Pillar 3 -->
+              <div
+                class="group rounded-xl border border-brand-slate-200 bg-surface-container-lowest p-6 transition-all hover:border-brand-slate-400 hover:shadow-sm"
+              >
+                <div
+                  class="mb-4 flex h-10 w-10 items-center justify-center rounded-lg bg-surface-container-low text-primary transition-colors group-hover:bg-primary group-hover:text-on-primary"
+                >
+                  <span
+                    class="material-symbols-outlined text-[24px]"
+                    data-icon="water"
+                    >water</span
+                  >
+                </div>
+                <span
+                  class="font-label-sm text-label-sm font-semibold uppercase text-brand-slate-500"
+                  >Pillar 03</span
+                >
+                <h4 class="mb-2 mt-1 font-title-lg text-title-lg font-bold text-brand-navy-950">
+                  Multiphase Hydrodynamics &amp; Flow Assurance
+                </h4>
+                <p class="mb-4 font-body-sm text-body-sm leading-relaxed text-brand-slate-700">
+                  Transient thermal-hydraulic modeling, gas hydrate thermodynamics, wax and
+                  asphaltene deposition inhibition, slug catcher sizing, and subsea direct
+                  electrical heating (DEH) pipeline systems.
+                </p>
+                <div class="flex flex-wrap gap-1.5 border-t border-brand-slate-100 pt-2">
+                  <span
+                    class="rounded bg-brand-slate-100 px-2 py-0.5 font-code-sm text-code-sm text-brand-slate-800"
+                    >OLGA Transient</span
+                  >
+                  <span
+                    class="rounded bg-brand-slate-100 px-2 py-0.5 font-code-sm text-code-sm text-brand-slate-800"
+                    >Aspen HYSYS</span
+                  >
+                  <span
+                    class="rounded bg-brand-slate-100 px-2 py-0.5 font-code-sm text-code-sm text-brand-slate-800"
+                    >PVTsim</span
+                  >
+                </div>
+              </div>
+              <!-- Pillar 4 -->
+              <div
+                class="group rounded-xl border border-brand-slate-200 bg-surface-container-lowest p-6 transition-all hover:border-brand-slate-400 hover:shadow-sm"
+              >
+                <div
+                  class="mb-4 flex h-10 w-10 items-center justify-center rounded-lg bg-surface-container-low text-primary transition-colors group-hover:bg-primary group-hover:text-on-primary"
+                >
+                  <span
+                    class="material-symbols-outlined text-[24px]"
+                    data-icon="precision_manufacturing"
+                    >precision_manufacturing</span
+                  >
+                </div>
+                <span
+                  class="font-label-sm text-label-sm font-semibold uppercase text-brand-slate-500"
+                  >Pillar 04</span
+                >
+                <h4 class="mb-2 mt-1 font-title-lg text-title-lg font-bold text-brand-navy-950">
+                  Asset Integrity, ROV Metrology &amp; Digital Twins
+                </h4>
+                <p class="mb-4 font-body-sm text-body-sm leading-relaxed text-brand-slate-700">
+                  Subsea acoustic inspection, acoustic Doppler current profilers (ADCP), cathodic
+                  protection modeling (DNV-RP-B401), subsea robotics operations, and
+                  cloud-synchronized real-time digital twin monitoring.
+                </p>
+                <div class="flex flex-wrap gap-1.5 border-t border-brand-slate-100 pt-2">
+                  <span
+                    class="rounded bg-brand-slate-100 px-2 py-0.5 font-code-sm text-code-sm text-brand-slate-800"
+                    >AVEVA E3D</span
+                  >
+                  <span
+                    class="rounded bg-brand-slate-100 px-2 py-0.5 font-code-sm text-code-sm text-brand-slate-800"
+                    >Python / SciPy</span
+                  >
+                  <span
+                    class="rounded bg-brand-slate-100 px-2 py-0.5 font-code-sm text-code-sm text-brand-slate-800"
+                    >Cathodic FEA</span
+                  >
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- SECTION 3: DELIVERY MODEL & COHORT ARCHITECTURE -->
+          <section class="space-y-6 border-t border-brand-slate-200 pt-8">
+            <div>
+              <span
+                class="font-label-sm text-label-sm font-bold uppercase tracking-widest text-primary"
+                >Pedagogical Framework</span
+              >
+              <h3 class="font-headline-lg text-headline-lg tracking-tight text-brand-navy-950">
+                Modular Trimester Cohort Timeline
+              </h3>
+              <p class="mt-1 font-body-md text-body-md text-brand-slate-700">
+                Structured specifically for practicing field engineers and technical graduates with
+                rigorous weekend on-campus intensive modules and continuous cloud-based virtual
+                workstation access.
+              </p>
+            </div>
+            <div class="space-y-3">
+              <!-- Trimester 1 -->
+              <div
+                class="flex flex-col justify-between gap-4 rounded-lg border border-brand-slate-200 bg-surface-container-lowest p-4 sm:flex-row sm:items-center"
+              >
+                <div class="flex items-start gap-3">
+                  <div
+                    class="mt-0.5 flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-primary/10 font-bold text-primary"
+                  >
+                    1
+                  </div>
+                  <div>
+                    <h4 class="font-title-lg text-title-lg font-semibold text-brand-navy-950">
+                      Trimester I: Theoretical Physics &amp; Structural Foundations
+                    </h4>
+                    <p class="font-body-sm text-body-sm text-brand-slate-500">
+                      Hydrodynamics, seabed mechanics, materials metallurgy, and Caesar II
+                      introductory piping codes.
+                    </p>
+                  </div>
+                </div>
+                <div class="shrink-0 text-left sm:text-right">
+                  <span class="block font-label-sm text-label-sm font-semibold text-brand-slate-800"
+                    >Months 1 – 4</span
+                  >
+                  <span class="font-code-sm text-code-sm text-primary">20 Credit Units</span>
+                </div>
+              </div>
+              <!-- Trimester 2 -->
+              <div
+                class="flex flex-col justify-between gap-4 rounded-lg border border-brand-slate-200 bg-surface-container-lowest p-4 sm:flex-row sm:items-center"
+              >
+                <div class="flex items-start gap-3">
+                  <div
+                    class="mt-0.5 flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-primary/10 font-bold text-primary"
+                  >
+                    2
+                  </div>
+                  <div>
+                    <h4 class="font-title-lg text-title-lg font-semibold text-brand-navy-950">
+                      Trimester II: SURF Systems &amp; Dynamic Computational Simulation
+                    </h4>
+                    <p class="font-body-sm text-body-sm text-brand-slate-500">
+                      OrcaFlex riser analysis, OLGA flow assurance, subsea manifolds, and HPHT
+                      pipeline stability.
+                    </p>
+                  </div>
+                </div>
+                <div class="shrink-0 text-left sm:text-right">
+                  <span class="block font-label-sm text-label-sm font-semibold text-brand-slate-800"
+                    >Months 5 – 8</span
+                  >
+                  <span class="font-code-sm text-code-sm text-primary">20 Credit Units</span>
+                </div>
+              </div>
+              <!-- Trimester 3 -->
+              <div
+                class="flex flex-col justify-between gap-4 rounded-lg border border-brand-slate-200 bg-surface-container-lowest p-4 sm:flex-row sm:items-center"
+              >
+                <div class="flex items-start gap-3">
+                  <div
+                    class="mt-0.5 flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-primary/10 font-bold text-primary"
+                  >
+                    3
+                  </div>
+                  <div>
+                    <h4 class="font-title-lg text-title-lg font-semibold text-brand-navy-950">
+                      Trimester III: Capstone Field Project &amp; Institutional Oral Defense
+                    </h4>
+                    <p class="font-body-sm text-body-sm text-brand-slate-500">
+                      Live operational field scenario, full FEED pipeline package generation, and
+                      external Senate defense panel.
+                    </p>
+                  </div>
+                </div>
+                <div class="shrink-0 text-left sm:text-right">
+                  <span class="block font-label-sm text-label-sm font-semibold text-brand-slate-800"
+                    >Months 9 – 12</span
+                  >
+                  <span class="font-code-sm text-code-sm text-primary">20 Credit Units</span>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- SECTION 4: TARGET PROFILES & RECRUITING OPERATORS -->
+          <section class="space-y-6 border-t border-brand-slate-200 pt-8">
+            <div>
+              <span
+                class="font-label-sm text-label-sm font-bold uppercase tracking-widest text-primary"
+                >Trajectory &amp; Alignment</span
+              >
+              <h3 class="font-headline-lg text-headline-lg tracking-tight text-brand-navy-950">
+                Target Profiles &amp; Industrial Hiring Consortium
+              </h3>
+            </div>
+            <div class="grid grid-cols-1 gap-6 md:grid-cols-2">
+              <div class="space-y-3">
+                <h4 class="font-title-lg text-title-lg font-semibold text-brand-navy-950">
+                  Target Engineering Candidates
+                </h4>
+                <ul class="space-y-2 font-body-sm text-body-sm text-brand-slate-700">
+                  <li class="flex items-start gap-2">
+                    <span
+                      class="material-symbols-outlined mt-0.5 shrink-0 text-[18px] text-primary"
+                      data-icon="check_circle"
+                      >check_circle</span
+                    >
+                    Mechanical, Marine, Civil, Chemical, or Petroleum Engineers with minimum B.Tech
+                    / B.Eng / B.Sc.
+                  </li>
+                  <li class="flex items-start gap-2">
+                    <span
+                      class="material-symbols-outlined mt-0.5 shrink-0 text-[18px] text-primary"
+                      data-icon="check_circle"
+                      >check_circle</span
+                    >
+                    Mid-career onshore pipeline engineers pivoting to deepwater offshore EPC
+                    concessions.
+                  </li>
+                  <li class="flex items-start gap-2">
+                    <span
+                      class="material-symbols-outlined mt-0.5 shrink-0 text-[18px] text-primary"
+                      data-icon="check_circle"
+                      >check_circle</span
+                    >
+                    Regulatory officers (NUPRC, NCDMB, NIMASA) requiring advanced algorithmic
+                    verification literacy.
+                  </li>
+                </ul>
+              </div>
+              <div class="space-y-3">
+                <h4 class="font-title-lg text-title-lg font-semibold text-brand-navy-950">
+                  Operator Placement Pipeline
+                </h4>
+                <p class="font-body-sm text-body-sm text-brand-slate-700">
+                  CMOTD graduates are routinely recruited directly by deepwater joint-venture
+                  operators and tier-1 EPCIC contractors across Port Harcourt, Lagos, and Aberdeen:
+                </p>
+                <div
+                  class="grid grid-cols-2 gap-2 font-label-md text-label-md text-brand-slate-800"
+                >
+                  <div
+                    class="flex items-center gap-2 rounded border border-brand-slate-200 bg-surface-container-low p-2.5"
+                  >
+                    <span class="h-2 w-2 rounded-full bg-status-verified"></span>
+                    Shell Nigeria Exploration (SNEPCo)
+                  </div>
+                  <div
+                    class="flex items-center gap-2 rounded border border-brand-slate-200 bg-surface-container-low p-2.5"
+                  >
+                    <span class="h-2 w-2 rounded-full bg-status-verified"></span>
+                    TotalEnergies EP Nigeria
+                  </div>
+                  <div
+                    class="flex items-center gap-2 rounded border border-brand-slate-200 bg-surface-container-low p-2.5"
+                  >
+                    <span class="h-2 w-2 rounded-full bg-status-verified"></span>
+                    Saipem Contracting Nigeria
+                  </div>
+                  <div
+                    class="flex items-center gap-2 rounded border border-brand-slate-200 bg-surface-container-low p-2.5"
+                  >
+                    <span class="h-2 w-2 rounded-full bg-status-verified"></span>
+                    Nigeria LNG (NLNG) Bonny
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+        <!-- RIGHT SIDEBAR: STICKY TUITION & ADMISSIONS DOSSIER (4 COLUMNS) -->
+        <aside class="space-y-6 lg:sticky lg:top-[150px] lg:col-span-4">
+          <!-- Sticky Enrollment Card -->
+          <div
+            class="space-y-6 rounded-xl border-2 border-primary/20 bg-surface-container-lowest p-6 shadow-sm"
+            id="enroll-dossier"
+          >
+            <!-- Cohort Urgency Pill -->
+            <div class="flex items-center justify-between">
+              <span
+                class="inline-flex items-center gap-1.5 rounded-full border border-status-warning/20 bg-status-warning-bg px-2.5 py-1 font-label-sm text-label-sm font-semibold text-status-warning"
+              >
+                <span class="h-2 w-2 animate-pulse rounded-full bg-status-warning"></span>
+                Oct 2025 Cohort: 5 Seats Left
+              </span>
+              <span class="font-label-sm text-label-sm text-brand-slate-500">Batch 14 Intake</span>
+            </div>
+            <!-- Tuition Summary Block -->
+            <div>
+              <div
+                class="font-label-sm text-label-sm uppercase tracking-wider text-brand-slate-500"
+              >
+                Subsidized Professional Tuition
+              </div>
+              <div class="mt-1 flex items-baseline gap-2">
+                <span class="font-headline-lg text-headline-lg font-bold text-brand-navy-950"
+                  >₦1,450,000</span
+                >
+                <span class="font-body-sm text-body-sm text-brand-slate-500">/ ~USD $1,800</span>
+              </div>
+              <p class="mt-1 font-body-sm text-body-sm text-brand-slate-500">
+                Covers full workstation allocation, software licensing keys, laboratory materials,
+                and Rivers State University Senate diploma conferral fees. Flexible 3-trimester
+                installment scheme available.
+              </p>
+            </div>
+            <!-- Quick Action Buttons -->
+            <div class="space-y-2.5 pt-2">
+              <button
+                class="flex w-full items-center justify-center gap-2 rounded-lg bg-primary py-3 font-label-md text-label-md font-semibold text-on-primary shadow-sm transition-all duration-150 hover:bg-brand-cobalt-deep"
+                type="button"
+              >
+                <span
+                  class="material-symbols-outlined text-[18px]"
+                  data-icon="how_to_reg"
+                  >how_to_reg</span
+                >
+                Enroll &amp; Secure Workstation
+              </button>
+              <button
+                class="flex w-full items-center justify-center gap-2 rounded-lg border border-brand-slate-200 bg-surface-container-low py-2.5 font-label-md text-label-md text-brand-slate-800 transition-colors hover:bg-surface-container"
+                type="button"
+              >
+                <span
+                  class="material-symbols-outlined text-brand-slate-600 text-[18px]"
+                  data-icon="download"
+                  >download</span
+                >
+                Download Complete Spec PDF (14 MB)
+              </button>
+              <button
+                class="flex w-full items-center justify-center gap-1 py-2 text-center font-label-md text-label-md text-primary transition-colors hover:text-brand-cobalt-deep"
+                type="button"
+              >
+                <span
+                  class="material-symbols-outlined text-[16px]"
+                  data-icon="assignment"
+                  >assignment</span
+                >
+                Submit Admission Dossier for Review
+              </button>
+            </div>
+            <!-- Specifications Quick Checklist -->
+            <div
+              class="space-y-2.5 border-t border-brand-slate-100 pt-4 font-body-sm text-body-sm text-brand-slate-700"
+            >
+              <div class="flex items-center justify-between">
+                <span class="text-brand-slate-500">Conferring Authority</span>
+                <span class="text-right font-semibold text-brand-navy-950"
+                  >Rivers State University</span
+                >
+              </div>
+              <div class="flex items-center justify-between">
+                <span class="text-brand-slate-500">Degree Level</span>
+                <span class="font-semibold text-brand-navy-950">Postgraduate Diploma (PGD)</span>
+              </div>
+              <div class="flex items-center justify-between">
+                <span class="text-brand-slate-500">Class Modality</span>
+                <span class="font-semibold text-brand-navy-950"
+                  >Executive Hybrid (Weekend + HPC)</span
+                >
+              </div>
+              <div class="flex items-center justify-between">
+                <span class="text-brand-slate-500">Lab Compute Access</span>
+                <span class="font-semibold text-brand-navy-950"
+                  >24/7 Dedicated Remote GPU Node</span
+                >
+              </div>
+              <div class="flex items-center justify-between">
+                <span class="text-brand-slate-500">Certificate Verification</span>
+                <span class="flex items-center gap-1 font-semibold text-status-verified">
+                  <span
+                    class="material-symbols-outlined text-[14px]"
+                    data-icon="check_circle"
+                    >check_circle</span
+                  >
+                  Cryptographic Hash
+                </span>
+              </div>
+            </div>
+            <!-- Corporate Sponsorship Support Note -->
+            <div
+              class="rounded-lg border border-brand-slate-200 bg-brand-slate-50 p-3 font-body-sm text-body-sm"
+            >
+              <div class="flex items-start gap-2">
+                <span
+                  class="material-symbols-outlined mt-0.5 shrink-0 text-[18px] text-primary"
+                  data-icon="business"
+                  >business</span
+                >
+                <div>
+                  <span class="block font-semibold text-brand-navy-950"
+                    >Corporate &amp; NCDMB Sponsorship</span
+                  >
+                  <span class="text-brand-slate-600 font-label-sm text-label-sm">
+                    Invoices directly deductible under Nigerian Content Human Capital Development
+                    (NCHCD) training mandates.
+                  </span>
+                </div>
+              </div>
+            </div>
+            <!-- Direct Admissions Desk Liaison -->
+            <div class="flex items-center gap-3 border-t border-brand-slate-100 pt-4">
+              <div
+                class="flex h-10 w-10 items-center justify-center rounded-full bg-surface-container font-bold text-primary"
+              >
+                <span
+                  class="material-symbols-outlined text-[20px]"
+                  data-icon="support_agent"
+                  >support_agent</span
+                >
+              </div>
+              <div class="font-label-sm text-label-sm">
+                <span class="block text-brand-slate-500">Postgraduate Secretariat Desk</span>
+                <a
+                  class="font-semibold text-primary hover:underline"
+                  href="mailto:admissions.cmotd@ust.edu.ng"
+                  >admissions.cmotd@ust.edu.ng</a
+                >
+                <span class="text-brand-slate-600 block">+234 (0) 84 992 104</span>
+              </div>
+            </div>
+          </div>
+          <!-- Academic Certification Security Validation Card -->
+          <div
+            class="space-y-3 rounded-xl border border-brand-slate-200 bg-surface-container-low p-5"
+          >
+            <div class="flex items-center gap-2 text-status-verified">
+              <span
+                class="material-symbols-outlined text-[20px]"
+                data-icon="verified_user"
+                >verified_user</span
+              >
+              <span class="font-label-md text-label-md font-bold"
+                >Tamper-Evident Institutional Guarantee</span
+              >
+            </div>
+            <p class="font-body-sm text-body-sm text-brand-slate-700">
+              Every diploma issued under this program is permanently stamped onto the Rivers State
+              University cryptographic registry, allowing instantaneous verification by offshore
+              energy operators worldwide.
+            </p>
+            <a
+              class="inline-flex items-center gap-1 font-label-sm text-primary hover:underline"
+              href="#"
+            >
+              <span>Query Verification Registry</span>
+              <span
+                class="material-symbols-outlined text-[14px]"
+                data-icon="open_in_new"
+                >open_in_new</span
+              >
+            </a>
+          </div>
+        </aside>
+      </div>
+    </main>
+    <!-- INSTITUTIONAL FOOTER (Matches Shared Component JSON: Footer) -->
+    <cmotd-institution-strip></cmotd-institution-strip>
+    <cmotd-site-footer></cmotd-site-footer>
+  </body>
+</html>

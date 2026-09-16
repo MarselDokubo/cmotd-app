@@ -1,0 +1,757 @@
+<!doctype html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      content="width=device-width, initial-scale=1.0"
+      name="viewport"
+    />
+    <title>CMOTD - Facilities Live Reservation Conflict &amp; Overlapping Booking Advisory</title>
+    <link
+      href="../favicon.ico"
+      rel="icon"
+      type="image/x-icon"
+    />
+    <link
+      href="../assets/css/tailwind-build.css"
+      rel="stylesheet"
+    />
+    <link
+      href="../assets/css/cmotd-global.css"
+      rel="stylesheet"
+    />
+    <script
+      defer=""
+      src="../assets/js/site-config.js"
+    ></script>
+    <script
+      defer=""
+      src="../assets/js/cmotd-components.js"
+    ></script>
+  </head>
+  <body class="flex min-h-screen flex-col bg-surface font-body-md text-on-surface antialiased">
+    <!-- TOP INSTITUTIONAL NAVIGATION BAR (Exact Shared Component Specification) -->
+    <cmotd-site-header active="services"></cmotd-site-header>
+    <!-- MAIN CANVAS CONTAINER -->
+    <main class="mx-auto w-full max-w-[1280px] flex-1 px-6 py-8">
+      <!-- BREADCRUMB NAVIGATION -->
+      <nav
+        aria-label="Breadcrumb"
+        class="mb-4 flex items-center gap-2 font-label-sm text-label-sm text-brand-slate-500"
+      >
+        <a
+          class="hover:text-primary"
+          href="#"
+          >Home</a
+        >
+        <span
+          class="material-symbols-outlined text-sm"
+          data-icon="chevron_right"
+          >chevron_right</span
+        >
+        <a
+          class="hover:text-primary"
+          href="#"
+          >Facilities &amp; Labs</a
+        >
+        <span
+          class="material-symbols-outlined text-sm"
+          data-icon="chevron_right"
+          >chevron_right</span
+        >
+        <a
+          class="hover:text-primary"
+          href="#"
+          >Live Availability &amp; Schedule Matrix</a
+        >
+        <span
+          class="material-symbols-outlined text-sm"
+          data-icon="chevron_right"
+          >chevron_right</span
+        >
+        <span class="font-semibold text-status-danger">Booking Conflict Detected</span>
+      </nav>
+      <!-- CRITICAL STATUS BANNER: RESERVATION COLLISION -->
+      <div
+        class="mb-6 flex items-start justify-between rounded-lg border-l-4 border-status-danger bg-status-danger-bg p-4 shadow-sm"
+      >
+        <div class="flex items-start gap-3.5">
+          <div class="shrink-0 rounded border border-red-200 bg-white p-2 text-status-danger">
+            <span
+              class="material-symbols-outlined text-2xl"
+              data-icon="warning"
+              >warning</span
+            >
+          </div>
+          <div>
+            <div class="mb-1 flex items-center gap-2">
+              <span
+                class="rounded bg-status-danger px-2 py-0.5 font-label-sm text-label-sm font-semibold uppercase tracking-wider text-white"
+                >Collision Code 409</span
+              >
+              <h1 class="font-headline-sm text-headline-sm font-bold text-brand-navy-950">
+                CONCURRENT RESERVATION HOLD
+              </h1>
+            </div>
+            <p class="font-body-sm text-body-sm text-brand-slate-700">
+              Selected Timeframe Currently Locked by Primary Corporate Operator (<strong
+                class="font-semibold text-brand-navy-900"
+                >TotalEnergies EP Nigeria - Hull Resistance Trials</strong
+              >). System lock prevents concurrent slot requisition.
+            </p>
+          </div>
+        </div>
+        <div class="hidden shrink-0 flex-col items-end border-l border-red-200 pl-4 md:flex">
+          <span class="font-label-sm text-label-sm text-brand-slate-500">Telemetry Status</span>
+          <span
+            class="mt-0.5 flex items-center gap-1.5 font-code-sm text-code-sm font-bold text-status-danger"
+          >
+            <span class="h-2 w-2 animate-ping rounded-full bg-status-danger"></span>
+            ACTIVE EXCLUSIVITY OVERLAP
+          </span>
+        </div>
+      </div>
+      <!-- REAL-TIME TELEMETRY BAR -->
+      <section
+        aria-label="Conflict Telemetry Overview"
+        class="mb-8 grid grid-cols-1 gap-4 rounded-xl border border-brand-slate-200 bg-surface-container-lowest p-4 shadow-sm md:grid-cols-2 lg:grid-cols-4"
+      >
+        <div
+          class="flex items-center gap-3 rounded-lg border border-brand-slate-200 bg-brand-slate-50 p-2"
+        >
+          <div class="rounded border border-brand-slate-200 bg-white p-2 text-brand-cobalt">
+            <span
+              class="material-symbols-outlined text-[20px]"
+              data-icon="qr_code_2"
+              >qr_code_2</span
+            >
+          </div>
+          <div>
+            <span class="block font-label-sm text-label-sm text-brand-slate-500"
+              >Conflict Identifier</span
+            >
+            <span class="block font-code-sm text-code-sm font-bold text-brand-navy-950"
+              >RES-CONFLICT-409</span
+            >
+          </div>
+        </div>
+        <div
+          class="flex items-center gap-3 rounded-lg border border-brand-slate-200 bg-brand-slate-50 p-2"
+        >
+          <div class="rounded border border-brand-slate-200 bg-white p-2 text-brand-cobalt">
+            <span
+              class="material-symbols-outlined text-[20px]"
+              data-icon="science"
+              >science</span
+            >
+          </div>
+          <div>
+            <span class="block font-label-sm text-label-sm text-brand-slate-500"
+              >Target Facility Unit</span
+            >
+            <span
+              class="block max-w-[210px] truncate font-body-sm text-body-sm font-semibold text-brand-navy-950"
+              >50m Hydrodynamic Tank (Bay 1)</span
+            >
+          </div>
+        </div>
+        <div
+          class="flex items-center gap-3 rounded-lg border border-brand-slate-200 bg-brand-slate-50 p-2"
+        >
+          <div class="rounded border border-brand-slate-200 bg-white p-2 text-status-danger">
+            <span
+              class="material-symbols-outlined text-[20px]"
+              data-icon="event_busy"
+              >event_busy</span
+            >
+          </div>
+          <div>
+            <span class="block font-label-sm text-label-sm text-brand-slate-500"
+              >Colliding Window</span
+            >
+            <span class="block font-code-sm text-code-sm font-bold text-brand-navy-950"
+              >Wed, Oct 22 • 09:00 - 13:00 WAT</span
+            >
+          </div>
+        </div>
+        <div
+          class="flex items-center gap-3 rounded-lg border border-amber-200 bg-status-warning-bg p-2"
+        >
+          <div class="rounded border border-amber-200 bg-white p-2 text-status-warning">
+            <span
+              class="material-symbols-outlined text-[20px]"
+              data-icon="timer"
+              >timer</span
+            >
+          </div>
+          <div>
+            <span class="block font-label-sm text-label-sm text-amber-800"
+              >Corporate LPO Lockout</span
+            >
+            <span class="block font-code-sm text-code-sm font-bold text-status-warning"
+              >14m 28s Remaining</span
+            >
+          </div>
+        </div>
+      </section>
+      <!-- 2-COLUMN OPERATIONAL GRID -->
+      <div class="grid grid-cols-1 items-start gap-8 lg:grid-cols-12">
+        <!-- LEFT COLUMN: SCHEDULE MATRIX WITH HIGH-CONTRAST CONFLICT VISUALIZATION (7 COLS) -->
+        <section
+          class="rounded-xl border border-brand-slate-200 bg-surface-container-lowest p-6 shadow-sm lg:col-span-7"
+        >
+          <div class="mb-4 flex items-center justify-between border-b border-brand-slate-200 pb-4">
+            <div>
+              <h2 class="font-headline-sm text-headline-sm font-bold text-brand-navy-950">
+                Facility Basin Schedule Matrix
+              </h2>
+              <p class="font-body-sm text-body-sm text-brand-slate-500">
+                50-Metre Hydrodynamic Towing Tank &amp; Flume Basin • Week 43 (October 2025)
+              </p>
+            </div>
+            <div class="flex items-center gap-3 font-label-sm text-label-sm">
+              <span class="flex items-center gap-1.5"
+                ><span class="h-2.5 w-2.5 rounded-sm bg-status-verified"></span> Open</span
+              >
+              <span class="flex items-center gap-1.5"
+                ><span class="h-2.5 w-2.5 rounded-sm bg-brand-slate-400"></span> Confirmed</span
+              >
+              <span class="flex items-center gap-1.5"
+                ><span class="h-2.5 w-2.5 rounded-sm bg-status-danger"></span> Lockout
+                Collision</span
+              >
+            </div>
+          </div>
+          <!-- TABULAR SLOTS MATRIX -->
+          <div class="overflow-hidden rounded-lg border border-brand-slate-200 bg-brand-slate-50">
+            <div
+              class="grid grid-cols-5 border-b border-brand-slate-200 bg-brand-slate-100 py-2.5 text-center font-label-sm text-label-sm font-semibold text-brand-slate-700"
+            >
+              <div>Mon, Oct 20</div>
+              <div>Tue, Oct 21</div>
+              <div class="font-bold text-primary">Wed, Oct 22</div>
+              <div>Thu, Oct 23</div>
+              <div>Fri, Oct 24</div>
+            </div>
+            <!-- MORNING SLOT (09:00 - 13:00 WAT) -->
+            <div class="border-b border-brand-slate-200 bg-white p-3">
+              <span class="mb-2 block font-code-sm text-code-sm font-semibold text-brand-slate-500"
+                >SHIFT 1: 09:00 – 13:00 WAT</span
+              >
+              <div class="grid grid-cols-5 gap-2">
+                <!-- Mon -->
+                <div
+                  class="rounded border border-brand-slate-200 bg-brand-slate-100 p-2.5 text-center text-brand-slate-500"
+                >
+                  <span class="block font-label-sm text-label-sm font-medium">Maintenance</span>
+                  <span class="font-code-sm text-[10px] text-code-sm">Sensor Re-cal</span>
+                </div>
+                <!-- Tue -->
+                <div
+                  class="rounded border border-brand-slate-200 bg-brand-slate-100 p-2.5 text-center text-brand-slate-500"
+                >
+                  <span class="block font-label-sm text-label-sm font-medium">Chevron JIP</span>
+                  <span class="font-code-sm text-[10px] text-code-sm">VIM Mooring</span>
+                </div>
+                <!-- Wed: THE COLLISION SLOT -->
+                <div
+                  class="collision-diagonal-pattern relative overflow-hidden rounded-lg border-2 border-status-danger p-2.5 text-status-danger shadow-inner"
+                >
+                  <div class="mb-1 flex items-center justify-between">
+                    <span class="flex items-center gap-1 font-label-sm text-label-sm font-bold">
+                      <span
+                        class="material-symbols-outlined text-[14px]"
+                        data-icon="lock"
+                        >lock</span
+                      >
+                      CONFLICT
+                    </span>
+                    <span class="h-2 w-2 rounded-full bg-status-danger"></span>
+                  </div>
+                  <span
+                    class="block font-code-sm text-[11px] text-code-sm font-bold leading-tight text-brand-navy-950"
+                    >TotalEnergies EP</span
+                  >
+                  <span
+                    class="mt-1 block font-label-sm text-[10px] text-label-sm font-semibold text-status-danger"
+                    >Provisional Hold</span
+                  >
+                </div>
+                <!-- Thu -->
+                <div
+                  class="rounded border border-brand-slate-200 bg-brand-slate-100 p-2.5 text-center text-brand-slate-500"
+                >
+                  <span class="block font-label-sm text-label-sm font-medium">Shell SNEPCo</span>
+                  <span class="font-code-sm text-[10px] text-code-sm">Bonga Flowline</span>
+                </div>
+                <!-- Fri: OPEN ALTERNATIVE -->
+                <div
+                  class="cursor-pointer rounded border-2 border-emerald-300 bg-status-verified-bg p-2.5 text-center text-status-verified transition-colors hover:border-status-verified"
+                >
+                  <span class="block font-label-sm text-label-sm font-bold">AVAILABLE</span>
+                  <span
+                    class="mt-0.5 block font-code-sm text-[10px] text-code-sm text-brand-slate-700"
+                    >Morning Slot</span
+                  >
+                  <button
+                    class="mt-1 rounded bg-status-verified px-1.5 py-0.5 text-[10px] font-semibold text-white"
+                    type="button"
+                  >
+                    Select
+                  </button>
+                </div>
+              </div>
+            </div>
+            <!-- AFTERNOON SLOT (13:30 - 17:30 WAT) -->
+            <div class="bg-white p-3">
+              <span class="mb-2 block font-code-sm text-code-sm font-semibold text-brand-slate-500"
+                >SHIFT 2: 13:30 – 17:30 WAT</span
+              >
+              <div class="grid grid-cols-5 gap-2">
+                <!-- Mon -->
+                <div
+                  class="rounded border border-brand-slate-200 bg-brand-slate-100 p-2.5 text-center text-brand-slate-500"
+                >
+                  <span class="block font-label-sm text-label-sm font-medium">Tank Draining</span>
+                  <span class="font-code-sm text-[10px] text-code-sm">Filter Cleanse</span>
+                </div>
+                <!-- Tue -->
+                <div
+                  class="cursor-pointer rounded border border-brand-slate-200 bg-white p-2.5 text-center text-brand-slate-700 transition-colors hover:border-primary"
+                >
+                  <span class="block font-label-sm text-label-sm font-semibold text-primary"
+                    >Open Slot</span
+                  >
+                  <span class="font-code-sm text-[10px] text-code-sm text-brand-slate-500"
+                    >Standard Rate</span
+                  >
+                </div>
+                <!-- Wed: ADJACENT RECOMMENDED ALTERNATIVE -->
+                <div
+                  class="relative cursor-pointer rounded-lg border-2 border-brand-cobalt bg-status-info-bg p-2.5 text-center text-primary ring-2 ring-blue-400/20 transition-colors hover:bg-blue-100/50"
+                >
+                  <div
+                    class="py-0.2 absolute -top-2 left-1/2 -translate-x-1/2 rounded-full bg-brand-cobalt px-2 text-[9px] font-bold uppercase tracking-wider text-white"
+                  >
+                    Recommended
+                  </div>
+                  <span class="mt-1 block font-label-sm text-label-sm font-bold text-primary"
+                    >AVAILABLE NOW</span
+                  >
+                  <span class="block font-code-sm text-[10px] text-code-sm text-brand-slate-700"
+                    >Same-Day Shift 2</span
+                  >
+                  <button
+                    class="mt-1 rounded bg-primary px-2 py-0.5 text-[10px] font-semibold text-white"
+                    type="button"
+                  >
+                    Direct Swap
+                  </button>
+                </div>
+                <!-- Thu -->
+                <div
+                  class="rounded border border-brand-slate-200 bg-brand-slate-100 p-2.5 text-center text-brand-slate-500"
+                >
+                  <span class="block font-label-sm text-label-sm font-medium">Shell SNEPCo</span>
+                  <span class="font-code-sm text-[10px] text-code-sm">Session 2 (JIP)</span>
+                </div>
+                <!-- Fri -->
+                <div
+                  class="rounded border border-brand-slate-200 bg-brand-slate-100 p-2.5 text-center text-brand-slate-500"
+                >
+                  <span class="block font-label-sm text-label-sm font-medium">Academic Lab</span>
+                  <span class="font-code-sm text-[10px] text-code-sm">RSU PG Demo</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- TIMELINE ADVISORY NOTICE -->
+          <div
+            class="mt-4 flex items-start gap-2.5 rounded-lg border border-brand-slate-200 bg-brand-slate-50 p-3"
+          >
+            <span
+              class="material-symbols-outlined mt-0.5 shrink-0 text-[18px] text-brand-slate-500"
+              data-icon="info"
+              >info</span
+            >
+            <p class="text-brand-slate-600 font-body-sm text-body-sm">
+              <strong>RSU CMOTD Laboratory Rule 14.3:</strong> Corporate provisional holds are
+              granted a mandatory 30-minute Remita Treasury Single Account (TSA) payment and LPO
+              confirmation window. If unconfirmed by 14m 28s, this timeframe unlocks immediately for
+              the standby waitlist.
+            </p>
+          </div>
+          <!-- RESOLUTION ACTION OPTIONS CARDS (4 PATHWAYS) -->
+          <div class="mt-6 space-y-3">
+            <h3 class="font-title-lg text-title-lg font-semibold text-brand-navy-950">
+              Immediate Resolution Pathways
+            </h3>
+            <!-- Option A: Priority Standby Queue -->
+            <div
+              class="flex items-center justify-between rounded-lg border border-brand-slate-200 bg-white p-4 transition-colors hover:border-brand-cobalt"
+            >
+              <div class="flex items-start gap-3">
+                <div
+                  class="flex h-9 w-9 shrink-0 items-center justify-center rounded border border-amber-200 bg-amber-50 text-status-warning"
+                >
+                  <span
+                    class="material-symbols-outlined text-[20px]"
+                    data-icon="hourglass_top"
+                    >hourglass_top</span
+                  >
+                </div>
+                <div>
+                  <h4 class="font-label-md text-label-md font-bold text-brand-navy-950">
+                    Pathway A: Join Priority Standby Queue / Bumping Waitlist
+                  </h4>
+                  <p class="text-brand-slate-600 font-body-sm text-body-sm">
+                    Position #1 in queue. Automatically converts to confirmed testing requisition if
+                    the primary corporate holder fails to upload the verified Remita RRR voucher
+                    within the timeout window.
+                  </p>
+                </div>
+              </div>
+              <button
+                class="shrink-0 rounded-lg bg-brand-navy-900 px-3.5 py-2 font-label-md text-label-md text-white transition-colors hover:bg-brand-navy-950"
+                type="button"
+              >
+                Queue Position #1
+              </button>
+            </div>
+            <!-- Option B: Adjacent Switch -->
+            <div
+              class="flex items-center justify-between rounded-lg border-2 border-primary bg-surface-container-low p-4"
+            >
+              <div class="flex items-start gap-3">
+                <div
+                  class="flex h-9 w-9 shrink-0 items-center justify-center rounded bg-primary text-white"
+                >
+                  <span
+                    class="material-symbols-outlined text-[20px]"
+                    data-icon="swap_horiz"
+                    >swap_horiz</span
+                  >
+                </div>
+                <div>
+                  <span
+                    class="mb-1 inline-block rounded bg-primary-fixed px-2 py-0.5 font-label-sm text-label-sm font-semibold text-on-primary-fixed"
+                    >Fastest Confirmation</span
+                  >
+                  <h4 class="font-label-md text-label-md font-bold text-brand-navy-950">
+                    Pathway B: Bump to Adjacent Available Window (Same Day)
+                  </h4>
+                  <p class="font-body-sm text-body-sm text-brand-slate-700">
+                    Re-route testing rig to
+                    <strong>Wednesday, Oct 22 • 13:30 - 17:30 WAT (Shift 2)</strong>. Hydrodynamic
+                    carriage calibrations and technical staff assignments transfer instantly.
+                  </p>
+                </div>
+              </div>
+              <button
+                class="shrink-0 rounded-lg bg-primary px-4 py-2 font-label-md text-label-md font-semibold text-white shadow-sm transition-colors hover:bg-brand-cobalt-deep"
+                type="button"
+              >
+                Switch to 13:30 Slot
+              </button>
+            </div>
+            <!-- Option C: Co-Occupancy -->
+            <div
+              class="flex items-center justify-between rounded-lg border border-brand-slate-200 bg-white p-4 transition-colors hover:border-brand-cobalt"
+            >
+              <div class="flex items-start gap-3">
+                <div
+                  class="flex h-9 w-9 shrink-0 items-center justify-center rounded border border-status-verified-border bg-emerald-50 text-status-verified"
+                >
+                  <span
+                    class="material-symbols-outlined text-[20px]"
+                    data-icon="handshake"
+                    >handshake</span
+                  >
+                </div>
+                <div>
+                  <h4 class="font-label-md text-label-md font-bold text-brand-navy-950">
+                    Pathway C: Request Shared Basin Window (Co-Occupancy)
+                  </h4>
+                  <p class="text-brand-slate-600 font-body-sm text-body-sm">
+                    Per RSU Senate Shared Research Guidelines, non-confidential physical trials
+                    (wave-flume acoustic calibration or mooring line tensiometry) can negotiate
+                    split-bay usage.
+                  </p>
+                </div>
+              </div>
+              <button
+                class="border-brand-slate-300 shrink-0 rounded-lg border px-3.5 py-2 font-label-md text-label-md text-brand-slate-800 transition-colors hover:bg-brand-slate-50"
+                type="button"
+              >
+                Submit Protocol Request
+              </button>
+            </div>
+            <!-- Option D: Contact Lab Superintendent -->
+            <div
+              class="flex items-center justify-between rounded-lg border border-brand-slate-200 bg-white p-4 transition-colors hover:border-brand-cobalt"
+            >
+              <div class="flex items-start gap-3">
+                <div
+                  class="flex h-9 w-9 shrink-0 items-center justify-center rounded border border-blue-200 bg-blue-50 text-brand-cobalt"
+                >
+                  <span
+                    class="material-symbols-outlined text-[20px]"
+                    data-icon="support_agent"
+                    >support_agent</span
+                  >
+                </div>
+                <div>
+                  <h4 class="font-label-md text-label-md font-bold text-brand-navy-950">
+                    Pathway D: Direct Liaison with Duty Lab Superintendent
+                  </h4>
+                  <p class="text-brand-slate-600 font-body-sm text-body-sm">
+                    Contact Engr. Kingsley D. Uranta (Superintendent of Hydrodynamics &amp; Towing
+                    Operations) for expedited emergency industry waivers.
+                  </p>
+                </div>
+              </div>
+              <a
+                class="border-brand-slate-300 flex shrink-0 items-center gap-1.5 rounded-lg border px-3.5 py-2 font-label-md text-label-md text-brand-slate-800 transition-colors hover:bg-brand-slate-50"
+                href="tel:+23484551290"
+              >
+                <span
+                  class="material-symbols-outlined text-[16px]"
+                  data-icon="call"
+                  >call</span
+                >
+                +234 84 551 290
+              </a>
+            </div>
+          </div>
+        </section>
+        <!-- RIGHT COLUMN: PRE-FILLED ALTERNATIVE RESERVATION DRAWER (5 COLS) -->
+        <section
+          class="sticky top-24 rounded-xl border border-brand-slate-200 bg-surface-container-lowest p-6 shadow-sm lg:col-span-5"
+        >
+          <div class="mb-5 border-b border-brand-slate-200 pb-4">
+            <div class="mb-1 flex items-center justify-between">
+              <span
+                class="font-label-sm text-label-sm font-bold uppercase tracking-wider text-brand-cobalt"
+                >Fast-Track Reassignment</span
+              >
+              <span
+                class="rounded bg-emerald-100 px-2 py-0.5 font-label-sm text-label-sm font-semibold text-status-verified"
+                >Pre-Filled Form</span
+              >
+            </div>
+            <h3 class="font-title-lg text-title-lg font-bold text-brand-navy-950">
+              Alternative Reservation Routing
+            </h3>
+            <p class="font-body-sm text-body-sm text-brand-slate-500">
+              Parameters preserved from failed request:
+              <strong>REQ-2025-HYD-0881</strong>
+            </p>
+          </div>
+          <form class="space-y-4">
+            <!-- Selected Facility -->
+            <div>
+              <label
+                class="mb-1 block font-label-sm text-label-sm font-semibold text-brand-slate-700"
+                >Testing Facility Unit</label
+              >
+              <input
+                class="h-[42px] w-full cursor-not-allowed rounded border border-brand-slate-200 bg-brand-slate-100 px-3.5 font-body-sm text-body-sm text-brand-navy-900"
+                readonly=""
+                type="text"
+                value="50-Metre Hydrodynamic Towing Tank (Bay 1)"
+              />
+            </div>
+            <!-- Principal Investigator -->
+            <div class="grid grid-cols-2 gap-3">
+              <div>
+                <label
+                  class="mb-1 block font-label-sm text-label-sm font-semibold text-brand-slate-700"
+                  >Lead Investigator / Engineer</label
+                >
+                <input
+                  class="h-[42px] w-full cursor-not-allowed rounded border border-brand-slate-200 bg-brand-slate-100 px-3.5 font-body-sm text-body-sm text-brand-navy-900"
+                  readonly=""
+                  type="text"
+                  value="Dr. Tariere A. Briggs"
+                />
+              </div>
+              <div>
+                <label
+                  class="mb-1 block font-label-sm text-label-sm font-semibold text-brand-slate-700"
+                  >Institutional Affiliation</label
+                >
+                <input
+                  class="h-[42px] w-full cursor-not-allowed rounded border border-brand-slate-200 bg-brand-slate-100 px-3.5 font-body-sm text-body-sm text-brand-navy-900"
+                  readonly=""
+                  type="text"
+                  value="Subsea Offshore Consult Ltd"
+                />
+              </div>
+            </div>
+            <!-- Model & Scope Specification -->
+            <div>
+              <label
+                class="mb-1 block font-label-sm text-label-sm font-semibold text-brand-slate-700"
+                >Hydrodynamic Test Model Classification</label
+              >
+              <input
+                class="h-[42px] w-full cursor-not-allowed rounded border border-brand-slate-200 bg-brand-slate-100 px-3.5 font-body-sm text-body-sm text-brand-navy-900"
+                readonly=""
+                type="text"
+                value="1:40 Scale FPSO Turret Hull (Wave-Current Coupling)"
+              />
+            </div>
+            <!-- REASSIGNMENT SELECTION RADIO CARDS -->
+            <div>
+              <label
+                class="mb-2 block font-label-sm text-label-sm font-semibold text-brand-slate-700"
+                >Select Alternative Validated Window</label
+              >
+              <div class="space-y-2">
+                <!-- Target 1: Recommended Wed Afternoon -->
+                <label
+                  class="flex cursor-pointer items-start gap-3 rounded-lg border-2 border-primary bg-surface-container-low p-3 transition-colors hover:bg-blue-100/50"
+                >
+                  <input
+                    checked=""
+                    class="mt-1 h-4 w-4 text-primary focus:ring-primary"
+                    name="alternative_slot"
+                    type="radio"
+                  />
+                  <div class="flex-1">
+                    <div class="flex items-center justify-between">
+                      <span class="font-label-md text-label-md font-bold text-brand-navy-950"
+                        >Wed, Oct 22 • 13:30 – 17:30 WAT</span
+                      >
+                      <span
+                        class="rounded bg-primary px-2 py-0.5 font-label-sm text-label-sm font-bold text-white"
+                        >Shift 2</span
+                      >
+                    </div>
+                    <span class="text-brand-slate-600 mt-0.5 block font-body-sm text-body-sm"
+                      >Same-day afternoon window. Zero logistics rescheduling fee.</span
+                    >
+                  </div>
+                </label>
+                <!-- Target 2: Friday Morning -->
+                <label
+                  class="flex cursor-pointer items-start gap-3 rounded-lg border border-brand-slate-200 bg-white p-3 transition-colors hover:bg-brand-slate-50"
+                >
+                  <input
+                    class="mt-1 h-4 w-4 text-primary focus:ring-primary"
+                    name="alternative_slot"
+                    type="radio"
+                  />
+                  <div class="flex-1">
+                    <div class="flex items-center justify-between">
+                      <span class="font-label-md text-label-md font-bold text-brand-navy-950"
+                        >Fri, Oct 24 • 09:00 – 13:00 WAT</span
+                      >
+                      <span
+                        class="rounded bg-brand-slate-100 px-2 py-0.5 font-label-sm text-label-sm font-semibold text-brand-slate-700"
+                        >Morning Shift</span
+                      >
+                    </div>
+                    <span class="text-brand-slate-600 mt-0.5 block font-body-sm text-body-sm"
+                      >Clear window with carriage technician assistance.</span
+                    >
+                  </div>
+                </label>
+              </div>
+            </div>
+            <!-- Remita TSA Billing Confirmation -->
+            <div class="rounded border border-brand-slate-200 bg-brand-slate-50 p-3">
+              <div
+                class="text-brand-slate-600 mb-1 flex items-center justify-between font-label-sm text-label-sm"
+              >
+                <span>Standard Facility Rate (4-Hour Window)</span>
+                <span class="font-code-sm text-code-sm font-semibold text-brand-navy-950"
+                  >₦ 850,000.00</span
+                >
+              </div>
+              <div
+                class="text-brand-slate-600 mb-1 flex items-center justify-between font-label-sm text-label-sm"
+              >
+                <span>RSU Faculty Surcharge (0%)</span>
+                <span class="font-code-sm text-code-sm font-semibold text-status-verified"
+                  >Waived</span
+                >
+              </div>
+              <div
+                class="mt-1 flex items-center justify-between border-t border-brand-slate-200 pt-1 font-title-lg text-title-lg font-bold text-brand-navy-950"
+              >
+                <span>Total Requisition Value</span>
+                <span class="font-headline-sm text-headline-sm font-bold text-primary"
+                  >₦ 850,000.00</span
+                >
+              </div>
+            </div>
+            <!-- Confirm Re-route Action -->
+            <div class="pt-2">
+              <button
+                class="flex w-full items-center justify-center gap-2 rounded-lg bg-primary py-3 font-label-md text-label-md font-bold text-white shadow-md transition-all hover:bg-brand-cobalt-deep"
+                type="button"
+              >
+                <span
+                  class="material-symbols-outlined text-[18px]"
+                  data-icon="check_circle"
+                  >check_circle</span
+                >
+                Lock Alternative Slot (Wed 13:30 WAT)
+              </button>
+              <p class="mt-2 text-center font-label-sm text-label-sm text-brand-slate-500">
+                Instant 30-minute exclusivity hold issued upon confirmation.
+              </p>
+            </div>
+          </form>
+        </section>
+      </div>
+      <!-- TECHNICAL RIGOR & COMPLIANCE BADGES -->
+      <section
+        aria-label="Accreditation Standards"
+        class="mt-12 border-t border-brand-slate-200 pt-8"
+      >
+        <div class="flex flex-wrap items-center justify-between gap-6">
+          <div class="flex items-center gap-2 font-label-sm text-label-sm text-brand-slate-500">
+            <span
+              class="material-symbols-outlined text-[20px] text-brand-cobalt"
+              data-icon="verified_user"
+              >verified_user</span
+            >
+            <span>OFFICIALLY CERTIFIED TESTING PROTOCOLS:</span>
+          </div>
+          <div class="flex flex-wrap items-center gap-4">
+            <span
+              class="flex items-center gap-1.5 rounded border border-brand-slate-200 bg-brand-slate-100 px-3 py-1 font-code-sm text-code-sm font-semibold text-brand-slate-700"
+            >
+              <span class="h-2 w-2 rounded-full bg-status-verified"></span>
+              Class 1 Div 2 Facility Safe
+            </span>
+            <span
+              class="flex items-center gap-1.5 rounded border border-brand-slate-200 bg-brand-slate-100 px-3 py-1 font-code-sm text-code-sm font-semibold text-brand-slate-700"
+            >
+              <span class="h-2 w-2 rounded-full bg-status-verified"></span>
+              NCDMB Category A Marine Research Centre
+            </span>
+            <span
+              class="flex items-center gap-1.5 rounded border border-brand-slate-200 bg-brand-slate-100 px-3 py-1 font-code-sm text-code-sm font-semibold text-brand-slate-700"
+            >
+              <span class="h-2 w-2 rounded-full bg-status-verified"></span>
+              ISO/IEC 17025 Accredited Calibration
+            </span>
+            <span
+              class="flex items-center gap-1.5 rounded border border-brand-slate-200 bg-brand-slate-100 px-3 py-1 font-code-sm text-code-sm font-semibold text-brand-slate-700"
+            >
+              <span class="h-2 w-2 rounded-full bg-status-verified"></span>
+              Remita TSA Verified Registry
+            </span>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- INSTITUTIONAL FOOTER (Exact Shared Component Specification) -->
+    <cmotd-institution-strip></cmotd-institution-strip>
+    <cmotd-site-footer></cmotd-site-footer>
+  </body>
+</html>
