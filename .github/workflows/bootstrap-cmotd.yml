@@ -25,26 +25,6 @@ jobs:
           gzip -t /tmp/cmotd.tar.gz
           tar -xzf /tmp/cmotd.tar.gz -C .
 
-      - name: Restore local fonts
-        shell: bash
-        run: |
-          set -euo pipefail
-          mkdir -p assets/font/Inter assets/font/Newsreader assets/font/MaterialSymbols
-
-          curl -fsSL 'https://raw.githubusercontent.com/google/fonts/main/ofl/inter/Inter%5Bopsz%2Cwght%5D.ttf' \
-            -o 'assets/font/Inter/Inter-VariableFont_opsz,wght.ttf'
-          curl -fsSL 'https://raw.githubusercontent.com/google/fonts/main/ofl/inter/Inter-Italic%5Bopsz%2Cwght%5D.ttf' \
-            -o 'assets/font/Inter/Inter-Italic-VariableFont_opsz,wght.ttf'
-          curl -fsSL 'https://raw.githubusercontent.com/google/fonts/main/ofl/newsreader/Newsreader%5Bopsz%2Cwght%5D.ttf' \
-            -o 'assets/font/Newsreader/Newsreader-VariableFont_opsz,wght.ttf'
-          curl -fsSL 'https://raw.githubusercontent.com/google/fonts/main/ofl/newsreader/Newsreader-Italic%5Bopsz%2Cwght%5D.ttf' \
-            -o 'assets/font/Newsreader/Newsreader-Italic-VariableFont_opsz,wght.ttf'
-
-          css="$(curl -fsSL -A 'Mozilla/5.0' 'https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200')"
-          url="$(printf '%s' "$css" | grep -o 'https://fonts.gstatic.com[^)]*\.woff2' | head -1)"
-          test -n "$url"
-          curl -fsSL "$url" -o assets/font/MaterialSymbols/MaterialSymbolsOutlined.woff2
-
       - name: Validate imported project
         shell: bash
         run: |
@@ -56,9 +36,6 @@ jobs:
           test -f assets/img/staff/director.webp
           test -f pages/cmotd_course_big_data_analytics.html
           test -f pages/cmotd_course_automation_instrumentation_control.html
-          test -f assets/font/Inter/Inter-VariableFont_opsz,wght.ttf
-          test -f assets/font/Newsreader/Newsreader-VariableFont_opsz,wght.ttf
-          test -f assets/font/MaterialSymbols/MaterialSymbolsOutlined.woff2
 
       - name: Remove transfer bootstrap
         shell: bash
